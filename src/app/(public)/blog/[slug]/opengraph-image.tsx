@@ -6,8 +6,13 @@ export const alt = "AI BirdView blog";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function Image({ params }: { params: { slug: string } }) {
-  const post = await getPostBySlug(params.slug);
+export default async function Image({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
   if (!post) return new ImageResponse(<div />);
 
   return new ImageResponse(
