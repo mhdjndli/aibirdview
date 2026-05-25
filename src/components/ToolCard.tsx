@@ -1,9 +1,8 @@
 import Link from "next/link";
-import type { Tool } from "@/data/tools";
-import { getCategory } from "@/data/categories";
+import type { SerializedTool, SerializedToolLite } from "@/lib/serializers";
 
-export function ToolCard({ tool, eager = false }: { tool: Tool; eager?: boolean }) {
-  const category = getCategory(tool.category);
+export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }) {
+  const category = tool.category;
   return (
     <Link
       href={`/tools/${tool.slug}`}

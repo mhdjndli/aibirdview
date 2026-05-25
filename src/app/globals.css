@@ -132,6 +132,90 @@ body {
 .hairline { box-shadow: inset 0 -1px 0 var(--ink-200); }
 .hairline-t { box-shadow: inset 0 1px 0 var(--ink-200); }
 
+/* Editorial / blog prose */
+.prose {
+  color: var(--ink-700);
+  font-size: 17px;
+  line-height: 1.75;
+}
+.prose-ink h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.018em;
+  font-weight: 600;
+  color: var(--ink-900);
+  margin-top: 2.4em;
+  margin-bottom: 0.6em;
+}
+.prose-ink h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  letter-spacing: -0.014em;
+  font-weight: 600;
+  color: var(--ink-900);
+  margin-top: 1.9em;
+  margin-bottom: 0.5em;
+}
+.prose-ink h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-900);
+  margin-top: 1.4em;
+  margin-bottom: 0.35em;
+}
+.prose-ink p,
+.prose-ink ul,
+.prose-ink ol,
+.prose-ink blockquote,
+.prose-ink pre {
+  margin: 1em 0;
+}
+.prose-ink ul, .prose-ink ol { padding-left: 1.5em; }
+.prose-ink ul { list-style: disc; }
+.prose-ink ol { list-style: decimal; }
+.prose-ink li { margin: 0.4em 0; }
+.prose-ink a {
+  color: var(--kiwi-700);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.prose-ink a:hover { color: var(--kiwi-800); }
+.prose-ink strong { color: var(--ink-900); }
+.prose-ink blockquote {
+  border-left: 3px solid var(--kiwi-400);
+  padding-left: 1.2em;
+  font-style: italic;
+  color: var(--ink-600);
+}
+.prose-ink code {
+  background: var(--ink-100);
+  padding: 0.12em 0.4em;
+  border-radius: 4px;
+  font-size: 0.92em;
+}
+.prose-ink pre {
+  background: var(--ink-900);
+  color: var(--ink-100);
+  padding: 1em 1.25em;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.prose-ink pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+.prose-ink img {
+  width: 100%;
+  border-radius: 14px;
+  margin: 1.5em 0;
+  border: 1px solid var(--ink-200);
+}
+.prose-ink hr { border: 0; border-top: 1px solid var(--ink-200); margin: 2.5em 0; }
+
 /* Marquee for the social-proof logo bar */
 @keyframes marquee {
   from { transform: translateX(0); }

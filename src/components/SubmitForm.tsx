@@ -1,13 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { CATEGORIES } from "@/data/categories";
-import type { Pricing } from "@/data/tools";
 
-const PRICING: Pricing[] = ["Free", "Freemium", "Free Trial", "Paid"];
+type CategoryOption = { slug: string; name: string };
 
-export function SubmitForm() {
+const PRICING: { value: "FREE" | "FREEMIUM" | "FREE_TRIAL" | "PAID"; label: string }[] = [
+  { value: "FREE", label: "Free" },
+  { value: "FREEMIUM", label: "Freemium" },
+  { value: "FREE_TRIAL", label: "Free Trial" },
+  { value: "PAID", label: "Paid" },
+];
+
+export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
   const [submitted, setSubmitted] = useState(false);
+  const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   if (submitted) {
@@ -35,15 +41,46 @@ export function SubmitForm() {
 
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        const data = new FormData(e.currentTarget);
-        if (!data.get("name") || !data.get("url") || !data.get("email")) {
+        const fd = new FormData(e.currentTarget);
+        if (!fd.get("name") || !fd.get("url") || !fd.get("email")) {
           setError("Please fill in name, URL, and contact email.");
           return;
         }
         setError(null);
-        setSubmitted(true);
+        setPending(true);
+        try {
+          const res = await fetch("/api/submissions", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: fd.get("name"),
+              url: fd.get("url"),
+              tagline: fd.get("tagline") || null,
+              description: fd.get("description") || null,
+              category: fd.get("category"),
+              pricing: fd.get("pricing"),
+              priceFrom: fd.get("priceFrom") || null,
+              founded: fd.get("founded") || null,
+              contactName: fd.get("contactName"),
+              email: fd.get("email"),
+              role: fd.get("role") || null,
+              notes: fd.get("notes") || null,
+              terms: fd.get("terms") === "on",
+            }),
+          });
+          if (!res.ok) {
+            const data = await res.json().catch(() => null);
+            setError(data?.error || "Something went wrong — please try again.");
+            return;
+          }
+          setSubmitted(true);
+        } catch {
+          setError("Network error — please try again.");
+        } finally {
+          setPending(false);
+        }
       }}
       className="space-y-10"
     >
@@ -101,7 +138,7 @@ export function SubmitForm() {
               <option value="" disabled>
                 Choose a category
               </option>
-              {CATEGORIES.map((c) => (
+              {categories.map((c) => (
                 <option key={c.slug} value={c.slug}>
                   {c.name}
                 </option>
@@ -114,8 +151,8 @@ export function SubmitForm() {
                 Choose a pricing model
               </option>
               {PRICING.map((p) => (
-                <option key={p} value={p}>
-                  {p}
+                <option key={p.value} value={p.value}>
+                  {p.label}
                 </option>
               ))}
             </select>
@@ -201,9 +238,10 @@ export function SubmitForm() {
         </p>
         <button
           type="submit"
-          className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-6 py-3 text-[14px] font-medium text-ink-0 transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02]"
+          disabled={pending}
+          className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-6 py-3 text-[14px] font-medium text-ink-0 transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02] disabled:opacity-60"
         >
-          Submit for review →
+          {pending ? "Submitting…" : "Submit for review →"}
         </button>
       </div>
     </form>

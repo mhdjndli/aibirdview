@@ -2,17 +2,21 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { TOOLS } from "@/data/tools";
-import { CATEGORIES } from "@/data/categories";
+
+type ToolHit = { slug: string; name: string; tagline: string };
+type CatHit = { slug: string; name: string };
+type Hit =
+  | { type: "tool"; item: ToolHit }
+  | { type: "category"; item: CatHit };
 
 export function HeroSearch() {
   const [q, setQ] = useState("");
   const [focused, setFocused] = useState(false);
   const [active, setActive] = useState(0);
+  const [results, setResults] = useState<Hit[]>([]);
   const router = useRouter();
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // ⌘K / Ctrl+K focuses the search
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
@@ -24,22 +28,34 @@ export function HeroSearch() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const results = useMemo(() => {
-    const query = q.trim().toLowerCase();
-    if (!query) return [];
-    const tools = TOOLS.filter(
-      (t) =>
-        t.name.toLowerCase().includes(query) ||
-        t.tagline.toLowerCase().includes(query) ||
-        t.tags.some((tag) => tag.toLowerCase().includes(query))
-    ).slice(0, 5);
-    const cats = CATEGORIES.filter((c) =>
-      c.name.toLowerCase().includes(query)
-    ).slice(0, 2);
-    return [
-      ...tools.map((t) => ({ type: "tool" as const, item: t })),
-      ...cats.map((c) => ({ type: "category" as const, item: c })),
-    ];
+  useEffect(() => {
+    const query = q.trim();
+    if (!query) {
+      setResults([]);
+      return;
+    }
+    const controller = new AbortController();
+    const t = setTimeout(async () => {
+      try {
+        const r = await fetch(`/api/search?q=${encodeURIComponent(query)}`, {
+          signal: controller.signal,
+        });
+        if (!r.ok) return;
+        const data = (await r.json()) as { tools: ToolHit[]; categories: CatHit[] };
+        const hits: Hit[] = [
+          ...data.tools.map((t) => ({ type: "tool" as const, item: t })),
+          ...data.categories.map((c) => ({ type: "category" as const, item: c })),
+        ];
+        setResults(hits);
+        setActive(0);
+      } catch {
+        // ignored
+      }
+    }, 150);
+    return () => {
+      controller.abort();
+      clearTimeout(t);
+    };
   }, [q]);
 
   const showDropdown = focused && q.trim().length > 0;
@@ -53,6 +69,8 @@ export function HeroSearch() {
     if (r.type === "tool") router.push(`/tools/${r.item.slug}`);
     else router.push(`/categories/${r.item.slug}`);
   };
+
+  const headingNoResults = useMemo(() => q.trim().length > 0 && results.length === 0, [q, results.length]);
 
   return (
     <form
@@ -75,10 +93,7 @@ export function HeroSearch() {
           ref={inputRef}
           type="search"
           value={q}
-          onChange={(e) => {
-            setQ(e.target.value);
-            setActive(0);
-          }}
+          onChange={(e) => setQ(e.target.value)}
           onFocus={() => setFocused(true)}
           onBlur={() => setTimeout(() => setFocused(false), 150)}
           onKeyDown={(e) => {
@@ -90,7 +105,7 @@ export function HeroSearch() {
               setActive((i) => Math.max(0, i - 1));
             }
           }}
-          placeholder="Search 1,200+ AI tools — by name, task, or category"
+          placeholder="Search the directory — by name, task, or category"
           className="flex-1 bg-transparent py-4 text-[16px] text-ink-900 placeholder:text-ink-400 outline-none md:text-[17px]"
           aria-label="Search AI tools"
         />
@@ -107,7 +122,7 @@ export function HeroSearch() {
 
       {showDropdown && (
         <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-2xl border border-ink-200 bg-ink-0 shadow-[0_18px_50px_-18px_rgba(0,0,0,0.18)]">
-          {results.length === 0 ? (
+          {headingNoResults ? (
             <div className="p-5 text-left text-[14px] text-ink-500">
               No matches yet — try a different word, or{" "}
               <a
@@ -147,9 +162,7 @@ export function HeroSearch() {
                         {r.item.name}
                       </span>
                       <span className="block text-[12px] text-ink-500">
-                        {r.type === "tool"
-                          ? r.item.tagline
-                          : "Category"}
+                        {r.type === "tool" ? r.item.tagline : "Category"}
                       </span>
                     </span>
                     <span className="text-[12px] text-ink-400">

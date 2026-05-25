@@ -2,22 +2,21 @@
 
 import { useMemo, useState } from "react";
 import { ToolCard } from "./ToolCard";
-import type { Tool, Pricing } from "@/data/tools";
-import type { Category } from "@/data/categories";
+import type { SerializedTool, SerializedCategory, PricingLabel } from "@/lib/serializers";
 
-const PRICING: Pricing[] = ["Free", "Freemium", "Free Trial", "Paid"];
+const PRICING: PricingLabel[] = ["Free", "Freemium", "Free Trial", "Paid"];
 type Sort = "trending" | "rating" | "newest" | "az";
 
 export function ToolsBrowser({
   tools,
   categories,
 }: {
-  tools: Tool[];
-  categories: Category[];
+  tools: SerializedTool[];
+  categories: SerializedCategory[];
 }) {
   const [q, setQ] = useState("");
   const [cats, setCats] = useState<Set<string>>(new Set());
-  const [prices, setPrices] = useState<Set<Pricing>>(new Set());
+  const [prices, setPrices] = useState<Set<PricingLabel>>(new Set());
   const [sort, setSort] = useState<Sort>("trending");
   const [showFilters, setShowFilters] = useState(false);
 
@@ -33,7 +32,7 @@ export function ToolsBrowser({
           t.tags.join(" ").toLowerCase();
         if (!hay.includes(query)) return false;
       }
-      if (cats.size && !cats.has(t.category)) return false;
+      if (cats.size && !cats.has(t.category.slug)) return false;
       if (prices.size && !prices.has(t.pricing)) return false;
       return true;
     });
@@ -48,7 +47,7 @@ export function ToolsBrowser({
         out = out.sort((a, b) => b.rating - a.rating);
         break;
       case "newest":
-        out = out.sort((a, b) => Number(b.founded) - Number(a.founded));
+        out = out.sort((a, b) => Number(b.founded ?? 0) - Number(a.founded ?? 0));
         break;
       case "az":
         out = out.sort((a, b) => a.name.localeCompare(b.name));
@@ -62,7 +61,7 @@ export function ToolsBrowser({
     next.has(slug) ? next.delete(slug) : next.add(slug);
     setCats(next);
   };
-  const togglePrice = (p: Pricing) => {
+  const togglePrice = (p: PricingLabel) => {
     const next = new Set(prices);
     next.has(p) ? next.delete(p) : next.add(p);
     setPrices(next);

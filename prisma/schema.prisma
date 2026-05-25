@@ -1,0 +1,277 @@
+// AI BirdView database schema
+// See README.md for migration commands.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ---------- Auth ----------
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String
+  role          Role      @default(ADMIN)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  blogPosts     BlogPost[]
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+}
+
+// ---------- Directory ----------
+
+model Category {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  tagline     String
+  description String
+  glyph       String   // single emoji/char glyph used in cards
+  accent      String   // tailwind class for accent color
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  tools       Tool[]
+}
+
+model Tool {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  name            String
+  tagline         String
+  description     String   @db.Text
+  longDescription String   @db.Text
+  url             String
+  pricing         Pricing
+  priceFrom       String?
+  rating          Float    @default(0)
+  ratingCount     Int      @default(0)
+  founded         String?
+  featured        Boolean  @default(false)
+  trending        Boolean  @default(false)
+  verified        Boolean  @default(false)
+  published       Boolean  @default(true)
+  swatchFrom      String   @default("#c8e6a8")
+  swatchTo        String   @default("#8dc474")
+
+  // SEO
+  seoTitle        String?
+  seoDescription  String?
+  metaKeywords    String?
+
+  // Imagery
+  logoMediaId     String?
+  logo            Media?   @relation("ToolLogo", fields: [logoMediaId], references: [id])
+  thumbnailMediaId String?
+  thumbnail       Media?   @relation("ToolThumb", fields: [thumbnailMediaId], references: [id])
+
+  category        Category @relation(fields: [categoryId], references: [id])
+  categoryId      String
+
+  features        ToolFeature[]
+  pros            ToolPro[]
+  cons            ToolCon[]
+  tags            ToolTag[]
+  alternatives    ToolAlternative[] @relation("FromTool")
+  alternativeOf   ToolAlternative[] @relation("ToTool")
+
+  // when this Tool was created from a Submission, link back
+  submission      Submission?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([categoryId])
+  @@index([featured])
+  @@index([trending])
+  @@index([published])
+}
+
+enum Pricing {
+  FREE
+  FREEMIUM
+  FREE_TRIAL
+  PAID
+}
+
+model ToolFeature {
+  id     String @id @default(cuid())
+  tool   Tool   @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId String
+  text   String
+  order  Int    @default(0)
+  @@index([toolId])
+}
+
+model ToolPro {
+  id     String @id @default(cuid())
+  tool   Tool   @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId String
+  text   String
+  order  Int    @default(0)
+  @@index([toolId])
+}
+
+model ToolCon {
+  id     String @id @default(cuid())
+  tool   Tool   @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId String
+  text   String
+  order  Int    @default(0)
+  @@index([toolId])
+}
+
+model ToolTag {
+  id     String @id @default(cuid())
+  tool   Tool   @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId String
+  tag    String
+  @@unique([toolId, tag])
+  @@index([tag])
+}
+
+model ToolAlternative {
+  id           String @id @default(cuid())
+  fromTool     Tool   @relation("FromTool", fields: [fromToolId], references: [id], onDelete: Cascade)
+  fromToolId   String
+  toTool       Tool   @relation("ToTool", fields: [toToolId], references: [id], onDelete: Cascade)
+  toToolId     String
+
+  @@unique([fromToolId, toToolId])
+}
+
+// ---------- Submissions ----------
+
+model Submission {
+  id              String   @id @default(cuid())
+  name            String
+  url             String
+  tagline         String?
+  description     String?  @db.Text
+  pricing         Pricing
+  priceFrom       String?
+  founded         String?
+  categorySlug    String   // free-form category at submission time
+
+  // submitter
+  contactName     String
+  email           String
+  role            String?
+  notes           String?  @db.Text
+
+  status          SubmissionStatus @default(PENDING)
+  rejectReason    String?
+
+  // if approved, the resulting Tool
+  toolId          String?  @unique
+  tool            Tool?    @relation(fields: [toolId], references: [id])
+
+  createdAt       DateTime @default(now())
+  reviewedAt      DateTime?
+
+  @@index([status])
+}
+
+enum SubmissionStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// ---------- Blog ----------
+
+model BlogPost {
+  id              String   @id @default(cuid())
+  slug            String   @unique
+  title           String
+  excerpt         String   @db.Text
+  contentJson     Json     // Tiptap JSON document
+  contentHtml     String   @db.Text // pre-rendered HTML for SSR (and SEO)
+  readingMinutes  Int      @default(3)
+
+  published       Boolean  @default(false)
+  publishedAt     DateTime?
+
+  // SEO
+  seoTitle        String?
+  seoDescription  String?
+  metaKeywords    String?
+
+  // Thumbnail
+  thumbnailMediaId String?
+  thumbnail       Media?   @relation("PostThumb", fields: [thumbnailMediaId], references: [id])
+
+  // OG image override
+  ogMediaId       String?
+  ogImage         Media?   @relation("PostOg", fields: [ogMediaId], references: [id])
+
+  author          User?    @relation(fields: [authorId], references: [id])
+  authorId        String?
+
+  categories      BlogPostOnCategory[]
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@index([published])
+  @@index([publishedAt])
+}
+
+model BlogCategory {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  name      String
+  description String?
+  sortOrder Int      @default(0)
+
+  posts     BlogPostOnCategory[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model BlogPostOnCategory {
+  post        BlogPost     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId      String
+  category    BlogCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId  String
+
+  @@id([postId, categoryId])
+}
+
+// ---------- Media ----------
+
+model Media {
+  id          String   @id @default(cuid())
+  filename    String
+  contentType String
+  size        Int
+  width       Int?
+  height      Int?
+  altText     String?
+  data        Bytes
+  createdAt   DateTime @default(now())
+
+  toolLogos       Tool[] @relation("ToolLogo")
+  toolThumbs      Tool[] @relation("ToolThumb")
+  postThumbs      BlogPost[] @relation("PostThumb")
+  postOgs         BlogPost[] @relation("PostOg")
+}
+
+// ---------- Settings ----------
+
+model Setting {
+  key   String @id
+  value Json
+}
