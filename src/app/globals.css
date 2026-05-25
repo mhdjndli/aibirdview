@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+:root {
+  /* Kiwi green palette — pulled from the bird logo */
+  --kiwi-50:  #f3faec;
+  --kiwi-100: #e3f3d3;
+  --kiwi-200: #c8e6a8;
+  --kiwi-300: #a8d57c;
+  --kiwi-400: #8dc474;  /* primary brand kiwi */
+  --kiwi-500: #74b25c;
+  --kiwi-600: #5a9444;
+  --kiwi-700: #467434;
+  --kiwi-800: #355529;
+  --kiwi-900: #243a1c;
+
+  /* Apple-style neutrals */
+  --ink-0:   #ffffff;
+  --ink-50:  #fbfbfd;
+  --ink-100: #f5f5f7;
+  --ink-200: #e8e8ed;
+  --ink-300: #d2d2d7;
+  --ink-400: #a1a1a6;
+  --ink-500: #6e6e73;
+  --ink-600: #4b4b50;
+  --ink-700: #2c2c2e;
+  --ink-800: #1d1d1f;
+  --ink-900: #0b0b0d;
+
+  --background: var(--ink-0);
+  --foreground: var(--ink-800);
+
+  /* Spring-y easing for Apple-feel transitions */
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft:   cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-kiwi-50:  var(--kiwi-50);
+  --color-kiwi-100: var(--kiwi-100);
+  --color-kiwi-200: var(--kiwi-200);
+  --color-kiwi-300: var(--kiwi-300);
+  --color-kiwi-400: var(--kiwi-400);
+  --color-kiwi-500: var(--kiwi-500);
+  --color-kiwi-600: var(--kiwi-600);
+  --color-kiwi-700: var(--kiwi-700);
+  --color-kiwi-800: var(--kiwi-800);
+  --color-kiwi-900: var(--kiwi-900);
+
+  --color-ink-0:   var(--ink-0);
+  --color-ink-50:  var(--ink-50);
+  --color-ink-100: var(--ink-100);
+  --color-ink-200: var(--ink-200);
+  --color-ink-300: var(--ink-300);
+  --color-ink-400: var(--ink-400);
+  --color-ink-500: var(--ink-500);
+  --color-ink-600: var(--ink-600);
+  --color-ink-700: var(--ink-700);
+  --color-ink-800: var(--ink-800);
+  --color-ink-900: var(--ink-900);
+
+  --font-sans: var(--font-sans-app), -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-display-app), -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+
+  --tracking-tight: -0.022em;
+  --tracking-tighter: -0.035em;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  letter-spacing: -0.011em;
+  text-rendering: optimizeLegibility;
+}
+
+/* Apple-style frosted glass */
+.glass {
+  background-color: color-mix(in oklab, var(--ink-0) 72%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid color-mix(in oklab, var(--ink-300) 60%, transparent);
+}
+
+/* Subtle scroll-aware reveal */
+@keyframes fade-up {
+  from { opacity: 0; transform: translate3d(0, 12px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+.fade-up {
+  animation: fade-up 0.9s var(--ease-spring) both;
+}
+.fade-up-1 { animation-delay: 0.05s; }
+.fade-up-2 { animation-delay: 0.15s; }
+.fade-up-3 { animation-delay: 0.25s; }
+.fade-up-4 { animation-delay: 0.35s; }
+.fade-up-5 { animation-delay: 0.45s; }
+
+/* Soft mesh gradient used as ambient hero background */
+.mesh-bg {
+  background:
+    radial-gradient(60% 50% at 10% 0%,  color-mix(in oklab, var(--kiwi-200) 65%, transparent) 0%, transparent 60%),
+    radial-gradient(50% 40% at 85% 10%, color-mix(in oklab, var(--kiwi-100) 80%, transparent) 0%, transparent 70%),
+    radial-gradient(50% 60% at 50% 100%, color-mix(in oklab, var(--kiwi-50) 90%, transparent) 0%, transparent 70%),
+    var(--ink-0);
+}
+
+/* Apple-style focus ring */
+:focus-visible {
+  outline: 2px solid var(--kiwi-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Hide scrollbar but keep functionality on horizontal scrollers */
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { scrollbar-width: none; }
+
+/* Crisp dividers */
+.hairline { box-shadow: inset 0 -1px 0 var(--ink-200); }
+.hairline-t { box-shadow: inset 0 1px 0 var(--ink-200); }
+
+/* Marquee for the social-proof logo bar */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
