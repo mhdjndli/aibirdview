@@ -146,14 +146,27 @@ export default async function ToolPage({
           </nav>
 
           <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-start">
-            <div
-              className="flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl text-[36px] font-semibold text-ink-900 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.18)]"
-              style={{
-                background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
-              }}
-            >
-              {tool.name[0]}
-            </div>
+            {tool.logoMediaId ? (
+              <div
+                className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-3xl bg-ink-0 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.18)]"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/api/media/${tool.logoMediaId}`}
+                  alt={`${tool.name} logo`}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            ) : (
+              <div
+                className="flex h-20 w-20 shrink-0 items-center justify-center rounded-3xl text-[36px] font-semibold text-ink-900 shadow-[0_4px_18px_-6px_rgba(0,0,0,0.18)]"
+                style={{
+                  background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
+                }}
+              >
+                {tool.name[0]}
+              </div>
+            )}
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2">
                 <h1 className="text-[40px] font-semibold leading-tight tracking-[-0.032em] text-ink-900 md:text-[52px]">
@@ -197,30 +210,56 @@ export default async function ToolPage({
             </div>
           </div>
 
-          <div
-            className="relative mt-12 aspect-[16/8] overflow-hidden rounded-3xl border border-ink-200"
-            style={{
-              background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
-            }}
-          >
+          {tool.screenshots.length > 0 ? (
+            <div className="mt-12 overflow-hidden rounded-3xl border border-ink-200 bg-ink-50">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/api/media/${tool.screenshots[0]}`}
+                alt={`${tool.name} screenshot`}
+                className="aspect-[16/8] w-full object-cover"
+              />
+            </div>
+          ) : (
             <div
-              className="absolute inset-0 opacity-90 mix-blend-soft-light"
+              className="relative mt-12 aspect-[16/8] overflow-hidden rounded-3xl border border-ink-200"
               style={{
-                backgroundImage:
-                  "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5), transparent 35%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.18), transparent 40%)",
+                background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
               }}
-            />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <p className="text-[14px] uppercase tracking-[0.2em] text-ink-900/55">
-                  Product preview
-                </p>
-                <p className="mt-2 text-[28px] font-semibold tracking-[-0.022em] text-ink-900/85 md:text-[40px]">
-                  {tool.name}
-                </p>
+            >
+              <div
+                className="absolute inset-0 opacity-90 mix-blend-soft-light"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.5), transparent 35%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.18), transparent 40%)",
+                }}
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="text-center">
+                  <p className="text-[14px] uppercase tracking-[0.2em] text-ink-900/55">
+                    Product preview
+                  </p>
+                  <p className="mt-2 text-[28px] font-semibold tracking-[-0.022em] text-ink-900/85 md:text-[40px]">
+                    {tool.name}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
+
+          {tool.screenshots.length > 1 && (
+            <div className="mt-4 grid grid-cols-2 gap-4">
+              {tool.screenshots.slice(1).map((mid) => (
+                <div key={mid} className="overflow-hidden rounded-2xl border border-ink-200 bg-ink-50">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={`/api/media/${mid}`}
+                    alt={`${tool.name} screenshot`}
+                    className="aspect-[16/9] w-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

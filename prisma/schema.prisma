@@ -75,6 +75,12 @@ model Tool {
   logo            Media?   @relation("ToolLogo", fields: [logoMediaId], references: [id])
   thumbnailMediaId String?
   thumbnail       Media?   @relation("ToolThumb", fields: [thumbnailMediaId], references: [id])
+  screenshot1MediaId String?
+  screenshot1       Media?  @relation("ToolShot1", fields: [screenshot1MediaId], references: [id])
+  screenshot2MediaId String?
+  screenshot2       Media?  @relation("ToolShot2", fields: [screenshot2MediaId], references: [id])
+  screenshot3MediaId String?
+  screenshot3       Media?  @relation("ToolShot3", fields: [screenshot3MediaId], references: [id])
 
   category        Category @relation(fields: [categoryId], references: [id])
   categoryId      String
@@ -163,6 +169,16 @@ model Submission {
   priceFrom       String?
   founded         String?
   categorySlug    String   // free-form category at submission time
+
+  // media
+  logoMediaId       String?
+  logo              Media?  @relation("SubLogo", fields: [logoMediaId], references: [id])
+  screenshot1MediaId String?
+  screenshot1       Media?  @relation("SubShot1", fields: [screenshot1MediaId], references: [id])
+  screenshot2MediaId String?
+  screenshot2       Media?  @relation("SubShot2", fields: [screenshot2MediaId], references: [id])
+  screenshot3MediaId String?
+  screenshot3       Media?  @relation("SubShot3", fields: [screenshot3MediaId], references: [id])
 
   // submitter
   contactName     String
@@ -265,8 +281,15 @@ model Media {
 
   toolLogos       Tool[] @relation("ToolLogo")
   toolThumbs      Tool[] @relation("ToolThumb")
+  toolShots1      Tool[] @relation("ToolShot1")
+  toolShots2      Tool[] @relation("ToolShot2")
+  toolShots3      Tool[] @relation("ToolShot3")
   postThumbs      BlogPost[] @relation("PostThumb")
   postOgs         BlogPost[] @relation("PostOg")
+  subLogos        Submission[] @relation("SubLogo")
+  subShots1       Submission[] @relation("SubShot1")
+  subShots2       Submission[] @relation("SubShot2")
+  subShots3       Submission[] @relation("SubShot3")
 }
 
 // ---------- Settings ----------

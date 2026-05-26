@@ -42,6 +42,9 @@ const TOOL_INCLUDE = {
   alternatives: { include: { toTool: { include: { category: true } } } },
   logo: true,
   thumbnail: true,
+  screenshot1: true,
+  screenshot2: true,
+  screenshot3: true,
 } as const;
 
 export async function getTools(opts?: {

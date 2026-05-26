@@ -56,6 +56,10 @@ export async function approveSubmission(submissionId: string, formData: FormData
       swatchFrom,
       swatchTo,
       categoryId: category.id,
+      logoMediaId: sub.logoMediaId ?? null,
+      screenshot1MediaId: sub.screenshot1MediaId ?? null,
+      screenshot2MediaId: sub.screenshot2MediaId ?? null,
+      screenshot3MediaId: sub.screenshot3MediaId ?? null,
     },
   });
 

@@ -21,6 +21,12 @@ export default async function SubmissionDetailPage({
   ]);
   if (!submission) notFound();
 
+  const screenshots = [
+    submission.screenshot1MediaId,
+    submission.screenshot2MediaId,
+    submission.screenshot3MediaId,
+  ].filter(Boolean) as string[];
+
   const approve = approveSubmission.bind(null, submission.id);
   const reject = rejectSubmission.bind(null, submission.id);
   const reopen = reopenSubmission.bind(null, submission.id);
@@ -56,6 +62,46 @@ export default async function SubmissionDetailPage({
         {/* Submission details */}
         <section className="rounded-2xl border border-ink-200 bg-ink-0 p-6">
           <h2 className="text-[14px] font-semibold uppercase tracking-[0.16em] text-ink-500">
+            Brand assets
+          </h2>
+          <div className="mt-5 flex flex-wrap gap-5">
+            <div>
+              <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-ink-500">Logo</p>
+              {submission.logoMediaId ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={`/api/media/${submission.logoMediaId}`}
+                  alt=""
+                  className="h-20 w-20 rounded-2xl border border-ink-200 bg-ink-50 object-cover"
+                />
+              ) : (
+                <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-dashed border-ink-300 bg-ink-50 text-[11px] text-ink-400">
+                  none
+                </div>
+              )}
+            </div>
+            <div className="min-w-0 flex-1">
+              <p className="mb-1.5 text-[11px] font-medium uppercase tracking-wider text-ink-500">Screenshots ({screenshots.length})</p>
+              {screenshots.length === 0 ? (
+                <p className="text-[12.5px] text-ink-400">None submitted</p>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {screenshots.map((mid) => (
+                    <a key={mid} href={`/api/media/${mid}`} target="_blank" rel="noopener noreferrer">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`/api/media/${mid}`}
+                        alt=""
+                        className="h-20 w-32 rounded-xl border border-ink-200 bg-ink-50 object-cover"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          <h2 className="mt-8 text-[14px] font-semibold uppercase tracking-[0.16em] text-ink-500">
             Submission
           </h2>
           <dl className="mt-5 space-y-4">

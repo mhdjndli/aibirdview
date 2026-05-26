@@ -29,10 +29,21 @@ export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }
             <VerifiedIcon /> Verified
           </div>
         )}
-        {/* tool logo monogram */}
-        <div className="absolute left-4 bottom-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-ink-0/95 text-[18px] font-semibold text-ink-800 shadow-sm">
-          {tool.name[0]}
-        </div>
+        {/* tool logo (or monogram) */}
+        {tool.logoMediaId ? (
+          <div className="absolute left-4 bottom-4 h-12 w-12 overflow-hidden rounded-2xl bg-ink-0/95 shadow-sm">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`/api/media/${tool.logoMediaId}`}
+              alt={`${tool.name} logo`}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        ) : (
+          <div className="absolute left-4 bottom-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-ink-0/95 text-[18px] font-semibold text-ink-800 shadow-sm">
+            {tool.name[0]}
+          </div>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-5">

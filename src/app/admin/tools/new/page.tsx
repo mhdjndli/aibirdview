@@ -51,6 +51,10 @@ export default async function NewToolPage() {
           seoTitle: "",
           seoDescription: "",
           metaKeywords: "",
+          logoMediaId: null,
+          screenshot1MediaId: null,
+          screenshot2MediaId: null,
+          screenshot3MediaId: null,
         }}
       />
     </div>

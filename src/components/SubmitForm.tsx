@@ -16,6 +16,11 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  const [logoId, setLogoId] = useState<string | null>(null);
+  const [shot1Id, setShot1Id] = useState<string | null>(null);
+  const [shot2Id, setShot2Id] = useState<string | null>(null);
+  const [shot3Id, setShot3Id] = useState<string | null>(null);
+
   if (submitted) {
     return (
       <div className="rounded-3xl border border-kiwi-200 bg-kiwi-50/60 p-10 text-center">
@@ -26,11 +31,17 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           Submission received.
         </h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-          Our editors will review it within 48 hours. You&apos;ll hear from us at
-          the email you provided.
+          We&apos;ve sent a confirmation to your email and our editors will review
+          your tool within 48 hours.
         </p>
         <button
-          onClick={() => setSubmitted(false)}
+          onClick={() => {
+            setSubmitted(false);
+            setLogoId(null);
+            setShot1Id(null);
+            setShot2Id(null);
+            setShot3Id(null);
+          }}
           className="mt-6 rounded-full border border-ink-200 bg-ink-0 px-5 py-2 text-[13px] font-medium text-ink-700 hover:bg-ink-50"
         >
           Submit another tool
@@ -46,6 +57,10 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
         const fd = new FormData(e.currentTarget);
         if (!fd.get("name") || !fd.get("url") || !fd.get("email")) {
           setError("Please fill in name, URL, and contact email.");
+          return;
+        }
+        if (!logoId) {
+          setError("Please upload your tool's logo.");
           return;
         }
         setError(null);
@@ -68,6 +83,10 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
               role: fd.get("role") || null,
               notes: fd.get("notes") || null,
               terms: fd.get("terms") === "on",
+              logoMediaId: logoId,
+              screenshot1MediaId: shot1Id,
+              screenshot2MediaId: shot2Id,
+              screenshot3MediaId: shot3Id,
             }),
           });
           if (!res.ok) {
@@ -174,6 +193,37 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
       </FieldSet>
 
       <FieldSet
+        title="Brand assets"
+        subtitle="Logo is required. Screenshots are optional but make your listing shine."
+      >
+        <Field
+          label="Logo"
+          required
+          hint="PNG, JPEG, WebP, or SVG · max 4 MB · square works best"
+        >
+          <SquareUploader
+            mediaId={logoId}
+            onChange={setLogoId}
+            aspect="square"
+          />
+        </Field>
+
+        <div className="mt-2">
+          <p className="text-[12.5px] font-medium text-ink-800">
+            Screenshots <span className="text-ink-400">(optional, up to 3)</span>
+          </p>
+          <p className="text-[11.5px] text-ink-500">
+            16:9 product screenshots work best — they&apos;ll appear on your tool detail page.
+          </p>
+          <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <SquareUploader mediaId={shot1Id} onChange={setShot1Id} aspect="wide" label="Screenshot 1" />
+            <SquareUploader mediaId={shot2Id} onChange={setShot2Id} aspect="wide" label="Screenshot 2" />
+            <SquareUploader mediaId={shot3Id} onChange={setShot3Id} aspect="wide" label="Screenshot 3" />
+          </div>
+        </div>
+      </FieldSet>
+
+      <FieldSet
         title="About you"
         subtitle="We'll only use this to reach out about your listing."
       >
@@ -245,6 +295,83 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
         </button>
       </div>
     </form>
+  );
+}
+
+function SquareUploader({
+  mediaId,
+  onChange,
+  aspect = "square",
+  label,
+}: {
+  mediaId: string | null;
+  onChange: (id: string | null) => void;
+  aspect?: "square" | "wide";
+  label?: string;
+}) {
+  const [uploading, setUploading] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
+
+  return (
+    <div>
+      <label
+        className={`relative flex ${
+          aspect === "square" ? "aspect-square max-w-[180px]" : "aspect-[16/10]"
+        } w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border transition-colors ${
+          mediaId
+            ? "border-ink-200 bg-ink-0"
+            : "border-dashed border-ink-300 bg-ink-50/70 hover:bg-ink-50"
+        } ${uploading ? "opacity-60" : ""}`}
+      >
+        {mediaId ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={`/api/media/${mediaId}`} alt="" className="h-full w-full object-cover" />
+        ) : (
+          <span className="px-3 text-center text-[12px] font-medium text-ink-500">
+            {uploading ? "Uploading…" : label ? `+ ${label}` : "+ Upload"}
+          </span>
+        )}
+        <input
+          type="file"
+          accept="image/png,image/jpeg,image/webp,image/svg+xml"
+          className="absolute inset-0 cursor-pointer opacity-0"
+          disabled={uploading}
+          onChange={async (e) => {
+            const f = e.target.files?.[0];
+            if (!f) return;
+            setUploading(true);
+            setErr(null);
+            const fd = new FormData();
+            fd.append("file", f);
+            fd.append("alt", f.name);
+            try {
+              const res = await fetch("/api/media/public", { method: "POST", body: fd });
+              if (!res.ok) {
+                const data = await res.json().catch(() => null);
+                setErr(data?.error || "Upload failed.");
+                return;
+              }
+              const data = (await res.json()) as { id: string };
+              onChange(data.id);
+            } catch {
+              setErr("Network error — please try again.");
+            } finally {
+              setUploading(false);
+            }
+          }}
+        />
+      </label>
+      {mediaId && (
+        <button
+          type="button"
+          onClick={() => onChange(null)}
+          className="mt-1.5 text-[11.5px] text-ink-500 hover:text-rose-600"
+        >
+          Remove
+        </button>
+      )}
+      {err && <p className="mt-1.5 text-[11.5px] text-rose-600">{err}</p>}
+    </div>
   );
 }
 

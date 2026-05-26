@@ -29,6 +29,10 @@ type ToolDefaults = {
   seoTitle: string | null;
   seoDescription: string | null;
   metaKeywords: string | null;
+  logoMediaId: string | null;
+  screenshot1MediaId: string | null;
+  screenshot2MediaId: string | null;
+  screenshot3MediaId: string | null;
 };
 
 type CategoryOption = { slug: string; name: string };
@@ -65,6 +69,10 @@ export function ToolForm({
   const [from, setFrom] = useState(initial.swatchFrom);
   const [to, setTo] = useState(initial.swatchTo);
   const [name, setName] = useState(initial.name);
+  const [logoId, setLogoId] = useState<string | null>(initial.logoMediaId);
+  const [s1, setS1] = useState<string | null>(initial.screenshot1MediaId);
+  const [s2, setS2] = useState<string | null>(initial.screenshot2MediaId);
+  const [s3, setS3] = useState<string | null>(initial.screenshot3MediaId);
 
   return (
     <form
@@ -154,6 +162,28 @@ export function ToolForm({
           </Grid2>
         </Card>
 
+        <Card title="Brand assets">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-[140px_1fr]">
+            <div>
+              <p className="mb-1.5 text-[12.5px] font-medium text-ink-800">Logo</p>
+              <AdminMediaPicker mediaId={logoId} onChange={setLogoId} aspect="square" />
+            </div>
+            <div>
+              <p className="mb-1.5 text-[12.5px] font-medium text-ink-800">Screenshots (up to 3)</p>
+              <div className="grid grid-cols-3 gap-2">
+                <AdminMediaPicker mediaId={s1} onChange={setS1} aspect="wide" />
+                <AdminMediaPicker mediaId={s2} onChange={setS2} aspect="wide" />
+                <AdminMediaPicker mediaId={s3} onChange={setS3} aspect="wide" />
+              </div>
+              <p className="mt-2 text-[11px] text-ink-500">The first screenshot becomes the hero image on the tool detail page.</p>
+            </div>
+          </div>
+          <input type="hidden" name="logoMediaId" value={logoId ?? ""} />
+          <input type="hidden" name="screenshot1MediaId" value={s1 ?? ""} />
+          <input type="hidden" name="screenshot2MediaId" value={s2 ?? ""} />
+          <input type="hidden" name="screenshot3MediaId" value={s3 ?? ""} />
+        </Card>
+
         <Card title="SEO">
           <Field label="SEO title" hint="Defaults to '[Name] Review (year) — Features, Pricing & Alternatives | AI BirdView' if blank.">
             <input name="seoTitle" maxLength={140} defaultValue={initial.seoTitle ?? ""} className={inputCls} />
@@ -237,6 +267,71 @@ function slugifyPreview(s: string) {
 
 const inputCls =
   "w-full rounded-xl border border-ink-200 bg-ink-0 px-3.5 py-2 text-[13.5px] text-ink-800 placeholder:text-ink-400 outline-none focus:border-ink-400";
+
+function AdminMediaPicker({
+  mediaId,
+  onChange,
+  aspect = "square",
+}: {
+  mediaId: string | null;
+  onChange: (id: string | null) => void;
+  aspect?: "square" | "wide";
+}) {
+  const [busy, setBusy] = useState(false);
+  return (
+    <div>
+      <label
+        className={`relative flex ${
+          aspect === "square" ? "aspect-square" : "aspect-[16/10]"
+        } w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl border transition-colors ${
+          mediaId ? "border-ink-200 bg-ink-0" : "border-dashed border-ink-300 bg-ink-50/70 hover:bg-ink-50"
+        } ${busy ? "opacity-60" : ""}`}
+      >
+        {mediaId ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={`/api/media/${mediaId}`} alt="" className="h-full w-full object-cover" />
+        ) : (
+          <span className="text-[11.5px] font-medium text-ink-500">{busy ? "Uploading…" : "+ Upload"}</span>
+        )}
+        <input
+          type="file"
+          accept="image/png,image/jpeg,image/webp,image/svg+xml"
+          className="absolute inset-0 cursor-pointer opacity-0"
+          disabled={busy}
+          onChange={async (e) => {
+            const f = e.target.files?.[0];
+            if (!f) return;
+            setBusy(true);
+            const fd = new FormData();
+            fd.append("file", f);
+            fd.append("alt", f.name);
+            try {
+              const res = await fetch("/api/media", { method: "POST", body: fd });
+              if (!res.ok) {
+                const data = await res.json().catch(() => null);
+                alert(data?.error || "Upload failed");
+                return;
+              }
+              const data = (await res.json()) as { id: string };
+              onChange(data.id);
+            } finally {
+              setBusy(false);
+            }
+          }}
+        />
+      </label>
+      {mediaId && (
+        <button
+          type="button"
+          onClick={() => onChange(null)}
+          className="mt-1 text-[10.5px] text-ink-500 hover:text-rose-600"
+        >
+          Remove
+        </button>
+      )}
+    </div>
+  );
+}
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (

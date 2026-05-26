@@ -86,6 +86,10 @@ export default async function EditToolPage({
           seoTitle: tool.seoTitle,
           seoDescription: tool.seoDescription,
           metaKeywords: tool.metaKeywords,
+          logoMediaId: tool.logoMediaId,
+          screenshot1MediaId: tool.screenshot1MediaId,
+          screenshot2MediaId: tool.screenshot2MediaId,
+          screenshot3MediaId: tool.screenshot3MediaId,
         }}
       />
     </div>

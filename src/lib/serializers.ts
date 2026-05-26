@@ -27,6 +27,8 @@ export type SerializedTool = {
   alternatives: SerializedToolLite[];
   seoTitle: string | null;
   seoDescription: string | null;
+  logoMediaId: string | null;
+  screenshots: string[]; // media ids (in order, only non-null)
 };
 
 export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features" | "pros" | "cons" | "longDescription"> & {
@@ -97,9 +99,13 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
       tags: [],
       seoTitle: a.toTool.seoTitle,
       seoDescription: a.toTool.seoDescription,
+      logoMediaId: a.toTool.logoMediaId,
+      screenshots: [a.toTool.screenshot1MediaId, a.toTool.screenshot2MediaId, a.toTool.screenshot3MediaId].filter(Boolean) as string[],
     })),
     seoTitle: tool.seoTitle,
     seoDescription: tool.seoDescription,
+    logoMediaId: tool.logoMediaId,
+    screenshots: [tool.screenshot1MediaId, tool.screenshot2MediaId, tool.screenshot3MediaId].filter(Boolean) as string[],
   };
 }
 

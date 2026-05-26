@@ -39,6 +39,10 @@ const toolSchema = z.object({
   seoTitle: z.string().max(140).optional().nullable(),
   seoDescription: z.string().max(320).optional().nullable(),
   metaKeywords: z.string().max(240).optional().nullable(),
+  logoMediaId: z.string().optional().nullable(),
+  screenshot1MediaId: z.string().optional().nullable(),
+  screenshot2MediaId: z.string().optional().nullable(),
+  screenshot3MediaId: z.string().optional().nullable(),
 });
 
 function lines(input: string | undefined | null) {
@@ -121,6 +125,10 @@ export async function saveTool(slugFromUrl: string | null, formData: FormData) {
     seoDescription: v.seoDescription?.trim() || null,
     metaKeywords: v.metaKeywords?.trim() || null,
     categoryId: category.id,
+    logoMediaId: v.logoMediaId?.trim() || null,
+    screenshot1MediaId: v.screenshot1MediaId?.trim() || null,
+    screenshot2MediaId: v.screenshot2MediaId?.trim() || null,
+    screenshot3MediaId: v.screenshot3MediaId?.trim() || null,
   };
 
   let toolId: string;
