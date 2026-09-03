@@ -29,9 +29,18 @@ export type SerializedTool = {
   seoDescription: string | null;
   logoMediaId: string | null;
   screenshots: string[]; // media ids (in order, only non-null)
+  reviews: SerializedReview[];
 };
 
-export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features" | "pros" | "cons" | "longDescription"> & {
+export type SerializedReview = {
+  id: string;
+  name: string;
+  stars: number;
+  text: string | null;
+  createdAt: string; // ISO
+};
+
+export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features" | "pros" | "cons" | "longDescription" | "reviews"> & {
   features?: string[];
   pros?: string[];
   cons?: string[];
@@ -45,6 +54,7 @@ type ToolWithRelations = Prisma.ToolGetPayload<{
     cons: true;
     tags: true;
     alternatives: { include: { toTool: { include: { category: true } } } };
+    reviews: true;
   };
 }>;
 
@@ -106,6 +116,13 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
     seoDescription: tool.seoDescription,
     logoMediaId: tool.logoMediaId,
     screenshots: [tool.screenshot1MediaId, tool.screenshot2MediaId, tool.screenshot3MediaId].filter(Boolean) as string[],
+    reviews: tool.reviews.map((r) => ({
+      id: r.id,
+      name: r.name,
+      stars: r.stars,
+      text: r.text,
+      createdAt: r.createdAt.toISOString(),
+    })),
   };
 }
 

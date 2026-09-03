@@ -18,6 +18,7 @@ const NAV: { label: string; items: NavItem[] }[] = [
     items: [
       { href: "/admin/submissions", label: "Submissions", icon: <InboxIcon /> },
       { href: "/admin/tools", label: "Tools", icon: <ToolIcon /> },
+      { href: "/admin/reviews", label: "Reviews", icon: <StarNavIcon /> },
       { href: "/admin/categories", label: "Categories", icon: <FolderIcon /> },
     ],
   },
@@ -156,6 +157,13 @@ function DashIcon() {
       <rect x="9.5" y="2.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
       <rect x="2.5" y="9.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
       <rect x="9.5" y="9.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
+    </svg>
+  );
+}
+function StarNavIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+      <path d="M8 2.2l1.8 3.6 4 .6-2.9 2.8.7 4L8 11.3l-3.6 1.9.7-4-2.9-2.8 4-.6z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
     </svg>
   );
 }

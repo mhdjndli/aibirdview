@@ -8,40 +8,42 @@ export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }
       href={`/tools/${tool.slug}`}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-ink-200 bg-ink-0 transition-all duration-500 ease-[var(--ease-spring)] hover:-translate-y-0.5 hover:border-ink-300 hover:shadow-[0_10px_30px_-12px_rgba(0,0,0,0.18)]"
     >
-      {/* Visual swatch */}
-      <div
-        className="relative aspect-[16/9] overflow-hidden"
-        style={{
-          background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
-        }}
-      >
-        <div className="absolute inset-0 opacity-90 mix-blend-soft-light"
+      {/* Cover: the tool's logo front and center */}
+      <div className="relative aspect-[16/9] overflow-hidden border-b border-ink-100 bg-ink-50">
+        <div
+          className="absolute inset-0"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.55), transparent 35%), radial-gradient(circle at 80% 70%, rgba(0,0,0,0.18), transparent 40%)",
+              "radial-gradient(circle at 50% 120%, rgba(0,0,0,0.05), transparent 60%)",
           }}
         />
+        <div className="absolute inset-0 flex items-center justify-center">
+          {tool.logoMediaId ? (
+            <div className="h-[76px] w-[76px] overflow-hidden rounded-[22px] bg-ink-0 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] ring-1 ring-ink-900/5 transition-transform duration-500 ease-[var(--ease-spring)] group-hover:scale-[1.06]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/api/media/${tool.logoMediaId}`}
+                alt={`${tool.name} logo`}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          ) : (
+            <div
+              className="flex h-[76px] w-[76px] items-center justify-center rounded-[22px] text-[30px] font-semibold text-ink-900 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.25)] ring-1 ring-ink-900/5 transition-transform duration-500 ease-[var(--ease-spring)] group-hover:scale-[1.06]"
+              style={{
+                background: `linear-gradient(135deg, ${tool.swatch[0]} 0%, ${tool.swatch[1]} 100%)`,
+              }}
+            >
+              {tool.name[0]}
+            </div>
+          )}
+        </div>
         <div className="absolute left-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-ink-900/85 px-2.5 py-1 text-[11px] font-medium text-ink-0 backdrop-blur">
           {category?.glyph} <span>{category?.name}</span>
         </div>
         {tool.verified && (
           <div className="absolute right-4 top-4 inline-flex items-center gap-1 rounded-full bg-ink-0/95 px-2 py-1 text-[11px] font-medium text-ink-800 shadow-sm">
             <VerifiedIcon /> Verified
-          </div>
-        )}
-        {/* tool logo (or monogram) */}
-        {tool.logoMediaId ? (
-          <div className="absolute left-4 bottom-4 h-12 w-12 overflow-hidden rounded-2xl bg-ink-0/95 shadow-sm">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={`/api/media/${tool.logoMediaId}`}
-              alt={`${tool.name} logo`}
-              className="h-full w-full object-cover"
-            />
-          </div>
-        ) : (
-          <div className="absolute left-4 bottom-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-ink-0/95 text-[18px] font-semibold text-ink-800 shadow-sm">
-            {tool.name[0]}
           </div>
         )}
       </div>

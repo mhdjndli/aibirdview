@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ToolCard } from "@/components/ToolCard";
+import { ReviewForm } from "@/components/ReviewForm";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
@@ -328,6 +329,47 @@ export default async function ToolPage({
               )}
             </div>
           )}
+
+          {/* Reader reviews */}
+          <div className="mt-16">
+            <h3 className="text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
+              Reader reviews
+            </h3>
+            <p className="mt-1 text-[13px] text-ink-500">
+              From people who&apos;ve used {tool.name}. Emails are never shown publicly.
+            </p>
+            <div className="mt-5">
+              <ReviewForm toolSlug={tool.slug} toolName={tool.name} />
+            </div>
+            {tool.reviews.length > 0 ? (
+              <ul className="mt-6 space-y-4">
+                {tool.reviews.map((r) => (
+                  <li key={r.id} className="rounded-2xl border border-ink-200 bg-ink-0 p-5">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="text-[14px] font-semibold text-ink-900">{r.name}</p>
+                      <span className="inline-flex items-center gap-1.5">
+                        <StarRow n={r.stars} />
+                        <span className="text-[12px] text-ink-400">
+                          {new Date(r.createdAt).toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "short",
+                            day: "numeric",
+                          })}
+                        </span>
+                      </span>
+                    </div>
+                    {r.text && (
+                      <p className="mt-2.5 text-[14px] leading-relaxed text-ink-700">{r.text}</p>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mt-6 text-[14px] text-ink-500">
+                No reviews yet — be the first to share your experience.
+              </p>
+            )}
+          </div>
         </div>
 
         <aside className="lg:sticky lg:top-24 lg:self-start">
@@ -409,6 +451,19 @@ function Row({ label, children }: { label: string; children: React.ReactNode }) 
       <dt className="text-ink-500">{label}</dt>
       <dd className="text-right">{children}</dd>
     </div>
+  );
+}
+
+
+function StarRow({ n }: { n: number }) {
+  return (
+    <span className="inline-flex" aria-label={`${n} out of 5 stars`}>
+      {[1, 2, 3, 4, 5].map((i) => (
+        <svg key={i} width="13" height="13" viewBox="0 0 12 12" fill={i <= n ? "#f5b400" : "#e5e5ea"}>
+          <path d="M6 1.2l1.5 3.04 3.36.49-2.43 2.37.57 3.33L6 8.85 3 10.43l.57-3.33L1.14 4.73l3.36-.49z" />
+        </svg>
+      ))}
+    </span>
   );
 }
 

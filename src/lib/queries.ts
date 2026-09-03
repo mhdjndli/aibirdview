@@ -39,7 +39,11 @@ const TOOL_INCLUDE = {
   pros: { orderBy: { order: "asc" } },
   cons: { orderBy: { order: "asc" } },
   tags: true,
-  alternatives: { include: { toTool: { include: { category: true } } } },
+  alternatives: {
+    where: { toTool: { published: true } },
+    include: { toTool: { include: { category: true } } },
+  },
+  reviews: { orderBy: { createdAt: "desc" as const } },
   logo: true,
   thumbnail: true,
   screenshot1: true,
