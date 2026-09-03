@@ -27,6 +27,7 @@ export type SerializedTool = {
   alternatives: SerializedToolLite[];
   seoTitle: string | null;
   seoDescription: string | null;
+  metaKeywords: string | null;
   logoMediaId: string | null;
   screenshots: string[]; // media ids (in order, only non-null)
   reviews: SerializedReview[];
@@ -109,11 +110,13 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
       tags: [],
       seoTitle: a.toTool.seoTitle,
       seoDescription: a.toTool.seoDescription,
+      metaKeywords: a.toTool.metaKeywords,
       logoMediaId: a.toTool.logoMediaId,
       screenshots: [a.toTool.screenshot1MediaId, a.toTool.screenshot2MediaId, a.toTool.screenshot3MediaId].filter(Boolean) as string[],
     })),
     seoTitle: tool.seoTitle,
     seoDescription: tool.seoDescription,
+    metaKeywords: tool.metaKeywords,
     logoMediaId: tool.logoMediaId,
     screenshots: [tool.screenshot1MediaId, tool.screenshot2MediaId, tool.screenshot3MediaId].filter(Boolean) as string[],
     reviews: tool.reviews.map((r) => ({

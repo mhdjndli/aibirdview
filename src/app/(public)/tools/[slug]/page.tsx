@@ -36,6 +36,7 @@ export async function generateMetadata({
   return {
     title: seoTitle,
     description: seoDescription,
+    ...(tool.metaKeywords ? { keywords: tool.metaKeywords } : {}),
     alternates: {
       canonical: `/tools/${tool.slug}`,
     },
