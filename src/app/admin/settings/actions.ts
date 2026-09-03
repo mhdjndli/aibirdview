@@ -23,7 +23,7 @@ export async function saveSettings(formData: FormData) {
   const stats = {
     listed: (formData.get("stat_listed") as string) || "1,200+",
     categories: (formData.get("stat_categories") as string) || "72",
-    reviewTime: (formData.get("stat_reviewTime") as string) || "48hr",
+    reviewTime: (formData.get("stat_reviewTime") as string) || "24hr",
     readers: (formData.get("stat_readers") as string) || "140k",
   };
 

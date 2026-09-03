@@ -3,8 +3,11 @@
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
-import { uniqueSlug } from "@/lib/slugify";
 import { auth } from "@/auth";
+import {
+  approveSubmissionById,
+  notifySubmitterApproved,
+} from "@/lib/approve-submission";
 
 async function requireAdmin() {
   const session = await auth();
@@ -14,58 +17,18 @@ async function requireAdmin() {
 export async function approveSubmission(submissionId: string, formData: FormData) {
   await requireAdmin();
 
-  const sub = await prisma.submission.findUnique({ where: { id: submissionId } });
-  if (!sub) throw new Error("Submission not found.");
-  if (sub.status === "APPROVED") throw new Error("Already approved.");
-
-  const categorySlug = (formData.get("category") as string) || sub.categorySlug;
-  const category = await prisma.category.findUnique({ where: { slug: categorySlug } });
-  if (!category) throw new Error(`Category "${categorySlug}" doesn't exist. Add it first.`);
-
-  const slug = await uniqueSlug(sub.name, async (s) =>
-    Boolean(await prisma.tool.findUnique({ where: { slug: s } }))
-  );
-
-  const description = (formData.get("description") as string) || sub.description || sub.tagline || `${sub.name} on AI BirdView`;
-  const longDescription = (formData.get("longDescription") as string) || sub.description || sub.tagline || description;
-
-  // pick a deterministic-ish swatch
-  const palettes: [string, string][] = [
-    ["#c8e6a8", "#8dc474"], ["#fde68a", "#f59e0b"], ["#fecaca", "#ef4444"],
-    ["#bae6fd", "#0ea5e9"], ["#ddd6fe", "#8b5cf6"], ["#a7f3d0", "#10b981"],
-    ["#fed7aa", "#f97316"], ["#c7d2fe", "#6366f1"],
-  ];
-  const idx = Math.abs(hash(sub.id)) % palettes.length;
-  const [swatchFrom, swatchTo] = palettes[idx];
-
-  const tool = await prisma.tool.create({
-    data: {
-      slug,
-      name: sub.name,
-      tagline: sub.tagline || "",
-      description,
-      longDescription,
-      url: sub.url,
-      pricing: sub.pricing,
-      priceFrom: sub.priceFrom ?? null,
-      founded: sub.founded ?? null,
-      featured: false,
-      trending: false,
-      verified: true,
-      published: true,
-      swatchFrom,
-      swatchTo,
-      categoryId: category.id,
-      logoMediaId: sub.logoMediaId ?? null,
-      screenshot1MediaId: sub.screenshot1MediaId ?? null,
-      screenshot2MediaId: sub.screenshot2MediaId ?? null,
-      screenshot3MediaId: sub.screenshot3MediaId ?? null,
-    },
+  const { tool, submission, category } = await approveSubmissionById(submissionId, {
+    categorySlug: (formData.get("category") as string) || undefined,
+    description: (formData.get("description") as string) || undefined,
+    longDescription: (formData.get("longDescription") as string) || undefined,
   });
 
-  await prisma.submission.update({
-    where: { id: sub.id },
-    data: { status: "APPROVED", toolId: tool.id, reviewedAt: new Date() },
+  // Fire-and-forget; approval must succeed even if email delivery flakes.
+  void notifySubmitterApproved({
+    toolName: tool.name,
+    contactName: submission.contactName,
+    email: submission.email,
+    toolSlug: tool.slug,
   });
 
   revalidatePath("/admin/submissions");
@@ -93,10 +56,4 @@ export async function reopenSubmission(submissionId: string) {
   });
   revalidatePath("/admin/submissions");
   redirect(`/admin/submissions/${submissionId}`);
-}
-
-function hash(s: string) {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
-  return h;
 }

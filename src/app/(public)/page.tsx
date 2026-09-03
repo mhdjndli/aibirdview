@@ -35,7 +35,7 @@ export default async function Home() {
   const stats = {
     listed: statsSetting?.listed ?? "1,200+",
     categories: statsSetting?.categories ?? String(categories.length),
-    reviewTime: statsSetting?.reviewTime ?? "48hr",
+    reviewTime: statsSetting?.reviewTime ?? "24hr",
     readers: statsSetting?.readers ?? "140k",
   };
 
@@ -305,7 +305,7 @@ export default async function Home() {
               Get your AI tool in front of the right people.
             </h2>
             <p className="mx-auto mt-5 max-w-lg text-[16px] leading-relaxed text-ink-300">
-              Free to submit, reviewed within 48 hours. Featured listings are
+              Free to submit, live within 24 hours. Featured listings are
               hand-picked by our editors.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

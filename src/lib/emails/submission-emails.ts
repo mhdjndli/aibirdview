@@ -50,7 +50,7 @@ export function submitterConfirmationEmail(args: {
   categoryName: string;
 }) {
   const subject = `We've got ${args.toolName} — review starts now`;
-  const preheader = `Your submission landed safely. Our editors will get back to you within 48 hours.`;
+  const preheader = `Your submission landed safely. It will be reviewed and go live within 24 hours.`;
 
   const html = shell({
     preheader,
@@ -60,7 +60,7 @@ export function submitterConfirmationEmail(args: {
           Thanks, ${escapeHtml(args.contactName)}. We've got it.
         </h1>
         <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">
-          Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our review queue. One of our editors will look at it within 48 hours.
+          Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our review queue. It will be reviewed and go live within 24 hours.
         </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
           We test every tool with a real workflow before listing it. We'll either publish it, ask you a quick question, or let you know if it isn't a fit yet — either way, you'll hear back.
@@ -88,7 +88,7 @@ export function submitterConfirmationEmail(args: {
 
   const text = `Thanks, ${args.contactName}.
 
-We've received your submission for ${args.toolName}. One of our editors will review it within 48 hours and email you back.
+We've received your submission for ${args.toolName}. It will be reviewed and go live within 24 hours — we'll email you as soon as it's published.
 
 What we received:
   Tool:     ${args.toolName}
@@ -206,4 +206,47 @@ function escapeHtml(s: string) {
 }
 function escapeAttr(s: string) {
   return escapeHtml(s);
+}
+
+// -------- Submitter approval (tool is live) --------
+
+export function submitterApprovedEmail(args: {
+  toolName: string;
+  contactName: string;
+  toolUrl: string;
+}) {
+  const subject = `${args.toolName} is now live on ${SITE.name}`;
+  const preheader = `Your listing has been approved and published. Take a look.`;
+
+  const html = shell({
+    preheader,
+    content: `
+      <tr><td style="padding:8px 32px 0;">
+        <p style="margin:18px 0 6px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:${KIWI_DARK};">Approved</p>
+        <h1 style="margin:0 0 8px;font-size:24px;line-height:1.25;letter-spacing:-0.022em;color:${INK_900};font-weight:600;">
+          ${escapeHtml(args.toolName)} is live.
+        </h1>
+        <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">
+          Good news, ${escapeHtml(args.contactName)} — your submission has been approved and <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> is now listed in the directory.
+        </p>
+        <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
+          If anything on the listing looks off, just reply to this email and our editors will fix it.
+        </p>
+      </td></tr>
+
+      <tr><td style="padding:0 32px 28px;">
+        <a href="${escapeAttr(args.toolUrl)}" style="display:inline-block;background:${INK_900};color:#ffffff;text-decoration:none;font-size:14px;font-weight:500;padding:12px 22px;border-radius:999px;">View your listing →</a>
+      </td></tr>
+    `,
+  });
+
+  const text = `Good news, ${args.contactName} — ${args.toolName} has been approved and is now live on ${SITE.name}.
+
+View your listing: ${args.toolUrl}
+
+If anything on the listing looks off, just reply to this email and our editors will fix it.
+
+— The ${SITE.name} team`;
+
+  return { subject, html, text };
 }

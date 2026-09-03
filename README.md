@@ -42,3 +42,14 @@ src/
 ## Deployment
 
 This project is configured for Railway. The `Procfile`/start command runs `next start` on `$PORT`.
+
+## Submission auto-approval
+
+New tool submissions are published automatically once they've been in the
+queue for 24 hours (configurable via `AUTO_APPROVE_AFTER_HOURS`). The sweep
+runs hourly from `src/instrumentation.ts`, which POSTs to
+`/api/cron/auto-approve`. Approved submitters get a "your tool is live" email.
+
+To reject something before it goes live, use the admin submissions queue
+within the 24-hour window. An external scheduler can also trigger the route
+directly — set `CRON_SECRET` and send it as `Authorization: Bearer <secret>`.

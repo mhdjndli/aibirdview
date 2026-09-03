@@ -31,8 +31,8 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           Submission received.
         </h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-          We&apos;ve sent a confirmation to your email and our editors will review
-          your tool within 48 hours.
+          We&apos;ve sent a confirmation to your email — your tool will be reviewed
+          and live within 24 hours.
         </p>
         <button
           onClick={() => {
@@ -284,7 +284,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-200 pt-6">
         <p className="text-[12px] text-ink-500">
-          We&apos;ll review and respond within 48 hours.
+          We&apos;ll review and publish within 24 hours.
         </p>
         <button
           type="submit"

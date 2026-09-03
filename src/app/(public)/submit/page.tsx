@@ -23,7 +23,7 @@ export default async function SubmitPage() {
             Put your AI in front of the people who&apos;ll use it.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-ink-500">
-            Free to submit, reviewed within 48 hours, no SEO games. We test each
+            Free to submit, live within 24 hours, no SEO games. We test each
             tool with a real workflow before publishing.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-2 text-[12px]">
