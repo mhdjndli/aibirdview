@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { EmailVerify } from "@/components/EmailVerify";
 
 type CategoryOption = { slug: string; name: string };
 
@@ -15,6 +16,10 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
   const [submitted, setSubmitted] = useState(false);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const [email, setEmail] = useState("");
+  const [verifiedEmail, setVerifiedEmail] = useState<string | null>(null);
+  const emailVerified = verifiedEmail !== null && verifiedEmail === email.trim().toLowerCase();
 
   const [logoId, setLogoId] = useState<string | null>(null);
   const [shot1Id, setShot1Id] = useState<string | null>(null);
@@ -61,6 +66,10 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
         }
         if (!logoId) {
           setError("Please upload your tool's logo.");
+          return;
+        }
+        if (!emailVerified) {
+          setError("Verify your email first.");
           return;
         }
         setError(null);
@@ -237,7 +246,15 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
               type="email"
               required
               placeholder="you@company.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className={inputCls}
+            />
+            <EmailVerify
+              key={email}
+              email={email}
+              verified={emailVerified}
+              onVerified={() => setVerifiedEmail(email.trim().toLowerCase())}
             />
           </Field>
         </div>

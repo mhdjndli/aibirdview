@@ -59,9 +59,11 @@ export default async function Image({
           display: "flex", alignItems: "center", gap: "14px",
           fontSize: 22, color: "rgba(11,11,13,0.7)", fontWeight: 600,
         }}>
-          <span style={{
-            padding: "8px 14px", background: "rgba(255,255,255,0.7)", borderRadius: 999, color: "#0b0b0d",
-          }}>★ {tool.rating.toFixed(1)}</span>
+          {tool.ratingCount > 0 && (
+            <span style={{
+              padding: "8px 14px", background: "rgba(255,255,255,0.7)", borderRadius: 999, color: "#0b0b0d",
+            }}>★ {tool.rating.toFixed(1)}</span>
+          )}
           <span style={{
             padding: "8px 14px", background: "rgba(255,255,255,0.7)", borderRadius: 999, color: "#0b0b0d",
           }}>{tool.pricing}{tool.priceFrom ? ` · ${tool.priceFrom}` : ""}</span>

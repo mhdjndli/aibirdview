@@ -59,10 +59,16 @@ export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }
             </p>
           </div>
           <div className="shrink-0 text-right">
-            <div className="flex items-center gap-1 text-[12px] font-medium text-ink-800">
-              <StarIcon /> {tool.rating.toFixed(1)}
-            </div>
-            <div className="text-[11px] text-ink-400">{tool.ratingCount.toLocaleString()}</div>
+            {tool.ratingCount > 0 ? (
+              <>
+                <div className="flex items-center gap-1 text-[12px] font-medium text-ink-800">
+                  <StarIcon /> {tool.rating.toFixed(1)}
+                </div>
+                <div className="text-[11px] text-ink-400">{tool.ratingCount.toLocaleString()}</div>
+              </>
+            ) : (
+              <div className="text-[11px] text-ink-400">No rating yet</div>
+            )}
           </div>
         </div>
 

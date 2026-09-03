@@ -95,7 +95,7 @@ export default async function ToolPage({
                     worstRating: "1",
                   }
                 : undefined,
-            review: {
+            review: tool.ratingCount === 0 ? undefined : {
               "@type": "Review",
               author: { "@type": "Organization", name: SITE.name },
               reviewBody: tool.longDescription,
@@ -199,8 +199,15 @@ export default async function ToolPage({
                   Visit {tool.name} →
                 </a>
                 <span className="inline-flex items-center gap-1 rounded-full border border-ink-200 bg-ink-0 px-3 py-2 text-[13px] text-ink-700">
-                  <StarIcon /> {tool.rating.toFixed(1)} ·{" "}
-                  {tool.ratingCount.toLocaleString()} reviews
+                  {tool.ratingCount > 0 ? (
+                    <>
+                      <StarIcon /> {tool.rating.toFixed(1)} ·{" "}
+                      {tool.ratingCount.toLocaleString()}{" "}
+                      {tool.ratingCount === 1 ? "review" : "reviews"}
+                    </>
+                  ) : (
+                    <>No rating yet</>
+                  )}
                 </span>
                 <span className="inline-flex items-center gap-1 rounded-full border border-ink-200 bg-ink-0 px-3 py-2 text-[13px] text-ink-700">
                   {tool.pricing}
@@ -398,7 +405,7 @@ export default async function ToolPage({
               {tool.founded && <Row label="Founded">{tool.founded}</Row>}
               <Row label="Rating">
                 <span className="text-ink-800">
-                  ★ {tool.rating.toFixed(1)} / 5
+                  {tool.ratingCount > 0 ? `★ ${tool.rating.toFixed(1)} / 5` : "No rating yet"}
                 </span>
               </Row>
             </dl>

@@ -250,3 +250,41 @@ If anything on the listing looks off, just reply to this email and our editors w
 
   return { subject, html, text };
 }
+
+// -------- Email verification code --------
+
+export function verificationCodeEmail(args: { code: string }) {
+  const subject = `${args.code} is your ${SITE.name} verification code`;
+  const preheader = `Enter this code to verify your email address. It expires in 15 minutes.`;
+
+  const html = shell({
+    preheader,
+    content: `
+      <tr><td style="padding:8px 32px 0;">
+        <p style="margin:18px 0 6px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:${KIWI_DARK};">Verify your email</p>
+        <h1 style="margin:0 0 8px;font-size:24px;line-height:1.25;letter-spacing:-0.022em;color:${INK_900};font-weight:600;">
+          Your verification code
+        </h1>
+        <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
+          Enter this code on ${SITE.name} to confirm your email address. It expires in 15 minutes.
+        </p>
+      </td></tr>
+      <tr><td style="padding:0 32px 24px;">
+        <div style="display:inline-block;border:1px solid ${INK_300};border-radius:14px;background:${INK_50};padding:16px 28px;font-size:32px;font-weight:700;letter-spacing:0.35em;color:${INK_900};">
+          ${escapeHtml(args.code)}
+        </div>
+        <p style="margin:16px 0 0;font-size:13px;line-height:1.5;color:${INK_500};">
+          Didn't request this? You can safely ignore this email.
+        </p>
+      </td></tr>
+    `,
+  });
+
+  const text = `Your ${SITE.name} verification code: ${args.code}
+
+Enter it on the site to confirm your email address. It expires in 15 minutes.
+
+Didn't request this? You can safely ignore this email.`;
+
+  return { subject, html, text };
+}

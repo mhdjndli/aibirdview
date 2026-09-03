@@ -60,6 +60,13 @@ type ToolWithRelations = Prisma.ToolGetPayload<{
 }>;
 
 export function serializeTool(tool: ToolWithRelations): SerializedTool {
+  // Genuine ratings: real visitor reviews take precedence; the admin-set
+  // rating/ratingCount only show while a tool has no reviews yet.
+  const reviewCount = tool.reviews.length;
+  const reviewAvg =
+    reviewCount > 0
+      ? tool.reviews.reduce((sum, r) => sum + r.stars, 0) / reviewCount
+      : 0;
   return {
     slug: tool.slug,
     name: tool.name,
@@ -75,8 +82,8 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
     },
     pricing: PRICING_LABELS[tool.pricing] as PricingLabel,
     priceFrom: tool.priceFrom,
-    rating: tool.rating,
-    ratingCount: tool.ratingCount,
+    rating: reviewCount > 0 ? reviewAvg : tool.rating,
+    ratingCount: reviewCount > 0 ? reviewCount : tool.ratingCount,
     founded: tool.founded,
     featured: tool.featured,
     trending: tool.trending,

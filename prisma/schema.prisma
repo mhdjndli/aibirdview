@@ -207,6 +207,22 @@ enum SubmissionStatus {
   REJECTED
 }
 
+// ---------- Email verification ----------
+
+// One row per email address. A 6-digit code is (re)issued on demand and the
+// address counts as verified for VERIFIED_TTL after a successful confirm.
+// Both tool submissions and reviews require a verified email.
+model EmailVerification {
+  id         String    @id @default(cuid())
+  email      String    @unique
+  code       String
+  expiresAt  DateTime
+  attempts   Int       @default(0)
+  verifiedAt DateTime?
+  lastSentAt DateTime  @default(now())
+  createdAt  DateTime  @default(now())
+}
+
 // ---------- Reviews ----------
 
 // Visitor reviews. Shown on the tool page as-is; the displayed aggregate

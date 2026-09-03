@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { prisma } from "@/lib/prisma";
+import { isEmailVerified } from "@/lib/email-verification";
 
 const reviewSchema = z.object({
   toolSlug: z.string().min(1),
@@ -27,6 +28,13 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: first || "Invalid review" }, { status: 422 });
   }
   const v = parsed.data;
+
+  if (!(await isEmailVerified(v.email))) {
+    return NextResponse.json(
+      { error: "Verify your email first." },
+      { status: 403 }
+    );
+  }
 
   const tool = await prisma.tool.findUnique({
     where: { slug: v.toolSlug },

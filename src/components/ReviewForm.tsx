@@ -1,11 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { EmailVerify } from "@/components/EmailVerify";
 
 export function ReviewForm({ toolSlug, toolName }: { toolSlug: string; toolName: string }) {
   const [open, setOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [verifiedEmail, setVerifiedEmail] = useState<string | null>(null);
+  const emailVerified = verifiedEmail !== null && verifiedEmail === email.trim().toLowerCase();
   const [stars, setStars] = useState(0);
   const [hovered, setHovered] = useState(0);
   const [text, setText] = useState("");
@@ -19,6 +22,10 @@ export function ReviewForm({ toolSlug, toolName }: { toolSlug: string; toolName:
     setError(null);
     if (stars === 0) {
       setError("Pick a star rating.");
+      return;
+    }
+    if (!emailVerified) {
+      setError("Verify your email first.");
       return;
     }
     setBusy(true);
@@ -124,6 +131,13 @@ export function ReviewForm({ toolSlug, toolName }: { toolSlug: string; toolName:
           className="rounded-xl border border-ink-200 bg-ink-0 px-4 py-2.5 text-[14px] text-ink-900 outline-none placeholder:text-ink-400 focus:border-kiwi-400"
         />
       </div>
+
+      <EmailVerify
+        key={email}
+        email={email}
+        verified={emailVerified}
+        onVerified={() => setVerifiedEmail(email.trim().toLowerCase())}
+      />
 
       <textarea
         maxLength={2000}

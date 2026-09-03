@@ -3,6 +3,7 @@ import { z } from "zod";
 import { prisma } from "@/lib/prisma";
 import type { Pricing } from "@prisma/client";
 import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
+import { isEmailVerified } from "@/lib/email-verification";
 import {
   adminNotificationEmail,
   submitterConfirmationEmail,
@@ -49,6 +50,13 @@ export async function POST(req: Request) {
   }
 
   const v = parsed.data;
+
+  if (!(await isEmailVerified(v.email))) {
+    return NextResponse.json(
+      { error: "Verify your email first." },
+      { status: 403 }
+    );
+  }
 
   // Validate uploaded media exists in DB
   const referencedIds = [
