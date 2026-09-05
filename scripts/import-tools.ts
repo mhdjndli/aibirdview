@@ -1,13 +1,17 @@
 /**
- * Import the curated 100-tool dataset into the database as published,
+ * Import a curated tool dataset into the database as published,
  * verified listings — downloading each tool's logo into the Media table
  * and generating SEO metadata for every listing.
  *
- * Usage: npx tsx --env-file=.env.local scripts/import-tools.ts
+ * Usage: npx tsx --env-file=.env.local scripts/import-tools.ts [data-file]
+ *   data-file defaults to scripts/tools-data.ts
  * Idempotent: tools whose slug already exists are skipped.
+ * Alternative slugs not found in the dataset are resolved from the DB,
+ * so batches can cross-link to previously imported tools.
  */
+import path from "node:path";
 import { PrismaClient } from "@prisma/client";
-import { TOOLS, type ToolSeed } from "./tools-data";
+import type { ToolSeed } from "./tools-data";
 
 const prisma = new PrismaClient();
 const YEAR = new Date().getFullYear();
@@ -110,6 +114,12 @@ function seoFor(t: ToolSeed) {
 }
 
 async function main() {
+  const dataFile = process.argv[2]
+    ? path.resolve(process.argv[2])
+    : path.join(__dirname, "tools-data.ts");
+  const { TOOLS } = (await import(dataFile)) as { TOOLS: ToolSeed[] };
+  console.log(`Importing ${TOOLS.length} tools from ${dataFile}\n`);
+
   const cats = await prisma.category.findMany();
   const catBySlug = new Map(cats.map((c) => [c.slug, c.id]));
 
@@ -199,7 +209,14 @@ async function main() {
     const fromId = toolIdBySlug.get(t.slug);
     if (!fromId) continue;
     for (const altSlug of t.alternatives) {
-      const toId = toolIdBySlug.get(altSlug);
+      let toId = toolIdBySlug.get(altSlug);
+      if (!toId) {
+        const row = await prisma.tool.findUnique({ where: { slug: altSlug }, select: { id: true } });
+        if (row) {
+          toId = row.id;
+          toolIdBySlug.set(altSlug, row.id);
+        }
+      }
       if (!toId || toId === fromId) continue;
       await prisma.toolAlternative.upsert({
         where: { fromToolId_toToolId: { fromToolId: fromId, toToolId: toId } },
