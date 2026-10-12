@@ -6,6 +6,9 @@ export const metadata = {
   title: "Browse AI Tools — AI BirdView",
   description:
     "Search, filter, and compare the best AI tools across writing, image, video, audio, code, productivity, marketing, and research.",
+  // Search/filter state lives in the query string (?q=...), which would
+  // otherwise be indexed as near-duplicate pages.
+  alternates: { canonical: "/tools" },
 };
 
 export const revalidate = 60;

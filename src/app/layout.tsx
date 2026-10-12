@@ -27,9 +27,6 @@ export const metadata: Metadata = {
       "Discover, compare, and launch with the best AI tools. Curated by humans, ranked by quality.",
     type: "website",
   },
-  icons: {
-    icon: "/favicon.svg",
-  },
 };
 
 export default function RootLayout({
