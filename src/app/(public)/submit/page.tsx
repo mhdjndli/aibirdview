@@ -2,7 +2,7 @@ import { SubmitForm } from "@/components/SubmitForm";
 import { getCategories } from "@/lib/queries";
 
 export const metadata = {
-  title: "Submit a tool — AI BirdView",
+  title: "Submit a tool | AI BirdView",
   description:
     "Get your AI tool reviewed by our editors and listed in the AI BirdView directory.",
 };
@@ -58,7 +58,7 @@ export default async function SubmitPage() {
         </h2>
         <ol className="mt-6 space-y-4">
           {[
-            "Your tool must be live and publicly accessible — no waitlists-only.",
+            "Your tool must be live and publicly accessible (no waitlist-only launches).",
             "It must use AI as a core part of the experience, not as a marketing label.",
             "Pricing on your site must match what you tell us here.",
             "We don't list jailbreaks, scrapers of paywalled content, or tools designed to harass.",

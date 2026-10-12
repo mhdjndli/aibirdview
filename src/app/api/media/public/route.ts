@@ -1,4 +1,4 @@
-// Public-facing media upload — used by the /submit form.
+// Public-facing media upload, used by the /submit form.
 // Stricter limits than the admin endpoint. No authentication required.
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
@@ -14,7 +14,7 @@ const ALLOWED = new Set([
 ]);
 
 // Very simple in-memory rate limit: 12 uploads per IP per 10 minutes.
-// (Resets on cold start — good enough for a public submit form.)
+// (Resets on cold start, good enough for a public submit form.)
 const buckets = new Map<string, { count: number; resetAt: number }>();
 function rateLimit(ip: string) {
   const now = Date.now();
@@ -35,7 +35,7 @@ export async function POST(req: Request) {
     "unknown";
   if (!rateLimit(ip)) {
     return NextResponse.json(
-      { error: "Too many uploads from your network — please try again in a few minutes." },
+      { error: "Too many uploads from your network, please try again in a few minutes." },
       { status: 429 }
     );
   }

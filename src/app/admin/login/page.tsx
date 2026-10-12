@@ -5,7 +5,7 @@ import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
 export const metadata = {
-  title: "Sign in — AI BirdView Admin",
+  title: "Sign in | AI BirdView Admin",
   robots: { index: false, follow: false },
 };
 

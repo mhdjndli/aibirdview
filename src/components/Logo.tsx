@@ -14,7 +14,7 @@ export function LogoMark({
       aria-label={title}
       className={className}
     >
-      {/* Body + wing — single-color kiwi silhouette inspired by the uploaded mark */}
+      {/* Body + wing, single-color kiwi silhouette inspired by the uploaded mark */}
       <path
         fill="currentColor"
         d="M14.2 31.6c0-7.8 6.3-14.1 14.1-14.1 2.2 0 4.3.5 6.2 1.5l1.1-1.2c.6-.6 1.6-.7 2.3-.1.7.6.8 1.6.2 2.4l-.7.8c2.6 2.5 4.2 6 4.2 9.9 0 1.1-.1 2.1-.4 3.1l6.8-2.3c1.1-.4 2.3.4 2.3 1.6 0 .6-.3 1.1-.8 1.4l-7.5 4.7c-.6 1-1.3 1.9-2.1 2.7l9.3-1.4c1-.2 2 .5 2 1.6 0 .6-.4 1.2-1 1.5l-10.6 4.4a14.05 14.05 0 0 1-7.5 2.2c-7.8 0-14.1-6.3-14.1-14.1z"

@@ -3,7 +3,7 @@ import { getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
 
 export const runtime = "nodejs";
-export const alt = "AI BirdView — tool review";
+export const alt = "AI BirdView tool review";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

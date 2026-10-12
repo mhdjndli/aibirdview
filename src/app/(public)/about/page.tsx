@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "About — AI BirdView",
+  title: "About | AI BirdView",
   description:
     "AI BirdView is a human-curated directory of AI tools, built by editors who test before they write.",
 };
@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="mx-auto max-w-4xl px-5 lg:px-8 py-20 md:py-28">
         <p className="font-display text-[28px] leading-[1.25] tracking-[-0.01em] text-ink-800 md:text-[40px]">
           The AI tool industry moves faster than any editorial team can keep up.
-          We slow down on purpose — and we&apos;d rather list 1,200 tools we&apos;ve
+          We slow down on purpose, and we&apos;d rather list 1,200 tools we&apos;ve
           really used than 50,000 we&apos;ve only skimmed.
         </p>
       </section>

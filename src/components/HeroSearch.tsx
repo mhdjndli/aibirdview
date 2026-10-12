@@ -105,7 +105,7 @@ export function HeroSearch() {
               setActive((i) => Math.max(0, i - 1));
             }
           }}
-          placeholder="Search the directory — by name, task, or category"
+          placeholder="Search the directory by name, task, or category"
           className="flex-1 bg-transparent py-4 text-[16px] text-ink-900 placeholder:text-ink-400 outline-none md:text-[17px]"
           aria-label="Search AI tools"
         />
@@ -124,7 +124,7 @@ export function HeroSearch() {
         <div className="absolute left-0 right-0 top-[calc(100%+10px)] z-30 overflow-hidden rounded-2xl border border-ink-200 bg-ink-0 shadow-[0_18px_50px_-18px_rgba(0,0,0,0.18)]">
           {headingNoResults ? (
             <div className="p-5 text-left text-[14px] text-ink-500">
-              No matches yet — try a different word, or{" "}
+              No matches yet. Try a different word, or{" "}
               <a
                 href={`/tools?q=${encodeURIComponent(q)}`}
                 className="text-kiwi-700 hover:underline"

@@ -178,7 +178,7 @@ export default async function Home() {
                 Featured this month.
               </h2>
               <p className="mt-4 max-w-md text-[16px] leading-relaxed text-ink-500">
-                Hand-picked by our editors after testing with real workflows —
+                Hand-picked by our editors after testing with real workflows,
                 not paid placements.
               </p>
             </div>
@@ -210,7 +210,7 @@ export default async function Home() {
             {
               k: "Comparable",
               h: "Decisions in minutes, not days.",
-              p: "Side-by-side comparison. Pricing, features, and our editorial verdict — all on one page.",
+              p: "Side-by-side comparison. Pricing, features, and our editorial verdict, all on one page.",
             },
             {
               k: "Current",

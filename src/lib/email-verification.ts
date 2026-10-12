@@ -44,7 +44,7 @@ export async function issueVerificationCode(rawEmail: string): Promise<Result> {
   if (!sent.ok) {
     return {
       ok: false,
-      error: "We couldn't send the code right now — please try again shortly.",
+      error: "We couldn't send the code right now. Please try again shortly.",
       status: 502,
     };
   }
@@ -61,10 +61,10 @@ export async function confirmVerificationCode(
     return { ok: false, error: "Request a code first.", status: 400 };
   }
   if (row.attempts >= MAX_ATTEMPTS) {
-    return { ok: false, error: "Too many attempts — request a new code.", status: 429 };
+    return { ok: false, error: "Too many attempts. Request a new code.", status: 429 };
   }
   if (row.expiresAt < new Date()) {
-    return { ok: false, error: "That code has expired — request a new one.", status: 400 };
+    return { ok: false, error: "That code has expired. Request a new one.", status: 400 };
   }
   if (row.code !== code.trim()) {
     await prisma.emailVerification.update({

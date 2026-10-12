@@ -47,7 +47,7 @@ export function AdminShell({
 }) {
   const pathname = usePathname();
 
-  // The login page is its own thing — no shell.
+  // The login page is its own thing, no shell.
   if (pathname === "/admin/login") {
     return <>{children}</>;
   }

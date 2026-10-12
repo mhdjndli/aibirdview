@@ -2,7 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { deleteReview } from "./actions";
 
-export const metadata = { title: "Reviews — Admin" };
+export const metadata = { title: "Reviews | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function ReviewsPage() {

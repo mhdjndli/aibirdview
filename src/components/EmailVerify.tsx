@@ -36,13 +36,13 @@ export function EmailVerify({
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
-        setError(data.error || "Couldn't send the code — try again.");
+        setError(data.error || "Couldn't send the code, try again.");
         return;
       }
       setSent(true);
-      setNotice("Code sent — check your inbox (and spam).");
+      setNotice("Code sent. Check your inbox (and spam).");
     } catch {
-      setError("Network error — try again.");
+      setError("Network error, try again.");
     } finally {
       setBusy(null);
     }
@@ -65,7 +65,7 @@ export function EmailVerify({
       }
       onVerified();
     } catch {
-      setError("Network error — try again.");
+      setError("Network error, try again.");
     } finally {
       setBusy(null);
     }

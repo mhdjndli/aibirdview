@@ -20,7 +20,7 @@ export async function generateMetadata({
   const cat = await prisma.blogCategory.findUnique({ where: { slug } });
   if (!cat) return {};
   return {
-    title: `${cat.name} — Blog | AI BirdView`,
+    title: `${cat.name} | Blog | AI BirdView`,
     description: cat.description ?? `Articles in ${cat.name}.`,
     alternates: { canonical: `/blog/category/${cat.slug}` },
   };

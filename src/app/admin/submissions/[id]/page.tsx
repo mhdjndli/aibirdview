@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { approveSubmission, rejectSubmission, reopenSubmission } from "./actions";
 
-export const metadata = { title: "Review submission — Admin" };
+export const metadata = { title: "Review submission | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function SubmissionDetailPage({

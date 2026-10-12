@@ -17,12 +17,12 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "AI BirdView — The premium directory of AI tools",
+  title: "AI BirdView | The premium directory of AI tools",
   description:
     "Discover, compare, and launch with the best AI tools. A curated, human-reviewed directory built for builders, marketers, and creators.",
   metadataBase: new URL(process.env.SITE_URL || "https://aibirdview.com"),
   openGraph: {
-    title: "AI BirdView — The premium directory of AI tools",
+    title: "AI BirdView | The premium directory of AI tools",
     description:
       "Discover, compare, and launch with the best AI tools. Curated by humans, ranked by quality.",
     type: "website",

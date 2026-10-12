@@ -28,7 +28,7 @@ export async function generateMetadata({
 
   const seoTitle =
     tool.seoTitle ||
-    `${tool.name} Review (${year}) — Features, Pricing & Alternatives | AI BirdView`;
+    `${tool.name} Review (${year}): Features, Pricing & Alternatives | AI BirdView`;
   const seoDescription =
     tool.seoDescription ||
     `${tool.description} See features, pricing, pros and cons, and the best alternatives to ${tool.name}.`;
@@ -374,7 +374,7 @@ export default async function ToolPage({
               </ul>
             ) : (
               <p className="mt-6 text-[14px] text-ink-500">
-                No reviews yet — be the first to share your experience.
+                No reviews yet. Be the first to share your experience.
               </p>
             )}
           </div>

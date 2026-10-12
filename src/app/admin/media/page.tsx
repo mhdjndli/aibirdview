@@ -1,7 +1,7 @@
 import { prisma } from "@/lib/prisma";
 import { MediaUploader } from "@/components/admin/MediaUploader";
 
-export const metadata = { title: "Media — Admin" };
+export const metadata = { title: "Media | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function MediaPage() {

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { CategoryForm } from "@/components/admin/CategoryForm";
 
-export const metadata = { title: "Edit category — Admin" };
+export const metadata = { title: "Edit category | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function EditCategoryPage({

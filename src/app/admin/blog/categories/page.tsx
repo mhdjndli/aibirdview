@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
-export const metadata = { title: "Blog categories — Admin" };
+export const metadata = { title: "Blog categories | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function BlogCategoriesPage({
@@ -47,7 +47,7 @@ export default async function BlogCategoriesPage({
                   <div className="font-medium text-ink-900">{c.name}</div>
                   <div className="text-[12px] text-ink-500">/blog/category/{c.slug}</div>
                 </td>
-                <td className="px-4 py-3 text-ink-600 max-w-md">{c.description || <span className="text-ink-400">—</span>}</td>
+                <td className="px-4 py-3 text-ink-600 max-w-md">{c.description || <span className="text-ink-400">-</span>}</td>
                 <td className="px-4 py-3 text-ink-700">{c._count.posts}</td>
                 <td className="px-4 py-3 text-right">
                   <Link

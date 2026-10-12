@@ -2,7 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { BlogPostForm } from "@/components/admin/BlogPostForm";
 
-export const metadata = { title: "New post — Admin" };
+export const metadata = { title: "New post | Admin" };
 
 export default async function NewBlogPostPage() {
   const categories = await prisma.blogCategory.findMany({ orderBy: { sortOrder: "asc" } });

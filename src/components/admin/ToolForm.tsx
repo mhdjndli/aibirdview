@@ -100,7 +100,7 @@ export function ToolForm({
               />
             </Field>
           </Grid2>
-          <Field label="Tagline" required hint="One sentence — shown in cards. Max 200 chars.">
+          <Field label="Tagline" required hint="One sentence, shown in cards. Max 200 chars.">
             <input name="tagline" required maxLength={200} defaultValue={initial.tagline} className={inputCls} />
           </Field>
           <Field label="Short description" required hint="2–3 sentences for the directory card / search results.">
@@ -185,7 +185,7 @@ export function ToolForm({
         </Card>
 
         <Card title="SEO">
-          <Field label="SEO title" hint="Defaults to '[Name] Review (year) — Features, Pricing & Alternatives | AI BirdView' if blank.">
+          <Field label="SEO title" hint="Defaults to '[Name] Review (year): Features, Pricing & Alternatives | AI BirdView' if blank.">
             <input name="seoTitle" maxLength={140} defaultValue={initial.seoTitle ?? ""} className={inputCls} />
           </Field>
           <Field label="Meta description" hint="120–160 chars is the sweet spot.">

@@ -1,5 +1,5 @@
 // Schedules the hourly auto-approve sweep. Runs in the long-lived `next start`
-// process (Railway), so no external cron is required — though the
+// process (Railway), so no external cron is required, though the
 // /api/cron/auto-approve route also accepts external triggers via CRON_SECRET.
 
 const SWEEP_INTERVAL_MS = 60 * 60 * 1000;

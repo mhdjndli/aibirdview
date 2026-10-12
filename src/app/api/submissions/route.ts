@@ -140,7 +140,7 @@ export async function POST(req: Request) {
     screenshotCount,
   });
 
-  // Don't await — return quickly. Errors are logged inside sendEmail.
+  // Don't await, return quickly. Errors are logged inside sendEmail.
   void Promise.allSettled([
     sendEmail({
       to: v.email,

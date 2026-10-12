@@ -2,7 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { ToolForm } from "@/components/admin/ToolForm";
 
-export const metadata = { title: "Add tool — Admin" };
+export const metadata = { title: "Add tool | Admin" };
 
 export default async function NewToolPage() {
   const categories = (await prisma.category.findMany({ orderBy: { sortOrder: "asc" } })).map(

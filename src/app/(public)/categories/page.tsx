@@ -3,7 +3,7 @@ import { getCategories, getTools } from "@/lib/queries";
 import { serializeCategory, serializeTool, type SerializedTool } from "@/lib/serializers";
 
 export const metadata = {
-  title: "AI Tool Categories — AI BirdView",
+  title: "AI Tool Categories | AI BirdView",
   description: "Eight worlds of AI tools. Browse by what you need to do.",
 };
 
@@ -31,7 +31,7 @@ export default async function CategoriesPage() {
             Find the right AI for the job you have to do.
           </h1>
           <p className="mt-5 max-w-2xl text-[17px] leading-relaxed text-ink-500">
-            We organize the directory by the task — not by the model. Pick a
+            We organize the directory by the task, not by the model. Pick a
             category that matches what you&apos;re trying to ship.
           </p>
         </div>

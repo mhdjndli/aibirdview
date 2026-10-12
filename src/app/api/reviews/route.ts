@@ -10,7 +10,7 @@ const reviewSchema = z.object({
   email: z.string().trim().email("A valid email is required.").max(160),
   stars: z.number().int().min(1, "Pick a star rating.").max(5),
   text: z.string().trim().max(2000).optional().nullable(),
-  // honeypot — real visitors never fill this
+  // honeypot, real visitors never fill this
   website: z.string().max(0).optional(),
 });
 
@@ -45,7 +45,7 @@ export async function POST(req: Request) {
   }
 
   const email = v.email.toLowerCase();
-  // One review per email per tool — resubmitting updates the existing one.
+  // One review per email per tool, resubmitting updates the existing one.
   await prisma.review.upsert({
     where: { toolId_email: { toolId: tool.id, email } },
     create: {

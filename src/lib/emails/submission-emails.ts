@@ -49,7 +49,7 @@ export function submitterConfirmationEmail(args: {
   websiteUrl: string;
   categoryName: string;
 }) {
-  const subject = `We've got ${args.toolName} — review starts now`;
+  const subject = `We've got ${args.toolName}: review starts now`;
   const preheader = `Your submission landed safely. It will be reviewed and go live within 24 hours.`;
 
   const html = shell({
@@ -63,7 +63,7 @@ export function submitterConfirmationEmail(args: {
           Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our review queue. It will be reviewed and go live within 24 hours.
         </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
-          We test every tool with a real workflow before listing it. We'll either publish it, ask you a quick question, or let you know if it isn't a fit yet — either way, you'll hear back.
+          We test every tool with a real workflow before listing it. We'll either publish it, ask you a quick question, or let you know if it isn't a fit yet. Either way, you'll hear back.
         </p>
       </td></tr>
 
@@ -88,7 +88,7 @@ export function submitterConfirmationEmail(args: {
 
   const text = `Thanks, ${args.contactName}.
 
-We've received your submission for ${args.toolName}. It will be reviewed and go live within 24 hours — we'll email you as soon as it's published.
+We've received your submission for ${args.toolName}. It will be reviewed and go live within 24 hours, and we'll email you as soon as it's published.
 
 What we received:
   Tool:     ${args.toolName}
@@ -97,7 +97,7 @@ What we received:
 
 Browse the directory while you wait: ${SITE.url}/tools
 
-— The AI BirdView team`;
+The AI BirdView team`;
 
   return { subject, html, text };
 }
@@ -122,7 +122,7 @@ export function adminNotificationEmail(args: {
   screenshotCount: number;
 }) {
   const subject = `New submission: ${args.toolName}`;
-  const preheader = `${args.contactName} <${args.contactEmail}> submitted ${args.toolName} — review in admin.`;
+  const preheader = `${args.contactName} <${args.contactEmail}> submitted ${args.toolName}. Review in admin.`;
   const reviewUrl = `${SITE.url}/admin/submissions/${args.submissionId}`;
 
   const html = shell({
@@ -227,7 +227,7 @@ export function submitterApprovedEmail(args: {
           ${escapeHtml(args.toolName)} is live.
         </h1>
         <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">
-          Good news, ${escapeHtml(args.contactName)} — your submission has been approved and <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> is now listed in the directory.
+          Good news, ${escapeHtml(args.contactName)}: your submission has been approved and <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> is now listed in the directory.
         </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
           If anything on the listing looks off, just reply to this email and our editors will fix it.
@@ -240,13 +240,13 @@ export function submitterApprovedEmail(args: {
     `,
   });
 
-  const text = `Good news, ${args.contactName} — ${args.toolName} has been approved and is now live on ${SITE.name}.
+  const text = `Good news, ${args.contactName}: ${args.toolName} has been approved and is now live on ${SITE.name}.
 
 View your listing: ${args.toolUrl}
 
 If anything on the listing looks off, just reply to this email and our editors will fix it.
 
-— The ${SITE.name} team`;
+The ${SITE.name} team`;
 
   return { subject, html, text };
 }

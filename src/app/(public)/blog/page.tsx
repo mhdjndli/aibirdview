@@ -2,7 +2,7 @@ import Link from "next/link";
 import { getBlogCategories, getPublishedPosts } from "@/lib/queries";
 
 export const metadata = {
-  title: "AI Tools Blog — Reviews, Comparisons & Guides | AI BirdView",
+  title: "AI Tools Blog | Reviews, Comparisons & Guides | AI BirdView",
   description: "Long-form reviews, deep dives, and guides on the AI tools worth your time.",
   alternates: { canonical: "/blog" },
 };
@@ -49,7 +49,7 @@ export default async function BlogPage() {
         {posts.length === 0 ? (
           <div className="rounded-3xl border border-dashed border-ink-200 bg-ink-50/60 p-16 text-center">
             <p className="text-[18px] font-medium text-ink-800">No posts yet.</p>
-            <p className="mt-2 text-[14px] text-ink-500">Check back soon — or subscribe in the footer.</p>
+            <p className="mt-2 text-[14px] text-ink-500">Check back soon, or subscribe in the footer.</p>
           </div>
         ) : (
           <>

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import type { SubmissionStatus } from "@prisma/client";
 
-export const metadata = { title: "Submissions — Admin" };
+export const metadata = { title: "Submissions | Admin" };
 export const dynamic = "force-dynamic";
 
 const TABS: { label: string; key: "PENDING" | "APPROVED" | "REJECTED" | "ALL" }[] = [

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BlogCategoryForm } from "@/components/admin/BlogCategoryForm";
 
-export const metadata = { title: "Add blog category — Admin" };
+export const metadata = { title: "Add blog category | Admin" };
 
 export default function Page() {
   return (

@@ -36,7 +36,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           Submission received.
         </h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-          We&apos;ve sent a confirmation to your email — your tool will be reviewed
+          We&apos;ve sent a confirmation to your email. Your tool will be reviewed
           and live within 24 hours.
         </p>
         <button
@@ -100,12 +100,12 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           });
           if (!res.ok) {
             const data = await res.json().catch(() => null);
-            setError(data?.error || "Something went wrong — please try again.");
+            setError(data?.error || "Something went wrong, please try again.");
             return;
           }
           setSubmitted(true);
         } catch {
-          setError("Network error — please try again.");
+          setError("Network error, please try again.");
         } finally {
           setPending(false);
         }
@@ -114,7 +114,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
     >
       <FieldSet
         title="The basics"
-        subtitle="Tell us about the tool — keep it short."
+        subtitle="Tell us about the tool. Keep it short."
       >
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
           <Field label="Tool name" required>
@@ -222,7 +222,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
             Screenshots <span className="text-ink-400">(optional, up to 3)</span>
           </p>
           <p className="text-[11.5px] text-ink-500">
-            16:9 product screenshots work best — they&apos;ll appear on your tool detail page.
+            16:9 product screenshots work best. They&apos;ll appear on your tool detail page.
           </p>
           <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
             <SquareUploader mediaId={shot1Id} onChange={setShot1Id} aspect="wide" label="Screenshot 1" />
@@ -272,7 +272,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           <textarea
             name="notes"
             rows={3}
-            placeholder="Anything our editors should know — early-stage launch, demo link, etc."
+            placeholder="Anything our editors should know: early-stage launch, demo link, etc."
             className={inputCls}
           />
         </Field>
@@ -371,7 +371,7 @@ function SquareUploader({
               const data = (await res.json()) as { id: string };
               onChange(data.id);
             } catch {
-              setErr("Network error — please try again.");
+              setErr("Network error, please try again.");
             } finally {
               setUploading(false);
             }

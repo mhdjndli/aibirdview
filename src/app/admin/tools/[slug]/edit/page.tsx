@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { ToolForm } from "@/components/admin/ToolForm";
 
-export const metadata = { title: "Edit tool — Admin" };
+export const metadata = { title: "Edit tool | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function EditToolPage({

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { CategoryRowActions } from "@/components/admin/CategoryRowActions";
 
-export const metadata = { title: "Categories — Admin" };
+export const metadata = { title: "Categories | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function AdminCategoriesPage({

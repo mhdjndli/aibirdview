@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Kiwi green palette — pulled from the bird logo */
+  /* Kiwi green palette, pulled from the bird logo */
   --kiwi-50:  #f3faec;
   --kiwi-100: #e3f3d3;
   --kiwi-200: #c8e6a8;

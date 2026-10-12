@@ -1,7 +1,7 @@
 import { getAllSettings } from "@/lib/queries";
 import { saveSettings } from "./actions";
 
-export const metadata = { title: "Settings — Admin" };
+export const metadata = { title: "Settings | Admin" };
 export const dynamic = "force-dynamic";
 
 type HeroS = { eyebrow?: string | null; headline?: string; subhead?: string };

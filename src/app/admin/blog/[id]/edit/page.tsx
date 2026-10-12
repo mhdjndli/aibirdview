@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { BlogPostForm } from "@/components/admin/BlogPostForm";
 
-export const metadata = { title: "Edit post — Admin" };
+export const metadata = { title: "Edit post | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function EditBlogPostPage({

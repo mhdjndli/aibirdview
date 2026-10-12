@@ -20,13 +20,13 @@ export type SendArgs = {
 };
 
 /**
- * Send an email via Resend. Throws nothing — failures are logged but never
+ * Send an email via Resend. Throws nothing, failures are logged but never
  * break the request flow that called us (e.g. a tool submission must succeed
  * even if email delivery flakes).
  */
 export async function sendEmail(args: SendArgs): Promise<{ ok: boolean; id?: string; error?: string }> {
   if (!resend) {
-    console.warn("[email] RESEND_API_KEY missing — skipping send", { subject: args.subject });
+    console.warn("[email] RESEND_API_KEY missing, skipping send", { subject: args.subject });
     return { ok: false, error: "RESEND_API_KEY not configured" };
   }
   try {

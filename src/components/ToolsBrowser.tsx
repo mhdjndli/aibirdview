@@ -206,7 +206,7 @@ export function ToolsBrowser({
                 No tools match these filters.
               </p>
               <p className="mt-1 text-[14px] text-ink-500">
-                Try removing a filter — or{" "}
+                Try removing a filter, or{" "}
                 <a href="/submit" className="text-kiwi-700 underline-offset-4 hover:underline">
                   submit a tool we&apos;re missing
                 </a>

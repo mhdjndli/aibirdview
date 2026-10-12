@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 
-export const metadata = { title: "Blog — Admin" };
+export const metadata = { title: "Blog | Admin" };
 export const dynamic = "force-dynamic";
 
 export default async function AdminBlogPage({
@@ -99,10 +99,10 @@ export default async function AdminBlogPage({
                     <div className="text-[12px] text-ink-500">/blog/{p.slug}</div>
                   </td>
                   <td className="px-4 py-3 text-ink-700">
-                    {p.categories.map((c) => c.category.name).join(", ") || <span className="text-ink-400">—</span>}
+                    {p.categories.map((c) => c.category.name).join(", ") || <span className="text-ink-400">-</span>}
                   </td>
                   <td className="px-4 py-3 text-ink-700">
-                    {p.author?.name || p.author?.email || <span className="text-ink-400">—</span>}
+                    {p.author?.name || p.author?.email || <span className="text-ink-400">-</span>}
                   </td>
                   <td className="px-4 py-3 text-ink-500">
                     {new Date(p.updatedAt).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}

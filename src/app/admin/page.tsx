@@ -3,7 +3,7 @@ import { getDashboardStats } from "@/lib/queries";
 import { auth } from "@/auth";
 
 export const metadata = {
-  title: "Dashboard — AI BirdView Admin",
+  title: "Dashboard | AI BirdView Admin",
 };
 
 export default async function AdminDashboardPage() {
@@ -33,7 +33,7 @@ export default async function AdminDashboardPage() {
       <section className="grid grid-cols-1 gap-5 md:grid-cols-2">
         <Quick title="Review submissions" desc={stats.pending === 0 ? "Nothing in the queue right now." : `${stats.pending} waiting for a decision.`} href="/admin/submissions" cta="Open queue" />
         <Quick title="Write a blog post" desc="Open the editor and ship a new post." href="/admin/blog/new" cta="New post" />
-        <Quick title="Add a tool manually" desc="Skip the queue — list a tool yourself." href="/admin/tools/new" cta="New tool" />
+        <Quick title="Add a tool manually" desc="Skip the queue and list a tool yourself." href="/admin/tools/new" cta="New tool" />
         <Quick title="Edit site settings" desc="Hero copy, social links, featured tools." href="/admin/settings" cta="Open settings" />
       </section>
     </div>

@@ -60,7 +60,7 @@ export function ReviewForm({ toolSlug, toolName }: { toolSlug: string; toolName:
       <div className="rounded-2xl border border-kiwi-200 bg-kiwi-50 p-6 text-center">
         <p className="text-[15px] font-medium text-ink-900">Thanks for your review.</p>
         <p className="mt-1 text-[13px] text-ink-600">
-          It&apos;s live on the page — refresh to see it listed.
+          It&apos;s live on the page. Refresh to see it listed.
         </p>
       </div>
     );
@@ -142,13 +142,13 @@ export function ReviewForm({ toolSlug, toolName }: { toolSlug: string; toolName:
       <textarea
         maxLength={2000}
         rows={4}
-        placeholder="Your review (optional) — what did you use it for, what worked, what didn't?"
+        placeholder="Your review (optional): what did you use it for, what worked, what didn't?"
         value={text}
         onChange={(e) => setText(e.target.value)}
         className="mt-3 w-full rounded-xl border border-ink-200 bg-ink-0 px-4 py-2.5 text-[14px] text-ink-900 outline-none placeholder:text-ink-400 focus:border-kiwi-400"
       />
 
-      {/* honeypot — hidden from real visitors */}
+      {/* honeypot, hidden from real visitors */}
       <input
         type="text"
         name="website"
