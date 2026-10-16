@@ -5,7 +5,7 @@ import { ReviewForm } from "@/components/ReviewForm";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
-import { absoluteUrl, SITE } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = true;
 export const revalidate = 60;
@@ -85,35 +85,33 @@ export default async function ToolPage({
             applicationCategory: tool.category.name,
             url: tool.url,
             offers,
+            // Rating markup comes only from real reader reviews (all of which
+            // are shown on the page); the admin-set rating is never sent to Google.
             aggregateRating:
-              tool.ratingCount > 0
+              tool.reviews.length > 0
                 ? {
                     "@type": "AggregateRating",
-                    ratingValue: tool.rating.toFixed(1),
-                    reviewCount: tool.ratingCount,
+                    ratingValue: (tool.reviews.reduce((sum, r) => sum + r.stars, 0) / tool.reviews.length).toFixed(1),
+                    reviewCount: tool.reviews.length,
                     bestRating: "5",
                     worstRating: "1",
                   }
                 : undefined,
-            review: tool.ratingCount === 0 ? undefined : {
-              "@type": "Review",
-              author: { "@type": "Organization", name: SITE.name },
-              reviewBody: tool.longDescription,
-              reviewRating: {
-                "@type": "Rating",
-                ratingValue: tool.rating.toFixed(1),
-                bestRating: "5",
-                worstRating: "1",
-              },
-              positiveNotes:
-                tool.pros.length > 0
-                  ? { "@type": "ItemList", itemListElement: tool.pros.map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t })) }
-                  : undefined,
-              negativeNotes:
-                tool.cons.length > 0
-                  ? { "@type": "ItemList", itemListElement: tool.cons.map((t, i) => ({ "@type": "ListItem", position: i + 1, name: t })) }
-                  : undefined,
-            },
+            review:
+              tool.reviews.length > 0
+                ? tool.reviews.map((r) => ({
+                    "@type": "Review",
+                    author: { "@type": "Person", name: r.name },
+                    datePublished: r.createdAt.slice(0, 10),
+                    reviewBody: r.text ?? undefined,
+                    reviewRating: {
+                      "@type": "Rating",
+                      ratingValue: r.stars,
+                      bestRating: "5",
+                      worstRating: "1",
+                    },
+                  }))
+                : undefined,
           },
           {
             "@context": "https://schema.org",

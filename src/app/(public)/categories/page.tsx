@@ -5,6 +5,7 @@ import { serializeCategory, serializeTool, type SerializedTool } from "@/lib/ser
 export const metadata = {
   title: "AI Tool Categories | AI BirdView",
   description: "Eight worlds of AI tools. Browse by what you need to do.",
+  alternates: { canonical: "/categories" },
 };
 
 export const revalidate = 60;

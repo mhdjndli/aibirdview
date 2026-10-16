@@ -6,6 +6,10 @@ import { getCategories, getTools, getSetting } from "@/lib/queries";
 import { serializeCategory, serializeTool } from "@/lib/serializers";
 import { prisma } from "@/lib/prisma";
 
+export const metadata = {
+  alternates: { canonical: "/" },
+};
+
 export const revalidate = 60;
 
 type HeroSettings = { eyebrow?: string | null; headline?: string; subhead?: string };

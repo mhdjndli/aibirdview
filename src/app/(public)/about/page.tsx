@@ -4,6 +4,7 @@ export const metadata = {
   title: "About | AI BirdView",
   description:
     "AI BirdView is a human-curated directory of AI tools, built by editors who test before they write.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

@@ -5,6 +5,7 @@ export const metadata = {
   title: "Submit a tool | AI BirdView",
   description:
     "Get your AI tool reviewed by our editors and listed in the AI BirdView directory.",
+  alternates: { canonical: "/submit" },
 };
 
 export const revalidate = 60;
