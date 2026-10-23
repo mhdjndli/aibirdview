@@ -1,6 +1,5 @@
 import { SITE } from "@/lib/site";
 
-const KIWI = "#74b25c";
 const KIWI_DARK = "#467434";
 const INK_900 = "#1d1d1f";
 const INK_700 = "#2c2c2e";
@@ -25,14 +24,13 @@ function shell({ preheader, content }: { preheader: string; content: string }) {
       <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:560px;background:#ffffff;border:1px solid ${INK_300};border-radius:18px;overflow:hidden;">
         <tr><td style="padding:24px 32px 8px;">
           <a href="${SITE.url}" style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
-            <span style="display:inline-block;width:32px;height:32px;border-radius:8px;background:${KIWI};vertical-align:middle;line-height:32px;text-align:center;color:#0b0b0d;font-weight:700;">●</span>
+            <img src="${SITE.url}/icon.png" width="32" height="32" alt="" style="display:inline-block;width:32px;height:32px;border:0;vertical-align:middle;" />
             <span style="font-size:16px;font-weight:600;letter-spacing:-0.022em;color:${INK_900};vertical-align:middle;">AI <span style="color:${KIWI_DARK};">BirdView</span></span>
           </a>
         </td></tr>
         ${content}
         <tr><td style="padding:24px 32px 28px;border-top:1px solid ${INK_100};color:${INK_500};font-size:12px;line-height:1.5;">
-          You're receiving this email from <a href="${SITE.url}" style="color:${KIWI_DARK};text-decoration:none;">${SITE.url.replace(/^https?:\/\//,"")}</a>.<br/>
-          Reply to this email to reach our editors directly.
+          You're receiving this email from <a href="${SITE.url}" style="color:${KIWI_DARK};text-decoration:none;">${SITE.url.replace(/^https?:\/\//,"")}</a>.
         </td></tr>
       </table>
     </td></tr>
@@ -63,7 +61,7 @@ export function submitterConfirmationEmail(args: {
           Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our review queue. It will be reviewed and go live within 24 hours.
         </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
-          We test every tool with a real workflow before listing it. We'll either publish it, ask you a quick question, or let you know if it isn't a fit yet. Either way, you'll hear back.
+          As soon as it's published, we'll email you a link to your listing so you can see how it looks.
         </p>
       </td></tr>
 
@@ -226,11 +224,8 @@ export function submitterApprovedEmail(args: {
         <h1 style="margin:0 0 8px;font-size:24px;line-height:1.25;letter-spacing:-0.022em;color:${INK_900};font-weight:600;">
           ${escapeHtml(args.toolName)} is live.
         </h1>
-        <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">
-          Good news, ${escapeHtml(args.contactName)}: your submission has been approved and <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> is now listed in the directory.
-        </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
-          If anything on the listing looks off, just reply to this email and our editors will fix it.
+          Good news, ${escapeHtml(args.contactName)}: your submission has been approved and <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> is now listed in the directory.
         </p>
       </td></tr>
 
@@ -243,8 +238,6 @@ export function submitterApprovedEmail(args: {
   const text = `Good news, ${args.contactName}: ${args.toolName} has been approved and is now live on ${SITE.name}.
 
 View your listing: ${args.toolUrl}
-
-If anything on the listing looks off, just reply to this email and our editors will fix it.
 
 The ${SITE.name} team`;
 
