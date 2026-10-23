@@ -4,7 +4,7 @@ import { getCategories } from "@/lib/queries";
 export const metadata = {
   title: "Submit a tool | AI BirdView",
   description:
-    "Get your AI tool reviewed by our editors and listed in the AI BirdView directory.",
+    "Get your AI tool listed in the AI BirdView directory. Free to submit and live within 24 hours.",
   alternates: { canonical: "/submit" },
 };
 
@@ -24,13 +24,13 @@ export default async function SubmitPage() {
             Put your AI in front of the people who&apos;ll use it.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-ink-500">
-            Free to submit, live within 24 hours, no SEO games. We test each
-            tool with a real workflow before publishing.
+            Free to submit, live within 24 hours, no SEO games. We&apos;ll
+            email you a link as soon as your listing is published.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-2 text-[12px]">
             {[
               "Free to submit",
-              "48-hour review",
+              "Live in 24 hours",
               "Editorial integrity",
               "Verified badge",
             ].map((b) => (
