@@ -39,7 +39,7 @@ const post: Post = {
     { h2: "The best free AI image generators, reviewed" },
 
     { h3: "1. ChatGPT: the easiest place to start" },
-    { p: "[ChatGPT](/tools/chatgpt) generates images directly in the chat, and you can refine them conversationally: \"make the background darker\", \"same character, now waving\". OpenAI's image models are known for following complex prompts closely and rendering readable text. Our [DALL·E 3](/tools/dall-e-3) listing covers the model that first brought this into ChatGPT, and the newer built-in image generation goes further on editing uploaded photos." },
+    { p: "[ChatGPT](/tools/chatgpt) generates images directly in the chat, and you can refine them conversationally: \"make the background darker\", \"same character, now waving\". It now runs on OpenAI's GPT Image models, which replaced DALL·E 3 and are known for following complex prompts closely, rendering readable text and editing uploaded photos. The latest, GPT Image 2, arrived in April 2026, and DALL·E 3 has since been retired from OpenAI's API." },
     { ul: [
       "**Best for:** quick illustrations, edits to your own photos, and anyone who prefers describing over prompting.",
       "**Watch out for:** free-tier image limits that tighten when demand is high, and content rules that block some requests.",

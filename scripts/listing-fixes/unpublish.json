@@ -1,0 +1,114 @@
+[
+ {
+  "slug": "sora",
+  "reason": "OpenAI discontinued Sora (app closed April 2026, API September 2026)"
+ },
+ {
+  "slug": "relay-app",
+  "reason": "Shut down in 2026; accounts and data deleted"
+ },
+ {
+  "slug": "roo-code",
+  "reason": "Products shut down May 15, 2026"
+ },
+ {
+  "slug": "rows",
+  "reason": "Acquired by Superhuman, wound down May 31, 2026"
+ },
+ {
+  "slug": "clockwise",
+  "reason": "Shut down March 27, 2026"
+ },
+ {
+  "slug": "supermaven",
+  "reason": "Shut down as a standalone product November 2025"
+ },
+ {
+  "slug": "phind",
+  "reason": "Hosted service shut down January 2026"
+ },
+ {
+  "slug": "play-ht",
+  "reason": "Acquired by Meta, shut down December 31, 2025"
+ },
+ {
+  "slug": "reword",
+  "reason": "Domain is for sale"
+ },
+ {
+  "slug": "obviously-ai",
+  "reason": "Now Zams; old site is an archive"
+ },
+ {
+  "slug": "papercup",
+  "reason": "IP sold to RWS; site redirects"
+ },
+ {
+  "slug": "databutton",
+  "reason": "Rebranded as Riff and pivoted away from app building"
+ },
+ {
+  "slug": "dall-e-3",
+  "reason": "Removed from OpenAI's API"
+ },
+ {
+  "slug": "gemini-code-assist",
+  "reason": "Deprecated; free tier ended June 2026, new sales stopped October 2026"
+ },
+ {
+  "slug": "limitless",
+  "reason": "Acquired by Meta; Pendant sales ended"
+ },
+ {
+  "slug": "lex",
+  "reason": "Not accepting new customers"
+ },
+ {
+  "slug": "continue-dev",
+  "reason": "Acquired by Cursor; hosted hub shut down"
+ },
+ {
+  "slug": "tabnine",
+  "reason": "Acquired by Tricentis; site redirects"
+ },
+ {
+  "slug": "invoke-ai",
+  "reason": "Domain for sale"
+ },
+ {
+  "slug": "kraftful",
+  "reason": "Acquired by Amplitude; site unreachable"
+ },
+ {
+  "slug": "firebase-studio",
+  "reason": "Shutting down March 2027; no new workspaces"
+ },
+ {
+  "slug": "cohesive",
+  "reason": "Site served from web.archive.org; app does not respond"
+ },
+ {
+  "slug": "accint",
+  "reason": "Domain has no DNS record"
+ },
+ {
+  "slug": "notably",
+  "reason": "Site unreachable"
+ },
+ {
+  "slug": "veevid-ai-2",
+  "reason": "Duplicate of veevid-ai"
+ },
+ {
+  "slug": "yap-audio-to-text-2",
+  "reason": "Duplicate of yap-audio-to-text"
+ },
+ {
+  "slug": "yap-online-dictation-2",
+  "reason": "Duplicate of yap-online-dictation"
+ },
+ {
+  "slug": "ilook-ai-face-analysis-2",
+  "reason": "Duplicate of ilook-ai-face-analysis"
+ }
+]

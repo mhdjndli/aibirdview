@@ -17,14 +17,14 @@ const post: Post = {
 
     { h2: "Quick answer: the best AI coding tool for each job" },
     { ul: [
-      "**Best all-round AI editor:** [Cursor](/tools/cursor). Excellent tab completions plus an agent mode that edits many files, from $20/mo.",
+      "**Best all-round AI editor:** [Cursor](/tools/cursor). Excellent tab completions plus an agent mode that edits many files, with a free plan and paid plans from $8/mo.",
       "**Best value AI IDE:** [Trae](/tools/trae), ByteDance's VS Code-based editor with frontier models at a low price, paid from $10/mo.",
       "**Most structured AI IDE:** [Kiro](/tools/kiro) from AWS, which writes specs and task lists before it writes code, from $19/mo.",
       "**Best for delegating tickets:** [Devin](/tools/devin) (from $20/mo) or [OpenAI Codex](/tools/openai-codex), bundled with ChatGPT Plus.",
       "**Best enterprise agent platform:** [Factory](/tools/factory-ai), whose Droids cover coding, review and incident triage, from $40/mo.",
       "**Best terminal agent:** [Claude Code](/tools/claude-code) (with a Claude Pro plan, $20/mo), or open-source [Aider](/tools/aider) and [OpenCode](/tools/opencode) if you bring your own API key.",
       "**Best AI code review:** [CodeRabbit](/tools/coderabbit) for line-by-line PR comments, [Graphite](/tools/graphite) for stacked PRs plus AI review, [Greptile](/tools/greptile) for full-repo context.",
-      "**Best for regulated companies:** [Tabnine](/tools/tabnine), with air-gapped deployment and a license-safe training corpus.",
+      "**Best for regulated companies:** [Tabby](/tools/tabbyml), an open-source assistant you self-host on your own servers, with no external database or cloud service required.",
     ] },
 
     { h2: "The five layers of AI coding tools" },
@@ -37,16 +37,16 @@ const post: Post = {
     { p: "[Cursor](/tools/cursor) forked VS Code and rebuilt it around AI. Its Tab model predicts your next edit across files, chat answers with full-codebase context, and Agent mode plans multi-file changes, runs commands and fixes its own errors. It keeps VS Code's extensions and keybindings, so switching is painless." },
     { ul: [
       "**Best for:** professional developers who want the strongest mix of completions and agent workflows.",
-      "**Watch out for:** usage limits on the Pro plan if you lean on the agent heavily, and occasional context misses in very large repos.",
-      "**Starting price:** freemium, paid from $20/mo.",
+      "**Watch out for:** Cursor became part of SpaceX in August 2026 and its plans changed: the $8/mo Plus plan only includes Grok models, while Premium ($30/mo) adds cloud agents and third-party models billed at API list price.",
+      "**Starting price:** freemium, paid from $8/mo (Grok models only) or $30/mo with third-party models.",
     ] },
 
-    { h3: "2. Windsurf: agent-first with a generous free tier" },
-    { p: "[Windsurf](/tools/windsurf), formerly Codeium, is built around Cascade, an agent that maps your repo, makes coordinated multi-file edits, runs commands and previews the running app inline. It also offers on-prem options for enterprises. Its ownership changed in 2025, so check the current roadmap before standardizing on it." },
+    { h3: "2. Windsurf (now Devin Desktop): agent-first with a generous free tier" },
+    { p: "[Windsurf](/tools/windsurf), formerly Codeium, now belongs to Cognition, which renamed it Devin Desktop in June 2026. Its agent maps your repo, makes coordinated multi-file edits, runs commands and previews the running app inline, and the free plan includes unlimited Tab completions. Enterprises can get dedicated or VPC deployments." },
     { ul: [
       "**Best for:** developers who want an agent-centric workflow and a free tier to try it on.",
       "**Watch out for:** a smaller extension ecosystem than Cursor.",
-      "**Starting price:** freemium, paid from $15/mo.",
+      "**Starting price:** freemium, Pro from $20/mo.",
     ] },
 
     { h3: "3. Trae: the budget pick from ByteDance" },
@@ -66,7 +66,7 @@ const post: Post = {
     ] },
 
     { h3: "5. GitHub Copilot, JetBrains AI and Zed: AI in the editor you already use" },
-    { p: "[GitHub Copilot](/tools/github-copilot) works inside VS Code, JetBrains and Visual Studio and adds a coding agent on GitHub, from $10/mo with a free tier. [JetBrains AI Assistant](/tools/jetbrains-ai) brings the Junie agent to IntelliJ and PyCharm, from $10/mo. [Zed](/tools/zed) is a fast, open-source editor with an Agent Panel, from $20/mo. If you want Cursor-style features without a vendor in the middle, [Void](/tools/void-editor) and [Continue](/tools/continue-dev) are open-source and connect directly to the model of your choice." },
+    { p: "[GitHub Copilot](/tools/github-copilot) works inside VS Code, JetBrains and Visual Studio and adds a coding agent on GitHub, from $10/mo with a free tier. [JetBrains AI Assistant](/tools/jetbrains-ai) brings the Junie agent to IntelliJ and PyCharm, from $10/mo. [Zed](/tools/zed) is a fast, open-source editor with an Agent Panel, from $20/mo. If you want Cursor-style features without a vendor in the middle, [Void](/tools/void-editor) is open-source and connects directly to the model of your choice." },
 
     { h2: "Autonomous coding agents, reviewed" },
 
@@ -102,7 +102,7 @@ const post: Post = {
 
     { h3: "10. Aider, OpenCode and Warp: open and flexible alternatives" },
     { p: "[Aider](/tools/aider) is the free, open-source pair programmer that builds a map of your repo, makes multi-file edits and auto-commits with sensible messages, using Claude, GPT, DeepSeek or local models. [OpenCode](/tools/opencode), from the SST team, offers a polished terminal UI with any provider and LSP-aware edits. Both are free; you pay only for the model. [Warp](/tools/warp) rebuilds the terminal itself with agents that run command sequences and diagnose failures, from $15/mo." },
-    { p: "If you want CLI-style autonomy inside VS Code, [Cline](/tools/cline) and its fork [Roo Code](/tools/roo-code) are popular open-source agents that pause for approval at each consequential step. Local agents can run shell commands, so a guardrail like [HOL Guard](/tools/hol-guard), which checks agent actions against a local policy, is worth a look." },
+    { p: "If you want CLI-style autonomy inside VS Code or JetBrains, [Cline](/tools/cline) is a popular open-source agent that asks for approval at each step unless you turn on auto-approve. Local agents can run shell commands, so a guardrail like [HOL Guard](/tools/hol-guard), which checks agent actions against a local policy, is worth a look." },
 
     { h2: "AI code review bots, reviewed" },
 
@@ -132,9 +132,9 @@ const post: Post = {
     { h2: "How to choose: five questions to ask before you pay" },
     { ol: [
       "**Do you want to drive or delegate?** If you want to see every keystroke, pick an AI IDE. If you would rather review finished PRs, pick an autonomous agent. Most developers do both.",
-      "**Where can your code legally go?** Regulated teams should shortlist tools with self-hosting or air-gapped options, such as [Tabnine](/tools/tabnine), [Tabby](/tools/tabbyml) or [Refact.ai](/tools/refact-ai), and read data policies for everything else, including Trae.",
+      "**Where can your code legally go?** Regulated teams should shortlist tools with self-hosting or air-gapped options, such as [Tabby](/tools/tabbyml) or [Refact.ai](/tools/refact-ai), and read data policies for everything else, including Trae.",
       "**How big is your codebase?** Context quality matters more as repos grow. [Augment Code](/tools/augment-code) and [Sourcegraph Cody](/tools/sourcegraph-cody) specialize in very large codebases.",
-      "**What is your ecosystem?** AWS shops get extra value from Kiro and [Amazon Q Developer](/tools/amazon-q-developer); Google Cloud users from [Gemini Code Assist](/tools/gemini-code-assist) and Jules; GitHub-heavy teams from Copilot.",
+      "**What is your ecosystem?** AWS shops get extra value from Kiro and [Amazon Q Developer](/tools/amazon-q-developer); Google users from [Jules](/tools/jules) and Google's Antigravity tools, which replaced the Gemini Code Assist free tier in 2026; GitHub-heavy teams from Copilot.",
       "**How will costs scale?** Flat subscriptions are predictable. Usage-based agents and BYO-key tools can be cheap for light use and expensive for heavy use, so track spend for the first month.",
     ] },
 

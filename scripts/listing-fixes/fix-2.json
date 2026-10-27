@@ -1,0 +1,438 @@
+[
+ {
+  "slug": "clipdrop",
+  "changes": {},
+  "note": "No change: listing already credits Jasper as owner (previously Stability AI); no wrong ownership claims."
+ },
+ {
+  "slug": "copy-ai",
+  "changes": {},
+  "note": "No change: no ownership claims in listing copy; moreContext already notes the Oct 2025 Fullcast acquisition."
+ },
+ {
+  "slug": "common-room",
+  "changes": {},
+  "note": "No change: no contradicting claims; moreContext already covers the July 2026 Zoom deal."
+ },
+ {
+  "slug": "clickup-brain",
+  "changes": {
+   "name": "ClickUp Brain²",
+   "tagline": "One AI across your tasks, docs, chats, and connected apps (formerly ClickUp Brain)",
+   "description": "ClickUp Brain² (formerly ClickUp Brain) answers questions from your workspace and connected apps, writes updates, summarizes threads, and automates work across ClickUp. It also runs as Brain MAX apps for desktop and mobile, with a choice of AI models and Talk to Text dictation.",
+   "longDescription": "ClickUp Brain², the current version of ClickUp Brain, makes the everything-app conversational: ask about any project and it answers from tasks, docs, chats, and connected tools; auto-generate standups and summaries; draft docs in context; and trigger automations in plain language. One subscription lets you switch between models from several AI providers, and Brain MAX apps bring the assistant to desktop and mobile. For teams already consolidated on ClickUp, Brain² turns accumulated work data into leverage.",
+   "priceFrom": "$9/mo",
+   "seoTitle": "ClickUp Brain² Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+   "seoDescription": "ClickUp Brain² (formerly ClickUp Brain) review: workspace AI that answers from your tasks, docs, and apps. Compare features, pricing, and alternatives.",
+   "metaKeywords": "ClickUp Brain², ClickUp Brain2, ClickUp Brain, ClickUp Brain review, ClickUp Brain pricing, ClickUp Brain alternatives, Brain MAX, AI productivity tool, Project management, Workspace AI, Summaries, Automation"
+  },
+  "note": "Renamed to Brain² per clickup.com/ai; entry price now $9/user/mo (was $7); old name kept in tagline, description, SEO."
+ },
+ {
+  "slug": "hubspot-breeze",
+  "changes": {
+   "tagline": "HubSpot's AI agents in Agent Hub, reached through Breeze Assistant",
+   "description": "HubSpot's AI now lives in Agent Hub, a home for marketing, prospecting, customer service, and data agents that work from your CRM. Breeze Assistant is the interface for reaching those agents wherever your team works in HubSpot.",
+   "longDescription": "HubSpot's AI is now organized around Agent Hub, which sits on top of the HubSpot customer platform. Ready-made agents plan campaigns, create content, watch accounts for buying signals, resolve support questions, and answer questions about contacts and companies, and a no-code builder lets teams create custom agents. Breeze Assistant is the interface that puts those agents in front of users across HubSpot. Agent Hub is included with Starter, Professional, and Enterprise editions, and many agents run on HubSpot Credits. For the hundreds of thousands of companies on HubSpot, it's AI adoption without new vendors.",
+   "features": [
+    "Agent Hub for every agent",
+    "Breeze Assistant interface",
+    "Prospecting and customer agents",
+    "No-code custom agent builder"
+   ],
+   "seoDescription": "HubSpot Breeze review: HubSpot's AI agents in Agent Hub, reached through Breeze Assistant and built on your CRM. Compare features, pricing, and alternatives.",
+   "metaKeywords": "HubSpot Breeze, HubSpot Agent Hub, Breeze Assistant, HubSpot Breeze review, HubSpot Breeze pricing, HubSpot Breeze alternatives, AI marketing tool, AI agents, CRM, Prospecting"
+  },
+  "note": "Copy reframed around Agent Hub with Breeze Assistant as interface (verified on HubSpot AI page); dropped Copilot and Breeze Intelligence feature names."
+ },
+ {
+  "slug": "grammarly",
+  "changes": {},
+  "note": "No change: listing makes no parent-company claim; moreContext already says it operates as part of Superhuman."
+ },
+ {
+  "slug": "carejobs-now",
+  "changes": {
+   "description": "CareJobs.Now is a free AI job search for US healthcare workers. Describe the job you want in plain words and its AI searches 370,000+ openings read daily from 2,000+ employers and sources, including hospitals' and health systems' own career sites, or matches you from your LinkedIn profile. It shows the pay wherever the employer posts it, which is about a third of listings.",
+   "longDescription": "CareJobs.Now is a free AI job search for US healthcare workers. Describe the job you want in plain words and its AI searches 370,000+ openings read daily from 2,000+ employers and sources, including hospitals' and health systems' own career sites, or matches you from your LinkedIn profile. It shows the pay wherever the employer posts it, which is about a third of listings."
+  },
+  "note": "Site now cites 378,896 jobs from 2,112 employers and sources and says 32% post pay; removed 'every job shows pay' and the 258 figure."
+ },
+ {
+  "slug": "superhuman",
+  "changes": {
+   "longDescription": "Superhuman made email feel like a game of speed (keyboard-first, sub-100ms interactions) and layered AI on top: Write drafts in your voice, Instant Reply suggests three responses, Auto Summarize condenses threads, and Ask AI answers questions from your inbox history. In October 2025 Grammarly renamed its parent company Superhuman, so the email app is now Superhuman Mail, part of a lineup with Superhuman Go, Superhuman Docs (built on Coda), and Grammarly. It targets professionals drowning in mail."
+  },
+  "note": "Fixed reversed ownership claim: Grammarly's parent company was renamed Superhuman (Oct 2025); listed the Mail, Go, Docs, Grammarly lineup."
+ },
+ {
+  "slug": "topaz-labs",
+  "changes": {
+   "description": "Topaz Photo, Gigapixel, and Topaz Video sharpen, denoise, and upscale real photos and footage with results pros trust for client work. Every plan is now a monthly or annual subscription, with Topaz Studio bundling all the apps.",
+   "longDescription": "Topaz Labs builds the enhancement tools professionals actually ship with: Topaz Photo recovers detail from noisy, blurry, or low-res images, Gigapixel upscales to print sizes, and Topaz Video upscales and restores footage up to 8K. Desktop plans include unlimited local rendering, with optional cloud credits, browser apps, and plugin support for Lightroom and Photoshop. All plans are now subscriptions, from single-app plans to Topaz Studio, which bundles every app.",
+   "priceFrom": "$149/yr",
+   "features": [
+    "Topaz Photo sharpen/denoise/upscale",
+    "Topaz Video up to 8K",
+    "Unlimited local rendering",
+    "Lightroom/Photoshop plugins"
+   ],
+   "pros": [
+    "Pro-trusted output quality",
+    "Topaz Studio bundles every app",
+    "Works offline"
+   ],
+   "cons": [
+    "GPU-hungry",
+    "Subscription-only pricing"
+   ],
+   "seoDescription": "Topaz Labs review: Topaz Photo, Gigapixel, and Video sharpen, denoise, and upscale photos and footage, now on subscriptions. Compare pricing and alternatives."
+  },
+  "note": "Pricing page lists only subscriptions (no one-time option); cheapest desktop plan Gigapixel $149/yr; removed one-time claims and updated app names."
+ },
+ {
+  "slug": "logoai",
+  "changes": {
+   "description": "LogoAI designs logos with matching brand identities and even generates a branded website. Pricing starts with a $10 seven-day trial that renews into a $20/month Pro plan unless you cancel.",
+   "longDescription": "LogoAI compresses brand setup: describe your business, pick styles, and it generates logo options with coordinated colors and fonts, then extends your choice into business cards, social kits, posters, and a generated brand website. A low-cost seven-day trial rolls into a monthly Pro subscription, and instant delivery suits side projects and small businesses bootstrapping an identity.",
+   "priceFrom": "$20/mo",
+   "features": [
+    "AI logo generation",
+    "Full brand kits",
+    "Branded website generation",
+    "AI Design Studio"
+   ],
+   "pros": [
+    "Cheap complete identity",
+    "Low-cost trial",
+    "Fast results"
+   ],
+   "seoDescription": "LogoAI review: AI logos with matching brand kits and a branded website, on a $10 trial then $20/month. Compare features, pricing, and top LogoAI alternatives.",
+   "metaKeywords": "LogoAI, LogoAI review, LogoAI pricing, LogoAI alternatives, AI image generator, Logos, Branding, Brand kit, Small business"
+  },
+  "note": "Pricing page: $10 7-day trial renewing at $20/mo Pro, no one-time option; removed one-time claims."
+ },
+ {
+  "slug": "resemble-ai",
+  "changes": {
+   "tagline": "Deepfake detection and AI watermarking, plus free open-source Chatterbox voice models",
+   "description": "Resemble AI now focuses on detecting deepfake audio, video, and images in real time and on watermarking AI content for provenance. It no longer sells voice generation to new customers, but its open-source Chatterbox text-to-speech models remain free under the MIT license.",
+   "longDescription": "Resemble AI began as a voice cloning company and in August 2026 shifted its business to deepfake defense, ending commercial voice generation for new customers. Its Detect models flag AI-generated audio, video, and images with explainable results, Watermarker embeds provenance markers with C2PA support, and identity tools enroll and authenticate voices. Detection plugs into telephony and meeting platforms for contact centers, banks, and media teams, with cloud, on-premises, or air-gapped deployment. Developers can still use Chatterbox, the company's MIT-licensed open-source text-to-speech family, for free.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$350/mo",
+   "features": [
+    "Real-time deepfake detection",
+    "AI watermarking with C2PA",
+    "Voice identity verification",
+    "Open-source Chatterbox TTS"
+   ],
+   "pros": [
+    "Security and detection focus",
+    "Flexible deployment",
+    "Free open-source TTS models"
+   ],
+   "cons": [
+    "No longer sells voice generation",
+    "Team plans priced for enterprises"
+   ],
+   "seoDescription": "Resemble AI review: real-time deepfake detection and AI watermarking, plus free open-source Chatterbox voice models. Compare pricing and alternatives.",
+   "metaKeywords": "Resemble AI, Resemble AI review, Resemble AI pricing, Resemble AI alternatives, Deepfake detection, Resemble Detect, AI watermarking, Chatterbox, Enterprise, On-prem",
+   "moreContext": "Resemble AI is a rare case of a voice technology company turning its expertise toward catching fakes. Founded in 2019 as a voice cloning startup, it announced in August 2026 that it had stopped offering voice generation as a commercial product and would focus on multimodal deepfake detection and watermarking. The company argues that knowing how synthetic voices are built at the model level makes it better at spotting them.\n\n- Its Detect models flag AI-generated audio, video and images in real time, and an Intelligence layer explains results in plain language.\n- Watermarker embeds imperceptible provenance markers in media and supports C2PA standards.\n- Identity tools enroll and authenticate voices, which helps contact centers and banks guard against impersonation.\n- Detection plugs into telephony platforms like Twilio, Five9 and Genesys, plus Microsoft Teams, Zoom, Google Meet and Webex.\n- Chatterbox, the company's open-source text-to-speech family, stays free under the MIT license, and its multilingual version covers more than 20 languages.\n\nResemble AI is best for enterprises, contact centers, financial institutions and media teams that need to verify what is real. Plans start with pay-as-you-go credits, while Team and Business subscriptions add seats, and deployment can be cloud-based, on-premises or fully air-gapped, with SOC 2 Type II and ISO 27001 credentials. Tip: if you are evaluating detection, pilot it inside an existing call or meeting workflow first, since real traffic reveals far more about fit than test clips do."
+  },
+  "note": "Rewritten around detection and watermarking (voice-cloning page confirms 'no longer available'); Team $350/mo, Business $1,000/mo, $0 pay-as-you-go Flex; Chatterbox free."
+ },
+ {
+  "slug": "roblox-gui-maker",
+  "changes": {
+   "tagline": "AI Roblox GUI maker for Roblox Studio layout plans and component trees",
+   "description": "Roblox GUI Maker helps Roblox Studio creators turn prompts into GUI layout plans, named component trees, desktop and mobile mockups, and implementation checklists. It is built for Roblox developers planning menus, HUDs, shop panels, inventory screens, settings pages, reward popups, and admin interfaces. Lua code export is listed as coming soon, so for now you build the GUI in Studio from its blueprint.",
+   "longDescription": "Roblox GUI Maker helps Roblox Studio creators turn prompts into GUI layout plans, named component trees, desktop and mobile mockups, and implementation checklists. It is built for Roblox developers planning menus, HUDs, shop panels, inventory screens, settings pages, reward popups, and admin interfaces. Lua code export is listed as coming soon, so for now you build the GUI in Studio from its blueprint.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$12/mo"
+  },
+  "note": "Removed Lua starter code claim (site FAQ: 'Lua code export is coming soon') and unlisted JSON blueprints; site shows free signup credits plus paid plans from $12/mo, so FREE changed to FREEMIUM."
+ },
+ {
+  "slug": "blur-background",
+  "changes": {
+   "tagline": "Blur photo backgrounds in your browser",
+   "description": "Blur Background, from Vignra, softens the background of a photo while keeping the subject sharp, giving portraits, profile images, and product shots a shallow depth-of-field look. The free Basic mode runs in your browser with no sign-up, and an optional AI Refined mode uses credits and private cloud processing for tougher images. It blurs backgrounds only and does not remove or replace them.",
+   "longDescription": "Blur Background, from Vignra, softens the background of a photo while keeping the subject sharp, giving portraits, profile images, and product shots a shallow depth-of-field look. The free Basic mode runs in your browser with no sign-up, and an optional AI Refined mode uses credits and private cloud processing for tougher images. It blurs backgrounds only and does not remove or replace them.",
+   "pricing": "FREEMIUM"
+  },
+  "note": "Site only blurs ('without replacing the background'); removed removal claim; free Basic runs in browser, AI Refined costs credits, so FREE changed to FREEMIUM."
+ },
+ {
+  "slug": "yap-audio-to-text",
+  "changes": {
+   "description": "Turns MP3, M4A, WAV or video files into editable text and SRT or VTT subtitles. The Whisper model runs in your browser, so the file is never uploaded. Free with no sign-up, for files up to 60 minutes and 300 MB each, with no limit on how many files you process.",
+   "longDescription": "Turns MP3, M4A, WAV or video files into editable text and SRT or VTT subtitles. The Whisper model runs in your browser, so the file is never uploaded. Free with no sign-up, for files up to 60 minutes and 300 MB each, with no limit on how many files you process."
+  },
+  "note": "Replaced 'no minute limits' with the 60-minute, 300 MB per-file cap."
+ },
+ {
+  "slug": "napless",
+  "changes": {
+   "description": "Napless is a macOS keep-awake app for work that must continue without interruption. Start a timed session or keep your Mac awake while a task runs, then let it sleep when the session is complete, and with Napless Pro it can watch downloads, calls, exports, backups, and agent runs. New installs get a 7-day trial of every feature and then need Napless Pro, a one-time purchase, on macOS 13 or later on Apple silicon and Intel Macs.",
+   "longDescription": "Napless is a macOS keep-awake app for work that must continue without interruption. Start a timed session or keep your Mac awake while a task runs, then let it sleep when the session is complete, and with Napless Pro it can watch downloads, calls, exports, backups, and agent runs. New installs get a 7-day trial of every feature and then need Napless Pro, a one-time purchase, on macOS 13 or later on Apple silicon and Intel Macs.",
+   "pricing": "FREE_TRIAL",
+   "priceFrom": "$24 one-time"
+  },
+  "note": "Since 1.5.0 new installs get a 7-day trial then need Pro ($24 one-time, $8 founding price for first 50); removed free timed-sessions claim."
+ },
+ {
+  "slug": "yap",
+  "changes": {},
+  "note": "No change: listing is already FREE_TRIAL at $6.90/mo and copy makes no free-tier claim; site confirms 3-day trial."
+ },
+ {
+  "slug": "pieces",
+  "changes": {
+   "pricing": "FREE_TRIAL",
+   "priceFrom": "$18.99/mo",
+   "pros": [
+    "Unique memory angle",
+    "Privacy-first local AI",
+    "7-day free trial"
+   ]
+  },
+  "note": "Pricing page: no free plan, 7-day trial (card required), Pro $18.99/mo; replaced 'Generous free tier'."
+ },
+ {
+  "slug": "beatoven",
+  "changes": {},
+  "note": "No change: could not verify; official pricing page returns 404 and third-party sources still describe a limited free tier, while listing copy makes no explicit free-plan claim."
+ },
+ {
+  "slug": "getimg-ai",
+  "changes": {
+   "pricing": "PAID",
+   "priceFrom": "$15/mo",
+   "cons": [
+    "Interface less polished than leaders",
+    "No free plan"
+   ]
+  },
+  "note": "Pricing page shows no free plan; cheapest is Entry at $15/mo (USD in page data, CA$20 shown on cards)."
+ },
+ {
+  "slug": "gpt-img",
+  "changes": {
+   "description": "Make AI images from text or edit your own photos, running one prompt across GPT Image 2.5, Nano Banana and other models. Built for product photos, ads, thumbnails and social graphics, with 1K/2K/4K output and automatic refunds for failed generations. 30 free credits on signup, no card needed.",
+   "longDescription": "Make AI images from text or edit your own photos, running one prompt across GPT Image 2.5, Nano Banana and other models. Built for product photos, ads, thumbnails and social graphics, with 1K/2K/4K output and automatic refunds for failed generations. 30 free credits on signup, no card needed."
+  },
+  "note": "Site says 30 free credits on signup, not 15."
+ },
+ {
+  "slug": "caption-remover",
+  "changes": {
+   "description": "Caption Remover removes burned-in captions in a browser: Basic works automatically, while High quality uses paid credits to clean one selected fixed area. Sign-in required; the first two successful Basic videos are free, plus two more for submitting private feedback, then paid plans. SDR MP4/MOV up to 2048 MB and 60 seconds; queued processing, 720p-equivalent MP4 output, and reconstruction artifacts may remain.",
+   "longDescription": "Caption Remover removes burned-in captions in a browser: Basic works automatically, while High quality uses paid credits to clean one selected fixed area. Sign-in required; the first two successful Basic videos are free, plus two more for submitting private feedback, then paid plans. SDR MP4/MOV up to 2048 MB and 60 seconds; queued processing, 720p-equivalent MP4 output, and reconstruction artifacts may remain."
+  },
+  "note": "Modes now Basic and High quality, file limit 2048 MB, free allowance 2 Basic videos plus 2 for feedback (verified on site)."
+ },
+ {
+  "slug": "nano-banana-2-1",
+  "changes": {
+   "tagline": "Independent third-party Nano Banana image generator and editor",
+   "description": "Nano Banana 2.1 is an independent third-party website for generating and editing images with a Nano Banana model, offering text-to-image output at 1K, 2K, or 4K and reference-guided editing with uploaded images. Image generation is live and runs on credits, with a small one-time welcome credit gift for new accounts and paid subscriptions or credit packs after that. The site states it is independent and not operated by Google, so it is not an official Google product.",
+   "longDescription": "Nano Banana 2.1 is an independent third-party website for generating and editing images with a Nano Banana model, offering text-to-image output at 1K, 2K, or 4K and reference-guided editing with uploaded images. Image generation is live and runs on credits, with a small one-time welcome credit gift for new accounts and paid subscriptions or credit packs after that. The site states it is independent and not operated by Google, so it is not an official Google product."
+  },
+  "note": "Generation is now live on credits (3 to 10 credits per image, 10 welcome credits); clarified it is an independent site not operated by Google."
+ },
+ {
+  "slug": "research-rabbit",
+  "changes": {
+   "tagline": "Spotify-style discovery for academic papers, free at its core",
+   "longDescription": "ResearchRabbit reimagines literature discovery as curation: seed a collection with a few papers and it recommends more, maps citation networks interactively, tracks author trajectories, and emails you when relevant new work publishes. The core plan is free with Zotero sync, and an optional ResearchRabbit+ tier adds more seed articles, advanced search controls, and multiple projects. Now owned by Litmaps, it's become the discovery layer of many researchers' stacks.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$10/mo",
+   "pros": [
+    "Free core plan",
+    "Excellent ongoing discovery",
+    "Zotero integration"
+   ]
+  },
+  "note": "Pricing page: Free plan plus ResearchRabbit+ at $10/mo annual ($12.50 monthly); owned by Litmaps; dropped 'free forever' and 'completely free'."
+ },
+ {
+  "slug": "udio",
+  "changes": {
+   "description": "Udio generates high-fidelity music with strong vocal quality, plus remixing, extending, and section inpainting. After its label settlements, audio and stem downloads are disabled and creations stay on the platform while a licensed service rolls out.",
+   "longDescription": "Founded by ex-DeepMind researchers, Udio competes with Suno on generation quality, with audio fidelity and vocals many listeners prefer. Its editing tools (extend, remix, inpaint sections) let you refine a track rather than regenerate it. After settling with Universal Music Group and signing a deal with Warner, Udio disabled downloads of tracks and stems and is moving to a licensed service where creations are played and shared inside the platform.",
+   "features": [
+    "High-fidelity track generation",
+    "Section inpainting and extend",
+    "Remix existing generations",
+    "In-platform playback and sharing"
+   ],
+   "pros": [
+    "Excellent audio fidelity",
+    "Section-level editing tools",
+    "Strong vocal realism"
+   ],
+   "cons": [
+    "No audio or stem downloads",
+    "Licensed service still rolling out",
+    "Smaller community than Suno"
+   ],
+   "seoDescription": "Udio review: high-fidelity AI music with strong vocals and inpainting, now moving to a licensed in-platform service. Compare pricing and alternatives.",
+   "metaKeywords": "Udio, Udio review, Udio pricing, Udio alternatives, AI audio tool, Music generation, Vocals, Remix, Licensed AI music"
+  },
+  "note": "Removed stem downloads: downloads of audio, video, and stems were disabled Oct 29 2025 after the UMG settlement (reported by Digital Music News and others); creations stay in-platform."
+ },
+ {
+  "slug": "tuck",
+  "changes": {
+   "tagline": "Upcoming menu bar icon manager for macOS 26",
+   "description": "Tuck is an upcoming free, GPL-3.0 macOS menu-bar manager; its first public build is not released yet and the site says it is launching soon. It is designed to hide, show, search, and arrange menu bar icons, including a Tuck Bar for notched displays, and requires macOS 26. Tuck has no telemetry and does not require sign-up, and an optional one-time Pro add-on is planned.",
+   "longDescription": "Tuck is an upcoming free, GPL-3.0 macOS menu-bar manager; its first public build is not released yet and the site says it is launching soon. It is designed to hide, show, search, and arrange menu bar icons, including a Tuck Bar for notched displays, and requires macOS 26. Tuck has no telemetry and does not require sign-up, and an optional one-time Pro add-on is planned."
+  },
+  "note": "Site says 'Launching soon' and first public build not released; macOS 26 only; planned $12 Pro add-on keeps FREEMIUM."
+ },
+ {
+  "slug": "sourcegraph-cody",
+  "changes": {
+   "description": "Cody uses Sourcegraph's code graph to answer questions and write code with context from massive multi-repo codebases. It is now sold only as Cody Enterprise; the Free and Pro plans ended in July 2025 and individual developers are pointed to Amp.",
+   "longDescription": "Cody's edge is context: built on Sourcegraph's code intelligence platform, it retrieves from your entire organization's repositories (not just open files) when answering questions, generating code, or explaining systems. Enterprises with sprawling monorepos and thousands of services use it where single-repo assistants fall short. Sourcegraph ended Cody Free and Pro in July 2025, so Cody is now an Enterprise-only product sold through Sourcegraph's annual enterprise contracts, while individual developers are directed to Amp.",
+   "pricing": "PAID",
+   "priceFrom": null,
+   "pros": [
+    "Unmatched large-codebase context",
+    "Pairs with code search",
+    "Flexible models"
+   ],
+   "cons": [
+    "Enterprise-only, no individual plans",
+    "Best value needs Sourcegraph platform"
+   ],
+   "seoDescription": "Sourcegraph Cody review: enterprise-only AI coding assistant with context from your whole multi-repo codebase. Compare features, pricing, and alternatives."
+  },
+  "note": "Cody Free/Pro ended July 2025; now Enterprise-only; Sourcegraph pricing page lists Enterprise starting at $16K/yr minimum annual contract (includes AI credits). (priceFrom cleared: enterprise contract minimum is not a Cody list price)"
+ },
+ {
+  "slug": "amazon-q-developer",
+  "changes": {
+   "description": "Amazon Q Developer completes code, runs agentic tasks, upgrades legacy Java, and answers AWS questions with account awareness. AWS will end support for its IDE plugins on April 30, 2027 and points developers to Kiro for agentic coding.",
+   "longDescription": "Amazon Q Developer (evolved from CodeWhisperer) is the assistant AWS shops choose: IDE completions and agents that implement features, generate tests, and document code, plus standout features like automated Java version upgrades and AWS console troubleshooting grounded in your actual resources. The free tier is generous; Pro adds enterprise controls. AWS has announced it will end support for the Q Developer IDE plugins on April 30, 2027 and recommends Kiro for inline suggestions, chat, and agentic coding, so new adopters should plan for that path.",
+   "cons": [
+    "Less compelling off AWS",
+    "Completions trail Copilot/Cursor",
+    "IDE plugins end April 2027"
+   ]
+  },
+  "note": "Added the April 30 2027 IDE plugin end-of-support and Kiro pointer (confirmed in AWS docs)."
+ },
+ {
+  "slug": "refact-ai",
+  "changes": {
+   "tagline": "Open-source AI coding agent, local-first with your own model keys",
+   "description": "Refact.ai offers an open-source autonomous coding agent, completions, and chat that run locally or self-hosted with bring-your-own-key models. Its hosted Refact Cloud and paid cloud subscriptions are shutting down, so you connect your own model provider or a local runtime.",
+   "longDescription": "Refact.ai combines openness with autonomy: its agent plans and executes multi-step coding tasks with tool use (shell, debugger, browser), and completions and chat work in VS Code and JetBrains. Refact Cloud, the hosted service, is being retired, so the project continues as open source, local-first, and bring-your-own-key, working with providers such as OpenAI, Gemini, Grok, and DeepSeek or local runtimes like Ollama and LM Studio, including fully air-gapped setups. It topped SWE-bench among open agents, showing open tools can compete.",
+   "pricing": "FREE",
+   "features": [
+    "Autonomous agent with tools",
+    "Local-first and self-hosted",
+    "Bring-your-own-key models",
+    "IDE completions and chat"
+   ],
+   "cons": [
+    "You supply models and API keys",
+    "Hosted cloud being retired",
+    "Smaller community"
+   ],
+   "seoDescription": "Refact.ai review: open-source, local-first AI coding agent with completions and chat that uses your own model keys. Compare features and alternatives."
+  },
+  "note": "Refact blog: Cloud shutting down (date TBA), subscriptions terminated, project continues open source, local-first, BYOK; pricing set to FREE (model costs come from your own provider)."
+ },
+ {
+  "slug": "stable-audio",
+  "changes": {
+   "longDescription": "Stable Audio brings Stability's open ethos to sound: with the Stable Audio 3.0 family (May 2026), generate structured instrumental music up to about six minutes, craft sound effects and ambiences from prompts, and control tempo and timing. Open-weight Small, Small SFX, and Medium models on Hugging Face let developers run and fine-tune sound generation locally, a rare open option in commercial audio AI. It does not generate vocals or lyrics.",
+   "features": [
+    "Text-to-music up to ~6 min",
+    "Sound effect generation",
+    "Tempo and structure control",
+    "Open-weight models"
+   ],
+   "cons": [
+    "No vocals or lyrics",
+    "Suno leads song quality"
+   ]
+  },
+  "note": "Stable Audio 3.0 (May 20 2026) reaches about 6 minutes (Medium up to 6:20), three open-weight models, instrumental only; replaced 3-minute claim."
+ },
+ {
+  "slug": "listnr",
+  "changes": {
+   "tagline": "AI text-to-speech studio with 1,000+ voices and voice cloning",
+   "description": "Listnr converts text to speech in 1,000+ voices and 140+ languages and accents, with voice cloning, multi-speaker scenes, and pronunciation controls for podcasts, audiobooks, courses, and video voiceovers. A free trial lets you test voices before choosing a word-based plan.",
+   "longDescription": "Listnr is a text-to-speech studio for narration: generate voiceovers with 1,000+ voices across 140+ languages and accents, direct delivery with style prompts, pacing, and custom pronunciations, build multi-speaker dialogue from one script, and clone a voice from an approved recording. Word-based plans and a free trial make it a budget pick for podcast audio, audiobooks, courses, and video voiceovers.",
+   "features": [
+    "1,000+ voices, 140+ languages",
+    "Multi-speaker scenes",
+    "Pronunciation and pacing controls",
+    "Voice cloning"
+   ],
+   "pros": [
+    "Wide voice and language range",
+    "Low entry price",
+    "Fine delivery controls"
+   ],
+   "seoDescription": "Listnr review: AI text to speech in 1,000+ voices and 140+ languages, with voice cloning and multi-speaker scenes. Compare features, pricing, and alternatives.",
+   "metaKeywords": "Listnr, Listnr review, Listnr pricing, Listnr alternatives, AI audio tool, TTS, Voiceovers, Voice cloning, Budget"
+  },
+  "note": "Current site does not mention podcast hosting, RSS, or blog embeds; removed those claims and refocused on TTS studio features."
+ },
+ {
+  "slug": "trint",
+  "changes": {
+   "description": "Trint transcribes audio and video, with live transcription in 50+ languages and translation into 70+. Built by a former reporter, it lets teams verify, highlight, and assemble quotes into stories.",
+   "longDescription": "Founded by an Emmy-winning journalist, Trint treats transcripts as raw story material: verify against synced audio, highlight and tag key quotes, collaborate in shared workspaces, transcribe live in 50+ languages, translate into 70+ languages, and export to editing tools. Newsrooms like AP and Der Spiegel run investigative and daily workflows through it, with enterprise security to match.",
+   "features": [
+    "Live transcription in 50+ languages",
+    "Translation into 70+ languages",
+    "Quote highlighting and tagging",
+    "Team story workspaces"
+   ],
+   "seoDescription": "Trint review: live transcription in 50+ languages, translation into 70+, and tools to verify quotes and build stories. Compare pricing and alternatives."
+  },
+  "note": "Site says live transcription in 50+ languages and translation into 70+; replaced 40+ and 50+ translation figures."
+ },
+ {
+  "slug": "camb-ai",
+  "changes": {
+   "tagline": "Dub anything into 150+ languages, even live sports",
+   "description": "Camb AI translates and dubs audio/video into 150+ languages with voice preservation, powering live sports and film localization. It also offers live translation and AI captions, and developers can use its speech models through an API.",
+   "longDescription": "Camb AI pushes dubbing's frontier: its MARS and BOLI models dub content into 150+ languages (including underserved ones) while preserving the original speaker's voice and emotion, fast enough for live sports broadcasts (used by Major League Soccer and Eurovision Sport). Studios localize films; leagues localize broadcasts in real time.",
+   "features": [
+    "150+ language dubbing",
+    "Voice and emotion preservation",
+    "Live broadcast dubbing",
+    "Speech separation tech"
+   ],
+   "seoDescription": "Camb AI review: AI dubbing into 150+ languages with voice preservation, powering live sports and film localization. Compare pricing and alternatives.",
+   "metaKeywords": "Camb AI, Camb AI review, Camb AI pricing, Camb AI alternatives, AI audio tool, Dubbing, 150+ languages, Live sports, Voice preservation"
+  },
+  "note": "Site says 150+ languages; updated all 140+ mentions (tagline colon also replaced with a comma)."
+ },
+ {
+  "slug": "deepl-write",
+  "changes": {
+   "description": "DeepL Write improves grammar, style, tone, and word choice in nine languages, including English, German, French, Spanish, Italian, Portuguese, Chinese, Japanese, and Korean, with the nuance DeepL is famous for. Corrections-only and full-rewrite modes work in the browser, desktop apps, and Microsoft Office add-ins.",
+   "longDescription": "DeepL Write applies the company's acclaimed language models to rewriting: paste a draft and get grammatically clean, natural alternatives with tone and style controls. It shines for non-native speakers who want business-appropriate writing that doesn't sound translated, now in English, German, French, Spanish, Italian, Portuguese, Simplified Chinese, Japanese, and Korean, and it pairs naturally with DeepL's translator.",
+   "features": [
+    "Sentence-level rewrites",
+    "Tone and style switching",
+    "Nine-language support",
+    "Pro data privacy guarantees"
+   ],
+   "cons": [
+    "Fewer languages than DeepL Translator",
+    "No long-form generation"
+   ],
+   "seoDescription": "DeepL Write review: improves grammar, style, and tone in nine languages, from English and German to Japanese and Korean. Compare pricing and alternatives."
+  },
+  "note": "DeepL blog lists 9 supported languages; removed English/German-only claims (also dropped a banned hype word)."
+ }
+]

@@ -22,7 +22,7 @@ const post: Post = {
       "**Image generation:** [Microsoft Designer](/tools/microsoft-designer) for casual use, [Ideogram](/tools/ideogram) for images with text.",
       "**Video editing:** [CapCut](/tools/capcut).",
       "**Voice and audio:** [ElevenLabs](/tools/elevenlabs) for voices, [OpenAI Whisper](/tools/openai-whisper) for transcription.",
-      "**Coding:** [GitHub Copilot](/tools/github-copilot) or [Gemini Code Assist](/tools/gemini-code-assist).",
+      "**Coding:** [GitHub Copilot](/tools/github-copilot) or [Windsurf](/tools/windsurf), now called Devin Desktop.",
       "**Research:** [Perplexity](/tools/perplexity) for the web, [NotebookLM](/tools/notebooklm) for your own documents.",
       "**Meetings and slides:** [Fathom](/tools/fathom) and [Gamma](/tools/gamma).",
     ] },
@@ -56,7 +56,7 @@ const post: Post = {
     { h3: "3. Image generation and design" },
     { p: "Free image generators are plentiful. The differences are in output rights, privacy and how many images you get per day. For a deeper comparison, see the [best free AI image generators](/blog/best-free-ai-image-generators)." },
     { ul: [
-      "**[Microsoft Designer](/tools/microsoft-designer):** DALL·E-powered images, stickers, cards and social designs free with a Microsoft account. **Limit:** daily boost limits and fewer pro controls.",
+      "**[Microsoft Designer](/tools/microsoft-designer):** AI images, stickers, cards and social designs free with a Microsoft account. **Limit:** daily boost limits and fewer pro controls.",
       "**[Ideogram](/tools/ideogram):** the pick when you need legible text inside an image, like posters, logos and shirts, with free daily generations. **Limit:** free images are public, and photorealism trails the top paid models.",
       "**[Canva Magic Studio](/tools/canva-magic-studio):** text-to-image, Magic Edit and background tools inside Canva's editor. **Limit:** AI credits are shared across features, and raw generation is weaker than dedicated tools.",
       "**[Stable Diffusion](/tools/stable-diffusion):** open-weights models you can run locally with no per-image fees and huge customization. **Limit:** you need a capable GPU and some technical setup for good results.",
@@ -80,7 +80,7 @@ const post: Post = {
     { p: "Free coding assistants have improved dramatically. Our [best AI coding tools](/blog/best-ai-coding-tools) guide and [Cursor vs Windsurf vs Trae](/blog/cursor-vs-windsurf-vs-trae) comparison cover the paid editors too." },
     { ul: [
       "**[GitHub Copilot](/tools/github-copilot):** inline completions and chat in VS Code, JetBrains and Visual Studio, with a free tier. **Limit:** the free plan caps usage, and the best features are tied to the GitHub ecosystem.",
-      "**[Gemini Code Assist](/tools/gemini-code-assist):** completions and chat with a free individual tier that offers some of the highest usage limits anywhere. **Limit:** agent features are still maturing, and it fits Google Cloud users best.",
+      "**[Windsurf](/tools/windsurf):** the AI editor Cognition renamed Devin Desktop in 2026. Its free plan includes unlimited Tab completions and inline edits plus a light agent quota. **Limit:** the free quota is small and only some models are available.",
       "**[Void](/tools/void-editor):** an open-source AI editor with chat, agent mode and checkpoints that connects directly to the model of your choice, including local ones. **Limit:** you manage your own API costs unless you run local models.",
     ] },
 
@@ -130,7 +130,7 @@ const post: Post = {
     { h3: "Can I use images from free AI generators commercially?" },
     { p: "It depends on the tool and plan. Some free plans allow it, others restrict commercial use or make your images public. Check the terms of each tool before using output in ads, products or client work." },
     { h3: "Is there a completely free AI coding assistant?" },
-    { p: "Yes. [GitHub Copilot](/tools/github-copilot) and [Gemini Code Assist](/tools/gemini-code-assist) both have free tiers, and [Void](/tools/void-editor) is an open-source editor that is free if you bring your own model or run one locally." },
+    { p: "Yes. [GitHub Copilot](/tools/github-copilot) and [Windsurf](/tools/windsurf) (now Devin Desktop) both have free tiers, and [Void](/tools/void-editor) is an open-source editor that is free if you bring your own model or run one locally." },
     { h3: "Which free AI tools need no account?" },
     { p: "Very few useful ones. Most free plans need an account to track usage limits. Open-source tools like [OpenAI Whisper](/tools/openai-whisper) and [Stable Diffusion](/tools/stable-diffusion) need no account at all if you run them on your own computer." },
 

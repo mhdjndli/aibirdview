@@ -140,13 +140,13 @@ const post: Post = {
 
     { h2: "Alternatives worth a look" },
     { p: "If you came here for Resemble-style enterprise voice cloning, or neither ElevenLabs nor Murf fits, these tools from our directory are the closest options. Our [best AI voice cloning tools](/blog/best-ai-voice-cloning-tools) guide covers more of the field." },
-    { logos: ["play-ht", "cartesia", "wellsaid-labs", "lovo", "speechify"] },
+    { logos: ["cartesia", "wellsaid-labs", "lovo", "speechify", "descript"] },
     { ul: [
-      "**[PlayHT](/tools/play-ht):** voice cloning and a large multilingual voice library, popular with developers.",
       "**[Cartesia](/tools/cartesia):** very low-latency speech models built for real-time voice agents, with cloning.",
       "**[WellSaid](/tools/wellsaid-labs):** professional voices from licensed voice actors, a good fit for corporate training.",
       "**[LOVO](/tools/lovo):** voices plus a video editor and subtitles, aimed at marketers and YouTubers.",
       "**[Speechify](/tools/speechify):** best known for reading text aloud, with voiceover and cloning tools on top.",
+      "**[Descript](/tools/descript):** a transcript-based audio and video editor that clones your own voice, so you can fix narration by typing.",
     ] },
     { p: "Browse every speech, music and transcription tool in the [AI audio tools category](/categories/audio)." },
 

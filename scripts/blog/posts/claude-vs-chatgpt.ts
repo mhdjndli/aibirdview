@@ -57,7 +57,7 @@ const post: Post = {
     { p: "**Winner: ChatGPT, narrowly,** for deep web research reports." },
 
     { h3: "Multimodal: images, voice and vision" },
-    { p: "ChatGPT is far ahead here. It generates and edits images directly in chat (OpenAI's image models, including [DALL·E 3](/tools/dall-e-3), live inside it), holds natural voice conversations on mobile and desktop, and can look at photos and screenshots. Paid plans also connect to [Sora](/tools/sora) for video." },
+    { p: "ChatGPT is far ahead here. It generates and edits images directly in chat (it uses OpenAI's GPT Image models, which replaced DALL·E 3), holds natural voice conversations on mobile and desktop, and can look at photos and screenshots. OpenAI discontinued its Sora video app in 2026, so for video you will want a dedicated tool such as [Runway](/tools/runway) or [Kling AI](/tools/kling-ai)." },
     { p: "Claude reads images, screenshots, charts and PDFs very well, and its mobile apps support voice. It does not generate images natively, though it can produce diagrams, SVG graphics and interactive visuals through Artifacts. If you need pictures for a blog post or a slide, ChatGPT saves you a trip to a separate tool." },
     { p: "**Winner: ChatGPT,** clearly." },
 

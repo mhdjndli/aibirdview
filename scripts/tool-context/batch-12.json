@@ -1,291 +1,291 @@
 [
-  {
-    "slug": "reclaim-ai",
-    "moreContext": "Plenty of calendar apps show you your week, but Reclaim actively rearranges it on your behalf. It sits on top of Google Calendar or Outlook and treats your priorities as flexible blocks that move intelligently as meetings shift, which makes it one of the most practical AI scheduling assistants for people whose days rarely go to plan. The company notes its team came from Dropbox, and it says more than 600,000 people across tens of thousands of companies use it.\n\n- Task sync pulls work in from Asana, ClickUp, Todoist, Jira, Linear and Google Tasks, then schedules it by priority and due date.\n- Slack integration updates your status to match your calendar and can quiet notifications during focus blocks.\n- Buffer time can be added automatically for breaks, travel and meeting prep, so back-to-back days feel less punishing.\n- A prebuilt agent library covers goals like protecting no-meeting days and preventing burnout without manual setup.\n- Security credentials include SOC 2 Type II and GDPR compliance, and the company states it does not train AI on customer data.\n\nReclaim is best for knowledge workers, managers and teams who juggle heavy meeting loads alongside deep work. A free Lite plan is available, and new users get a trial of the Business tier. Tip: set your working hours and a weekly focus goal before anything else, then let a full week pass so the scheduler can settle into your rhythm before you fine-tune priorities.",
-    "sources": [
-      "https://reclaim.ai"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "recraft",
-    "moreContext": "Recraft has carved out a rare niche among image generators by treating vector graphics as a first-class output rather than an afterthought. Where most tools stop at attractive pixels, Recraft is built for designers who need assets they can drop into a brand system, edit and scale. The company describes its own model family as top-ranked for text-to-image, and its newest Flash variant is pitched as built for speed.\n\n- Custom styles can be created by uploading a handful of your own reference images, with no model training step, and reused across projects.\n- Recraft Studio brings image, vector and mockup generation together with editing in one workspace, and it can also tap other frontier models.\n- A full kit of utility tools sits alongside generation, including an upscaler, background remover, AI eraser and image vectorizer.\n- Typography is a real strength, with the platform designed to render design-ready text inside graphics.\n- A developer API lets teams build Recraft generation into their own products and pipelines.\n\nRecraft suits brand designers, marketers and product teams producing icons, illustrations, ads and logo concepts at volume. There is a free way to try it before committing to a paid plan. Tip: build a custom style from your existing brand illustrations first, then generate new assets inside that style so every icon set and campaign graphic stays visually consistent.",
-    "sources": [
-      "https://www.recraft.ai"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "reelcrew",
-    "moreContext": "ReelCrew takes the guesswork out of trend videos by replacing prompts and timelines with ready-made scenes. You choose a preset, add a photo, and the service handles motion, framing and sound, which makes it a fun shortcut for anyone who wants to join a viral format without learning video software. Its clear stance on privacy and consent is a welcome touch in a category where that is often missing.\n\n- The template library spans couple scenes that use two photos, seasonal Halloween and Santa ideas, pet clips and a retro photobooth look.\n- A keep-my-clothes option helps the result stay closer to the outfit in your original photo.\n- Pricing works per video with no subscription required, and optional monthly bundles exist for frequent creators.\n- You can try a watermarked preview for free after signing in with Google before paying for a full-quality clip.\n- Source photos are deleted once the video finishes, finished videos are removed after 30 days, and nothing appears publicly unless you opt in.\n\nReelCrew is best for casual creators, couples and small social accounts who want quick, shareable vertical clips for TikTok, Reels or Shorts. Its rules require that everyone pictured is an adult who has consented, and public figures are not allowed. Tip: use a well-lit, head-to-toe photo of one person with a clearly visible face, since group shots are not supported and framing has a big effect on the final result.",
-    "sources": [
-      "https://reelcrew.ai/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "refact-ai",
-    "moreContext": "Refact.ai stands out as one of the few coding agents that keeps its whole stack open and lets you decide where it runs. It plans and carries out multi-step coding tasks inside your editor, searches your repository for context, and can reach tools such as GitHub, databases, Docker and CI pipelines. In 2026 the company announced it is retiring its hosted Refact Cloud and continuing the project as open source, local-first and bring-your-own-key, so self-hosting is now the main way to use it.\n\n- Plugins cover VS Code and the JetBrains family (IntelliJ, PyCharm, WebStorm, GoLand and CLion), with Visual Studio, Neovim and Sublime Text support in beta.\n- Bring-your-own-key support works with providers such as OpenAI, Gemini, Grok and DeepSeek, so teams can pick the models they trust.\n- Code completion and chat both use retrieval over your project, which keeps suggestions grounded in your actual codebase.\n- The company reported a 2025 SWE-bench Verified result that it described as the top score among open-source agents, and it published its benchmark pipeline on GitHub.\n\nRefact is a strong fit for engineering teams with strict data rules, regulated industries and developers who prefer owning their tooling. Support and community discussion are moving to GitHub. Tip: if you used the hosted service, export any cloud-only data and move your provider keys into a local configuration, then pair the agent with a capable model of your choice.",
-    "sources": [
-      "https://refact.ai",
-      "https://refact.ai/blog/2026/refact-cloud-is-shutting-down/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "regie-ai",
-    "moreContext": "Regie.ai was early to generative AI for sales, launching its first private release in 2021, and it has since grown into a full prospecting workspace. It was co-founded by Srinath Sridhar, a former Google and Meta engineer, and Matt Millen, a former T-Mobile sales executive. Its newer agentic experience lets reps run research, list building, call prep and follow-up from a single chat, so outbound teams spend more of the day in real conversations.\n\n- Parallel power dialing comes with the research already done, so reps join calls with context about each account.\n- Messaging learns your voice and pitch, then pulls in why-now signals for each account to make outreach timely.\n- Multi-day plays coordinate phone, email and social touches rather than treating each channel separately.\n- Integrations cover CRMs and engagement platforms, including Salesforce, HubSpot, Outreach and Salesloft, so it works alongside an existing stack.\n- The platform carries SOC 2 and GDPR credentials, which matters for teams handling prospect data.\n\nRegie.ai is best for SDR teams and revenue leaders who want AI to handle prospecting busywork while people keep control of key conversations. A Chrome extension also brings its writing help into other tools. Tip: feed it your best-performing messaging and personas early, since the quality of its voice learning shapes how natural every generated sequence sounds.",
-    "sources": [
-      "https://www.regie.ai",
-      "https://www.regie.ai/integrations",
-      "https://techcrunch.com/2025/02/26/regie-ai-injects-sales-enablement-with-ai-but-keeps-humans-in-the-loop"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "relay-app",
-    "moreContext": "Relay.app earned a loyal following by showing that automation and human judgment can live in the same workflow. Its signature idea was letting AI steps draft, classify or summarize while a person reviewed and approved the result before anything moved forward. Important update: the company announced in July 2026 that it was shutting down, with free accounts closing in August and paid accounts in September 2026, and its website now confirms the service has ended.\n\n- Human-in-the-loop checkpoints let teams approve, edit or reject AI output inside a running workflow instead of trusting it blindly.\n- Workflows could span many popular business apps, blending AI steps with ordinary automation in one flow.\n- Beyond workflows, the platform offered sequences, data tables and MCP servers, which is part of why its users built so much on it.\n- Before closing, Relay let customers export workflows, sequences and MCP servers as JSON and AI prompts, and tables as CSV files.\n\nRelay.app was best suited to operations teams and solo founders who wanted dependable AI automation with a person signing off on key steps. Because the service has shut down and account data has been deleted, it is no longer an option for new projects. Tip: if you exported your workflows before the deadline, use those files as a blueprint when rebuilding in another automation platform, and recreate the human review points first so nothing ships unchecked.",
-    "sources": [
-      "https://www.relay.app",
-      "https://www.getinboxzero.com/blog/post/relay-app-shutting-down",
-      "https://docs.relay.app/"
-    ],
-    "status": "possibly-defunct"
-  },
-  {
-    "slug": "remini",
-    "moreContext": "Remini built its reputation on one thing done remarkably well: bringing faces back into focus. Old prints, shaky phone shots and low-resolution images that seemed beyond saving often come out crisp, which is why it became one of the best-known photo apps in the world. It is developed by Bending Spoons, the Milan-based company behind a portfolio of popular consumer apps.\n\n- Face restoration is widely regarded by reviewers as among the strongest available, recovering detail in eyes, hair and skin texture.\n- The app runs on iPhone, iPad and Android, and a browser version makes it easy to work from a computer.\n- Beyond sharpening, it offers denoising, colorization of black-and-white photos and video enhancement.\n- AI Photos turns a set of selfies into new portraits, from professional headshot looks to playful themed scenes.\n- A free tier lets you try the core enhancer, with paid subscriptions removing limits and ads.\n\nRemini is ideal for families digitizing old albums, social media users polishing portraits, and anyone rescuing a precious but blurry shot. Tip: photograph or scan old prints in even light without glare before enhancing, because a cleaner source gives the AI more real detail to work with and keeps faces looking natural rather than overprocessed. As with any cloud editor, skip uploading sensitive documents.",
-    "sources": [
-      "https://app.remini.ai",
-      "https://apps.apple.com/us/app/-/id1470373330",
-      "https://www.techradar.com/pro/what-is-remini-everything-we-know-about-ai-restoration-tool"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "remove-bg",
-    "moreContext": "remove.bg turned a fiddly Photoshop chore into a single upload, and it is still one of the quickest ways to get a clean cutout. Now a Canva brand, it has grown from a simple web tool into a family of apps, plugins and an API that fits into almost any image workflow, from a solo seller's listings to an enterprise media pipeline.\n\n- Desktop apps for Windows, Mac and Linux make it easy to process whole folders of images, alongside an Android app for phones.\n- A Photoshop extension brings one-click cutouts directly into the editor many designers already use.\n- The developer API is well documented, so teams can automate removal for product catalogs or user uploads.\n- Ready-made use cases cover white e-commerce backgrounds, car dealership listings, professional headshots and transparent PNGs for logos.\n- Beyond still images, the brand also offers video background removal and automatic design creation.\n\nremove.bg is a great match for e-commerce sellers, photographers, marketers and developers who handle images in volume. You can try it free before choosing a paid plan or credits for full-resolution output. Tip: for big catalogs, use the desktop app or API rather than uploading files one at a time, and shoot products against a contrasting background so fine edges like hair, fur or straps come out cleaner.",
-    "sources": [
-      "https://www.remove.bg"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "replit",
-    "moreContext": "Replit has evolved from a browser-based coding playground into one of the most complete prompt-to-production platforms available. What sets it apart is that the agent, the editor, the database and the hosting all live in one place, so an idea can go from a sentence to a live, shareable app without wrestling with servers or deployment scripts.\n\n- Replit Agent goes beyond web apps, also producing slides, data visualizations, documents, 3D games and animation projects.\n- A visual design canvas lets you adjust layouts directly instead of describing every change in text.\n- More than 100 integrations, including Stripe, OpenAI and Google Workspace, make it simple to add payments, AI features and productivity hooks.\n- Smart model routing picks a suitable model for each task, which the company says lowers average cost compared with its earlier max mode.\n- Enterprise teams get SSO and SAML, SCIM, audit logs, SOC 2 and private networking options.\n\nReplit is ideal for founders validating ideas, educators, students and product teams building internal tools or prototypes quickly. A free Starter plan includes daily usage and one published project, and the company says millions of builders use the platform. Tip: start each project with a short spec describing users, core screens and data, then build in small steps and test as you go, since the agent produces cleaner results with clear, incremental requests.",
-    "sources": [
-      "https://replit.com",
-      "https://replit.com/pricing"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "research-rabbit",
-    "moreContext": "ResearchRabbit made literature discovery feel exploratory rather than exhausting. Instead of running keyword search after keyword search, you start with a few papers you trust and follow the connections outward, which mirrors how many researchers naturally think. In 2025 it was acquired by Litmaps, the New Zealand research-mapping company, and it continues with its own distinctive browsing interface.\n\n- The company says its index covers more than 320 million academic papers.\n- Zotero integration lets you sync collections with the reference manager many academics already rely on.\n- You can bring in your existing library as seeds, so recommendations reflect work you already know.\n- Visual maps make it easier to spot clusters, key authors and gaps in a field before you start writing.\n- The core experience remains free, with an optional paid tier that adds higher limits and extra filters for heavy users.\n\nResearchRabbit is best for graduate students, academics, librarians and anyone writing a literature review in an unfamiliar area, and the company says more than a million researchers trust it. Tip: seed a collection with three to five strong, recent papers rather than a single one, then add the best recommendations back in, so each round of suggestions grows sharper and more relevant to your research question.",
-    "sources": [
-      "https://www.researchrabbit.ai",
-      "https://itbrief.news/story/litmaps-acquires-researchrabbit-raises-1-million-for-ai"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "resemble-ai",
-    "moreContext": "Resemble AI is unusual in voice technology because it works on both sides of the problem: creating synthetic voices and catching fake ones. That dual focus gives security teams and media companies a single partner for responsible voice AI, and it has made the company a notable name in deepfake defense.\n\n- Its DETECT models flag AI-generated audio, video and images in real time with explainable results, and the company publishes accuracy figures benchmarked by a third party.\n- PerTh watermarking embeds imperceptible markers in generated content, and outputs support C2PA provenance standards.\n- Chatterbox, the company's open-source text-to-speech family, is MIT-licensed, and its multilingual version covers more than 20 languages with zero-shot cloning and emotion control.\n- Detection plugs into telephony platforms like Twilio, Five9 and Genesys, plus Microsoft Teams, Zoom, Google Meet and Webex.\n- Developers get one REST API and a Python SDK, with connectors for LiveKit, Pipecat, n8n and MCP.\n\nResemble AI is best for enterprises, contact centers, financial institutions and studios that need realistic voices with strong safeguards. Deployment can be cloud-based, on-premises or fully air-gapped, with credentials including SOC 2 Type II and ISO 27001. Tip: if you are evaluating detection, pilot it inside an existing call or meeting workflow first, since real traffic reveals far more about fit than test clips do.",
-    "sources": [
-      "https://www.resemble.ai",
-      "https://huggingface.co/ResembleAI/chatterbox"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "retool-ai",
-    "moreContext": "Retool has become a go-to platform for engineering teams that want to ship internal software quickly without giving up control. It combines drag-and-drop components with real code, connects directly to company databases and APIs, and now extends that same foundation to AI agents with centralized governance. The company says more than 10,000 teams build on it.\n\n- Connectors cover popular databases, APIs and large language models, so apps and agents work on live business data rather than copies.\n- Retool Workflows handle scheduled jobs and backend automations alongside the app builder.\n- A centralized agent harness gives IT and security teams visibility into the agents being built across a company.\n- Published case studies feature companies such as Ramp and DoorDash reporting large savings in developer hours.\n- Self-hosted deployment is available for organizations that need data to stay inside their own environment.\n\nRetool is best for engineering and operations teams building admin panels, dashboards, support consoles and approval tools. You can start building at no cost before moving to a paid plan. Tip: begin with one high-friction internal process, such as refunds or account reviews, connect it to production data with read-only permissions first, and widen write access once the team trusts the workflow.",
-    "sources": [
-      "https://retool.com"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "retouchia",
-    "moreContext": "Retouchia brings a full photo retouching kit into the browser, with no software to install and no watermark stamped on your downloads. It gathers the edits people reach for most often, from cleanup to restoration, behind one simple editor, and adds a creative layer for generating and editing images from prompts.\n\n- Dedicated tools cover AI upscaling to 4K, object removal, photo restoration and colorization of old black-and-white images.\n- Prompt-based edits can change hairstyles or outfits and create or modify images with a GPT image model.\n- A credit system charges based on the model and number of outputs, and credits are returned if a generation fails or is blocked.\n- It accepts JPG, PNG and WebP files up to 24 MB, with output at 1K, 2K or 4K depending on the model.\n- Privacy handling is spelled out clearly: uploads are deleted after an hour, results after seven days, and inputs are not used for training without consent.\n\nRetouchia is a good fit for online sellers, social media users and anyone fixing family photos who wants fast results without learning Photoshop. You can browse and open the editor for free, then sign in to start generating. Tip: download finished images promptly, since results are cleared after a week, and save upscaling for your final step so cleanup edits are applied at the original resolution first.",
-    "sources": [
-      "https://retouchia.com/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "rev",
-    "moreContext": "Rev has spent years earning trust in places where an accurate transcript truly matters, and it now pairs that reputation with a modern AI workspace. Fast machine transcripts sit alongside a network of professional human transcriptionists, so you can choose speed or certainty for each file. More recently it has built tools aimed squarely at legal and investigative work.\n\n- AI transcription supports more than 37 languages, while human captions cover English and Spanish and subtitles reach more than 17 languages.\n- Investigation features analyze many files at once with citations, draft chronologies and affidavits from templates, and let you clip key moments.\n- Mobile apps for iOS and Android let reporters and investigators record and transcribe interviews in the field.\n- Integrations include Clio, Dropbox, Box, Google Drive and OneDrive, and media can be added by upload or URL.\n- Security credentials include SOC 2 Type II and GDPR compliance, with CJIS and HIPAA compliant environments on top plans, and the company says content is not used to train third-party models.\n\nRev is best for attorneys, journalists, researchers and podcasters who need dependable records of what was said. A free plan is available with no credit card required, and the company says more than 2,000 law firms and agencies use it. Tip: run everyday recordings through AI transcription, then order human review only for the files headed to court, print or publication.",
-    "sources": [
-      "https://www.rev.com"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "reword",
-    "moreContext": "Reword built its reputation on a thoughtful idea: an AI writing partner that learns from a publication's own back catalog instead of producing generic text. Its Cowriter was trained on a team's existing articles to match their voice, and the editor combined drafting with SEO planning and quality checks. As of October 2026, however, the reword.com address redirects to a domain-for-sale page, so the service appears to be offline.\n\n- The Cowriter feature adapted to your writing style by learning from articles you had already published.\n- Topic cluster tools helped editors plan related content and build authority around core subjects.\n- Search analytics showed how content was performing, which helped teams decide what to update or write next.\n- Auditing tools checked drafts for plagiarism and flagged claims that might be inaccurate before publication.\n\nReword was best suited to content marketing teams, niche publishers and bloggers who cared about brand voice and editorial accuracy as much as speed. Because the official site no longer loads the product, new users should not count on being able to sign up. Tip: if you want a similar workflow today, look for an editor that can use your published archive as a style reference, and keep a human fact-check pass in place for every article before it goes live.",
-    "sources": [
-      "https://reword.com",
-      "https://www.alternativeto.net/software/reword/about/",
-      "https://proddducts.beehiiv.com/p/rewordco"
-    ],
-    "status": "possibly-defunct"
-  },
-  {
-    "slug": "ride-a-pet-egg-carry-stamina-notes",
-    "moreContext": "This independent fan reference for the Roblox game Ride A Pet stands out for its careful, honest approach. Rather than repeating rumors, it clearly marks details it has not verified and focuses on the practical loop players repeat every session: find an egg, carry it home safely, hatch it and put the new pet to work. It is not affiliated with Roblox or the game's creators.\n\n- Route-based egg location guides explain how to approach each search area and plan the return trip before you pick anything up.\n- Troubleshooting pages cover common snags, such as the Egg Will Break warning on the way home, a missing ride prompt or an egg that will not go into your basket.\n- Interactive helpers include a pet comparison tool, an attempt-budget calculator and a seven-step egg run checklist saved in your browser.\n- Guides go deeper into mechanics like radars, rebirth, the Fuse Machine, pet mutations, name tags and the Dragon Egg routes.\n- A codes page and an updates log help players keep track of events and current code status.\n\nThe site is best for new and returning Ride A Pet players who want clear, step-by-step help without guesswork presented as fact. Tip: scout an unfamiliar route once with an empty basket so you already know the way home, which keeps the carry countdown from catching you off guard when you finally grab a rare egg.",
-    "sources": [
-      "https://rideapet.com/",
-      "https://rideapet.com/egg-locations",
-      "https://rideapet.com/mechanics"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "riffusion",
-    "moreContext": "Riffusion holds a special place in AI music history. It began in late 2022 as an open-source side project by Seth Forsgren and Hayk Martiros that generated sound by creating spectrogram images, and it grew into a full song-making platform with vocals. The product has since changed names: it became Producer.ai in 2025, Google acquired the team in early 2026, and the riffusion.com address now leads to Google Flow Music.\n\n- Songs are created by chatting with an AI producer, which now runs on Google's Lyria music model.\n- Built-in stem splitting, audio effects and remixing tools let you rework tracks rather than starting over.\n- Music videos can be generated from your songs with Google's Veo video model.\n- Custom Spaces let creators build small audio tools, games or simple instruments like a mini keyboard.\n- The platform is free to start with daily credits and no credit card required.\n\nThe experience is best for songwriters sketching ideas, content creators who need original background music, and hobbyists who want to experiment across genres. The product also says it learns your style as you keep creating. Tip: treat the chat like a studio session, describing genre, mood, tempo and vocal style up front, then iterate with remixes and stems instead of regenerating from scratch each time.",
-    "sources": [
-      "https://www.flowmusic.app/",
-      "https://fast.io/resources/producer-ai-review-2026/",
-      "https://www.tecnoandroid.it/news/flow-music-ecco-il-nuovo-nome-di-producerai-di-google-1873804/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "riverside",
-    "moreContext": "Riverside solved the biggest headache in remote recording by capturing each guest's audio and video directly on their own device, so a shaky connection no longer ruins the final file. It has since grown into a complete studio that records, edits, streams and publishes, and it now lives at riverside.com. The company cites a strong G2 rating and lists brands such as Spotify and Microsoft among its users.\n\n- Full HD live streaming reaches several destinations at once, including YouTube, LinkedIn, Instagram and Twitch, with audience call-ins.\n- AI Co-Creator drafts clips, social posts, thumbnails and headlines from your recording.\n- AI Translation can dub episodes into more than 30 languages, opening the door to international audiences.\n- Polish tools include Magic Audio cleanup, filler-word removal, eye-contact correction, B-roll generation and speaker-based layouts.\n- Built-in podcast hosting with analytics, plus publishing to YouTube, Spotify and Apple Podcasts, takes you from recording to release in one place.\n\nRiverside is best for podcasters, video creators, marketing teams running webinars and interviewers working with remote guests. It runs in the browser, with a Mac app and iOS and Android apps for recording on the go, and a free plan is available to start. Tip: ask guests to wear headphones and stay on the call until their local tracks finish uploading, which keeps every track clean and complete.",
-    "sources": [
-      "https://riverside.com/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "rize",
-    "moreContext": "Rize has grown from a personal focus tracker into an automatic time-tracking platform built for agencies, accounting firms and other professional-services teams. It runs quietly in the background, recognizing which client or project you are working on from the apps, window titles and sites in use, so nobody has to start timers or rebuild timesheets on a Friday afternoon. The company says around 350,000 professionals have used it.\n\n- Integrations connect to ClickUp, Asana, Linear, Notion, Google Calendar, Outlook, Slack and QuickBooks, and clients can be imported from ClickUp or a CSV file.\n- Profitability views track client margins and retainer burn, with alerts when a client is being over-serviced.\n- Utilization and capacity reports give managers a clear picture of team workload by department.\n- Privacy is designed in: each person approves their own time before it is shared, only client-tagged time reaches the team, and it does not capture screenshots or keystrokes.\n- An MCP server lets AI assistants answer questions about your tracked time.\n\nRize is best for agency owners, consultants and finance-minded team leads who bill by the hour or manage retainers. Desktop apps cover macOS and Windows, and the company says smaller teams can get started free with no credit card. Tip: set up your client and project list before the first week of tracking, so the automatic categorization has clear targets and your first reports are accurate from day one.",
-    "sources": [
-      "https://rize.io"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "roblox-gui-maker",
-    "moreContext": "Roblox GUI Maker focuses on one stubborn part of Roblox development: planning interfaces that look good and work on every screen. Instead of handing you a generic UI picture, it describes the screen in Roblox terms, mapping out ScreenGui, Frames, TextLabels, TextButtons and layout objects so you know exactly what to build in Studio. It is an independent creator tool and is not affiliated with Roblox Corporation.\n\n- Each generation produces both desktop and mobile previews, which helps catch layout problems on smaller screens early.\n- A named component tree and style tokens give you a clear hierarchy plus consistent colors and spacing to follow.\n- An implementation checklist walks you through building the screen and wiring it to your own RemoteEvents and game data.\n- The workflow starts cheaply with a quick sketch, and you only spend more credits when you convert an idea into a full GUI plan.\n- New accounts receive starter credits with no card required, with bonus credits for completing the Studio tutorial and logging in daily.\n\nThe tool is best for solo Roblox developers and small studios designing shops, HUDs, inventories, settings menus and reward popups. The site notes that Lua code export is still on the way, so treat results as a starting blueprint that you refine in Studio. Tip: describe the genre, main player action, visible data and button states in your prompt, since specific inputs produce far more usable hierarchies.",
-    "sources": [
-      "https://robloxguimaker.dev/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "robottraining-jobs",
-    "moreContext": "RobotTraining.jobs shines a light on a fast-growing but scattered corner of the job market: the people who help teach robots and autonomous systems. Rather than scraping general job sites, it reads employers' own job boards each day, filters out roles that are not really robot-training work, and links you straight to each employer's application. It is run by O-mega Enterprise, Inc., and in late October 2026 it listed more than 1,100 open roles.\n\n- Listings span autonomous vehicle and drone operators, fleet operations, egocentric and wearable video capture, demonstration recording, teleoperation, embodied-AI annotation and robot task QA.\n- Filters cover country, employer, job type, remote-only roles and whether pay is stated, plus keyword search.\n- An AI search lets you describe the job you want, or match from your LinkedIn profile, CV or a single sentence about your experience.\n- Employers without a public job board still get profile pages with researched pay information.\n- Pay is shown whenever employers publish it, along with a summary of typical posted rates across the site.\n\nThe site is ideal for gig workers, students, drivers and anyone curious about hands-on AI data work. Browsing and the weekly email alert are free, and the site is upfront that some apply links are referral links. Tip: sign up for the weekly alert and filter for remote or at-home capture roles, since these openings can fill quickly and new ones appear every week.",
-    "sources": [
-      "https://robottraining.jobs"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "roo-code",
-    "moreContext": "Roo Code earned a devoted following as one of the most configurable open-source coding agents for VS Code. It began in late 2024 as a fork of Cline called Roo Cline and quickly became known for letting developers shape exactly how the agent thinks and acts. In April 2026 the original team announced that Roo Code products would shut down on May 15, 2026, and roocode.com now points to Roomote, the team's new self-hostable cloud coding agent.\n\n- Custom modes let developers define specialized personas with their own instructions, tools and permissions, well beyond the built-in architect, coder and debugger roles.\n- The extension worked with almost any model provider, including local models, so teams could balance cost, privacy and quality.\n- The open-source codebase lives on, with maintainers working on a handoff to a community team and pointing users toward community forks.\n- Roomote, from the same creators, runs tasks in parallel, opens pull requests with live previews and connects to GitHub, GitLab, Jira, Linear, Sentry and Slack.\n\nRoo Code was best suited to power users who wanted fine control over an AI agent's behavior inside their editor. Existing installs may keep working, but the original team is no longer adding features or fixing issues. Tip: if you rely on Roo Code workflows, export your custom mode definitions and rules files now, then try them in a maintained community fork, or evaluate Roomote if a cloud-based teammate suits your team better.",
-    "sources": [
-      "https://roomote.dev/",
-      "https://www.gradually.ai/en/changelogs/roo-code/",
-      "https://www.roborhythms.com/roo-code-vs-roomote/"
-    ],
-    "status": "possibly-defunct"
-  },
-  {
-    "slug": "rows",
-    "moreContext": "Rows set out to make the spreadsheet feel like a modern data app, with live connections to business tools and AI that could read, summarize and chart your numbers. Built by a team in Porto, Portugal, it won over marketers, founders and analysts who wanted dashboards without SQL. In February 2026, Superhuman (the company formerly known as Grammarly) agreed to acquire Rows, and the team announced the product would wind down by May 31, 2026. Today rows.com directs visitors to Superhuman Docs.\n\n- The AI analyst could pull tables out of PDFs, merge datasets and build reports and calculators from plain-language prompts.\n- More than 50 live data sources connected sheets to ad platforms, social channels, data warehouses and back-office tools, with scheduled refreshes.\n- The RowsX browser extension imported tables straight from web pages.\n- Sheets and dashboards could be embedded in Notion or on websites, with real-time collaboration for teams.\n\nRows was best for growth marketers, startup operators and agencies building live reporting without engineering help, and the company said more than 2.2 million people had used it before the acquisition. Tip: if you want a similar experience now, Superhuman has said the Rows team will strengthen Coda, so its docs product is the natural place to look, and any sheets you exported can be rebuilt there or in another connected spreadsheet.",
-    "sources": [
-      "https://rows.com",
-      "https://rows.com/blog/post/rows-is-joining-superhuman",
-      "https://blog.superhuman.com/superhuman-to-acquire-rows/"
-    ],
-    "status": "possibly-defunct"
-  },
-  {
-    "slug": "runway",
-    "moreContext": "Runway has been at the front of AI video since the early days of generative media, and it remains a reference point for filmmakers who care about control as much as spectacle. Its flagship Gen-4.5 video model sits alongside research models such as Aleph, plus world-model work that reaches into simulation and robotics. The company also hosts an AI film festival that has become a showcase for the medium. Note that its main site now lives at runway.com.\n\n- Runway Creative brings video, image and audio generation and editing into one cloud workspace, with an agent and MCP support.\n- A developer API offers Runway models and selected third-party models, with workflows, recipes and reusable characters.\n- Mobile apps for iOS and Android let creators generate and review clips away from the desk.\n- Enterprises can buy Runway through the OpenAI and Claude marketplaces using existing commitments, which simplifies procurement.\n- Programs such as the Gen:48 short-film challenge and the Creative Partners Program support working artists.\n\nRunway is best for filmmakers, agencies, music video directors and brand studios producing high-end visual content. A free trial lets you explore the tools before choosing a plan. Tip: lock your look with a strong reference image or character first, then generate shots in short, consistent batches and refine them with the editing tools, which keeps a sequence visually coherent across cuts.",
-    "sources": [
-      "https://runway.com/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "rytr",
-    "moreContext": "Rytr made its name as one of the most approachable AI writers, and it has since grown into something broader: a writing assistant paired with an AI relationship manager. Alongside the familiar drafting tools, it now keeps track of the people you work with and the promises you have made, which makes it useful well beyond blog posts and ad copy.\n\n- The Engage side tracks contacts and commitments across your tools, prepares daily and pre-meeting briefs, and flags relationships that are going quiet.\n- The Create side drafts and rewrites emails, posts, ads and web pages, can match your personal voice, and produces up to three variants at once.\n- Integrations include Gmail, Outlook, Slack, Google Calendar, Google Meet, Granola and text messaging.\n- A browser extension surfaces contact context in Gmail, Slack and LinkedIn and can improve or continue text in almost any text box.\n- Nothing is sent without your approval, which keeps you in control of every follow-up the AI drafts.\n\nRytr is best for freelancers, founders, salespeople and small teams who want an affordable writing helper that also keeps their network warm. A free plan includes a monthly character allowance, one connected source and a daily briefing, with low-cost paid tiers above it. Tip: connect your main email and calendar first and set up your personal voice, so drafted follow-ups sound like you and arrive with the right context from recent conversations.",
-    "sources": [
-      "https://rytr.me"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "samemuse",
-    "moreContext": "SameMuse takes much of the guesswork out of online clothes shopping by showing a garment on your own photo before you buy. It is refreshingly low-friction: you can run a first try-on without creating an account, and it accepts the kinds of images shoppers actually have on hand, from product shots to quick screenshots of a store page.\n\n- Garment inputs can be a product photo, a flat lay, a shopping screenshot or a public product link.\n- It handles common phone formats, including HEIC and HEIF from iPhones, alongside JPG, PNG and WebP.\n- An HD tier is available for sharper previews once you sign in, and failed generations do not use up credits.\n- Purchased credit packs do not expire, and a monthly plan is offered for frequent users.\n- Uploaded photos and results are deleted after seven days and are not used to train models.\n\nSameMuse is well suited to online shoppers, menswear fans comparing jackets and knitwear, stylists, and anyone who wants to swap a single garment while keeping the same person in the photo. The site is honest that previews show silhouette, color and styling rather than exact fit, so it complements a retailer's size chart rather than replacing it. Tip: use a well-lit full-body or waist-up photo in a simple pose, plus a clean front-facing garment image, for the most convincing results.",
-    "sources": [
-      "https://samemuse.com/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "sapling",
-    "moreContext": "Sapling brings language AI directly into the places customer-facing teams already type, from helpdesks to CRMs. Built by Sapling Intelligence with a clear focus on business communication, it steers suggestions toward clear, professional replies rather than flowery prose. It also offers one of the better-known AI content detectors.\n\n- Integrations cover Zendesk, ServiceNow, Salesforce, Amazon Connect, Twilio Flex, Gmail and LinkedIn.\n- Developers can embed grammar, autocomplete and rephrasing in their own apps through a REST API with Python and JavaScript libraries, plus SDKs for editors like TinyMCE, CKEditor, Quill, ProseMirror and Tiptap.\n- The AI detector scores text overall and sentence by sentence, which helps reviewers pinpoint suspect passages.\n- Sentiment analysis and an MCP server extend its language tools to analytics and AI assistants.\n- Enterprise security includes encryption, PII redaction, SSO, SCIM, MFA and a self-hosted deployment option.\n\nSapling is best for support, sales and success teams who answer high volumes of messages and want consistent quality, as well as product teams adding writing help to their own software. A free trial is available with no card required. Tip: build a shared snippet library from your best-rated replies early on, so agents start from proven answers and autocomplete picks up the phrasing your team prefers.",
-    "sources": [
-      "https://sapling.ai"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scalenut",
-    "moreContext": "Scalenut has kept pace with how people now find information, expanding from an SEO writing platform into a toolkit for visibility in AI answer engines as well as classic search. That shift makes it a practical choice for marketers who want to know not only where they rank on Google but whether ChatGPT, Perplexity, Gemini, Claude and Grok mention their brand.\n\n- AI visibility tracking monitors brand mentions, prompt coverage, competitor share and which sources AI engines cite.\n- A GEO score and content optimizer show how to adjust articles so they are more likely to surface in AI answers.\n- Supporting tools cover internal linking, backlink insights, keyword planning, Reddit tracking and AI crawler monitoring.\n- A done-for-you option pairs specialized AI agents with human strategists who approve work before it goes live.\n- Free resources include a set of free SEO tools, a free AI audit, a bootcamp course and an active user community.\n\nScalenut is best for content marketers, agencies and growing brands that publish regularly and want one place to plan, write and measure. The company says more than a million users have signed up, and you can try the software free before committing. Tip: start with the AI visibility audit to find prompts where competitors are cited and you are not, then build or refresh content clusters around those gaps first.",
-    "sources": [
-      "https://www.scalenut.com"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scenario",
-    "moreContext": "Scenario has become a favorite of game studios because it treats art direction as something you own and protect. Teams train models on their own characters, products or brand look, then generate new assets that stay faithful to that style, and the platform has expanded well beyond 2D images into 3D, video and audio. The company highlights studios such as Ubisoft among its customers.\n\n- Single images can be turned into textured 3D models, rigged and brought into a game engine, with experimental Blender support.\n- Video tools turn storyboards into shots, restyle footage and extend takes with first and last frame control.\n- Sound effects, music and voice can be generated and synced to video for trailers and ads.\n- More than 750 models from over 50 providers are available in one place, added as they launch.\n- A REST API with TypeScript and Python SDKs, an MCP server, and open-source agent skills for Blender, Maya, ZBrush, Unreal and Unity support production pipelines.\n\nScenario is best for game artists, live-ops teams, marketing studios producing user acquisition creatives, and brands that need on-style visuals at volume. A free tier provides daily credits with no credit card required, and the company reports SOC 2 Type II compliance. Tip: curate a tight, consistent training set of your strongest reference art before training, since a focused dataset produces far more reliable style models than a large, mixed one.",
-    "sources": [
-      "https://www.scenario.com"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scholarcy",
-    "moreContext": "Scholarcy grew out of a very real frustration: founder Phil Gooch conceived it while working through the reading load of his own PhD. Since launching in 2018, the London-based tool has focused on helping students and researchers absorb papers faster without losing critical detail, and it has since been acquired by Texthelp, the assistive learning technology company. Scholarcy says more than half a million students and researchers have used it.\n\n- Zotero integration lets you send extracted summaries and references straight into your reference library.\n- Exports reach Word, Excel and citation managers, and you can generate a bibliography in one click.\n- A literature matrix lines up multiple papers side by side, which makes comparing studies for a review far quicker.\n- Flashcards pull out key facts, figures, references and takeaways, so revision and note-taking start from a structured base.\n- A free tier allows a few summaries each day, with a paid Library plan removing the cap.\n\nScholarcy is best for undergraduates, postgraduates and researchers who need to triage long reading lists, as well as anyone who benefits from structured, chunked text. Tip: use it to decide which papers deserve a full read, then export your flashcards and references to Zotero so your notes and citations stay together as your project grows.",
-    "sources": [
-      "https://www.scholarcy.com/blog/the-founder-of-scholarcy-phil-gooch",
-      "https://www.scholarcy.com/integrations/zotero-integration",
-      "https://www.scholarcy.com/article-summarizer",
-      "https://app.mergerlinks.com/companies/scholarcy"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scispace",
-    "moreContext": "SciSpace began as a friendly way to make sense of dense research papers and has grown into a broader AI research platform. Beyond explaining confusing passages, it now offers an AI agent that can take on multi-step academic tasks, which makes it one of the more complete workspaces for students and researchers who want help from first search to final draft.\n\n- The AI Agent can automate report creation, data extraction and visualization, and even produce slides, posters and infographics.\n- An Agent Gallery offers ready-made research agents for literature reviews, data analysis, writing and deep research.\n- Its search draws on a large scholarly index built from sources such as OpenAlex and Semantic Scholar, covering hundreds of millions of papers.\n- The AI Writer includes templates for research proposals, literature reviews, abstracts, thesis statements and essays, alongside a large library of journal formatting templates.\n- Reviewers note support for dozens of languages, which helps non-native English speakers read and write research with more confidence.\n\nSciSpace is best for graduate students, early-career researchers and professionals who regularly read outside their specialty. Reviewers report that a large research community relies on it, and a free plan lets you explore the core tools. Tip: always click through to the cited source for any claim you plan to use, since checking the original paper keeps your literature review accurate and defensible.",
-    "sources": [
-      "https://scispace.com",
-      "https://blog.hslu.ch/information-literacy-toolkit/scispace/",
-      "https://www.unite.ai/scispace-review/"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scisummary",
-    "moreContext": "SciSummary keeps the job of reading research refreshingly simple: hand it a paper and get back a clear, organized summary you can actually act on. It has steadily added depth on top of that core, including figure analysis and paper comparison, while keeping pricing within reach of students and independent researchers.\n\n- Summaries are split into labeled sections such as abstract, methods, results and conclusion, so you can jump straight to what matters.\n- Statistical results are explained in plain language, including p-values, confidence intervals and effect sizes.\n- You can chat about individual figures to understand charts and tables that are hard to parse at a glance.\n- A personal library with folders and tags keeps summarized papers organized, and Pro users get semantic search across their indexed documents.\n- Bulk summarization and side-by-side paper comparison help when you are working through a whole reading list.\n\nSciSummary is best for students, clinicians, science journalists and busy researchers who need the gist of many papers quickly. A free trial is available, and there is a dedicated student plan. Tip: use the comparison feature when two studies seem to disagree, and read the methods summary first, since differences in sample and design often explain conflicting results.",
-    "sources": [
-      "https://scisummary.com"
-    ],
-    "status": "ok"
-  },
-  {
-    "slug": "scite",
-    "moreContext": "Scite answers a question that ordinary citation counts cannot: how did later research actually treat a paper? Its Smart Citations show the sentence where a work was cited and classify whether that mention supports it, challenges it or simply discusses it. Scite is now part of Research Solutions, and the company says more than 2 million people use it.\n\n- The Assistant answers research questions with claims linked to the exact sentences in source papers, which makes checking its answers fast.\n- A browser extension adds citation badges to pages as you browse, and a Zotero plugin brings the same context into your reference library.\n- Indexing agreements with publishers including Wiley and SAGE, among dozens of others, give it access to full-text content.\n- Collections let you organize sets of papers and monitor how new citations arrive over time.\n- MCP support and an API let you use Scite's citation data inside tools like Claude and ChatGPT or in your own applications.\n\nScite is best for researchers, students, librarians, journal editors and R&D teams who need to judge the reliability of evidence before relying on it. A free trial is available to explore the platform. Tip: before citing a high-profile paper, open its Smart Citations and filter for contrasting statements, which quickly reveals whether later studies questioned or failed to replicate its findings.",
-    "sources": [
-      "https://scite.ai"
-    ],
-    "status": "ok"
-  }
+ {
+  "slug": "reclaim-ai",
+  "moreContext": "Plenty of calendar apps show you your week, but Reclaim actively rearranges it on your behalf. It sits on top of Google Calendar or Outlook and treats your priorities as flexible blocks that move intelligently as meetings shift, which makes it one of the most practical AI scheduling assistants for people whose days rarely go to plan. The company notes its team came from Dropbox, and it says more than 600,000 people across tens of thousands of companies use it.\n\n- Task sync pulls work in from Asana, ClickUp, Todoist, Jira, Linear and Google Tasks, then schedules it by priority and due date.\n- Slack integration updates your status to match your calendar and can quiet notifications during focus blocks.\n- Buffer time can be added automatically for breaks, travel and meeting prep, so back-to-back days feel less punishing.\n- A prebuilt agent library covers goals like protecting no-meeting days and preventing burnout without manual setup.\n- Security credentials include SOC 2 Type II and GDPR compliance, and the company states it does not train AI on customer data.\n\nReclaim is best for knowledge workers, managers and teams who juggle heavy meeting loads alongside deep work. A free Lite plan is available, and new users get a trial of the Business tier. Tip: set your working hours and a weekly focus goal before anything else, then let a full week pass so the scheduler can settle into your rhythm before you fine-tune priorities.",
+  "sources": [
+   "https://reclaim.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "recraft",
+  "moreContext": "Recraft has carved out a rare niche among image generators by treating vector graphics as a first-class output rather than an afterthought. Where most tools stop at attractive pixels, Recraft is built for designers who need assets they can drop into a brand system, edit and scale. The company describes its own model family as top-ranked for text-to-image, and its newest Flash variant is pitched as built for speed.\n\n- Custom styles can be created by uploading a handful of your own reference images, with no model training step, and reused across projects.\n- Recraft Studio brings image, vector and mockup generation together with editing in one workspace, and it can also tap other frontier models.\n- A full kit of utility tools sits alongside generation, including an upscaler, background remover, AI eraser and image vectorizer.\n- Typography is a real strength, with the platform designed to render design-ready text inside graphics.\n- A developer API lets teams build Recraft generation into their own products and pipelines.\n\nRecraft suits brand designers, marketers and product teams producing icons, illustrations, ads and logo concepts at volume. There is a free way to try it before committing to a paid plan. Tip: build a custom style from your existing brand illustrations first, then generate new assets inside that style so every icon set and campaign graphic stays visually consistent.",
+  "sources": [
+   "https://www.recraft.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "reelcrew",
+  "moreContext": "ReelCrew takes the guesswork out of trend videos by replacing prompts and timelines with ready-made scenes. You choose a preset, add a photo, and the service handles motion, framing and sound, which makes it a fun shortcut for anyone who wants to join a viral format without learning video software. Its clear stance on privacy and consent is a welcome touch in a category where that is often missing.\n\n- The template library spans couple scenes that use two photos, seasonal Halloween and Santa ideas, pet clips and a retro photobooth look.\n- A keep-my-clothes option helps the result stay closer to the outfit in your original photo.\n- Pricing works per video with no subscription required, and optional monthly bundles exist for frequent creators.\n- You can try a watermarked preview for free after signing in with Google before paying for a full-quality clip.\n- Source photos are deleted once the video finishes, finished videos are removed after 30 days, and nothing appears publicly unless you opt in.\n\nReelCrew is best for casual creators, couples and small social accounts who want quick, shareable vertical clips for TikTok, Reels or Shorts. Its rules require that everyone pictured is an adult who has consented, and public figures are not allowed. Tip: use a well-lit, head-to-toe photo of one person with a clearly visible face, since group shots are not supported and framing has a big effect on the final result.",
+  "sources": [
+   "https://reelcrew.ai/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "refact-ai",
+  "moreContext": "Refact.ai stands out as one of the few coding agents that keeps its whole stack open and lets you decide where it runs. It plans and carries out multi-step coding tasks inside your editor, searches your repository for context, and can reach tools such as GitHub, databases, Docker and CI pipelines. In 2026 the company announced it is retiring its hosted Refact Cloud and continuing the project as open source, local-first and bring-your-own-key, so self-hosting is now the main way to use it.\n\n- Plugins cover VS Code and the JetBrains family (IntelliJ, PyCharm, WebStorm, GoLand and CLion), with Visual Studio, Neovim and Sublime Text support in beta.\n- Bring-your-own-key support works with providers such as OpenAI, Gemini, Grok and DeepSeek, so teams can pick the models they trust.\n- Code completion and chat both use retrieval over your project, which keeps suggestions grounded in your actual codebase.\n- The company reported a 2025 SWE-bench Verified result that it described as the top score among open-source agents, and it published its benchmark pipeline on GitHub.\n\nRefact is a strong fit for engineering teams with strict data rules, regulated industries and developers who prefer owning their tooling. Support and community discussion are moving to GitHub. Tip: if you used the hosted service, export any cloud-only data and move your provider keys into a local configuration, then pair the agent with a capable model of your choice.",
+  "sources": [
+   "https://refact.ai",
+   "https://refact.ai/blog/2026/refact-cloud-is-shutting-down/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "regie-ai",
+  "moreContext": "Regie.ai was early to generative AI for sales, launching its first private release in 2021, and it has since grown into a full prospecting workspace. It was co-founded by Srinath Sridhar, a former Google and Meta engineer, and Matt Millen, a former T-Mobile sales executive. Its newer agentic experience lets reps run research, list building, call prep and follow-up from a single chat, so outbound teams spend more of the day in real conversations.\n\n- Parallel power dialing comes with the research already done, so reps join calls with context about each account.\n- Messaging learns your voice and pitch, then pulls in why-now signals for each account to make outreach timely.\n- Multi-day plays coordinate phone, email and social touches rather than treating each channel separately.\n- Integrations cover CRMs and engagement platforms, including Salesforce, HubSpot, Outreach and Salesloft, so it works alongside an existing stack.\n- The platform carries SOC 2 and GDPR credentials, which matters for teams handling prospect data.\n\nRegie.ai is best for SDR teams and revenue leaders who want AI to handle prospecting busywork while people keep control of key conversations. A Chrome extension also brings its writing help into other tools. Tip: feed it your best-performing messaging and personas early, since the quality of its voice learning shapes how natural every generated sequence sounds.",
+  "sources": [
+   "https://www.regie.ai",
+   "https://www.regie.ai/integrations",
+   "https://techcrunch.com/2025/02/26/regie-ai-injects-sales-enablement-with-ai-but-keeps-humans-in-the-loop"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "relay-app",
+  "moreContext": "Relay.app earned a loyal following by showing that automation and human judgment can live in the same workflow. Its signature idea was letting AI steps draft, classify or summarize while a person reviewed and approved the result before anything moved forward. Important update: the company announced in July 2026 that it was shutting down, with free accounts closing in August and paid accounts in September 2026, and its website now confirms the service has ended.\n\n- Human-in-the-loop checkpoints let teams approve, edit or reject AI output inside a running workflow instead of trusting it blindly.\n- Workflows could span many popular business apps, blending AI steps with ordinary automation in one flow.\n- Beyond workflows, the platform offered sequences, data tables and MCP servers, which is part of why its users built so much on it.\n- Before closing, Relay let customers export workflows, sequences and MCP servers as JSON and AI prompts, and tables as CSV files.\n\nRelay.app was best suited to operations teams and solo founders who wanted dependable AI automation with a person signing off on key steps. Because the service has shut down and account data has been deleted, it is no longer an option for new projects. Tip: if you exported your workflows before the deadline, use those files as a blueprint when rebuilding in another automation platform, and recreate the human review points first so nothing ships unchecked.",
+  "sources": [
+   "https://www.relay.app",
+   "https://www.getinboxzero.com/blog/post/relay-app-shutting-down",
+   "https://docs.relay.app/"
+  ],
+  "status": "possibly-defunct"
+ },
+ {
+  "slug": "remini",
+  "moreContext": "Remini built its reputation on one thing done remarkably well: bringing faces back into focus. Old prints, shaky phone shots and low-resolution images that seemed beyond saving often come out crisp, which is why it became one of the best-known photo apps in the world. It is developed by Bending Spoons, the Milan-based company behind a portfolio of popular consumer apps.\n\n- Face restoration is widely regarded by reviewers as among the strongest available, recovering detail in eyes, hair and skin texture.\n- The app runs on iPhone, iPad and Android, and a browser version makes it easy to work from a computer.\n- Beyond sharpening, it offers denoising, colorization of black-and-white photos and video enhancement.\n- AI Photos turns a set of selfies into new portraits, from professional headshot looks to playful themed scenes.\n- A free tier lets you try the core enhancer, with paid subscriptions removing limits and ads.\n\nRemini is ideal for families digitizing old albums, social media users polishing portraits, and anyone rescuing a precious but blurry shot. Tip: photograph or scan old prints in even light without glare before enhancing, because a cleaner source gives the AI more real detail to work with and keeps faces looking natural rather than overprocessed. As with any cloud editor, skip uploading sensitive documents.",
+  "sources": [
+   "https://app.remini.ai",
+   "https://apps.apple.com/us/app/-/id1470373330",
+   "https://www.techradar.com/pro/what-is-remini-everything-we-know-about-ai-restoration-tool"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "remove-bg",
+  "moreContext": "remove.bg turned a fiddly Photoshop chore into a single upload, and it is still one of the quickest ways to get a clean cutout. Now a Canva brand, it has grown from a simple web tool into a family of apps, plugins and an API that fits into almost any image workflow, from a solo seller's listings to an enterprise media pipeline.\n\n- Desktop apps for Windows, Mac and Linux make it easy to process whole folders of images, alongside an Android app for phones.\n- A Photoshop extension brings one-click cutouts directly into the editor many designers already use.\n- The developer API is well documented, so teams can automate removal for product catalogs or user uploads.\n- Ready-made use cases cover white e-commerce backgrounds, car dealership listings, professional headshots and transparent PNGs for logos.\n- Beyond still images, the brand also offers video background removal and automatic design creation.\n\nremove.bg is a great match for e-commerce sellers, photographers, marketers and developers who handle images in volume. You can try it free before choosing a paid plan or credits for full-resolution output. Tip: for big catalogs, use the desktop app or API rather than uploading files one at a time, and shoot products against a contrasting background so fine edges like hair, fur or straps come out cleaner.",
+  "sources": [
+   "https://www.remove.bg"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "replit",
+  "moreContext": "Replit has evolved from a browser-based coding playground into one of the most complete prompt-to-production platforms available. What sets it apart is that the agent, the editor, the database and the hosting all live in one place, so an idea can go from a sentence to a live, shareable app without wrestling with servers or deployment scripts.\n\n- Replit Agent goes beyond web apps, also producing slides, data visualizations, documents, 3D games and animation projects.\n- A visual design canvas lets you adjust layouts directly instead of describing every change in text.\n- More than 100 integrations, including Stripe, OpenAI and Google Workspace, make it simple to add payments, AI features and productivity hooks.\n- Smart model routing picks a suitable model for each task, which the company says lowers average cost compared with its earlier max mode.\n- Enterprise teams get SSO and SAML, SCIM, audit logs, SOC 2 and private networking options.\n\nReplit is ideal for founders validating ideas, educators, students and product teams building internal tools or prototypes quickly. A free Starter plan includes daily usage and one published project, and the company says millions of builders use the platform. Tip: start each project with a short spec describing users, core screens and data, then build in small steps and test as you go, since the agent produces cleaner results with clear, incremental requests.",
+  "sources": [
+   "https://replit.com",
+   "https://replit.com/pricing"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "research-rabbit",
+  "moreContext": "ResearchRabbit made literature discovery feel exploratory rather than exhausting. Instead of running keyword search after keyword search, you start with a few papers you trust and follow the connections outward, which mirrors how many researchers naturally think. In 2025 it was acquired by Litmaps, the New Zealand research-mapping company, and it continues with its own distinctive browsing interface.\n\n- The company says its index covers more than 320 million academic papers.\n- Zotero integration lets you sync collections with the reference manager many academics already rely on.\n- You can bring in your existing library as seeds, so recommendations reflect work you already know.\n- Visual maps make it easier to spot clusters, key authors and gaps in a field before you start writing.\n- The core experience remains free, with an optional paid tier that adds higher limits and extra filters for heavy users.\n\nResearchRabbit is best for graduate students, academics, librarians and anyone writing a literature review in an unfamiliar area, and the company says more than a million researchers trust it. Tip: seed a collection with three to five strong, recent papers rather than a single one, then add the best recommendations back in, so each round of suggestions grows sharper and more relevant to your research question.",
+  "sources": [
+   "https://www.researchrabbit.ai",
+   "https://itbrief.news/story/litmaps-acquires-researchrabbit-raises-1-million-for-ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "resemble-ai",
+  "moreContext": "Resemble AI is a rare case of a voice technology company turning its expertise toward catching fakes. Founded in 2019 as a voice cloning startup, it announced in August 2026 that it had stopped offering voice generation as a commercial product and would focus on multimodal deepfake detection and watermarking. The company argues that knowing how synthetic voices are built at the model level makes it better at spotting them.\n\n- Its Detect models flag AI-generated audio, video and images in real time, and an Intelligence layer explains results in plain language.\n- Watermarker embeds imperceptible provenance markers in media and supports C2PA standards.\n- Identity tools enroll and authenticate voices, which helps contact centers and banks guard against impersonation.\n- Detection plugs into telephony platforms like Twilio, Five9 and Genesys, plus Microsoft Teams, Zoom, Google Meet and Webex.\n- Chatterbox, the company's open-source text-to-speech family, stays free under the MIT license, and its multilingual version covers more than 20 languages.\n\nResemble AI is best for enterprises, contact centers, financial institutions and media teams that need to verify what is real. Plans start with pay-as-you-go credits, while Team and Business subscriptions add seats, and deployment can be cloud-based, on-premises or fully air-gapped, with SOC 2 Type II and ISO 27001 credentials. Tip: if you are evaluating detection, pilot it inside an existing call or meeting workflow first, since real traffic reveals far more about fit than test clips do.",
+  "sources": [
+   "https://www.resemble.ai",
+   "https://huggingface.co/ResembleAI/chatterbox"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "retool-ai",
+  "moreContext": "Retool has become a go-to platform for engineering teams that want to ship internal software quickly without giving up control. It combines drag-and-drop components with real code, connects directly to company databases and APIs, and now extends that same foundation to AI agents with centralized governance. The company says more than 10,000 teams build on it.\n\n- Connectors cover popular databases, APIs and large language models, so apps and agents work on live business data rather than copies.\n- Retool Workflows handle scheduled jobs and backend automations alongside the app builder.\n- A centralized agent harness gives IT and security teams visibility into the agents being built across a company.\n- Published case studies feature companies such as Ramp and DoorDash reporting large savings in developer hours.\n- Self-hosted deployment is available for organizations that need data to stay inside their own environment.\n\nRetool is best for engineering and operations teams building admin panels, dashboards, support consoles and approval tools. You can start building at no cost before moving to a paid plan. Tip: begin with one high-friction internal process, such as refunds or account reviews, connect it to production data with read-only permissions first, and widen write access once the team trusts the workflow.",
+  "sources": [
+   "https://retool.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "retouchia",
+  "moreContext": "Retouchia brings a full photo retouching kit into the browser, with no software to install and no watermark stamped on your downloads. It gathers the edits people reach for most often, from cleanup to restoration, behind one simple editor, and adds a creative layer for generating and editing images from prompts.\n\n- Dedicated tools cover AI upscaling to 4K, object removal, photo restoration and colorization of old black-and-white images.\n- Prompt-based edits can change hairstyles or outfits and create or modify images with a GPT image model.\n- A credit system charges based on the model and number of outputs, and credits are returned if a generation fails or is blocked.\n- It accepts JPG, PNG and WebP files up to 24 MB, with output at 1K, 2K or 4K depending on the model.\n- Privacy handling is spelled out clearly: uploads are deleted after an hour, results after seven days, and inputs are not used for training without consent.\n\nRetouchia is a good fit for online sellers, social media users and anyone fixing family photos who wants fast results without learning Photoshop. You can browse and open the editor for free, then sign in to start generating. Tip: download finished images promptly, since results are cleared after a week, and save upscaling for your final step so cleanup edits are applied at the original resolution first.",
+  "sources": [
+   "https://retouchia.com/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "rev",
+  "moreContext": "Rev has spent years earning trust in places where an accurate transcript truly matters, and it now pairs that reputation with a modern AI workspace. Fast machine transcripts sit alongside a network of professional human transcriptionists, so you can choose speed or certainty for each file. More recently it has built tools aimed squarely at legal and investigative work.\n\n- AI transcription supports more than 37 languages, while human captions cover English and Spanish and subtitles reach more than 17 languages.\n- Investigation features analyze many files at once with citations, draft chronologies and affidavits from templates, and let you clip key moments.\n- Mobile apps for iOS and Android let reporters and investigators record and transcribe interviews in the field.\n- Integrations include Clio, Dropbox, Box, Google Drive and OneDrive, and media can be added by upload or URL.\n- Security credentials include SOC 2 Type II and GDPR compliance, with CJIS and HIPAA compliant environments on top plans, and the company says content is not used to train third-party models.\n\nRev is best for attorneys, journalists, researchers and podcasters who need dependable records of what was said. A free plan is available with no credit card required, and the company says more than 2,000 law firms and agencies use it. Tip: run everyday recordings through AI transcription, then order human review only for the files headed to court, print or publication.",
+  "sources": [
+   "https://www.rev.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "reword",
+  "moreContext": "Reword built its reputation on a thoughtful idea: an AI writing partner that learns from a publication's own back catalog instead of producing generic text. Its Cowriter was trained on a team's existing articles to match their voice, and the editor combined drafting with SEO planning and quality checks. As of October 2026, however, the reword.com address redirects to a domain-for-sale page, so the service appears to be offline.\n\n- The Cowriter feature adapted to your writing style by learning from articles you had already published.\n- Topic cluster tools helped editors plan related content and build authority around core subjects.\n- Search analytics showed how content was performing, which helped teams decide what to update or write next.\n- Auditing tools checked drafts for plagiarism and flagged claims that might be inaccurate before publication.\n\nReword was best suited to content marketing teams, niche publishers and bloggers who cared about brand voice and editorial accuracy as much as speed. Because the official site no longer loads the product, new users should not count on being able to sign up. Tip: if you want a similar workflow today, look for an editor that can use your published archive as a style reference, and keep a human fact-check pass in place for every article before it goes live.",
+  "sources": [
+   "https://reword.com",
+   "https://www.alternativeto.net/software/reword/about/",
+   "https://proddducts.beehiiv.com/p/rewordco"
+  ],
+  "status": "possibly-defunct"
+ },
+ {
+  "slug": "ride-a-pet-egg-carry-stamina-notes",
+  "moreContext": "This independent fan reference for the Roblox game Ride A Pet stands out for its careful, honest approach. Rather than repeating rumors, it clearly marks details it has not verified and focuses on the practical loop players repeat every session: find an egg, carry it home safely, hatch it and put the new pet to work. It is not affiliated with Roblox or the game's creators.\n\n- Route-based egg location guides explain how to approach each search area and plan the return trip before you pick anything up.\n- Troubleshooting pages cover common snags, such as the Egg Will Break warning on the way home, a missing ride prompt or an egg that will not go into your basket.\n- Interactive helpers include a pet comparison tool, an attempt-budget calculator and a seven-step egg run checklist saved in your browser.\n- Guides go deeper into mechanics like radars, rebirth, the Fuse Machine, pet mutations, name tags and the Dragon Egg routes.\n- A codes page and an updates log help players keep track of events and current code status.\n\nThe site is best for new and returning Ride A Pet players who want clear, step-by-step help without guesswork presented as fact. Tip: scout an unfamiliar route once with an empty basket so you already know the way home, which keeps the carry countdown from catching you off guard when you finally grab a rare egg.",
+  "sources": [
+   "https://rideapet.com/",
+   "https://rideapet.com/egg-locations",
+   "https://rideapet.com/mechanics"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "riffusion",
+  "moreContext": "Riffusion holds a special place in AI music history. It began in late 2022 as an open-source side project by Seth Forsgren and Hayk Martiros that generated sound by creating spectrogram images, and it grew into a full song-making platform with vocals. The product has since changed names: it became Producer.ai in 2025, Google acquired the team in early 2026, and the riffusion.com address now leads to Google Flow Music.\n\n- Songs are created by chatting with an AI producer, which now runs on Google's Lyria music model.\n- Built-in stem splitting, audio effects and remixing tools let you rework tracks rather than starting over.\n- Music videos can be generated from your songs with Google's Veo video model.\n- Custom Spaces let creators build small audio tools, games or simple instruments like a mini keyboard.\n- The platform is free to start with daily credits and no credit card required.\n\nThe experience is best for songwriters sketching ideas, content creators who need original background music, and hobbyists who want to experiment across genres. The product also says it learns your style as you keep creating. Tip: treat the chat like a studio session, describing genre, mood, tempo and vocal style up front, then iterate with remixes and stems instead of regenerating from scratch each time.",
+  "sources": [
+   "https://www.flowmusic.app/",
+   "https://fast.io/resources/producer-ai-review-2026/",
+   "https://www.tecnoandroid.it/news/flow-music-ecco-il-nuovo-nome-di-producerai-di-google-1873804/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "riverside",
+  "moreContext": "Riverside solved the biggest headache in remote recording by capturing each guest's audio and video directly on their own device, so a shaky connection no longer ruins the final file. It has since grown into a complete studio that records, edits, streams and publishes, and it now lives at riverside.com. The company cites a strong G2 rating and lists brands such as Spotify and Microsoft among its users.\n\n- Full HD live streaming reaches several destinations at once, including YouTube, LinkedIn, Instagram and Twitch, with audience call-ins.\n- AI Co-Creator drafts clips, social posts, thumbnails and headlines from your recording.\n- AI Translation can dub episodes into more than 30 languages, opening the door to international audiences.\n- Polish tools include Magic Audio cleanup, filler-word removal, eye-contact correction, B-roll generation and speaker-based layouts.\n- Built-in podcast hosting with analytics, plus publishing to YouTube, Spotify and Apple Podcasts, takes you from recording to release in one place.\n\nRiverside is best for podcasters, video creators, marketing teams running webinars and interviewers working with remote guests. It runs in the browser, with a Mac app and iOS and Android apps for recording on the go, and a free plan is available to start. Tip: ask guests to wear headphones and stay on the call until their local tracks finish uploading, which keeps every track clean and complete.",
+  "sources": [
+   "https://riverside.com/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "rize",
+  "moreContext": "Rize has grown from a personal focus tracker into an automatic time-tracking platform built for agencies, accounting firms and other professional-services teams. It runs quietly in the background, recognizing which client or project you are working on from the apps, window titles and sites in use, so nobody has to start timers or rebuild timesheets on a Friday afternoon. The company says around 350,000 professionals have used it.\n\n- Integrations connect to ClickUp, Asana, Linear, Notion, Google Calendar, Outlook, Slack and QuickBooks, and clients can be imported from ClickUp or a CSV file.\n- Profitability views track client margins and retainer burn, with alerts when a client is being over-serviced.\n- Utilization and capacity reports give managers a clear picture of team workload by department.\n- Privacy is designed in: each person approves their own time before it is shared, only client-tagged time reaches the team, and it does not capture screenshots or keystrokes.\n- An MCP server lets AI assistants answer questions about your tracked time.\n\nRize is best for agency owners, consultants and finance-minded team leads who bill by the hour or manage retainers. Desktop apps cover macOS and Windows, and the company says smaller teams can get started free with no credit card. Tip: set up your client and project list before the first week of tracking, so the automatic categorization has clear targets and your first reports are accurate from day one.",
+  "sources": [
+   "https://rize.io"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "roblox-gui-maker",
+  "moreContext": "Roblox GUI Maker focuses on one stubborn part of Roblox development: planning interfaces that look good and work on every screen. Instead of handing you a generic UI picture, it describes the screen in Roblox terms, mapping out ScreenGui, Frames, TextLabels, TextButtons and layout objects so you know exactly what to build in Studio. It is an independent creator tool and is not affiliated with Roblox Corporation.\n\n- Each generation produces both desktop and mobile previews, which helps catch layout problems on smaller screens early.\n- A named component tree and style tokens give you a clear hierarchy plus consistent colors and spacing to follow.\n- An implementation checklist walks you through building the screen and wiring it to your own RemoteEvents and game data.\n- The workflow starts cheaply with a quick sketch, and you only spend more credits when you convert an idea into a full GUI plan.\n- New accounts receive starter credits with no card required, with bonus credits for completing the Studio tutorial and logging in daily.\n\nThe tool is best for solo Roblox developers and small studios designing shops, HUDs, inventories, settings menus and reward popups. The site notes that Lua code export is still on the way, so treat results as a starting blueprint that you refine in Studio. Tip: describe the genre, main player action, visible data and button states in your prompt, since specific inputs produce far more usable hierarchies.",
+  "sources": [
+   "https://robloxguimaker.dev/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "robottraining-jobs",
+  "moreContext": "RobotTraining.jobs shines a light on a fast-growing but scattered corner of the job market: the people who help teach robots and autonomous systems. Rather than scraping general job sites, it reads employers' own job boards each day, filters out roles that are not really robot-training work, and links you straight to each employer's application. It is run by O-mega Enterprise, Inc., and in late October 2026 it listed more than 1,100 open roles.\n\n- Listings span autonomous vehicle and drone operators, fleet operations, egocentric and wearable video capture, demonstration recording, teleoperation, embodied-AI annotation and robot task QA.\n- Filters cover country, employer, job type, remote-only roles and whether pay is stated, plus keyword search.\n- An AI search lets you describe the job you want, or match from your LinkedIn profile, CV or a single sentence about your experience.\n- Employers without a public job board still get profile pages with researched pay information.\n- Pay is shown whenever employers publish it, along with a summary of typical posted rates across the site.\n\nThe site is ideal for gig workers, students, drivers and anyone curious about hands-on AI data work. Browsing and the weekly email alert are free, and the site is upfront that some apply links are referral links. Tip: sign up for the weekly alert and filter for remote or at-home capture roles, since these openings can fill quickly and new ones appear every week.",
+  "sources": [
+   "https://robottraining.jobs"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "roo-code",
+  "moreContext": "Roo Code earned a devoted following as one of the most configurable open-source coding agents for VS Code. It began in late 2024 as a fork of Cline called Roo Cline and quickly became known for letting developers shape exactly how the agent thinks and acts. In April 2026 the original team announced that Roo Code products would shut down on May 15, 2026, and roocode.com now points to Roomote, the team's new self-hostable cloud coding agent.\n\n- Custom modes let developers define specialized personas with their own instructions, tools and permissions, well beyond the built-in architect, coder and debugger roles.\n- The extension worked with almost any model provider, including local models, so teams could balance cost, privacy and quality.\n- The open-source codebase lives on, with maintainers working on a handoff to a community team and pointing users toward community forks.\n- Roomote, from the same creators, runs tasks in parallel, opens pull requests with live previews and connects to GitHub, GitLab, Jira, Linear, Sentry and Slack.\n\nRoo Code was best suited to power users who wanted fine control over an AI agent's behavior inside their editor. Existing installs may keep working, but the original team is no longer adding features or fixing issues. Tip: if you rely on Roo Code workflows, export your custom mode definitions and rules files now, then try them in a maintained community fork, or evaluate Roomote if a cloud-based teammate suits your team better.",
+  "sources": [
+   "https://roomote.dev/",
+   "https://www.gradually.ai/en/changelogs/roo-code/",
+   "https://www.roborhythms.com/roo-code-vs-roomote/"
+  ],
+  "status": "possibly-defunct"
+ },
+ {
+  "slug": "rows",
+  "moreContext": "Rows set out to make the spreadsheet feel like a modern data app, with live connections to business tools and AI that could read, summarize and chart your numbers. Built by a team in Porto, Portugal, it won over marketers, founders and analysts who wanted dashboards without SQL. In February 2026, Superhuman (the company formerly known as Grammarly) agreed to acquire Rows, and the team announced the product would wind down by May 31, 2026. Today rows.com directs visitors to Superhuman Docs.\n\n- The AI analyst could pull tables out of PDFs, merge datasets and build reports and calculators from plain-language prompts.\n- More than 50 live data sources connected sheets to ad platforms, social channels, data warehouses and back-office tools, with scheduled refreshes.\n- The RowsX browser extension imported tables straight from web pages.\n- Sheets and dashboards could be embedded in Notion or on websites, with real-time collaboration for teams.\n\nRows was best for growth marketers, startup operators and agencies building live reporting without engineering help, and the company said more than 2.2 million people had used it before the acquisition. Tip: if you want a similar experience now, Superhuman has said the Rows team will strengthen Coda, so its docs product is the natural place to look, and any sheets you exported can be rebuilt there or in another connected spreadsheet.",
+  "sources": [
+   "https://rows.com",
+   "https://rows.com/blog/post/rows-is-joining-superhuman",
+   "https://blog.superhuman.com/superhuman-to-acquire-rows/"
+  ],
+  "status": "possibly-defunct"
+ },
+ {
+  "slug": "runway",
+  "moreContext": "Runway has been at the front of AI video since the early days of generative media, and it remains a reference point for filmmakers who care about control as much as spectacle. Its flagship Gen-4.5 video model sits alongside research models such as Aleph, plus world-model work that reaches into simulation and robotics. The company also hosts an AI film festival that has become a showcase for the medium. Note that its main site now lives at runway.com.\n\n- Runway Creative brings video, image and audio generation and editing into one cloud workspace, with an agent and MCP support.\n- A developer API offers Runway models and selected third-party models, with workflows, recipes and reusable characters.\n- Mobile apps for iOS and Android let creators generate and review clips away from the desk.\n- Enterprises can buy Runway through the OpenAI and Claude marketplaces using existing commitments, which simplifies procurement.\n- Programs such as the Gen:48 short-film challenge and the Creative Partners Program support working artists.\n\nRunway is best for filmmakers, agencies, music video directors and brand studios producing high-end visual content. A free trial lets you explore the tools before choosing a plan. Tip: lock your look with a strong reference image or character first, then generate shots in short, consistent batches and refine them with the editing tools, which keeps a sequence visually coherent across cuts.",
+  "sources": [
+   "https://runway.com/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "rytr",
+  "moreContext": "Rytr made its name as one of the most approachable AI writers, and it has since grown into something broader: a writing assistant paired with an AI relationship manager. Alongside the familiar drafting tools, it now keeps track of the people you work with and the promises you have made, which makes it useful well beyond blog posts and ad copy.\n\n- The Engage side tracks contacts and commitments across your tools, prepares daily and pre-meeting briefs, and flags relationships that are going quiet.\n- The Create side drafts and rewrites emails, posts, ads and web pages, can match your personal voice, and produces up to three variants at once.\n- Integrations include Gmail, Outlook, Slack, Google Calendar, Google Meet, Granola and text messaging.\n- A browser extension surfaces contact context in Gmail, Slack and LinkedIn and can improve or continue text in almost any text box.\n- Nothing is sent without your approval, which keeps you in control of every follow-up the AI drafts.\n\nRytr is best for freelancers, founders, salespeople and small teams who want an affordable writing helper that also keeps their network warm. A free plan includes a monthly character allowance, one connected source and a daily briefing, with low-cost paid tiers above it. Tip: connect your main email and calendar first and set up your personal voice, so drafted follow-ups sound like you and arrive with the right context from recent conversations.",
+  "sources": [
+   "https://rytr.me"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "samemuse",
+  "moreContext": "SameMuse takes much of the guesswork out of online clothes shopping by showing a garment on your own photo before you buy. It is refreshingly low-friction: you can run a first try-on without creating an account, and it accepts the kinds of images shoppers actually have on hand, from product shots to quick screenshots of a store page.\n\n- Garment inputs can be a product photo, a flat lay, a shopping screenshot or a public product link.\n- It handles common phone formats, including HEIC and HEIF from iPhones, alongside JPG, PNG and WebP.\n- An HD tier is available for sharper previews once you sign in, and failed generations do not use up credits.\n- Purchased credit packs do not expire, and a monthly plan is offered for frequent users.\n- Uploaded photos and results are deleted after seven days and are not used to train models.\n\nSameMuse is well suited to online shoppers, menswear fans comparing jackets and knitwear, stylists, and anyone who wants to swap a single garment while keeping the same person in the photo. The site is honest that previews show silhouette, color and styling rather than exact fit, so it complements a retailer's size chart rather than replacing it. Tip: use a well-lit full-body or waist-up photo in a simple pose, plus a clean front-facing garment image, for the most convincing results.",
+  "sources": [
+   "https://samemuse.com/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "sapling",
+  "moreContext": "Sapling brings language AI directly into the places customer-facing teams already type, from helpdesks to CRMs. Built by Sapling Intelligence with a clear focus on business communication, it steers suggestions toward clear, professional replies rather than flowery prose. It also offers one of the better-known AI content detectors.\n\n- Integrations cover Zendesk, ServiceNow, Salesforce, Amazon Connect, Twilio Flex, Gmail and LinkedIn.\n- Developers can embed grammar, autocomplete and rephrasing in their own apps through a REST API with Python and JavaScript libraries, plus SDKs for editors like TinyMCE, CKEditor, Quill, ProseMirror and Tiptap.\n- The AI detector scores text overall and sentence by sentence, which helps reviewers pinpoint suspect passages.\n- Sentiment analysis and an MCP server extend its language tools to analytics and AI assistants.\n- Enterprise security includes encryption, PII redaction, SSO, SCIM, MFA and a self-hosted deployment option.\n\nSapling is best for support, sales and success teams who answer high volumes of messages and want consistent quality, as well as product teams adding writing help to their own software. A free trial is available with no card required. Tip: build a shared snippet library from your best-rated replies early on, so agents start from proven answers and autocomplete picks up the phrasing your team prefers.",
+  "sources": [
+   "https://sapling.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scalenut",
+  "moreContext": "Scalenut has kept pace with how people now find information, expanding from an SEO writing platform into a toolkit for visibility in AI answer engines as well as classic search. That shift makes it a practical choice for marketers who want to know not only where they rank on Google but whether ChatGPT, Perplexity, Gemini, Claude and Grok mention their brand.\n\n- AI visibility tracking monitors brand mentions, prompt coverage, competitor share and which sources AI engines cite.\n- A GEO score and content optimizer show how to adjust articles so they are more likely to surface in AI answers.\n- Supporting tools cover internal linking, backlink insights, keyword planning, Reddit tracking and AI crawler monitoring.\n- A done-for-you option pairs specialized AI agents with human strategists who approve work before it goes live.\n- Free resources include a set of free SEO tools, a free AI audit, a bootcamp course and an active user community.\n\nScalenut is best for content marketers, agencies and growing brands that publish regularly and want one place to plan, write and measure. The company says more than a million users have signed up, and you can try the software free before committing. Tip: start with the AI visibility audit to find prompts where competitors are cited and you are not, then build or refresh content clusters around those gaps first.",
+  "sources": [
+   "https://www.scalenut.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scenario",
+  "moreContext": "Scenario has become a favorite of game studios because it treats art direction as something you own and protect. Teams train models on their own characters, products or brand look, then generate new assets that stay faithful to that style, and the platform has expanded well beyond 2D images into 3D, video and audio. The company highlights studios such as Ubisoft among its customers.\n\n- Single images can be turned into textured 3D models, rigged and brought into a game engine, with experimental Blender support.\n- Video tools turn storyboards into shots, restyle footage and extend takes with first and last frame control.\n- Sound effects, music and voice can be generated and synced to video for trailers and ads.\n- More than 750 models from over 50 providers are available in one place, added as they launch.\n- A REST API with TypeScript and Python SDKs, an MCP server, and open-source agent skills for Blender, Maya, ZBrush, Unreal and Unity support production pipelines.\n\nScenario is best for game artists, live-ops teams, marketing studios producing user acquisition creatives, and brands that need on-style visuals at volume. A free tier provides daily credits with no credit card required, and the company reports SOC 2 Type II compliance. Tip: curate a tight, consistent training set of your strongest reference art before training, since a focused dataset produces far more reliable style models than a large, mixed one.",
+  "sources": [
+   "https://www.scenario.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scholarcy",
+  "moreContext": "Scholarcy grew out of a very real frustration: founder Phil Gooch conceived it while working through the reading load of his own PhD. Since launching in 2018, the London-based tool has focused on helping students and researchers absorb papers faster without losing critical detail, and it has since been acquired by Texthelp, the assistive learning technology company. Scholarcy says more than half a million students and researchers have used it.\n\n- Zotero integration lets you send extracted summaries and references straight into your reference library.\n- Exports reach Word, Excel and citation managers, and you can generate a bibliography in one click.\n- A literature matrix lines up multiple papers side by side, which makes comparing studies for a review far quicker.\n- Flashcards pull out key facts, figures, references and takeaways, so revision and note-taking start from a structured base.\n- A free tier allows a few summaries each day, with a paid Library plan removing the cap.\n\nScholarcy is best for undergraduates, postgraduates and researchers who need to triage long reading lists, as well as anyone who benefits from structured, chunked text. Tip: use it to decide which papers deserve a full read, then export your flashcards and references to Zotero so your notes and citations stay together as your project grows.",
+  "sources": [
+   "https://www.scholarcy.com/blog/the-founder-of-scholarcy-phil-gooch",
+   "https://www.scholarcy.com/integrations/zotero-integration",
+   "https://www.scholarcy.com/article-summarizer",
+   "https://app.mergerlinks.com/companies/scholarcy"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scispace",
+  "moreContext": "SciSpace began as a friendly way to make sense of dense research papers and has grown into a broader AI research platform. Beyond explaining confusing passages, it now offers an AI agent that can take on multi-step academic tasks, which makes it one of the more complete workspaces for students and researchers who want help from first search to final draft.\n\n- The AI Agent can automate report creation, data extraction and visualization, and even produce slides, posters and infographics.\n- An Agent Gallery offers ready-made research agents for literature reviews, data analysis, writing and deep research.\n- Its search draws on a large scholarly index built from sources such as OpenAlex and Semantic Scholar, covering hundreds of millions of papers.\n- The AI Writer includes templates for research proposals, literature reviews, abstracts, thesis statements and essays, alongside a large library of journal formatting templates.\n- Reviewers note support for dozens of languages, which helps non-native English speakers read and write research with more confidence.\n\nSciSpace is best for graduate students, early-career researchers and professionals who regularly read outside their specialty. Reviewers report that a large research community relies on it, and a free plan lets you explore the core tools. Tip: always click through to the cited source for any claim you plan to use, since checking the original paper keeps your literature review accurate and defensible.",
+  "sources": [
+   "https://scispace.com",
+   "https://blog.hslu.ch/information-literacy-toolkit/scispace/",
+   "https://www.unite.ai/scispace-review/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scisummary",
+  "moreContext": "SciSummary keeps the job of reading research refreshingly simple: hand it a paper and get back a clear, organized summary you can actually act on. It has steadily added depth on top of that core, including figure analysis and paper comparison, while keeping pricing within reach of students and independent researchers.\n\n- Summaries are split into labeled sections such as abstract, methods, results and conclusion, so you can jump straight to what matters.\n- Statistical results are explained in plain language, including p-values, confidence intervals and effect sizes.\n- You can chat about individual figures to understand charts and tables that are hard to parse at a glance.\n- A personal library with folders and tags keeps summarized papers organized, and Pro users get semantic search across their indexed documents.\n- Bulk summarization and side-by-side paper comparison help when you are working through a whole reading list.\n\nSciSummary is best for students, clinicians, science journalists and busy researchers who need the gist of many papers quickly. A free trial is available, and there is a dedicated student plan. Tip: use the comparison feature when two studies seem to disagree, and read the methods summary first, since differences in sample and design often explain conflicting results.",
+  "sources": [
+   "https://scisummary.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "scite",
+  "moreContext": "Scite answers a question that ordinary citation counts cannot: how did later research actually treat a paper? Its Smart Citations show the sentence where a work was cited and classify whether that mention supports it, challenges it or simply discusses it. Scite is now part of Research Solutions, and the company says more than 2 million people use it.\n\n- The Assistant answers research questions with claims linked to the exact sentences in source papers, which makes checking its answers fast.\n- A browser extension adds citation badges to pages as you browse, and a Zotero plugin brings the same context into your reference library.\n- Indexing agreements with publishers including Wiley and SAGE, among dozens of others, give it access to full-text content.\n- Collections let you organize sets of papers and monitor how new citations arrive over time.\n- MCP support and an API let you use Scite's citation data inside tools like Claude and ChatGPT or in your own applications.\n\nScite is best for researchers, students, librarians, journal editors and R&D teams who need to judge the reliability of evidence before relying on it. A free trial is available to explore the platform. Tip: before citing a high-profile paper, open its Smart Citations and filter for contrasting statements, which quickly reveals whether later studies questioned or failed to replicate its findings.",
+  "sources": [
+   "https://scite.ai"
+  ],
+  "status": "ok"
+ }
 ]

@@ -1,0 +1,549 @@
+[
+  {
+    "slug": "freepik-ai",
+    "changes": {
+      "name": "Magnific",
+      "url": "https://www.magnific.com",
+      "tagline": "Formerly Freepik: stock library and multi-model AI creative suite in one plan",
+      "description": "Magnific, formerly Freepik, combines image, video, and audio generation, Magnific upscaling, and editing tools with a stock library of more than 250 million assets. It offers its own Mystic model alongside third-party engines such as FLUX, Veo, and Seedance under one credit-based subscription.",
+      "longDescription": "Magnific is the April 2026 relaunch of Freepik, the Malaga-based stock marketplace that grew into a multi-model AI studio. Its Mystic model and licensed engines such as FLUX, Veo, and Seedance generate images and video, the Magnific upscaler adds detail, and tools cover retouching, relighting, voiceovers, and Spaces, a node-based canvas for chaining steps into reusable workflows. One subscription spans stock assets and AI generation, and existing Freepik accounts and subscriptions carried over.",
+      "priceFrom": "$20/mo",
+      "features": [
+        "Mystic photorealistic model",
+        "Multi-model image and video generation",
+        "Magnific upscaling built in",
+        "Stock library integration",
+        "Spaces workflow canvas"
+      ],
+      "seoTitle": "Magnific Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Magnific (formerly Freepik) review: AI image, video, and audio generation, upscaling, and a 250M+ stock library in one plan. Pricing, pros, cons.",
+      "metaKeywords": "Magnific, Freepik, Freepik AI Suite, Magnific review, Magnific pricing, Magnific alternatives, Freepik alternatives, AI image generator, Stock, Mystic, Upscaling, Commercial"
+    },
+    "note": "Renamed Freepik AI Suite to Magnific (Apr 2026 relaunch), URL to magnific.com, price to $20/mo Premium (official page shows CA$27/mo)."
+  },
+  {
+    "slug": "windsurf",
+    "changes": {
+      "name": "Devin Desktop",
+      "url": "https://devin.ai/desktop",
+      "tagline": "Formerly Windsurf: Cognition's agentic IDE for running agents locally and in the cloud",
+      "description": "Devin Desktop, formerly Windsurf, is Cognition's agentic IDE that understands your whole repo and executes coordinated multi-file edits. A sessions board lets you run several agents on your machine or in Devin Cloud and review their pull requests in Devin Review.",
+      "longDescription": "Devin Desktop is the new name for Windsurf (formerly Codeium), now built on by Cognition after it acquired the product in 2025. It keeps the agent-first editing that made Windsurf popular, with deep codebase awareness, coordinated multi-file changes, Fast Context search, and Supercomplete next-edit prediction, and adds a command center for managing many agents locally or in Devin Cloud. A free plan remains, the JetBrains plugin is still available, and legacy Windsurf Enterprise pricing carries over.",
+      "priceFrom": "$20/mo",
+      "features": [
+        "Agentic multi-file edits",
+        "Local and cloud agent sessions",
+        "Devin Review for diffs",
+        "Supercomplete next-edit prediction",
+        "JetBrains plugin available"
+      ],
+      "pros": [
+        "Free plan available",
+        "Smooth agent UX",
+        "Strong enterprise story"
+      ],
+      "seoTitle": "Devin Desktop Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Devin Desktop (formerly Windsurf) review: Cognition's agentic IDE with local and cloud agents. Features, pricing, pros, cons, and alternatives.",
+      "metaKeywords": "Devin Desktop, Windsurf, Codeium, Devin Desktop review, Devin Desktop pricing, Windsurf review, Windsurf alternatives, AI coding tool, IDE, Agent, Enterprise"
+    },
+    "note": "Renamed to Devin Desktop (formerly Windsurf), URL devin.ai/desktop, cheapest paid plan now Pro $20/mo per devin.ai/pricing."
+  },
+  {
+    "slug": "notebooklm",
+    "changes": {
+      "name": "Gemini Notebook",
+      "url": "https://notebook.google",
+      "tagline": "Formerly NotebookLM: ground an AI entirely in your own sources",
+      "description": "Gemini Notebook, formerly NotebookLM, answers only from the documents you upload, with citations, study guides, mind maps, and Audio and Video Overviews. Google renamed it in July 2026, and notebooks created in the Gemini app sync with it automatically.",
+      "longDescription": "Gemini Notebook (formerly NotebookLM) is Google's source-grounded research tool: upload PDFs, Docs, slides, videos, or URLs and it answers strictly from them, citing passages. Audio Overviews turn sources into a podcast-style discussion between two AI hosts, Video Overviews create narrated explainers, and it can also generate slide decks and mind maps. Students, analysts, and writers use it as a thinking partner over their own material.",
+      "features": [
+        "Answers cited to your sources",
+        "Audio and Video Overviews",
+        "Mind maps and study guides",
+        "50-source notebooks"
+      ],
+      "seoTitle": "Gemini Notebook Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Gemini Notebook (formerly NotebookLM) review: Google's source-grounded AI with citations and Audio Overviews. Features, pricing, pros, cons.",
+      "metaKeywords": "Gemini Notebook, NotebookLM, Gemini Notebook review, NotebookLM review, Gemini Notebook pricing, NotebookLM alternatives, AI research tool, Source-grounded, Google, Audio overviews, Study"
+    },
+    "note": "Renamed to Gemini Notebook (formerly NotebookLM); notebooklm.google redirects to notebook.google, which titles itself Gemini Notebook."
+  },
+  {
+    "slug": "le-chat",
+    "changes": {
+      "name": "Vibe (Mistral)",
+      "tagline": "Formerly Le Chat: Mistral's fast, privacy-minded assistant with Chat, Work, and Code modes",
+      "description": "Vibe, formerly Le Chat, is Mistral's AI assistant with Chat, Work, and Code modes, cited web search, deep research, and more than 100 app connectors. European data governance and on-premises deployment options make it a sovereignty-friendly choice.",
+      "longDescription": "Mistral renamed Le Chat to Vibe in May 2026, expanding it from a fast chatbot into a work and coding agent while keeping chat.mistral.ai as its home and carrying over users' history, settings, and plans. Chat mode keeps the quick Flash Answers, Work mode runs multi-step tasks across connected apps with MCP support, and Code mode handles development in a terminal or editor. European data governance and enterprise deployment options make it the sovereignty-friendly choice, and its free tier remains capable.",
+      "features": [
+        "Chat, Work, and Code modes",
+        "Fast Flash Answers",
+        "100+ connectors and MCP",
+        "Cited web search and deep research",
+        "EU data governance"
+      ],
+      "seoTitle": "Vibe (Mistral) Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Vibe (formerly Le Chat) review: Mistral's AI assistant with Chat, Work, and Code modes and EU data governance. Features, pricing, pros, cons.",
+      "metaKeywords": "Vibe, Mistral Vibe, Le Chat, Mistral Le Chat, Vibe review, Vibe pricing, Le Chat review, Le Chat alternatives, AI productivity tool, Mistral, Europe, Fast, Privacy"
+    },
+    "note": "Renamed to Vibe (Mistral), formerly Le Chat, with Work and Code modes; URL and $14.99/mo Pro price unchanged (confirmed by multiple reviews)."
+  },
+  {
+    "slug": "podcastle",
+    "changes": {
+      "name": "Async",
+      "url": "https://async.com",
+      "tagline": "Formerly Podcastle: broadcast-ready podcasts and video from your browser",
+      "description": "Async, formerly Podcastle, records, enhances, transcribes, and edits podcasts and videos in the browser with Magic Dust audio cleanup, chat-driven editing, and AI voices. A free plan is available, and existing Podcastle accounts and plans carried over.",
+      "longDescription": "Async is the new name for Podcastle, which grew from a browser podcast studio into a broader audio and video suite at async.com. It still covers multi-track remote interviews, Magic Dust one-click enhancement, filler-word removal, and transcript-based editing, and now adds chat-driven edits, captions, B-roll, AI voices and cloning, dubbing, and a developer platform for its audio models. A free plan and simple UX target creators who find pro tools intimidating.",
+      "seoTitle": "Async Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Async (formerly Podcastle) review: browser podcast and video studio with Magic Dust cleanup, AI editing, and AI voices. Pricing, pros, cons.",
+      "metaKeywords": "Async, Podcastle, Async review, Podcastle review, Async pricing, Podcastle pricing, Podcastle alternatives, AI audio tool, Podcasting, Enhancement, Voice cloning, Browser"
+    },
+    "note": "Renamed to Async (formerly Podcastle), URL async.com; price left as is since async.com hides paid prices and third-party figures conflict."
+  },
+  {
+    "slug": "afforai",
+    "changes": {
+      "name": "Logically",
+      "url": "https://logically.app",
+      "tagline": "Formerly Afforai: research, cite, and write with grounded AI",
+      "description": "Logically, formerly Afforai, manages your research library while its AI answers from your sources with page-linked citations. It adds a bibliography generator and collaborative writing so you can draft with citations already in place.",
+      "longDescription": "Logically (formerly Afforai) fuses reference management with grounded AI: organize papers, documents, and web sources with annotations, then query your whole library and get answers that cite exact passages. Scholarly database search through sources such as Semantic Scholar, a multi-format bibliography generator, and collaborative document editing let students and lab groups go from reading to drafting in one workspace.",
+      "priceFrom": null,
+      "features": [
+        "Reference organization",
+        "Page-cited library answers",
+        "Scholarly database search",
+        "Bibliography generator",
+        "Collaborative writing"
+      ],
+      "pros": [
+        "Grounding rigor",
+        "Research and writing in one place",
+        "Zotero-style familiarity"
+      ],
+      "seoTitle": "Logically Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Logically (formerly Afforai) review: AI research workspace with cited answers from your library, bibliographies, and co-writing. Pricing, pros, cons.",
+      "metaKeywords": "Logically, Afforai, Logically review, Afforai review, Logically pricing, Afforai alternatives, AI research tool, Reference manager, Citations, Library Q&A, Students"
+    },
+    "note": "Renamed to Logically (formerly Afforai), URL logically.app; removed unverifiable $4.99/mo price and lifetime-deal pro (pricing page is JS-only, third parties cite ~$12)."
+  },
+  {
+    "slug": "create-xyz",
+    "changes": {
+      "name": "Anything",
+      "url": "https://www.anything.com",
+      "tagline": "Formerly Create: describe an app and get iOS, Android, and web versions",
+      "description": "Anything, formerly Create.xyz, turns plain-language descriptions into working web and native mobile apps with a built-in database, authentication, payments, and AI features. A free plan lets you start, and paid plans add credits, custom domains, and private projects.",
+      "longDescription": "Anything (formerly Create.xyz) makes software creation feel like writing: describe what you want, watch it build live, and get iOS, Android, and web versions that share one backend. Databases, authentication, storage, payments, and built-in AI models are wired in automatically, you can preview on your own phone as it builds, and developers can drive the pipeline from external coding agents through the Anything CLI. It suits non-technical founders taking an idea to a shippable app.",
+      "features": [
+        "Prompt-to-app building",
+        "iOS, Android, and web from one prompt",
+        "Built-in database and auth",
+        "Payments and AI integrations",
+        "App Store submission"
+      ],
+      "seoTitle": "Anything Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Anything (formerly Create.xyz) review: AI app builder for iOS, Android, and web apps from a prompt. Features, pricing, pros, cons, alternatives.",
+      "metaKeywords": "Anything, Create.xyz, Create, Anything review, Anything pricing, Create.xyz review, Create.xyz alternatives, AI coding tool, App builder, No-code, Prototyping, Mobile apps"
+    },
+    "note": "Renamed to Anything (formerly Create.xyz); used anything.com, the canonical domain that create.xyz and createanything.com both point to; $19/mo Pro confirmed."
+  },
+  {
+    "slug": "wonder-dynamics",
+    "changes": {
+      "name": "Autodesk Flow Studio",
+      "url": "https://www.autodesk.com/products/flow-studio",
+      "tagline": "Formerly Wonder Studio: swap actors for CG characters, VFX pipeline included",
+      "description": "Autodesk Flow Studio, formerly Wonder Studio, replaces filmed actors with animated CG characters automatically, handling lighting, tracking, and compositing. It also offers standalone AI motion capture, camera tracking, and clean plates, with a free tier to start.",
+      "longDescription": "Flow Studio began as Wonder Studio from Wonder Dynamics, co-founded by actor Tye Sheridan and VFX artist Nikola Todorovic, and Autodesk renamed it at SIGGRAPH 2025. Film a person with any camera and it detects the performance, transfers it to a CG character, and composites with matched lighting and camera motion. Standalone tools cover AI mocap, camera tracking, and clean plates, and scene data exports to Maya, Blender, Unreal Engine, and USD pipelines for refinement.",
+      "pricing": "FREEMIUM",
+      "priceFrom": "$10/mo",
+      "features": [
+        "Auto actor-to-CG replacement",
+        "Standalone AI mocap and camera tracking",
+        "Lighting and camera matching",
+        "Scene export to Maya, Blender, Unreal",
+        "Stock and custom characters"
+      ],
+      "pros": [
+        "Hollywood technique, indie price",
+        "Free tier to experiment",
+        "Full pipeline export",
+        "Autodesk backing"
+      ],
+      "cons": [
+        "Render queues on heavy scenes",
+        "Custom characters need 3D skills",
+        "Free tier is watermarked 720p"
+      ],
+      "seoTitle": "Autodesk Flow Studio Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Autodesk Flow Studio (formerly Wonder Studio) review: AI that swaps actors for CG characters with full VFX export. Pricing, pros, cons.",
+      "metaKeywords": "Autodesk Flow Studio, Flow Studio, Wonder Studio, Wonder Dynamics, Flow Studio review, Flow Studio pricing, Wonder Studio alternatives, AI video tool, VFX, CG characters, Autodesk, Filmmaking"
+    },
+    "note": "Renamed to Autodesk Flow Studio (formerly Wonder Studio), URL to Autodesk product page; now FREEMIUM with Lite at $10/mo (Aug 2025 repricing, per press)."
+  },
+  {
+    "slug": "deepbrain-ai",
+    "changes": {
+      "name": "AI Studios",
+      "url": "https://www.aistudios.com",
+      "tagline": "Formerly DeepBrain AI: realistic avatar video, dubbing, and interactive avatars",
+      "description": "AI Studios, formerly DeepBrain AI, turns scripts, URLs, and slide decks into avatar videos with voiceovers in 150+ languages and accents. It also offers dubbing and interactive conversational avatars for websites, apps, and kiosks.",
+      "longDescription": "AI Studios, the platform formerly branded DeepBrain AI, serves avatar video at enterprise scale: it converts scripts, URLs, and PowerPoint, PDF, or Word files into presenter videos with 2,000+ realistic avatars, adds dubbing with voice cloning and lip-sync, and powers interactive avatars that connect to models such as OpenAI, Claude, and Gemini for websites, WhatsApp, and kiosks. Custom avatars, an API, and compliance credentials such as SOC 2 Type II target training, marketing, and customer service teams.",
+      "pricing": "FREEMIUM",
+      "features": [
+        "Script/URL/PPT to video",
+        "2,000+ realistic avatars",
+        "Voiceovers in 150+ languages",
+        "Interactive AI avatars and kiosks",
+        "Custom avatar creation"
+      ],
+      "seoTitle": "AI Studios Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "AI Studios (formerly DeepBrain AI) review: avatar videos with voiceovers in 150+ languages plus interactive avatars. Pricing, pros, cons.",
+      "metaKeywords": "AI Studios, DeepBrain AI, DeepBrain, AI Studios review, AI Studios pricing, DeepBrain AI review, DeepBrain AI alternatives, AI video tool, Avatars, Enterprise, Kiosks, Localization"
+    },
+    "note": "Renamed to AI Studios (formerly DeepBrain AI), URL aistudios.com; 150+ languages and 2,000+ avatars per official pricing page; free plan exists so PAID changed to FREEMIUM ($24/mo Personal confirmed)."
+  },
+  {
+    "slug": "semrush-contentshake",
+    "changes": {
+      "name": "Semrush Content Toolkit",
+      "url": "https://www.semrush.com/content/",
+      "tagline": "Formerly ContentShake AI: SEO content ideas and drafts backed by Semrush data",
+      "description": "Semrush Content Toolkit, formerly ContentShake AI, merges Semrush keyword data with AI writing to find winnable topics and draft optimized articles for small teams. It adds SEO briefs, brand-voice settings, and one-click WordPress publishing.",
+      "longDescription": "Content Toolkit (formerly ContentShake AI) packages Semrush's competitive intelligence for non-SEO-experts: it surfaces weekly content ideas your site can realistically rank for, drafts articles with real search data steering structure and keywords, generates SEO briefs, and publishes straight to WordPress. A shortcut to data-driven content without learning the full Semrush suite.",
+      "seoTitle": "Semrush Content Toolkit Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Semrush Content Toolkit (formerly ContentShake AI) review: AI writing guided by Semrush keyword data. Features, pricing, pros, cons, alternatives.",
+      "metaKeywords": "Semrush Content Toolkit, Content Toolkit, ContentShake AI, Semrush ContentShake AI, Content Toolkit review, Content Toolkit pricing, ContentShake alternatives, AI marketing tool, SEO, Semrush, Content ideas, Small business"
+    },
+    "note": "Renamed to Semrush Content Toolkit (formerly ContentShake AI); /contentshake redirects to semrush.com/content/ titled Content Toolkit; $60/mo still cited."
+  },
+  {
+    "slug": "riffusion",
+    "changes": {
+      "name": "Google Flow Music",
+      "url": "https://www.flowmusic.app",
+      "tagline": "Formerly Riffusion and Producer.ai: chat with an AI producer to make full songs",
+      "description": "Google Flow Music, formerly Riffusion and then Producer.ai, creates full songs with vocals by chatting with an AI producer that runs on Google's Lyria model. It adds stem splitting, remixing, and Veo-powered music videos, and is free to start with daily credits.",
+      "longDescription": "Riffusion began in 2022 as a celebrated hack that generated music via spectrogram images, became Producer.ai in 2025, and joined Google in early 2026, with riffusion.com now leading to Google Flow Music. You build songs by chatting with Producer, which runs on Google's Lyria music model, then rework them with stem splitting, audio effects, and remixing, generate music videos with Veo, or build small audio tools in custom Spaces. It is free to start with daily credits and no credit card.",
+      "features": [
+        "Chat-based song production",
+        "Vocals and full songs (Lyria)",
+        "Stem splitting and remixing",
+        "Veo music videos"
+      ],
+      "pros": [
+        "Free daily credits",
+        "Strong musicality",
+        "Creative controls",
+        "Google backing"
+      ],
+      "cons": [
+        "Free use limited by daily credits",
+        "Community smaller than Suno"
+      ],
+      "seoTitle": "Google Flow Music Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Google Flow Music (formerly Riffusion, Producer.ai) review: AI songs with vocals via Lyria and free daily credits. Features, pricing, pros, cons.",
+      "metaKeywords": "Google Flow Music, Flow Music, Riffusion, Producer.ai, Flow Music review, Riffusion review, Riffusion alternatives, AI audio tool, Music generation, Lyria, Songs, Remixing"
+    },
+    "note": "Renamed to Google Flow Music (formerly Riffusion/Producer.ai), URL flowmusic.app; replaced 'free unlimited' claims with free daily credits; paid tiers unverified so priceFrom stays null."
+  },
+  {
+    "slug": "supertone",
+    "changes": {
+      "name": "Antinode Audio",
+      "url": "https://antinodeaudio.com",
+      "tagline": "Formerly Supertone: real-time voice changing, dialogue cleanup, and reverb matching",
+      "description": "Antinode Audio carries on Supertone's audio tools after HYBE wound down the business in 2026: Shift for real-time voice changing, Clear for separating dialogue from noise and reverb, and Air for matching room sound. Existing Supertone licenses and purchased voices remain valid.",
+      "longDescription": "Antinode Audio is the Daejeon, South Korea company that took over Supertone's core products after HYBE wound Supertone down in 2026, and supertone.ai now redirects to it. Shift changes voices in real time for streamers, gamers, and VTubers, Clear isolates dialogue from background noise and reverb in real time, and Air applies the reverb and EQ of a reference recording so lines recorded in different places sound like one space. Supertone's Play character voice service, API, and Voice Builder shut down on August 31, 2026.",
+      "pricing": "PAID",
+      "priceFrom": null,
+      "features": [
+        "Real-time voice changing (Shift)",
+        "Real-time dialogue cleanup (Clear)",
+        "Reverb and EQ matching (Air)",
+        "Low-latency streaming use"
+      ],
+      "pros": [
+        "Production-quality voice processing",
+        "Real-time performance",
+        "Existing licenses honored"
+      ],
+      "cons": [
+        "Play and API services discontinued",
+        "Young company after the transition"
+      ],
+      "seoTitle": "Antinode Audio Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Antinode Audio (formerly Supertone) review: Shift voice changer, Clear dialogue cleanup, and Air reverb matching. Features, pricing, pros, cons.",
+      "metaKeywords": "Antinode Audio, Supertone, Supertone Shift, Supertone Clear, Antinode Audio review, Antinode Audio pricing, Supertone alternatives, AI audio tool, Voice changing, Real-time, Dialogue cleanup"
+    },
+    "note": "Rewrote around Antinode Audio (formerly Supertone) Shift/Clear/Air; dropped Play and HYBE framing; set PAID and removed $12/mo since the free Play tier is gone and no current prices are published."
+  },
+  {
+    "slug": "liner",
+    "changes": {
+      "url": "https://liner.com"
+    },
+    "note": "URL updated; getliner.com returns HTTP 410 and liner.com is live."
+  },
+  {
+    "slug": "durable",
+    "changes": {
+      "url": "https://durable.com"
+    },
+    "note": "URL updated; durable.co redirects to durable.com."
+  },
+  {
+    "slug": "fathom",
+    "changes": {
+      "url": "https://www.fathom.ai"
+    },
+    "note": "URL updated; fathom.video redirects to fathom.ai."
+  },
+  {
+    "slug": "riverside",
+    "changes": {
+      "url": "https://riverside.com"
+    },
+    "note": "URL updated; riverside.fm redirects to riverside.com."
+  },
+  {
+    "slug": "runway",
+    "changes": {
+      "url": "https://runway.com",
+      "description": "Runway's Gen-4.5 model generates cinematic video from text and images, alongside a full suite of editing and motion tools. Runway Creative brings video, image, and audio generation into one workspace, with an API for developers.",
+      "features": [
+        "Gen-4.5 text and image to video",
+        "Camera and motion controls",
+        "AI green screen and inpainting",
+        "Act-Two performance capture"
+      ],
+      "seoDescription": "Runway review: Gen-4.5 cinematic text and image to video plus editing and motion tools. Compare features, pricing, pros, cons, and alternatives."
+    },
+    "note": "URL updated (runwayml.com redirects to runway.com); Gen-3/Gen-4 and Act-One mentions updated to Gen-4.5 and Act-Two per runway.com."
+  },
+  {
+    "slug": "surfer-seo",
+    "changes": {
+      "url": "https://surfer.ai"
+    },
+    "note": "URL updated; surferseo.com redirects to surfer.ai."
+  },
+  {
+    "slug": "timely",
+    "changes": {
+      "url": "https://www.timely.com"
+    },
+    "note": "URL updated; timelyapp.com redirects to timely.com."
+  },
+  {
+    "slug": "kling-ai",
+    "changes": {
+      "url": "https://kling.ai",
+      "description": "Kuaishou's Kling generates strikingly realistic video with strong motion physics and lip sync, led by its Kling 4.0 model. Kling Image 3.0 adds native 4K stills, and a node-based Canvas ties scripts, images, and video together.",
+      "features": [
+        "Kling 4.0 high-realism video",
+        "Image-to-video control",
+        "Kling Image 3.0 4K stills",
+        "Clip extension to ~2 min",
+        "Lip sync and effects"
+      ],
+      "seoDescription": "Kling AI review: Kuaishou's Kling 4.0 creates realistic AI video with strong motion and lip sync. Compare features, pricing, pros, cons, alternatives."
+    },
+    "note": "URL updated (klingai.com redirects to kling.ai); added Kling 4.0 and Kling Image 3.0, both shown on kling.ai."
+  },
+  {
+    "slug": "flux",
+    "changes": {
+      "url": "https://bfl.ai",
+      "longDescription": "FLUX comes from Black Forest Labs, founded by the researchers behind the original Stable Diffusion. The current FLUX 3 family spans FLUX 3 Image, FLUX 3 Video with native audio, the top-tier FLUX 3 Max, and FLUX 3 Image Klein, the open-weights member, with earlier FLUX.2 and FLUX.1 models still available. Prompt adherence and text rendering rival or beat closed leaders, and FLUX is a default choice across platforms like Krea, Replicate, and fal.",
+      "features": [
+        "FLUX 3 Image, Video, and Max",
+        "Open-weight Klein model",
+        "Excellent prompt adherence and text",
+        "Broad third-party platform support"
+      ],
+      "cons": [
+        "No first-party consumer app",
+        "Top tiers are API-only"
+      ]
+    },
+    "note": "URL updated (blackforestlabs.ai redirects to bfl.ai); replaced outdated Pro/Dev/Schnell lineup with FLUX 3 models listed on bfl.ai/models."
+  },
+  {
+    "slug": "ltx-studio",
+    "changes": {
+      "url": "https://ltx.io/studio",
+      "description": "Lightricks' LTX Studio turns scripts into storyboarded, shot-by-shot films with consistent characters, camera control, and its open LTX-2 models. Partner models such as Veo and FLUX are available alongside LTX's own engines.",
+      "longDescription": "LTX Studio approaches AI video like a production studio: feed it a concept or script and it breaks the story into scenes and shots you can direct individually, casting consistent characters, setting camera angles, adjusting lighting, and rendering with Lightricks' open-weight LTX-2 models or partner models such as Veo and FLUX. Built for pitch visualizations, ads, and short films.",
+      "features": [
+        "Script-to-storyboard pipeline",
+        "Shot-level direction",
+        "Character consistency casting",
+        "Open LTX-2 models"
+      ],
+      "seoDescription": "LTX Studio review: Lightricks' platform turns scripts into storyboarded AI films with consistent characters and open LTX-2 models. Pricing, pros, cons."
+    },
+    "note": "URL updated (ltx.studio redirects to ltx.io/studio); outdated LTXV model name changed to LTX-2 per the researched context."
+  },
+  {
+    "slug": "wellsaid-labs",
+    "changes": {
+      "url": "https://www.wellsaid.io"
+    },
+    "note": "URL updated; wellsaidlabs.com redirects to wellsaid.io."
+  },
+  {
+    "slug": "wisecut",
+    "changes": {
+      "url": "https://wisecut.ai"
+    },
+    "note": "URL updated; wisecut.video redirects to wisecut.ai."
+  },
+  {
+    "slug": "recall-ai",
+    "changes": {
+      "url": "https://www.recall.it"
+    },
+    "note": "URL updated; getrecall.ai redirects to recall.it."
+  },
+  {
+    "slug": "playground",
+    "changes": {
+      "url": "https://playgroundai.com",
+      "tagline": "AI design studio for merch, print-on-demand, logos, and social posts",
+      "description": "Playground is an AI design studio that pairs image generation with thousands of templates for T-shirts, stickers, logos, posters, and social posts. Print-on-demand integrations with Etsy, Printify, and Printful help sellers turn designs into products.",
+      "longDescription": "Playground pivoted from a raw image-model interface into a design and print-on-demand studio: pick a template (T-shirt, sticker, logo, poster, mockup, or social post) and models such as Playground v3, GPT Image, and Nano Banana generate polished, editable designs. Non-destructive edits, background removal, upscaling, and resizing are built in, and a free plan appeals to small businesses and sellers who want finished graphics, not just raw generations.",
+      "features": [
+        "Template-driven generation",
+        "Editable text and layouts",
+        "Logo and merch design",
+        "Print-on-demand integrations",
+        "Free plan with limited generations"
+      ],
+      "seoDescription": "Playground review: AI design studio with templates for merch, logos, and social posts plus print-on-demand integrations. Pricing, pros, cons.",
+      "metaKeywords": "Playground, Playground AI, Playground review, Playground pricing, Playground alternatives, AI design tool, Print-on-demand, Design templates, Social graphics, Logos, Consumer"
+    },
+    "note": "URL updated (playground.com redirects to playgroundai.com); copy repositioned as a design and print-on-demand studio; $12/mo Pro (annual) confirmed."
+  },
+  {
+    "slug": "v0",
+    "changes": {
+      "url": "https://v0.app"
+    },
+    "note": "URL updated; v0.dev redirects to v0.app."
+  },
+  {
+    "slug": "graphite",
+    "changes": {
+      "url": "https://graphite.com",
+      "description": "Graphite speeds up code review with stacked pull requests, a fast review UI, a stack-aware merge queue, and AI reviews. Now part of Cursor, it also lets you launch Cursor Cloud Agents from inside Graphite.",
+      "longDescription": "Graphite brings Meta-style stacked diffs to GitHub: break features into small dependent PRs that land fast, review them in an interface built for speed, and let a stack-aware merge queue handle the rebasing. Its AI reviews catch bugs with codebase context before humans look, and Graphite Chat on the PR page explains changes and helps fix CI failures. Cursor acquired Graphite in late 2025, and Cursor Cloud Agents now run from inside the product. Teams at Shopify, Ramp, and Asana report faster review cycles.",
+      "priceFrom": "$20/mo",
+      "features": [
+        "Stacked pull request workflow",
+        "AI code reviews",
+        "Stack-aware merge queue",
+        "Graphite Chat on PRs",
+        "Cursor Cloud Agents built in"
+      ],
+      "seoDescription": "Graphite review: stacked pull requests, AI code reviews, merge queues, and Cursor Cloud Agents for GitHub teams. Pricing, pros, cons, alternatives."
+    },
+    "note": "URL updated (graphite.dev redirects to graphite.com); Starter $20/user/mo annual per pricing page; replaced Diamond naming with AI reviews and added Cursor ownership and Cloud Agents."
+  },
+  {
+    "slug": "video-transcriber",
+    "changes": {
+      "name": "Video Transcriber",
+      "pricing": "FREEMIUM",
+      "features": [
+        "File, link, or recorded clip input",
+        "200+ languages",
+        "Speaker labels",
+        "AI summaries and chapters",
+        "TXT, DOCX, SRT, VTT, CSV export"
+      ],
+      "seoTitle": "Video Transcriber Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Video Transcriber review: turn video files and public links into text in 200+ languages, with AI summaries and TXT, DOCX, SRT, VTT exports."
+    },
+    "note": "Kept videotranscriber.pro URL (still live, canonical to itself; only its footer credits videotranscriber.ai, a separate site); fixed name casing, FREEMIUM for free daily plan, filled empty SEO fields and features."
+  },
+  {
+    "slug": "magnific",
+    "changes": {
+      "name": "Magnific Upscaler",
+      "url": "https://www.magnific.com/ai/image-upscaler",
+      "tagline": "The upscaler that hallucinates detail beautifully, now inside the Magnific suite",
+      "description": "Magnific Upscaler enlarges and enhances images up to 16x with a controllable Creativity slider that adds photorealistic detail that wasn't in the original. It is now part of Magnific, the creative suite formerly known as Freepik, and also offers a faithful Precision mode.",
+      "longDescription": "Magnific reframed upscaling as re-imagining: Creativity and Resemblance sliders let you choose how much new detail the AI invents as it enlarges, turning soft renders into crisp photography-grade images and game art into cinematic stills, while Precision mode handles faithful upscales of real photos. Freepik acquired Magnific in 2024 and renamed its whole company Magnific in April 2026, so the upscaler now sits inside a broader suite and draws on the same credit plans. A favorite finishing tool for AI artists.",
+      "priceFrom": "$20/mo",
+      "features": [
+        "Creativity-controlled upscaling",
+        "Precision mode for faithful upscales",
+        "Skin and detail enhancement",
+        "Relight and style transfer",
+        "Up to 16x enlargement"
+      ],
+      "seoTitle": "Magnific Upscaler Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Magnific Upscaler review: AI image upscaling up to 16x with creativity controls, now part of Magnific (formerly Freepik). Pricing, pros, cons.",
+      "metaKeywords": "Magnific Upscaler, Magnific AI, Magnific, Freepik upscaler, Magnific review, Magnific pricing, Magnific alternatives, AI image upscaler, Upscaling, Enhancement, Relight, Freepik"
+    },
+    "note": "Renamed to Magnific Upscaler to separate it from the Magnific suite listing; URL to magnific.com upscaler page; old $39/mo token plan replaced by suite Premium $20/mo."
+  },
+  {
+    "slug": "immersity-ai",
+    "changes": {
+      "url": "https://app.immersity.ai"
+    },
+    "note": "URL updated to the working web app; immersity.ai now redirects to Leia's corporate site."
+  },
+  {
+    "slug": "imagine-art",
+    "changes": {
+      "name": "ImagineArt",
+      "tagline": "Team creative workspace with 50+ image, video, and audio models",
+      "description": "ImagineArt is a creative workspace for teams that bundles 50+ image, video, and audio models, including Kling, Veo, FLUX, and its own models. Brand guidelines, specialized studios, and node-based workflows help produce on-brand assets at volume.",
+      "longDescription": "ImagineArt (formerly styled Imagine.art) has grown from a consumer image generator into a team creative workspace. It offers more than 50 models, including Kling, Seedance, Veo, FLUX, Nano Banana Pro, GPT Image, and its own ImagineArt models, plus Fashion, Ad, and Film studios, brand guidelines that lock colors and fonts, node-based workflows that turn one brief into a set of assets, and audio tools with voice cloning. Inpainting, video extend, relighting, and upscaling round out the editing side.",
+      "priceFrom": "$5/mo",
+      "features": [
+        "50+ image, video, and audio models",
+        "Brand guidelines",
+        "Fashion, Ad, and Film studios",
+        "Node-based workflows",
+        "Inpainting and relighting"
+      ],
+      "cons": [
+        "Credit costs vary by model",
+        "Output quality varies by model"
+      ],
+      "seoTitle": "ImagineArt Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "ImagineArt (Imagine.art) review: team creative workspace with 50+ image, video, and audio models and brand controls. Pricing, pros, cons.",
+      "metaKeywords": "ImagineArt, Imagine.art, Imagine Art, ImagineArt review, ImagineArt pricing, ImagineArt alternatives, AI image generator, Multi-model, Video, Brand workflows, Teams"
+    },
+    "note": "Renamed to ImagineArt and repositioned as a team workspace with 50+ models; cheapest plan now Basic $5/mo per imagine.art/subscription."
+  },
+  {
+    "slug": "coda-ai",
+    "changes": {
+      "name": "Superhuman Docs",
+      "url": "https://superhuman.com/docs",
+      "tagline": "Formerly Coda: docs, tables, and automation with built-in AI",
+      "description": "Superhuman Docs, formerly Coda, blends docs, tables, and automation, and its Docs AI drafts content, fills table columns at scale, and answers from your workspace. Coda was renamed in July 2026, and existing docs, Packs, and automations carried over.",
+      "longDescription": "Coda made docs programmable (tables that act like databases, buttons, and automations), and as Superhuman Docs it now sits in the same suite as Grammarly, Superhuman Mail, and Go. Docs AI generates and refines writing, runs prompts per row across whole tables, builds formulas and tools from descriptions, and draws on 800+ integrations, while the Docs MCP lets assistants such as ChatGPT, Claude, and Cursor read and write docs. Existing coda.io doc links redirect to the new home.",
+      "priceFrom": null,
+      "features": [
+        "AI column operations",
+        "Docs AI drafting and building",
+        "Formula generation",
+        "Workspace Q&A",
+        "Docs MCP for AI assistants"
+      ],
+      "seoTitle": "Superhuman Docs Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Superhuman Docs (formerly Coda) review: docs, tables, and automation with built-in AI and 800+ integrations. Features, pricing, pros, cons.",
+      "metaKeywords": "Superhuman Docs, Coda, Coda AI, Superhuman Docs review, Superhuman Docs pricing, Coda review, Coda alternatives, AI productivity tool, Docs, Tables, Automation, Workspace"
+    },
+    "note": "Renamed to Superhuman Docs (formerly Coda, July 2026), URL superhuman.com/docs; removed $10/mo since post-rebrand paid prices are unconfirmed (reports of $15)."
+  }
+]

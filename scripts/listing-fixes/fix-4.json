@@ -1,0 +1,360 @@
+[
+  {
+    "slug": "meta-ai",
+    "changes": {
+      "tagline": "Meta's free AI assistant inside WhatsApp, Instagram, and Messenger",
+      "longDescription": "Meta AI puts an assistant where billions already chat: summon it in WhatsApp groups, Instagram DMs, or meta.ai for answers, real-time search, document help, and fast Imagine image generation. It now runs on Muse Spark, a model family from Meta Superintelligence Labs that succeeds its earlier Llama foundation. It's entirely free, and its reach makes it many users' first AI, no new app required.",
+      "metaKeywords": "Meta AI, Meta AI review, Meta AI pricing, Meta AI alternatives, AI productivity tool, Meta, WhatsApp, Muse Spark, Llama, Free"
+    },
+    "note": "Model mentions moved from Llama to Muse Spark (tagline, longDescription, keywords)."
+  },
+  {
+    "slug": "guru",
+    "changes": {
+      "tagline": "A governed knowledge layer for enterprise AI and the people who use it",
+      "features": [
+        "Cross-app AI search",
+        "Expert verification workflows",
+        "Knowledge Agents for upkeep",
+        "Proactive knowledge triggers",
+        "Permission-aware answers"
+      ]
+    },
+    "note": "Tagline updated to Guru's governed knowledge layer positioning; added Knowledge Agents feature."
+  },
+  {
+    "slug": "simplified",
+    "changes": {
+      "tagline": "An AI marketing workspace built around Riley, its marketing agent",
+      "description": "Simplified is an AI marketing workspace built around Riley, an agent that plans, creates, publishes, and reports on content. Its AI writer, design studio, video editor, and social tools share one Brand Kit, at a price lean teams can afford.",
+      "longDescription": "Simplified now centers on Riley, an AI marketing agent that plans content, creates assets, queues them for approval, publishes, and reports on results. Underneath, its AI writer covers blogs, ads, and rewrites; the design studio generates and edits graphics; a video editor handles clips and captions; and the social planner schedules posts with an approval flow and unified inbox, all drawing on a shared Brand Kit. Each module is decent rather than best-in-class, but the bundle price and single workspace win fans among solopreneurs and agencies.",
+      "features": [
+        "Riley AI marketing agent",
+        "AI writer and design tools",
+        "Video editing and captions",
+        "Social scheduling and inbox",
+        "Shared Brand Kit"
+      ],
+      "seoDescription": "Simplified review: an AI marketing workspace built around Riley, an agent that plans, creates, and publishes content. Compare features, pricing, and alternatives."
+    },
+    "note": "Repositioned around the Riley AI marketing agent (tagline, descriptions, features, SEO)."
+  },
+  {
+    "slug": "invideo",
+    "changes": {
+      "tagline": "An agentic video editor that pairs AI agents with a real timeline",
+      "description": "invideo AI is an agentic video editor: it generates complete narrated videos from a prompt, then lets AI agents and a multitrack timeline refine them. Models such as Veo 3.1, Sora 2, and Kling sit in one workspace alongside ElevenLabs voices.",
+      "features": [
+        "Full video from one prompt",
+        "Editing agent on a multitrack timeline",
+        "Veo, Sora, and Kling models",
+        "Multiplayer team editing",
+        "Voice cloning and avatars"
+      ],
+      "seoDescription": "invideo AI review: an agentic video editor that turns prompts into narrated videos and refines them with AI agents. Compare features, pricing, and alternatives."
+    },
+    "note": "Updated to 'agentic video editor' positioning with timeline, agents, and multi-model support."
+  },
+  {
+    "slug": "jetbrains-ai",
+    "changes": {
+      "description": "JetBrains AI brings completions, chat, and coding agents such as Junie into IntelliJ IDEA, PyCharm, and the rest of the JetBrains IDE family. It offers an AI Free tier, bring-your-own-key access, and local models, and JetBrains Air adds an agent environment that also runs Claude Agent, Codex, and Copilot.",
+      "longDescription": "JetBrains built AI into the IDEs professionals already use: context-aware completions and chat in IntelliJ IDEA, PyCharm, WebStorm and siblings, with test generation, commit messages, and documentation. Its Junie agent takes on whole tasks using the IDE's deep understanding of your project, and JetBrains Air, the company's agent environment, runs Junie alongside third-party agents through the Agent Client Protocol. An AI Free tier, bring-your-own-key support, and local models through Ollama or LM Studio make it flexible for privacy-minded teams.",
+      "features": [
+        "IDE-native completions and chat",
+        "JetBrains Air agent environment",
+        "Junie and third-party agents",
+        "Bring your own API key",
+        "Local models via Ollama"
+      ],
+      "pros": [
+        "Leverages IDE code intelligence",
+        "AI Free tier available",
+        "Flexible model and agent choice"
+      ],
+      "seoDescription": "JetBrains AI review: completions, chat, Junie and JetBrains Air agents in IntelliJ and PyCharm, with a free tier, BYOK, and local models. Compare pricing."
+    },
+    "note": "Added JetBrains Air, AI Free tier, BYOK, and local model support; replaced dated '2025 releases' pro."
+  },
+  {
+    "slug": "kimi",
+    "changes": {
+      "tagline": "Moonshot's long-context assistant and open K3 models",
+      "description": "Kimi handles massive documents with its long-context strength and runs on Moonshot's open-weight K3 model family, with a K3.1 Pro upgrade in the app aimed at coding and agent tasks.",
+      "longDescription": "Kimi (Moonshot AI) built its reputation on context length (digesting book-length documents when rivals choked) and cemented it with open-weight models. Its K3 generation, released in July 2026, is a very large mixture-of-experts family with native vision and a context window of about one million tokens, and the app now highlights a K3.1 Pro upgrade for coding and agents. The free assistant researches, reads files, builds slides and sites, and browses; the open weights fuel a fast-growing developer ecosystem.",
+      "features": [
+        "Long-document understanding",
+        "K3 open model family",
+        "Agentic tool use",
+        "Free web and app access"
+      ],
+      "seoDescription": "Kimi review: Moonshot's long-context assistant, running on the open-weight K3 model family and K3.1 Pro. Compare features, pricing, and top Kimi alternatives.",
+      "metaKeywords": "Kimi, Kimi review, Kimi pricing, Kimi alternatives, AI productivity tool, Long context, Moonshot, K3, K2, Open weights"
+    },
+    "note": "Model mentions updated from K2 to K3 (open weights, Jul 2026) and K3.1 Pro."
+  },
+  {
+    "slug": "deepseek",
+    "changes": {
+      "description": "DeepSeek's chat app and V4 models deliver strong reasoning and coding help at a fraction of rivals' cost. Chat is free on the web, mobile, and the DeepSeek Harness desktop app, and open weights let teams self-host.",
+      "longDescription": "DeepSeek shook the AI world by matching frontier reasoning performance with radically cheaper training and inference, then open-sourcing the weights. Its R1 model's visible reasoning chains influenced the whole industry, and the lab has since moved to a V4 generation, with V4.1 updates aimed at faster, cheaper development work. The free chat app works on the web, on mobile, and in the DeepSeek Harness desktop app, and its API undercuts every major lab.",
+      "features": [
+        "V4 models with deep thinking mode",
+        "Free chat on web, mobile, desktop",
+        "Open-source model weights",
+        "Ultra-cheap API"
+      ],
+      "seoDescription": "DeepSeek review: V4 models with strong reasoning at a fraction of the cost, free on web, mobile, and desktop, with open weights. Compare pricing and alternatives.",
+      "metaKeywords": "DeepSeek, DeepSeek review, DeepSeek pricing, DeepSeek alternatives, AI productivity tool, Open weights, Reasoning, Free, V4, R1"
+    },
+    "note": "Model mentions updated to V4 / V4.1 and DeepSeek Harness desktop app added."
+  },
+  {
+    "slug": "onlook",
+    "changes": {
+      "tagline": "Free, local-first visual editor for real React apps",
+      "description": "Onlook is a free, open-source, local-first desktop editor that lets designers visually edit real React and Next.js apps, with every change written back to the code. AI prototyping builds new pages and features from a prompt.",
+      "longDescription": "Onlook closes the design-to-code gap from the code side: open your actual app in its desktop editor, drag and restyle elements like a design tool, and watch the changes land in your codebase using your existing components. It works with Next.js, React, Vite, Storybook and shadcn/ui, AI prototyping builds new sections from a prompt, and git keeps everything reviewable. The self-hosted version is free and open source, with hosted setups for teams on request.",
+      "pricing": "FREE",
+      "priceFrom": null,
+      "features": [
+        "Visual edits in your real codebase",
+        "Works with Next.js, React, Vite",
+        "AI prototyping from prompts",
+        "Free local-first desktop app"
+      ],
+      "cons": [
+        "React-based stacks only",
+        "Young product"
+      ],
+      "seoDescription": "Onlook review: a free, open-source, local-first desktop editor for visually editing real React apps, with changes written to code. Compare features and alternatives."
+    },
+    "note": "Now a free local-first desktop editor; pricing set to FREE (teams plan is custom only, no $20 tier)."
+  },
+  {
+    "slug": "captions-app",
+    "changes": {
+      "description": "Captions is a chat-driven AI video editor for talking videos, with one-step AI Edit styles, eye contact correction, translated subtitles, and AI avatars. Mirage Studio has merged into Captions, so its AI actors now live in the same app.",
+      "longDescription": "Captions built a full stack for talking video: record with a teleprompter, fix eye contact and filler words, apply a complete style with AI Edit, and add captions or translated subtitles in 100+ languages. You can also skip the camera with an AI twin or digital avatars powered by its Mirage technology, and since Mirage Studio merged into Captions, those actors and generated footage sit next to your real recordings. Millions of creators and marketers use it for UGC-style ads and social content.",
+      "features": [
+        "Eye contact and filler cleanup",
+        "AI twins and avatars (Mirage)",
+        "One-step AI Edit styles",
+        "Subtitles in 100+ languages"
+      ],
+      "seoDescription": "Captions review: a chat-driven AI editor for talking videos with AI Edit, eye contact fixes, subtitles, and AI avatars, now merged with Mirage Studio."
+    },
+    "note": "Noted Mirage Studio merge; replaced unconfirmed 28+ language dubbing with 100+ language subtitles."
+  },
+  {
+    "slug": "luma-dream-machine",
+    "changes": {
+      "name": "Luma Agents",
+      "tagline": "Luma's agent-driven creative platform with Ray3 video models, formerly Dream Machine",
+      "description": "Luma Agents, formerly Dream Machine, is Luma's AI creative workspace where agents generate and refine video, images, audio, and text on an infinite canvas. It runs Luma's own Ray3.x and Uni models alongside third-party models such as Veo and Kling.",
+      "longDescription": "Luma has folded Dream Machine into Luma Agents, a creative workspace where the Luma Agent helps brainstorm, pick models, generate, and iterate across video, images, audio, and text. Its own Ray3.x video models are known for natural motion and realistic physics, with HDR output, multiple keyframes, and reframing, while Uni handles images. Third-party models such as Veo, Kling, and Seedance sit in the same canvas, and paid plans start with Plus.",
+      "pricing": "PAID",
+      "priceFrom": "$30/mo",
+      "features": [
+        "Luma Agent creative assistant",
+        "Ray3.x video models",
+        "Keyframe and reframe control",
+        "Veo and Kling also available"
+      ],
+      "pros": [
+        "Natural motion quality",
+        "Many models in one canvas",
+        "Agents handle iteration"
+      ],
+      "cons": [
+        "No free plan",
+        "Credits expire each cycle"
+      ],
+      "seoTitle": "Luma Agents Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+      "seoDescription": "Luma Agents (formerly Luma Dream Machine) review: agent-driven creative platform with Ray3 video models. Compare features, pricing, and alternatives.",
+      "metaKeywords": "Luma Agents, Luma Dream Machine, Dream Machine, Luma Agents review, Luma Agents pricing, Luma alternatives, AI video tool, Text-to-video, Ray3, Keyframes, Image-to-video",
+      "moreContext": "Luma, the Palo Alto lab known for its in-house Ray video models, has folded Dream Machine into a broader agent-driven creative platform, and the Dream Machine link now leads to that newer experience. The heart of it is still Luma's own video technology, which has earned a reputation for realistic physics, smooth motion, and strong consistency across shots.\n\n- The Ray3 generation introduced 16-bit HDR video output, a notable step toward professional studio pipelines, and later releases added native 1080p.\n- Recent Ray versions support many keyframes per clip, longer video transformation, reframing, and EXR export for compositing work.\n- Luma's agents can research, generate, and refine across video, image, audio, and text, and Skills let you save a creative workflow and rerun it.\n- The platform also offers leading third-party models, such as Veo and Kling, next to Luma's own Ray and Uni models.\n- Team workspaces with admin roles and shared credit management arrived in 2026, and developers can access the models through an API.\n\nLuma lists major agencies such as Dentsu and Publicis Groupe among its clients, and paid plans start with Plus at $30 a month. It is best for filmmakers, motion designers, and agencies who want cinematic quality with real directorial control. Tip: set start and end keyframes for important shots instead of relying on text alone, since anchoring the motion produces far more predictable results."
+    },
+    "note": "Dream Machine page now presents Luma Agents; renamed, Ray3.x models, no free plan on pricing page so PAID from $30/mo."
+  },
+  {
+    "slug": "hailuo-ai",
+    "changes": {
+      "description": "Hailuo, MiniMax's creative platform now built around its H3 model, generates expressive character performances and dynamic camera moves. Omni Reference keeps people and products consistent across clips.",
+      "longDescription": "Hailuo AI from MiniMax specializes in what many video models fumble: expressive human performance. Its current MiniMax H3 model handles both generation and precise editing, while Omni Reference keeps characters consistent and Hailuo Agent helps plan content conversationally. Lively motion and director-style camera control make it a favorite for narrative clips and virtual actors, and free daily credits keep experimentation flowing.",
+      "features": [
+        "MiniMax H3 video model",
+        "Expressive character motion",
+        "Omni Reference consistency",
+        "Hailuo Agent",
+        "Free daily credits"
+      ],
+      "seoDescription": "Hailuo AI review: MiniMax's H3-powered video platform for expressive characters, camera moves, and consistent references. Compare pricing and alternatives."
+    },
+    "note": "Added MiniMax H3 as the featured model, plus Omni Reference and Hailuo Agent."
+  },
+  {
+    "slug": "cursor",
+    "changes": {},
+    "note": "No change: listing fields carry no ownership claim and moreContext already notes Cursor joined SpaceX in Aug 2026."
+  },
+  {
+    "slug": "augment-code",
+    "changes": {
+      "description": "Augment Code pairs a context engine that indexes large codebases with Cosmos, an agent system that carries work from spec to pull request to verification. Harness acquired Cosmos, the Auggie CLI, and the Context Engine in October 2026.",
+      "longDescription": "Augment Code bets on context quality: its engine continuously indexes large production codebases, so agents respect your actual services, patterns, and dependencies. That foundation powers Cosmos, an always-on delivery system for code review, ticket-to-PR work, and incident investigation, plus the Auggie command line agent and IDE extensions. In October 2026 Harness acquired Cosmos, Auggie, and the Context Engine along with their teams, so check current plans before committing.",
+      "priceFrom": "$20/mo",
+      "features": [
+        "Context Engine repo indexing",
+        "Cosmos agent delivery system",
+        "Auggie CLI agent",
+        "Context Engine MCP server"
+      ],
+      "cons": [
+        "Usage-based costs can climb",
+        "Roadmap shifting after Harness deal"
+      ],
+      "seoDescription": "Augment Code review: a context engine for large codebases plus Cosmos agents, now owned by Harness. Compare features, pricing, and top alternatives."
+    },
+    "note": "Leads with Cosmos; Harness bought Cosmos, Auggie, Context Engine (Oct 8, 2026, confirmed); Standard plan is $20/mo flat."
+  },
+  {
+    "slug": "instantly",
+    "changes": {
+      "priceFrom": "$47/mo"
+    },
+    "note": "Outreach Growth is $47/mo billed monthly ($37.60/mo annually), verified on pricing page."
+  },
+  {
+    "slug": "lemlist",
+    "changes": {
+      "priceFrom": "$69/mo"
+    },
+    "note": "Email plan is $69/mo per user monthly ($55 annually), verified on pricing page."
+  },
+  {
+    "slug": "vizard",
+    "changes": {
+      "priceFrom": "$29/mo"
+    },
+    "note": "Creator is $29/mo monthly ($14.50/mo yearly) per Capterra and Vizard's 50%-off yearly toggle; free plan has 60 credits."
+  },
+  {
+    "slug": "adobe-podcast",
+    "changes": {
+      "priceFrom": "$19.99/mo",
+      "longDescription": "Adobe Podcast is a browser-based suite whose star is Enhance Speech: upload rough voice audio and it returns studio-quality sound, stripping noise, echo, and harshness. Mic Check diagnoses your setup, and Studio records with enhancement built in. The free tier covers one hour of Enhance Speech a day on files up to 30 minutes, while Premium features now come with an Adobe Firefly Pro subscription."
+    },
+    "note": "Premium now sold through Adobe Firefly Pro ($19.99/mo US); free tier limits clarified (1 hr/day, 30-min files)."
+  },
+  {
+    "slug": "quillbot",
+    "changes": {
+      "priceFrom": "$19.95/mo"
+    },
+    "note": "Premium is $19.95/mo billed monthly ($8.33/mo annually); official page blocked, confirmed by multiple Oct 2026 sources."
+  },
+  {
+    "slug": "jenni-ai",
+    "changes": {
+      "priceFrom": "$30/mo"
+    },
+    "note": "$12 (Plus) is the annual-billing rate; monthly is about $30, matching the page's 'Save 60%' toggle and third-party reviews."
+  },
+  {
+    "slug": "paperpal",
+    "changes": {
+      "priceFrom": "$25/mo"
+    },
+    "note": "Prime is $25/mo or $139/yr per Capterra and other 2026 sources; official pricing page did not render prices."
+  },
+  {
+    "slug": "sybill",
+    "changes": {
+      "pricing": "FREEMIUM",
+      "priceFrom": "$36/mo"
+    },
+    "note": "Pricing page shows a Free plan; Pro is $36/user/mo monthly ($30 yearly)."
+  },
+  {
+    "slug": "krisp",
+    "changes": {
+      "pricing": "FREE_TRIAL",
+      "priceFrom": "$16/mo",
+      "pros": [
+        "Dramatic call quality improvement",
+        "App-agnostic",
+        "Low annual per-seat price"
+      ],
+      "cons": [
+        "No ongoing free plan",
+        "Accent feature is enterprise-only"
+      ],
+      "moreContext": "Krisp built its reputation on noise cancellation that works at the audio level, which means it cleans up your sound in Zoom, Google Meet, Teams, and virtually any other calling app without separate plugins. It has since grown into a full AI meeting assistant and a voice platform for contact centers.\n\n- The meeting assistant records, transcribes, and summarizes calls, tracks action items, prepares agendas, and lets you query transcripts with Ask Krisp.\n- Transcripts and summaries are available in 16 languages, and English transcription runs on-device for added privacy.\n- Notes and action items sync to Salesforce, HubSpot, and Slack, with Zapier, Google Calendar, and Outlook connections as well.\n- Contact center tools add accent conversion, real-time voice translation, agent assist, and speech analytics, and developers can use a self-serve Voice Translation API.\n- The company lists SOC 2, GDPR, HIPAA, and PCI-DSS compliance, which matters for teams in regulated industries.\n\nKrisp is best for remote workers, sales teams, and support centers who spend their days on calls in less-than-quiet places. You can try it free for 7 days, with no credit card, across desktop, mobile, and a Chrome extension. Add your product names and team jargon to the custom vocabulary (up to 750 terms) so transcripts and summaries get the important words right."
+    },
+    "note": "Pricing page: Core $16/user/mo monthly ($8 yearly), 7-day trial and no ongoing free plan; fixed free-tier pro/con."
+  },
+  {
+    "slug": "opus-clip",
+    "changes": {},
+    "note": "No change: Starter is $15/mo per pricing page, matching the listing."
+  },
+  {
+    "slug": "cleanvoice",
+    "changes": {},
+    "note": "No change: subscriptions start at $11/mo, matching the listing; 30 free minutes on signup."
+  },
+  {
+    "slug": "tavily",
+    "changes": {
+      "priceFrom": "$30/mo"
+    },
+    "note": "Free 1,000 credits/mo; Project plan $30/mo (pay-as-you-go also available). Nebius deal already in moreContext."
+  },
+  {
+    "slug": "perplexity",
+    "changes": {
+      "longDescription": "Perplexity fused search and LLMs into an answer engine: every response cites its sources, follow-ups keep context, and source filters can target academic papers or social discussion. Deep Research autonomously reads dozens of sources into structured reports, Spaces organize research by project, and the Comet browser is free for everyone. Pro unlocks frontier models and file uploads. For many, it has replaced Google for real questions.",
+      "features": [
+        "Cited real-time answers",
+        "Deep Research reports",
+        "Spaces for project research",
+        "Comet AI browser",
+        "Multi-model Pro access"
+      ]
+    },
+    "note": "Pro still $20/mo; replaced dated focus-modes wording and added free Comet browser and Spaces."
+  },
+  {
+    "slug": "exa",
+    "changes": {},
+    "note": "No change: pay-as-you-go with no subscription (search $7/1k, $10 free monthly credits), so null priceFrom is correct; Metaphor already mentioned."
+  },
+  {
+    "slug": "coderabbit",
+    "changes": {
+      "priceFrom": "$30/mo"
+    },
+    "note": "Essentials is $30/dev/mo billed monthly ($24 annually); free on public repos."
+  },
+  {
+    "slug": "smartlead",
+    "changes": {},
+    "note": "No change: Base is $39/mo billed monthly ($32 annually), matching the listing."
+  },
+  {
+    "slug": "avoma",
+    "changes": {
+      "pricing": "FREE_TRIAL",
+      "priceFrom": "$29/mo"
+    },
+    "note": "No free plan (14-day trial; viewers free); Startup is $29/seat/mo monthly ($19 annually)."
+  },
+  {
+    "slug": "elevenlabs",
+    "changes": {
+      "priceFrom": "$6/mo"
+    },
+    "note": "Starter is $6/mo per official pricing (first-month promo aside)."
+  }
+]

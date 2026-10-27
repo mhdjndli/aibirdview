@@ -7,7 +7,7 @@ const post: Post = {
     "Instant clones, studio-grade replicas, real-time voice changers and licensed singing voices are four different products. Here is which voice cloning tool fits which job, what each costs to start, and how to clone a voice without legal headaches.",
   seoTitle: "Best AI Voice Cloning Tools (2026): 12 Picks by Use Case",
   seoDescription:
-    "We compare ElevenLabs, Resemble AI, PlayHT, Cartesia, Murf, WellSaid and more for voice cloning: quality, latency, consent rules and starting prices.",
+    "We compare ElevenLabs, Cartesia, Descript, Murf, WellSaid, the open-source Chatterbox and more for voice cloning: quality, latency, consent rules and prices.",
   metaKeywords:
     "ai voice cloning, voice clone, best voice cloning software, elevenlabs alternatives, clone my voice, real-time voice cloning, ai voice generator",
   categories: ["guides", "reviews"],
@@ -18,8 +18,9 @@ const post: Post = {
     { h2: "Quick answer: the best voice cloning tool for each job" },
     { ul: [
       "**Most realistic clone overall:** [ElevenLabs](/tools/elevenlabs). Instant and professional cloning, dubbing into 30+ languages, paid plans from $5/mo.",
-      "**Real-time voice agents (lowest latency):** [Cartesia](/tools/cartesia) at roughly 40ms model latency, or [PlayHT](/tools/play-ht) for sub-300ms streaming with an 800+ voice library.",
-      "**Enterprise and security-sensitive work:** [Resemble AI](/tools/resemble-ai), which pairs cloning with real-time deepfake detection and on-prem deployment.",
+      "**Real-time voice agents (lowest latency):** [Cartesia](/tools/cartesia) at roughly 40ms model latency, or [Murf AI](/tools/murf-ai)'s Falcon API, which advertises sub-100ms time to first audio at $0.01 per minute.",
+      "**Fixing your own recordings by typing:** [Descript](/tools/descript), which clones your voice so you can edit narration like a document.",
+      "**Free and self-hosted:** [Resemble AI](/tools/resemble-ai)'s open-source Chatterbox models, released under the MIT license, if you can run them on your own hardware.",
       "**Corporate narration and eLearning:** [Murf AI](/tools/murf-ai) for a full studio workflow, or [WellSaid](/tools/wellsaid-labs) if rights-clean, consent-based voices are a hard requirement.",
       "**Voiceover plus video in one tool:** [LOVO](/tools/lovo) or [Fliki](/tools/fliki).",
       "**Live voice changing for streams and games:** [Voicemod](/tools/voicemod) or [Supertone](/tools/supertone).",
@@ -31,7 +32,7 @@ const post: Post = {
     { h3: "Instant cloning" },
     { p: "You upload anywhere from a few seconds to a couple of minutes of audio and get a usable voice back almost immediately. The model is not retrained; it conditions on your sample at generation time. Instant clones are good enough for drafts, social content and prototypes, but they can drift on long passages, flatten emotion, or lose an accent." },
     { h3: "Professional (fine-tuned) cloning" },
-    { p: "You provide much more clean audio, typically 30 minutes or more, and the provider trains a dedicated model on it. This takes hours rather than seconds, but the result holds up across audiobook-length narration and captures quirks an instant clone misses. [ElevenLabs](/tools/elevenlabs) and [Resemble AI](/tools/resemble-ai) both offer this tier." },
+    { p: "You provide much more clean audio, typically 30 minutes or more, and the provider trains a dedicated model on it. This takes hours rather than seconds, but the result holds up across audiobook-length narration and captures quirks an instant clone misses. [ElevenLabs](/tools/elevenlabs) offers this tier on its paid plans." },
     { h3: "Speech-to-speech conversion" },
     { p: "Instead of typing text, you record yourself speaking and the tool re-voices the performance in the target voice, keeping your timing and emotion. This is the right approach for acting, character work and anything where *delivery* matters more than words. Real-time voice changers like [Voicemod](/tools/voicemod) and [Supertone](/tools/supertone) are speech-to-speech systems tuned for latency." },
     { quote: "Rule of thumb: if you will read the script yourself, use speech-to-speech. If you want to type and walk away, use text-to-speech with a cloned voice." },
@@ -54,24 +55,24 @@ const post: Post = {
       "**Starting price:** freemium, paid from $5/mo.",
     ] },
 
-    { h3: "3. PlayHT: large library, agent-ready" },
-    { p: "[PlayHT](/tools/play-ht) evolved from a TTS library into a real-time voice platform with sub-300ms streaming, natural turn-taking, 800+ voices in 100+ languages and instant cloning. It suits teams that want both a studio for narration and an API for agents." },
+    { h3: "3. Descript: clone your own voice to fix recordings" },
+    { p: "[Descript](/tools/descript) is a video and podcast editor that works like a document: you edit the transcript and the recording follows. Its AI voices feature clones your own voice, so you can fix a misspoken word or add a sentence by typing it and regenerating that line instead of re-recording. Descript says you can only clone your own voice, not someone else's." },
     { ul: [
-      "**Best for:** support bots, phone agents, audio articles.",
-      "**Watch out for:** a plainer studio UX, and pricing tiers that have changed frequently.",
-      "**Starting price:** freemium, paid from $39/mo.",
+      "**Best for:** podcasters, YouTubers and course creators who edit their own narration.",
+      "**Watch out for:** it is an editor first, not a voice API, so it does not suit developers building voice agents.",
+      "**Starting price:** freemium, paid from $12/mo.",
     ] },
 
-    { h3: "4. Resemble AI: cloning with a security story" },
-    { p: "[Resemble AI](/tools/resemble-ai) targets enterprises putting cloned voices into production for games, IVR and localized ads. It offers granular emotion control, speech-to-speech conversion and on-prem or VPC deployment. Its Detect product also flags audio deepfakes in real time, which call centers and media companies increasingly need." },
+    { h3: "4. Resemble AI's Chatterbox: free, open-source cloning you host yourself" },
+    { p: "[Resemble AI](/tools/resemble-ai) stopped selling voice generation to new customers in August 2026 and now focuses on deepfake detection and watermarking. Its open-source Chatterbox models remain free under the MIT license. They clone a voice from a short reference clip, include an English Turbo model built for low-latency agents and a multilingual model covering 23 languages, and embed Resemble's PerTh watermark in every file they generate." },
     { ul: [
-      "**Best for:** regulated industries, security-conscious teams, on-prem requirements.",
-      "**Watch out for:** less consumer-friendly onboarding.",
-      "**Starting price:** paid from $29/mo.",
+      "**Best for:** developers who want full control, no per-character fees, or on-premises voice generation.",
+      "**Watch out for:** you supply the GPUs, the hosting and the consent checks, and quality depends on how you tune it. There is no hosted voice plan for new customers.",
+      "**Starting price:** free and open source.",
     ] },
 
     { h3: "5. Murf AI: the business voiceover studio" },
-    { p: "[Murf AI](/tools/murf-ai) is designed for eLearning modules, explainer videos, ads and IVR. Its studio pairs 200+ professional voices with pitch, speed and emphasis controls, syncs narration to video and slides, and supports cloning and an API. It is less expressive than ElevenLabs but more structured for teams." },
+    { p: "[Murf AI](/tools/murf-ai) is designed for eLearning modules, explainer videos, ads and IVR. Its studio pairs 200+ professional voices with pitch, speed and emphasis controls, syncs narration to video and slides, and supports cloning and an API. It is less expressive than ElevenLabs but more structured for teams. Developers can also use Falcon, Murf's text-to-speech API for real-time voice agents, which Murf prices at $0.01 per minute and advertises with sub-100ms time to first audio." },
     { ul: [
       "**Best for:** L&D teams, marketing explainers, slide narration.",
       "**Starting price:** freemium, paid from $19/mo.",
@@ -95,7 +96,7 @@ const post: Post = {
 
     { h2: "How to choose: five questions to ask before you pay" },
     { ol: [
-      "**Is the output live or rendered?** Live (agents, streams, calls) means latency is the top spec. Look at Cartesia, PlayHT or Voicemod. Rendered (videos, audiobooks) means realism and editing controls matter more.",
+      "**Is the output live or rendered?** Live (agents, streams, calls) means latency is the top spec. Look at Cartesia, Murf's Falcon API or Voicemod. Rendered (videos, audiobooks) means realism and editing controls matter more.",
       "**Whose voice is it?** Cloning yourself is simple. Cloning a colleague, client or actor needs written consent, and some tools enforce verification. If you cannot get consent, use a licensed stock voice instead.",
       "**How long is the content?** For anything over ten minutes, budget for professional cloning or a premium stock voice. Instant clones drift over long passages.",
       "**Which languages do you need?** Check that the clone keeps *your* timbre in every target language, not just that the language is listed. ElevenLabs' dubbing and Fliki's library are the strongest here.",
@@ -118,13 +119,13 @@ const post: Post = {
 
     { h2: "FAQ" },
     { h3: "What is the most realistic AI voice cloning tool?" },
-    { p: "For most listeners and most content types, [ElevenLabs](/tools/elevenlabs) produces the most natural cloned speech, especially with professional cloning. [Resemble AI](/tools/resemble-ai) is close behind and better suited to enterprise deployment." },
+    { p: "For most listeners and most content types, [ElevenLabs](/tools/elevenlabs) produces the most natural cloned speech, especially with professional cloning. If you would rather self-host, [Resemble AI](/tools/resemble-ai)'s open-source Chatterbox models are a capable free option." },
     { h3: "Can I clone a voice for free?" },
-    { p: "Several tools, including ElevenLabs, Cartesia and PlayHT, have free tiers that let you test text-to-speech. Cloning features and commercial-use rights are usually limited to paid plans, so check the plan details before publishing anything." },
+    { p: "Several tools, including ElevenLabs, Cartesia and Descript, have free tiers that let you test text-to-speech or voice features. Resemble AI's open-source Chatterbox models are free if you run them yourself. Cloning features and commercial-use rights are usually limited to paid plans, so check the plan details before publishing anything." },
     { h3: "How much audio do I need to clone a voice?" },
     { p: "Instant cloning works from seconds to a few minutes of clean audio. Professional cloning typically wants 30 minutes or more. Quality of the recording matters more than quantity: five clean minutes beat an hour of noisy audio." },
     { h3: "What is the best voice cloning tool for real-time use?" },
-    { p: "For developer use cases like phone and voice agents, [Cartesia](/tools/cartesia) and [PlayHT](/tools/play-ht) lead on latency. For live streaming and gaming, [Voicemod](/tools/voicemod) and [Supertone](/tools/supertone) are built for real-time voice changing." },
+    { p: "For developer use cases like phone and voice agents, [Cartesia](/tools/cartesia) and [Murf AI](/tools/murf-ai)'s Falcon API lead on latency. For live streaming and gaming, [Voicemod](/tools/voicemod) and [Supertone](/tools/supertone) are built for real-time voice changing." },
 
     { hr: true },
     { p: "Browse every text-to-speech, cloning and audio tool we track in the [AI audio tools category](/categories/audio). If you build a voice tool we have missed, you can [submit it for a listing](/submit)." },

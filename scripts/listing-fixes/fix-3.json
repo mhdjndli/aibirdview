@@ -1,0 +1,775 @@
+[
+ {
+  "slug": "consensus",
+  "changes": {
+   "description": "Consensus searches more than 400 million scientific papers and shows whether studies support or refute a claim, using its Consensus Meter and study snapshots. Pro and Deep Search modes synthesize findings across many studies, with citations you can check.",
+   "features": [
+    "Consensus Meter agree/disagree view",
+    "400M+ paper coverage",
+    "Study quality indicators",
+    "Pro and Deep Search synthesis"
+   ],
+   "seoDescription": "Consensus review: AI search across 400M+ scientific papers that shows whether studies agree. Compare features, pricing, and top Consensus alternatives."
+  },
+  "note": "Paper count updated from 200M+ to 400M+ per vendor claim; summaries feature renamed to Pro/Deep Search."
+ },
+ {
+  "slug": "clay",
+  "changes": {
+   "description": "Clay combines 150+ premium data providers with AI research agents to build, enrich, and personalize prospect lists at scale. Signals, scoring, and CRM sync turn that data into automated outbound and inbound plays.",
+   "longDescription": "Clay is the power tool of modern outbound: waterfall enrichment queries 150+ data sources for emails and firmographics, its Claygent AI researches anything a human SDR would Google, and formulas personalize messaging row by row. Paired with sequencers, it automates the research layer of sales that used to eat SDR hours.",
+   "priceFrom": "$185/mo",
+   "seoDescription": "Clay review: 150+ data providers plus AI research agents to build, enrich, and personalize prospect lists. Compare features, pricing, and top Clay alternatives."
+  },
+  "note": "Data sources 100+ to 150+; Launch plan verified at $185/mo monthly or $167/mo billed annually (was $134)."
+ },
+ {
+  "slug": "colossyan",
+  "changes": {
+   "longDescription": "Colossyan focuses avatar video on L&D: convert PDFs and PowerPoints into presenter-led lessons, add interactive quizzes and branching scenarios, and export SCORM for your LMS. Instant avatars, voice cloning, and 100+ languages make it a practical Synthesia alternative for training teams."
+  },
+  "note": "Language count updated from 80+ to 100+."
+ },
+ {
+  "slug": "jammable",
+  "changes": {
+   "longDescription": "Jammable rides the voice-cover wave: pick from 60,000+ community voice models (characters, meme voices, singers), upload a song, and get a cover with vocals converted, stems intact. Custom voice training and a duets feature keep its young audience creating; the covers-culture hub of AI audio.",
+   "features": [
+    "60K+ voice model library",
+    "Song cover conversion",
+    "Custom voice training",
+    "Stem-aware processing"
+   ]
+  },
+  "note": "Voice library updated from 25K+ to 60,000+."
+ },
+ {
+  "slug": "narakeet",
+  "changes": {
+   "description": "Narakeet turns PowerPoints, documents, and markdown scripts into narrated videos and audio with about 900 voices in 100 languages. Pricing is pay as you go, and you can try the text-to-speech tool free without registering.",
+   "longDescription": "Narakeet keeps it refreshingly simple: upload slides or write a script in markdown, choose from about 900 voices across 100 languages, and download a narrated video or audio file, no subscription, no editing timeline, pay per use. Educators and localization teams churn out training content and voiceovers with zero learning curve.",
+   "features": [
+    "PowerPoint narration",
+    "Markdown script videos",
+    "900 voices, 100 languages",
+    "No-subscription pricing"
+   ],
+   "seoDescription": "Narakeet review: turn slides and scripts into narrated videos with about 900 voices in 100 languages, pay as you go. Compare pricing and alternatives."
+  },
+  "note": "Voice count updated from 800 to about 900."
+ },
+ {
+  "slug": "murf-ai",
+  "changes": {
+   "description": "Murf offers 200+ natural voices in 35+ languages with a studio editor for syncing voiceover to video and slides. Developers also get text-to-speech, dubbing, and voice agent APIs.",
+   "features": [
+    "200+ voices, 35+ languages",
+    "Sync voice to video/slides",
+    "Pitch and emphasis controls",
+    "Voice cloning and API"
+   ],
+   "seoDescription": "Murf AI review: 200+ natural voices in 35+ languages with a studio editor for video and slides. Compare features, pricing, and top Murf AI alternatives."
+  },
+  "note": "Languages 20+ to 35+ (murf.ai). priceFrom $19/mo kept: Creator is $29/mo monthly, $19/mo yearly."
+ },
+ {
+  "slug": "pebblely",
+  "changes": {
+   "tagline": "Beautiful product photos in 100+ ready-made scenes",
+   "longDescription": "Pebblely makes product staging effortless: upload a product shot, pick from 100+ templates or describe a custom scene, and it composites your item with plausible lighting, shadows, and reflections at marketplace-ready sizes. Batch generation and API access serve sellers refreshing whole catalogs seasonally.",
+   "features": [
+    "100+ scene templates",
+    "Custom scene prompts",
+    "Shadow and reflection realism",
+    "Batch and API generation"
+   ]
+  },
+  "note": "Template count updated from 40+ themes to 100+ templates."
+ },
+ {
+  "slug": "zapier-ai",
+  "changes": {
+   "tagline": "Automate 9,000+ apps with plain English and agents",
+   "description": "Zapier's Copilot builds automations from plain-English descriptions, while Agents work autonomously across more than 9,000 connected apps. Zapier MCP also lets assistants like Claude and ChatGPT run actions in those apps.",
+   "longDescription": "Zapier applied AI to the automation platform connecting 9,000+ apps: describe a workflow and Copilot assembles the Zap; deploy Agents that monitor triggers and take multi-step actions autonomously with your tools and data; drop AI steps (summarize, extract, classify) into any flow. The fastest path from 'we should automate this' to done.",
+   "features": [
+    "Copilot Zap building",
+    "Autonomous Zapier Agents",
+    "AI steps in workflows",
+    "9,000+ app connections"
+   ],
+   "seoDescription": "Zapier AI review: Copilot builds automations from plain English and Agents act across 9,000+ apps. Compare features, pricing, and top Zapier AI alternatives."
+  },
+  "note": "App count updated from 8,000 to 9,000+; added Zapier MCP mention."
+ },
+ {
+  "slug": "apollo-io",
+  "changes": {
+   "tagline": "The all-in-one sales platform with a 240M-contact database",
+   "longDescription": "Apollo gives sales teams the full stack in one subscription: search 240M+ contacts and 30M companies with rich filters, enrich CRM records, run email sequences and calls, and let AI draft personalized messages, score deals, and recommend plays. Its free tier and bundled pricing disrupted the ZoomInfo-plus-Outreach stack for SMBs and mid-market.",
+   "features": [
+    "240M+ contact database",
+    "Email sequencing and dialer",
+    "AI email writing and scoring",
+    "CRM enrichment and sync"
+   ]
+  },
+  "note": "Contact count corrected from 270M to 240M (apollo.io pricing page). priceFrom $49/mo kept (Basic)."
+ },
+ {
+  "slug": "apify",
+  "changes": {
+   "tagline": "A store of thousands of ready-made scrapers and Actors",
+   "features": [
+    "Thousands of prebuilt Actors",
+    "Managed proxies and scaling",
+    "Custom Actor development",
+    "MCP and agent integrations"
+   ],
+   "priceFrom": "$19/mo"
+  },
+  "note": "Removed unverified '10,000' count (apify.com says 'thousands'; third-party counts vary). Starter verified at $19/mo after Sept 2026 cut (was $39)."
+ },
+ {
+  "slug": "outbound-for-mac",
+  "changes": {
+   "description": "Outbound is an outbound application firewall for Mac that shows which apps reach the internet, where each connection goes, and lets you decide which connections are allowed. Rules and connection history stay local, with no account and no analytics. It is sold as a one-time purchase with no trial, but you can get a full refund within 14 days.",
+   "longDescription": "Outbound is an outbound application firewall for Mac. It shows which apps reach the internet, where each connection goes, and lets you decide which connections are allowed. Rules and connection history stay local, with no account and no analytics. Outbound is a one-time purchase with no subscription, offered as Personal (2 Macs) and Family (5 Macs) licenses plus a yearly Teams plan. There is no free trial, but you can get a full refund within 14 days of purchase.",
+   "pricing": "PAID"
+  },
+  "note": "Removed false 30-day trial; vendor says no trial, 14-day full refund. Pricing FREEMIUM to PAID (paid-only). priceFrom left null: $29 is an early-bird price for the first 50 licenses, then $39."
+ },
+ {
+  "slug": "mutiny",
+  "changes": {
+   "tagline": "AI sales assistant for account executives, from call prep to proposals",
+   "description": "Mutiny, once known for B2B website personalization, relaunched in 2026 as an AI assistant for account executives. It preps reps before calls, takes meeting notes, drafts follow-ups in each rep's voice, and builds proposals, business case decks, and deal rooms organized by account.",
+   "longDescription": "Mutiny now applies its account-based roots to the materials buyers see during a deal. The assistant researches attendees and accounts before calls, records meeting notes, and drafts follow-ups that match each rep's writing style. It generates on-brand pricing proposals, business case decks, and deal rooms from call context and past proposals, tracks when stakeholders open shared assets, and updates Salesforce or HubSpot after calls. Blueprints cover prospecting, evaluation, negotiation, and expansion.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$50/mo",
+   "features": [
+    "Call prep and account research",
+    "AI notetaker and follow-up drafts",
+    "Proposals, decks, and deal rooms",
+    "Engagement tracking on shared assets",
+    "Salesforce and HubSpot sync"
+   ],
+   "pros": [
+    "Writes in each rep's own voice",
+    "Everything organized by account",
+    "Free plan to start"
+   ],
+   "cons": [
+    "Website personalization no longer offered",
+    "Enterprise tier starts near $40K/yr",
+    "Young product after the 2026 pivot"
+   ],
+   "seoDescription": "Mutiny review: an AI sales assistant for account executives that preps calls, drafts follow-ups, and builds proposals and deal rooms. Pricing and alternatives.",
+   "metaKeywords": "Mutiny, Mutiny review, Mutiny pricing, Mutiny alternatives, AI sales assistant, Account executives, Deal rooms, Sales proposals, Call prep"
+  },
+  "note": "Rewritten for the 2026 relaunch as an AE sales assistant; pricing page shows Free plan and Business $50/mo (was PAID, no price)."
+ },
+ {
+  "slug": "munch",
+  "changes": {
+   "name": "Munch Studio",
+   "url": "https://www.munchstudio.com",
+   "tagline": "The AI social media manager that writes and publishes your posts",
+   "description": "Munch Studio (formerly Munch at getmunch.com) is an AI social media manager that learns your business from your website, videos, photos, and Zoom recordings, then writes on-brand posts and a content strategy. You pick the posts you like and publish them to the major networks in one click, with clipping of long videos as one feature among many.",
+   "longDescription": "Munch Studio has widened from an AI video clipper into a social content engine. Point it at your website and existing material, including long videos and recorded calls, and it builds a content plan, generates posts in your brand voice, and queues them for Instagram, Facebook, LinkedIn, YouTube, TikTok, X, and Threads. Non-technical editing, cross-platform analytics on reach and engagement, and separate client workspaces for agencies round it out.",
+   "pricing": "FREE_TRIAL",
+   "priceFrom": "$38/mo",
+   "features": [
+    "Learns from site, videos, and calls",
+    "AI post and strategy generation",
+    "Long-video clipping",
+    "One-click multi-network publishing",
+    "Cross-platform analytics",
+    "Agency client workspaces"
+   ],
+   "pros": [
+    "Hands-off content pipeline",
+    "Reuses material you already have",
+    "Agency-friendly workspaces"
+   ],
+   "cons": [
+    "No free plan, 7-day trial only",
+    "Less control than a dedicated video editor",
+    "Output depends on source material"
+   ],
+   "seoTitle": "Munch Studio Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+   "seoDescription": "Munch Studio (formerly Munch) review: an AI social media manager that turns your site, videos, and calls into posts. Compare pricing and alternatives.",
+   "metaKeywords": "Munch Studio, Munch, getmunch, Munch Studio review, Munch Studio pricing, Munch alternatives, AI social media manager, Video clipping, Social posting"
+  },
+  "note": "getmunch.com now 301s to munchstudio.com; renamed and rewritten as AI social media manager. Pricing verified: Essential $38/mo, Premium $60/mo yearly, 7-day trial, no free plan."
+ },
+ {
+  "slug": "writesonic",
+  "changes": {
+   "tagline": "AI search growth engine for brand visibility in ChatGPT and other AI answers",
+   "description": "Writesonic is now an AI search growth engine that tracks how ChatGPT, Gemini, Perplexity, Google AI Overviews, and other assistants mention and cite your brand. An Action Center, content and outreach agents, and technical audits turn visibility gaps into fixes, and an AI article writer is still included in every plan.",
+   "longDescription": "Writesonic has moved from AI article writing to helping brands get recommended inside AI answers. It monitors citations and sentiment across up to nine AI platforms, ranks opportunities such as missing prompts and citation gaps, and uses agents to rewrite pages for AI search and find threads, videos, and listicles that cite competitors. Technical audits flag robots.txt, schema, and AI crawler issues, and integrations cover Google Analytics, Search Console, and WordPress.",
+   "pricing": "FREE_TRIAL",
+   "priceFrom": "$79/mo",
+   "features": [
+    "AI visibility tracking (up to 9 platforms)",
+    "Action Center opportunity ranking",
+    "Content and outreach agents",
+    "Technical AI crawler audits",
+    "AI article writer included"
+   ],
+   "pros": [
+    "Tracks and fixes AI visibility",
+    "Broad AI platform coverage",
+    "Analytics and CMS integrations"
+   ],
+   "cons": [
+    "Lower tiers track only 3 AI platforms",
+    "Pricier than pure writing tools",
+    "Article writing is now secondary"
+   ],
+   "seoDescription": "Writesonic review: an AI search growth engine that tracks and improves brand visibility in ChatGPT, Gemini, and Perplexity. Compare pricing and alternatives.",
+   "metaKeywords": "Writesonic, Writesonic review, Writesonic pricing, Writesonic alternatives, AI search visibility, GEO, AI SEO, ChatGPT visibility, Chatsonic"
+  },
+  "note": "Repositioned as AI search growth engine. Pricing verified: Starter $79/mo yearly (~$99 monthly), free trial only, no free plan (was FREEMIUM $39/mo)."
+ },
+ {
+  "slug": "you-com",
+  "changes": {
+   "tagline": "Search, research, and inference APIs for AI developers",
+   "description": "You.com now focuses on developers and enterprises, offering Web Search, Contents, Answer, and Research APIs that ground AI agents and apps in live web data. An OpenAI-compatible Inference Router, an MCP server, and zero data retention options round out the platform, with a free tier and pay-as-you-go pricing.",
+   "longDescription": "You.com turned the search and research technology behind its own products into an API platform. Endpoints range from fast web search and page contents to cited answers and multi-depth research, including finance research. An Inference Router serves open-weight models through one OpenAI-compatible endpoint with provider failover, and an MCP server adds live search to assistants and coding agents. Enterprise options include zero data retention, US-hosted models, and SOC 2 compliance.",
+   "priceFrom": null,
+   "features": [
+    "Web Search and Contents APIs",
+    "Answer and Research APIs",
+    "OpenAI-compatible Inference Router",
+    "MCP server for agents",
+    "Zero data retention option"
+   ],
+   "pros": [
+    "Fast, cited web grounding",
+    "Pay as you go, no seats",
+    "Free tier to evaluate"
+   ],
+   "cons": [
+    "Consumer chat no longer the focus",
+    "Deep research calls get costly",
+    "Built for developers, not end users"
+   ],
+   "seoDescription": "You.com review: web search, research, and inference APIs that ground AI agents in live web data. Compare features, pricing, and top You.com alternatives.",
+   "metaKeywords": "You.com, You.com review, You.com pricing, You.com alternatives, Search API, Research API, AI inference, MCP, Web grounding"
+  },
+  "note": "Rewritten as developer API platform. Pricing page lists only free tier, pay-as-you-go (e.g. $5 per 1K searches) and Enterprise; no $15/mo plan, so priceFrom set to null."
+ },
+ {
+  "slug": "blackbox-ai",
+  "changes": {
+   "tagline": "Enterprise AI inference plus a coding agent for developers",
+   "description": "Blackbox AI now leads with enterprise inference, offering 300+ models behind one endpoint with client-side prompt encryption, zero data retention, and private or air-gapped deployment options. Developers can still use its VS Code extension, terminal CLI, and autonomous coding agent.",
+   "longDescription": "Blackbox AI grew from a popular coding helper into a broader AI platform. For businesses it sells high-trust inference across hundreds of models with one bill, encrypted prompts, gateway-enforced zero retention, secure GPU rentals, fine-tuning and reinforcement learning services, and a cited partnership with Microsoft Azure. For developers, the VS Code extension and CLI provide chat, inline suggestions, and an agent that plans multi-step changes, edits files, and runs commands with approval.",
+   "priceFrom": null,
+   "features": [
+    "300+ models via one endpoint",
+    "Encrypted prompts, zero retention",
+    "Private and air-gapped deployment",
+    "VS Code coding agent",
+    "Agentic terminal CLI"
+   ],
+   "pros": [
+    "Wide model choice",
+    "Strong privacy options",
+    "Coding tools still accessible"
+   ],
+   "cons": [
+    "Shifting focus and plan structure",
+    "Coding depth below Cursor/Copilot",
+    "Individual plan prices hard to pin down"
+   ],
+   "seoDescription": "Blackbox AI review: enterprise inference across 300+ models with encrypted prompts, plus a VS Code and CLI coding agent. Compare pricing and alternatives."
+  },
+  "note": "Copy updated for enterprise-inference positioning. priceFrom $14.99 removed: official pricing page shows only custom Enterprise and third-party Pro figures conflict ($8 to $15)."
+ },
+ {
+  "slug": "bardeen",
+  "changes": {
+   "tagline": "AI lead generation: scrape, research, enrich, and qualify prospects",
+   "description": "Bardeen is a lead-generation platform for sales teams that combines an agentic web scraper, AI web search, contact enrichment, and lead qualification. It turns lists of websites or profiles into prioritized prospects with verified emails and phone numbers, exported to Sheets, Airtable, Notion, or your CRM.",
+   "longDescription": "Bardeen has narrowed from general browser automation to finding leads that are not already in everyone else's database. Its scraper and AI web search build or research lead lists at scale, enrichment adds validated emails and phone numbers, and a plain-language ideal customer description ranks which leads to work first. Usage runs on credits, with 100 free credits to start, and results flow to CSV, Google Sheets, Airtable, Notion, and CRM tools.",
+   "priceFrom": "$10/mo",
+   "features": [
+    "Agentic web scraper",
+    "AI web search and research",
+    "Email and phone enrichment",
+    "Plain-language lead qualification",
+    "Export to Sheets, Notion, CRM"
+   ],
+   "pros": [
+    "Finds leads beyond standard databases",
+    "Can replace a separate data vendor",
+    "Template scrapers to start fast"
+   ],
+   "cons": [
+    "Credit-based costs add up",
+    "Less general-purpose than before",
+    "Site terms compliance is on you"
+   ],
+   "seoDescription": "Bardeen review: an AI lead-generation platform with web scraping, AI research, enrichment, and lead qualification. Compare pricing and top Bardeen alternatives."
+  },
+  "note": "Repositioned as lead-gen platform; pricing page shows 100 free credits and Basic $10/mo (priceFrom was null)."
+ },
+ {
+  "slug": "blaze-ai",
+  "changes": {
+   "tagline": "AI marketing software or a done-for-you team for small businesses",
+   "description": "Blaze learns your brand voice and plans, writes, and publishes posts, blogs, emails, and visuals from one calendar. Higher tiers add SEO for AI search, Google and Meta ads, an AI sales assistant that follows up with leads, and a fully managed done-for-you plan.",
+   "longDescription": "Blaze started as an AI content tool for teams without a marketer and now offers two paths. The self-serve software builds a brand kit and voice from your site and socials, fills a content calendar with posts, graphics, blogs, and emails, and publishes on schedule, with performance feeding back into the plan. Growth features add SEO and AI-search (AEO) content, Google and Meta ad campaigns, landing pages, review responses, and an AI SDR, while the All-In-One plan hands the program to a dedicated Blaze expert and editors.",
+   "priceFrom": "$79/mo",
+   "features": [
+    "Brand voice learning",
+    "AI content calendar and publishing",
+    "SEO and AI-search (AEO) tools",
+    "Google and Meta ad campaigns",
+    "AI sales assistant for leads",
+    "Done-for-you managed plan"
+   ],
+   "pros": [
+    "Set-and-run workflow",
+    "Option to hand off fully",
+    "Consistent brand output"
+   ],
+   "cons": [
+    "Managed plan costs $999/mo",
+    "Generic without customization",
+    "Deeper tools beat each module"
+   ],
+   "seoDescription": "Blaze review: AI marketing software plus a done-for-you service for content, ads, AI-search SEO, and lead follow-up. Compare pricing and top Blaze alternatives."
+  },
+  "note": "Added managed service, ads, AEO/SEO and AI SDR. Pricing verified: Starter $79/mo with 7-day trial, All-In-One managed $999/mo (was $26/mo)."
+ },
+ {
+  "slug": "magical",
+  "changes": {
+   "tagline": "AI agents for healthcare operations, plus a free text expander",
+   "description": "Magical builds AI agents that handle healthcare operations work such as prior authorizations, referrals, benefits verification, and payment posting across browser and desktop systems. Teams can use prebuilt agents, build custom ones from their own procedures, or have Magical deploy them as a managed service, and the free Chrome text expander is still available.",
+   "longDescription": "Magical grew out of a popular Chrome text expander and now centers on AI agents for provider groups, health systems, and payers. Prebuilt agents cover patient access and revenue cycle tasks, custom agents can be trained on a team's own SOPs, and the platform works across browser and desktop apps where older systems lack APIs. AI judges add guardrails during runs. The free extension still expands text shortcuts and autofills forms for individuals.",
+   "priceFrom": null,
+   "features": [
+    "Prior authorization agents",
+    "Revenue cycle and patient access agents",
+    "Custom agents from your SOPs",
+    "Works across browser and desktop apps",
+    "Free Chrome text expander"
+   ],
+   "pros": [
+    "Built for legacy healthcare systems",
+    "Managed deployment option",
+    "Free extension for individuals"
+   ],
+   "cons": [
+    "Agent pricing requires a demo",
+    "Healthcare focus narrows fit",
+    "Extension is no longer the focus"
+   ],
+   "seoDescription": "Magical review: AI agents for healthcare operations like prior auth and revenue cycle, plus a free Chrome text expander. Compare pricing and alternatives."
+  },
+  "note": "Repositioned around healthcare ops agents. $6.50/mo removed: site shows no plan prices (demo/sales only); free extension keeps FREEMIUM."
+ },
+ {
+  "slug": "hedra",
+  "changes": {
+   "tagline": "Visual AI studio and infrastructure for character-driven video",
+   "description": "Hedra is a visual AI research and infrastructure company whose creative product, Hedra Studio, is a visual agent that plans, generates, and edits video, images, and audio on a shared canvas. Studio taps third-party models such as Veo, Kling, and ElevenLabs alongside Hedra's own expressive character technology, and developers get an API, CLI, and MCP connectors.",
+   "longDescription": "Hedra first became known for expressive talking characters built from a single image and audio. Hedra Studio now wraps that in a multi-model visual agent: collaborative spaces, reusable Skills for repeated workflows, and Elements that keep characters and products consistent across outputs. Developers can use a usage-based API, CLI, and MCP connectors, and larger organizations can buy inference optimization and its World Model Runtime on managed cloud, hybrid, or on-premises setups.",
+   "priceFrom": null,
+   "features": [
+    "Hedra Studio visual agent",
+    "Third-party models on one canvas",
+    "Expressive talking characters",
+    "Reusable Elements and Skills",
+    "API, CLI, and MCP connectors"
+   ],
+   "pros": [
+    "Many models, one subscription",
+    "Expressive character animation",
+    "Team collaboration spaces"
+   ],
+   "cons": [
+    "Credit costs vary by model",
+    "Broader scope adds complexity",
+    "Usage costs harder to predict"
+   ],
+   "seoDescription": "Hedra review: Hedra Studio is a visual AI agent for video, image, and audio across many models, plus an API for developers. Compare pricing and alternatives."
+  },
+  "note": "Repositioned as visual AI research/infrastructure with Hedra Studio. $10/mo removed: subscription prices unverified (reports conflict, $15 to $20)."
+ },
+ {
+  "slug": "hypotenuse-ai",
+  "changes": {
+   "tagline": "AI product information platform for ecommerce catalogs",
+   "description": "Hypotenuse AI is an AI-first product information platform for ecommerce that enriches product data, tags and categorizes SKUs, and writes on-brand titles and descriptions for SEO and AI search. It also generates and edits product images, checks retailer image compliance, and integrates with Shopify, Salesforce Commerce Cloud, NetSuite, and more.",
+   "longDescription": "Hypotenuse AI grew from a bulk copywriter into a platform that manages product data, content, and imagery together. It fills missing attributes, standardizes data, and handles taxonomy, then writes descriptions in 40+ languages tuned for search engines and generative engines. Bulk AI image editing and an image compliance checker prepare assets for Amazon, Walmart, and Target, and it can connect to a PIM, ERP, or store or act as the main product content system.",
+   "priceFrom": null,
+   "features": [
+    "Product data enrichment",
+    "Tagging and categorization",
+    "SEO and GEO product copy",
+    "AI product image editing",
+    "PIM and ecommerce integrations"
+   ],
+   "pros": [
+    "Data and content in one place",
+    "True bulk workflows",
+    "Enterprise integrations"
+   ],
+   "cons": [
+    "Niche outside ecommerce",
+    "Pricing requires sales contact",
+    "Overkill for small catalogs"
+   ],
+   "seoDescription": "Hypotenuse AI review: an AI product information platform that enriches data, writes copy, and edits images for ecommerce. Compare pricing and alternatives."
+  },
+  "note": "Repositioned as AI product information platform. $29/mo removed: pricing page lists both plans as Custom."
+ },
+ {
+  "slug": "hoppy-copy",
+  "changes": {
+   "tagline": "AI email marketing: write, design, automate, and send",
+   "description": "Hoppy Copy has grown from an AI email copywriter into a full email marketing platform where you write, design, automate, and send campaigns and newsletters. Brand Memory keeps drafts in your voice, and a spam checker, forms, segmentation, and competitor email monitoring are built in.",
+   "longDescription": "Hoppy Copy now covers the whole email workflow for small teams. Brand Memory trains the AI on your voice, templates and converters turn blog posts or news into campaigns, and the spam checker flags risky wording before you send. Built-in sending, automations, forms, link-in-bio pages, segmentation, and analytics mean many users no longer need a separate email service, while competitor monitoring keeps a steady feed of ideas.",
+   "features": [
+    "Brand Memory voice training",
+    "Email sending and automations",
+    "Forms and audience segmentation",
+    "Spam word checker",
+    "Competitor email monitoring"
+   ],
+   "pros": [
+    "Writing and sending in one tool",
+    "Deliverability awareness",
+    "Quick to value"
+   ],
+   "cons": [
+    "Email-only focus",
+    "Subscriber caps on lower tiers",
+    "Newer as a sending platform"
+   ],
+   "seoDescription": "Hoppy Copy review: an AI email marketing platform to write, automate, and send newsletters and campaigns. Compare features, pricing, and alternatives."
+  },
+  "note": "Now a full email platform with sending, automations, forms; removed 'No sending capability' con. $29/mo Starter with 7-day trial confirmed."
+ },
+ {
+  "slug": "pepper-content",
+  "changes": {
+   "name": "Pepper",
+   "url": "https://www.pepper.inc",
+   "tagline": "Organic growth for SEO and AI search visibility (formerly Pepper Content)",
+   "description": "Pepper, formerly Pepper Content, is an organic growth company that gets brands recommended across search engines, AI assistants, video, marketplaces, and communities. Its Agent Atlas platform finds and closes visibility gaps around the clock, while senior strategists and a creator network handle the work that needs people.",
+   "longDescription": "Pepper sells outcomes rather than software seats. Agent Atlas measures AI search visibility daily across ChatGPT, Perplexity, Gemini, Claude, Microsoft Copilot, and AI Overviews, then runs workflows to close the gaps it finds. A forward-deployed team of content, SEO, and GEO specialists works inside the client's Slack with KPIs written into the contract, drawing on Pepper's talent marketplace. Engagements start with a growth audit, and pricing is set after that audit.",
+   "features": [
+    "Agent Atlas visibility agent",
+    "Daily AI search visibility tracking",
+    "SEO and GEO execution",
+    "Forward-deployed strategist team",
+    "Creator talent marketplace"
+   ],
+   "pros": [
+    "Humans plus AI model",
+    "Outcome-based engagements",
+    "Covers search beyond the website"
+   ],
+   "cons": [
+    "Enterprise pricing only",
+    "Overkill for small teams",
+    "No self-serve software tier"
+   ],
+   "seoTitle": "Pepper Review 2026: Features, Pricing, Pros & Cons | AI BirdView",
+   "seoDescription": "Pepper (formerly Pepper Content) review: organic growth for SEO and AI search visibility, run by Agent Atlas and expert strategists. Pricing and alternatives.",
+   "metaKeywords": "Pepper, Pepper Content, Pepper review, Pepper pricing, Pepper alternatives, Agent Atlas, AI search visibility, GEO, SEO agency"
+  },
+  "note": "Rebranded to Pepper (peppercontent.io 301s to pepper.inc, footer says 'Formerly Pepper Content'); rewritten around Agent Atlas and AI search visibility."
+ },
+ {
+  "slug": "scalenut",
+  "changes": {
+   "tagline": "AI search visibility (GEO) and SEO content in one platform",
+   "description": "Scalenut tracks whether ChatGPT, Perplexity, Gemini, Claude, and Grok mention your brand, then helps you plan, write, and optimize content to close the gaps. A GEO score, content optimizer, keyword planning, and AI crawler monitoring sit alongside its original SEO writing tools.",
+   "longDescription": "Scalenut expanded from an SEO content platform into a toolkit for generative engine optimization. AI visibility tracking covers brand mentions, prompt coverage, competitor share, and the sources AI engines cite, and a GEO score shows how to adjust articles so they surface in AI answers. Keyword clustering, content creation and audits, internal linking, backlink insights, and Reddit tracking remain, and a VIP service pairs AI agents with human strategists for done-for-you work.",
+   "priceFrom": "$59/mo",
+   "features": [
+    "AI visibility tracking across 5 engines",
+    "GEO score and content optimizer",
+    "Keyword and cluster planning",
+    "AI crawler and Reddit tracking",
+    "Done-for-you GEO service"
+   ],
+   "pros": [
+    "Covers AI and classic search",
+    "Full workflow in one tool",
+    "Free SEO tools and audit"
+   ],
+   "cons": [
+    "Drafts need editorial polish",
+    "Best prices need an annual plan",
+    "Data depth below Surfer"
+   ],
+   "seoDescription": "Scalenut review: AI search visibility tracking across ChatGPT, Perplexity, and Gemini plus SEO content tools. Compare pricing and top Scalenut alternatives."
+  },
+  "note": "Repositioned toward GEO/AI visibility. Pricing verified: Starter $59/mo monthly with 7-day trial; $21/mo annual is an early-access promo (was $39/mo)."
+ },
+ {
+  "slug": "rize",
+  "changes": {
+   "tagline": "Automatic time tracking for agencies and client work",
+   "description": "Rize tracks time automatically in the background and assigns it to the right client or project based on the apps, window titles, and sites you use, so nobody has to run timers. Built for agencies and professional-services teams, it adds profitability, retainer burn, utilization, and capacity reports, without screenshots or keystroke capture.",
+   "longDescription": "Rize moved from a personal focus coach to time tracking for teams that bill clients. It categorizes work automatically, lets each person approve their time before it is shared, and only sends client-tagged time to the team. Managers get client margins, retainer burn alerts, and utilization and capacity by department, and integrations include ClickUp, Asana, Linear, Notion, Google Calendar, Outlook, Slack, and QuickBooks. Desktop apps run on macOS and Windows.",
+   "pricing": "FREE_TRIAL",
+   "features": [
+    "Automatic client and project tracking",
+    "Profitability and retainer burn views",
+    "Utilization and capacity reports",
+    "Approve-before-share privacy",
+    "ClickUp, Asana, QuickBooks integrations"
+   ],
+   "pros": [
+    "No timers to start",
+    "Privacy-first design",
+    "Agency-focused reporting"
+   ],
+   "cons": [
+    "No permanent free plan",
+    "Desktop only",
+    "Less suited to personal focus coaching now"
+   ],
+   "seoDescription": "Rize review: automatic time tracking for agencies and professional-services teams, with profitability and utilization reports. Compare pricing and alternatives."
+  },
+  "note": "Repositioned as agency time tracking. Pricing page shows 7-day trial and no free tier, so FREEMIUM to FREE_TRIAL; $9.99/mo (Basic, yearly) kept."
+ },
+ {
+  "slug": "rytr",
+  "changes": {
+   "tagline": "Budget AI writer plus an AI relationship manager",
+   "description": "Rytr pairs an affordable AI writing assistant for emails, posts, ads, and web copy in 30+ languages with Engage, an AI relationship manager that tracks contacts, commitments, and follow-ups. Engage connects to Gmail, Outlook, Slack, and your calendar to prepare daily and pre-meeting briefs, and nothing is sent without your approval.",
+   "longDescription": "Rytr still covers the writing essentials cheaply: pick a use case, tone, and language, or match your personal voice, and get up to three variants of an email, post, ad, or page. Its newer Engage side remembers what matters to each contact, tracks promises and follow-ups across your tools, flags relationships going quiet, and prepares briefs before meetings. A browser extension brings contact context into Gmail, Slack, and LinkedIn, and a free plan includes a daily briefing.",
+   "features": [
+    "40+ writing use cases",
+    "30+ languages and personal voice",
+    "Engage relationship tracking",
+    "Daily and pre-meeting briefs",
+    "Gmail, Slack, calendar integrations",
+    "Browser extension"
+   ],
+   "pros": [
+    "Very affordable",
+    "Simple to learn",
+    "Free plan includes Engage basics"
+   ],
+   "cons": [
+    "Weaker at long-form content",
+    "Engage limits on lower tiers",
+    "Fewer team features than rivals"
+   ],
+   "seoDescription": "Rytr review: an affordable AI writer in 30+ languages plus Engage, an AI relationship manager for follow-ups. Compare features, pricing, and alternatives."
+  },
+  "note": "Added Engage relationship manager; dropped unverified plagiarism checker. Free plan and Lite $9/mo confirmed."
+ },
+ {
+  "slug": "designs-ai",
+  "changes": {
+   "tagline": "Agent-driven creative platform from the Pixlr family",
+   "description": "Designs.ai, now part of the Pixlr family, is an agent-driven creative platform where one brief goes to specialist agents for branding, images, storyboards, video, slides, and audio. It routes work to models such as Claude, ChatGPT, Gemini, and Grok, with reusable skills, workflows, and a chat-app helper called Designs Claw.",
+   "longDescription": "Designs.ai replaced its separate Logomaker, Videomaker, Designmaker, and Speechmaker tools with a central AI agent that hands tasks to specialist agents and pulls the results together. A library of skills handles common requests, from logo design and short video ads to slides and summaries, while workflows and plugins let teams repeat proven processes. Designs Claw brings image, video, and audio generation into chat apps, and the site lists GDPR and SOC compliance.",
+   "priceFrom": null,
+   "features": [
+    "Specialist creative agents",
+    "Brand, image, video, slides, audio",
+    "Multi-model routing",
+    "Reusable skills and workflows",
+    "Designs Claw chat helper"
+   ],
+   "pros": [
+    "One brief, coordinated assets",
+    "Broad format coverage",
+    "Model choice handled for you"
+   ],
+   "cons": [
+    "Each format has stronger rivals",
+    "Plan prices hard to find",
+    "No free plan"
+   ],
+   "seoDescription": "Designs.ai review: a Pixlr-family creative platform where AI agents produce branding, images, video, slides, and audio. Compare pricing and alternatives."
+  },
+  "note": "Rewritten for Pixlr-branded agent platform (old makers gone). $29/mo removed: official pricing page shows no prices and third-party figures conflict."
+ },
+ {
+  "slug": "elephas",
+  "changes": {
+   "tagline": "Private, cited answers from your own documents on Mac",
+   "description": "Elephas answers questions about your own documents with citations to the exact passage and page, while files, the search index, and chats stay encrypted on your Mac. You organize knowledge into shareable Brains and choose an on-device model, Elephas AI, or your own OpenAI, Claude, or Gemini key.",
+   "longDescription": "Elephas has refocused from a system-wide Mac writing assistant to private document Q&A. It imports PDFs, Office files, text, images with text, and web pages, then answers with source citations you can check. Names, emails, and phone numbers are masked before anything reaches a cloud model, and you can stay fully local with a downloaded model. Brains can be shared with a team through end-to-end encrypted sync, and a Windows version is listed as coming soon.",
+   "pricing": "FREE_TRIAL",
+   "priceFrom": "$15/mo",
+   "features": [
+    "Cited document Q&A",
+    "Shareable Brains",
+    "On-device model option",
+    "Bring your own API key",
+    "PII masking before cloud calls"
+   ],
+   "pros": [
+    "Privacy-first design",
+    "Verifiable citations",
+    "Encrypted team sharing"
+   ],
+   "cons": [
+    "Mac only for now",
+    "Requires Apple Silicon",
+    "No lifetime license anymore"
+   ],
+   "seoDescription": "Elephas review: private, cited Q&A over your own documents on Mac, with on-device or cloud models. Compare features, pricing, and top Elephas alternatives."
+  },
+  "note": "Refocused on private cited document Q&A. Pricing verified: Personal $15/mo yearly ($19 monthly), 7-day no-card trial, no lifetime plan listed (was PAID $8.99/mo)."
+ },
+ {
+  "slug": "argil",
+  "changes": {
+   "tagline": "An AI video studio with characters that stay consistent",
+   "description": "Argil is an AI video studio built around consistent characters: you cast a character once and its face, body, and voice stay the same across every video. A director agent drafts the storyboard, picks models, and generates each shot, with art direction tools and a single editing timeline for the final cut.",
+   "longDescription": "Argil grew from an AI clone tool into a studio for episodic, personality-driven video. After casting a character, or training a clone from your own footage, you define locations, props, and a house style, and the director agent plans and shoots each scene using models such as Seedance for video and Nano Banana for images. Cuts, motion, and captions come together on one timeline, and agent connections let you work with Argil from Claude and Grok.",
+   "features": [
+    "Cast-once consistent characters",
+    "Director agent storyboards and shots",
+    "Art direction and house styles",
+    "Single editing timeline",
+    "AI clone from your footage"
+   ],
+   "pros": [
+    "Consistent characters across videos",
+    "Agent handles production planning",
+    "Creator-native output style"
+   ],
+   "cons": [
+    "No free tier",
+    "Credit use varies by model",
+    "Results depend on casting setup"
+   ],
+   "seoDescription": "Argil review: an AI video studio where you cast a character once and a director agent plans and shoots each video. Compare pricing and top Argil alternatives."
+  },
+  "note": "Features and copy updated for cast-once characters and director agent. Classic $39/mo confirmed via search."
+ },
+ {
+  "slug": "akkio",
+  "changes": {
+   "tagline": "AI platform for media agencies and data providers",
+   "description": "Akkio is an AI platform for media agencies and data providers that runs campaign workflows from strategy and audience building to media planning, activation, and measurement on the agency's own data. Chat with Data, propensity and media mix modeling, and deployment inside your own cloud come with SOC 2, HIPAA, and GDPR compliance.",
+   "longDescription": "Akkio moved from general no-code machine learning to a platform built for the agency campaign cycle. Planners can question datasets in plain language, build and activate audiences in one click, simulate media plans, and measure performance with propensity and media mix models. It embeds in the customer's cloud with role-based access and observability, and the company cites Havas and LG Ad Solutions as partners and is expanding into retail media networks.",
+   "pricing": "PAID",
+   "priceFrom": null,
+   "features": [
+    "Audience building and activation",
+    "Propensity and media mix modeling",
+    "Chat with Data",
+    "Media plan simulation",
+    "Embedded cloud deployment"
+   ],
+   "pros": [
+    "Built for agency workflows",
+    "Runs on your own data",
+    "Strong compliance posture"
+   ],
+   "cons": [
+    "Custom enterprise pricing only",
+    "Narrow fit outside media agencies",
+    "No self-serve trial"
+   ],
+   "seoDescription": "Akkio review: an AI platform for media agencies and data providers covering audiences, media planning, activation, and measurement. Pricing and alternatives."
+  },
+  "note": "Repositioned for media agencies. Pricing page shows only custom Enterprise and no trial, so FREE_TRIAL $49/mo changed to PAID with no price."
+ },
+ {
+  "slug": "type-ai",
+  "changes": {
+   "tagline": "The intelligent editor for storytellers",
+   "description": "Type is an AI writing editor for storytellers working on novels, screenplays, and other long-form projects. Notes on characters, settings, and scenes plus custom writing styles keep suggestions consistent with your story, using premium models from Anthropic, OpenAI, and Google.",
+   "longDescription": "Type puts writing and AI help in the same window, tuned for long manuscripts rather than quick emails. The assistant draws on saved project notes, custom style rules keep it close to your voice, and documents can run to around 150,000 words. You can import Word files or PDFs, export to DOCX, PDF, or a view-only link, work offline with version history, and listen to AI-narrated audio of a draft. The company says no models are trained on user writing.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$8/mo",
+   "features": [
+    "Story notes for characters and scenes",
+    "Custom writing styles",
+    "Long manuscripts (about 150K words)",
+    "Word and PDF import, DOCX export",
+    "Models from Anthropic, OpenAI, Google"
+   ],
+   "pros": [
+    "Built for long-form fiction",
+    "Keeps your voice",
+    "Not trained on your writing"
+   ],
+   "cons": [
+    "Less suited to quick business writing",
+    "Free credits do not renew",
+    "Smaller ecosystem than rivals"
+   ],
+   "seoDescription": "Type review: an AI editor for storytellers writing novels and screenplays, with models from Anthropic, OpenAI, and Google. Pricing and alternatives."
+  },
+  "note": "Repositioned for storytellers. Pricing page shows a Free plan and Basic $8/mo billed yearly (was FREE_TRIAL $29/mo, 'No free tier' con removed)."
+ },
+ {
+  "slug": "mem",
+  "changes": {
+   "tagline": "An AI chief of staff for your notes and meetings",
+   "description": "Mem pairs Mem Workspace, where notes, meetings, and ideas live as lasting memory, with Mem Agent, which reads that context and proactively suggests what to do next. Voice capture, bot-free meeting recording, and meaning-based search make it an AI chief of staff for people who capture more than they file.",
+   "longDescription": "Mem still skips folders and lets AI organize what you capture, but it now acts on that material too. Push-to-Remember on Mac and Windows saves spoken thoughts instantly, meetings can be recorded without a bot joining the call, and search works by meaning across notes, meetings, and connected sources. Mem Agent drafts, summarizes, plans, and follows up, and Heads Up nudges flag what needs attention. The company says it is SOC 2 Type II compliant.",
+   "pricing": "FREEMIUM",
+   "priceFrom": "$9/mo",
+   "features": [
+    "Mem Agent proactive suggestions",
+    "Push-to-Remember voice capture",
+    "Bot-free meeting recording",
+    "Meaning-based search",
+    "Heads Up nudges"
+   ],
+   "pros": [
+    "Zero-filing philosophy works",
+    "Proactive, not just searchable",
+    "Quick voice capture"
+   ],
+   "cons": [
+    "Message limits on lower tiers",
+    "Less structured than Notion",
+    "Agent needs lots of context"
+   ],
+   "seoDescription": "Mem review: an AI chief of staff that pairs self-organizing notes with Mem Agent for proactive follow-ups. Compare features, pricing, and top Mem alternatives."
+  },
+  "note": "Repositioned as AI chief of staff with Mem Agent. Pricing page shows Free plan and Mem Plus $9/mo (was PAID $14.99/mo, 'Trial then paid only' con removed)."
+ },
+ {
+  "slug": "marvin",
+  "changes": {
+   "tagline": "Customer insights platform with an AI Interviewer",
+   "description": "Marvin is a customer insights platform that centralizes interviews, surveys, and calls in a Knowledge Hub and uses AI to analyze them and answer questions with linked evidence. Its AI Interviewer runs moderated interviews at scale, and Live Intercept embeds voice-based AI interviews inside your product.",
+   "longDescription": "Marvin grew from a research repository into a system for both gathering and using customer insight. The AI Interviewer and Live Intercept collect new conversations, the Analysis Studio surfaces themes and sentiment across qualitative and quantitative data, and Ask AI answers stakeholder questions with citations. Reports include highlight reels and dynamic topics, a Marvin MCP server pushes insights into AI tools, and compliance covers SOC 2, ISO 27001, ISO 42001, GDPR, and PII redaction.",
+   "features": [
+    "AI Interviewer and Live Intercept",
+    "Knowledge Hub repository",
+    "Mixed-methods Analysis Studio",
+    "Ask AI with linked evidence",
+    "Marvin MCP server",
+    "PII redaction"
+   ],
+   "pros": [
+    "Automation depth",
+    "Compliance-ready",
+    "Free plan to start"
+   ],
+   "cons": [
+    "Paid plan prices need a demo",
+    "Interface density",
+    "Smaller brand than Dovetail"
+   ],
+   "seoDescription": "Marvin review: a customer insights platform with an AI Interviewer, Knowledge Hub, and AI analysis with linked evidence. Compare pricing and alternatives."
+  },
+  "note": "Repositioned as customer insights platform with AI Interviewer. Free plan confirmed; paid tiers are demo-only, so priceFrom stays null."
+ }
+]
