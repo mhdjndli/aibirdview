@@ -1,11 +1,27 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ToolCard } from "./ToolCard";
 import type { SerializedTool, SerializedCategory, PricingLabel } from "@/lib/serializers";
 
 const PRICING: PricingLabel[] = ["Free", "Freemium", "Free Trial", "Paid"];
 type Sort = "trending" | "rating" | "newest" | "az";
+type Flag = "featured" | "trending";
+
+// Words that appear in nearly every query ("best AI writing tools") but say
+// nothing about what the user wants.
+const STOP_WORDS = new Set(["ai", "a", "an", "the", "for", "and", "best", "tool", "tools", "app", "apps"]);
+
+// Turn a query into loose word stems so "voice clones" matches "voice cloning"
+// and "AI writing" matches the "Writing & Editing" category.
+function queryStems(query: string) {
+  return query
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((w) => w && !STOP_WORDS.has(w))
+    .map((w) => w.replace(/(ing|es|s)$/, (m) => (w.length - m.length >= 3 ? "" : m)));
+}
 
 export function ToolsBrowser({
   tools,
@@ -18,20 +34,19 @@ export function ToolsBrowser({
   const [cats, setCats] = useState<Set<string>>(new Set());
   const [prices, setPrices] = useState<Set<PricingLabel>>(new Set());
   const [sort, setSort] = useState<Sort>("trending");
+  const [flag, setFlag] = useState<Flag | null>(null);
   const [showFilters, setShowFilters] = useState(false);
 
   const filtered = useMemo(() => {
-    const query = q.trim().toLowerCase();
+    const stems = queryStems(q);
     let out = tools.filter((t) => {
-      if (query) {
-        const hay =
-          t.name.toLowerCase() +
-          " " +
-          t.tagline.toLowerCase() +
-          " " +
-          t.tags.join(" ").toLowerCase();
-        if (!hay.includes(query)) return false;
+      if (stems.length) {
+        const hay = [t.name, t.tagline, t.description, t.category.name, ...t.tags]
+          .join(" ")
+          .toLowerCase();
+        if (!stems.every((s) => hay.includes(s))) return false;
       }
+      if (flag && !t[flag]) return false;
       if (cats.size && !cats.has(t.category.slug)) return false;
       if (prices.size && !prices.has(t.pricing)) return false;
       return true;
@@ -54,7 +69,7 @@ export function ToolsBrowser({
         break;
     }
     return out;
-  }, [tools, q, cats, prices, sort]);
+  }, [tools, q, flag, cats, prices, sort]);
 
   const toggleCat = (slug: string) => {
     const next = new Set(cats);
@@ -70,10 +85,16 @@ export function ToolsBrowser({
     setCats(new Set());
     setPrices(new Set());
     setQ("");
+    setFlag(null);
   };
 
   return (
     <div className="mx-auto max-w-7xl px-5 lg:px-8 pb-24">
+      {/* Only this reader opts out of prerendering, so the full list still ships in the HTML. */}
+      <Suspense fallback={null}>
+        <UrlFilters setQ={setQ} setFlag={setFlag} />
+      </Suspense>
+
       {/* Search + sort bar */}
       <div className="sticky top-14 z-20 -mx-5 mb-8 border-y border-ink-200 bg-ink-0/85 px-5 py-3 backdrop-blur lg:-mx-8 lg:px-8">
         <div className="flex flex-wrap items-center gap-3">
@@ -179,7 +200,7 @@ export function ToolsBrowser({
             </ul>
           </FilterGroup>
 
-          {(cats.size + prices.size + (q ? 1 : 0)) > 0 && (
+          {(cats.size + prices.size + (q ? 1 : 0) + (flag ? 1 : 0)) > 0 && (
             <button
               onClick={clearAll}
               className="mt-2 w-full rounded-full border border-ink-200 bg-ink-0 px-3 py-2 text-[13px] font-medium text-ink-700 hover:bg-ink-50"
@@ -198,6 +219,16 @@ export function ToolsBrowser({
               </span>{" "}
               tools
             </p>
+            {flag && (
+              <button
+                onClick={() => setFlag(null)}
+                className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-ink-0 px-3 py-1 text-[12px] font-medium text-ink-700 hover:bg-ink-50"
+              >
+                {flag === "featured" ? "Featured only" : "Trending only"}
+                <span aria-hidden className="text-ink-400">×</span>
+                <span className="sr-only">Remove filter</span>
+              </button>
+            )}
           </div>
 
           {filtered.length === 0 ? (
@@ -224,6 +255,27 @@ export function ToolsBrowser({
       </div>
     </div>
   );
+}
+
+// Applies ?q= (hero search, sitelinks search box) and ?filter=featured|trending
+// (homepage and footer links) whenever the URL changes.
+function UrlFilters({
+  setQ,
+  setFlag,
+}: {
+  setQ: (q: string) => void;
+  setFlag: (flag: Flag | null) => void;
+}) {
+  const params = useSearchParams();
+  const q = params.get("q") ?? "";
+  const filter = params.get("filter");
+
+  useEffect(() => {
+    setQ(q);
+    setFlag(filter === "featured" || filter === "trending" ? filter : null);
+  }, [q, filter, setQ, setFlag]);
+
+  return null;
 }
 
 function FilterGroup({

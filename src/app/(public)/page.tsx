@@ -1,14 +1,21 @@
 import Link from "next/link";
 import { ToolCard } from "@/components/ToolCard";
+import { ToolListItem } from "@/components/ToolListItem";
 import { HeroSearch } from "@/components/HeroSearch";
 import { LogoMarquee } from "@/components/LogoMarquee";
 import { getCategories, getTools, getSetting } from "@/lib/queries";
 import { serializeCategory, serializeTool } from "@/lib/serializers";
-import { prisma } from "@/lib/prisma";
 
 export const metadata = {
+  title: "AI Tools Directory: Find the Best AI Tools | AI BirdView",
+  description:
+    "Browse a human-reviewed directory of AI tools for writing, images, video, voice, code, productivity, marketing, and research. Compare pricing and features in one place.",
   alternates: { canonical: "/" },
 };
+
+// How many tools the homepage links to directly. Enough to pass link equity
+// to a large slice of the directory without turning the page into /tools.
+const DIRECTORY_SIZE = 60;
 
 export const revalidate = 60;
 
@@ -16,19 +23,20 @@ type HeroSettings = { eyebrow?: string | null; headline?: string; subhead?: stri
 type StatsSettings = { listed?: string; categories?: string; reviewTime?: string; readers?: string };
 
 export default async function Home() {
-  const [categoriesRaw, featuredRaw, trendingRaw, totalTools, heroSetting, statsSetting] =
-    await Promise.all([
-      getCategories(),
-      getTools({ featured: true }),
-      getTools({ trending: true }),
-      prisma.tool.count({ where: { published: true } }),
-      getSetting<HeroSettings>("hero"),
-      getSetting<StatsSettings>("stats"),
-    ]);
+  const [categoriesRaw, toolsRaw, heroSetting, statsSetting] = await Promise.all([
+    getCategories(),
+    getTools(),
+    getSetting<HeroSettings>("hero"),
+    getSetting<StatsSettings>("stats"),
+  ]);
 
   const categories = categoriesRaw.map(serializeCategory);
-  const featured = featuredRaw.map(serializeTool).slice(0, 6);
-  const trending = trendingRaw.map(serializeTool).slice(0, 6);
+  // getTools() already orders trending first, then by rating.
+  const tools = toolsRaw.map(serializeTool);
+  const totalTools = tools.length;
+  const featured = tools.filter((t) => t.featured).slice(0, 6);
+  const featuredSlugs = new Set(featured.map((t) => t.slug));
+  const directory = tools.filter((t) => !featuredSlugs.has(t.slug)).slice(0, DIRECTORY_SIZE);
 
   const hero = {
     eyebrow: heroSetting?.eyebrow ?? null,
@@ -54,19 +62,24 @@ export default async function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="mesh-bg absolute inset-0 -z-10" aria-hidden />
-        <div className="mx-auto max-w-7xl px-5 lg:px-8 pt-20 pb-24 md:pt-28 md:pb-32">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8 pt-16 pb-16 md:pt-24 md:pb-20">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="fade-up fade-up-1 inline-flex items-center gap-2 rounded-full border border-ink-200/80 bg-ink-0/70 px-3 py-1 text-[12px] font-medium text-ink-600 backdrop-blur">
-              <span className="inline-block h-1.5 w-1.5 rounded-full bg-kiwi-500" />
-              {totalTools}+ AI tools, reviewed by humans
-            </div>
-
-            <h1 className="fade-up fade-up-2 mt-6 text-balance text-[44px] font-semibold leading-[1.04] tracking-[-0.035em] text-ink-900 md:text-[72px]">
-              {headStart}{" "}
-              <span className="bg-gradient-to-br from-kiwi-500 to-kiwi-700 bg-clip-text text-transparent">
-                {headEnd.replace(/\.$/, "")}
+            {/* The pill is part of the H1 so the page's main heading carries the
+                "AI tools directory" keyword while the brand headline stays editable. */}
+            <h1>
+              <span className="fade-up fade-up-1 inline-flex items-center gap-2 rounded-full border border-ink-200/80 bg-ink-0/70 px-3 py-1 text-[12px] font-medium text-ink-600 backdrop-blur">
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-kiwi-500" />
+                AI Tools Directory
+                <span className="text-ink-400">·</span>
+                <span className="text-ink-500">{totalTools} tools reviewed by humans</span>
               </span>
-              {headEnd.endsWith(".") && "."}
+              <span className="fade-up fade-up-2 mt-6 block text-balance text-[44px] font-semibold leading-[1.04] tracking-[-0.035em] text-ink-900 md:text-[72px]">
+                {headStart}{" "}
+                <span className="bg-gradient-to-br from-kiwi-500 to-kiwi-700 bg-clip-text text-transparent">
+                  {headEnd.replace(/\.$/, "")}
+                </span>
+                {headEnd.endsWith(".") && "."}
+              </span>
             </h1>
             <p className="fade-up fade-up-3 mx-auto mt-5 max-w-xl text-pretty text-[17px] leading-[1.55] text-ink-500 md:text-[19px]">
               {hero.subhead}
@@ -92,21 +105,6 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="fade-up mt-20 grid grid-cols-2 gap-y-6 md:grid-cols-4 md:gap-x-8">
-            {[
-              [stats.listed, "Tools listed"],
-              [stats.categories, "Categories"],
-              [stats.reviewTime, "Median review time"],
-              [stats.readers, "Monthly readers"],
-            ].map(([n, l]) => (
-              <div key={l} className="text-center md:text-left">
-                <div className="text-[28px] font-semibold tracking-[-0.022em] text-ink-900 md:text-[34px]">
-                  {n}
-                </div>
-                <div className="mt-1 text-[13px] text-ink-500">{l}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -123,14 +121,14 @@ export default async function Home() {
       </section>
 
       {/* CATEGORIES */}
-      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24 md:py-32">
+      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20 md:py-24">
         <div className="flex items-end justify-between gap-6">
           <div className="max-w-xl">
             <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
               Browse by category
             </p>
             <h2 className="mt-3 text-[34px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[48px]">
-              Eight worlds of AI. Every tool, in its right place.
+              Browse AI tools by category.
             </h2>
           </div>
           <Link
@@ -202,9 +200,100 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* APPLE-STYLE FEATURE STRIP */}
-      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-24 md:py-32">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      {/* DIRECTORY */}
+      <section className="mx-auto max-w-7xl px-5 lg:px-8 py-20 md:py-24">
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <div className="max-w-xl">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
+              The directory
+            </p>
+            <h2 className="mt-3 text-[34px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[48px]">
+              Popular AI tools right now.
+            </h2>
+            <p className="mt-4 max-w-md text-[16px] leading-relaxed text-ink-500">
+              Trending and top-rated picks from all {totalTools} tools in the
+              directory, each one checked by a human editor.
+            </p>
+          </div>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/tools?filter=trending"
+              className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 px-4 py-2 text-[13px] font-medium text-ink-700 hover:bg-ink-50"
+            >
+              Trending only
+            </Link>
+            <Link
+              href="/tools"
+              className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-4 py-2 text-[13px] font-medium text-ink-0 hover:bg-ink-800"
+            >
+              All {totalTools} tools →
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {directory.map((t) => (
+            <ToolListItem key={t.slug} tool={t} />
+          ))}
+        </div>
+
+        <div className="mt-10 flex flex-col items-center gap-5 text-center">
+          <Link
+            href="/tools"
+            className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-6 py-3 text-[15px] font-medium text-ink-0 transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02]"
+          >
+            Browse all {totalTools} AI tools →
+          </Link>
+          <p className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[13px] text-ink-500">
+            <span>Or jump to:</span>
+            {categories.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/categories/${c.slug}`}
+                className="text-ink-700 underline-offset-4 hover:text-kiwi-700 hover:underline"
+              >
+                {c.name}
+              </Link>
+            ))}
+          </p>
+        </div>
+      </section>
+
+      {/* WHY US + STATS */}
+      <section className="border-t border-ink-200 mx-auto max-w-7xl px-5 lg:px-8 py-20 md:py-24">
+        <div className="max-w-2xl">
+          <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
+            About AI BirdView
+          </p>
+          <h2 className="mt-3 text-[34px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[48px]">
+            An AI tools directory you can trust.
+          </h2>
+          <p className="mt-4 text-[16px] leading-relaxed text-ink-500">
+            AI BirdView lists AI tools for writing, image generation, video,
+            voice, coding, productivity, marketing, and research. Every listing
+            is reviewed by a person before it goes live, with pricing, features,
+            pros and cons, and alternatives on one page, so you can compare
+            options and pick the right tool faster.
+          </p>
+        </div>
+
+        <div className="mt-12 grid grid-cols-2 gap-y-6 md:grid-cols-4 md:gap-x-8">
+          {[
+            [stats.listed, "Tools listed"],
+            [stats.categories, "Categories"],
+            [stats.reviewTime, "Median review time"],
+            [stats.readers, "Monthly readers"],
+          ].map(([n, l]) => (
+            <div key={l}>
+              <div className="text-[28px] font-semibold tracking-[-0.022em] text-ink-900 md:text-[34px]">
+                {n}
+              </div>
+              <div className="mt-1 text-[13px] text-ink-500">{l}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             {
               k: "Curated",
@@ -259,34 +348,6 @@ export default async function Home() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* TRENDING */}
-      <section className="bg-ink-50/60 border-y border-ink-200">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8 py-24 md:py-28">
-          <div className="flex items-end justify-between gap-6">
-            <div className="max-w-xl">
-              <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
-                Trending this week
-              </p>
-              <h2 className="mt-3 text-[34px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[48px]">
-                What builders are quietly betting on.
-              </h2>
-            </div>
-            <Link
-              href="/tools?filter=trending"
-              className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-ink-0 px-4 py-2 text-[13px] font-medium text-ink-700 hover:bg-ink-100"
-            >
-              See all trending →
-            </Link>
-          </div>
-
-          <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {trending.map((t) => (
-              <ToolCard key={t.slug} tool={t} />
-            ))}
-          </div>
         </div>
       </section>
 
