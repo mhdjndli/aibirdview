@@ -1,0 +1,278 @@
+[
+  {
+    "slug": "6sense",
+    "status": "ok",
+    "sources": [
+      "https://6sense.com"
+    ],
+    "moreContext": "Few platforms have shaped account-based marketing as much as 6sense, which built its reputation on reading the anonymous research signals buyers leave long before they ever fill out a form. Today the platform spans marketing, sales, and predictive analytics, so revenue teams can work from one shared picture of which accounts are warming up and why.\n\n- Its Signalverse data layer brings keyword-level intent, verified B2B contact and technographic data, and website deanonymization together in one place.\n- Sales Intelligence gives reps account prioritization, list building, people search, and real-time alerts, and the company offers a free way to get started with it.\n- RevvyAI, a conversational assistant, lets teams ask go-to-market questions in plain language and get answers grounded in their own account data.\n- Connectivity is broad, with APIs, data warehouse access, and a newer MCP server, and its signals can flow into everyday tools such as Salesforce, Salesloft, and Gong.\n- Forrester named 6sense a Leader in its Wave report on revenue marketing platforms for B2B in the first quarter of 2026.\n\n6sense is best suited to mid-market and enterprise B2B organizations running coordinated ABM programs where marketing and sales need to act on the same signals. To get the most from it, agree on buying-stage definitions across both teams early, then let those predicted stages decide when advertising should hand off to direct outreach."
+  },
+  {
+    "slug": "accint",
+    "status": "site-unreachable",
+    "sources": [
+      "https://mcpservers.org/servers/maxbaluev/accreted-intelligence"
+    ],
+    "moreContext": "Short for Accreted Intelligence, AccInt tackles a problem anyone running coding agents eventually hits: each session starts from scratch, and the lessons from yesterday's run quietly disappear. Rather than leaning on chat transcripts, it keeps a local record of what your agents committed to, did, and achieved, so future work can build on approaches that were actually verified against your results.\n\n- The project frames its Work Model as an asset you own, combining your standards and decisions with the proven work your agents produce.\n- Setup is designed to happen through the agent you already use, since you can paste a single prompt into Claude Code, Codex, Cursor, or OpenCode and it walks you through installation step by step.\n- The guided installer pauses for your consent at key boundaries, a thoughtful touch for developers who want visibility into what changes on their machine.\n- Installers are provided for macOS and Linux through the shell and for Windows through PowerShell, with the code hosted publicly on GitHub.\n- Because the Work Model runs locally, your project history and agent outcomes stay on your own hardware.\n\nAccInt is best for developers who run agents daily on recurring tasks and want them to get better at their specific workflows over time. Start by pointing it at one repetitive job, such as a release checklist, so you can watch reusable paths accumulate before rolling it out more widely. The official site did not respond during our review, so check the GitHub repository for the latest details."
+  },
+  {
+    "slug": "adcreative-ai",
+    "status": "ok",
+    "sources": [
+      "https://www.adcreative.ai"
+    ],
+    "moreContext": "Built for performance marketers who need a steady supply of fresh ads, AdCreative.ai has grown well beyond banners into a broad creative studio covering images, video, copy, and analysis. Its guiding idea is that every asset should arrive with a data-informed prediction of how it will perform, which helps teams decide what deserves a test before any budget is spent.\n\n- Product and fashion photoshoot tools turn ordinary product shots into polished e-commerce imagery and can even place clothing on AI-generated models.\n- UGC-style video generation creates creator-style clips from product photos, a format that is often slow and costly to source through traditional production.\n- Instant Ads can draft a set of ads straight from a landing page URL, making it quick to spin up a campaign for a new launch.\n- A Compliance Checker reviews creatives against brand guidelines and ad platform policies, which helps reduce rejected ads.\n- The company reports earning G2 recognition as one of its fastest-growing products in both 2023 and 2024, and it displays a Google Premier Partner badge.\n\nAdCreative.ai is best for e-commerce brands, agencies, and paid social teams who run frequent creative tests across Meta and Google. A free trial is available, so connect your ad accounts early in it, since Creative Insights becomes far more useful once it can learn from your own historical performance."
+  },
+  {
+    "slug": "adobe-firefly",
+    "status": "ok",
+    "sources": [
+      "https://www.adobe.com/products/firefly.html"
+    ],
+    "moreContext": "Adobe Firefly has grown from a single image model into a hub for image, video, audio, and vector generation that sits right beside the apps creative professionals already rely on. It also lets you choose partner models inside the same interface, so you can compare different looks and approaches in one workspace while keeping your files inside Creative Cloud.\n\n- Alongside Adobe's own models, Firefly offers partner options such as Google's Gemini image model, GPT Image, FLUX, Runway, Kling, and Luma.\n- Firefly Boards provides an infinite canvas for building mood boards and storyboards collaboratively with AI.\n- Video tools go beyond generation to include text-guided editing, upscaling, and translation of audio and video into more than 20 languages.\n- Outputs carry Content Credentials, reflecting Adobe's role as a co-founder of the Content Authenticity Initiative in 2019.\n- It runs on the web and in iOS and Android apps, with work syncing through Creative Cloud so you can start on a phone and finish on a desktop.\n\nFirefly is best for designers, marketers, and video teams who want generative output that flows directly into Photoshop, Premiere, Illustrator, Express, and Lightroom. A free plan offers a limited number of daily generations, so experiment there first, and look at the Custom Models beta if you need a consistent visual style across an entire campaign."
+  },
+  {
+    "slug": "adobe-podcast",
+    "status": "ok",
+    "sources": [
+      "https://podcast.adobe.com",
+      "https://podcast.adobe.com/en/features",
+      "https://podcast.adobe.com/en/plans"
+    ],
+    "moreContext": "Adobe Podcast earned its following by making a hard audio problem feel effortless: you drop in a muddy recording and get back clear, present-sounding speech without touching an equalizer. Because everything runs in the browser, it has become a go-to rescue tool for podcasters, video creators, teachers, and anyone recording voice outside a treated studio.\n\n- The free plan includes Enhance Speech, Studio, and Mic Check, which makes it easy to try the whole workflow before paying anything.\n- Mic Check analyzes microphone distance, gain, background noise, and echo, then rates your setup and suggests fixes before you start recording.\n- Premium adds adjustable enhancement strength, so you can keep some natural room character instead of a fully processed sound.\n- Paid users can enhance video files such as MP4 and MOV directly and process several files in bulk, a real time saver for video editors.\n- On Premium, Studio recordings can be downloaded as original tracks separated by speaker, giving editors clean material to refine in other software.\n\nAdobe Podcast is best for solo creators, educators, and small teams who need dependable voice cleanup without learning audio engineering. For the most natural results, run Mic Check first and fix whatever it flags, because Enhance Speech performs best when the source recording is already reasonably close and clean."
+  },
+  {
+    "slug": "afforai",
+    "status": "ok",
+    "sources": [
+      "https://logically.app/",
+      "https://www.capterra.co.uk/software/1056281/afforai",
+      "https://outilstice.com/logically-ia-recherche-redaction-documentaire/"
+    ],
+    "moreContext": "Afforai has since evolved into Logically (logically.app), a reworked research workspace that keeps the original promise of grounded, citable AI answers while adding collaborative writing. Its appeal is the way it joins jobs researchers usually split across several apps: collecting sources, reading and annotating them, asking questions, and drafting with citations already in place.\n\n- Uploads go well beyond PDFs, with reviewers noting support for DOCX, EPUB, and web URLs as research material.\n- Integration with scholarly databases such as Semantic Scholar opens access to millions of journal articles without leaving the workspace.\n- A built-in bibliography generator handles multiple citation formats, cutting down the tedious formatting work at the end of a paper.\n- Reviews report connections with Notion, Zotero, Google Docs, and Obsidian, so it can slot into an existing note-taking and writing setup.\n- Collaborative document editing lets research partners or lab groups work on the same draft right beside their shared library.\n\nLogically is best for graduate students, academics, and analysts who live in literature reviews and want AI help that stays tied to their sources. A free plan with some limits is reported, so start by bringing in a library you already know well and check how precisely its answers point back to the passages you trust."
+  },
+  {
+    "slug": "ahrefs-ai",
+    "status": "ok",
+    "sources": [
+      "https://ahrefs.com"
+    ],
+    "moreContext": "Ahrefs has spent more than 15 years building one of the largest independent datasets on the web, and its recent AI features turn that depth into faster answers rather than more dashboards. It now covers both classic search and the newer world of chatbot answers, making it a strong single home for SEO and AI visibility work.\n\n- Ask Ahrefs, a built-in assistant, answers questions in plain language and runs data queries for you, and it is available during its beta on Lite and higher plans.\n- An SEO MCP server and API let teams bring Ahrefs data into ChatGPT, Claude, Copilot, or their own internal tools.\n- The company says AhrefsBot crawls roughly 8 billion pages a day and cites Cloudflare Radar in calling it the top SEO crawler.\n- Newer modules such as Bot Analytics and AI-assisted technical SEO patches help teams fix site issues without waiting on developers.\n- A useful set of free tools, including an AI visibility checker, writing helpers, a browser extension, and web analytics, sits alongside free Academy courses and certification.\n\nAhrefs is best for in-house SEO teams, agencies, and content marketers who want dependable data across Google and AI assistants, and the company says marketers at 44 percent of the Fortune 500 use it. Pair Brand Radar with Rank Tracker so you can see how traditional rankings and AI citations move together after each content update."
+  },
+  {
+    "slug": "aider",
+    "status": "ok",
+    "sources": [
+      "https://aider.chat"
+    ],
+    "moreContext": "Aider earned a loyal following by treating git as a first-class citizen: every change it makes lands as a clean commit you can review, diff, or undo with tools you already know. Created by Paul Gauthier, it stays deliberately lightweight, running in your terminal and letting you bring whichever model suits the job, including local ones.\n\n- It works with more than 100 programming languages, from Python and JavaScript to Rust, Go, C++, and PHP.\n- After each edit it can run your linters and test suite, then fix the problems they report, which keeps its changes honest.\n- Watch mode lets you request edits from inside any IDE or editor simply by writing comments in your code.\n- You can add images and web pages to the chat for extra context, or describe features and fixes by voice.\n- The project says Aider wrote 88 percent of the new code in one of its own releases, and it maintains public LLM coding leaderboards that are handy when choosing a model.\n\nAider is best for developers who are comfortable in the terminal and want an assistant that respects their existing git habits. Installation takes a single pip command, and a good practice is to add only the files relevant to a task to the chat, letting the repo map supply wider context while keeping token costs down."
+  },
+  {
+    "slug": "ai-dungeon",
+    "status": "ok",
+    "sources": [
+      "https://aidungeon.com",
+      "https://apps.apple.com/us/app/ai-dungeon/id1491268416"
+    ],
+    "moreContext": "AI Dungeon helped invent AI-native gaming, and its maker Latitude has kept refining it into a polished storytelling playground that rewards curiosity. Where many chatbots lose the thread, it leans on dedicated memory tools so long campaigns stay coherent, whether you are running a gothic horror tale or a lighthearted space romp.\n\n- Story Cards and Memory Banks hold important characters, places, and facts, then bring them back into the story only when they become relevant.\n- A large library of community-written scenarios spans sci-fi, romance, fantasy, horror, and more, so there is always a ready-made world to jump into.\n- You can rewind any decision at any time, which turns experimenting with risky choices into part of the fun.\n- The app pairs with AI image generators to illustrate moments as your adventure unfolds.\n- It plays on the web and in an ad-free iOS app for iPhone and iPad, and the free tier offers a sizable context window, with a one-week premium trial for players who want more.\n\nAI Dungeon is best for interactive fiction fans, tabletop roleplayers, and writers who enjoy improvising with a creative partner. Spend a few minutes filling in Story Cards for your main characters and setting before you begin, since that upfront detail pays off in more consistent and surprising stories later."
+  },
+  {
+    "slug": "ai-image-cleaner",
+    "status": "ok",
+    "sources": [
+      "https://ai-image-cleaner.com"
+    ],
+    "moreContext": "For quick photo fixes that do not justify opening a full editor, AI Image Cleaner keeps things refreshingly simple: paint over what you do not want, and AI inpainting fills the gap with matching background. Everything happens in the browser, so it works just as well on a borrowed laptop as on your own machine.\n\n- You can upload images and paint masks for free without a credit card, which lets you test it on your own photos before spending anything.\n- Signing in with Google grants starter credits that cover a few cleans, and the site refunds credits when a job fails.\n- An eraser, undo and redo controls, and a before and after preview give you fine control before you download the result.\n- It accepts common formats such as JPG, PNG, and WebP, and automatically resizes oversized images so they process without fuss.\n- The site states that uploaded images are not sold, and a dedicated privacy page explains how files are handled.\n\nAI Image Cleaner is best for casual users, online sellers, and social media managers who need to remove a stray person, logo, or caption from an occasional photo. For cleaner fills, brush slightly beyond the edges of the object you want gone, which gives the AI more surrounding texture to blend from."
+  },
+  {
+    "slug": "ai-image-to-prompt",
+    "status": "ok",
+    "sources": [
+      "https://aiimagetoprompt.org/"
+    ],
+    "moreContext": "Working out how to describe the look of a reference image is one of the slower parts of using image generators, and AI Image to Prompt shortens it to a single upload. It reads subject, composition, lighting, and style, then formats the description for the model you actually plan to use, giving you a clean draft to tweak instead of a blank prompt box.\n\n- Output styles are tailored to specific generators, including Midjourney descriptors with parameters, Stable Diffusion tags with a negative prompt for SD and ComfyUI, Flux, and Nano Banana.\n- You can choose between a Fast mode and a more detailed Advance mode depending on how much nuance you need.\n- Prompts can be written in eight languages, including Spanish, French, German, Japanese, Korean, Portuguese, and Chinese, though the site sensibly notes that most models respond best to English.\n- No account is required, and the site says uploaded images are deleted after processing rather than stored or used for training.\n- Images can be added by file upload, clipboard paste, or URL, and a prompt history keeps earlier results close at hand.\n\nAI Image to Prompt is best for designers, illustrators, and content creators who build mood boards or need consistent visual direction across a series. Treat the output as a starting point: generate once, then swap in your own subject or brand details while keeping the lighting and style language that captured the reference."
+  },
+  {
+    "slug": "ai-music-api",
+    "status": "ok",
+    "sources": [
+      "https://aimusicapi.org/"
+    ],
+    "moreContext": "For developers who want music generation inside their own product without juggling several vendor contracts, AI Music API offers one unified REST interface to multiple third-party music models. Switching models takes a single parameter change, which makes it easy to compare output quality and cost for a particular use case.\n\n- Requests can steer genre, mood, tempo, duration, and instrumentation, and several models can sing either your supplied lyrics or lyrics written from your prompt.\n- Long-running jobs return a task ID for polling, or you can register a webhook to be notified the moment a track finishes or fails.\n- Official SDKs for Python and JavaScript, plus documentation that helps you pick a model, shorten the path from signup to a first track.\n- A free tier requires no credit card, and failed generations do not use up credits.\n- Output arrives as MP3 by default, with WAV or FLAC on some models, and the site says generated music is licensed for commercial use.\n\nAI Music API is best for app builders, game studios, and content platforms that need songs or background music generated on demand. Prototype on the free tier with short durations, then settle on the model that suits your genre before scaling, since cost depends on model and track length. The service describes itself as independent and not affiliated with the model providers it connects to."
+  },
+  {
+    "slug": "aiva",
+    "status": "ok",
+    "sources": [
+      "https://www.aiva.ai"
+    ],
+    "moreContext": "Founded in Luxembourg in 2016, AIVA was among the first AI composers to be registered with a music rights society (France's SACEM), and that composer-first heritage still shows in how it works. Rather than handing you a finished audio file and walking away, it gives you a structured composition you can reshape note by note.\n\n- You can upload your own audio or MIDI as an influence, and AIVA will compose new pieces that follow its feel and structure.\n- Custom style models let you build a reusable sound of your own on top of more than 250 built-in styles.\n- Licensing is unusually clear, with tiers that move from attribution-required free use to limited social media monetization and, on Pro, full ownership of the copyright.\n- The free plan needs no credit card and includes MP3 and MIDI downloads, so you can try the editor on real projects.\n- MIDI export makes it simple to carry a composition into your own DAW and replace instruments with your preferred sound libraries.\n\nAIVA is best for game developers, indie filmmakers, YouTubers, and composers who want a capable sketching partner for themes and underscores. A practical approach is to generate several short variations, pick the strongest melody, then export the MIDI so you can arrange and produce it with your own instruments."
+  },
+  {
+    "slug": "akkio",
+    "status": "ok",
+    "sources": [
+      "https://www.akkio.com"
+    ],
+    "moreContext": "Akkio has sharpened its focus over time, moving from general no-code machine learning toward an AI platform built specifically for media agencies and data providers. It now frames its work around the full campaign cycle, from strategy and audience building through media planning, activation, and measurement, all running on the agency's own data.\n\n- Built-in workflows cover campaign strategy, audience building, propensity modeling, media mix modeling, and performance measurement in one environment.\n- Chat with Data lets planners and strategists question their datasets in plain language instead of waiting on an analytics team.\n- It is designed to embed in your own cloud environment, with role-based access controls, observability, and SOC 2, HIPAA, and GDPR compliance badges.\n- One-click audience activation and media plan simulation help teams move from insight to a live campaign quickly.\n- The company highlights partnerships with Havas and LG Ad Solutions and lists agencies such as Horizon Media and dentsu among its users.\n\nAkkio is best for agencies, holding companies, and data providers that want to offer AI-driven planning and insights to clients without building the stack themselves, and it is also expanding into retail media networks. Bring a real campaign dataset to your demo so you can see how its modeling and reporting handle your actual audiences and results."
+  },
+  {
+    "slug": "albert-ai",
+    "status": "ok",
+    "sources": [
+      "https://albert.ai"
+    ],
+    "moreContext": "Albert was one of the earliest platforms to hand day-to-day paid media management over to AI, and it remains focused on that idea: let the machine handle constant bidding and budget decisions so people can concentrate on strategy and creative. Now owned by Zoomd, it plugs into existing ad accounts rather than asking teams to rebuild campaigns from scratch.\n\n- Channel coverage spans Google Ads, Meta, Instagram, YouTube, TikTok, Bing, and DV360, which the company says reaches about 90 percent of the biddable universe.\n- It shifts spend automatically as audience segments rise or fall in performance, rather than waiting for a weekly review.\n- Real-time creative performance data feeds back into which ad variations earn more exposure.\n- The company says onboarding into existing ad accounts typically takes weeks rather than months.\n- Published case studies span retail, financial services, insurance, and packaged food brands, including Crabtree and Evelyn and Interactive Investor.\n\nAlbert is best for mid-size and enterprise advertisers spending across several paid channels who want always-on optimization without growing their media team. Give it clear business goals and enough budget room to explore, since autonomous systems learn faster when they are not boxed in by overly tight manual constraints."
+  },
+  {
+    "slug": "alphasense",
+    "status": "ok",
+    "sources": [
+      "https://www.alpha-sense.com"
+    ],
+    "moreContext": "AlphaSense has become a research backbone for investors and corporate strategists because it pairs an enormous premium content library with AI that shows its work. Bringing Tegus into the fold added a deep archive of expert call transcripts to the same search experience as filings and broker research, so analysts get primary insight right alongside public data.\n\n- The company says its library spans more than 500 million premium documents, from filings and broker research to private and public financial data.\n- Deep Research and SuperAnalyst apply reasoning models across those sources, monitoring topics around the clock and returning answers with sentence-level citations.\n- Outputs go beyond search, with tools that draft slide decks and reports, build Excel financial models, and populate PowerPoint through dedicated add-ins.\n- Enterprise Intelligence lets firms search their own internal content alongside external sources in one place.\n- Forrester named it the only Leader in its Wave on market and competitive intelligence platforms for Q3 2026, and the company says more than 8,000 enterprises rely on it.\n\nAlphaSense is best for hedge funds, private equity and banking teams, consultants, and corporate strategy groups who need fast, defensible answers. Set up topic monitors for your coverage list early, so earnings commentary and expert views reach you automatically, and use the iOS and Android apps to keep that feed close at hand."
+  },
+  {
+    "slug": "amazon-q-developer",
+    "status": "ok",
+    "sources": [
+      "https://aws.amazon.com/q/developer"
+    ],
+    "moreContext": "Amazon Q Developer stands out because it understands AWS as deeply as it understands code, so the same assistant that writes a feature can also explain a costly resource or help investigate an incident. It reaches developers wherever they work, from the IDE and terminal to the AWS console, team chat, and code hosting platforms.\n\n- Plugins cover VS Code, JetBrains IDEs, Visual Studio, and Eclipse in preview, and the command line tool adds terminal autocompletions, chat, and natural-language-to-bash translation.\n- Transformation agents take on big modernization chores such as Java version upgrades and porting .NET applications from Windows to Linux.\n- An Amazon Q panel in the AWS Management Console, including the mobile console app, helps with cost optimization, architecture guidance, and networking issues.\n- It works inside Slack and Microsoft Teams for operational troubleshooting, and connects with GitHub and GitLab Duo for code reviews and feature work.\n- A perpetual free tier includes a monthly allowance of agentic chats and code transformation, and Pro respects existing IAM Identity Center roles and permissions.\n\nAmazon Q Developer is best for teams building and running on AWS who want one assistant spanning code, infrastructure, and operations. Note that AWS plans to end support for the IDE plugins on April 30, 2027 and points developers to Kiro for agentic coding, so new adopters should plan for that path while making the most of the console and transformation features today."
+  },
+  {
+    "slug": "anara",
+    "status": "ok",
+    "sources": [
+      "https://anara.com"
+    ],
+    "moreContext": "Anara is designed for research where every sentence needs to hold up to scrutiny, which is why its answers point to the exact passage they came from. Backed by Y Combinator, it has grown into a full research environment that searches the literature, organizes your library, extracts data, and helps you write, with citations attached at every step.\n\n- Literature search covers more than 300 million papers, including PubMed and clinical trial registries, with filters for journal, year, and citation count.\n- Extraction tables turn a folder of papers into a structured grid with one row per paper and cited cells, ready to export to CSV or Excel.\n- Writing tools suggest citations from your library and export to Word or LaTeX with BibTeX references, and a Microsoft Word add-in is available.\n- Integrations reach Zotero, Mendeley, Google Drive, OneDrive, Dropbox, and Slack, along with sources such as arXiv, bioRxiv, and ClinicalTrials.gov.\n- It runs on the web, iOS, and desktop, and offers an API and MCP server so coding agents can search papers and resolve citations.\n\nAnara is best for PhD students, academic labs, and life sciences R&D teams who need auditable answers drawn from sources they trust. Organize papers into folders by research question before you start chatting, since scoping a query to one folder keeps answers focused and makes extraction tables far more useful."
+  },
+  {
+    "slug": "anyword",
+    "status": "ok",
+    "sources": [
+      "https://www.anyword.com"
+    ],
+    "moreContext": "Anyword's guiding idea is that marketing copy should be judged by data before it goes live, and it backs that idea with a large dataset of real A/B test results. Operated by Keywee in New York, it has grown into a broader content platform that blends generation, brand governance, and performance prediction for go-to-market teams.\n\n- Content Intelligence compares what you have already published against industry-specific test data to show where messaging could perform better.\n- Website Automation personalizes on-site messaging at scale, extending its predictive approach beyond ads and emails to landing pages.\n- A Chrome extension and integrations with ChatGPT, Notion, and Google Gemini bring its guidance into tools teams already use every day.\n- An API offers performance predictions and performance-based retrieval for teams building their own AI apps and agents.\n- Enterprise options include a private model, SSO, role-based access, and stated SOC 2 and ISO 27001 compliance, and the company says customer data is never used to train third-party models.\n\nAnyword is best for performance marketers, content teams, and agencies who want a defensible reason to choose one variation over another, and it carries a G2 Leader badge from Winter 2024. Set up Brand Voice with your audience profiles and guidelines before generating anything, so every score reflects your real audience rather than a generic one."
+  },
+  {
+    "slug": "apify",
+    "status": "ok",
+    "sources": [
+      "https://apify.com"
+    ],
+    "moreContext": "Apify has built one of the most complete homes for web data, combining a large store of ready-to-run scrapers with the infrastructure to run them reliably at scale. It also serves developers who prefer to build their own, since its open-source Crawlee library and SDKs make custom crawlers far less painful to maintain.\n\n- A hosted MCP server lets AI clients such as Claude, ChatGPT, and Cursor discover and run Actors directly, turning live web data into a tool for agents.\n- Crawlee, Apify's open-source crawling library, comes with Playwright, Puppeteer, Cheerio, and BeautifulSoup templates for building your own scrapers.\n- Developers can publish Actors to the store and earn from them, while Apify handles hosting, billing, and distribution.\n- Client libraries for JavaScript and Python, plus a command line tool, make it easy to call Actors from your own code or data pipelines.\n- The free plan needs no credit card and renews a monthly usage credit, pausing rather than billing when it runs out, and discounts are offered for startups, students, and nonprofits.\n\nApify is best for growth teams, data analysts, and AI builders who need structured data from websites without running scraping infrastructure themselves. Before writing a custom scraper, search the store for an existing Actor for your target site, since a maintained one usually saves hours and keeps working when the site changes."
+  },
+  {
+    "slug": "apollo-io",
+    "status": "ok",
+    "sources": [
+      "https://www.apollo.io"
+    ],
+    "moreContext": "Apollo.io has earned its place in so many sales stacks by bundling data, outreach, and now AI agents into one product that a small team can realistically run. Its newer agent features aim to carry prospecting from a stated goal all the way to a booked meeting, learning a company's ideal customer profile and playbooks along the way.\n\n- The AI Context Center trains its agents on your ideal customer profile, products, and playbooks, so research and outreach reflect how your team actually sells.\n- Apollo Anywhere brings its data and actions into Gmail, the browser through a Chrome extension, your CRM, and AI assistants such as ChatGPT and Claude.\n- Waterfall enrichment pulls from multiple sources to fill gaps in contact and company records, and the company says its data is refreshed regularly.\n- Beyond email, it includes a dialer, call recording, conversation intelligence, deal management, lead scoring, and website visitor identification.\n- Listed security credentials include SOC 2 Type II, ISO 27001, and GDPR and CCPA compliance, and the company cites more than 200 integrations.\n\nApollo is best for startups, SMB sales teams, and lean growth teams that want prospecting, engagement, and pipeline tools without stitching several vendors together, and the company says more than 600,000 companies use it. A free plan needs no credit card, so begin by defining your ideal customer profile carefully, since sharper inputs make every agent recommendation and list more useful."
+  },
+  {
+    "slug": "aragon",
+    "status": "ok",
+    "sources": [
+      "https://www.aragon.ai"
+    ],
+    "moreContext": "Aragon has made the professional headshot remarkably painless: pick attire and backgrounds, upload a few selfies, and receive a full set of polished portraits in roughly half an hour. It has also grown into a broader AI photo studio, with themed packs and editing tools that go well beyond the classic LinkedIn shot.\n\n- Orders can include up to 100 headshots, giving you plenty of variety in expression, outfit, and setting to choose from.\n- Themed packs cover occasions such as graduation, travel, modeling, and holiday portraits, alongside the core professional style.\n- A large set of editing tools, including background changing, object erasing, upscaling, and photo restoration, helps you polish results without opening another app.\n- Team features keep headshots consistent across a company, with brand customization options and integrations that the company says connect to thousands of apps.\n- It shows strong ratings on Google and Trustpilot, and the company says millions of professionals and teams have used it.\n\nAragon is best for job seekers, consultants, real estate agents, and companies that want a uniform look across their team page without booking a studio. The site notes that photo quality matters more than quantity, so upload a handful of sharp, well-lit selfies from varied angles and skip heavy filters for the most convincing results."
+  },
+  {
+    "slug": "arcads",
+    "status": "ok",
+    "sources": [
+      "https://www.arcads.ai"
+    ],
+    "moreContext": "Arcads has become a favorite of performance marketers because it treats the actor as the heart of the ad, offering a big cast of realistic AI performers who can deliver a script with the right emotion. It has since grown into a broader ad studio where teams can generate, edit, localize, and remix video creative in one place.\n\n- A library of more than 1,000 AI actors is joined by custom avatars that can hold your product, demo your app, or wear your clothing.\n- Translation and localization in over 30 languages make it practical to adapt a winning ad for new markets.\n- Leading image and video models such as Seedance, Kling, Nano Banana, and GPT Image are available inside the platform.\n- A new infinite canvas workflow lets teams arrange tools and ad pipelines side by side to create, test, and scale creative together.\n- Utility tools such as captions, actor swapping, voice changes, video extension, and background removal help refresh existing ads quickly.\n\nArcads is best for D2C brands, app studios, and agencies that test many hooks each week on TikTok, Meta, and YouTube. A free trial is available, so write several distinct opening lines for the same offer and run them with different actors, since the hook and the messenger often matter more than the rest of the script."
+  },
+  {
+    "slug": "argil",
+    "status": "ok",
+    "sources": [
+      "https://www.argil.ai",
+      "https://www.argil.ai/blog/movie-generator-c69c3"
+    ],
+    "moreContext": "Argil has evolved from an AI clone tool into a full AI video studio built around consistent characters, which solves one of the most frustrating problems in generative video. You cast a character once, and its face, body, and voice stay the same across every video, giving creators and brands a recognizable recurring presence.\n\n- A director agent drafts the storyboard, picks suitable models, and generates each shot, taking much of the production planning off your plate.\n- Art direction tools let you define locations, props, and a house style that carries through every render.\n- Cuts, motion, and captions come together on a single editing timeline, so you can refine the final video without exporting to another editor.\n- It draws on leading generation models, including Seedance for video and Nano Banana for images, inside one workflow.\n- Agent connections such as Claude and Grok let you work with Argil from AI assistants you already use, with ChatGPT support listed as coming soon.\n\nArgil is best for founders, creators, and social teams who want a steady stream of episodic or personality-driven video without repeated filming days. Invest time in casting and art direction before your first project, since a well-defined character and house style pay off across every video that follows, and higher tiers add hands-on help from the Argil team."
+  },
+  {
+    "slug": "artbreeder",
+    "status": "ok",
+    "sources": [
+      "https://www.artbreeder.com",
+      "https://toolsforhumans.ai/ai-tools/artbreeder",
+      "https://aitoolscoop.com/tool/artbreeder/"
+    ],
+    "moreContext": "Artbreeder helped introduce a whole generation to AI art through playful image blending, and it still offers one of the most exploratory creative experiences around. Instead of relying only on prompts, it invites you to mix, branch, and collage your way toward an image, which makes it especially good for discovering ideas you would not have thought to type.\n\n- Splicer, the original blending tool, lets you adjust traits like age, lighting, and color with sliders, and its newer version adds a visual tree for branching edits.\n- Collager turns rough arrangements of shapes and images into finished artwork guided by a short prompt, a friendly approach for people who think visually.\n- Composer adds text-to-image generation, reportedly built on SDXL, and can mix reference images with text descriptions.\n- Patterns blends motifs with descriptions to create distinctive textures that suit textile, graphic, and game designers.\n- A large public gallery lets you browse and build on images others have shared, which keeps the platform feeling like a collaborative studio.\n\nArtbreeder is best for character designers, worldbuilders, tabletop gamers, and writers who want quick visual references for people and places. A free tier is available to get started, and a good habit is to begin from a public image close to your idea, then branch it with small slider changes rather than starting from scratch."
+  },
+  {
+    "slug": "article-forge",
+    "status": "ok",
+    "sources": [
+      "https://www.articleforge.com"
+    ],
+    "moreContext": "Article Forge has been in the automated writing business longer than most AI tools, and it stays focused on one job: turning a keyword into a complete, structured article with minimal effort. It is built by machine learning researchers at Glimpse.ai, who say the product draws on more than a decade of AI research.\n\n- The company says each article is researched, planned, and written in about a minute, and drafts can be extended much further in the built-in editor.\n- Real-time research lets it cover current topics rather than relying only on older training data.\n- Bulk generation can produce large batches of articles in one go, which suits sites that need to build out many pages at once.\n- An API lets teams plug article generation directly into their own content pipelines, and automatic posting to blogs is included.\n- A free trial, plus a money-back guarantee for light users, makes it low risk to evaluate on your own niche.\n\nArticle Forge is best for niche site owners, affiliate marketers, and agencies that need a dependable volume of first drafts across many topics. For the strongest results, add specific instructions with each keyword and give every article a human pass for accuracy, voice, and fresh examples before it goes live."
+  },
+  {
+    "slug": "arvow",
+    "status": "ok",
+    "sources": [
+      "https://arvow.com"
+    ],
+    "moreContext": "Arvow bundles several jobs that SEO teams usually spread across separate tools, from writing and publishing to technical fixes, link building, and AI visibility tracking. Its agents are designed to keep working in the background, which makes it appealing for teams that want steady progress without daily manual effort.\n\n- The AI SEO Agent handles technical improvements such as schema markup, meta titles and descriptions, internal linking, image alt text, and canonical URLs.\n- An AI Visibility Tracker follows brand mentions and sentiment across ChatGPT, Perplexity, Gemini, Claude, Grok, and Google AI Overviews.\n- Content can be generated in more than 150 languages, a real advantage for agencies serving international clients.\n- Direct publishing works with WordPress, Shopify, Wix, Ghost, Webflow, Framer, Squarespace, and more, plus Zapier and webhooks, and new articles can be submitted to Google through Search Console.\n- Autoblog turns RSS feeds, keywords, YouTube videos, or news into fresh posts, and local businesses can automate Google Business Profile posts and review replies.\n\nArvow is best for agencies, local businesses, and lean marketing teams who want ongoing SEO execution without hiring a large content staff. Connect Google Search Console on day one, since its AI chat can then review your real query data and steer the content agent toward keywords where you are closest to ranking."
+  },
+  {
+    "slug": "askyourpdf",
+    "status": "ok",
+    "sources": [
+      "https://askyourpdf.com"
+    ],
+    "moreContext": "AskYourPDF first became popular as an easy way to chat with documents inside ChatGPT, and it has since grown into a broad document assistant available on nearly every platform you might use. Its strength is reach: you can work with the same files from the web, your phone, your browser, or your reference manager.\n\n- Apps for iOS and Android, a Chrome extension, a Zotero plugin, and a ChatGPT GPT give you several ways to reach your documents.\n- Questions can span several documents at once, returning answers, summaries, and exact quotes you can verify.\n- An AI Form Filler completes both fillable and non-fillable PDFs using information from another document or pasted text.\n- A website chatbot can be trained on your site and documents, embedded with a single line of code, and set to open support tickets when it cannot answer.\n- More than 40 free writing tools, including a literature review writer and a thesis statement generator, are available without signing up.\n\nAskYourPDF is best for students, researchers, and professionals who juggle many PDFs and want quick, quotable answers, and the company says more than 5 million people use it. Uploads include PDF, PowerPoint, EPUB, and RTF files, so gather related documents into one library before asking cross-document questions for the most complete answers."
+  },
+  {
+    "slug": "assemblyai",
+    "status": "ok",
+    "sources": [
+      "https://www.assemblyai.com",
+      "https://www.assemblyai.com/models",
+      "https://www.assemblyai.com/security"
+    ],
+    "moreContext": "AssemblyAI has grown from a transcription API into a full voice AI platform, covering recorded audio, live streams, and speech-to-speech voice agents under one developer-friendly roof. Its focus on clean APIs and steady model improvements has made it a common foundation for meeting tools, contact center products, and media apps.\n\n- The Universal model family supports 99 languages for pre-recorded audio, while dedicated streaming models handle real-time use with native code switching across major languages.\n- A Voice Agent API runs speech-to-speech agents over a single WebSocket connection, simplifying one of the trickiest parts of building conversational products.\n- Built-in guardrails include PII redaction, profanity filtering, and content moderation, and speaker diarization is available for both recorded and streaming audio.\n- An LLM Gateway applies frontier language models to transcripts, so products can summarize, extract, and answer questions about audio in one workflow.\n- New accounts receive free credits for API usage, and the company says it holds SOC 2 Type 2 certification.\n\nAssemblyAI is best for developers and product teams building anything that needs to hear, understand, or speak with users. Start with the free credits on a sample of your real audio, including the accents and background noise typical of your users, since that is the quickest way to choose the right model and add-ons."
+  },
+  {
+    "slug": "astria",
+    "status": "ok",
+    "sources": [
+      "https://www.astria.ai"
+    ],
+    "moreContext": "Astria started as fine-tuning infrastructure for personalized image generation and has grown into a full studio for e-commerce and fashion visuals, while still offering the API that developers build on. Its tagline, tailor-made AI, captures the idea well: models learn your product, person, or style so results stay consistent from one image to the next.\n\n- Ecommerce Studio creates product photos, on-model fashion lookbooks, and campaign images directly from product references.\n- Reusable models, scenes, and photoshoot templates let brands apply one look across an entire catalog.\n- Consistent model support keeps the same person across different settings, styling, and compositions, a common pain point in AI fashion imagery.\n- A Photoshop plugin, an API, and integrations with ChatGPT and Claude bring Astria into existing creative and development workflows.\n- Headshot training with ready-made photoshoot packs remains available, and an Academy offers course content on using AI for e-commerce and fashion.\n\nAstria is best for online stores, fashion brands, photographers, and developers building avatar or product imagery features. Once your first shoot looks right, save it as a reusable template and apply it across the catalog, so every product page shares the same lighting, setting, and model."
+  },
+  {
+    "slug": "augment-code",
+    "status": "ok",
+    "sources": [
+      "https://www.augmentcode.com",
+      "https://www.augmentcode.com/product/cli",
+      "https://thenewstack.io/?p=22839931"
+    ],
+    "moreContext": "Augment Code built its reputation on context: its engine indexes large, real-world codebases so agents work with your actual services and conventions rather than guesses. That foundation now powers Cosmos, an always-on software delivery system where agents carry work from spec to pull request to verification, with people approving the key steps.\n\n- Cosmos runs agent loops for first-pass code review, ticket-to-PR work, vulnerability remediation, and incident investigation.\n- Agents can be triggered from GitHub, GitLab, Slack, Linear, Jira, schedules, or webhooks, so work starts wherever requests already arrive.\n- Teams can run agents in managed cloud sandboxes, on their own machines, or both, and choose a model per task rather than being tied to one provider.\n- The Context Engine is also available through an MCP server, letting other compatible coding agents tap its semantic codebase search.\n- Auggie, its command line agent, installs through npm and supports both interactive sessions and automated runs, alongside extensions for VS Code and JetBrains.\n\nAugment Code is best for engineering organizations with large or complex codebases that want agents to share context, permissions, and audit trails. Harness was reported in October 2026 to have acquired Cosmos, Auggie, and the Context Engine, so confirm current plans and roadmap before committing. A good first step is pointing the code review loop at a busy repository, where shared context pays off quickly."
+  },
+  {
+    "slug": "auphonic",
+    "status": "ok",
+    "sources": [
+      "https://auphonic.com"
+    ],
+    "moreContext": "Auphonic has quietly become one of the most trusted names in spoken-word post-production, with testimonials from broadcasters such as ORF and BBC Radio alongside popular independent shows. Its appeal is reliability: you set up a preset once, and every episode comes out balanced, clean, and on target for loudness.\n\n- Multitrack processing creates an optimized mixdown with automatic ducking, a noise gate, and mic bleed removal for multi-host shows.\n- Multilingual speech-to-text, built with Whisper according to a TU Graz testimonial, produces transcripts, shownotes, and chapters in a shareable editor.\n- Video output options include chapters, waveform audiograms, burned-in subtitles, and automatic video cutting.\n- Automatic publishing reaches YouTube, Libsyn, Podbean, SoundCloud, RSS.com, and Acast, and automation runs through Zapier, n8n, Zoom, an API, and a CLI.\n- A white label API lets companies build Auphonic's processing into their own products.\n\nAuphonic is best for podcasters, educators, audiobook narrators, and media teams who publish regularly and want consistent sound without manual mixing. The free plan includes two hours of audio each month, so build a preset for your show with the right loudness target, then reuse it so each new episode only needs an upload."
+  },
+  {
+    "slug": "autopod",
+    "status": "ok",
+    "sources": [
+      "https://www.autopod.fm"
+    ],
+    "moreContext": "AutoPod was made by video editors for video editors, and it shows in how directly it targets the slowest parts of podcast post-production. Because it runs as a set of plugins inside Adobe Premiere Pro, editors keep full control of the timeline while handing repetitive cutting work to automation.\n\n- The Multi-Camera Editor supports up to 10 cameras and 10 microphones, with customizable editing methods, adjustable wide-shot frequency, and saveable presets.\n- Social Clip Creator outputs horizontal, portrait, and vertical formats from a single in and out point, with optional auto reframe, watermarks, and end pages.\n- Batch export makes it practical to produce a full set of social clips from one episode in a single pass.\n- The Jump Cut Editor removes silences based on a decibel threshold you set for your microphones, which suits talking-head and interview content.\n- Users report that a Multi-Camera Editor pass leaves them with something close to a finished edit, ready for final polish in Premiere.\n\nAutoPod is best for video podcast producers, YouTube interview shows, and agencies editing recurring multi-camera content in Premiere Pro. A free trial is available, so save a preset tuned to your show's camera layout and pacing, and every future episode will start from a near-finished edit."
+  }
+]

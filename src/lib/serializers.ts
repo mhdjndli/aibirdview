@@ -9,6 +9,7 @@ export type SerializedTool = {
   tagline: string;
   description: string;
   longDescription: string;
+  moreContext: string | null;
   url: string;
   category: { slug: string; name: string; glyph: string; accent: string };
   pricing: PricingLabel;
@@ -41,7 +42,7 @@ export type SerializedReview = {
   createdAt: string; // ISO
 };
 
-export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features" | "pros" | "cons" | "longDescription" | "reviews"> & {
+export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features" | "pros" | "cons" | "longDescription" | "moreContext" | "reviews"> & {
   features?: string[];
   pros?: string[];
   cons?: string[];
@@ -73,6 +74,7 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
     tagline: tool.tagline,
     description: tool.description,
     longDescription: tool.longDescription,
+    moreContext: tool.moreContext,
     url: tool.url,
     category: {
       slug: tool.category.slug,

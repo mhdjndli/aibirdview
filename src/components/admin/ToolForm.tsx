@@ -9,6 +9,7 @@ type ToolDefaults = {
   tagline: string;
   description: string;
   longDescription: string;
+  moreContext: string | null;
   url: string;
   categorySlug: string;
   pricing: "FREE" | "FREEMIUM" | "FREE_TRIAL" | "PAID";
@@ -108,6 +109,9 @@ export function ToolForm({
           </Field>
           <Field label="Long description" required hint="Used on the tool detail page (under 'What it is').">
             <textarea name="longDescription" required rows={6} defaultValue={initial.longDescription} className={inputCls} />
+          </Field>
+          <Field label="More context from AI BirdView" hint="Editorial section on the detail page. Separate paragraphs with a blank line; start a line with '- ' for a bullet.">
+            <textarea name="moreContext" rows={8} defaultValue={initial.moreContext ?? ""} className={inputCls} />
           </Field>
           <Field label="Website URL" required>
             <input name="url" type="url" required defaultValue={initial.url} className={inputCls} />

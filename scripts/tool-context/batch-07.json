@@ -1,0 +1,297 @@
+[
+ {
+  "slug": "interior-ai",
+  "moreContext": "Few AI design tools deliver usable results as quickly as Interior AI, which turns a single room photo into a photorealistic redesign in roughly 25 seconds. Built and run by indie developer Pieter Levels, it has grown well beyond simple restyling into a compact visualization toolkit for homeowners, designers, and real estate agents.\n\n- A 3D Vision mode keeps the existing layout of the room intact while changing the style, so renders feel grounded in the actual space rather than invented from scratch.\n- Sketch2Image and SketchUp support turn hand-drawn sketches or model screenshots into finished renders, a handy bridge for designers in the early concept phase.\n- Outdoor design covers gardens, patios, and pool areas, extending the same quick workflow beyond the walls of the house.\n- Higher tiers can turn renders into flythrough videos and walkable 3D environments, built with launch partners such as World Labs.\n- The site states that uploaded photos stay private to the user and are not used to train AI models.\n\nInterior AI is best for homeowners planning a renovation, agents who need virtual staging for listings, and designers who want fast concept options to show clients. For the most faithful results, shoot in good daylight from a corner of the room so the AI sees the full layout, and upload JPG, PNG, WebP, or AVIF files, since HEIC photos are not accepted.",
+  "sources": [
+   "https://interiorai.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "introvideo",
+  "moreContext": "IntroVideo strips logo animation down to its essentials: upload a logo, add a title, choose a look, and the AI takes care of motion, lighting, and the timing of the reveal. Because each run is generated fresh rather than pulled from a template, two creators using the same style still end up with distinct results.\n\n- Colors are drawn directly from the uploaded logo, so the finished intro stays on-brand without any manual color matching.\n- Every intro can be produced in 16:9 for YouTube and websites or in 9:16 for Shorts, Reels, and TikTok.\n- The eight styles cover a useful range, from Minimal Clean and Luxury Gold to Cyberpunk, Fire Smoke, and Particle Universe.\n- Dedicated generators target specific needs such as gaming channels, cinematic openers, and app demo videos.\n- Paid, watermark-free downloads include commercial use rights, and the site says creators keep ownership of their videos.\n\nIt is a great fit for YouTubers, streamers, small businesses, and app makers who want a polished opener without learning motion graphics software. New accounts get one free watermarked preview, so test your logo in a style or two before buying credits, and use a clean, high-contrast logo file for the crispest reveal.",
+  "sources": [
+   "https://introvideo.io/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "invideo",
+  "moreContext": "invideo AI has grown from a prompt-to-video generator into what the company now calls an agentic video editor, pairing AI agents with a real multitrack timeline. That makes it equally useful for quick explainers and for more deliberate projects where you want to direct each shot yourself.\n\n- One workspace brings together leading generative models, including Google Veo 3.1, Sora 2, Kling, and Seedance for video, plus ElevenLabs for voice and audio.\n- An editing agent logs uploaded footage, so you can find a specific moment by describing it and apply plain-language edits across several shots at once.\n- Multiplayer editing with live cursors lets teammates work on the same project together, and higher plans include free guest seats for collaborators.\n- Custom agents can take on roles such as scriptwriter, cinematographer, or colorist, and the platform also lets you bring in agents from assistants like Claude, Codex, and Gemini.\n- Mobile apps for iOS and Android sit alongside the web editor, and the company lists SOC 2 and GDPR compliance for business buyers.\n\nIt suits marketers, YouTubers, educators, and small teams who want to move from idea to finished video without stitching several tools together. Upload your own clips next to generated footage and let the editing agent index them first, then describe changes precisely (which scene, what should change) for the cleanest results.",
+  "sources": [
+   "https://invideo.io"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "invoke-ai",
+  "moreContext": "Invoke earned a loyal following among digital artists by putting professional controls on top of open image models. It started life as the open-source InvokeAI project, founded by Kent Keirsey in Atlanta, before adding paid cloud and enterprise tiers, and its canvas-first approach gave creators a level of precision most prompt-box generators never offered.\n\n- The free Community Edition can be installed and run locally, giving artists full control over their models and files without a cloud subscription.\n- A node-based workflow editor lets advanced users chain generation, upscaling, and control steps into repeatable pipelines.\n- Built-in model management keeps checkpoints, LoRAs, and other add-ons organized in one place instead of scattered across folders.\n- The enterprise offering was designed around intellectual property, letting companies train and deploy image models on their own confidential assets with single-tenant hosting and team collaboration.\n\nInvoke is best suited to illustrators, concept artists, and studio teams who want hands-on control rather than one-click results. Note that Adobe announced in late 2025 that it had acquired Invoke, with the team joining its Firefly Foundry work, and invoke.com no longer hosts the product. Anyone interested should check the open-source InvokeAI repository on GitHub for recent release activity before building a workflow around it.",
+  "sources": [
+   "https://app.dealroom.co/news/feed/adobe-acquires-invoke-ai-for-3-8m",
+   "https://www.businesswire.com/news/home/20240104124506/en/New-Invoke-Gives-Businesses-Power-to-Create-Using-AI-Image-Generation-while-Controlling-their-Intellectual-Property",
+   "https://businesswire.com/news/home/20230927492675/en/Invoke-AI-Raises-3.75-Million-Seed-Funding-to-Bring-Artificial-Intelligence-Technology-to-the-Creative-Process",
+   "https://github.com/invoke-ai/InvokeAI"
+  ],
+  "status": "possibly-defunct"
+ },
+ {
+  "slug": "iris-ai",
+  "moreContext": "Born at Singularity University and introduced publicly in a 2016 TEDx talk about building an AI researcher, Iris.ai has spent roughly a decade on the hard problem of making AI dependable for scientific and technical work. The Norwegian company, which calls itself Norway's first AI startup, now focuses on accuracy-sensitive industries such as manufacturing, life sciences, energy, and telecom.\n\n- The product line has grown into three parts: RSpace for complex R&D intelligence, Axion for turning messy data into AI-ready material, and Neuralith for building an AI engine on top of enterprise knowledge.\n- Its approach emphasizes control and consistency, governing what a model is allowed to read and measuring each step of how an answer is produced.\n- Teams run the system on their own documents and internal systems, which matters for organizations handling confidential research.\n- The company publishes its own research, including work on evaluation metrics it calls WISDM and ConSens, and has chosen to ship products rather than sell consulting hours.\n\nIris.ai is best for corporate R&D, IP, and technical knowledge teams who need traceable answers from large, specialized document collections rather than a general chatbot. Start with a well-defined pilot corpus, such as one product line's patents and papers, so your experts can judge extraction accuracy against material they already know well.",
+  "sources": [
+   "https://iris.ai",
+   "https://iris.ai/blog/iris-ai-ten-years-later"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "izotope",
+  "moreContext": "Few audio companies have done as much to make machine learning practical in everyday production as iZotope, whose assistive features listen to your material and propose a sensible starting point you can then refine. The current lineup runs through RX 12 for repair, Ozone 12 for mastering, Neutron 5 for mixing, and Nectar 4 for vocals.\n\n- Each flagship product comes in tiers such as Elements, Standard, and Advanced, so newcomers can start small and upgrade as their needs grow.\n- iZotope says its machine learning models are trained only on licensed datasets and in-house recordings, and that user sessions are never mined for training.\n- Bundles such as RX Post Production Suite and Music Production Suite group the right tools for post-production and music workflows respectively.\n- Metering and analysis tools like Insight 2 and Tonal Balance Control 3 help engineers check loudness and tonal balance against reference tracks.\n- A free plugins collection and free trials let users test the tools inside their own sessions before buying.\n\nIn mid-2026 iZotope moved from Native Instruments to Boris FX, which says existing licenses and subscriptions are honored and the core engineering and support teams remain in place. The suite is ideal for mix and mastering engineers, podcasters, and video editors who need reliable dialogue cleanup. Treat the assistants' suggestions as a first draft: run them, then fine-tune individual modules by ear.",
+  "sources": [
+   "https://www.izotope.com",
+   "https://www.izotope.com/community/blog/joining-boris-fx",
+   "https://musictech.com/news/industry/izotope-joins-boris-fx-exits-native-instruments/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jammable",
+  "moreContext": "Formerly known as Voicify AI, Jammable has grown into one of the largest community libraries for AI voice covers, with the site listing more than 60,000 voices across music, anime, gaming, and cartoon categories. Its appeal is speed and simplicity: pick a voice, drop in a track, and hear the result in seconds.\n\n- Voices can be browsed by language as well as by category, with options spanning English, Spanish, Japanese, Korean, and more.\n- A duet feature combines several voices on a single track, and ready-made trending collaborations make it easy to start from a popular pairing.\n- Custom voice training needs only a short clip of clean vocals, and the site says a personal model is ready within minutes.\n- Usage counts and likes on each model act as a built-in quality signal, helping you find well-tested voices quickly.\n- The company says covers made on the platform have gathered more than 10 billion views across TikTok, YouTube, and Instagram.\n\nJammable is best for creators, meme makers, and music fans who want quick, shareable covers without opening a DAW. For cleaner results, choose songs where the lead vocal is clear rather than buried in heavy effects, and train custom models on dry, noise-free recordings. When sharing covers publicly, keep artists' rights and platform rules in mind.",
+  "sources": [
+   "https://www.jammable.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jasper",
+  "moreContext": "Jasper was one of the first AI writing tools built specifically for marketers, and it has since evolved into what the company calls an agent workspace for marketing teams. Its defining strength is control: brand rules are set once and then shape everything the platform produces.\n\n- A library of more than 100 specialized agents covers work such as SEO content, GEO (optimizing for AI search answers), research, translation, email, and social campaigns.\n- Jasper IQ stores brand voice, style guides, audience profiles, and product knowledge, and teams can keep separate voices for sub-brands, audiences, or regions.\n- Visual Guidelines carry those brand rules into image generation, so visuals stay as consistent as the copy.\n- AI Studio lets teams build their own custom agents and share them across the workspace without technical setup or prompt engineering.\n- An MCP server lets Jasper's brand context travel into other AI tools, and the company describes its architecture as model-agnostic.\n\nJasper is best for in-house marketing teams and agencies that produce content at volume and need it to sound consistently on-brand. The company lists enterprise customers such as Ulta, Morningstar, and Prudential, and a free trial is available. Invest time upfront in filling out brand voice and product knowledge, since every agent draws on that foundation.",
+  "sources": [
+   "https://www.jasper.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jenni-ai",
+  "moreContext": "Jenni AI stands out among academic writing tools for keeping the writer in charge: rather than producing a finished essay, it suggests the next sentence and ties each suggestion back to a real source. The company says more than 6 million academics use it, and its workspace now covers the full arc from literature gathering to final export.\n\n- Autocomplete can be restricted to your own curated library, and you choose which sources inform each section of the draft.\n- Each AI-suggested sentence links to the matching location in the source PDF, which makes fact-checking quick and transparent.\n- Citations can be formatted in more than 10,000 styles, from APA 7th and Chicago to IEEE and Vancouver, and libraries import directly from Zotero and Mendeley.\n- A review feature checks claims against your sources and flags issues, alongside academic proofreading and inline feedback.\n- Real-time co-authoring, comments, version history, and export to .docx, LaTeX, and HTML make it practical for group projects and journal submissions.\n\nJenni is best for graduate students, researchers, and academics who want drafting momentum without giving up authorship. Sign-up is free with no credit card required, so start by importing your reference manager library and limiting autocomplete to those sources for the most trustworthy suggestions.",
+  "sources": [
+   "https://jenni.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jetbrains-ai",
+  "moreContext": "For developers who live in IntelliJ IDEA, PyCharm, WebStorm, or Rider, JetBrains AI has a natural advantage: it is woven into IDEs that already understand a project's structure, types, and refactorings. JetBrains has also opened the platform up considerably, so you can choose the models, and even the agents, that suit you.\n\n- An AI Free tier includes unlimited code completion, local model support, and a small cloud credit quota, and new users can try AI Pro for 30 days.\n- Local models can run through Ollama or LM Studio, which suits teams with strict privacy requirements or offline workflows.\n- Bring-your-own-key support connects your own provider accounts, and current documentation says it works even without a JetBrains AI subscription.\n- JetBrains Air, the company's agent environment, works with Junie as well as third-party agents such as Claude Agent, Codex, and Copilot through the Agent Client Protocol.\n- Organization admins can control which models and agents are available, with permissions set company-wide, per team, or per person.\n\nIt is the obvious choice for teams already standardized on JetBrains IDEs who want AI help without switching editors. Try mixing approaches: use fast completion for everyday typing, and save cloud models or Junie for larger multi-file tasks where deeper reasoning pays off.",
+  "sources": [
+   "https://www.jetbrains.com/ai",
+   "https://www.jetbrains.com/help/ai-assistant/2026.2/supported-llms.html",
+   "https://www.jetbrains.com/de-de/help/ai-assistant/bring-your-own-key-byok.html",
+   "https://sdtimes.com/softwaredev/jetbrains-announces-a-free-tier-for-its-ai-tools"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jpg2excel",
+  "moreContext": "JPG2Excel focuses on a single, surprisingly common chore: getting tables out of photos and scans and into a spreadsheet you can actually edit. It runs in the browser with no sign-up needed for light use, which makes it a handy bookmark for anyone who regularly receives data as images.\n\n- Besides JPG, it accepts PNG, BMP, and TIFF files, pulling them from your device, Google Drive, Dropbox, OneDrive, or a direct image link.\n- Results come out as editable XLSX or XLS workbooks, along with a UTF-8 CSV copy for databases and other tools.\n- The site says its OCR handles 109 languages, including Chinese, Japanese, Korean, Thai, and text in Arabic, Cyrillic, and Devanagari scripts.\n- Batch mode converts up to 10 images in one run, a real time saver for multi-page reports or stacks of receipts.\n- According to the site, uploaded files are used only for the conversion and are deleted right after the result is generated.\n\nIt is a great fit for students digitizing printed tables, office teams handling scanned invoices, and researchers working with photographed documents. Free users get a couple of conversions per day without an account. For the best accuracy, photograph tables straight on in good light, and double-check amounts, dates, and IDs before relying on the output.",
+  "sources": [
+   "https://jpg2excel.app"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "jules",
+  "moreContext": "Jules takes a different approach from in-editor coding assistants: you hand it a task, it works in its own cloud environment, and you return to a plan, a diff, and a pull request. Built by Google and powered by Gemini models, it is designed for the steady backlog of chores that rarely get prioritized.\n\n- Tasks can be assigned with a prompt or simply by adding a \"jules\" label to a GitHub issue, which fits neatly into existing triage habits.\n- Environment snapshots save the result of your setup script, so later tasks start faster instead of reinstalling dependencies every time.\n- Jules Tools, a lightweight command-line interface, lets you start and monitor tasks without leaving the terminal, and an API released in preview opens the door to CI/CD and chat integrations.\n- Because work runs in separate cloud VMs, several tasks can be in progress at once while you focus elsewhere.\n- Higher tiers through Google's Pro and Ultra AI plans raise daily and concurrent task limits substantially and offer earlier access to newer Gemini models.\n\nJules is ideal for developers and small teams on GitHub who want bug fixes, dependency bumps, and test gaps handled in the background. The base plan includes a free daily task allowance, so start with well-scoped issues and add a setup script early, since a reliable environment snapshot makes every later task faster and more dependable.",
+  "sources": [
+   "https://jules.google",
+   "https://jules.google/docs/environment/",
+   "https://venturebeat.com/ai/googles-jules-coding-agent-moves-beyond-chat-with-new-command-line-and-api",
+   "https://www.techradar.com/pro/googles-ai-coding-agent-jules-is-getting-new-command-line-tools"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "julius-ai",
+  "moreContext": "Julius has become a favorite among people who need real analysis but would rather not write code: you ask a question in plain English, and it writes and runs the code behind the scenes. The experience feels like working alongside a patient analyst who shows their work.\n\n- Beyond spreadsheets and CSV files, Julius can connect to databases and warehouses such as PostgreSQL, Snowflake, BigQuery, and Databricks on higher plans, plus ad platforms like Google Ads and Meta Ads.\n- Notebooks save a successful analysis as a reusable workflow, so a monthly sales report can be rerun on fresh data in moments.\n- Recurring reports can be delivered by email or Slack, keeping stakeholders informed without manual exports.\n- Results export to editable PowerPoint, Google Slides, PDF, and image formats, which shortens the path from analysis to presentation.\n- The analysis toolkit goes well past charts, covering regression, forecasting, clustering, and cohort analysis.\n\nJulius is best for marketers, students, researchers, and operations teams who work with data often but are not full-time programmers. A free tier lets you try it out, and you will get better answers if you describe your columns and goal up front (which metric matters, over what period) before asking for charts.",
+  "sources": [
+   "https://julius.ai",
+   "https://www.eesel.ai/blog/julius-ai-pricing",
+   "https://tooliverse.ai/tools/julius",
+   "https://dupple.com/tools/julius-ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "keenious",
+  "moreContext": "Keenious flips the usual literature search around: instead of guessing keywords, you let your own writing or a plain-language description guide discovery. Built on an index curated from OpenAlex, it covers roughly 174 million publications along with authors, journals, and institutions, and it deliberately avoids writing essays, keeping the focus on finding and understanding research.\n\n- Results appear both as a list and as a visual map that groups papers into research areas, which makes it easier to see how a field fits together.\n- Clicking unfamiliar terms or methods inside a paper brings up a plain-language explanation right beside the text.\n- It can translate studies published in other languages, widening the pool of research you can realistically use.\n- Extensions for Microsoft Word and Google Docs bring recommendations into the document you are already writing.\n- Universities can provide Keenious Plus to students and staff through the library, including one-click access to full texts in the library's collection.\n\nIt is best for students, researchers, and librarians who want to surface relevant work that keyword searches tend to miss. Searching, map exploration, and reading are free, so try running it on a draft paragraph and filter for open access or peer-reviewed results to build a solid reading list quickly. It is also worth asking your library whether it already offers Plus access.",
+  "sources": [
+   "https://keenious.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kimi",
+  "moreContext": "Kimi pairs a generous, feature-rich assistant with one of the most closely watched open model families in AI. Moonshot AI released its K3 generation in July 2026 with open weights, native vision, and a context window of about one million tokens, and the app now highlights a K3.1 Pro upgrade aimed at coding and agent tasks.\n\n- K3 is a very large mixture-of-experts model, and independent benchmarker Artificial Analysis ranked it among the top models on its intelligence index at launch.\n- Built-in modes cover Deep Research, slide decks, websites, documents, and spreadsheets, so long-form work goes well beyond plain chat.\n- Kimi Code brings Moonshot's models to the terminal as a coding agent that plans multi-step tasks, runs commands, and integrates with editors such as VS Code and Zed.\n- Agent features including scheduled tasks, projects, and plugins let Kimi handle recurring work rather than only one-off questions.\n- Basic use is free on the web, desktop, and mobile apps, with paid plans for higher limits and advanced features.\n\nKimi is a strong pick for researchers, analysts, and developers who work with long documents or want access to a leading open model family. Upload full reports or codebases rather than excerpts to make the most of its long context, and review the license on the model's Hugging Face page before using the open weights commercially.",
+  "sources": [
+   "https://www.kimi.com",
+   "https://axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic",
+   "https://rits.shanghai.nyu.edu/ai/kimi-k3-open-weights-ship-2-8t-parameters-1-4-tb-to-run/",
+   "https://www.kimi.com/resources/kimi-code-introduction"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kiro",
+  "moreContext": "Built by AWS, Kiro brings structure to AI-assisted coding by turning a prompt into requirements, a design, and a sequenced task list before any code is written. That spec-first habit makes it especially strong on larger features, where an agent that plans ahead tends to produce more maintainable results.\n\n- Kiro reviews requirements for contradictions and gaps, then uses property-based tests to verify behavior across many inputs rather than a handful of examples.\n- Hooks run background tasks on predefined triggers, such as adding unit tests or updating documentation as files change.\n- It now spans an IDE built on Code OSS (with VS Code settings and extensions import), a CLI with a headless mode for CI/CD and pull request reviews, a web app, and a mobile app.\n- Model choice is broad, including Anthropic Claude and OpenAI GPT models plus open-weight options such as DeepSeek, Qwen, and Kimi, with an Auto option that picks a model per task.\n- Support for open standards like MCP, AGENTS.md, and the Agent Client Protocol, plus Powers integrations for tools such as Figma and Terraform, keeps it connected to existing workflows.\n\nKiro is best for developers and teams who want AI speed without giving up engineering discipline, especially on multi-file features and new services. Spend a few minutes reviewing and editing the generated spec before implementation starts, and add steering files with your conventions so every agent run follows them.",
+  "sources": [
+   "https://kiro.dev"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kits-ai",
+  "moreContext": "Kits AI built its reputation on doing AI voice the artist-friendly way: its voice library is made up of royalty-free artists who license their voices and share in the revenue. Operated by Arpeggi Labs, whose research arm develops the flagship Kits VC conversion model, it has grown into a full vocal production toolkit for musicians and producers.\n\n- The licensed library features more than 100 royalty-free artist voices, with artists compensated through dynamic revenue sharing.\n- Beyond voice conversion, the toolkit includes harmony generation, AI vocal removal, vocal enhancement, voice blending, and key and BPM detection.\n- Instant voice cloning and custom singing voice training let you build a model of your own voice for demos and vocal layering.\n- The Kits Earn program lets vocalists create a voice model and earn passive income when others use it.\n- Text-to-speech and speaking voice tools extend the platform to voiceovers, and a desktop app is available alongside the web version.\n\nKits AI is best for songwriters, producers, and vocalists who want quick demos, harmonies, or alternate vocal textures without booking session singers. You can start free without a credit card. For the cleanest conversions, feed it a dry, isolated vocal (the stem splitter helps here) rather than a full mix.",
+  "sources": [
+   "https://www.kits.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kittl",
+  "moreContext": "Kittl began in Berlin under the name Heritage Type before relaunching as a browser-based design platform in early 2022. That typography heritage still shows: Kittl makes sophisticated text effects and print-ready artwork approachable, and it now layers a broad AI creative suite on top.\n\n- The AI Creative Suite includes image, vector, and video generators, plus a background remover, an upscaler, and a vectorizer that turns images into scalable paths.\n- It draws on models from providers such as OpenAI, Google, and ByteDance, so you can pick the right engine for each job.\n- Brand Studio stores your brand once and then generates on-brand ads, social posts, and campaign assets from it.\n- Product mockups and print-ready exports suit merch sellers, and the site highlights users selling on Printify, Printful, Gelato, Etsy, Shopify, and Fourthwall.\n- Real-time collaboration in team workspaces, along with an MCP option and a Creative Agent that builds assets from a single chat, connects Kittl to AI-driven workflows.\n\nKittl is ideal for print-on-demand sellers, small brands, and designers who want polished logos, labels, and merch graphics without a steep learning curve. A free plan lets you get started. A smart workflow is to begin from a template, then run any AI-generated artwork through the vectorizer so it stays crisp at every print size.",
+  "sources": [
+   "https://www.kittl.com",
+   "https://techcrunch.com/2023/01/26/this-startup-hopes-to-take-on-canva-raising-a-11-6m-series-a-for-its-design-platform",
+   "https://dealroom.co/companies/kittl/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "klaviyo-ai",
+  "moreContext": "Klaviyo has long been a go-to marketing platform for ecommerce brands, and its K:AI layer puts that deep store and customer data to work. The company says more than 205,000 brands use Klaviyo, and its AI now spans planning, writing, sending, and even answering customers.\n\n- Composer, Klaviyo's marketing agent, turns a stated goal into a campaign by building the audience, drafting content, and mapping the send strategy.\n- Customer Agent handles shopper questions such as order tracking and product recommendations in 113 languages, and it can be tested before responses reach customers.\n- AI routes each message to the channel most likely to perform across email, SMS, push, and WhatsApp, alongside personalized send times.\n- Hundreds of integrations, with Shopify among the most popular, feed the unified customer profiles behind every prediction.\n- Klaviyo Remix adds an AI photo editor for quickly adapting product imagery to campaigns.\n\nKlaviyo AI is best for direct-to-consumer and ecommerce brands that want data-driven personalization without a dedicated data science team. The free plan for small lists includes a monthly Composer allowance, so try having Composer draft a win-back campaign for customers flagged as high churn risk and compare it with your existing flows.",
+  "sources": [
+   "https://www.klaviyo.com/features/ai",
+   "https://www.klaviyo.com/pricing"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kling-3-0-ai-video-generator",
+  "moreContext": "Kling3 AI offers a straightforward browser studio built around the Kling 3.0 video model, wrapping text-to-video and image-to-video generation in a simple, credit-based interface. It appears to be an independent site rather than the official Kling platform from Kuaishou (which lives at kling.ai), and it gives quick access to the model without navigating a larger creative suite.\n\n- The studio bundles several Kling variants, including Kling 3.0, Kling 2.6 Pro, and Kling Motion Control, so you can match the model to the job at hand.\n- Motion Control transfers movement from a reference clip onto your character, which is handy for dance, gesture, and product demo shots.\n- Everything runs in the browser, so there is nothing to install and no powerful GPU needed on your side.\n- A free starting option lets new users test prompts and styles before committing to a paid plan.\n\nIt suits marketers, social media creators, and indie filmmakers who want fast access to Kling 3.0 for ads, teasers, and short narrative clips. Because this is a third-party service, compare its pricing and terms with the official Kling app before buying credits. For the best multi-shot results, write prompts shot by shot, describing the subject, action, and camera move for each beat.",
+  "sources": [
+   "https://kling3ai.co/",
+   "https://kling.ai/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kling-4-0-ai",
+  "moreContext": "Kling 4.0 AI gathers a wide menu of current video and image models into one browser studio, with Kling 4.0 Pro as the headline option. The site states plainly that it is an independent third-party service operated by CLEANCUT RAZOD LLC, not the official Kuaishou or Kling site, which is a welcome bit of transparency.\n\n- Alongside Kling 4.0 and a faster 4.0 Flash draft mode, it offers Kling 3.0 variants, Kling O3 (Omni), Motion Control, Wan 3.0, and several Seedance models.\n- Image generation is included too, with GPT Image 2.5, Nano Banana 2, and Seedream 5.0 for creating stills or starting frames.\n- Kling 4.0 Pro supports up to nine reference images, first-and-last-frame control, and multi-shot directing with up to six cuts.\n- Output comes in 16:9, 9:16, or 1:1, so a single idea can be produced for YouTube, Reels, and social feeds.\n- Paid users can download a commercial use license certificate, top-up credits are described as never expiring, and new subscriptions carry a 7-day money-back guarantee.\n\nIt is a good fit for creators and small marketing teams who like comparing several leading video models in one place. Use 4.0 Flash to iterate on prompts and framing cheaply, then switch to 4.0 Pro for the final render once the shot is working.",
+  "sources": [
+   "https://kling4pro.com/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kling-4-0-kling-ai-video-generator",
+  "moreContext": "This Kling 4.0 site is built around an ambitious feature set for short-form video: clips of 3 to 30 seconds, a timeline with up to 10 keyframes, and up to 15 combined references spanning images, videos, subjects, and voices. At the time of review, the site noted that Kling 4.0 itself was not yet in its generation catalog, so day-to-day creation runs on Kling 3.0 and other connected models. The site does not state an affiliation with Kuaishou, whose official Kling platform is kling.ai.\n\n- Video models currently available include Kling 3.0, several Seedance 2.x variants, and Veo 3.1 Fast, giving a useful spread of speed and quality.\n- Image models such as GPT Image 2, Nano Banana 2, and Nano Banana Pro help with creating stills and starting frames.\n- The described Kling 4.0 editing tools include replacing characters or scenes, removing elements, and changing style, with aspect ratios up to 21:9.\n- Commercial use licenses are included on the Standard, Plus, and Pro plans and the larger credit packs, and tasks that fail because of platform issues are usually refunded.\n\nIt suits marketers and product teams producing ad concepts and teasers who want several models under one subscription. Check which model is actually selected before generating, and confirm your plan includes commercial rights before using clips in paid campaigns.",
+  "sources": [
+   "https://kling4.tv",
+   "https://kling.ai/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kling-ai",
+  "moreContext": "Developed by Chinese short-video company Kuaishou, Kling AI has become a reference point for realistic AI video, and its official platform (now at kling.ai) has grown into a full creative studio. The latest Kling 4.0 model focuses on audio-visual performance and stable, dynamic motion, while Kling Image 3.0 adds native 4K stills.\n\n- Kling Image 3.0 can generate multi-image series with a consistent style, which is useful for storyboards and campaign sets.\n- A node-based Canvas lets you brainstorm with an agent, write scripts, and generate images, videos, and storyboards in one connected workspace, then run several rounds of post-production edits.\n- A dedicated Motion Control tool transfers movement from reference footage onto characters for precise performances.\n- Agent-driven batch generation can produce several versions of a shot at once, and MCP and CLI access support automated production pipelines.\n- Developers can build on the same models through the official API platform, which offers its own documentation and quick start guide.\n\nKling AI is best for filmmakers, advertisers, and creators who want cinematic realism and are willing to direct their shots with care. Plan a sequence in Canvas before generating, and start from a strong reference image whenever character consistency matters.",
+  "sources": [
+   "https://kling.ai/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kraftful",
+  "moreContext": "Kraftful earned a strong reputation among product managers for turning scattered feedback into clear, prioritized themes, and in July 2025 analytics company Amplitude acquired it with plans to make its capabilities a native part of the Amplitude platform. That move speaks to how well the core idea worked: one place where every review, ticket, and call transcript becomes evidence for roadmap decisions.\n\n- Its documentation lists connectors for sources such as Zoom, Google Meet, app store reviews, G2, Trustpilot, Intercom, Zendesk, HubSpot, Slack, Discord, and Dovetail.\n- Once sources are connected, feedback is collected and analyzed every day, producing an updated list of top feature requests, complaints, and bugs.\n- Insights can flow straight into planning, with support for drafting PRDs and user stories in tools like Jira or Linear.\n- AI-led user interviews and surveys let teams gather fresh qualitative input rather than only mining what already exists.\n- The company has said it serves more than 50,000 product teams.\n\nKraftful is best for product managers and UX researchers juggling feedback from many channels. Its website did not load during our review, so anyone interested today should check Amplitude's product pages for where these capabilities now live. Whichever version you use, start by connecting your two or three noisiest feedback sources so the first themes are meaningful.",
+  "sources": [
+   "https://www.businesswire.com/news/home/20250710876791/en/Amplitude-Acquires-Kraftful-to-Accelerate-AI-Strategy",
+   "https://docs.kraftful.com/",
+   "https://www.producthunt.com/p/kraftful/kraftful-2-0"
+  ],
+  "status": "site-unreachable"
+ },
+ {
+  "slug": "krea",
+  "moreContext": "Krea made its name with real-time generation, where simple shapes and scribbles turn into images almost instantly, and it has since grown into one of the broadest creative AI studios around. The company says more than 30 million people in 191 countries use it, and it lists enterprise customers such as Lego, Samsung, and Nike.\n\n- Access to more than 64 models spans images (including Krea's own models, Flux, Ideogram, and Gemini), video (such as Veo 3.1, Kling, Seedance, Sora 2, and Runway), and 3D mesh generation.\n- The enhancer can upscale images up to 22K using several models, including Topaz options, and video can be upscaled to 8K and interpolated to 120fps.\n- Realtime Canvas now extends to video, rendering frames with consistency as you work.\n- LoRA training teaches Krea a specific face, product, or style from a small set of images, and a node editor chains models into reusable workflows that Pro users can turn into shareable apps.\n- Video tools such as Restyle, Motion Transfer, and Lipsync cover common edits without leaving the platform.\n\nKrea is ideal for designers, art directors, and creators who like to explore visually and want the leading models under one roof. The free plan includes a daily compute allowance with full access to real-time models, so sketch rough compositions in Realtime Canvas first, then send your favorite frame to a higher-end model and the enhancer for final quality.",
+  "sources": [
+   "https://www.krea.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "krikey",
+  "moreContext": "Krikey AI makes 3D character animation accessible to people who have never rigged a model or set a keyframe. The company says more than 100,000 creators, teachers, and marketing teams use it, and its tools now reach well beyond the original text-to-animation feature into talking avatars and full cartoon videos.\n\n- Talking avatar videos can be created from a script, with voiceovers in more than 20 languages and automatic lip sync.\n- Uploading a photo generates a custom 3D character in a chosen style, and a ready-made character gallery covers quick projects.\n- Krikey runs inside Canva and ChatGPT through official apps, so animations can be made where many people already work.\n- Exports include MP4, GIF (with transparent GIFs up to 4K), PNG, and FBX, with export paths to Unity and Unreal for game developers.\n- For schools, the company highlights FERPA and COPPA certification, and it reports SOC 2 Type II compliance for business users.\n\nKrikey is best for teachers building engaging lessons, marketers producing explainer videos, and indie game developers who need quick character motion. A free plan covers talking avatars, so start there. When using video to animation, record your reference movement against a plain background with the whole body in frame for cleaner results.",
+  "sources": [
+   "https://www.krikey.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "krisp",
+  "moreContext": "Krisp built its reputation on noise cancellation that works at the audio level, which means it cleans up your sound in Zoom, Google Meet, Teams, and virtually any other calling app without separate plugins. It has since grown into a full AI meeting assistant and a voice platform for contact centers.\n\n- The meeting assistant records, transcribes, and summarizes calls, tracks action items, prepares agendas, and lets you query transcripts with Ask Krisp.\n- Transcripts and summaries are available in 16 languages, and English transcription runs on-device for added privacy.\n- Notes and action items sync to Salesforce, HubSpot, and Slack, with Zapier, Google Calendar, and Outlook connections as well.\n- Contact center tools add accent conversion, real-time voice translation, agent assist, and speech analytics, and developers can use a self-serve Voice Translation API.\n- The company lists SOC 2, GDPR, HIPAA, and PCI-DSS compliance, which matters for teams in regulated industries.\n\nKrisp is best for remote workers, sales teams, and support centers who spend their days on calls in less-than-quiet places. You can get started for free across desktop, mobile, and a Chrome extension. Add your product names and team jargon to the custom vocabulary (up to 750 terms) so transcripts and summaries get the important words right.",
+  "sources": [
+   "https://krisp.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "kyvenza",
+  "moreContext": "Kyvenza brings two useful ideas together on Apple Silicon Macs: a polished, native virtual machine manager and a built-in MCP server that lets AI coding agents work inside disposable sandboxes instead of on your main system. Built on Apple's Virtualization framework, it runs macOS and Linux ARM guests, with a second engine for Windows 11 on ARM.\n\n- The MCP server exposes 15 tools covering VM lifecycle, snapshots, shell command execution (with exit codes, stdout, and stderr), and screenshots.\n- Safety is designed in: the server listens only on localhost, requires a per-Mac token, and hides destructive tools such as create, clone, and delete until you enable them.\n- Starting a VM through MCP automatically takes a snapshot first, so anything an agent breaks can be rolled back.\n- Linux installers for Ubuntu, Debian, Fedora, and Alpine are downloaded with checksum verification, and any other ARM64 ISO can be attached.\n- Claude Code connects with a single command, and any MCP client that accepts a URL can use it too.\n\nKyvenza is ideal for developers who want AI agents to run builds, tests, or risky commands in isolation on M-series Macs running macOS 14 or later. It is sold as a one-time purchase with a 7-day free trial that needs no account. Set up a clean base VM, snapshot it, and let agents work from clones that Kyvenza reclaims automatically when they expire.",
+  "sources": [
+   "https://kyvenza.com/",
+   "https://kyvenza.com/mcp"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "lalal-ai",
+  "moreContext": "LALAL.AI has earned a loyal following among musicians, DJs, and video editors for stem separation that stays clean even on dense mixes, and its toolkit now covers far more than splitting songs. Its sixth-generation engine and Andromeda stems reflect steady investment in quality, and the service has collected honors including a Webby People's Voice award.\n\n- Stems cover vocals, drums, bass, electric and acoustic guitar, piano, synthesizer, strings, and wind instruments, and a lead and backing vocal splitter adds finer control.\n- Voice Cleaner and the Echo and Reverb Remover rescue spoken audio for podcasts, interviews, and video.\n- Voice Changer and Voice Cloner tools add creative options for voiceovers and ad reads.\n- Desktop apps for Windows, macOS, and Linux, mobile apps for iOS and Android, and VST plugins that run locally inside a DAW let you work wherever you prefer.\n- Video files such as MP4 and MOV are accepted directly, along with lossless audio formats like WAV, FLAC, and AIFF.\n\nLALAL.AI is best for producers sampling or remixing, DJs building edits, karaoke makers, and creators cleaning up dialogue. A free Starter plan lets you preview results before paying. Upload lossless files whenever you can, and try switching between the available neural networks in the settings, since different songs can favor different engines.",
+  "sources": [
+   "https://www.lalal.ai"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "landr",
+  "moreContext": "Based in Montreal and launched in 2014 as one of the first AI mastering services, LANDR has grown into a broad toolkit that helps independent musicians make, finish, release, and promote their music. Its mastering engine was developed by studying how professional engineers work, and the company says it never relies on presets.\n\n- Mastering is available online, in mobile apps, and as a plugin that runs inside your DAW, so you can master without leaving your session.\n- Distribution reaches more than 150 streaming and social platforms with unlimited releases, and artists keep all of their royalties.\n- Sessions streams high-quality audio from your DAW for remote collaboration, and Network connects you with music professionals for hire.\n- LANDR Studio bundles a library of over 3 million royalty-free samples, more than 70 plugins (including a stem separator), and 200+ online music courses.\n\nLANDR is best for independent artists, beatmakers, and home producers who want one path from finished mix to streaming release. Free tools such as the Key and BPM Finder and Beat Maker are an easy way in. For mastering, leave some headroom on your mix and compare a few style and intensity options before you commit.",
+  "sources": [
+   "https://www.landr.com",
+   "https://blog.musehub.com/developer-spotlight-landr/"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "langchain",
+  "moreContext": "LangChain helped define how developers build with large language models, and the company behind it now offers a complete path from open-source frameworks to production operations. It cites more than 350 million monthly open-source downloads and over 7,000 active LangSmith customers, including five of the Fortune 10.\n\n- The open-source lineup now has three layers: LangChain for quick agents with any model provider, LangGraph for low-level control in production systems, and deepagents for long-running, complex tasks.\n- LangSmith combines tracing, observability, and evaluation, so teams can see exactly what an agent did and measure whether a change actually helps.\n- Agent infrastructure in LangSmith covers deployment, sandboxes for running agent-generated code, and an LLM gateway for governing model calls.\n- Fleet gives people across a company a no-code way to build and use agents.\n- The frameworks are maintained for both Python and JavaScript, and the company shares customer results such as Klarna reporting much faster case resolution.\n\nLangChain is best for engineering teams building agents or retrieval apps who want flexibility now and a clear route to production later. Turn on LangSmith tracing from the very first prototype, since real traces and a small evaluation set make every later prompt or model change far easier to judge.",
+  "sources": [
+   "https://www.langchain.com"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "languagetool",
+  "moreContext": "LanguageTool started as Daniel Naber's open-source project about two decades ago and grew, from its base in Potsdam, Germany, into one of the most widely used multilingual writing assistants. Now part of Learneo (alongside QuillBot and Scribbr), it still stands out for treating languages beyond English as first-class citizens.\n\n- It works in Chrome, Edge, Firefox, Opera, and Safari, inside Microsoft Word, Google Docs, LibreOffice, Apple Mail, and Outlook (in beta), and through native apps for macOS and Windows.\n- The AI paraphraser can rewrite sentences to sound more formal, fluent, simple, or concise.\n- A personal dictionary keeps names and specialist terms from being flagged, and team accounts help organizations maintain a consistent brand voice.\n- The company says the browser add-on does not store your text, and its business offering is GDPR-compliant.\n- The site reports millions of users across its Chrome, Safari, and Edge extensions and more than 2,000 organizations as customers.\n\nLanguageTool is ideal for multilingual writers, students, and international teams who switch languages throughout the day. The free version covers spelling and basic style checks. Set your preferred language variant (such as American or British English) and fill your personal dictionary early to cut down on false alarms.",
+  "sources": [
+   "https://languagetool.org",
+   "https://tech.eu/2023/04/05/learneo-adds-languagetool-to-its-stable-of-ai-powered-writing-tools-and-services-in-its-latest-acquisition",
+   "https://en.wikipedia.org/wiki/LanguageTool"
+  ],
+  "status": "ok"
+ },
+ {
+  "slug": "lavender",
+  "moreContext": "Founded by Will Allred and William Ballance, Lavender is built on a simple insight: sales reps write better emails when they get feedback in the moment, not weeks later in a pipeline review. The company describes itself as an email intelligence business and says it has analyzed billions of emails to learn what earns replies.\n\n- The Email Coach runs inside Gmail and Outlook and within sales platforms such as Outreach, Salesloft, and HubSpot, scoring drafts in real time.\n- It learns from your historic emails to understand what works for you and your team, rather than applying only generic rules.\n- Ora, Lavender's AI sales agent, researches prospects and drafts personalized emails modeled on how top sellers write.\n- Managers get a coaching dashboard with team and individual email scores, reply rates, and writing time.\n- The company states it is SOC 2 certified and GDPR-compliant, and it also offers a sales email certification course, a weekly newsletter, and training videos.\n\nLavender is best for SDRs, account executives, and sales leaders who want to lift the quality of outbound email across a team. The coach can be installed for free, so start by reworking a few of your lowest-performing templates with its feedback and compare reply rates over a couple of weeks.",
+  "sources": [
+   "https://www.lavender.ai",
+   "https://lavender.ai/coach",
+   "https://mpost.io/lavender-raises-13-2m-to-accelerate-its-ai-powered-email-coaching-platform-for-sales-teams/"
+  ],
+  "status": "ok"
+ }
+]

@@ -1,0 +1,278 @@
+[
+  {
+    "slug": "scrutator",
+    "moreContext": "Most review sites for AI clippers summarize marketing pages, so a site that actually runs the tools and counts the usable output is a welcome change. Scrutator treats clip makers like products under test, repeating each run on a stage talk, an interview and a screen recording so results reflect different kinds of footage. Its first edition launched as a research preview in October 2026, and the site states that it has no affiliation with the vendors it covers.\n\n- Its weighted scorecard splits points across clip quality, captions, automation, value and usability, so you can see exactly where a tool earns or loses ground.\n- Early scores are clearly labeled as provisional, with the number of test rounds and testers disclosed, which is an unusually honest way to publish findings.\n- Documentation checks are kept separate from hands-on testing and cover practical details such as public APIs, MCP servers and how credits are counted.\n- Beyond single reviews, it offers head-to-head comparisons, a pricing tracker for AI video tools and a selection grid matched to situations like solo creators or automated pipelines.\n- The scope is deliberately narrow, leaving out general video editors and avatar generators so every review stays focused on clipping.\n\nScrutator is best for podcasters, creators and marketing teams about to commit budget to a clipping subscription. To get the most from it, start with the selection grid to find the scenario closest to yours, then read the methodology page so you know how much weight the current scores can bear.",
+    "sources": [
+      "https://scrutator.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "seaart",
+    "moreContext": "SeaArt has grown from an anime-friendly image generator into a broad creation hub where images, video and characters live side by side. What stands out is the range of engines in one account: alongside its community library, it offers well-known third-party models for both stills and motion, so you can compare looks without juggling separate subscriptions. A public gallery with remixable templates also makes it easy to learn from what other people are making.\n\n- Its video section reaches popular models such as Kling, Wan, Vidu, Pixverse and Seedance, plus dedicated tools for lip sync, reference-to-video and multi-angle camera moves.\n- Image work is backed by models including Flux, Seedream and Qwen Image, together with an upscaler, an eraser, a background remover and creative filters.\n- Remixable templates and one-click effects (bullet time, glitch, face dance) give beginners polished results before they write a single detailed prompt.\n- SeaArt runs in the browser and also offers mobile apps for iOS and Android, so projects can continue away from the desk.\n- An agent mode in beta points toward guided, multi-step creation inside the same workspace.\n\nSeaArt suits hobbyists, anime and illustration fans, and social creators who like to experiment across many styles and models. A practical tip: browse the community gallery first and remix a creation close to your goal, since starting from a proven prompt and model setup is the fastest way to learn what each engine does well.",
+    "sources": [
+      "https://www.seaart.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "seabell",
+    "moreContext": "SeaBell combines a fiction library with an AI writing studio, so readers and authors share the same space and often the same stories. That two-sided design is its charm: you can read a serialized novel, chat with one of its characters, then open the creation center and start a story of your own. It feels built for people who love genre fiction and want to play with it, not just consume it.\n\n- The library spans English, Japanese, Chinese, Portuguese and Spanish titles, with rankings, tags and weekly or monthly charts that make discovery easy.\n- Interactive stories let readers make choices that steer the plot, turning familiar genres into something closer to a text adventure.\n- A Character Square and a Style Square let users browse community characters to chat with and writing styles to apply to their own drafts.\n- Writers can save personal characters and custom writing styles, which helps tone and voice stay consistent across chapters.\n- Writing challenges, an event center and task rewards give regular contributors goals to aim for, with community conversation on Discord and Reddit.\n\nSeaBell is a strong fit for web novel fans, hobbyist storytellers and anyone curious about interactive fiction, and an Android app plus a mobile web version make reading on the go easy. To get the most from it, set up your character cards and a saved writing style before generating chapters, because the AI produces far more consistent prose when it has that context to draw on.",
+    "sources": [
+      "https://www.seabell.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "seedance-2-5",
+    "moreContext": "Seedance2Video gives creators a browser-based way to work with the Seedance family of video models, and its Seedance 2.5 page focuses on longer, more directed clips than many generators allow. The appeal is control: rather than relying on a single prompt, you can feed the model a rich set of references and let it assemble a scene from them. Note that the site presents itself as Seedance2Video and does not describe a formal connection to ByteDance, the company behind the Seedance models.\n\n- A single pass can produce a clip of up to 30 seconds, which reduces the stitching work that shorter generators require.\n- References can mix up to 30 images, 10 videos and 10 audio files, giving fine control over characters, motion and sound.\n- Edit and extend modes change part of a clip without regenerating the entire video, which saves credits and keeps good takes intact.\n- Six aspect ratios, from vertical 9:16 to ultrawide 21:9, cover social, web and cinematic formats in one tool.\n- Lighter Seedance 2.0 Mini and higher-resolution Seedance 2.0 Pro options sit alongside it for cheap drafts or sharper finals.\n\nIt is well suited to marketers producing ad variations, social video teams and filmmakers doing previsualization. A free trial is available and the generator shows a credit estimate before each run, so draft ideas on Mini first and switch to 2.5 once the shot is locked. Check your plan's commercial license terms before publishing client work.",
+    "sources": [
+      "https://seedance2video.io/seedance-2-5"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "seedance-3-0",
+    "moreContext": "Seedance30.com is built around one ambition: making short AI video feel like edited footage rather than a single isolated shot. It strings multiple shots together while keeping a character's face, clothing and build consistent, and it can add sound in the same generation. The site describes itself as an independent third-party service rather than an official ByteDance property, so think of it as a convenient front end for the Seedance lineage and several other leading models.\n\n- Native audio covers lip-synced dialogue, Foley effects and ambient sound, and Pro mode lets you upload your own voiceover or music to drive the visuals.\n- Keyframe and multimodal reference inputs give you more say over how a sequence starts, ends and moves between camera angles.\n- Paid plans include commercial usage rights, watermark removal and a downloadable license certificate, which is handy for client work.\n- The same account reaches other well-known engines, including Veo 3.1, Kling and Hailuo for video and Seedream, Flux and Nano Banana for images.\n- New users receive free credits to try text-to-video, image-to-video and audio-driven generation, and pay-as-you-go credits are described as not expiring.\n\nIt fits short-form storytellers, ad creators and anyone who needs a recurring character across several shots. For best results, write your prompt as a numbered shot list with camera directions for each beat, and upload a clear reference image of your character so the model has a fixed identity to hold onto.",
+    "sources": [
+      "https://seedance30.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sell-more-with-video",
+    "moreContext": "Sell More With Video sits between do-it-yourself AI video apps and expensive agencies, offering done-for-you production with fixed, published pricing. Its work spans explainers, product videos, whiteboard and doodle animation, corporate pieces and AI-generated formats, pairing AI-assisted scripting with a senior producer-led team. For businesses that want a polished result without learning editing software, that combination is the main draw.\n\n- Every project follows a clear path from brief to approved script to production, so nothing is animated until you have signed off on the words.\n- Packages scale from a standard tier with voiceover and royalty-free music up to premium options with an original score, multilingual voiceovers and a dedicated senior producer.\n- Higher tiers deliver in 4K with cuts formatted for different platforms, ready for ads, social feeds, sales decks and websites.\n- A free AI script generator (no signup needed) lets you test messaging before you commit to a production.\n- The studio says it sends a fixed quote within a day of receiving a brief, signs NDAs on request and refunds in full if production has not begun.\n\nIt is a good match for startups, SaaS companies and growth-stage brands that need an explainer or campaign video without managing freelancers. To get the most out of it, try the free script generator first and bring a sharpened draft to your brief, since a strong script is what the whole production is built on.",
+    "sources": [
+      "https://sellmorewithvideo.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "semantic-scholar",
+    "moreContext": "Few academic search tools are as generous as Semantic Scholar, which is free to use and maintained by Ai2, the nonprofit AI research institute founded by Paul Allen. Beyond finding papers, it helps you decide which ones matter, using machine learning to flag the citations that genuinely shaped later work. Its open data has also become a foundation that many other research apps build on.\n\n- Semantic Reader is an augmented reading experience that surfaces citation details inside the paper as you read, so you rarely lose your place chasing references.\n- Research Feeds learn from the papers you save into library folders and email fresh recommendations, improving as you rate suggestions relevant or not.\n- Alerts track new citations to a paper or new work by authors you follow, and researchers can claim their own author pages.\n- Ask This Paper answers questions about a specific paper with supporting statements, currently for a limited set of English-language papers.\n- Developers get the Academic Graph API and the S2ORC corpus of open-access full texts for building their own tools.\n\nIt is ideal for graduate students, academics and anyone doing a literature review with no budget at all. One tip: create a library folder for each project early, because those folders power the personalized feeds, and recommendations get noticeably sharper after you rate a handful of them. Citation export in BibTeX, APA, MLA and Chicago keeps your reference manager in sync.",
+    "sources": [
+      "https://www.semanticscholar.org",
+      "https://www.semanticscholar.org/product"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "semrush-contentshake",
+    "moreContext": "ContentShake AI brings Semrush's search data to people who need articles more than they need an SEO dashboard. Semrush has since folded it into its Content Toolkit, so new users will find the same idea under that name inside the Semrush platform. The appeal is unchanged: content ideas and drafts grounded in real competitor and keyword data rather than guesswork.\n\n- A fresh batch of content ideas arrives every week, including local topic ideas for businesses that serve a specific area.\n- An SEO brief generator and optimization guidance help writers who prefer to draft themselves while still following the data.\n- Brand-voice settings keep generated articles closer to how your company actually sounds.\n- It writes in several languages, including English, Spanish, French, German, Italian, Portuguese and Dutch, according to Semrush and third-party reviews.\n- Extras such as AI images, stock photos, social post generation, an AI chat and a Chrome extension round out the workflow before one-click WordPress publishing.\n\nIt is best for small business owners, solo marketers and lean content teams who want search-informed articles without mastering the full Semrush suite. A free trial is available, so use it to generate a month of ideas and briefs, then tackle the topics with the strongest competitive outlook first. Add your own expertise and examples to every draft, since that original insight is what helps an article stand out in search.",
+    "sources": [
+      "https://www.semrush.com/contentshake",
+      "https://tr.semrush.com/contentshake/pricing",
+      "https://wpmarmite.com/en/contentshake-ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "setrxai",
+    "moreContext": "Built with students in mind, SetrxAI keeps things simple: open it, pick a mode and start asking, with no login needed to begin. Its creator has clearly focused on learners in India, with guidance aimed at CBSE and ICSE board exams and entrance tests such as JEE, NEET and CAT, though its help with core subjects and programming is useful anywhere.\n\n- Separate Study, Coding and General modes tune responses for exam notes, working code or everyday conversation.\n- Coding mode writes, explains and debugs code across languages, with plenty of beginner-friendly help for Python, Java, SQL and web basics.\n- Image generation comes with a searchable personal gallery, so pictures you create are easy to find again.\n- Signed-in users get saved chat history and projects, which makes it practical to pick up a study session later.\n- Ready-made example prompts, such as study plans and step-by-step concept explanations, help new users get going quickly.\n\nIt is a good fit for school and college students, coding beginners and anyone who wants a no-cost assistant without a subscription. Try Study mode with a specific request (for example, a chapter summary pitched at your grade level) and then ask follow-up questions, since targeted prompts give the clearest answers. As with any AI tutor, double-check key facts against your textbook before an exam.",
+    "sources": [
+      "https://setrxai.onrender.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "shortwave",
+    "moreContext": "Built by a team of former Google engineers, Shortwave takes Gmail as its foundation and layers on an assistant that understands your entire mailbox. Instead of hunting through threads, you can ask questions in plain language, see emails summarized at a glance and let AI handle the repetitive parts of triage. It works with your existing Gmail account, so there is no migration to manage.\n\n- Plain-English AI filters can label, star or archive incoming mail automatically, with no rule builder to wrestle with.\n- Native apps for iOS, Android, Mac and Windows keep the same AI features available on every device.\n- Team features include shared threads, private comments on emails, shared labels and shared prompts, which makes it handy for small teams working a common inbox.\n- It connects with tools such as Slack, Notion, Asana and HubSpot, and can log email to a CRM through automatic BCC.\n- Everyday productivity touches like a split inbox, follow-up reminders, snooze suggestions, an integrated calendar and a command palette round it out.\n\nShortwave is best for founders, executives and other heavy email users who live in Gmail and want an assistant that actually reads their mail. You can get started for free without a credit card. A useful tip: spend a few minutes writing AI filters for newsletters and receipts on day one, since a cleaner inbox makes every other AI feature more useful.",
+    "sources": [
+      "https://www.shortwave.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sider",
+    "moreContext": "Sider has grown from a handy chatbot sidebar into a broader research and writing companion that follows you across the web. Its strength is convenience: translation, summaries and explanations appear right where you are reading, and anything useful can be saved to Wisebase, its personal knowledge hub. Recent versions have pushed further into deep research and browser automation.\n\n- A deep research agent gathers material from many web sources and produces structured reports with citations, which you can steer with clarifying follow-ups.\n- Original sources can be viewed side by side with the synthesized answer, making it easy to verify claims before you rely on them.\n- Highlights, chats and summaries can be saved to Wisebase as notes, and uploaded documents become a searchable base for follow-up questions.\n- Sider runs on Chrome and Edge as well as iOS, Android and desktop apps, so your saved knowledge travels between devices.\n- Newer releases add browser task automation and a feature for customizing websites, signs of a product that keeps evolving quickly.\n\nIt is a great fit for students, researchers, analysts and multilingual professionals who read heavily online, and a free tier lets you try it before upgrading. For the best results, build Wisebase deliberately: save highlights and uploads by project, so later questions are answered from your own curated sources rather than the open web alone.",
+    "sources": [
+      "https://sider.ai/whats-new/browser-extension/Sider-5_0",
+      "https://www.producthunt.com/posts/1202116"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "simplified",
+    "moreContext": "Simplified has evolved from a bundle of creative tools into a marketing workspace with an AI agent at its center. Riley, its marketing agent, can plan content, create assets, queue items for approval, publish and report, which turns the classic all-in-one pitch into something closer to a virtual team member. The writer, designer, video editor and social tools are still there, now tied together by a shared brand kit.\n\n- The Brand Kit stores colors, fonts, voice, products, customer details and approved examples, so generated work stays on brand.\n- Social features go beyond scheduling to include an approval flow, a unified social inbox and analytics across more than ten channels.\n- Extra creation tools cover ad generation and AI presentations, useful for teams that produce campaign assets every week.\n- More than 30 integrations, including Google Docs, Google Analytics, Google Ads, Notion and Slack, connect it with the rest of a marketing stack, and developers can use an API, webhooks, a CLI or an MCP server.\n- Each action shows its credit cost before generation, which helps teams budget their usage.\n\nIt is best for solopreneurs, small marketing teams and agencies juggling many clients on a lean budget, and the company says the platform has more than 15 million users. There is a free plan with no credit card required, so start by filling out the Brand Kit thoroughly, because Riley and the generators draw on it for every asset they create.",
+    "sources": [
+      "https://simplified.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "slite",
+    "moreContext": "Founded in Paris and backed by Y Combinator, Slite has focused on a problem most wikis ignore: knowing which documents can still be trusted. Its approach ranks team-verified docs first in AI search and pushes stale material down, so answers reflect what the company currently believes. That focus on accuracy makes it a calm, dependable home for internal knowledge.\n\n- Slite Agent spots outdated content, drafts suggested edits and routes them to the right owner for approval, which keeps maintenance from piling up.\n- AI search answers include citations and respect each person's permissions, an important safeguard as teams connect outside agents.\n- Integrations span Slack, Google Drive, GitHub, Linear, Jira, HubSpot, Salesforce, Zendesk and more, so knowledge outside Slite can feed the same answers.\n- Migration paths from Notion, Confluence, ClickUp, Quip and OneNote make switching far less painful.\n- The company displays SOC 2 compliance, and it says more than 1,700 companies use Slite as their single source of truth.\n\nSlite suits startups and mid-sized teams, especially remote ones, that want documentation people actually read and keep current, and a free plan is available to get started. A practical tip: assign an owner and a verification schedule to your most-used docs (onboarding, policies, product specs) first, since verified pages are what AI search will lean on most.",
+    "sources": [
+      "https://slite.com",
+      "https://dealroom.co/companies/slite/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "smartlead",
+    "moreContext": "For teams that run cold email at volume, Smartlead focuses on the unglamorous infrastructure that decides whether messages land in the inbox. It combines a private warmup network, automatic sender rotation and DNS setup help with AI that sorts replies by intent, so effort goes to warm leads rather than inbox housekeeping. Agencies in particular appreciate how cleanly it handles many clients in one account.\n\n- SmartAgents are no-code AI agents that research leads, write personalized emails and update CRM records.\n- AI reply categorization surfaces hot leads first inside the unified inbox, where bulk actions like assign, archive and forward speed up follow-up.\n- SmartDelivery offers inbox placement testing, so you can check deliverability before scaling a campaign.\n- Native integrations with HubSpot, Salesforce, Pipedrive, Clay and Listkit, plus Zapier, Make and n8n, slot it into existing sales stacks.\n- SmartDialer adds calling alongside email in the same dashboard, giving outbound teams a second channel without another subscription.\n\nIt is best for lead generation agencies, SDR teams and founders running outbound at scale, and a free trial is available for testing the platform. One tip: run every new domain through warmup and an inbox placement test before launch, and keep daily volume per mailbox modest, since spreading sends across many warmed inboxes is what protects long-term deliverability.",
+    "sources": [
+      "https://www.smartlead.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "smartly",
+    "moreContext": "Smartly has spent more than a decade building advertising technology for brands that run social campaigns at very high volume. The Finnish company has grown into a platform covering creative production, media buying and measurement in one place, with AI woven through each stage. Its site displays a 2024 Forrester Wave Leader badge, a sign of its standing in enterprise ad tech.\n\n- The Creative suite uses AI-powered templates, including video templates, to design and scale ad variations, and the company says teams can build ads in a third of the usual time.\n- Media tools activate, manage and optimize campaigns across major social platforms, connected TV on more than 200 streaming services and the open web through major DSPs.\n- An Intelligence suite brings planning, performance and measurement together, including real-time brand tracking through Smartly Brand Pulse.\n- Predictive budget allocation across channels helps shift spend toward whatever is performing best.\n- Named customers on the company's site include Samsung, Spotify, Uber, Ralph Lauren and KLM.\n\nSmartly is best for large brands, retailers and agencies managing many markets, products or creative variations at once, while smaller advertisers may find it more than they need. A practical tip: connect your product feeds and build a reusable template library early, since dynamic templates are where the time savings compound across every campaign.",
+    "sources": [
+      "https://www.smartly.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "snyk",
+    "moreContext": "Snyk built its reputation by putting security scanning where developers already work, and it has since extended that idea to the era of AI-written code. Its platform now positions itself as an independent security layer that checks code produced by assistants, governs AI development agents and protects AI-native applications from development through production. That evolution keeps it among the more forward-looking names in application security.\n\n- It works alongside popular AI coding assistants, including Claude Code, Cursor and Codex, so generated code can be checked as it is written.\n- Coverage spans the familiar toolchain, with integrations for GitHub, GitLab, Bitbucket, Docker, Kubernetes, Terraform and Visual Studio Code.\n- Its newer Evo initiative points the platform toward agentic application security, a sign of continued investment in where development is heading.\n- The company names customers such as Okta, Twilio, Snowflake, Spotify and Komatsu, and Komatsu reports scanning twice as fast as with its previous tooling.\n- A free account needs no credit card, which makes it easy to try on a personal or open source project.\n\nSnyk is best for engineering teams that want security checks built into everyday development rather than bolted on before release, and it scales from solo developers to large organizations. A practical tip: connect your repositories and IDE first, then fix issues as they appear in pull requests, since catching problems upstream is where Snyk saves the most time.",
+    "sources": [
+      "https://snyk.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "socialbee",
+    "moreContext": "SocialBee pairs its well-loved content category system with a planning assistant that can set up an entire strategy from little more than your website address. The AI Copilot recommends which platforms to focus on, creates content categories, drafts a posting schedule and writes editable posts, giving new users a running start. The company operates as part of WebPros, and its plans stretch from solo creators to agencies.\n\n- It publishes to a wide spread of networks, including Facebook, Instagram, X, LinkedIn, Pinterest, TikTok, YouTube, Threads, Bluesky and Google Business Profile.\n- A unified engagement inbox gathers comments, mentions and direct messages, with DM support wherever each network allows it.\n- Agencies get a separate workspace for each client, plus approval workflows and client-branded reports.\n- A Canva integration brings designs straight into the post editor, and the AI post generator writes captions, hashtags and images.\n- Analytics include engagement maps that show when your audience is most active, with branded PDF reports on higher plans.\n\nSocialBee is ideal for small businesses, consultants and agencies that want a steady, balanced feed without daily scheduling chores, and a 14-day free trial needs no credit card. A practical tip: set up an evergreen category early and fill it with your best timeless posts, so your calendar keeps flowing even during busy weeks.",
+    "sources": [
+      "https://socialbee.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "socialecho",
+    "moreContext": "SocialEcho brings publishing, engagement, listening and analytics into one AI workspace, with a particular strength in cross-border social media operations. It covers ten platforms, including TikTok Shop and Telegram alongside the major networks, which makes it a natural fit for brands selling or building communities across several markets. It also carries an impressive set of security certifications for a tool at its price point.\n\n- One-click publishing reaches Facebook, Instagram, TikTok, TikTok Shop, X, YouTube, LinkedIn, Telegram, Pinterest and Threads, and scheduling is included on every plan.\n- A unified inbox handles comments, DMs and mentions in one place, with auto-replies on paid plans.\n- Social listening monitors competitor accounts, keywords and posts, helping teams spot trends and benchmark their performance.\n- AI agents and automation manage accounts through official platform APIs, and the site says it supports agents such as OpenClaw and Hermes.\n- The company lists ISO 27001, ISO 27701 and SOC 2 Type II certifications, which is reassuring for agencies handling client accounts.\n\nIt suits e-commerce sellers, agencies and creators managing many accounts across regions. A free plan is available, and paid tiers come with a free trial that needs no credit card. A practical tip: set up competitor monitoring in your first week, so you have real benchmarks to guide what you ask the AI content tools to create.",
+    "sources": [
+      "https://www.socialecho.net/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "softr",
+    "moreContext": "Softr has matured from a friendly Airtable front end into a full AI app builder for business operations, complete with its own database, workflows and agents. Its AI Co-Builder can turn a plain-language description into a working app with data tables, pages, user roles and logic, all of which stay editable through visual controls. The company says more than a million builders and 7,000 organizations use it.\n\n- Softr Databases provide a built-in home for data, while more than 20 connectors reach Airtable, Notion, Google Sheets, HubSpot, Supabase, BigQuery, SQL databases and more.\n- Built-in AI agents can work on databases and workflows using models from OpenAI, Anthropic and Google.\n- Workflows trigger from button clicks, form submissions, schedules or record changes, and they can call external APIs.\n- Granular permissions control pages, blocks and individual records by user group, and admins can preview the app as any user.\n- SOC 2 Type II compliance and data hosting in Germany make it easier to bring client-facing apps through a security review.\n\nSoftr is best for operations teams, agencies and nonprofits building portals, CRMs and internal tools without engineers. The free plan includes unlimited apps, and nonprofits and educational organizations get a discount on paid tiers. A practical tip: let the AI Co-Builder produce the first draft, then refine user groups and record-level rules before inviting real clients.",
+    "sources": [
+      "https://www.softr.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sonix",
+    "moreContext": "Since 2017, San Francisco-based Sonix has focused on doing transcription well and making the results easy to work with. Beyond fast automated transcripts, it adds translation, captioning and AI analysis in one browser workspace, so a recording can become searchable text, subtitles and insights in a single pass. It is a dependable choice that balances accuracy, speed and strong security.\n\n- Integrations with Zoom, Microsoft Teams, Google Meet, Webex, Adobe Premiere and Zapier bring recordings in and send transcripts wherever they are needed.\n- AI analysis produces summaries, chapters and sentiment, and you can ask questions across multiple transcripts stored in a folder.\n- Security credentials include SOC 2 Type 2 and HIPAA compliance, AES-256 encryption and a policy of not training on customer data.\n- A RESTful API with batch processing lets developers fold transcription into their own products.\n- Neural machine translation covers dozens of languages, which helps teams share interviews and content internationally.\n\nSonix is a great fit for journalists, podcasters, researchers, video editors and legal or healthcare teams with privacy requirements, and its free trial includes 30 minutes of transcription with no credit card needed. A practical tip: record with a decent microphone and label speakers early in the editor, since clean audio and correct speaker names improve every summary and caption that follows.",
+    "sources": [
+      "https://sonix.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sora",
+    "moreContext": "Sora earned its place in AI history as the model that showed how convincing generated video could become, with coherent motion and a strong sense of physical realism. OpenAI later turned it into a standalone app with a social feed, but in March 2026 the company announced it would discontinue Sora, closing the web and app experience in April 2026 and scheduling the API to follow in September 2026. OpenAI said the Sora research team would continue its work on world simulation.\n\n- At its peak, it set a high bar for realistic lighting, camera movement and object permanence within a clip.\n- Its storyboard approach let creators plan multi-shot sequences instead of relying on a single prompt.\n- Remix and blend tools encouraged iterating on existing clips, a workflow that many later video generators adopted.\n- It brought text-to-video to a mainstream audience through ChatGPT subscriptions, introducing many people to AI filmmaking for the first time.\n\nSora's legacy matters to anyone following AI video, but new projects should turn to actively supported generators. If you used Sora, check OpenAI's help center for any remaining export options for past work, and consider tools such as Veo, Kling or Seedance for similar cinematic results.",
+    "sources": [
+      "https://sora.com",
+      "https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html",
+      "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "soundraw",
+    "moreContext": "Built by musicians, Soundraw stands out in AI music for training its models only on music produced in-house rather than on scraped songs. That stance gives creators more confidence about where their tracks come from, and it extends to artists too: Soundraw's artist plans let you release songs to streaming platforms while keeping the royalties. It blends quick generation for video makers with genuine tools for producers.\n\n- You can blend more than 30 genres (hip-hop with orchestral, for example) and set the mood before generating.\n- A browser mixer allows bar-level edits, so you can mute or solo instruments and change intensity at exact moments.\n- Higher plans export separate WAV stems for drums, bass, melody and effects, ready for Ableton, Logic or FL Studio.\n- Artist plans include distribution to Spotify, Apple Music, TikTok and other services.\n- An API plan lets developers generate and embed music inside their own apps.\n\nSoundraw suits YouTubers, podcasters, ad producers and beatmakers who want customizable music with clear licensing, and you can try it for free before choosing a plan. A practical tip: generate a track slightly longer than you need, then use the mixer to lift intensity right where your video peaks and pull instruments back under dialogue.",
+    "sources": [
+      "https://soundraw.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sourcegraph-cody",
+    "moreContext": "Cody draws its strength from Sourcegraph's long experience in code search, which lets it pull context from local and remote repositories across an entire organization. Today it is focused squarely on enterprises: Sourcegraph ended the Cody Free and Pro plans in July 2025 and pointed individual developers to Amp, while Cody Enterprise remains supported and actively developed. For large engineering organizations, that focus means a mature assistant built around their own code.\n\n- It works in VS Code and JetBrains IDEs, with experimental Visual Studio support, a web version inside Sourcegraph and a command-line client.\n- Auto-edit proposes changes based on where your cursor moves and what you have just typed, anticipating the next edit rather than only completing lines.\n- Teams can create and share prompts, standardizing common tasks like writing tests or explaining legacy modules.\n- Context Filters let administrators exclude sensitive repositories from chat and autocomplete, an important control for regulated codebases.\n- Built-in debugging help identifies errors and suggests fixes using the surrounding code as context.\n\nCody is best for enterprises that already rely on Sourcegraph Code Search or manage many repositories and services, while individual developers should look at Amp, which now operates as a separate company. A practical tip: invest a little time in shared team prompts, because they turn Cody's codebase-wide context into repeatable, consistent workflows.",
+    "sources": [
+      "https://sourcegraph.com/cody",
+      "https://sourcegraph.com/blog/changes-to-cody-free-pro-and-enterprise-starter-plans"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sourcely",
+    "moreContext": "Built by students for students, Sourcely approaches research from the angle writers actually work in: you already have a draft, and you need credible sources to support it. Paste your text and it finds matching academic material from a pool of more than 200 million papers, according to the company. It has grown well beyond basic search, adding deeper research and credibility tools.\n\n- Exports cover more than 700 citation styles, so common formats and niche journal styles are both within reach.\n- Free PDF downloads are available for many results, which saves time hunting for full texts.\n- Deep Search and Chat with Sources let you dig further into a topic and ask questions about the papers you have found.\n- Credibility checks help you confirm a source is trustworthy before it lands in your bibliography.\n- A citations library keeps references organized across assignments and projects.\n\nSourcely is ideal for undergraduates, graduate students and essay writers who need evidence quickly, and the company says more than 250,000 people use it. You can try it with no commitment before subscribing. A practical tip: paste one claim or paragraph at a time rather than a whole essay, since narrower passages return more precise, relevant sources.",
+    "sources": [
+      "https://www.sourcely.net"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sourcery",
+    "moreContext": "Sourcery has grown from a Python refactoring helper into an AI code reviewer that works across every language GitHub recognizes. It reviews each pull request with a summary, line-level comments and suggested fixes you can commit in one click, giving small teams a reliable second pair of eyes. Its approach to privacy is a real highlight: it keeps no copy of code after a review and says it never trains AI on customer code.\n\n- It supports GitHub and GitLab, including self-managed GitLab on every plan, with GitHub Enterprise Server available on the Enterprise tier.\n- Low-risk pull requests with no blocking findings can be auto-approved, freeing reviewers for changes that need human judgment.\n- Security reviews check changed code for vulnerabilities, while scheduled scans look for exposed secrets, misconfigured infrastructure and dependencies with known CVEs.\n- IDE extensions for VS Code and PyCharm bring feedback into the editor before code is pushed.\n- The company states SOC 2 Type II compliance and lists users such as Red Hat, The Linux Foundation, Poetry and django CMS.\n\nSourcery is a great fit for startups, open source maintainers and growing teams that want consistent reviews without slowing merges. It is free for open source projects, and paid plans start with a 14-day trial. A practical tip: agree as a team on which categories of findings must be fixed before merging, so its comments become a clear quality gate rather than background noise.",
+    "sources": [
+      "https://sourcery.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "speak-ai",
+    "moreContext": "Founded in Toronto by Tyler Bryden and Vatsal Shah, Speak AI focuses on a task many teams dread: turning hours of interviews, meetings and open-ended feedback into findings they can act on. It handles transcription in more than 100 languages and layers analysis and AI chat on top, so qualitative research no longer requires specialist software or weeks of manual coding.\n\n- A meeting assistant can auto-join Zoom, Microsoft Teams, Google Meet and Webex calls, then deliver transcripts, summaries and key takeaways.\n- An embeddable recorder drops into websites, portals or intake forms, making it easy to collect audio and video responses at scale.\n- Its MCP server gives assistants such as Claude, ChatGPT and Cursor access to more than 100 tools for searching and analyzing your knowledge base.\n- Slack and Zapier connections push insights into the rest of your workflow.\n- Pay-as-you-go credits sit alongside team plans, which suits research projects that arrive in bursts.\n\nSpeak suits market researchers, UX teams, academics and consultants who handle a lot of qualitative data, and a free account is available with no credit card required. A practical tip: group related interviews into one folder before you start analysis, so you can compare themes and answers across the whole set rather than one recording at a time.",
+    "sources": [
+      "https://speakai.co"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "speechify",
+    "moreContext": "Speechify has become one of the most recognized names in text to speech, and it now goes well beyond reading pages aloud. Its founder started the company to cope with his own dyslexia, and that focus on accessibility still shows in how approachable the apps feel. Recent additions turn it into a broader voice toolkit, from dictation to AI-generated podcasts.\n\n- Apps cover iPhone and iPad, Android, Mac, Windows and the web, plus extensions for Chrome and Edge, so your library follows you everywhere.\n- More than 1,000 voices across over 60 languages, with regional accents, give listeners plenty of choice.\n- Voice typing works in any app, removes filler words and fixes grammar, and it is available on the free plan.\n- An AI podcast feature turns a document or a short description into an episode, and an assistant summarizes and answers questions about what you are reading.\n- Developers can use a text-to-speech API with streaming, SSML and speech marks.\n\nIt is ideal for students, busy professionals, people with dyslexia or ADHD, and anyone who learns better by listening, and the app received a 2025 Apple Design Award. A practical tip: raise your listening speed gradually over a few weeks, since most people find they can comfortably absorb much faster narration than they expected.",
+    "sources": [
+      "https://speechify.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "spicyapi",
+    "moreContext": "SpicyAPI tackles a familiar developer headache: every strong generative model seems to live behind a different account, SDK and billing system. It gathers more than 200 image, video, audio and text models behind one key, with a no-code Studio for people who would rather work visually. Pricing is pay per use from a US dollar balance, with no subscription required.\n\n- Chat uses an OpenAI-compatible format with streaming, so existing client code often needs only minimal changes.\n- Official SDKs for TypeScript, Python, Go, PHP and Java, plus an MCP server, a CLI and an agent skill, cover most stacks and AI coding setups.\n- Image and video jobs run as tasks you can poll or receive by callback, and idempotency keys prevent accidental duplicate jobs.\n- Every request shows a cost estimate first, failed or timed-out tasks are usually not charged, and LoRA support lets you run your own style or character models.\n- The Studio includes a canvas, a free video editor, effects, styles and a prompt library, and it can assemble short films up to 15 minutes long.\n\nIt is best for developers, indie app builders and creators who want to test many models without signing up everywhere, and its published retention windows for outputs, prompts and uploads can be shortened, a thoughtful privacy touch. A practical tip: prototype prompts in the Studio first, then move the winning model and settings into the API, since the same balance works in both.",
+    "sources": [
+      "https://spicyapi.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "spriteflow",
+    "moreContext": "SpriteFlow is aimed at indie developers who can design a game but cannot draw every frame of it. You describe a character, choose an animation and export a sprite sheet ready for your engine, with style controls that keep a whole cast looking like it belongs in the same world. It covers the animation set most 2D games need.\n\n- The animation library spans idle, walk, run and jump through attacks, spellcasting, hit reactions, death, climbing, swimming and victory poses.\n- Four-direction, eight-direction and side-view output covers top-down games, isometric RPGs and platformers.\n- Upload a few reference images and palette locking matches colors, line weight, detail level and proportions across frames.\n- Exports include PNG atlases with JSON or XML, individual frames, GIF and APNG, with extras such as Unity animation controller presets and Godot AnimatedSprite resources.\n- Pixel art at 8-bit, 16-bit and 32-bit detail levels sits alongside cartoon and anime styles, at sizes from 16x16 up to 512x512.\n\nIt is a strong fit for solo developers, game jam teams and prototypers who need consistent art quickly, and you can start for free, with each tool showing its credit cost before generating. A practical tip: lock your palette and reference images before generating your first character, so every later sprite inherits the same look.",
+    "sources": [
+      "https://spriteflow.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sprite-sheet-builder",
+    "moreContext": "Sprite Sheet Builder does one job very well: it turns a set of frames into a clean, transparent sprite sheet without asking you to install software or create an account. Everything runs locally in the browser, so your art never leaves your machine, which is a welcome touch for unreleased game assets. It is the kind of small, focused utility developers bookmark and keep coming back to.\n\n- Choose a fixed grid or auto-packing, and set columns, outer padding and spacing between frames.\n- A live preview plays the animation at 1 to 30 frames per second so you can check timing before export.\n- Animated GIFs are split into individual editable frames automatically.\n- Exports include a transparent PNG with an optional JSON atlas or Sparrow XML, a Unity importer is bundled in the download, and Godot and Phaser are supported too.\n- Companion tools on the site convert GIFs to sheets and back, split existing sheets, and generate Friday Night Funkin' sprite XML.\n\nIt is ideal for indie and hobby game developers, modders and students learning 2D animation. Sheets max out at 4096 by 4096 pixels and 200 frames, so split very long animations across separate sheets. A practical tip: leave a pixel or two of spacing between frames to avoid texture bleeding when your engine scales sprites.",
+    "sources": [
+      "https://spritesheetbuilder.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "squibler",
+    "moreContext": "Squibler gives novelists and screenwriters a structured workspace where AI supports the story instead of taking it over. Its Smart Writer proposes revisions that you accept, reject or refine one by one, which keeps the author firmly in control of voice and direction. The company says more than 20,000 writers use it.\n\n- Story elements for characters, settings and key details are referenced by the AI, which helps keep names, traits and plot points consistent across chapters.\n- Highlighting a passage can generate original images or short video sequences, useful for mood boards, covers and pitching.\n- Screenplay drafts come out properly formatted with scenes, dialogue and cinematic structure.\n- It can outline and generate full-length books organized into chapters and scenes, giving stuck writers a scaffold to revise.\n- Finished chapters can be exported for audiobook tools and self-publishing platforms.\n\nSquibler suits first-time authors, genre novelists and screenwriters who want planning tools and AI drafting in one place, and a free limited tier lets you try it before upgrading. A practical tip: fill in your characters and settings before asking the AI to draft scenes, since the more detail it has, the more consistent and on-voice its suggestions become.",
+    "sources": [
+      "https://www.squibler.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "stable-audio",
+    "moreContext": "Stability AI built Stable Audio around a principle that matters to working creators: according to the company, its models are trained on fully licensed data. The Stable Audio 3.0 family, released in May 2026, extends track length to more than six minutes on its Medium model and ships several models with open weights, a rare combination in commercial music AI. Outputs fall under Stability's Community License, which states that you own what you generate.\n\n- The family ranges from compact sound effect models that can run on phones and laptops to a large flagship offered through the API and enterprise licensing.\n- Open-weight Small, Small SFX and Medium models are available on Hugging Face for local experimentation and fine-tuning.\n- Dedicated tools for sound effects, soundscapes, isolating effects and scoring cover both music and sound design.\n- A DAW plugin and an advanced generation interface on StableAudio.com, added in August 2026, bring it closer to real production workflows.\n\nIt is best for game developers, video editors, sound designers and producers who need instrumental music or effects with clear rights. Note that Stable Audio 3.0 focuses on instrumentals and does not generate vocals or lyrics. A practical tip: spell out structure, instrumentation and tempo in your prompt (intro, build, breakdown, outro), since longer tracks hold together best when you guide the arrangement.",
+    "sources": [
+      "https://stableaudio.com",
+      "https://stability.ai",
+      "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+      "https://the-decoder.com/stability-ai-launches-stable-audio-3-0-with-up-to-six-minute-tracks-and-open-weights/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "stable-diffusion",
+    "moreContext": "Stable Diffusion's influence on AI imagery is hard to overstate: by releasing capable models with open weights, Stability AI gave developers and artists something they could run, study and adapt on their own hardware. The Stable Diffusion 3.5 suite continues that tradition, and the company now spans image, video, audio and 3D generation. Its Community License allows free commercial use for individuals and organizations with under one million dollars in annual revenue.\n\n- Fine-tunes, LoRAs and other derivatives are explicitly permitted, and you own the outputs you create.\n- You can choose how to deploy: self-host the models, call the Platform API, or run them in your own cloud through partners such as AWS and Microsoft Azure.\n- Stability lists NVIDIA, Arm and Lenovo among its technology partners, reflecting broad support across hardware.\n- Enterprise teams can use Brand Studio, a managed creative production platform built on Stability's models.\n- The company counts Electronic Arts, Universal Music Group and Warner Music Group among its partners and investors, a sign of serious backing from creative industries.\n\nIt is ideal for developers building image features, artists who want full control and studios that need models they can host privately, while larger companies above the revenue threshold should arrange an Enterprise License. A practical tip: start with an established community interface such as ComfyUI and a base 3.5 model, then add LoRAs for your style rather than training from scratch.",
+    "sources": [
+      "https://stability.ai",
+      "https://stability.ai/license"
+    ],
+    "status": "ok"
+  }
+]

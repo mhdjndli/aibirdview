@@ -1,0 +1,278 @@
+[
+  {
+    "slug": "dall-e-3",
+    "status": "possibly-defunct",
+    "sources": [
+      "https://developers.openai.com/api/docs/models/dall-e-3.md",
+      "https://openai.com/index/dall-e-3-is-now-available-in-chatgpt-plus-and-enterprise/",
+      "https://the-decoder.com/openai-equips-dall-e-3-with-c2pa-metadata-to-increase-transparency-of-ai-images/"
+    ],
+    "moreContext": "DALL·E 3 earned its place in AI history as the model that made prompt following feel reliable, largely because it was built to work hand in hand with ChatGPT, which expanded short ideas into rich, detailed prompts. It set a standard for legible in-image text and careful scene composition that later image models were measured against. Worth knowing before you dive in: OpenAI's developer documentation now lists DALL·E 3 as shut down in the API, with newer GPT Image models recommended in its place.\n\n- Its tight pairing with ChatGPT let people refine an image through plain conversation instead of wrestling with prompt syntax.\n- OpenAI designed it to decline requests for images in the style of living artists, a thoughtful stance at the time of launch.\n- Creators were given a way to opt their images out of training for future OpenAI image models.\n- Images produced through ChatGPT and the API carried C2PA provenance metadata, an early move toward labeling AI-generated pictures.\n- The model was offered to developers through the OpenAI API, which made it a popular building block for early creative apps.\n\nDALL·E 3 is best appreciated today as the foundation of OpenAI's current image tools, and it remains a useful reference point for anyone comparing generators. If you are starting a new project, go straight to the GPT Image model OpenAI currently recommends, and keep using conversational refinement in ChatGPT, which is the habit DALL·E 3 taught so well."
+  },
+  {
+    "slug": "databutton",
+    "status": "possibly-defunct",
+    "sources": [
+      "https://riff.ai/",
+      "https://www.createwith.com/tool/databutton/updates/databutton-rebrands-to-riff-positions-ai-builder-for-business-ready-apps",
+      "https://www.createwith.com/tool/databutton/updates/databuttons-riff-pivots-to-enterprise-agent-platform-targeting-erp-systems"
+    ],
+    "moreContext": "Databutton was one of the early AI app builders that took business software seriously, generating full-stack apps rather than throwaway prototypes. The team has since rebranded as Riff, and databutton.com now redirects there. Riff has moved its focus to AI agents for industrial operations, which means the conversational app builder described on this page has evolved into a more enterprise-oriented product.\n\n- Riff's agents are built to work inside a company's ERP and the systems around it, taking on real operational work rather than isolated tasks.\n- The platform covers five practical areas: order handling, procurement, logistics, production and planning, and aftermarket service.\n- Agents and people share the same orders, suppliers, and cases, so the software handles volume while staff keep the judgment calls.\n- The company lists SOC 2, ISO 27001, and GDPR on its site, and it says actions are logged under rules set by IT.\n- Customers get ready-made solutions plus forward-deployed engineers and training, and Riff says its agents can be running on a customer's ERP within about six weeks.\n\nRiff now suits manufacturers and industrial companies that want agents on top of their existing ERP, rather than solo builders looking for a quick app generator. If you used Databutton before, check your account status and export any projects you care about, then book a Riff demo if the new operations focus matches what your team needs."
+  },
+  {
+    "slug": "deepbrain-ai",
+    "status": "ok",
+    "sources": [
+      "https://aistudios.com/",
+      "https://www.deepbrain.io"
+    ],
+    "moreContext": "DeepBrain AI's platform now lives under the AI Studios name at aistudios.com, and it has grown into one of the broadest avatar video suites available. Beyond scripted presenter videos, it covers dubbing, translation, and real-time conversational avatars, which makes it a strong fit for companies that want one vendor for training, marketing, and customer-facing digital humans.\n\n- The company says dubbing, translation, and text-to-speech span more than 150 languages, with voice cloning and lip-sync included in dubbing.\n- Beyond its library of more than 2,000 stock avatars, you can build custom avatars from a short video, animate a photo, or use product avatars that hold items on screen.\n- PowerPoint, PDF, and Word files can be turned into narrated video presentations, and web pages can be converted from a URL.\n- Interactive avatars can connect to models such as OpenAI, Claude, and Gemini, embed on a website with one line of code, and deploy to WhatsApp, mobile apps, and kiosks.\n- The site lists ISO 27001 certification, SOC 2 Type II and GDPR compliance, plus membership in the Content Authenticity Initiative.\n\nAI Studios is best for enterprise learning teams, marketers, and service organizations that need multilingual video at volume, and the company says more than two million users have signed up. Start on the free tier to test an avatar and a dubbing job, then convert an existing slide deck first, since that is where the time savings show up fastest."
+  },
+  {
+    "slug": "deep-dream-generator",
+    "status": "ok",
+    "sources": [
+      "https://deepdreamgenerator.com"
+    ],
+    "moreContext": "Deep Dream Generator holds a rare spot in AI art: it launched in 2015, long before the current wave of image generators, and has kept evolving ever since. Today it works as a multi-model studio and a lively creative community in one place, so you can explore dozens of engines without juggling separate subscriptions.\n\n- The site offers access to more than 30 models, including well-known names such as Flux, Stable Diffusion, and Ideogram for images, and Veo and Kling for video.\n- An image-to-video tool animates still pictures, with settings for motion control, face enhancement, and aspect ratio.\n- A built-in upscaler gives fine control over creativity, resemblance, and HDR strength when enlarging finished work.\n- Community posts show the model and full prompt settings, and a Try button lets you start from another artist's recipe.\n- Galleries for trending work, hidden gems, and regular challenges, plus a Discord server, keep the community active and encouraging.\n\nIt is a great home for hobbyists and digital artists who learn by studying what others make, and the company says more than five million creators have used it. You can start for free with a daily energy allowance, so spend your first session browsing trending dreams and reusing a prompt you admire before writing your own from scratch."
+  },
+  {
+    "slug": "deepgram",
+    "status": "ok",
+    "sources": [
+      "https://deepgram.com"
+    ],
+    "moreContext": "Deepgram has become a go-to foundation for teams building voice products, because it treats speech recognition, speech synthesis, and agent orchestration as one connected stack. Its newer models are designed around live conversation, not just transcription after the fact, which is exactly what modern voice agents and contact center tools need.\n\n- Flux, its conversation-aware speech recognition model, detects end of turn and interruptions while streaming transcripts in real time.\n- The Voice Agent API combines speech-to-text, text-to-speech, and LLM orchestration, including context handling and function calling, behind a single interface.\n- Text-to-speech is tuned for live dialogue, keeping tone and expression consistent across a conversation with very low latency.\n- Workloads can run in real time or in batch, in Deepgram's cloud or self-hosted, and telephony connections over PSTN and SIP are supported through partners.\n- The company lists Twilio, Cloudflare, IBM, Vapi, and Kore.ai among the businesses building on its platform.\n\nDeepgram is best for developers and product teams shipping voice agents, call analytics, or real-time captioning where speed and turn-taking matter. Prototype with the Voice Agent API first, since it saves you from stitching three vendors together, and then swap in individual components only if your use case needs custom control."
+  },
+  {
+    "slug": "deepl-write",
+    "status": "ok",
+    "sources": [
+      "https://www.deepl.com/write",
+      "https://www.deepl.com/en/pro-write",
+      "https://www.deepl.com/en/blog/deepl-write-welcomes-french-spanish"
+    ],
+    "moreContext": "DeepL Write brings the care that made DeepL's translator so respected to writing in a single language, polishing phrasing so it reads like a fluent native speaker wrote it. It has grown well beyond its English and German beginnings, and it now fits into most of the places people already write.\n\n- DeepL's own announcements list support for English, German, French, Spanish, Italian, Portuguese, Chinese (Simplified), Japanese, and Korean, with American and British English variants.\n- A Corrections only mode and a Show changes view let you choose between light proofreading and fuller rewrites, and see exactly what was edited.\n- Browser extensions for Chrome, Firefox, and Edge bring suggestions into tools like Gmail and Google Docs, and desktop apps run on Windows and Mac.\n- Add-ins for Microsoft Word, Outlook, and PowerPoint, plus Google Workspace integrations, keep edits inside everyday documents.\n- On paid plans, DeepL says text is deleted after processing and never used to train its models, backed by ISO 27001 and SOC 2 Type II certifications.\n\nDeepL Write is ideal for professionals, students, and non-native speakers who want natural, confident prose, and it comes from DeepL, the Cologne-based company behind one of the best-known translators. A free version is available, so try it on an important email first, then explore Pro style rules if your team needs consistent house wording."
+  },
+  {
+    "slug": "deepnote",
+    "status": "ok",
+    "sources": [
+      "https://deepnote.com"
+    ],
+    "moreContext": "Deepnote has matured from a collaborative notebook into a full data workspace where analysts, engineers, and AI agents work side by side. Think of it as Jupyter with SQL, AI, and multiplayer editing built in, plus the tooling to turn analysis into something the rest of the company can actually use.\n\n- Deepnote has opened up its notebook format, saving work as portable .deepnote files under an Apache 2.0 open-source license.\n- It connects to more than 100 tools, including data warehouses, BI dashboards, and metadata catalogs, through native integrations, an API, or MCP.\n- Notebooks can run on hourly, daily, weekly, or monthly schedules, and can be deployed as APIs to serve models.\n- Analyses become interactive data apps with custom layouts, hidden code, and input blocks for nontechnical viewers.\n- Security features include SOC 2 and HIPAA compliance, SSO through SAML or OIDC, role-based access, and custom deployment options.\n\nDeepnote is a natural fit for data teams that want notebooks, reporting, and AI assistance in one shared place, and the company says it is used by more than 600,000 data professionals and at most of the top 100 universities. You can get started for free, so connect your warehouse first and let the AI work against your real schema, which is where its suggestions become genuinely useful."
+  },
+  {
+    "slug": "deepseek",
+    "status": "ok",
+    "sources": [
+      "https://www.deepseek.com",
+      "https://fe-static.deepseek.com/chat/transparency/deepseek-v3.2-model-card-0414-CN.pdf"
+    ],
+    "moreContext": "DeepSeek, the Hangzhou-based lab, changed the conversation about what frontier-level AI should cost, and it keeps shipping at a remarkable pace. Its newest releases have moved into a V4 generation, with the homepage highlighting V4.1 Flash updates aimed at faster, cheaper development work, while the free chat experience remains one of the most generous around.\n\n- Releases such as DeepSeek V3.2 publish their weights and code under the permissive MIT license, so researchers and companies can self-host and fine-tune.\n- The chat interface offers a deep thinking mode for step-by-step reasoning and a search mode that pulls in current information from the web.\n- You can use DeepSeek on the web, through its mobile app, or with DeepSeek Harness, a desktop app listed on the official site.\n- The developer platform's API now supports web search and page fetching, which makes it easier to build grounded, research-style agents.\n- Model cards and transparency documents are published on the official site, a welcome habit for an open-weights lab.\n\nDeepSeek is best for developers, researchers, and budget-conscious teams who want strong reasoning and coding help without premium pricing. Turn on deep thinking for math, logic, and debugging tasks, keep it off for quick questions to get faster answers, and review DeepSeek's data handling terms before sending sensitive business information through the hosted service."
+  },
+  {
+    "slug": "describely",
+    "status": "ok",
+    "sources": [
+      "https://describely.ai"
+    ],
+    "moreContext": "Describely has grown from a bulk description writer into a product content platform that thinks about how listings perform in AI search as well as traditional SEO. It scores each SKU on how likely it is to surface in ChatGPT, Google, and Gemini, and on how ready it is to convert, then generates content to close the gaps.\n\n- Product data enrichment fills in sparse attributes using sources you approve, so thin catalog entries become complete listings.\n- AI content rules keep every title and description aligned with your brand voice, even across thousands of SKUs.\n- A content audit step checks claims and catches errors before anything goes live, which matters for regulated or technical products.\n- Bulk image enhancement and a shopper-facing chatbot called ShopAssist extend the platform beyond text.\n- It connects with Shopify, WooCommerce, Wix, Squarespace, and the Akeneo PIM, and accepts CSV, Google Sheets, and Excel imports.\n\nDescribely is best for ecommerce brands, retailers, and distributors with large catalogs, and the company cites Target Australia producing more than 1,000 product descriptions a week with it. Spend time on your content rules before the first bulk run, and start with a small batch of high-traffic SKUs so you can measure the lift before rolling it out catalog-wide."
+  },
+  {
+    "slug": "descript",
+    "status": "ok",
+    "sources": [
+      "https://www.descript.com"
+    ],
+    "moreContext": "Descript remains the reference point for text-based media editing, and it has steadily grown into a complete production studio for video and podcasts. Its AI co-editor, Underlord, now handles much of the rough cutting, so creators can focus on the story instead of the timeline.\n\n- Underlord can turn a raw recording into a tight first cut from plain-language instructions.\n- A built-in screen recorder and Rooms for remote recording let you capture and edit in one app.\n- Eye Contact correction, Green Screen, and Automatic Multicam handle fixes that once needed specialist software.\n- Translation, captions, AI avatars, and generated show notes and YouTube descriptions help one recording travel further.\n- An API and MCP support let teams edit through code or from inside an AI assistant, and business plans add SOC 2 Type II, SAML SSO, and SCIM.\n\nDescript is ideal for podcasters, YouTubers, marketers, and in-house video teams, and the company lists enterprise users such as Amazon, Canva, and Salesforce. A free plan is available without a credit card, so import an existing episode, run Studio Sound and filler-word removal first, and then ask Underlord for a cut to see how much editing time you get back."
+  },
+  {
+    "slug": "designs-ai",
+    "status": "ok",
+    "sources": [
+      "https://designs.ai"
+    ],
+    "moreContext": "Designs.ai has evolved from a set of separate makers into an agent-driven creative platform, now presented as part of the Pixlr family. Instead of opening a logo tool and then a video tool, you brief a central AI agent that hands work to specialist agents and pulls the results together, which suits busy teams producing a lot of brand content.\n\n- Specialist agents cover brand, image, storyboard, video, slides, and audio, so one brief can produce a coordinated set of assets.\n- The platform routes tasks to leading models such as Claude, ChatGPT, Gemini, and Grok, choosing the right engine for each job.\n- A library of ready-made skills handles common requests, from logo design and short video ads to job descriptions and financial summaries.\n- Designs Claw works as a personal creative helper inside chat apps, generating images, video, and audio where conversations already happen.\n- Workflows and plugins let teams repeat proven processes, and the site displays GDPR and SOC compliance badges.\n\nDesigns.ai is a strong pick for small businesses, marketers, and agencies that want one subscription for branding, social visuals, video, and voice. Begin with the Brand agent to set up your identity, since later image, slide, and video requests will look far more consistent once that foundation is in place."
+  },
+  {
+    "slug": "devin",
+    "status": "ok",
+    "sources": [
+      "https://devin.ai"
+    ],
+    "moreContext": "Devin, from Cognition, has matured into a full platform for delegating real engineering work, not just a demo of autonomous coding. It now runs in the cloud or on your own machine, splits large jobs across parallel agents, and keeps working while your laptop is closed, which makes it feel more like a dependable teammate than a chat tool.\n\n- Each session spins up its own virtual machine and browser, so Devin can test what it builds and even record a walkthrough of the result.\n- DeepWiki maps codebases and architecture into readable documentation and diagrams that stay current.\n- Devin Review scans pull requests for bugs and vulnerabilities, and a single click assigns Devin the fix.\n- Scheduled and trigger-based workflows let it handle recurring chores such as fixing failed CI on GitHub or working through tickets from Linear and Jira.\n- The company lists SOC 2, ISO 27001, and FedRAMP, along with SSO, SCIM, audit logs, and zero data retention with model providers.\n\nDevin is best for engineering teams with a steady backlog of well-scoped tasks such as migrations, bug fixes, and test coverage, and Cognition lists companies like NVIDIA, Citi, and Cloudflare among its users. Write tickets with clear acceptance criteria and point Devin to the relevant files, because precise briefs lead to merge-ready pull requests far more often."
+  },
+  {
+    "slug": "dia-browser",
+    "status": "ok",
+    "sources": [
+      "https://www.diabrowser.com",
+      "https://www.atlassian.com/blog/company-news/atlassian-acquires-the-browser-company"
+    ],
+    "moreContext": "Dia comes from The Browser Company of New York, the team behind Arc, and it reflects their talent for rethinking everyday software. Instead of bolting a chatbot onto a sidebar, Dia treats AI as part of browsing itself, so asking about a page, comparing several tabs, or drafting a reply all happen in the same place you already work. Atlassian agreed to acquire The Browser Company in 2025, which signals a strong push toward work use.\n\n- Dia can pull information from your open tabs and connected tools such as Slack, Notion, and Teams into a single report.\n- It is available on both macOS and Windows, so mixed-platform teams can standardize on one AI browser.\n- A Memory toggle lets you decide whether Dia remembers your preferences, keeping personalization under your control.\n- Built-in tracker and ad blocking, end-to-end encrypted Sync, and a stated policy of never selling data or building ad profiles make it privacy-minded by design.\n- Dia for Work adds SSO and admin tools for companies that want to roll it out across a team.\n\nDia is a great fit for knowledge workers, researchers, and anyone who spends the day juggling dozens of tabs. The core browser is free to download, so try selecting several related tabs and asking Dia to compare them, since that is where it saves the most time over a traditional browser."
+  },
+  {
+    "slug": "d-id",
+    "status": "ok",
+    "sources": [
+      "https://www.d-id.com"
+    ],
+    "moreContext": "D-ID helped popularize the talking photo, and it has since built that expertise into a broader platform for avatar video and real-time conversational agents. Its strength is giving a face and voice to content and customer interactions without a film crew, whether you are making a training clip or putting a live agent on your website.\n\n- The company says its tools support video creation and real-time interaction in more than 120 languages.\n- Visual AI Agents can be embedded across digital touchpoints and can trigger workflows, not just answer questions.\n- Integrations with Microsoft PowerPoint, Canva, and Google Slides let you add presenter avatars to the formats teams already use.\n- Expressive avatar models, Live Portrait, and voice cloning help digital presenters feel natural and on brand.\n- A developer API supports avatar video and real-time streaming, and a self-hosting option is offered for organizations with strict requirements.\n\nD-ID suits marketers, educators, and product teams who want engaging avatar content or a human-like interface for an AI assistant, and the company notes recognition from G2 for ease of setup and performance. Start with the free trial in Creative Reality Studio, animate a single slide deck with a presenter, and then explore the agents product once you know which avatar style your audience responds to."
+  },
+  {
+    "slug": "dimensions-ai",
+    "status": "ok",
+    "sources": [
+      "https://www.dimensions.ai",
+      "https://www.niso.org/niso-io/2024/03/new-ai-powered-summarization-launched-dimensions",
+      "https://www.infodocket.com/2024/02/28/digital-science-announces-launch-of-dimensions-research-gpt-available-to-chatgpt-plus-and-enterprise-subscribers/"
+    ],
+    "moreContext": "Dimensions, from Digital Science, stands out because it connects research outputs that usually live in separate silos, so you can trace a line from a grant to the papers, patents, clinical trials, and policy documents that followed. That linked view makes it a serious tool for research strategy, not just literature search, and its AI features are layered on top of a very large, carefully structured dataset.\n\n- The site cites more than 160 million publications along with roughly 170 million patents, millions of grants, and tens of millions of datasets, with full text indexed for most publications.\n- One-click AI summaries are available for records in search results, and Digital Science has made that feature available even in the free web app.\n- Dimensions on Google BigQuery lets analysts join the data with their own private datasets for large-scale analysis.\n- An API streams research data into internal tools and workflows without manual exports.\n- Dimensions Research Strategy answers strategic questions with a source behind each finding, and a Dimensions Research GPT is offered inside ChatGPT.\n\nDimensions is ideal for research offices, funders, publishers, and pharma teams, and the company names users such as Princeton, Springer, Wiley, and Boehringer Ingelheim. Begin in the free web app to explore a topic, then move to BigQuery or the API when you need repeatable reporting across your institution's portfolio."
+  },
+  {
+    "slug": "domoai",
+    "status": "ok",
+    "sources": [
+      "https://domoai.app"
+    ],
+    "moreContext": "DomoAI built its reputation on turning ordinary footage into anime and stylized animation, and it has grown into a broad video creation suite while keeping that signature strength. It is especially fun for creators who want to restyle real clips, but it now covers generation, editing, and finishing too.\n\n- Beyond video restyling, it offers text-to-video, image-to-video, frames-to-video, and character-to-video tools in one place.\n- Lip sync and a talking avatar mode match audio to faces for character animation and presenter clips.\n- Background removal works without a green screen, with options for keeping only the subject or keying the screen.\n- Built-in upscaling for video and images, up to 6K for stills, helps finished pieces look sharp on any platform.\n- The company says it offers access to more than 70 AI video models and runs one of the most active creative communities on Discord.\n\nDomoAI is a strong pick for social video creators, VTubers, animators, and marketers who want eye-catching stylized content quickly, and the company says it has more than five million users. A free plan with starter credits lets you experiment, so begin with a short, well-lit clip with clear motion, since clean source footage gives the restyle engine the most consistent results."
+  },
+  {
+    "slug": "dovetail",
+    "status": "ok",
+    "sources": [
+      "https://dovetail.com"
+    ],
+    "moreContext": "Dovetail has expanded from a research repository into a customer intelligence platform that pulls together interviews, sales calls, support tickets, surveys, and reviews. That breadth means product, research, and support teams can work from the same evidence, with AI doing the heavy lifting of transcription, tagging, and synthesis.\n\n- Chat lets anyone ask questions across all customer data and get answers with citations back to the source.\n- Agents automate recurring work such as stakeholder updates and reports, and can route requests to Jira and Linear.\n- It draws from more than 30 sources, including Gong, Salesforce Service Cloud, Qualtrics, G2 reviews, and app store feedback, plus Slack, Teams, and Figma.\n- MCP connectors bring Dovetail context into tools like Claude, Cursor, and ChatGPT, and an API and CLI support custom builds.\n- Security includes SOC 2 Type II, ISO 27001, and ISO 42001, automatic PII redaction, and data hosting in the US, Europe, or Australia.\n\nDovetail is best for research and product organizations that want a single source of customer truth, and the company cites a Forrester Total Economic Impact study reporting significant time savings per user. Take the free trial, connect one high-volume feedback channel such as support tickets first, and let the automatic themes show you where to focus before adding interview projects."
+  },
+  {
+    "slug": "dubverse",
+    "status": "ok",
+    "sources": [
+      "https://dubverse.ai"
+    ],
+    "moreContext": "Dubverse comes from India's Lensmatic Solutions and has a particular gift for Indian languages and accents, which many global dubbing tools treat as an afterthought. It has grown into a full voice platform covering dubbing, subtitles, text-to-speech, and transcription, so creators and businesses can localize content end to end.\n\n- A library of more than 200 customizable voices spans different ages, genders, tones, and dialects, with styles such as podcast and audiobook.\n- Mixed-language scripts such as Hinglish or Spanglish can be voiced in a single pass, which suits how many audiences actually speak.\n- Voice cloning keeps a branded voice consistent across every language you publish in.\n- Batch processing and a developer API, including a low-latency model, support teams localizing large libraries or building voice into apps.\n- Pronunciation of numbers and dates is handled carefully, a detail that matters for education and finance content.\n\nDubverse is ideal for educators, YouTubers, media companies, and brands reaching multilingual audiences, especially in South Asia, and the company says it serves more than 500,000 brands. You can get started for free, so dub a short video first, then refine the translated script in the editor before regenerating, since small script fixes noticeably improve the final voice."
+  },
+  {
+    "slug": "durable",
+    "status": "ok",
+    "sources": [
+      "https://durable.com/"
+    ],
+    "moreContext": "Durable has grown from a fast website generator into an all-in-one business builder, now living at durable.com. The idea is that a small business should not need seven separate subscriptions for a site, bookings, a CRM, and marketing, and Durable does a commendable job of bundling those essentials into one simple dashboard.\n\n- SEO and GEO tools help businesses show up in Google and in AI assistants such as ChatGPT, including connecting a Google Business Profile.\n- Built-in bookings let customers schedule services directly from the website.\n- Integrated payment processing lets you get paid without wiring up a separate checkout tool.\n- An AI brand studio covers logos, business names, and images, so a new business can look polished from day one.\n- A built-in AI assistant offers business advice and drafts social posts and marketing copy.\n\nDurable is best for solo founders, service providers, and local businesses that want to get online quickly and manage customers in one place, and the company says it is trusted by around three million businesses. You can start for free, so generate your site, then spend ten minutes editing the copy with real details about your services and area, because specific local information is what helps both search engines and customers trust you."
+  },
+  {
+    "slug": "dust",
+    "status": "ok",
+    "sources": [
+      "https://dust.tt"
+    ],
+    "moreContext": "Dust focuses on making AI agents a shared team capability rather than a solo chat habit. Its multiplayer approach lets companies build agents grounded in their own systems, share reusable skills, and keep humans in the loop, with governance strong enough for security-conscious organizations.\n\n- More than 70 connectors, including Slack, Notion, Google Drive, GitHub, Salesforce, and Zendesk, give agents real company context.\n- Teams can choose from more than 20 frontier and open-source models from OpenAI, Anthropic, Google, Mistral, and others for each workflow.\n- Reusable skills and human review steps let teams standardize good agent behavior while keeping people in control.\n- Governance features include permissions, audit logs, and usage analytics, plus SSO and automated provisioning.\n- Dust is SOC 2 Type II certified and offers US or EU data residency, single-tenant deployment, and custom retention policies.\n\nDust is a strong fit for fast-growing companies that want agents across sales, support, engineering, and operations, and it names customers such as Datadog, Clay, Cursor, and Vanta. The company says more than 3,000 teams use it. Start the free trial by connecting your most-used knowledge source, then build one narrowly scoped agent for a frequent question before expanding to broader workflows."
+  },
+  {
+    "slug": "dzine",
+    "status": "ok",
+    "sources": [
+      "https://www.dzine.ai"
+    ],
+    "moreContext": "Dzine stands out by giving AI image generation the kind of control designers expect from a real editor. Its layered canvas lets you compose, select, and refine elements instead of rerolling prompts, and it has grown into a full image and video workspace that brings many leading models under one roof.\n\n- Auto-selection can split an image into separate layers that you save as reusable assets for future designs.\n- A Consistent Character tool keeps characters recognizable across multiple views, outfits, and expressions, which helps with comics and storyboards.\n- Restyling keeps the original composition intact while changing the look, so sketches and layouts survive the transformation.\n- A full video toolkit covers text-to-video, image-to-video, video-to-video, and reference-to-video, using models such as Veo, Kling, Sora, and Hailuo.\n- Exports reach up to 6144 by 6144 pixels with built-in upscaling options.\n\nDzine is ideal for illustrators, concept artists, and marketers who sketch first and want AI to follow their direction, and the company says more than five million creators use it. New accounts receive free credits with a daily refresh, so start by uploading a rough sketch and using the style library, which shows off its structure-preserving control better than a pure text prompt."
+  },
+  {
+    "slug": "easyremovebg",
+    "status": "ok",
+    "sources": [
+      "https://easyremovebg.com/"
+    ],
+    "moreContext": "EasyRemoveBG keeps background removal refreshingly simple: upload a photo, let the AI cut out the subject, touch up the edges, and download a clean PNG with no watermark. It skips the account wall for everyday use, which makes it a handy bookmark when you need a quick cutout for a listing, slide, or social post.\n\n- Erase and Restore brushes with undo let you fix tricky edges like hair or fine product details by hand.\n- You can export a transparent PNG or drop the subject onto a solid background color in the same step.\n- A separate bulk tool processes up to 10 images per batch and bundles the results into one ZIP after a Google sign-in.\n- Specialized pages handle logos, signatures, white product backgrounds, and WebP files, each tuned for that task.\n- Uploads travel over an encrypted connection and expire 24 hours after upload, after which they are cleared in a daily cleanup.\n\nEasyRemoveBG is best for online sellers, students, and small business owners who need fast cutouts without learning a design app. Files can be up to 10 MB and 25 megapixels in JPG, PNG, or WebP, so for the cleanest result, use a well-lit photo where the subject contrasts with the background and spend a few seconds with the Restore brush on fine edges."
+  },
+  {
+    "slug": "elai",
+    "status": "ok",
+    "sources": [
+      "https://elai.io"
+    ],
+    "moreContext": "Elai specializes in turning existing material into presenter-led video, which makes it especially practical for training and enablement teams that already have decks, articles, and documents. Instead of starting from a blank timeline, you feed in what you have and let Elai build a narrated, avatar-hosted draft you can polish.\n\n- PPTX-to-video turns PowerPoint slides into video scenes, and article-to-video converts a blog post link into a narrated piece.\n- Voiceovers cover more than 75 languages and over 450 accents, and the company says you can clone your own voice in 28 languages.\n- An AI Storyboard feature helps structure a script into scenes before you start editing.\n- Avatar Dialogs place two avatars on one slide, which suits role-play scenarios and customer conversation training.\n- Interactive video, screen recording, and an API for personalized video at scale extend it beyond simple explainers.\n\nElai is a great fit for L&D teams, customer education managers, and marketers who need consistent multilingual video without studio production, and the company says thousands of organizations use it. Start with the free trial by importing a short slide deck, then use one-click translation to create a second language version, since repurposing proven content is where Elai shines."
+  },
+  {
+    "slug": "elephas",
+    "status": "ok",
+    "sources": [
+      "https://elephas.app"
+    ],
+    "moreContext": "Elephas has refocused on a privacy-first idea that many professionals have wanted for years: ask questions about your own documents and get answers with exact citations, while your files never leave your Mac. The new version organizes knowledge into Brains you can share, and it takes a thoughtful approach to keeping personal data out of cloud models.\n\n- Answers cite the specific source passage and page, so you can verify every claim against the original document.\n- You can run a downloaded model entirely on your computer, use the built-in Elephas AI, or bring your own key for OpenAI, Claude, or Gemini.\n- It imports PDFs, Office files, plain text, images containing text, and web pages added by address.\n- Documents, the search index, and chats stay on your Mac with encryption, and names, emails, and phone numbers are masked before anything goes to a cloud model.\n- Brains can be shared with a team through end-to-end encrypted sync, and a Windows version is on the way.\n\nElephas is ideal for lawyers, consultants, researchers, and anyone handling sensitive files on an Apple Silicon Mac running a recent macOS. A seven-day free trial needs no card, so build a Brain around one active project and try the on-device model first, then switch to a cloud model only for questions that need extra depth."
+  },
+  {
+    "slug": "elevenlabs",
+    "status": "ok",
+    "sources": [
+      "https://elevenlabs.io"
+    ],
+    "moreContext": "ElevenLabs has grown from a remarkable text-to-speech engine into a complete audio platform, covering voice, agents, music, transcription, and dubbing under one roof. What keeps it ahead is expressiveness: its newest models handle emotion, pacing, and delivery in a way that makes long-form narration and character work sound genuinely performed.\n\n- Its Eleven v3 and newer v4 models focus on emotive delivery, while the Flash model targets very low latency for real-time apps.\n- ElevenAgents lets teams configure, test, deploy, and monitor voice and chat agents, with analytics, guardrails, and workflows built in.\n- Scribe adds speech-to-text with speaker diarization, so the same platform can both listen and speak.\n- A voice library of more than 17,500 voices sits alongside voice design from a text prompt, and Eleven Music generates full tracks with vocals or instrumentals.\n- ElevenCreative brings speech, sound effects, music, and video together in an editor built for podcasts, audiobooks, and voiceovers.\n\nElevenLabs is ideal for creators, publishers, game studios, and developers building voice products, and the company lists Twilio, Disney, Nvidia, and Adobe among the businesses using it. Developers can start quickly with the official SDKs, and anyone producing narration should experiment with the expressive model's audio tags and punctuation, since small script cues make a big difference in how natural the performance sounds."
+  },
+  {
+    "slug": "elicit",
+    "status": "ok",
+    "sources": [
+      "https://elicit.com",
+      "https://elicit.com/pricing"
+    ],
+    "moreContext": "Elicit is built for researchers who need evidence they can defend, not just quick answers. It treats literature work as a structured process, with screening, extraction, and reporting steps modeled on systematic reviews, and it backs AI-generated claims with sentence-level citations so you can check every statement.\n\n- The free Basic plan includes unlimited search across more than 138 million papers, plus unlimited summaries and chat with papers.\n- Research reports produce evidence briefs where you control which papers and data points are included.\n- The systematic review workflow automates screening and data extraction, and Elicit can analyze up to 20,000 data points at once.\n- Routines track new evidence on a topic so your review stays current after the first pass.\n- A personal library stores sources for reuse across projects, and you can import existing collections from Zotero.\n\nElicit is a natural fit for academic researchers, policy analysts, and life sciences teams, and the company says it is used by millions of researchers and by 8 of the top 20 pharmaceutical companies. Start with a precise research question rather than a broad topic, then add custom extraction columns to the results table, which is where Elicit saves the most time compared with reading papers one by one."
+  },
+  {
+    "slug": "elmren-voice",
+    "status": "ok",
+    "sources": [
+      "https://elmren.com/"
+    ],
+    "moreContext": "Elmren Voice takes a refreshingly private approach to text-to-speech: everything runs on your own Mac, so manuscripts, recordings, and cloned voices never leave your machine. It is designed for people who want to turn their own writing into polished listening and read-along material without a subscription or a cloud upload.\n\n- It reads pasted text and a wide range of files, including Markdown, EPUB, PDF, DOCX, SRT, VTT, and HTML, as long as PDFs have a text layer.\n- Exports include chapter audio, chaptered M4B audiobooks, self-contained read-along HTML pages, and captioned MP4 video.\n- You can choose from 64 built-in voices or clone a voice you have permission to use from a short, clean recording of a few seconds.\n- Script Mode suggests a voice for each character in a script, which is a thoughtful touch for fiction, dialogues, and lesson scenarios.\n- After a one-time engine and voice download, everyday creation works offline, and the app is sold as a one-time purchase rather than a subscription.\n\nElmren Voice is ideal for indie authors, teachers, language learners, and accessibility-minded creators with an Apple Silicon Mac running macOS 13 or later, and a Windows version is in development. A no-account trial includes generous synthesis minutes, so test it on one chapter and record your clone sample in a quiet room with an exact transcript for the most natural result."
+  },
+  {
+    "slug": "erasenoise",
+    "status": "ok",
+    "sources": [
+      "https://erasenoise.com/"
+    ],
+    "moreContext": "EraseNoise earns trust with a simple promise: you hear a 30-second before and after preview of your own file before paying anything. That honest approach suits creators who have been burned by tools that sound great on demos but struggle on real recordings, and it handles everyday problems like wind, fans, air conditioning, traffic, and hum.\n\n- Video uploads in MP4, MOV, M4V, or WebM keep the original H.264 or HEVC picture untouched, and only the soundtrack is cleaned.\n- Audio input covers MP3, WAV, M4A, AAC, OGG, Opus, and FLAC, with clean WAV output ready for Premiere, DaVinci Resolve, or CapCut.\n- A strength control lets you keep some natural room tone so voices do not sound hollow or over-processed.\n- Companion tools remove echo, reverb, buzz, background music, and silence, and also handle normalization and audio extraction.\n- Usage is billed by processing minutes, with a subscription or one-time minute packs that never expire, and files are deleted automatically 24 hours after upload.\n\nEraseNoise is best for podcasters, YouTubers, teachers, and anyone rescuing interviews recorded in less than ideal places. The site is candid about weak spots such as clipped audio and keystrokes landing on words, so preview the noisiest section of your file first and start with a moderate strength setting before increasing it."
+  },
+  {
+    "slug": "exa",
+    "status": "ok",
+    "sources": [
+      "https://exa.ai"
+    ],
+    "moreContext": "Exa approaches web search from the perspective of an AI agent rather than a human scanning blue links. The company trains its own embedding and retrieval models and runs its own large-scale crawl, so results are matched on meaning and returned as clean content that language models can use right away.\n\n- Its API family includes Search, Contents, Agent, and Monitors endpoints, plus Websets for building structured lists of companies, people, or documents.\n- Deep research runs through the same API and returns structured outputs with cited sources.\n- Requests can be tuned for fast responses or deeper multi-step research, so one provider can cover both chat lookups and long investigations.\n- An official MCP server makes Exa easy to plug into AI assistants and coding tools.\n- Exa reports a SOC 2 Type II audit, zero data retention, and support for GDPR, CCPA, and HIPAA with a BAA.\n\nExa is a strong choice for developers building agents, RAG pipelines, sales research tools, and research assistants, and the company says around 500,000 developers use it, naming customers such as Cognition, HubSpot, and monday.com. Start with the free trial in the dashboard, and write queries as descriptions of the page you want to find, since that style plays to the strengths of meaning-based search."
+  },
+  {
+    "slug": "exeedin",
+    "status": "ok",
+    "sources": [
+      "https://exeedin.com"
+    ],
+    "moreContext": "exeedin focuses entirely on LinkedIn, and that specialization shows. Rather than offering a generic writing assistant, it covers the full routine of a consistent LinkedIn presence, from finding ideas and sharpening hooks to designing carousels and publishing at the right time, so busy professionals only need to review and approve.\n\n- A hook generator produces ten opening lines at a time, which makes it easy to test angles before committing to a post.\n- It designs PDF carousels, one of LinkedIn's most engaging formats, directly from your ideas.\n- A post enricher adds research and supporting statistics, and a YouTube-to-LinkedIn converter repurposes video content into written posts.\n- A profile evaluator and smart engagement tools for AI-assisted comments help you grow beyond your own posts.\n- Scheduling and auto-posting use audience activity to pick timing, and the site is available in both English and Arabic.\n\nexeedin is best for founders, consultants, recruiters, and personal brand builders who want to post regularly without spending hours writing, and a Business plan adds team seats and analytics for agencies. Every plan starts with a short free trial, so use it to generate a week of posts at once, then edit each draft with a personal story or detail that only you could add."
+  },
+  {
+    "slug": "face-rating",
+    "status": "ok",
+    "sources": [
+      "https://face-rating.app/"
+    ],
+    "moreContext": "face rating offers a quick, curiosity-driven look at facial proportions, using landmark mapping to turn a single photo into scores and explanations. What sets it apart from many similar sites is its privacy stance: the free scan runs on your device, and the site says photos used for paid reports are deleted within a couple of hours.\n\n- The analysis maps a dense facial mesh and reports on symmetry, proportions, facial balance, and face shape.\n- Individual feature scores cover the forehead, eyes, nose, and jawline, along with the strongest feature and main limiter.\n- Free extra tools look at canthal tilt, golden ratio comparisons, eye and nose shape, and other facial ratios.\n- An optional one-time full report adds a personal plan, delivered as a web report and PDF, with no subscription and a refund window.\n- No account is required for the free tools, keeping the barrier to trying it very low.\n\nface rating is best for people curious about facial symmetry, photographers, and grooming or style enthusiasts looking for ideas. The site clearly states that results are informational and not medical advice, so treat the score as a lighthearted reference rather than a judgment. For the most consistent reading, use a well-lit, straight-on photo with a neutral expression and no heavy filters."
+  },
+  {
+    "slug": "factory-ai",
+    "status": "ok",
+    "sources": [
+      "https://factory.com/"
+    ],
+    "moreContext": "Factory, now at factory.com, builds what it calls an agent-native software development platform, with AI agents named Droids that plan, build, review, test, and ship production code. Its strength is meeting engineers where they already work, so delegating a task feels like assigning it to a colleague rather than switching to a new tool.\n\n- Droids are available from the command line, desktop, web, mobile, Slack, Microsoft Teams, Jira, Linear, and CI pipelines.\n- The Droid CLI runs interactively or headless, which makes it easy to script into existing developer workflows.\n- Missions handle long-running, multi-phase projects, while Automations run event-driven or scheduled work such as recurring maintenance.\n- Persistent Droid Computers give agents a lasting environment, and human approval checkpoints keep people in charge of important changes.\n- A typed public API with an OpenAPI specification exposes sessions, automations, usage, and wikis, and the platform works with multiple model providers.\n\nFactory is best for engineering organizations that want agents across the whole delivery cycle, from backlog tickets and pull request reviews to incident investigation and documentation. Start by connecting Droids to your issue tracker and assigning a few well-defined tickets, then add approval checkpoints and automations once you see which tasks your team is happy to hand off."
+  },
+  {
+    "slug": "fathom",
+    "status": "ok",
+    "sources": [
+      "https://fathom.ai/"
+    ],
+    "moreContext": "Fathom has earned a loyal following by making a genuinely capable meeting assistant free for individuals, and it has grown into a full conversation intelligence tool for teams. Now at fathom.ai and part of Superhuman, it lets people stay present in calls while it handles notes, follow-ups, and CRM updates.\n\n- It works with Google Meet, Zoom, and Microsoft Teams, and offers a bot-free capture option for meetings where a visible recorder feels awkward.\n- Ask Fathom searches across past meetings, so you can find a decision or customer quote without rewatching recordings.\n- Notes and action items sync to Slack, Salesforce, HubSpot, Notion, and Asana, keeping records updated without manual entry.\n- AI Scorecards and coaching moments help sales and customer success leaders review calls and improve team performance.\n- Meeting data can be accessed from ChatGPT and Claude, and the company lists SOC 2 Type II, GDPR, and HIPAA compliance with SSO and SCIM.\n\nFathom is ideal for salespeople, founders, consultants, and customer-facing teams, and the company says it is used at more than 500,000 companies. Start on the free plan, connect your calendar so it joins meetings automatically, and set up alerts for key topics such as pricing or competitors so important moments reach you without reading every summary."
+  }
+]

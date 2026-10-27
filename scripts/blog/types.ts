@@ -13,7 +13,19 @@ export type Block =
   | { ul: string[] }
   | { ol: string[] }
   | { quote: string }
-  | { hr: true };
+  | { hr: true }
+  /** Row of tool logos (tool slugs), each linking to its /tools page. */
+  | { logos: string[] }
+  /** Homepage screenshot of a tool (its listing screenshot, or one captured
+   *  by scripts/blog/capture-screenshots.ts). Caption supports inline syntax. */
+  | { shot: string; caption?: string }
+  /** Comparison table. Cells support inline syntax. */
+  | { table: { head: string[]; rows: string[][] } };
+
+/** Looks up tool data the renderer needs for logos and screenshots. */
+export type RenderContext = {
+  tool: (slug: string) => { name: string; logoMediaId: string | null; shotMediaId: string | null } | undefined;
+};
 
 export type Post = {
   slug: string;

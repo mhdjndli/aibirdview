@@ -52,6 +52,9 @@ model Tool {
   tagline         String
   description     String   @db.Text
   longDescription String   @db.Text
+  // Editorial "More context from AI BirdView" section. Plain text:
+  // paragraphs separated by blank lines, lines starting with "- " are bullets.
+  moreContext     String?  @db.Text
   url             String
   pricing         Pricing
   priceFrom       String?

@@ -1,0 +1,276 @@
+[
+  {
+    "slug": "grammarly",
+    "moreContext": "Few writing tools have earned as much daily trust as Grammarly, and the product has grown well beyond a spell checker into an AI writing layer that follows you from inbox to document to help desk. It now operates as part of Superhuman, and the company says it is relied on by around 40 million people and 50,000 organizations.\n\n- Coverage is unusually broad, with desktop apps for Windows and Mac, browser extensions for Chrome, Safari, Firefox and Edge, and mobile keyboards for iPhone, iPad and Android.\n- It works directly inside Google Docs, Microsoft Office and support tools like Zendesk, so suggestions appear where the writing actually happens.\n- A growing set of specialized agents covers tasks such as humanizing AI drafts, detecting AI text, predicting reader reactions, finding citations and grading assignments.\n- Business plans add brand tones and style guides, and enterprise options include confidential mode, granular roles and data loss prevention.\n- The company states that it does not sell user content or let third-party model providers train on it, a reassuring stance for professional writing.\n\nGrammarly suits almost anyone who writes for work or school, from students to support teams that need a consistent voice. A free plan covers core corrections and a limited number of AI prompts, so start there, then set up a brand tone or style guide early if you write on behalf of a team, because that is where the paid tiers deliver the most value.",
+    "sources": [
+      "https://www.grammarly.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "granola",
+    "moreContext": "Granola has become a favorite among founders and operators because it respects how people already take notes. Instead of replacing your jottings, it captures audio from your own device, then fills in the gaps afterward, so the final page still reads like your thinking rather than a generic transcript.\n\n- Apps for macOS, Windows, iOS and Android mean it works on Zoom, Google Meet, Teams and Slack huddles as well as in-person conversations captured on a phone.\n- Calendar sync detects upcoming meetings and prepares a short brief before external calls, summarizing attendees and what was discussed previously.\n- After a meeting it can pull out action items, draft follow-up emails and sketch project plans from the conversation.\n- A Granola MCP connector lets assistants such as Claude, ChatGPT and Cursor read your meeting notes, which turns your call history into usable context for other AI work.\n- Notes stay private by default, and you decide when to share them with other participants.\n\nGranola is ideal for people who live in back-to-back meetings, especially sales leads, investors, recruiters and product managers who need clean notes without a visible recorder. The free plan includes unlimited meeting notes with a limited history window, so it is easy to trial for a week. For the best results, type a few short cues during the call; Granola uses them as anchors and the enhanced notes come out noticeably sharper.",
+    "sources": [
+      "https://www.granola.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "graphite",
+    "moreContext": "Graphite has become the go-to answer for engineering teams who feel slowed down by giant pull requests and long review queues. Its approach pairs a stacking workflow, where large changes are split into small dependent PRs, with an AI reviewer and a purpose-built PR page, all synced with GitHub and now hosted at graphite.com.\n\n- A command line tool and a VS Code extension make creating, restacking and submitting stacks feel natural, and they work alongside your existing git aliases and scripts.\n- Graphite Chat lives on the PR page, where it explains changes, helps fix CI failures and commits suggested fixes in the same conversation.\n- The stack-aware merge queue lands PRs in order and keeps the main branch green, while stacking-aware CI avoids running jobs that are not needed.\n- A unified PR inbox, actionable Slack notifications, reviewer assignment rules and engineering insights round out the review workflow.\n- Published customer stories from Shopify, Ramp, Asana, Semgrep and Tecton describe faster review cycles after adopting stacking, and Cursor Cloud Agents can now be launched from inside Graphite.\n\nGraphite is best for product engineering teams on GitHub who ship many changes a day and want reviews to keep pace. There is a free 30-day trial with no credit card. To get the most from it, have a few engineers adopt the CLI and stack their next feature as three or four small PRs; the speed difference becomes obvious within a sprint.",
+    "sources": [
+      "https://graphite.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "greptile",
+    "moreContext": "Greptile stands out among AI code reviewers because it reasons over a graph index of your entire repository rather than just the lines in a diff. That lets it spot problems that ripple across files, and the company has paired this with parallel review agents and a testing agent to make each PR review more thorough.\n\n- TREX, its testing agent, writes and runs tests for each pull request inside a sandbox, adding evidence to the review rather than only opinions.\n- Teams can describe coding standards in plain English, and Greptile also learns from the comments reviewers leave on past PRs.\n- Findings can be handed to Claude Code, Cursor, Codex or Devin for fixes, and a Greptile MCP server lets other agents tap its codebase knowledge.\n- Self-hosting is available through Docker Compose or Kubernetes, including air-gapped setups with your own model providers.\n- Full support covers Python, JavaScript, TypeScript, Go, Java, C, C++, C#, Swift, PHP, Rust and Elixir, and the company says more than 22,000 teams use it.\n\nGreptile fits engineering teams on GitHub or GitLab with large or fast-moving codebases where cross-file bugs slip through human review. A free starter tier exists for individual developers, and qualified open source projects can use it free. Spend your first week writing a handful of plain-English rules for the mistakes your team repeats most; the reviews get noticeably more relevant once those are in place.",
+    "sources": [
+      "https://www.greptile.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "grok",
+    "moreContext": "Grok has grown from a chatbot inside X into a full assistant from xAI with its own web app, mobile apps and a fast-moving model lineup. Its blend of live web and X search, strong reasoning models and a personality that is willing to be blunt gives it a distinct feel next to more cautious assistants.\n\n- One account syncs conversations, settings and subscriptions across grok.com, the X app and native iOS and Android apps.\n- Grok Imagine creates images and short videos with sound, and it can animate a still photo or generate visuals from spoken prompts.\n- Voice mode holds natural spoken conversations, and on mobile you can share your camera or screen so Grok can comment on what it sees in real time.\n- You can upload documents and photos or paste links for analysis, and deeper research modes compile answers from many web sources.\n- A free tier includes limited real-time search and voice, while SuperGrok subscriptions raise limits and open more advanced models and media generation.\n\nGrok is a great match for people who follow breaking news, markets, tech or culture and want answers that reflect what is being said right now. It also suits creators who want quick image and video experiments in the same app. A practical tip: ask Grok to cite the posts and pages behind a real-time answer, then open a couple of them, since fast-moving topics reward a quick source check.",
+    "sources": [
+      "https://grok.com",
+      "https://apps.apple.com/app/grok/id6670324846",
+      "https://docs.x.ai/grok/overview"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "guru",
+    "moreContext": "Guru has repositioned itself as a governed knowledge layer for enterprise AI, which is a smart response to a real problem: AI assistants are only as reliable as the documents they read. Rather than just searching your wikis, it structures, verifies and maintains company knowledge so that people and AI tools draw from the same trusted source.\n\n- Knowledge Agents now do upkeep work, such as flagging conflicting versions, merging duplicates, spotting stale SharePoint pages and drafting new articles from Slack threads.\n- Verification can be automated, with agents verifying or unverifying content and routing questionable answers to the right subject expert.\n- Answers come with citations and are scoped by role, so employees only see what their permissions allow.\n- Security credentials include SOC 2 Type 2, HIPAA readiness, enterprise SSO, built-in data loss prevention, audit trails and configurable guardrails.\n- Published customer stories from SeatGeek, Shopify, Lemonade and TravelPerk show it in use for support, operations and change management.\n\nGuru is best for mid-size and large organizations, particularly support, HR, IT and sales teams, where wrong answers carry real cost and knowledge lives across many apps. The Philadelphia-based company sells mainly through demos, so come prepared with your messiest knowledge area. A good starting move is to connect the sources your team searches most, then let the agents surface duplicates and gaps before you roll AI answers out more widely.",
+    "sources": [
+      "https://www.getguru.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hailuo-ai",
+    "moreContext": "Hailuo AI is the consumer creative platform from MiniMax, one of the most active AI labs in China, and it has built a reputation for video clips where characters move and emote with real conviction. The site now centers on MiniMax H3, a natively multimodal model that the company presents as handling both generation and precise editing.\n\n- Omni Reference lets you attach a reference so a person, product or style carries through into new generations.\n- Hailuo Agent offers a conversational way to plan and produce content rather than prompting clip by clip.\n- Beyond video, the platform includes image and audio creation, so a short project can be built in one place.\n- A rotating library of trending templates (ASMR clips, style switches, pet and baby effects, cinematic looks) gives quick starting points for social posts.\n- MiniMax also publishes open-weight projects, hands-on tutorials and creative workflow guides that help newcomers learn the tools.\n\nHailuo is a strong pick for social creators, marketers and storytellers who care most about believable human motion and expressive faces. It is easy to try before committing, since the platform has long offered free daily credits. For better results, write prompts like stage directions: describe the emotion, the gesture and the camera move separately, and use a reference image whenever the same character must appear across several clips.",
+    "sources": [
+      "https://hailuoai.video"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "happy-scribe",
+    "moreContext": "Happy Scribe has earned a loyal following among journalists, researchers and video teams for doing two jobs very well: accurate transcripts and polished subtitles. The Barcelona-based company built its reputation on a clean editor and the option to send files to professional human transcribers when machine output is not enough.\n\n- The YouTube integration imports videos for processing and can publish multilingual subtitles straight back to your channel.\n- Connecting Zoom lets recordings flow in automatically for transcription, with speaker identification and summaries.\n- Files can be pulled from Google Drive, Dropbox and Box, and the company also lists connections for Microsoft Teams, Slack, HubSpot and calendar tools.\n- Developers get a REST API and an MCP server, and Zapier can trigger jobs automatically when new files arrive in a folder.\n- Exports cover common document and subtitle formats, including plain text, Word and standard caption files, so output drops into most editing workflows.\n\nHappy Scribe is a great match for media producers, podcasters, academics and localization teams who handle multilingual content regularly. It is especially handy when different projects need different accuracy levels. A useful habit is to run first drafts through the AI service, clean them in the editor, and reserve the human-reviewed option for broadcast or legal material where every word matters.",
+    "sources": [
+      "https://happyscribe.com/integrations",
+      "https://www.happyscribe.com/professional-transcription-services",
+      "https://startupshub.catalonia.com/startup/barcelona/happyscribe/6532"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "heartbits",
+    "moreContext": "Heartbits takes AI character chat a step further by treating each character as a story world rather than a single chat window. Conversations sit alongside images, videos and playable micro-dramas, so the experience feels closer to interactive fiction than to a typical chatbot.\n\n- You can browse public characters, images, videos and micro-dramas without an account, and only sign in when you want to chat, save favorites or create.\n- The character library spans realistic female and male personas as well as anime styles, with genres such as romance, mystery and fantasy.\n- A built-in AI agent turns a few rough ideas about looks, personality and relationship into a fully developed character with a world and story setup.\n- Creators can generate images and videos for their characters, build a playable micro-drama and publish the result to the community.\n- Personal conversations, drafts and private characters stay off public profiles and the community feed, which keeps your chats separate from what you choose to share.\n\nHeartbits suits adult fans of roleplay, visual novels and companion apps who enjoy shaping a story as much as chatting. Daily free diamonds let you explore before deciding on a subscription. To get the richest experience, give the creation agent specific details about a character's history and relationship to you; the more context it has, the more consistent the personality feels over long conversations.",
+    "sources": [
+      "https://www.heartbits.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hedra",
+    "moreContext": "Hedra first made its name with remarkably expressive talking characters, and the company has since grown into a visual AI research lab with both a creative studio and production infrastructure. Its creative product, Hedra Studio, is now pitched as a visual agent that plans, generates and edits across video, image and audio on one shared canvas.\n\n- Collaborative spaces let teammates, and even teammates' agents, work on the same canvas together.\n- Skills turn repeated prompts and workflows into reusable routines, and Elements save characters, products and visual references so outputs stay recognizable.\n- The studio gives access to many leading third-party models, including Veo, Kling, Seedance, Hailuo, Flux and ElevenLabs voices, alongside Hedra's own technology.\n- MCP connectors, a managed API and a CLI let developers bring Hedra into their own tools and pipelines.\n- For larger organizations, Hedra offers inference optimization and its World Model Runtime, with managed cloud, hybrid and on-premises deployment options.\n\nHedra is best for content teams, agencies and creators who want character-driven video and multi-model experimentation without juggling separate subscriptions, and for companies that need to serve visual models at scale. Save your recurring characters and products as Elements before starting a campaign, so every new clip stays on-model without you rewriting the same descriptions.",
+    "sources": [
+      "https://www.hedra.com",
+      "https://www.hedra.com/studio"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hemingway-editor",
+    "moreContext": "Hemingway Editor has long been a quiet favorite of writers who care about clarity, and its simple color-coded approach has taught many people to spot their own bad habits. The Plus edition keeps that philosophy intact while adding AI help that fixes what the highlights reveal, so you learn and improve in the same pass.\n\n- Editor Plus fixes highlighted issues, checks grammar and adjusts tone, turning a diagnostic tool into a hands-on editing partner.\n- The original Hemingway Editor Classic is still offered for writers who prefer the traditional highlight-only experience.\n- A set of free online tools covers grammar checking, paraphrasing, AI proofreading and readability scoring, so you can test the approach without an account.\n- The interface stays deliberately minimal, which keeps attention on the sentences rather than on menus and panels.\n- Built by the small team at Boondoggle Studio, the product has stayed focused on one job for years, which shows in how polished the core experience feels.\n\nHemingway suits bloggers, marketers, students and anyone writing documentation or web copy for a broad audience, where short sentences and plain words matter most. Editor Plus comes with a free two-week trial and no credit card. A good routine is to write your draft elsewhere, paste it into Hemingway, clear the red and yellow highlights first, and only then reach for the AI rewrite on sentences you cannot fix by hand.",
+    "sources": [
+      "https://hemingwayapp.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "herohunt-ai",
+    "moreContext": "HeroHunt.ai approaches sourcing the way a good recruiter would if they never needed sleep. You describe the role in plain language, and its AI Recruiter searches a very large pool of public profiles, scores each one against your requirements and starts personalized outreach, which makes it a practical force multiplier for lean hiring teams.\n\n- Search goes beyond LinkedIn to include developer communities such as GitHub and Stack Overflow, as well as networks like Xing, which helps when hiring technical talent.\n- RecruitGPT replaces boolean strings with natural language queries, so non-specialists can run strong searches.\n- Screening AI scores profiles on every stated requirement, helping you focus on the closest matches first.\n- Outreach runs across email and LinkedIn with prompt-based personalization and automatic follow-ups.\n- A People Search API gives developers and HR tech teams programmatic access to the same profile data, and the company says it covers more than 190 countries.\n\nHeroHunt.ai is best for in-house recruiters, agencies and startup founders who need to fill specialized roles quickly without growing the sourcing team. The Netherlands-based company offers a free trial, and an interactive demo shows the workflow before you sign up. To get better replies, write your role description the way you would brief a human sourcer, including must-haves, nice-to-haves and why the job is exciting; the outreach personalization draws on exactly that detail.",
+    "sources": [
+      "https://www.herohunt.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hex-magic",
+    "moreContext": "Hex has grown from a well-loved collaborative notebook into what it now calls an analytics platform for humans and agents. The key idea is that AI answers about your data should be grounded in the same governed definitions your data team maintains, so self-serve questions get consistent, trustworthy results.\n\n- The Notebook Agent can build complete analyses and reports, and the conversational Hex Agent answers business questions on top of endorsed semantic models.\n- Context Studio and evaluation tools help data teams see context gaps and measure how accurately the AI is answering.\n- A Slack integration lets anyone ask Hex a question in a thread and receive a governed answer with charts.\n- Analyses can be turned into generative dashboards and interactive data apps, and dashboards can be embedded where teams already work.\n- A CLI and connections to developer tools such as Claude and Codex let technical users drive Hex from their own environments.\n\nHex is ideal for data teams that want to support many business users without becoming a ticket queue, and for analysts who like mixing SQL, Python and visual cells. Customer quotes on the site come from data leaders at companies like Notion and StubHub, and you can get started for free. Invest early in a semantic model for your most-asked metrics; the agent's answers become far more reliable once those definitions are in place.",
+    "sources": [
+      "https://hex.tech"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "heygen",
+    "moreContext": "HeyGen has become one of the best-known names in AI video by making a personal avatar genuinely useful for everyday communication. Its latest avatar model, Avatar V, focuses on consistency, keeping the same face, expressions and presence across short clips and long course modules alike.\n\n- Avatar V learns how you talk, gesture and move from a recording, and can produce wide, medium and close-up angles from that single capture.\n- Lip sync is matched at the phoneme level, and the company says it supports more than 175 languages and dialects.\n- A Video Agent turns a short written idea into a finished, share-ready video without a camera or editing software.\n- HeyGen now offers its own voice model and a plugin for ChatGPT, so videos can be started from a chat conversation.\n- The company was named to the Forbes AI 50 and says it is trusted by a large share of Fortune 100 companies, with strong ratings on G2.\n\nHeyGen is a great fit for educators, marketers, founders and sales teams who want to show up on video regularly without filming every update, and for companies localizing content into many languages. A free plan lets you test the workflow. When recording footage for your avatar, use steady lighting, a plain background and natural gestures; the model learns your mannerisms, so the more relaxed you are, the more convincing the results.",
+    "sources": [
+      "https://www.heygen.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "higgsfield",
+    "moreContext": "Higgsfield first caught attention with dramatic preset camera moves, and it has since expanded into a full AI-native creative suite for images, video and audio. Its strength is packaging top generation models inside workflows that creators actually use, from cinematic shots to social series and ads.\n\n- The platform gives access to leading third-party models such as Kling, Seedance and Nano Banana Pro alongside Higgsfield's own tools, so you can pick the right engine per shot.\n- Cinema Studio, Ads Studio and Marketing Studio offer purpose-built spaces for film-style scenes, ad creative and campaign content.\n- Content Factory turns trending styles into ready-to-post series, while Higgsfield Playable can generate a simple mobile game from a single prompt.\n- An AI agent can automate creative workflows, and an MCP integration for Claude plus a ChatGPT plugin let you generate media from those assistants.\n- Higgsfield Academy offers step-by-step lessons, which makes the suite approachable for newcomers.\n\nHiggsfield is best for social media creators, music video makers, marketers and small studios who want striking, shareable visuals quickly. It works on both web and mobile. To get the most from it, start with a preset camera motion or template that matches your idea, then iterate on the prompt and model choice; the presets do much of the cinematic heavy lifting for you.",
+    "sources": [
+      "https://higgsfield.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hol-guard",
+    "moreContext": "HOL Guard tackles a problem many developers only notice after a scare: coding agents can run destructive commands, read secrets or push code as easily as they write it. Guard places a local checkpoint between the agent and your machine, and it does so in the open, with frequent public releases and visible contributors.\n\n- Policy decisions happen entirely on your computer, files are never uploaded, and the tool keeps working without an internet connection.\n- Coverage spans many agents, including Claude Code, Codex, Cursor, OpenCode, GitHub Copilot CLI, Antigravity CLI, Hermes and OpenClaw.\n- Command coverage includes cloud platforms like AWS, Azure and GCP, Kubernetes, databases, backups and package installs, and it maps risk across MCP servers and tools.\n- Every allow, ask or block decision is recorded, so you can review exactly what an agent attempted later.\n- Plugin maintainers get a companion plugin-scanner with a GitHub Action, useful for checking Claude Code or Codex plugins before release.\n\nGuard is built by HOL, which describes itself as a neutral consortium working on agentic AI standards, and it publishes security advisories and a searchable list of CVEs affecting AI tooling. It is ideal for solo developers and teams who let agents run with broad permissions on real machines. Start by running the free risk check, then install Guard and review its first week of decision logs to tune the policy to how you actually work.",
+    "sources": [
+      "https://hol.org/guard"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "honer-ai",
+    "moreContext": "Honer AI is a compact, independent Android assistant that packs a surprising number of organization features into one free app. It is distributed directly by its developer as an APK, which makes it an interesting option for Android users who want a capable bilingual assistant outside the usual big-name apps.\n\n- It runs on a wide range of devices, supporting Android 7.0 and later, so older phones are not left out.\n- Russian and English interfaces make it especially convenient for bilingual users and learners moving between the two languages.\n- Conversation branching lets you explore an alternative direction from any point without losing the original thread.\n- Web search answers include source links, which makes it easier to check facts before relying on them.\n- The developer publishes a SHA-256 checksum for the APK, along with a privacy policy and terms, which is a thoughtful touch for a sideloaded app.\n\nHoner AI suits Android users who want an all-purpose assistant for writing, translation, study and quick research, particularly Russian speakers. Since the app is installed outside an app store, download it only from the developer's official page and compare the published checksum with your file before installing. Note that AI replies and web search rely on an internet connection and cloud processing, and voice features use the speech services already on your phone.",
+    "sources": [
+      "https://xoner4.github.io/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hootsuite-owlywriter",
+    "moreContext": "Hootsuite is one of the original social media management platforms, and OwlyWriter AI benefits from living inside that mature toolkit. Instead of generating captions in isolation, it sits next to scheduling, analytics, listening and the shared inbox, so AI content is informed by what is actually happening on your channels.\n\n- Beyond captions, the AI assistant drafts video scripts, creative briefs and messages, and offers personalized strategy advice.\n- Social listening tracks brand mentions, competitors and trending topics, and its findings can feed straight into trend-informed content.\n- Built-in Canva templates, stock photos, bulk scheduling and a visual content calendar make it easy to go from draft to published post.\n- The unified inbox supports saved and suggested replies, automated Instagram DMs, message routing and team assignments.\n- Analytics cover hundreds of metrics with custom reports, competitor benchmarking and both paid and organic performance.\n\nHootsuite with OwlyWriter is best for social media managers, agencies and in-house marketing teams who manage several networks and want AI in the same place as planning and reporting. A free 14-day trial is available. To get the most from OwlyWriter, ask it to repurpose your best-performing posts from analytics rather than starting from scratch; reworking proven content is where AI drafting tends to pay off fastest.",
+    "sources": [
+      "https://www.hootsuite.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hoppy-copy",
+    "moreContext": "Hoppy Copy started as an AI email copywriter and has grown into a complete email marketing platform, which makes it unusually convenient for small teams. You can now write, design, automate and send newsletters and campaigns in one place, with AI that learns your brand rather than producing generic copy.\n\n- Brand Memory trains the AI on your voice and business details, so drafts sound like you from the first pass.\n- Built-in publishing, automations, forms and link-in-bio pages mean you can grow and email a list without a separate email service.\n- Audience tools handle segmentation and personalization, and analytics show what is working.\n- Competitor monitoring tracks rival brands' emails, giving you a steady source of ideas and benchmarks.\n- Extra tools such as an AI image creator, document editor and content converter help turn blog posts or news into polished emails.\n\nHoppy Copy is a strong choice for coaches, consultants, clinics, real estate agents, agencies and creators who want a consistent newsletter without hiring a copywriter. The company says more than 100,000 people have joined, and you can start free. Run every campaign through the spam checker before sending, and feed Brand Memory with a few of your best past emails; both small steps noticeably improve opens and consistency.",
+    "sources": [
+      "https://www.hoppycopy.co"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hubspot-breeze",
+    "moreContext": "HubSpot's AI has matured quickly, and its agents now live in a dedicated Agent Hub that sits on top of the HubSpot customer platform. Because every agent works from the CRM data your team already maintains, the results come with context that standalone AI tools struggle to match.\n\n- Marketing agents cover the full arc of a campaign, with a campaign agent to plan, a content agent to create blogs, social posts and landing pages, and a nurture agent to personalize follow-up emails.\n- The prospecting agent watches accounts for buying signals and reaches out at the right moment, while smart deal progression drafts follow-ups and CRM updates after calls.\n- The customer agent resolves common support questions around the clock using real contact and contract history.\n- A data agent answers custom questions about any contact or company by drawing on calls, emails and documents in the CRM.\n- Teams can build custom agents without code and reach every agent through Breeze Assistant wherever they work.\n\nHubSpot says the platform serves more than 306,000 customers, and Agent Hub is a natural fit for small and mid-size businesses already using HubSpot for marketing, sales or service. Start by turning on a single ready-made agent in the area with the most repetitive work, review its output in the Agent Hub dashboard for a couple of weeks, and expand from there.",
+    "sources": [
+      "https://www.hubspot.com/products/artificial-intelligence"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "humata",
+    "moreContext": "Humata was one of the early tools to make chatting with PDFs feel dependable, and its focus has stayed refreshingly practical: help people get through long, dense documents faster without losing track of where answers come from. Its backers include Google's Gradient Ventures, which led a seed round for the company behind it, Tilda Technologies.\n\n- Answers link back to highlighted passages in the source file, so you can verify a claim in seconds instead of rereading a whole paper.\n- You can ask follow-up questions as often as you like, asking for shorter summaries, comparisons between documents or a rewrite in a different style.\n- An embed option places Humata's document chat on any webpage, turning a help center or resource library into a question-and-answer experience for customers.\n- Shared team files sit in a secured private cloud with encryption at rest and role-based access, so sensitive material stays limited to trusted colleagues.\n- Plans run from a free tier through student, expert and team options, with usage-based pricing for heavier page volumes.\n\nHumata is a great match for researchers, analysts, students, legal and technical teams who routinely work through long reports and papers. Testimonials on the site come from research firms, university faculty and utility teams. Start with the free plan and no credit card, and organize uploads into folders by project; asking questions across a focused folder tends to give sharper, better-cited answers than querying everything at once.",
+    "sources": [
+      "https://www.humata.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hyperwrite",
+    "moreContext": "HyperWrite, built by OthersideAI, has earned a following by putting AI writing help directly where people already type. Its Chrome extension brings predictive suggestions, rewriting and research into Gmail, documents and most websites, while the web app offers a deep catalog of single-purpose tools for when you need something specific.\n\n- TypeAhead offers personalized, context-aware sentence completions as you write, which helps break writer's block without switching windows.\n- The research mode searches millions of scholarly articles and papers and returns writing with citations, a real plus for students and analysts.\n- An email responder turns a few words of intent into a complete reply right inside Gmail.\n- You can create custom AI tools tailored to your own workflows, so a repeated task becomes a one-click template.\n- HyperChat gives you a conversational assistant for brainstorming, feedback and problem solving alongside the writing tools.\n\nHyperWrite is best for students, professionals and content writers who spend much of their day in the browser and want help in every text box rather than in a separate app. You can get started free. Install the Chrome extension first and let TypeAhead learn from a few days of normal writing; its suggestions become noticeably more personal once it has seen how you phrase things.",
+    "sources": [
+      "https://www.hyperwriteai.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "hypotenuse-ai",
+    "moreContext": "Hypotenuse AI has grown from a bulk copywriting tool into an AI-first product information platform for ecommerce, which is a natural evolution for teams managing thousands of SKUs. It now handles product data, descriptions and imagery together, so catalogs stay consistent and ready for both search engines and AI-powered discovery.\n\n- Product data enrichment fills missing attributes and standardizes data, while automated tagging and categorization keep every SKU in the right place.\n- Content tools write on-brand titles and descriptions optimized for both classic SEO and generative engine optimization.\n- Translation and localization prepare catalog content for different markets and languages.\n- An AI-first asset library adds product photography generation, AI photo editing and an image compliance checker for retailer requirements.\n- Integrations include Shopify, Salesforce Commerce Cloud, NetSuite, Stibo and Plytix, plus an API and channel support for Amazon, Walmart and Target.\n\nHypotenuse is best for ecommerce brands, retailers and marketplace sellers in categories like fashion, furniture, electronics, beauty and industrial supplies. Enterprise features include SOC 2 compliance, granular access control and custom brand voices. Begin by setting up brand guidelines and running a small category through enrichment and description generation; reviewing that sample with your merchandising team makes the full catalog rollout far smoother.",
+    "sources": [
+      "https://www.hypotenuse.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ideogram",
+    "moreContext": "Ideogram earned its reputation by solving one of the most stubborn problems in AI imagery: legible, well-designed text inside pictures. That strength has made it a go-to for posters, logos, thumbnails and social graphics, and the platform has since built out style and editing tools that make it useful well beyond typography.\n\n- Style references let you upload a few images to guide the look of a generation, and style codes allow a favorite style to be saved and reused.\n- The canvas includes Magic Fill for prompt-based edits to specific areas and Extend for expanding an image beyond its original borders, working on both generated and uploaded images.\n- Ideogram Character creates a consistent character from a single reference photo, with no custom training or multi-image dataset required.\n- An iOS app brings generation to mobile, and an API gives developers access to the models for their own products.\n- Magic Prompt expands short ideas into richer, composition-aware prompts, which is helpful for beginners.\n\nIdeogram is ideal for designers, marketers, small business owners and content creators who need on-brand graphics with accurate words, from event flyers to product mockups. A free plan lets you experiment before upgrading. When text matters, put the exact wording in quotation marks in your prompt and describe the font style and placement; Ideogram follows those instructions closely.",
+    "sources": [
+      "https://ideogram.ai/features/character",
+      "https://about.ideogram.ai/character",
+      "https://the-decoder.com/?p=23336"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ilook-ai-face-analysis-2",
+    "moreContext": "For developers, iLook offers something rare in face analysis: a narrow, clearly bounded API that returns stable, versioned appearance feedback instead of broad computer vision output. Agents and apps can request the same report people see on the website without scraping, and the service is explicit about what it will not do.\n\n- The same scoring path is exposed through REST, an MCP server and A2A, with OpenAPI and Markdown mirrors plus discovery files so agents can find the schema on their own.\n- Calls can request a full report or a single focused measurement, such as facial symmetry, face shape, jawline or the Golden Ratio phi score.\n- Responses include a rubric version, explanations, confidence and a disclaimer, along with stable error codes that make integrations predictable.\n- Every call requires adult and lawful-use attestation, and the service rejects missing faces, multiple faces, possible minors and invalid images.\n- Bearer API requests are transient, and iLook says it does not create face embeddings or landmark archives.\n\nThis listing suits builders of profile-photo coaching, styling assistants, onboarding helpers and image-quality feedback features. Agent access does not require Google sign-in, and REST, MCP and A2A use is free within the limits of an issued API key. Store the returned rubric version alongside any result you keep, so you can interpret scores correctly if the methodology is updated, and avoid any high-impact use, which iLook explicitly rules out.",
+    "sources": [
+      "https://www.ilook.fit/ai-agent-face-analysis-api",
+      "https://www.ilook.fit/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ilook-ai-face-analysis",
+    "moreContext": "iLook stands out among face analysis apps for being honest about what a single photo can and cannot tell you. Rather than handing out an opaque rating, it explains each reading in plain language, shows how lighting and angle affect the result, and treats the score as subjective feedback about one image rather than a verdict on a person.\n\n- The overall 0 to 100 score is a published, weighted blend of five visible signals: facial harmony, symmetry, jawline and structure, skin appearance, and eyes and brows.\n- Focused tools cover face shape, symmetry, facial ratios, canthal tilt, eye shape, jawline and Golden Ratio context, each answering one specific question.\n- Styling helpers suggest hairstyles suited to your face shape, clothing color directions and notes on visible skin texture and lighting.\n- Successful scans stay in a private history until you delete them, and there is no public face gallery or identity record.\n- A library of guides explains topics like identifying your face shape and why faces can look asymmetrical in photos.\n\niLook suits curious adults who want thoughtful feedback on a profile photo, a new haircut or styling choices. The web version offers a few free scans per day, with a more detailed report available as an optional purchase, and a mobile app is also offered. For fair comparisons, use a front-facing photo in even light and keep the same framing each time, since small changes in angle or expression can shift the reading.",
+    "sources": [
+      "https://www.ilook.fit/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "image-describer",
+    "moreContext": "Image Describer is a focused, no-fuss utility that turns any picture into useful text in seconds. What makes it more versatile than a basic captioning tool is the range of output types it supports, from accessible alt text to ready-made prompts for popular image generators.\n\n- Analysis options include short and detailed descriptions, alt text, SEO-friendly text, style analysis and object recognition.\n- It can extract text from images with OCR, which is handy for screenshots, signs and scanned notes.\n- Dedicated prompt outputs are tailored for Flux, Midjourney and Stable Diffusion, helping you recreate or remix an image's look.\n- You can choose the output language, which makes it useful for multilingual sites and international teams.\n- Recent results are kept only in your browser for a limited time, and you can try a description once without logging in.\n\nImage Describer is a great fit for web publishers improving accessibility, ecommerce sellers writing product copy, social media managers and AI artists who want to reverse-engineer a style. A companion Image to Prompt tool is also available on the site. Paid users can select several analysis types at once, which is the fastest way to work: request alt text, an SEO description and a generator prompt together, then review and lightly edit each before publishing.",
+    "sources": [
+      "https://imagedescriber.dev"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "image-to-image",
+    "moreContext": "Image to Image makes prompt-based photo transformation approachable by guiding you toward clear instructions about what to change and what to keep. That emphasis on preservation is what sets it apart, because it helps keep faces, products and compositions intact while the style or scene around them changes.\n\n- One-click presets for restyling, product scenes and background removal give beginners a strong starting point.\n- You can choose the output aspect ratio, from square to vertical and widescreen formats, which saves a separate cropping step for social posts.\n- A restyle showcase demonstrates looks such as editorial collage, pencil sketch, stylized illustration, anime and oil painting from the same source photo.\n- Example prompts explain why each instruction works, effectively teaching good editing prompts as you browse.\n- Companion tools on the site convert photos into anime, line art or coloring pages for specific creative uses.\n\nImage to Image is well suited to small online sellers staging products, people refreshing profile portraits and hobbyists experimenting with art styles. Paid credits include commercial usage rights, which matters for shop and marketing images. For the most faithful results, follow the pattern in the site's examples: name the exact elements to preserve (face, pose, clothing, product shape and color) and state that only one change should be made.",
+    "sources": [
+      "https://imagetoimage.org"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "imagine-art",
+    "moreContext": "ImagineArt has evolved from a consumer image generator into a creative workspace built for teams that need a lot of on-brand visuals. Its appeal is breadth with control, combining dozens of leading image, video and audio models with studios, brand rules and automated workflows in one place.\n\n- The platform says it offers more than 50 models, including Kling, Seedance, Veo, Flux, Nano Banana Pro and GPT Image, alongside its own ImagineArt models.\n- Specialized studios target common jobs: Fashion Studio creates on-model lookbooks from a garment, Ad Studio produces ad creative in every format, and Film Studio keeps characters and storyboards consistent.\n- Brand guidelines lock colors, fonts and visual identity so every generation stays on brand.\n- Node-based workflows turn a single brief into a finished set of assets, which is ideal for repeatable campaigns.\n- Audio tools add voices and speech, including voice cloning for narration in other languages, plus video extend, relighting and inpainting.\n\nImagineArt is a strong match for ecommerce brands, agencies, fashion labels and marketing teams producing creative at volume; logos on its site include Unilever and Knorr. You can start creating free. Set up brand guidelines and save a reusable workflow before your first campaign, so every new asset inherits the same look without re-prompting.",
+    "sources": [
+      "https://www.imagine.art"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "imgkits",
+    "moreContext": "Imgkits is a handy all-in-one toolbox for the everyday image fixes that usually send people hunting across several apps. It now covers video and generation too, and you can browse tools by task or simply describe what you want done, which keeps it friendly for non-designers.\n\n- An AI image editor accepts natural-language instructions, so you can describe an edit instead of masking it manually.\n- Restoration tools colorize black-and-white photos, unblur images and enhance clarity, which is great for family archives.\n- Video features include image-to-video animation and text-to-video generation.\n- Creative generators produce logos, flyers, wallpapers, tattoo designs, emojis, action figures and even fantasy maps for tabletop games and novels.\n- Photo-to-art filters turn pictures into anime, cartoon, sketch and painting styles, and a stencil maker creates clean black-and-white templates.\n\nImgkits suits online sellers cleaning up product shots, social creators, crafters and anyone reviving old photos. Everything runs in the browser, and limited free access lets you try the tools before choosing a paid plan. A practical tip is to chain tools: remove the background first, then upscale or enhance the cutout, and finish by placing it on a new background, which gives cleaner results than one heavy edit.",
+    "sources": [
+      "https://www.imgkits.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "immersity-ai",
+    "moreContext": "Immersity comes from Leia Inc., a company with deep roots in 3D display technology, and that background shows in how well it converts ordinary photos and videos into convincing depth. The immersity.ai domain now leads to Leia's broader Immersity platform site, while the creative web app remains available at app.immersity.ai alongside free mobile apps.\n\n- Immersive Motion adds depth-driven camera moves to still images, with presets such as zooms, dolly zoom, perspective and circular motion.\n- Stereo conversion exports 3D images and videos for XR headsets including Apple Vision Pro and Meta Quest, as well as parallel, cross-eyed and anaglyph formats.\n- Output also plays on glasses-free 3D hardware, such as Acer SpatialLabs displays and Red Magic 3D tablets.\n- The iOS and Android apps turn up to five photos into a shareable reel, with more than ten motion styles and only a small watermark on the free version.\n- Leia also offers an SDK and switchable display hardware for device makers who want to build immersive viewing into their products.\n\nImmersity is ideal for social creators, photographers, music artists making motion covers and XR enthusiasts who want their libraries to feel three-dimensional. The web service is the paid option for professionals and commercial use. Pick images with a clear foreground subject and some background distance; the depth estimation has more to work with, and the motion looks far more striking.",
+    "sources": [
+      "https://www.leiainc.com/",
+      "https://www.leiainc.com/for-web",
+      "https://www.leiainc.com/for-mobile"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "instantly",
+    "moreContext": "Instantly has become a staple for outbound teams because it treats deliverability as the foundation rather than an afterthought. Around that core it has built a broad sales engagement platform, adding lead data, AI agents and a CRM so a campaign can go from prospect list to booked meeting in one tool.\n\n- An AI Copilot can find leads, write copy and assemble a full campaign from a simple chat request.\n- The AI Reply Agent and AI Sales Agent handle responses and outreach automatically, a feature customers single out in testimonials.\n- Lead intelligence includes a B2B lead database, email verification and website visitor identification.\n- Deliverability tools cover email account provisioning, warmup, inbox placement testing and a free email checker.\n- Workflows route and tag leads automatically when they visit your site, reply or book a meeting, and a ChatGPT connector lets you run outbound tasks from a conversation.\n\nInstantly is best for agencies, founders, freelancers and sales development teams running cold email at scale; the company says more than 50,000 sales teams use it. Instantly Academy, a daily live show and an active community make onboarding easier. Before launching a big campaign, run an inbox placement test and let new sending accounts warm up fully; that patience protects your domains and pays off in reply rates.",
+    "sources": [
+      "https://instantly.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "instapv",
+    "moreContext": "InstaPV offers a straightforward way to look at public Instagram content from any web browser without signing in. For people who do not use Instagram, or who prefer not to log in for a quick check, it removes the login wall around public stories, posts and profiles, and it keeps a clear line by limiting itself to public accounts.\n\n- No Instagram account, password or app install is needed, so it works on shared or work computers where you would rather not sign in.\n- Dedicated viewers cover stories, posts, reels, highlights and profile pictures, letting you jump straight to the content type you want.\n- A recent-followed workflow rebuilds a timeline of accounts a public profile has followed, a view Instagram no longer shows directly.\n- A free preview covers recent public content, while the premium tier adds full story playback, deeper browsing and original-quality downloads without ads.\n- The service states that it does not access private accounts, which keeps it within the bounds of what account owners have chosen to make public.\n\nInstaPV suits marketers checking competitor or brand accounts, researchers reviewing public creator content and people without Instagram accounts who want to see a public post they were sent. Use it thoughtfully: respect creators' copyright when downloading media, keep downloads for personal reference unless you have permission, and remember that public visibility is not the same as consent to republish.",
+    "sources": [
+      "https://www.instapv.ai/"
+    ],
+    "status": "ok"
+  }
+]

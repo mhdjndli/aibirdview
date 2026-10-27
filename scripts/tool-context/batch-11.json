@@ -1,0 +1,284 @@
+[
+  {
+    "slug": "pepys",
+    "moreContext": "Pepys keeps transcription refreshingly simple: you pay only for the hours you actually process, and purchased credits never expire, so there is no subscription to manage. That makes it a natural fit for anyone who transcribes in bursts, from podcasters and journalists to students and legal teams, and it handles far more than plain file uploads.\n\n- It accepts links straight from YouTube, TikTok, Instagram, Spotify, Apple Podcasts, Zoom and other platforms, and connects to Google Drive, OneDrive and Zoom accounts, so you rarely need to download a file first.\n- The Ask feature answers questions about a transcript with timestamp citations, and it tells you plainly when the answer is not in the recording.\n- Exports cover TXT, Markdown, DOCX, PDF, SRT, VTT and JSON, with speaker labels and subtitle timing carried through.\n- Power users get a Chrome extension, a developer API, and an MCP server and connector for Claude, while a separate Mac app called Pepys Dictate handles dictation in any app.\n- On privacy, the company says it never trains on user audio, source files expire after about 30 days, and no meeting bot has to join your calls.\n\nIt is best for creators, researchers and professionals who want accurate, searchable transcripts without committing to a monthly plan, and the free starter minutes make it easy to judge quality first. A practical tip: run the cleanup mode to strip filler words, then generate the notes style that matches your recording (show notes, lecture notes or meeting decisions) so the transcript is ready to share right away.",
+    "sources": [
+      "https://pepys.co/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "perplexity",
+    "moreContext": "Perplexity has become a default research companion for people who want to see where an answer came from before they trust it. Every response arrives with numbered sources, follow-up questions keep the earlier context, and the product now stretches well beyond a single search box into a full research workspace with its own browser.\n\n- Comet, the company's AI-first browser, became a free download for everyone in October 2025 and adds a sidecar assistant that can summarize the page you are reading and help you navigate in context.\n- Spaces let you group threads, files and instructions by project, which turns one-off searches into an organized research library.\n- Deep Research runs dozens of searches and reads hundreds of sources to produce a structured report in a few minutes, a real time saver for market scans and literature reviews.\n- Pro subscribers can choose which frontier model answers a question, and can ask Perplexity to build reports, spreadsheets, dashboards and simple web apps from a plain-language prompt.\n- The free plan still includes a daily allowance of Pro Searches, so casual users get a genuine taste of the stronger research mode.\n\nIt is best for students, analysts, journalists and anyone who needs fast answers they can verify. A practical tip: create a Space for each ongoing project and upload your own reference files, so answers draw on both the live web and your material, and use Deep Research when a question deserves more than a quick summary.",
+    "sources": [
+      "https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work",
+      "https://www.tomsguide.com/ai/perplexity/perplexitys-ai-browser-comet-is-now-free-for-everyone-heres-how-to-download-it",
+      "https://yourstory.com/ai-story/perplexity-ai-comet-browser-free-worldwide"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "phind",
+    "moreContext": "Phind earned a loyal following among developers by answering programming questions with cited web sources, working code and, in its later versions, visual diagrams that explained how the pieces of a system fit together. Founded in 2022 by Michael Royzen and Justin Wei (it launched under the name Hello before rebranding), it was one of the first answer engines built specifically for technical questions. Please note that multiple reports say the hosted service shut down on January 16, 2026, so treat this section as a record of what it did well.\n\n- Answers were citation-first, which made it easy to check documentation and community threads instead of trusting generated code blindly.\n- It paired web search with in-house coding models such as the Phind-70B line, alongside frontier models for Pro users.\n- Its second major version added richer answers with images and diagrams, plus the ability to run extra searches while composing a response.\n- The company released open-weight coding models that, according to reports, remain downloadable even after the hosted product closed.\n\nDevelopers who relied on Phind will find similar web-grounded coding help in general assistants that now include live search, which reports cite as a key reason for the shutdown. If you exported your Phind chat history before the deadline, keep it in your notes or snippet manager, since it captures solutions you already vetted.",
+    "sources": [
+      "https://neuronfeed.com/startups/phind",
+      "https://www.producthunt.com/products/phind-com-ai-search-engine/launches/phind-3",
+      "https://alternativeto.net/software/phind/about"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "photo-ai",
+    "moreContext": "Photo AI turns a handful of selfies into a reusable personal model, so you can produce professional-looking portraits without booking a photographer or a studio. Built by well-known indie maker Pieter Levels, it has become one of the most recognizable personal photo generators, and the counter on its homepage reports more than 31 million photos created.\n\n- Training needs only a small set of varied selfies, and the company says models are usually ready in under two minutes, with no need to retrain later.\n- More than 25 themed photo packs, from LinkedIn headshots to dating profile shots and seasonal sets, are included in every plan, and you can also write your own prompts.\n- It now generates video too, turning a photo or a text prompt into a clip with sound using models such as Kling and Seedance.\n- Jobs start right away without queues, which makes it practical to iterate on outfits, locations and lighting in a single sitting.\n- Sign-in works with Google or email, and the whole workflow runs in the browser with nothing to install.\n\nIt is best for professionals refreshing their headshots, creators who need a steady stream of on-brand images of themselves, and anyone updating a dating or social profile. For the best results, upload selfies with different angles, outfits and backgrounds in good natural light, since variety in your training photos translates directly into more convincing results.",
+    "sources": [
+      "https://photoai.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "photoroom",
+    "moreContext": "Photoroom grew from a simple background remover into a complete visual production studio for commerce, and it remains one of the most polished tools in the category. Founded in Paris in 2019, the company says more than a million businesses use it and that its background remover alone is trusted by over 80 million people. It works just as well for a solo seller on a phone as for a retail brand processing entire catalogs.\n\n- It runs on iPhone, iPad, Android and the web, and offers a Shopify app plus a REST API for teams that want to automate edits.\n- Batch jobs apply background removal, resizing, positioning and format conversion to thousands of images in one go.\n- A Brand Library stores logos, colors, fonts and layouts with role-based access, so every image stays consistent across a team.\n- Newer AI tools cover virtual try-on, AI fashion models, ghost mannequin and flat lay shots, plus product videos and ad templates.\n- Enterprise buyers get SOC 2 Type 2 and GDPR compliance, credit dashboards per API key, and an MCP connector for Claude.\n\nIt is best for ecommerce sellers, marketplace merchants and marketing teams who need clean, consistent product imagery at volume, and you can start for free before upgrading. A practical tip: set up your Brand Library and Instant Resize presets first, so one edited photo can be exported in the right format for Amazon, Shopify and Instagram in a single pass.",
+    "sources": [
+      "https://www.photoroom.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pi",
+    "moreContext": "Pi stands apart from productivity chatbots because it was designed first as a conversational companion, with a calm, curious personality that asks thoughtful follow-up questions and gives you room to think out loud. Inflection AI launched it in May 2023, and it runs on the company's own foundation models, built around what Inflection calls personal intelligence.\n\n- Its voice mode offers several natural-sounding voices, so you can talk through a problem hands-free instead of typing.\n- Conversations feel supportive rather than transactional, which suits reflection, brainstorming, rehearsing a difficult conversation, or simply unwinding after a long day.\n- It has been free for individual users since launch, with no tiers or upgrade prompts to navigate.\n- It is available on the web at pi.ai and through mobile apps, so a conversation can follow you from desk to phone.\n- Inflection describes Pi as empathetic and context-aware, and that design goal shows in how it remembers the thread of a conversation and adapts its tone.\n\nAfter Microsoft hired Inflection's co-founders and much of its team in 2024, the company shifted its business focus, so Pi sees fewer headline updates than newer assistants, though it remains online. It is best for people who want a patient sounding board rather than a research tool. Tip: tell Pi what kind of support you want, whether encouragement, honest pushback or practical next steps, and it will tailor its replies.",
+    "sources": [
+      "https://inflection.ai",
+      "https://pi.ai",
+      "https://hub.advancement.virginia.edu/tektok-update-pi-personal-intelligence-ai-assistant"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "picsart",
+    "moreContext": "Picsart has been a staple of mobile creativity for more than a decade, and it has kept pace by folding a large catalog of AI models into the editor creators already know. Founded in 2011 by Hovhannes Avoyan, with deep engineering roots in Armenia and headquarters in Miami, it now spans photo, video, design and generative work in one place.\n\n- The AI Playground offers a long list of image, video and audio models, including Flux, Ideogram, Nano Banana and Seedance, without juggling separate subscriptions.\n- An agent called Aura takes a plain-language request, picks the right models, runs the steps and hands back a finished edit.\n- Flow lets you chain models and effects into reusable workflows, which is handy for recurring content formats and series.\n- Paid plans support bulk editing of dozens of images at once, plus brand kits and generous cloud storage for teams.\n- Picsart is also reaching into AI assistants and developer tools, listing connections for Claude, ChatGPT, Gemini and Cursor and a command-line tool, with some of these still rolling out.\n\nIt is best for social media creators, small businesses and marketers who want quick, trend-friendly visuals without a steep learning curve, and there is a free tier to start with. A practical tip: save your favorite multi-step edits as a Flow, so your signature look can be applied to new photos and videos in seconds.",
+    "sources": [
+      "https://picsart.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pictory",
+    "moreContext": "Pictory has earned a reputation as one of the easiest ways to turn written material into finished video, which makes it a favorite with marketers, educators and anyone who would rather not learn a timeline editor. Beyond articles and scripts, it now accepts PDFs, PowerPoint decks, audio, podcasts and screen recordings, and it can even start from a single idea.\n\n- Voiceovers use ElevenLabs voices in multiple languages, and you can also clone your own voice or create an AI avatar of yourself.\n- Existing videos can be clipped, transcribed, translated and dubbed, which helps repurpose webinars and long recordings for new audiences.\n- Horizontal, vertical and square layouts cover YouTube, TikTok, Instagram, LinkedIn and presentations from a single project.\n- Zapier and Make connections move finished videos into storage or other apps, and a Video API supports programmatic, branded video at scale.\n- Shared team workspaces keep brand kits and projects together, and the company says more than 20,000 teams and institutions rely on it.\n\nIt is best for content marketers, course creators and small teams who publish often and want consistent branded video without hiring an editor. A free trial with starter credits and no card required makes it easy to test. Tip: set up your brand kit before your first project so fonts, colors and logos apply automatically to every video you create.",
+    "sources": [
+      "https://pictory.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pieces",
+    "moreContext": "Pieces tackles a problem most developers feel daily: the context you need is scattered across editors, browsers, chats and meetings, and it evaporates the moment you switch tasks. Built by Mesh Intelligent Technologies, its desktop app quietly builds a searchable memory of your work so you can pick up exactly where you left off.\n\n- Memories are saved on-device by default, and you can pause capture, exclude specific apps or websites, and delete memories by time, app or source.\n- The Pieces MCP server feeds your history into assistants such as Claude, Cursor and Codex, so they answer with your real working context.\n- It captures from tools many developers live in, including VS Code, JetBrains IDEs, Chrome, Slack, Notion, Gmail, Zoom and GitHub Copilot.\n- A timeline view and conversational search let you ask what you were doing on a ticket last week, and one click generates standup updates, meeting prep or a day recap.\n- Pro users can switch between Claude, Gemini, ChatGPT and local models per question, while enterprise teams can bring their own API keys and set org-wide capture policies.\n\nIt is best for developers and technical teams who juggle several projects and lose time reconstructing context. New users can try any plan free for seven days. Tip: set your app and website exclusions on day one, so the memory stays focused on work and personal browsing is never captured.",
+    "sources": [
+      "https://pieces.app",
+      "https://pieces.app/pricing"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pika",
+    "moreContext": "Pika began as a playful text-to-video tool from Stanford researchers Demi Guo and Chenlin Meng, and it has grown into an all-in-one creative platform for video, images and sound. Its signature effects made it a fixture of social feeds, and the newer studio apps make it just as useful for product and marketing work.\n\n- Alongside its own Pika 2.5 and Pikaframes models, it offers a broad lineup of third-party video and image models from a single account.\n- Dedicated apps cover Product Ad, Swap Anything, Motion Transfer, Extend Video and Color Grade, so common jobs need little or no prompt writing.\n- Recently added audio tools, including Pika Music, Pika Soundtrack, Pika SFX and Pika Speech, let you score and voice a clip without leaving the platform.\n- Image tools such as Character Studio and Product Shot help keep a consistent character or product across a whole campaign.\n- Developers can reach many generative media models through one API, and Pika also offers an MCP server and a ChatGPT plugin.\n\nIt is best for social creators, marketers and small brands who want eye-catching clips fast, with enough control for polished output. Tip: use Pikaframes to set your opening and closing frames, then add a soundtrack in the same project, which gives short clips a deliberate, finished feel.",
+    "sources": [
+      "https://pika.art"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pixelcut",
+    "moreContext": "Pixelcut has grown from a handy background remover into a full AI image and video studio for sellers and brands, while keeping the mobile-first simplicity that made it popular. The company says more than 70 million sellers, creators and businesses use it, and the experience is consistent whether you start on a phone or in a browser.\n\n- A Creative Agent plans and carries out multi-step edits for you, drawing on leading image and video models without any special prompting.\n- Upscaling goes up to 16x with a choice of models, including Topaz, which helps rescue small supplier photos for large product pages.\n- Workflows such as Product Showcase, AI UGC Ads and Personas turn a single product shot into studio scenes, talking-video ads or a consistent brand character.\n- Batch editing handles hundreds of files at once, and a documented public API lets teams plug Pixelcut into their own catalog pipelines.\n- It is available on iOS, Android and the web in 14 languages, and the company also offers a Pixelcut integration for Claude.\n\nIt is best for ecommerce sellers, resellers and small brands who need professional product imagery and short ads without a photographer, and you can start creating for free. Tip: run batch background removal and shadows across your whole catalog first, so every listing shares the same clean look before you add lifestyle scenes.",
+    "sources": [
+      "https://www.pixelcut.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pixonara",
+    "moreContext": "Pixonara pairs a free, browsable prompt gallery with image and video generation, which makes it a practical starting point for teams that know what they need but not how to phrase it. Instead of facing a blank prompt box, you begin from proven examples sorted by model and creative goal, then adapt them to your own product or campaign.\n\n- The prompt gallery is free to browse, filter and copy, with collections organized around goals such as product photos, posters and social posts.\n- Several leading models sit side by side, including GPT Image for detailed prompt-led work, Nano Banana for reference-aware edits, Midjourney for expressive styles and Seedance for short motion.\n- Reference uploads let you anchor identity, shape, color or composition, which keeps product shots consistent across variations.\n- Image-to-video and video-to-video workflows turn a strong still into a short clip for campaigns or product pages.\n- Generation history and favorites make it easy to revisit what worked, and the site says credits for failed tasks can be returned.\n\nIt is best for marketers, ecommerce teams and creators drafting product visuals and campaign concepts quickly. Tip: find a gallery prompt close to your goal, copy it, then upload your own product as a reference, which gives you a strong first draft before you spend credits on 2K or 4K output.",
+    "sources": [
+      "https://pixonara.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pixverse",
+    "moreContext": "PixVerse has become one of the most popular AI video apps among social creators, known for fast, fun templates and strong anime and stylized results, and it has matured into a serious production tool as well. It is developed by AIsphere, a Beijing-based video generation startup, and runs its own proprietary models alongside partner models.\n\n- PixVerse V6 produces 1080p video with native audio, and the company reports it topped the Artificial Analysis image-to-video leaderboard in blind preference voting in April 2026.\n- An Agent lets you direct shots through conversation, while Canvas offers a node-based workflow for more complex sequences.\n- Video extension, transitions, lip sync and character consistency make it easier to build multi-shot stories rather than isolated clips.\n- Mini-apps such as Ad Master, Magic Extend and Vibe MV, plus a Marketing Hub, give marketers guided paths to ad-ready video.\n- It runs on the web, iOS and Android, and offers a developer API and a command-line tool for production pipelines.\n\nIt is best for trend-driven creators, anime and stylized storytellers, and marketers who want quick, eye-catching ads. Tip: start from a template to learn which motions and effects suit your content, then move to the Agent or Canvas once you want shot-by-shot control.",
+    "sources": [
+      "https://pixverse.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "plask",
+    "moreContext": "Plask makes motion capture accessible to anyone with a camera, turning ordinary video into 3D character animation without suits, markers or a studio. Developed by a Seoul-based team, it runs in the browser and pairs AI mocap with a full animation editor, and its site displays logos from studios such as Nexon, Square Enix and Activision.\n\n- Its V2 extraction mode adds foot correction and handles moving cameras, and multi-person tracking can capture several performers from one video.\n- Animations export as FBX, BVH or GLB, which slots into most 3D pipelines, and Maya is named among compatible tools.\n- Plask Live brings captured motion straight into Blender and Unreal Engine through dedicated plugins.\n- VRM and PMX characters get physics and auto-blinking, a thoughtful touch for VTuber and anime-style projects.\n- AI-assisted cinematography can automate lighting and camera moves, with motion blur, depth of field and tone mapping available in post.\n\nIt is best for indie game developers, animators, VTubers and students who need believable motion on a budget, and a free Freemium plan makes it easy to try. Tip: film against a plain background with your whole body in frame and even lighting, which gives the AI cleaner data and cuts down on cleanup in the timeline.",
+    "sources": [
+      "https://plask.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "playground",
+    "moreContext": "Playground has evolved from an AI art generator into an AI design studio for people who need finished, usable graphics rather than raw images. Founded by Mixpanel co-founder Suhail Doshi, it now centers on templates and print-ready output, and the main site has moved to playgroundai.com. The company says more than 13 million creators in 120 countries have used it.\n\n- Thousands of templates across two dozen categories cover T-shirts, stickers, logos, posters, mockups and social posts, so you start from a layout instead of a blank canvas.\n- Non-destructive editing tools such as style swap, object removal, smart layers and add-to-mockup make revisions quick and low risk.\n- Built-in utilities handle background removal, upscaling, AI resizing, logo generation and file conversion.\n- It offers a choice of strong image models, including GPT Image and Nano Banana alongside its own Playground v3.\n- MCP integrations with Etsy, Printify and Printful, plus Cricut-focused workflows, help print-on-demand sellers move from idea to product.\n\nIt is best for print-on-demand sellers, small businesses and social media managers who want polished designs without hiring a designer. You can start for free with no credit card, on the web or the iOS app. Tip: begin with a template in your target format, then use style swap to try several looks before committing to a final file.",
+    "sources": [
+      "https://playgroundai.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "play-ht",
+    "moreContext": "PlayHT built one of the most respected voice AI platforms of its time, known for natural, expressive text to speech and fast voice cloning that developers used for narration, phone systems and real-time voice agents. Later branded as PlayAI, it was an early leader in low-latency conversational speech. Please note that multiple reports say Meta acquired the company in July 2025 and that the PlayHT service was permanently shut down on December 31, 2025, and the site no longer loads.\n\n- Its streaming voices were tuned for live conversation, which made it a popular choice for teams building voice agents and IVR flows.\n- Voice cloning let creators and businesses reproduce a voice quickly, keeping narration consistent across many projects.\n- A large voice library spanning many languages and accents served audiobook, e-learning and video creators.\n- Reports say the roughly 35-person team joined Meta's Superintelligence Labs, where its work on natural voices supports Meta AI, AI characters and wearables.\n\nFormer users looking for a replacement should compare current text to speech providers on latency, cloning quality and language coverage, and several competitors published migration guides after the closure. If you still have scripts, pronunciation notes or voice settings from PlayHT projects, keep them, since they will make rebuilding your voice setup elsewhere much faster.",
+    "sources": [
+      "https://anyspeech.io/playht-alternatives",
+      "https://cognitivefuture.ai/elevenlabs-vs-playht-alternatives/",
+      "https://www.aiwiki.ai/wiki/playht"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "podcastle",
+    "moreContext": "Podcastle has grown beyond podcasting and now operates under a new name, Async, with its main site moved to async.com. The company describes the change as an evolution rather than an acquisition, and existing accounts and plans carried over, so longtime users keep their familiar tools while gaining a broader video and audio suite.\n\n- Magic Dust, its well-loved enhancement tool, removes background noise and clarifies voices so home recordings sound closer to studio quality.\n- Editing is increasingly chat-driven: you describe the cut you want, and it can remove filler words, pauses and bad takes, sync cuts to music, add captions and generate B-roll.\n- Saved skills let you reuse your personal editing style across episodes, which keeps a series consistent.\n- Multilingual AI voices, voice cloning, text to speech, AI subtitles and dubbing help you reach audiences in other languages.\n- A separate Async Developer Platform offers API access to the company's AI audio technology for teams building their own products.\n\nIt is best for podcasters, video creators and marketing teams who want to record, polish and repurpose content in one browser-based studio, and a free basic option remains available. Tip: run Magic Dust on your raw recording before editing, then cut short clips for TikTok, Reels and Shorts from the finished episode to stretch every recording further.",
+    "sources": [
+      "https://async.com/",
+      "https://async.com/blog/podcastle-is-now-async",
+      "https://async.com/blog/from-podcastle-to-async/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "poe",
+    "moreContext": "Poe, built by Quora, solves a practical problem for anyone who likes to compare AI models: one account opens a huge catalog of text, image, video and audio models plus community-built bots in a single interface. It runs on the web, iOS, Android, Windows and macOS, and conversations sync in real time, so a thread started at your desk continues on your phone.\n\n- Group chats, launched in November 2025, let up to 200 people and multiple AI models share one conversation, which works well for team brainstorming or creative sessions.\n- Anyone can build a bot without code using a prompt and an optional knowledge base, while developers can create server bots or script bots that combine models with custom Python logic.\n- An OpenAI-compatible API gives developers unified access to many models through a familiar interface.\n- Paid subscriptions use compute points, and some bots support very long context windows of up to 2 million tokens, handy for large documents.\n- A free tier lets newcomers explore the catalog before committing to a plan.\n\nIt is best for power users, researchers and developers who want to test many models without managing several separate subscriptions. Tip: when a question really matters, mention two or three different models in the same thread and compare their answers side by side, which is one of the most useful things Poe makes easy.",
+    "sources": [
+      "https://techcrunch.com/2025/11/18/poes-ai-app-now-supports-group-chats-across-ai-models/",
+      "https://metronome.com/pricing-index/poe",
+      "https://poe.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "popnow",
+    "moreContext": "PopNow brings a large menu of AI creation tools into one friendly browser studio, with pay-per-use credits instead of a subscription. Prices are shown before every run and failed runs are refunded, which makes it easy to experiment without worrying about wasted spend, and the interface works on phones, tablets and computers in 12 languages.\n\n- Filmmaker builds scripted multi-shot films with a consistent cast, while Content Factory produces narrated vertical video series for social channels.\n- Ads Studio turns one product photo into an ad set in several sizes, a real help for small shops running campaigns.\n- A Compare tool runs a single prompt across up to eight models side by side, so you can pick the best result rather than guessing.\n- Encore helps remake viral video formats, and a Trending section keeps the effects library current.\n- For builders, PopNow offers an API, an MCP server for ChatGPT, Claude and Cursor, n8n and ComfyUI integrations, and even a Blender add-on.\n\nThe company says it does not use your prompts, uploads or results to train AI models, and you keep ownership of what you create. It is best for creators, small businesses and curious beginners who want variety without commitment. Tip: use Compare on a short test prompt before running a longer video or song, so you spend credits only on the model that fits your style.",
+    "sources": [
+      "https://popnow.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "postwise",
+    "moreContext": "Postwise has become a favorite among creators building an audience on text-first social platforms, because it focuses on the craft of writing posts people actually stop to read. It now covers LinkedIn and Threads as well as X, all from one dashboard, so you can grow on several networks without juggling separate tools.\n\n- The AI writer generates multiple drafts from a single idea, giving you different angles and tones to choose from.\n- Batch creation lets you write a week or more of content in one session, and strong past posts can be repurposed into fresh formats.\n- Formatting adapts to each platform, so a thread on X and a post on LinkedIn each read naturally.\n- Dedicated schedulers for each network, plus engagement tracking, help you post consistently and see what resonates.\n- The company says more than 9,000 creators use it, and entrepreneur Justin Welsh is among those who have recommended it publicly.\n\nIt is best for founders, consultants, coaches and creators who want to post consistently without spending hours on every draft, and a one-week free trial makes it easy to test. Tip: feed Postwise your own rough ideas and stories rather than generic topics, then edit the strongest draft in your voice, since personal details are what make posts stand out.",
+    "sources": [
+      "https://postwise.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "predis-ai",
+    "moreContext": "Predis.ai has evolved from a social post generator into a full AI ad studio for brands and agencies that need a steady flow of creative for paid and organic channels. You can start from a product link, a text prompt or an image, and it produces matching copy and visuals together. The company says more than 6 million users have generated over 200 million ads with it.\n\n- AI avatars produce UGC-style video ads in a range of ages, styles and delivery types, without hiring creators.\n- Ad performance analytics and competitor ad intelligence show what is working in your niche before you spend.\n- Ads can be generated in more than 19 languages, with separate input and output language settings for international campaigns.\n- Workspaces, approval flows and a content calendar suit agencies managing several clients at once.\n- A Shopify integration, text-to-video and social post APIs, and an MCP connection for Claude and ChatGPT extend it into existing workflows.\n\nIt is best for ecommerce brands, performance marketers and agencies that need many ad variations quickly, and a short free trial lets you test it on your own products. Tip: set up your brand kit before generating anything, then use bulk generation to create several variants of one concept, so you can test hooks and visuals against each other.",
+    "sources": [
+      "https://predis.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "profound",
+    "moreContext": "Profound has quickly become one of the leading platforms for answer engine optimization, helping large brands understand how they appear when customers ask AI assistants for recommendations. It tracks visibility across ChatGPT, Perplexity, Claude, Gemini, Microsoft Copilot, DeepSeek, Google AI Overviews and more, and the company says it is trusted by a third of the Fortune 100.\n\n- Answer Engine Insights sets visibility baselines and breaks down which sources AI answers cite, with FactCheck to verify what models say about your brand.\n- Prompt Volumes estimates what people actually ask AI, which helps teams prioritize the topics worth winning.\n- Shopping tracking shows product visibility in ChatGPT Shopping at the SKU level, valuable for retailers and consumer brands.\n- Agent Analytics reveals how AI crawlers view, cite and refer traffic to your pages, benchmarked against peers.\n- Enterprise readiness includes SOC 2 compliance, SCIM provisioning, role-based access control and more than 200 integrations.\n\nPublished customer stories from companies such as Plaid, MongoDB, Ramp and Zoom describe measurable visibility gains. It is best for enterprise marketing, SEO and communications teams who treat AI search as a core channel. Tip: start with citation analysis, since knowing which third-party pages AI engines trust tells you exactly where to focus content and PR effort.",
+    "sources": [
+      "https://www.tryprofound.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "prowritingaid",
+    "moreContext": "ProWritingAid has long been the editing companion of choice for fiction writers, and it has grown into a full toolkit that supports a book from first idea to final polish. Run by Orpheus Technology, it pairs deep line editing with story-level critique, and the company says more than 100,000 writers use it, including bestselling authors such as Talia Hibbert and J.F. Penn.\n\n- Story critique tools, including Chapter Critique, Plot Analysis, Character Analysis, Manuscript Analysis and a Virtual Beta Reader, give feedback on structure and pacing, not just sentences.\n- Planning features such as Story Canvas, along with Writing Sprints and Creative Nudges, help build a steady drafting habit.\n- It works where writers already work, including Microsoft Word, Google Docs, Scrivener, Notion and Atticus, plus Chrome, Firefox and Edge extensions and a desktop editor.\n- Its AI is designed to be assistive, and the company states it will not write your content for you, which keeps your voice intact.\n- A plagiarism checker, paraphrasing tool and even a fantasy name generator round out the kit, while events like Novel November keep the community engaged.\n\nIt is best for novelists, nonfiction authors and editors who want to learn while they revise, and you can sign up free before upgrading. Tip: run a full manuscript analysis once a draft is complete, then work chapter by chapter with the detailed reports, rather than fixing line-level issues before the story structure is settled.",
+    "sources": [
+      "https://prowritingaid.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pulse-speech-to-text-by-smallest-ai",
+    "moreContext": "Pulse is the speech-to-text engine from Smallest AI, a voice AI company that also builds text to speech and voice agent products, and it is engineered for applications where every millisecond counts. The company cites model latency in the tens of milliseconds and says Pulse posts the lowest word error rates across more than 30 languages in its published benchmarks.\n\n- Beyond transcription, it offers emotion recognition, real-time sentiment and automatic language detection, which add useful signals for call analytics and voice agents.\n- Speaker diarization labels who said what and marks speaker changes, making meeting notes and call reviews far easier to read.\n- Built-in PII and PCI redaction, along with stated ISO 27001, SOC 2 Type 2, GDPR and HIPAA compliance, suit healthcare, finance and customer support workloads.\n- Node and Python SDKs, a REST API for recorded audio and a quickstart guide help developers get running quickly.\n- Pay-as-you-go pricing with no monthly commitment, plus a lower-cost Pulse Pro option for pre-recorded English audio, keeps costs predictable as usage grows.\n\nIt is best for developers building voice agents, AI notetakers and contact center analytics who need fast, accurate transcription inside their own products. Tip: use streaming for live conversations and the pre-recorded option for batch jobs like call archives, and turn on keyword boosting for product names and jargon to lift accuracy where it matters most.",
+    "sources": [
+      "https://smallest.ai/speech-to-text"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "qodo",
+    "moreContext": "Qodo, the company formerly known as CodiumAI, has built its reputation on code integrity, focusing on the review and testing side of AI coding rather than simply generating more code. Founded in Tel Aviv by Itamar Friedman and Dedy Kredo, it now positions itself as a code review and governance platform that brings cross-repository context to every pull request.\n\n- Multi-agent code review checks pull requests against your codebase and coding standards, and customers quoted on the site say it handles most of the initial review pass.\n- It supports GitHub, GitLab, Bitbucket and Azure DevOps, including self-managed and data center editions, with Gerrit available on Enterprise.\n- IDE plugins cover VS Code, Visual Studio and the full JetBrains family, so feedback reaches developers before code is pushed.\n- Security-minded teams get zero data retention, SOC 2 Type II certification, on-premises and air-gapped options, and bring-your-own-key support for major model providers.\n- A Rules and Skills lifecycle and a Wisdom Base help encode your team's standards, so reviews stay consistent as the volume of AI-generated code grows.\n\nIt is best for engineering teams that want higher-quality merges and clear governance over AI coding tools. A 14-day trial needs no card, and open source projects can use the platform free. Tip: turn your team's most common review comments into written rules early on, so Qodo enforces them automatically on every PR.",
+    "sources": [
+      "https://www.qodo.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "quillbot",
+    "moreContext": "QuillBot began in 2017 as a paraphrasing project by three University of Illinois students and has grown into one of the most widely used writing assistants for students and professionals. Now part of Learneo (the company formerly known as Course Hero), it bundles a broad set of writing tools in a clean interface, with a free tier that covers plenty of everyday use.\n\n- Beyond paraphrasing, it includes an AI detector that can flag AI-generated writing at both the sentence and document level.\n- A humanizer, translator and summarizer cover common rewriting and comprehension tasks, and the grammar checker is free to use.\n- Paraphrasing works in many languages and the translator handles dozens more, which helps multilingual students and global teams.\n- The citation generator, powered by sister company Scribbr, formats references in common academic styles, and a plagiarism checker is available on Premium.\n- Extensions for Chrome and Microsoft Word, plus desktop and mobile apps, bring its tools into the places you already write.\n\nIt is best for students, researchers, non-native English writers and professionals who want quick, reliable help polishing text. Tip: paraphrase one sentence or paragraph at a time and use the modes and synonym slider to keep your own voice, then run the grammar checker as a final pass before you submit.",
+    "sources": [
+      "https://quillbot.com",
+      "https://firebearstudio.com/blog/quillbot-review.html",
+      "https://simplify.jobs/c/QuillBot"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "qwen",
+    "moreContext": "Qwen Chat is Alibaba's free front door to its Qwen model family, one of the most widely adopted open-weight model lines in the world. Developed by Alibaba Cloud's Qwen team, many of the models you chat with are also released under permissive licenses on Hugging Face and ModelScope, which has made Qwen a foundation for countless research projects and products.\n\n- Deep Research runs multi-step searches and returns readable, analytical reports for complex questions.\n- Web Dev mode builds working web pages from a plain-language description, with artifacts you can preview right in the chat.\n- Image generation and editing are powered by Qwen-Image, which is especially strong at rendering legible text inside images.\n- You can switch between flagship and specialized models, such as coding-focused and vision-language models, and use a thinking mode for harder reasoning.\n- It is available on the web and through official mobile apps, which the team says offer additional features beyond the browser version.\n\nIt is best for students, developers and curious users who want capable AI at no cost, and for teams evaluating open models before self-hosting them. Tip: test your use case in Qwen Chat first, then download the matching open-weight model if you need private or on-premises deployment later.",
+    "sources": [
+      "https://chat.qwen.ai",
+      "https://huntscreens.com/zh/products/qwen",
+      "https://www.gigazine.net/gsc_news/en/20260212-qwen-image-2"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "qwen-image-2-1",
+    "moreContext": "Qwen Image 2.1 offers a simple browser studio built around Alibaba's Qwen image model family, which is widely praised for rendering clean, legible text inside images. Note that this site appears to be an independent third-party service rather than an official Alibaba product, so it is best viewed as a convenient front end for trying the model without any local setup.\n\n- Prompts can be written in English or Chinese, and you can request exact lettering in either language, which suits posters, packaging mockups and social graphics.\n- Reference-based editing lets you upload up to three images and describe changes in plain language, keeping composition under control.\n- Output comes in 1K and 2K resolutions with a choice of aspect ratios, and a transparent PNG option helps with logos, stickers and cutouts.\n- The studio also offers AI video through a separate Seedance model, a prompt library for inspiration, and saved creation history.\n- New registered users can claim free credits, and a daily check-in streak adds more, so you can test it properly before buying a plan.\n\nIt is best for designers, marketers and creators who need bilingual text in images or quick reference-guided edits. Tip: wrap the exact words you want rendered in quotation marks in your prompt, and review the lettering and the site's terms before using an image commercially.",
+    "sources": [
+      "https://qwenimage21.app/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "raphael-ai",
+    "moreContext": "Raphael AI stands out for how low it sets the barrier to entry: you can start generating images in the browser without creating an account, and signed-in users get unlimited basic generations. Behind that simple front end sits a broad lineup of current image and video models, making it an easy place to explore AI imagery at no cost.\n\n- Model choice is wide, spanning several versions of Nano Banana, GPT Image and Seedream for images, plus Seedance, Veo and Kling for video.\n- Free daily credits let you skip the queue or access higher-resolution models up to 2K, and a zero-credit model returns results in seconds.\n- A full toolbox covers image editing, background removal, image expansion, upscaling and style transfer, plus dedicated tools for product photos, headshots and hairstyle changes.\n- Video tools include text-to-video, image-to-video, a video editor and a video upscaler.\n- The site says it collects minimal data, keeps guest requests only temporarily, and never sells prompts or images.\n\nIt is best for hobbyists, students and creators who want to experiment freely before paying for anything, with paid plans removing watermarks and adding speed and commercial use rights. Tip: draft and refine your prompt in the free basic mode, then spend daily credits only on the final high-resolution render you plan to keep.",
+    "sources": [
+      "https://raphael.app"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ray-3-2-ai",
+    "moreContext": "Ray 3.2 AI gives creators browser access to Luma AI's Ray 3.2 video model, which is known for cinematic motion and professional color features such as HDR output. The site states that it is an independent third-party service, not affiliated with or endorsed by Luma AI, so think of it as a pay-as-you-go front end for the model rather than Luma's own platform.\n\n- Four workflows cover text-to-video, image-to-video, video editing with Modify Video and reframing footage into new aspect ratios.\n- Up to 16 keyframes per clip give fine control over timing and composition, and face tracking can follow up to eight faces.\n- Native 16-bit HDR generation with EXR export in the ACES color space fits professional grading in Nuke or DaVinci Resolve.\n- Output runs at 540p, 720p or native 1080p, with clear per-second credit costs for each resolution.\n- One-time credit packs never expire and are charged only for successful generations, and the site says commercial use is included.\n\nIt is best for filmmakers, motion designers and agencies who want high-end color pipelines and keyframe control without a subscription. Tip: draft shots at 540p to lock down motion and framing cheaply, then rerun your final takes at 1080p with HDR when you are ready to grade.",
+    "sources": [
+      "https://ray32.net/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "raycast",
+    "moreContext": "Raycast has become one of the most loved productivity tools among Mac power users, replacing the system search bar with a fast, keyboard-first launcher that does far more than open apps. Founded in London by former Facebook engineers Thomas Paul Mann and Petr Nikolaev, it now also runs on Windows and offers an iOS app, so your commands, snippets and AI chats can follow you across devices.\n\n- The extension store offers thousands of community-built extensions for apps like Linear, Slack, Notion and Spotify, and developers can build once for both macOS and Windows.\n- AI Extensions let Raycast AI take action inside your everyday tools, and Quick AI answers a question from a single hotkey without opening a browser.\n- Raycast Notes captures quick thoughts mid-task, while Focus helps block distractions during deep work.\n- Built-in clipboard history, snippets, quicklinks, custom hotkeys and window management replace a whole drawer of separate utilities.\n- The core app is free to download and use, and the company reports a 99.8 percent crash-free rate, a sign of its polish.\n\nIt is best for developers, designers and anyone who lives on the keyboard and wants fewer clicks in their day, with Pro and Teams plans available for advanced AI and shared workflows. Tip: assign hotkeys to your five most-used commands in the first week and set up snippets for text you type often, since those small habits add up quickly.",
+    "sources": [
+      "https://www.raycast.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "read-ai",
+    "moreContext": "Read AI goes beyond the typical meeting notetaker by connecting what happens in meetings with your email, messages and CRM, so the full context of a project lives in one searchable place. Founded in Seattle by David Shim, the former CEO of Foursquare, it works across Zoom, Google Meet and Microsoft Teams, as well as Gmail, Outlook and Slack.\n\n- Ask Read answers questions across meetings, emails and messages with citations, so you can trace every answer back to its source.\n- Transcription covers more than 20 languages, and a mobile app captures in-person meetings alongside desktop and Chrome apps.\n- Integrations span Salesforce, HubSpot, Notion, Jira, Confluence, Asana, Linear, Google Drive and Zapier, plus an API, webhooks and MCP options for Claude and ChatGPT.\n- Ada, a digital twin assistant, and AI agents that recommend next steps help turn conversations into real follow-through.\n- Security claims include SOC 2 Type 2, GDPR and HIPAA compliance, and the company says customer data is not used for training by default.\n\nIt is best for sales teams, managers and consultants who spend much of the day in meetings and need reliable recaps and follow-ups. A free plan covering a handful of meetings each month needs no card. Tip: connect your email and CRM early, since cross-channel context is where Read AI pulls ahead of notetakers that only see the meeting itself.",
+    "sources": [
+      "https://www.read.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "recall-ai",
+    "moreContext": "Recall turns the articles, videos and podcasts you consume into a personal knowledge base that actually helps you remember what you learned. The product now lives at recall.it, with the earlier getrecall.ai address redirecting there, and the company says more than 700,000 professionals use it.\n\n- It saves and summarizes a wide range of content, including YouTube videos, podcasts, PDFs, articles, Wikipedia pages, TikToks, recipes and your own notes.\n- Saved items are auto-tagged and linked in a knowledge graph, and related ideas resurface while you browse, so connections appear without manual filing.\n- You can chat with your entire knowledge base using models such as GPT, Claude and Gemini, with answers grounded in what you saved.\n- Quizzes follow a spaced repetition schedule, turning passive reading into long-term retention.\n- Browser extensions for Chrome, Edge, Firefox and Safari, plus iOS and Android apps, make capture quick, and you can export your data as Markdown at any time.\n\nIt is best for students, researchers, lifelong learners and professionals who read and watch a lot and want to keep what matters. You can sign up for free without a card. Tip: spend a few minutes on the review quizzes each day, since spaced repetition works best as a short, consistent habit rather than an occasional cram session.",
+    "sources": [
+      "https://www.recall.it/",
+      "https://www.getrecall.ai"
+    ],
+    "status": "ok"
+  }
+]

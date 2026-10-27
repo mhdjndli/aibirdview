@@ -336,6 +336,41 @@ export default async function ToolPage({
             </div>
           )}
 
+          {tool.moreContext && (
+            <div className="mt-16">
+              <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
+                Editor&apos;s notes
+              </p>
+              <h2 className="mt-2 text-[28px] font-semibold tracking-[-0.022em] text-ink-900">
+                More context from AI BirdView
+              </h2>
+              <div className="mt-5 space-y-4">
+                {tool.moreContext.split(/\n\s*\n/).map((block, i) => {
+                  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
+                  if (lines.length > 0 && lines.every((l) => l.startsWith("- "))) {
+                    return (
+                      <ul key={i} className="space-y-2.5">
+                        {lines.map((l) => (
+                          <li key={l} className="flex gap-3 text-[16px] leading-relaxed text-ink-700">
+                            <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-kiwi-100 text-kiwi-700">
+                              <CheckIcon />
+                            </span>
+                            <span>{l.slice(2)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    );
+                  }
+                  return (
+                    <p key={i} className="text-[17px] leading-relaxed text-ink-700">
+                      {lines.join(" ")}
+                    </p>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           {/* Reader reviews */}
           <div className="mt-16">
             <h3 className="text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
@@ -370,6 +405,12 @@ export default async function ToolPage({
                   </li>
                 ))}
               </ul>
+            ) : tool.ratingCount > 0 ? (
+              <p className="mt-6 inline-flex items-center gap-1 text-[14px] text-ink-700">
+                <StarIcon /> {tool.rating.toFixed(1)} ·{" "}
+                {tool.ratingCount.toLocaleString()}{" "}
+                {tool.ratingCount === 1 ? "review" : "reviews"}
+              </p>
             ) : (
               <p className="mt-6 text-[14px] text-ink-500">
                 No reviews yet. Be the first to share your experience.

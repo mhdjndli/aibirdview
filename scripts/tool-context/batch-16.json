@@ -1,0 +1,275 @@
+[
+  {
+    "slug": "wan-3-0",
+    "moreContext": "Instead of tying you to a single engine, this web studio puts several generations of the Wan video family next to ByteDance's Seedance models, so you can compare looks and choose the right model for each shot. That flexibility makes it a practical sandbox for creators who want to test ideas quickly before committing to a final render.\n\n- Reference images can be attached to a prompt, which helps keep characters and locations consistent from one clip to the next.\n- Default settings favor quick, low-resolution drafts, so you can check motion and framing cheaply before spending credits on a polished version.\n- The site lists synchronized audio, video editing and clip extension among its tools, along with support for longer narrative clips of up to 30 seconds.\n- The interface is available in English, Simplified Chinese, German, Spanish, French, Russian and Portuguese, which is helpful for international teams.\n- A free trial lets you generate a short clip before choosing a paid plan.\n\nIt suits storytellers building character-driven storyboards, social creators and anyone who wants to keep a consistent visual world across many short shots. For the best results, lock in a reference image of your main character first, then reuse it in every prompt and revise individual shots rather than regenerating the whole sequence.",
+    "sources": [
+      "https://wan-3.studio/ai-video"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wan-3-0-ai-video-generator",
+    "moreContext": "This independent web service is built on Alibaba Cloud's Wan video model (the site notes it is not affiliated with or endorsed by Alibaba Cloud) and focuses on giving marketers fine control over short clips. What stands out is how much source material you can feed it and how precisely you can fix a result without starting over.\n\n- Reference-to-video mode accepts a rich bundle of inputs, including up to 10 images, short video and audio clips, and a document, to steer a single generation.\n- A time-range editor lets you rework just one section of a clip instead of regenerating the entire video.\n- Output runs from 2 to 30 seconds at 480p, 720p or 1080p, with six aspect ratios that include vertical 9:16 and square 1:1 for social feeds.\n- Optional audio can add dialogue, ambience, sound effects and music, and a prompt enhancer helps tighten vague descriptions.\n- Pricing uses one-time credit packs with no subscription, and the site says purchased credits never expire, while paid packs download without a watermark.\n\nIt is a strong fit for performance marketers, ecommerce teams, agencies and educators who need many short variations, and it also works for film previsualization. A practical tip: draft at 480p to confirm motion and composition, then use the time-range edit to polish weak moments before exporting the final 1080p version.",
+    "sources": [
+      "https://wan-30.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "warmly",
+    "moreContext": "Warmly has grown from a visitor identification tool into a set of AI agents for B2B go-to-market teams, all working from a shared view of each account. The company describes its approach as AI-native but human-supervised, which suits teams that want automation without giving up control of their brand or pipeline.\n\n- The Inbound Agent identifies visitors at the person level and can respond with AI chat, smart popups, personalized landing pages, meeting booking and an AI call agent.\n- A separate TAM Agent scores accounts across your total addressable market, maps buying committees and coordinates outbound email and LinkedIn ad campaigns.\n- Its Context Graph pulls site visits, emails and meetings into one data layer, so every agent acts with full account history.\n- Signals blend first-party behavior, second-party activity such as job changes and new hires, and third-party research intent, backed by a contact database with verified emails and direct dials.\n- Warmly can be reached through its app, an API and an MCP server, and the company also offers AI-enabled SDR services and forward-deployed engineers.\n\nIt is best for mid-market and growth-stage B2B teams that already get meaningful website traffic but struggle to act on it fast enough. One revenue operations manager quoted on the site credits it with restarting website-sourced meetings after Drift shut down. Define your ICP tiers before switching on outreach, so scoring and alerts focus your reps on the accounts that matter.",
+    "sources": [
+      "https://warmly.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "warp",
+    "moreContext": "Warp has expanded well beyond its polished terminal into a broader platform for running coding agents, while keeping the fast, modern command line that won developers over. The company says it is trusted by more than 800,000 developers, and it now describes the terminal itself as open source.\n\n- Warp Factories let teams define fleets of agents as code in a single configuration file, covering repos, models, secrets, MCP servers and cloud providers.\n- You can bring your own model or harness, including tools such as Claude Code or Codex, and pick different models for different stages of a pipeline.\n- Agent runs can be kicked off from Slack, Linear, Jira, GitHub, GitLab or Microsoft Teams, then watched and steered from the web, mobile, the terminal or an IDE.\n- Deployment can be Warp-hosted, self-hosted or hybrid inside your own VPC, with zero-retention options, SSO and role-based permissions for enterprises.\n- The Agent CLI installs on macOS, Linux and Windows, and native MCP support in the terminal connects shared tools like Sentry.\n\nWarp is a great match for developers who live in the command line and for engineering leaders who want to automate a measurable slice of pull requests with clear guardrails. Docker has published a case study on adopting it for shared workflows. Start by saving your most repeated command sequences to Warp Drive, then hand one well-scoped, recurring task to an agent and expand from there.",
+    "sources": [
+      "https://www.warp.dev"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wellsaid-labs",
+    "moreContext": "WellSaid has built its reputation on narration that sounds dependable enough for corporate training and brand work, and it now operates from the wellsaid.io domain. Its focus on licensed voice talent and enterprise workflow makes it a comfortable choice for teams that need to publish voiceover constantly without legal worries.\n\n- The library offers more than 280 voices, each modeled on licensed recordings from real voice actors, across a range of accents, tones and styles.\n- Coverage extends to more than 50 languages and accents, including Arabic, Dutch, French, German, Japanese, Mandarin, Portuguese and Spanish.\n- An AI Director feature in the Studio lets you adjust pacing, tone and pronunciation without re-recording or switching tools.\n- A text-to-speech API and an API Partner Program let product teams build WellSaid voices directly into their own platforms.\n- A free trial includes the full Studio experience with unlimited retakes and does not ask for a credit card.\n\nIt is ideal for L&D departments, product marketers, video teams and audiobook or podcast producers who value consistency and a clear rights story. Before scaling up, build out pronunciation settings for your product names, acronyms and industry terms, so every new script sounds on-brand from the very first render.",
+    "sources": [
+      "https://wellsaidlabs.com",
+      "https://www.wellsaid.io/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "what-pets-cost",
+    "moreContext": "Pet owners rarely see a full price list before they book, and this independent guide fills that gap with plain, sourced numbers for the services people actually buy. It is refreshingly transparent about where each figure comes from and when it was last confirmed, which makes it more trustworthy than vague national averages.\n\n- Coverage spans the major US chains, including Petco, PetSmart, Banfield, VCA, Vetco, Dogtopia, Camp Bow Wow, Pet Supplies Plus and Tractor Supply.\n- A Recently Checked list shows which price pages were reviewed and when, so you can tell at a glance how fresh the data is.\n- Interactive tools include a Petco grooming estimator, a Banfield vet visit estimator, a PetSmart boarding calculator and a Vetco vaccine price lookup by ZIP code.\n- Readers who paid a different amount can send corrections, which helps the guide stay accurate over time.\n- The site states it is not affiliated with or endorsed by any business it lists, and it is free to use.\n\nIt is most useful for new pet owners, families comparing chains and anyone budgeting for a move, a vacation boarding stay or a puppy's first year of vaccines. Check the date on the page you are reading, then call your local location to confirm, since prices can vary by region and pet size.",
+    "sources": [
+      "https://whatpetscost.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "windsurf",
+    "moreContext": "Windsurf has a new name: windsurf.com now redirects to Devin Desktop, which the company describes as the new name for Windsurf, built on by Cognition after it acquired the product. The result keeps the agent-first editing that made Windsurf popular and adds a command center for running many agents locally or in the cloud.\n\n- A sessions board lets you manage multiple agents at once and hand work off between your machine and Devin Cloud.\n- Subagents can each open their own pull requests, and Devin Review gives you a dedicated space to inspect diffs before merging.\n- Fast Context handles codebase search, while Supercomplete predicts your next edit as you type.\n- Support for the Agent Client Protocol lets you bring third-party agents and frontier models into the same workspace.\n- Integrations cover Slack, Teams, Linear, Notion, Jira, Datadog, Sentry, Figma, Vercel and Stripe, and the Windsurf plugin for JetBrains IDEs remains available.\n\nA free plan is still offered, and the company says existing plans and legacy Windsurf Enterprise pricing are unchanged, which is reassuring for current users. The company reports more than one million users and over 4,000 enterprise customers. It is best for developers and teams ready to delegate real tasks to agents; try running a long refactor as a cloud agent while you keep working locally, then review the resulting pull request in Devin Review.",
+    "sources": [
+      "https://windsurf.com",
+      "https://devin.ai/desktop"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wisecut",
+    "moreContext": "Wisecut, which now lives at wisecut.ai, has grown from a one-pass auto editor into a full pipeline that also repackages and publishes your videos. It remains one of the friendliest ways for talking-head creators to go from a raw recording to a finished, shareable cut in the browser.\n\n- Auto Reframe converts footage between vertical, square and horizontal formats, so one recording can serve YouTube, Reels and TikTok.\n- A Highlights feature scans a long video for its strongest moments and turns each one into its own short clip.\n- Social Hub schedules clips on a calendar across connected networks, and Autopilot can publish to chosen channels automatically after editing.\n- Live Clipping produces clips during or after a live stream, which is handy for streamers and webinar hosts.\n- A Wisecut MCP server connects the editor to AI assistants such as ChatGPT, Claude, Claude Code and Codex.\n\nThe company says more than 1.5 million creators have used Wisecut, and a free trial is available without a credit card. It is a natural pick for YouTubers, podcasters with video, coaches and course creators who publish often. Run Highlights on your longest recordings first, then review the captions before export, since a quick check of names and jargon makes every short clip look more professional.",
+    "sources": [
+      "https://www.wisecut.video",
+      "https://wisecut.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wispr-flow",
+    "moreContext": "Wispr Flow has become a favorite among people who write all day because it turns spoken thoughts into text that looks deliberately written. It now runs across desktop and mobile, so the same voice workflow follows you from your laptop to your phone.\n\n- Apps are available for Mac, Windows, iPhone and Android, and a Notetaker feature for meetings is offered on Mac and Windows.\n- Snippets let you save frequently used text, such as links, addresses or email templates, and insert it by speaking a short cue.\n- The personal dictionary learns names and jargon automatically, and you can add terms yourself for even better accuracy.\n- Styles let you set formal, casual or very casual writing for different apps, so Slack messages and client emails each sound right.\n- The company lists SOC 2 Type II, ISO 27001 and HIPAA certifications, and team plans add an admin portal, with SSO, audit logs and retention controls on Enterprise.\n\nA free plan with a weekly word allowance is available with no credit card, which makes it easy to try for real work. It is especially good for founders, managers, writers and support teams who handle a high volume of messages. For the best accuracy, pick only the language you are actually speaking in the Flow bar, and set up a few snippets for the phrases you type most.",
+    "sources": [
+      "https://wisprflow.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wondercraft",
+    "moreContext": "Wondercraft has broadened from AI podcast production into a creative studio for audio and video, while keeping the script-first workflow that makes it approachable for non-producers. Its testimonials range from podcast hosts to large institutions, which speaks to how flexible the tool is.\n\n- A Convo Mode creates editable, two-voice conversational audio from your material, so you can tweak the script rather than accept a fixed result.\n- An AI video studio produces training, onboarding, product and educational videos from prompts or uploaded documents, with a timeline for captions, branding and resizing.\n- Beyond podcasts, the platform handles audio ads, guided meditations and narrated content with music and ambience.\n- A public API exposes generation and editing, and security features include SSO through Google, Outlook or SAML plus multi-factor authentication.\n- The company says it is SOC 2 and GDPR compliant and does not use customer data for model training.\n\nA World Bank economist quoted on the site describes turning long policy documents into podcasts for internal teams and translating them into ten languages, a good example of its reach. It is best for marketers, internal communications teams and educators who need polished audio or video without a studio. You can start free without a credit card, and a smart first project is converting an existing report into a short conversational episode.",
+    "sources": [
+      "https://www.wondercraft.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "filmora",
+    "moreContext": "Wondershare Filmora has kept pace with the AI era without abandoning the friendly timeline that made it a popular step up from free editors. It now spans desktop and mobile, so you can start a project on one device and keep shaping it on another.\n\n- Apps cover Windows and macOS as well as iOS, iPadOS and Android.\n- AI Mate acts as an editing assistant, alongside AI Text to Video, AI Image to Video and an AI Music Generator for original soundtracks.\n- Auto Reframe resizes footage for different aspect ratios, and AI Video Translation helps localize content for new audiences.\n- Cleanup tools include an AI Video Object Remover, speech-to-text captioning and an AI Video Extender for lengthening shots.\n- Wondershare says the app includes more than 2.9 million built-in creative assets, from templates and music to LUTs, stickers and transitions.\n\nFilmora is free to download and use, with a watermark on exports until you upgrade, so you can test it on a real project first. It is a great match for YouTubers, small businesses, educators and hobbyists who want professional-looking results without a steep learning curve. Edit your main horizontal version first, then use Auto Reframe to produce vertical cuts for Shorts and Reels in minutes.",
+    "sources": [
+      "https://filmora.wondershare.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wonder-dynamics",
+    "moreContext": "Wonder Studio now goes by a new name: Autodesk rebranded it as Autodesk Flow Studio at SIGGRAPH 2025, and wonderdynamics.com redirects to the Flow Studio product page. The rename came with a broader pricing ladder that makes its AI-driven visual effects far easier to try, which is great news for independent filmmakers and students.\n\n- A Free tier includes core tools such as AI motion capture and Live Action character replacement, with monthly credits to experiment.\n- Beyond full character swaps, the platform offers standalone AI mocap, camera tracking and clean plate generation, each priced at fewer credits than a full live-action shot.\n- Exports include clean plates, alpha masks, camera tracks, FBX motion data and PNG sequences, plus full 3D scene exports for Maya, Blender, Unreal Engine and USD pipelines.\n- Paid tiers raise export resolution up to 4K and add advanced features such as Wonder Animation.\n- Autodesk includes the Pro tier at no extra cost in its Media and Entertainment Collection, which suits studios already using Maya or 3ds Max.\n\nIt is ideal for indie filmmakers, previs artists, animation students and small VFX teams who want CG characters in live-action footage without a mocap stage. A smart workflow is to use the cheaper AI mocap or camera track tools on test footage first, then export the scene into Blender or Maya to refine lighting and animation by hand.",
+    "sources": [
+      "https://wonderdynamics.com",
+      "https://adsknews.autodesk.com/en/?p=53687",
+      "https://www.autodesk.com/products/flow-studio/compare"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wordtune",
+    "moreContext": "Built by AI21 Labs, one of the early independent large language model companies, Wordtune remains a thoughtful alternative to generate-everything writing tools. It shines when you already have something to say and want help saying it more clearly, which keeps your own ideas at the center.\n\n- Browser extensions for Chrome and Microsoft Edge bring suggestions into the sites where you already write, and an iOS app covers mobile.\n- Its summarizer handles both long text and videos, which is handy for catching up on lectures or recorded talks.\n- A translate-into-English option accepts input from 10 languages, including Spanish, Mandarin, Arabic and French, making it valuable for non-native English writers.\n- Suggestion types go beyond rewording, with options to explain a point, add emphasis or draft a conclusion, plus grammar and spelling correction.\n- The company says Wordtune has more than 10 million users, and the Chrome extension carries a strong user rating.\n\nWordtune is best for students, professionals and second-language writers who want their emails, essays and reports to sound polished without losing their voice. A free plan is available without a credit card. Try writing your first draft quickly in your native language, translating it into English with Wordtune, then refining individual sentences with the rewrite suggestions.",
+    "sources": [
+      "https://www.wordtune.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "wordvice-ai",
+    "moreContext": "Wordvice AI benefits from its parent company's long background in human academic editing, and that heritage shows in how carefully it handles scholarly tone. Today it offers a wide suite of writing and research tools that cover nearly every step from first draft to submission.\n\n- Research tools include ChatPDF, a PDF summarizer, a PDF translator and citation generators for APA, MLA, Chicago and Vancouver styles.\n- Grammar checking works in 11 languages, including English, Chinese, Korean, Japanese, Spanish, French, German, Arabic and Portuguese.\n- Extensions for Chrome and Microsoft Word let you check text in the places you already write.\n- When a document is high-stakes, you can upgrade to on-demand human editing from native English-speaking editors with PhD or Master's degrees.\n- The company says it is trusted by more than 1.5 million writers across 25,000 institutions, and a free plan covers basic tools with a monthly word allowance.\n\nIt is an excellent fit for graduate students, researchers, international scholars and admissions applicants who need academic polish and clear citations. Team plans also make it practical for labs and departments. For important work, run the AI proofreader first to clear routine issues, then send the final version to a human editor so their time goes to argument and structure rather than typos.",
+    "sources": [
+      "https://wordvice.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "writer-com",
+    "moreContext": "Writer has matured into a full agent platform for large organizations, pairing its own Palmyra models with the governance controls that regulated industries require. It stands out for treating brand consistency, security and measurable business outcomes as first-class features rather than add-ons.\n\n- WRITER Agent lets teams share Playbooks, Skills and Projects, so proven workflows can be reused across departments.\n- Enterprise Brain acts as a context layer that grounds agents in company knowledge, and AI Studio adds usage analytics and team libraries.\n- The latest model family includes Palmyra X6, developed in-house rather than licensed from another lab.\n- Governance features include audit logs exportable to a SIEM, identity-provider roles, bring-your-own-key encryption and data loss prevention guardrails, and Writer says it never retains or trains on customer data.\n- Connectors let agents act inside existing tools, with dedicated experiences for Slack and Salesforce.\n\nThe company reports more than 500 enterprise deployments, and customer stories on its site cite KPMG saving 70 percent of time on derivative content and Vanguard reaching market 57 percent faster. Writer is best for marketing, compliance, support and operations teams in large or regulated companies. A free trial is available, and a good starting point is capturing one high-volume task as a shared Playbook so results are consistent from day one.",
+    "sources": [
+      "https://writer.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "writesonic",
+    "moreContext": "Writesonic has repositioned itself as an AI search growth engine, helping brands get recommended inside AI answers, not just ranked on Google. That shift makes it one of the more forward-looking marketing tools available, because it connects visibility tracking directly to the fixes that improve it.\n\n- Visibility tracking covers ChatGPT, Claude, Gemini, Google AI Overviews, Perplexity, Grok, DeepSeek, Microsoft Copilot and Meta AI, with citations and sentiment for your brand and topics.\n- An Action Center ranks opportunities such as missing prompts, citation gaps, content refreshes and technical issues.\n- A content agent rewrites pages for AI search with FAQ blocks, comparison tables and self-contained passages, while an outreach agent finds Reddit threads, YouTube videos and listicles that cite competitors.\n- Technical audits check robots.txt, schema and AI crawler errors, with one-click fixes, and results are measured at set intervals across citations, AI traffic and pipeline.\n- Integrations include Google Analytics, Google Search Console, Looker Studio, Keyword Planner and WordPress, plus an API and MCP server.\n\nThe company says more than 10,000 marketing teams use it, and a 7-day free trial is offered. It is best for SEO leads, content marketers and agencies preparing for search traffic that increasingly flows through AI assistants. Start with the technical audit, since fixing crawler access often has to happen before content improvements can show up in AI answers.",
+    "sources": [
+      "https://writesonic.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "xdownloader",
+    "moreContext": "This lightweight browser tool does one job well, saving public media from X posts without accounts, apps or clutter. It goes a little further than most basic downloaders by offering audio conversion, batch links and post screenshots in the same page.\n\n- Video downloads come in whichever MP4 quality variants the original post exposes, so you always get the best version available.\n- An MP3 option extracts audio at 192 kbps, and the conversion runs locally in your browser rather than on a server.\n- A bulk mode resolves up to 10 links at once, which saves time when collecting clips for research or a project.\n- You can also capture a clean PNG screenshot of a post, useful for presentations or reporting.\n- It works in desktop, tablet and mobile browsers, and an optional Chrome extension adds a one-click shortcut.\n\nThe site says it keeps no download history and does not permanently host videos, and it only processes public posts, leaving protected or restricted content alone. It is handy for social media managers, journalists, researchers and creators archiving their own posts. Always respect the original creator's rights when reusing media, and use the bulk mode when you need several clips from the same thread or campaign.",
+    "sources": [
+      "https://xdownloader.site"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "xquik",
+    "moreContext": "Xquik is built with developers and AI agents in mind, offering X data through clean, well-documented interfaces rather than fragile scraping scripts. Its breadth of endpoints and modern agent tooling make it a capable backbone for social listening, research and automation projects.\n\n- Public read endpoints cover tweet search, replies, profile and batch lookups, user search, follower and following exports, lists, communities, trends and media.\n- With a connected account, it can also reach private data such as bookmarks and notifications and perform actions like posting, liking and following.\n- Account and keyword monitors can deliver events to your own HTTPS endpoint as signed webhooks, which is ideal for real-time alerts.\n- Bulk extraction jobs come with a cost estimator and job history, and the service even supports tweet giveaway draws.\n- Developer resources include an OpenAPI 3.1 spec, a Postman collection, an MCP server with OAuth 2.1 sign-in and accountless guest keys for eligible paid reads.\n\nBilling is credit-based, with subscriptions and prepaid options, and the service makes clear that it is independent and not affiliated with X Corp. It is a strong fit for data teams, social media analysts, marketers building monitoring dashboards and developers wiring X data into AI agents. Before launching a large export, run it through the cost estimator so you know exactly what a job will consume.",
+    "sources": [
+      "https://xquik.com",
+      "https://docs.xquik.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap",
+    "moreContext": "Yap brings fast, private dictation to the computer you already use, with speech recognition that stays on your device. It is made by O-mega Enterprise Inc., the same team behind a family of free Yap tools for transcription and browser dictation, so the ecosystem keeps growing around one simple idea.\n\n- Desktop apps run on Apple Silicon Macs and 64-bit Windows 10 and 11, with mobile versions for Android 10 and later and iPhone through TestFlight.\n- One subscription covers every platform, so there is no need to pay separately for desktop and mobile.\n- On a Mac, you simply hold the Fn key, speak and release, and the text lands wherever your cursor is.\n- Because it types into any app, it works well for voice coding in terminals and editors, including prompting tools such as Claude Code and Cursor.\n- New users can try it free for three days with no card required.\n\nYap is a natural fit for writers, developers, students and anyone with wrist strain who wants to talk instead of type while keeping audio private. It also works offline, which is helpful on flights or unreliable connections. Try using it to dictate detailed prompts for AI coding agents, since speaking long instructions is often faster and more thorough than typing them.",
+    "sources": [
+      "https://yapapp.cc/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-audio-to-text",
+    "moreContext": "This free transcription tool from the makers of the Yap dictation app runs the speech model directly in your browser, so recordings never leave your computer. That makes it a thoughtful choice for interviews, lectures or meetings that you would rather not upload to a third-party server.\n\n- It accepts a wide range of audio formats, including MP3, M4A, WAV, OGG, Opus, FLAC and AAC, plus the sound track from MP4, MOV and WebM video.\n- Each file can run up to 60 minutes and 300 MB, with no limit on how many files you process.\n- An English mode delivers the best accuracy for English, while an any-language mode covers 99 languages and detects the spoken language automatically.\n- Subtitles are split at natural pauses, so each SRT or VTT line carries real start and end times ready for video editors.\n- Current Chrome and Edge can use your graphics chip for much faster processing, and the site says it logs only usage events, never files or transcripts.\n\nIt is ideal for students, journalists, podcasters and video creators who need quick transcripts or captions without a subscription. Note that it does not label speakers, and edits in the text box apply to the text export rather than the subtitle files. For the smoothest results, use Chrome or Edge, pick English mode for English recordings, and double-check names and jargon before publishing.",
+    "sources": [
+      "https://yapapp.cc/audio-to-text"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-audio-to-text-2",
+    "moreContext": "Privacy is the headline feature of this browser-based transcriber: OpenAI's open Whisper model downloads once and then does all of its work inside your tab. You get editable text and timed subtitles without creating an account, which lowers the barrier for anyone who just needs a quick, confidential transcript.\n\n- The model is a modest download of roughly 80 MB, or about 165 MB in browsers that accelerate it with the graphics chip, and it is reused on later visits.\n- Video files such as MP4, MOV and WebM work alongside common audio formats, so you can caption a clip without extracting audio first.\n- Subtitle output includes genuine timestamps for each segment, making the SRT and VTT files ready to drop into an editor or video platform.\n- Any-language mode transcribes speech in 99 languages without translating it, which suits multilingual recordings.\n- It is completely free, with no trial and no cap on the number of files.\n\nThis version suits teachers captioning lessons, researchers transcribing interviews and creators adding subtitles to short videos on a budget. Because a browser-sized model can stumble on crosstalk, music and noisy rooms, record in a quiet space when possible and give the transcript a quick read for proper names before you share it.",
+    "sources": [
+      "https://yapapp.cc/audio-to-text"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-mcp",
+    "moreContext": "Yap MCP gives AI assistants a private pair of ears: it transcribes audio and video files on your own machine and hands the text straight to tools like Claude or Cursor. It is open source under the MIT license, and it comes from O-mega Enterprise Inc., the team behind the Yap dictation app.\n\n- It exposes three tools: one to transcribe local files, one to search your Yap dictation history and one to download or check the speech model.\n- Transcription runs NVIDIA's Parakeet model on the CPU through sherpa-onnx, and the project says it processes audio about 10 times faster than real time on a modern laptop.\n- Compatible clients include Claude Desktop, Claude Code, Gemini CLI, Cursor, Windsurf, VS Code, Cline and Zed.\n- Installation options include a one-line npx command, a one-click bundle for Claude Desktop, a Claude Code plugin and a Gemini CLI extension, with Node.js as the main requirement.\n- It runs on macOS, Windows and Linux and reads many formats, including WAV, MP3, M4A, MP4, FLAC, OGG, WebM and AIFF, with optional timestamps and filler cleanup.\n\nIt is a great fit for developers, researchers and knowledge workers who want their AI assistant to summarize meetings, voice memos or interviews without sending audio to the cloud. Call the model preparation tool once before your first job, since the roughly 670 MB model downloads a single time and is verified by checksum.",
+    "sources": [
+      "https://github.com/founden-bot/yap-mcp"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-online-dictation-2",
+    "moreContext": "This free page turns your browser into a private dictation pad, recognizing speech with OpenAI's Whisper model right on your computer. It is a refreshingly simple way to capture ideas, notes or drafts by voice without installing anything or creating an account.\n\n- Each recording can last up to two minutes, and new recordings are added to the same text, so you can build a longer document piece by piece.\n- After a one-time model download, the model is cached, and recognition keeps working offline as long as the page stays open.\n- English mode removes filler words like \"um\" and \"uh\" and capitalizes sentences, while an any-language mode covers 99 languages.\n- Whisper infers commas, periods and question marks from how you speak, so you do not need to say punctuation aloud.\n- Chrome and Edge run faster because they can use your graphics chip, and the site says audio and text never leave your browser tab.\n\nIt is well suited to students, writers, people who think better out loud and anyone who wants a no-strings dictation tool for occasional use. Since nothing is saved once you close the tab, copy or download your text as a .txt file before leaving, and keep your microphone close for the cleanest transcription.",
+    "sources": [
+      "https://yapapp.cc/online-dictation"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-online-dictation",
+    "moreContext": "Part of the free Yap toolset, this online dictation page lets you speak and watch editable text appear, with all recognition handled locally by OpenAI's open Whisper model. It strikes a nice balance between convenience and privacy, since you get a working tool instantly without handing your voice to a server.\n\n- The model downloads once, about 80 MB on most setups, and is then reused on future visits for quicker starts.\n- Recordings of up to two minutes each are appended in order, and there is no limit on how many you make.\n- You can type corrections before or after copying, then export everything as a plain .txt file.\n- Any-language mode detects each recording's language from a list of 99, which is helpful for bilingual speakers.\n- The site states it logs only usage events, such as a finished recording, and never stores your audio or words.\n\nIt is a good match for anyone drafting emails, journaling, brainstorming or taking quick notes on a desktop browser. Phones and older computers may run slowly, so a recent laptop with Chrome or Edge gives the best experience. Use English mode for English speech, since it is the most accurate option and also tidies filler words automatically.",
+    "sources": [
+      "https://yapapp.cc/online-dictation"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yap-voice-typing",
+    "moreContext": "Yap Voice Typing brings private, on-device dictation to the Chrome browser, typing your words directly where your cursor sits. It is a recent release from O-mega Enterprise Inc., the developer of the Yap dictation apps, and it keeps the same privacy-first design as the rest of the family.\n\n- It works in standard inputs, text areas and rich editors, and on pages that draw their own text, it copies your words to the clipboard so you can paste them.\n- Whisper runs inside the browser after a one-time download of roughly 80 MB, and from then on it works offline.\n- It adds capitalization and punctuation automatically and removes filler words like \"um\" and \"uh.\"\n- An on-page indicator shows when it is listening, recordings can run up to two minutes, and pressing Esc cancels.\n- The listing states there are no accounts and no analytics, and the microphone is active only while you dictate.\n\nIt is ideal for people who write in web apps all day, such as Gmail, Google Docs, chat tools and CRMs, and for anyone who prefers speaking to typing. If the default Alt+Shift+Y shortcut clashes with another extension, you can change it on Chrome's extension shortcuts page so dictation is always one keystroke away.",
+    "sources": [
+      "https://chromewebstore.google.com/detail/yap-voice-typing-speech-t/lapfpgdpnhpahiiipbijfbkonnlfnbgf"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yeri-ai",
+    "moreContext": "Yeri AI gathers a remarkably current lineup of image and video models under one roof, so you can switch engines without juggling separate subscriptions. Alongside generation, it packs in the everyday editing tools that usually send creators to yet another app.\n\n- Image models include several versions of GPT Image, Seedream and Nano Banana, including Nano Banana Pro, giving you options for photorealism, illustration and text-heavy designs.\n- Video generation draws on Seedance, Kling and MiniMax models, with both text-to-video and image-to-video modes.\n- Editing tools cover image expansion, enhancement and upscaling, background removal, style changes and a general AI image editor.\n- Playful photo effects such as action figures, polaroid prints, pixel art and age filters make it easy to produce shareable social content.\n- A free plan refreshes credits every day, while paid plans remove the watermark, open the full video model library and include a commercial license.\n\nIt is a good fit for social media marketers, small business owners, content creators and hobbyists who want one dashboard for visuals of every kind. The service is operated by Black Technology LTD. Use the free daily credits to compare how different models handle the same prompt, then upgrade once you know which engines suit your style.",
+    "sources": [
+      "https://yeri.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "yila-ai",
+    "moreContext": "Yila AI is designed for researchers who care about where every sentence comes from, and it carries that discipline across the whole research process rather than stopping at search. It feels less like a chatbot and more like an organized workspace that moves a project from question to paper, slides and figures.\n\n- Literature search queries multiple scholarly databases at once and ranks candidates by quality signals before returning verified papers.\n- It can draft a literature review from more than 50 full papers, with citations and an editable structure, and it supports paper triage, evidence cards and evidence matrices.\n- Writing help includes building manuscript sections, polishing prose for a target journal and formatting papers to journal or thesis requirements.\n- Data analysis profiles uploaded CSV or XLSX files, chooses a method and returns results, charts and reusable code.\n- Output tools create scientific figures from text descriptions, academic posters from a paper and editable PowerPoint slides, plus a citation generator covering more than 2,800 styles.\n\nPlans are credit-based, with Starter, Pro and Flagship tiers and annual or lifetime billing options. It is best for graduate students, postdocs, faculty and research teams preparing reviews, theses or grant work. Build an evidence matrix for your core papers before drafting, since it gives the writing tools a solid, traceable foundation to work from.",
+    "sources": [
+      "https://yila.ai",
+      "https://yila.ai/pricing"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "you-com",
+    "moreContext": "You.com has shifted its focus toward developers and enterprises, offering the search and research capabilities behind its products as APIs that power other AI applications. That makes it a valuable building block for teams that need accurate, up-to-date web grounding inside their own agents and apps.\n\n- The API lineup includes Web Search, Contents, Answer, Research and Finance Research endpoints, each aimed at a different depth of retrieval.\n- An Inference Router serves open-weight models through a single OpenAI-compatible endpoint, with failover across providers backing a 99.9 percent uptime SLA.\n- An MCP server and agent skills make it simple to add live web search to assistants and coding agents.\n- Compliance features include zero data retention, US-hosted models, SOC 2 certification and CCPA compliance, with a DPA available.\n- A free API key and free evaluation let you test results before committing.\n\nAn engineer at Factory quoted on the site says You.com cut their median web search latency from over five seconds to under one. It is best for AI product teams, developers building agents and enterprises that need reliable retrieval with strong data controls. Start with the free key and connect the MCP server to an agent you already use, which is the quickest way to judge result quality on your own queries.",
+    "sources": [
+      "https://you.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "zapier-ai",
+    "moreContext": "Zapier's long head start in app integrations is what makes its AI features so practical: agents built here can act in thousands of real tools on day one. The platform now connects to more than 9,000 apps, and it extends that reach to the AI assistants you already use.\n\n- Zapier MCP lets Claude, ChatGPT, Cursor and other MCP clients search Zapier's catalog and run actions across your apps, and it is included in every Zapier plan.\n- App credentials stay in Zapier's managed connection layer rather than passing into the model, and admins can restrict access by app and action.\n- Every AI action is recorded in History for review, and the company is SOC 2 Type II certified.\n- Because connections, context and policies live in Zapier, you can switch AI models without rebuilding workflows.\n- Agents run in the background for tasks like qualifying leads, routing support tickets and handling routine requests.\n\nCustomer stories on the site include the Portland Trail Blazers reporting a 94 percent cut in time spent reviewing guest feedback. It is best for operations, sales, marketing and support teams who want automation that reaches across their whole software stack, and you can start free. A smart first step is connecting Zapier MCP to your AI assistant, testing a few actions in conversation, then saving the ones that work as reusable Zaps.",
+    "sources": [
+      "https://zapier.com/ai",
+      "https://zapier.com/mcp"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "zebracat",
+    "moreContext": "Zebracat handles the full arc of short marketing video production, from script to scheduled post, which saves small teams from stitching together several tools. It also chooses among leading AI video models scene by scene, so you get strong visuals without needing to know which engine suits which shot.\n\n- The model lineup includes Veo 3, Kling, Seedance, Nano Banana and Pixverse, and the platform picks the best fit for each scene.\n- Inputs are flexible: a prompt, a script, a blog URL, an audio file or even a single photo can become a finished video.\n- AI avatars and voice cloning let you appear in videos without filming, and higher tiers add video translation into more than 25 languages.\n- Approved videos can be scheduled and posted to TikTok, Instagram, YouTube and LinkedIn directly from the app.\n- An API on the Enterprise tier and an MCP server open the door to automated, high-volume production.\n\nA free plan with weekly credits is available, along with a free trial of paid features that does not require a credit card. Zebracat is a strong pick for social media managers, ecommerce brands, solo founders and agencies running frequent campaigns. Set up your brand kit before your first project, so logos, colors and fonts carry through automatically and every video looks like it belongs to the same campaign.",
+    "sources": [
+      "https://www.zebracat.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "zed",
+    "moreContext": "Zed was written from scratch in Rust by a team that cared deeply about responsiveness, and it shows the moment you start typing. What makes it especially appealing now is how openly it welcomes AI: you can bring the agents and models you already prefer rather than being locked into one vendor.\n\n- Zed runs on macOS, Linux and Windows, so teams on mixed operating systems can share the same editor.\n- Edit prediction is powered by Zeta2, which Zed describes as an open-weight model, and an Inline Assistant transforms selected code in place.\n- Through the Agent Client Protocol, external agents such as Claude Agent, Codex and OpenCode plug directly into the editor, alongside MCP servers.\n- Parallel agent threads can work across several projects at once, while you follow their progress live and review every change.\n- Built-in collaboration includes chat, shared projects and screen sharing for real-time pairing.\n\nThe Personal plan is free forever and supports your own API keys from Anthropic, OpenAI, Google AI, Ollama and others, while Pro adds Zed-hosted models and unlimited edit predictions with a 14-day trial. Zed is ideal for developers who value speed, pair often and want agent freedom. If you already use a terminal agent, connect it through the Agent Client Protocol so you get its power with Zed's clear diff review.",
+    "sources": [
+      "https://zed.dev",
+      "https://zed.dev/pricing"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "zombiecouple",
+    "moreContext": "ZombieCouple takes one of social media's most playful romantic trends and makes it effortless, no editing skills or prompt writing required. It is a fun, focused tool that knows exactly what its users want: a short, dramatic clip starring two real faces.\n\n- Three story formats are offered: the classic zombie couple scene, a slower and warmer zombie love story, and a gentler zombie hug where love brings the turned partner back.\n- Scene choices include settings such as a ruined city, a snowed-in cabin and a rainy night street.\n- Videos run from 12 to 30 seconds, in 480p or 720p, and can be vertical for TikTok, Reels and Shorts or widescreen for other uses.\n- Rendering uses ByteDance's Seedance video model, and finished MP4 files come without a watermark.\n- Pricing is based on one-time credit packs with no subscription, and the site says failed renders are refunded.\n\nThe site states that uploaded photos are used only to make your video and are not published, sold or used for model training, and you can ask support to delete them. It is perfect for couples, content creators and anyone planning an anniversary or Halloween surprise. Choose clear, well-lit, front-facing photos of both people for the most recognizable results.",
+    "sources": [
+      "https://zombiecouple.tv"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "item",
+    "moreContext": "热核算力 (Codex Hot) is an independent API aggregation service that gives developers one place to reach several model families through familiar protocols. Its main strength is compatibility: existing OpenAI and Anthropic client code can point at its endpoints with little more than a base URL change.\n\n- GPT models are available through both the Responses and Chat Completions styles at an OpenAI-compatible base URL.\n- Claude models are offered through the Anthropic Messages protocol, including streaming and client-executed tool calls, and the docs include setup steps for Claude Code.\n- The catalog also lists Grok chat and media models, along with selected Chinese models, with availability and prices shown in a Model Plaza.\n- Each API key belongs to a single group, such as GPT GO, PLUS or PRO, which keeps spending and model access clearly separated.\n- Documentation covers Python and Node.js SDK examples, billing rules, error troubleshooting and a key usage lookup page.\n\nIt suits developers in China and elsewhere who want to prepay small amounts and connect chat apps, coding assistants or local agents to several providers through one account. Support runs through a QQ group. Create a separate key for each group you plan to use, check the Model Plaza before switching models, and never paste your full key in public channels.",
+    "sources": [
+      "https://www.codexhot.com"
+    ],
+    "status": "ok"
+  }
+]

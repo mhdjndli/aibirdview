@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "avidnote",
+    "moreContext": "What sets Avidnote apart is how seriously it treats provenance. Every AI answer is tied back to your own uploaded sources, and clicking a citation jumps straight to the passage in the paper it came from, which makes verification quick. It runs entirely in the browser and sits comfortably between a reference manager and a writing app, covering the whole arc from first reading to finished draft.\n\n- Citations open the original paper at the exact passage, so you can verify claims instead of trusting a summary.\n- It accepts PDF, Word, PowerPoint, and Excel uploads and exports finished work as PDF or Word.\n- Interview transcription and qualitative coding support numerous languages, which helps social science and mixed-methods researchers keep analysis in one place.\n- The company says data is stored in the EU, handled in line with GDPR, and never used to train AI models.\n- Projects, tags, workbooks, reference management, and a gap-finding tool help organize a literature review as it grows.\n\nAvidnote is built by Avidemic AB, which describes the product as made by researchers for researchers, and it suits graduate students, academics, and research teams who want AI help without losing control of their sources. A free plan with a monthly allowance lets you try it on a real project, and student and group discounts are offered. For best results, upload your core papers into a project first, then draft in the Write tab with those papers open beside you, rewriting AI suggestions in your own words as the team itself recommends.",
+    "sources": [
+      "https://avidnote.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "avoma",
+    "moreContext": "Avoma earns its place by being modular: teams can start with an AI note taker and scheduler, then add conversation and revenue intelligence only when they need it, rather than buying a heavyweight platform on day one. That flexibility, paired with broad integrations across the tools revenue teams already use, makes it one of the more practical choices for growing sales and customer success organizations.\n\n- Live transcription covers more than 75 languages, which is a real advantage for international teams.\n- It connects with Zoom, Google Meet, and Microsoft Teams, CRMs such as Salesforce, HubSpot, Pipedrive, and Zoho, and dialers like Aircall, Dialpad, and RingCentral.\n- Deal scoring can follow named sales methodologies including MEDDIC, BANT, and SPICED, so coaching lines up with how your team already sells.\n- The scheduler handles round-robin booking and lead routing from web forms, smoothing the handoff from SDRs to account executives.\n- A newer agentic layer adds an Ask Avoma copilot, a public API, and an MCP connection for plugging meeting data into other AI tools.\n\nAvoma is a strong fit for small and mid-sized B2B teams that want meeting notes, coaching, and forecasting under one roof, and the company says more than 1,000 organizations use it. A 14-day free trial runs without a credit card, and view-only seats are free, which makes it easy to loop in managers or teammates who only need to read notes. Set up custom smart trackers for competitor names and pricing questions early so your reporting gets useful from the first week.",
+    "sources": [
+      "https://www.avoma.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "bardeen",
+    "moreContext": "Bardeen has sharpened its focus around one hard problem for go-to-market teams: finding leads that are not already sitting in everyone else's database. It combines an agentic web scraper, AI-driven web research, contact enrichment, and lead qualification, so a single workflow can go from a list of websites to prioritized prospects with verified contact details.\n\n- Its AI web search can research or generate leads at scale, or answer specific questions about a company's website.\n- Enrichment finds validated emails and phone numbers, cutting out a separate data vendor for many teams.\n- You can describe your ideal customer in plain language and let the qualification step rank which leads deserve attention first.\n- Results export cleanly to CSV, Google Sheets, Airtable, and Notion, with broader connections into CRM and customer success tools.\n- The company lists GDPR compliance, SOC 2 Type II, and CASA Tier 2 and 3 certification, which helps when security reviews come up.\n\nBardeen is best for SDRs, RevOps, recruiters, and solo founders who spend hours building lists by hand, and it also offers playbooks tuned for real estate, private equity, and event services. Published customer stories, including Deel and Kearney, describe substantial time savings on list building and scraping. Start with one of the premium or template scrapers for a site you already prospect on, then layer in the qualification prompt once you see the raw data, since a sharp ideal customer description makes the ranking far more useful.",
+    "sources": [
+      "https://www.bardeen.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "beatoven",
+    "moreContext": "Beatoven.ai stands out for pairing genuinely useful creative tools with an ethics story it can back up. Its homegrown model, Maestro, turns a plain text description into an original background track, and the company has earned Fairly Trained certification, which recognizes AI models trained with consent and compensation for the musicians involved. For creators who worry about where AI music comes from, that matters.\n\n- Maestro generates music from a written prompt, so you can describe a mood or scene instead of browsing stock libraries.\n- A sound effects generator works like a personal foley artist, producing effects from a short prompt.\n- Downloads come as MP3 or WAV with a perpetual, non-exclusive license that covers monetized content on platforms like YouTube.\n- Developers can tap an API with composition, music intelligence, and AI music search endpoints to build soundtracks into their own apps.\n- The company says more than 2 million creators have generated over 15 million tracks, and it has been covered by outlets including TechCrunch, BBC, and Billboard.\n\nBeatoven.ai is ideal for YouTubers, podcasters, indie game developers, and marketers who need music that fits their content without licensing headaches. You can pay per download or subscribe, depending on how often you publish. One practical tip: the license covers use inside your content, not releasing tracks as standalone songs on Spotify or Apple Music, so treat it as a scoring tool and describe the scene you are scoring in detail to get the closest match.",
+    "sources": [
+      "https://www.beatoven.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "beautiful-ai",
+    "moreContext": "Beautiful.ai has refined its AI deck builder into an outline-first workflow: you start from a prompt, an outline, or an existing document, adjust the structure, and only then generate slides. That small step keeps the story under your control while the platform handles layout, which is exactly the division of labor most presenters want.\n\n- More than 300 smart slide layouts keep spacing, alignment, and hierarchy tidy as content changes.\n- Charts and graphs can link to a spreadsheet so numbers update without rebuilding slides.\n- Built-in stock images, icons, and video, plus animated transitions and voice-over narration, help a deck stand on its own when shared asynchronously.\n- Protected sharing links track views and slide-level engagement, giving sales teams a signal for when to follow up.\n- Enterprise plans add SSO, advanced permissions, and locked themes so brand standards hold across large teams.\n\nBeautiful.ai works best for sales, marketing, and consulting teams that build decks often and want them to look consistent without a designer in the loop. The company notes its AI features are powered by Anthropic models, and customers such as Cvent and Paciolan report significant cuts in deck build time. A 14-day free trial includes full access to creating, editing, and sharing. To get the most out of it, set up your brand theme and a shared slide library first, so every new AI-generated deck starts on-brand from the first click.",
+    "sources": [
+      "https://www.beautiful.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "beehiiv-ai",
+    "moreContext": "beehiiv has grown well beyond a newsletter sender into a full publishing home, where the newsletter, the website, and the business side all live in one workspace. Its AI touches several of those layers, from a writing assistant in the editor to AI-assisted website design, so a solo writer can launch something that looks and runs like a media company.\n\n- A no-code website builder with custom domains turns each newsletter into a proper site with archives and landing pages.\n- Beyond email, you can host podcasts, sell digital products such as courses and downloads, and run a link-in-bio page from the same account.\n- Developers get a full REST API, SDKs, webhooks, and an OpenAPI schema for connecting subscriber data to other systems.\n- Paid subscriptions carry no platform take rate on the Lite and Pro plans, so more of each payment stays with the writer.\n- The company says it serves more than 130,000 publishers and has helped them earn over 45 million dollars through the platform.\n\nbeehiiv is a natural home for independent writers, niche media brands, and companies running content-led newsletters who want growth and revenue tools without stitching together five products. A free plan covers up to 2,500 subscribers, which is enough to find your footing before upgrading. A smart early move is to switch on the referral program and join the recommendations network in your first weeks, since cross-promotion from similar publications tends to compound faster than any single post.",
+    "sources": [
+      "https://www.beehiiv.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "bimg-ai",
+    "moreContext": "Bimg AI brings a broad set of image and video models together in one browser workspace, and its unblur tool is a good example of its practical, no-fuss approach. Rather than hiding how it works, the page explains that it runs Google's Nano Banana 2 image model with a fixed instruction to sharpen a photo without altering faces, backgrounds, expressions, or text, and it even publishes that instruction.\n\n- The unblur tool accepts JPG, PNG, WebP, and JFIF files up to 30 MB, with batches of up to five photos on higher plans.\n- You can choose 1K, 2K, or 4K output and compare results side by side before downloading individually or as a ZIP.\n- It handles mild to moderate camera shake, soft focus, and compression blur, and the site is candid that heavily degraded images may not recover fully.\n- The same account opens an upscaler, a background remover, an old photo restorer, and access to image and video models such as Seedream, GPT Image, Veo, and Kling.\n- New users get free starter credits, and the cost of each job is shown before processing.\n\nBimg AI suits creators, small sellers, and anyone rescuing a few shaky phone shots who wants several AI tools under one login instead of separate subscriptions. Outputs can be used commercially, subject to your rights in the source image. For the most natural results, start with the sharpest original you have and pick the lowest resolution that meets your needs, then review faces and small text closely before using a result anywhere official.",
+    "sources": [
+      "https://bimg.ai/ai-unblur-image"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "blackbox-ai",
+    "moreContext": "Blackbox AI has matured from a popular coding helper into a broader AI platform with two clear audiences. Developers still get a coding agent that works inside VS Code and from the terminal, while the company's homepage now leads with enterprise inference: access to hundreds of models through a single endpoint, with a strong emphasis on privacy and deployment control.\n\n- The VS Code extension brings chat, inline suggestions, and an autonomous coding agent that can plan multi-step changes, edit files, and run commands with approval.\n- A terminal CLI offers agentic coding with MCP support, multi-file edits, and sandboxed permissions for developers who prefer the command line.\n- The company says it offers more than 300 models behind one endpoint and one bill, including open models such as GPT-OSS and DeepSeek.\n- For businesses, it describes client-side prompt encryption, zero data retention enforced at the gateway, and options for private, air-gapped, or customer-owned GPU deployments.\n- It also offers GPU cloud rentals and fine-tuning and reinforcement learning services, and it cites a partnership with Microsoft Azure.\n\nBlackbox AI fits individual developers and students who want an accessible coding agent with plenty of model choice, as well as engineering teams exploring private inference without managing their own stack. Plans and limits have shifted over time, so check the current pricing page before committing. When using the coding agent, scope its file and command permissions tightly and review each proposed change, which keeps its speed an asset rather than a risk.",
+    "sources": [
+      "https://www.blackbox.ai",
+      "https://docs.blackbox.ai/features/vscode-extension",
+      "https://www.banani.co/blog/blackbox-ai-review"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "blaze-ai",
+    "moreContext": "Blaze has expanded from an AI content tool into a full marketing partner, and its biggest strength is flexibility in how much you hand over. You can use the self-serve software to plan and publish on-brand content from one calendar, or step up to a done-for-you service where a dedicated expert, human editors, and quality checks run the program for you.\n\n- Its SEO and AEO tools aim content at both traditional search rankings and the answers AI assistants give, a forward-looking focus for small businesses.\n- Higher tiers extend into Google and Meta ad campaigns, landing pages, review responses, and an AI SDR that replies to and follows up with leads.\n- A learning loop feeds performance data back into the plan, so the calendar adapts to what is actually working.\n- Multilingual creation is supported, with a customer story citing content in English, French, and Spanish.\n- Batch creation lets you produce a month of posts in a single sitting, and the site shows ratings of 4.6 on Trustpilot and 4.8 on Capterra.\n\nBlaze is best for owner-operators, local businesses, and lean marketing teams that need consistent output without hiring an agency, with the managed tier giving a clear path to grow later. A free trial lets you test the software before paying. For the best results, spend real time on the brand setup at the start, adding your website, past posts, and examples you love, because everything it drafts afterward builds on that foundation.",
+    "sources": [
+      "https://www.blaze.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "blur-background",
+    "moreContext": "This simple tool from Vignra does one job well: it softens the background of a photo while keeping the subject crisp, giving everyday shots the shallow depth-of-field look of a portrait lens. Its standout quality is privacy, since the free Basic mode processes your image right in the browser, and if local processing cannot finish, it stops rather than quietly uploading your file.\n\n- An adjustable blur slider lets you dial in a subtle or strong effect, with a before and after comparison on the same page.\n- It accepts an unusually wide range of formats, including JPG, PNG, WebP, AVIF, HEIC, HEIF, TIFF, GIF, and SVG, up to 20 MB.\n- Free Basic needs no account or subscription, which makes it handy for quick edits.\n- An optional AI Refined mode uses private cloud processing for tougher images, and only uploads after you confirm.\n- The site is upfront about limits, noting that hair, fur, glass, and low-contrast edges can be tricky.\n\nIt is a good pick for refreshing a profile picture, tidying product photos, or adding focus to a portrait without opening a full photo editor. Because it runs locally by default, it also suits people who would rather not send personal photos to a server. A practical tip: start near the default strength and nudge it gradually, since the most convincing results usually come from moderate blur, and keep in mind the site advises against relying on it to hide faces or sensitive text.",
+    "sources": [
+      "https://blurbackground.vip"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "bolt-new",
+    "moreContext": "Bolt.new has grown from a viral prototyping tool into a fuller platform for shipping real products. With Bolt Cloud, the backend pieces many AI builders leave to you, such as hosting, databases, user authentication, custom domains, and analytics, now come built in, so a project can move from first prompt to live site without leaving the tab.\n\n- You can start from a chat prompt, a Figma file, a GitHub repository, or a shared team template.\n- Bolt picks a model for each task automatically, with a more powerful Max option available to Pro users.\n- The company says it now handles projects far larger than earlier versions and uses automated testing and iteration to cut down on errors.\n- Teams can build with their own design system so generated interfaces stay on-brand.\n- It goes beyond apps to websites, prototypes, and even slides, which makes it useful for pitching an idea as well as building it.\n\nBolt.new is a great fit for founders validating ideas, product managers who want working prototypes instead of mockups, agencies turning around client sites, and students learning by building. Its makers at StackBlitz pioneered running full development environments inside the browser, and that heritage still shows in how quickly projects spin up. You can start building for free. To get the best results, describe your app's core screens and data in your first prompt, then refine in small, focused requests rather than asking for many changes at once.",
+    "sources": [
+      "https://bolt.new"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "boomy",
+    "moreContext": "Boomy was one of the first platforms to make AI music feel like a creative hobby anyone could pick up, and it remains notable for connecting generation directly to release. Since its 2021 launch, the company has built its pitch around first-time creators, letting people shape a track and then send it to streaming services without a label or a separate distributor.\n\n- Songs can be generated across a wide range of styles, from EDM and lo-fi to rap and rock, with options to adjust tempo, instruments, and structure.\n- Built-in distribution delivers tracks to major services such as Spotify and Apple Music.\n- Reviews report that the company cites more than 22 million songs created on the platform.\n- In January 2026, Yamaha Music Innovations announced a technical collaboration with Boomy on an AI-powered sample generator, a sign of industry interest in its technology.\n- A free plan lets newcomers save songs and try a release before upgrading.\n\nBoomy is ideal for curious beginners, content creators who want original background tracks, and hobbyists who enjoy the thrill of putting a song out into the world. It rewards experimentation, so generate several versions in a style before settling on one. If you plan to earn from your releases, read Boomy's current terms on ownership and royalty sharing carefully first, since reviewers note the arrangements differ between free and paid members.",
+    "sources": [
+      "https://boomy.com",
+      "https://www.yamaha.com/en/news_release/2026/26011601",
+      "https://tooliverse.ai/tools/boomy",
+      "https://www.toolsforhumans.ai/ai-tools/boomy-ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "brand24",
+    "moreContext": "Brand24 brings more than a decade of social listening experience to a product that feels approachable rather than enterprise-heavy. Its reach is the headline: the company says it monitors over 25 million online sources, spanning major social networks and less obvious places like Spotify, Reddit, TikTok, forums, and app store reviews, so conversations rarely slip past unnoticed.\n\n- Mentions are tracked in 108 languages, which makes it practical for brands with international audiences.\n- The AI Brand Assistant lets you ask questions about your mention data in plain language instead of digging through dashboards.\n- AI Insights and word clouds surface what people actually like and dislike about a company, turning raw mentions into customer research.\n- Competitor benchmarking and hashtag tracking help measure campaign reach and spot the voices driving a conversation.\n- PR coverage reports can be generated and shared automatically, and a mobile app keeps you informed on the go.\n\nBrand24 is a strong choice for marketing teams, PR agencies, and small businesses that want reputation monitoring and audience insight without a large listening budget. The company says more than 4,000 brands use it, with customers in 154 countries. A free trial lets you test it on your own brand before committing. To get the most from it, set up separate projects for your brand, your top competitors, and a key industry term, then compare them side by side, since the contrast is often where the most useful insights appear.",
+    "sources": [
+      "https://brand24.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "british-accent-generator",
+    "moreContext": "British Accent Generator stands out for how carefully it maps the variety of voices across the UK. Rather than offering a single generic British option, its library is organized by region and style, with large sets of Received Pronunciation voices alongside young British, Scottish, Welsh, and Northern Irish speakers, each described by gender, age range, and delivery.\n\n- The voice catalog includes 88 Scottish, 37 Welsh, and 35 Northern Irish voices, which is unusually deep regional coverage for a text-to-speech tool.\n- The workflow is simple: preview a sample, paste your script, generate in the browser, tweak the wording, and download the audio.\n- Related tools for voice cloning, voice effects, and AI lip sync extend it into fuller video production.\n- The interface is available in English, Spanish, Brazilian Portuguese, French, and German.\n- It has been featured on several maker directories, including Twelve Tools, Startup Fame, and Fazier.\n\nIt suits YouTubers adding narration, teachers and learners practicing UK pronunciation, businesses producing training clips, and writers drafting audiobook or podcast scripts who want a specific regional character. Free daily credits let you try voices before buying a credit pack or subscription for longer scripts. A practical tip: audition two or three voices from the same region with a short line from your actual script, since delivery style varies a lot between profiles, and short punctuated sentences tend to produce the most natural pacing.",
+    "sources": [
+      "https://britishaccent.pro/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "browse-ai",
+    "moreContext": "Browse AI makes collecting web data feel approachable for people who would never write a scraper, and its AI now does more of the setup for you. Point a robot at a page and it suggests the columns worth extracting, which you can approve or extend by describing extra fields in plain language. From there, it scales up to serious monitoring and bulk extraction work.\n\n- Deep scraping chains robots together to follow links into subpages, with support for pagination and infinite scroll.\n- Robots can click dropdowns, fill forms, accept cookie banners, and use a chosen geographic location to capture region-specific content.\n- Data flows to Google Sheets and Airtable with live updates, through Zapier, Make, and Pabbly Connect, or out via REST API, webhooks, CSV, JSON, and AWS S3.\n- Built-in proxy rotation, rate limiting, and automatic retries keep long-running jobs reliable.\n- The company lists SOC 2 Type II certification and GDPR compliance, with role-based access and dedicated infrastructure for enterprise clients.\n\nBrowse AI is a great fit for ecommerce teams tracking competitor prices, recruiters and real estate professionals monitoring listings, and analysts who need fresh data without engineering help. The company says more than 770,000 users have signed up, and a free start lets you extract data from your first site at no cost. For dependable results, begin with a prebuilt robot if one exists for your target site, then set a monitoring schedule that matches how often the page really changes to save credits.",
+    "sources": [
+      "https://www.browse.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "bubble-ai",
+    "moreContext": "Bubble has always been the no-code platform people choose when they want to build a real business on it, and its AI layer now makes the first step far gentler. You can describe an app and have Bubble generate it, then keep refining it in the visual editor where logic, data, and design stay fully editable, which means you are never locked into whatever the AI produced first.\n\n- An AI agent can add features and help troubleshoot problems inside the editor as your app grows.\n- One project can now publish to the web and to native iOS and Android apps, so teams can build once and reach every platform.\n- Hosting, automatic scaling, authentication, security scanning, and privacy rules come built in, removing a lot of operational work.\n- The company says its community counts roughly 6 million builders, around 8,000 plugins, and apps that process more than a billion dollars in transactions each year.\n- A deep learning ecosystem of Academy courses, bootcamps, certification, an expert directory, and an active forum helps newcomers get unstuck.\n\nBubble is best for founders launching an MVP, operations teams building internal tools, and agencies delivering client apps without a full engineering team. You can start building for free and upgrade when you are ready to launch. A useful tip: spend time designing your data types and privacy rules before polishing the interface, since a clean data structure makes AI-generated features and later scaling much smoother.",
+    "sources": [
+      "https://bubble.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "buffer-ai",
+    "moreContext": "Buffer's AI Assistant reflects the company's thoughtful, people-first style. It is entirely optional, appearing only when you open it in the composer, and Buffer is clear about what happens to your data: the assistant runs on OpenAI models, and only the text you type into it is shared, not your account details or media. Best of all, the company says free Buffer accounts can use it without limits.\n\n- It can shift tone between casual and formal, shorten or expand text, and restructure a draft without leaving the post editor.\n- Tailoring works across networks such as LinkedIn, Threads, X, Instagram, and Bluesky, matching each one's style and length.\n- Buffer itself publishes to a wide range of channels, including TikTok, YouTube, Pinterest, Google Business Profile, Mastodon, and Substack.\n- Integrations with Canva, Google Drive, Dropbox, Unsplash, Zapier, and Claude, plus a public API and a social media MCP, connect it to the rest of your stack.\n- A free idea library and Start Page link-in-bio tool round out the creative side of the workflow.\n\nThe assistant is a natural fit for creators, freelancers, and small teams who want help getting unstuck without handing their voice over to automation. Buffer has long been known for transparency, publishing details about its pricing, metrics, and salaries, which adds trust to the experience. For the best output, write a rough version in your own words first, then ask the assistant to adapt it for each network, since a real starting draft keeps the result sounding like you.",
+    "sources": [
+      "https://buffer.com/ai-assistant"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "build-or-skip",
+    "moreContext": "Build or Skip tackles a problem every indie maker knows well: spending months on an idea nobody pays for. Instead of guessing, it surfaces products that already show signs of commercial traction, giving builders a way to study real demand, compare momentum, and decide whether an idea deserves their time.\n\n- It blends several signals, including estimated payment activity, public Buy Me a Coffee tip data, domain registration dates, domain rating, traffic, and category tags.\n- Dedicated rankings cover revenue signals, public tips, and newly registered sites, which helps spot fresh entrants in a niche.\n- Backlink libraries of comment articles and AI tool directories give makers a head start on promotion once they do build.\n- A site data API and an MCP server let you query its research from AI clients, while a Chrome extension, watchlist, sitemap monitoring, and keyword discovery support ongoing research.\n- The site is refreshingly candid that revenue figures are estimates based on traffic rather than verified orders.\n\nBuild or Skip is best for indie hackers, solo SaaS founders, and small product teams who want a data-backed shortlist before writing code. It was created by founder Jack Gao, and a free preview lets you explore the rankings before upgrading to Pro for full access and filters. A practical tip: use the rankings to find a category with several growing products rather than a single breakout, then study what those competitors leave unserved, since that gap is often your best opening.",
+    "sources": [
+      "https://buildorskip.dev"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "caktus-ai",
+    "moreContext": "Caktus AI has grown into a broad study toolkit with more than 25 specialized tools grouped around how students actually work: writing, research, learning, STEM subjects, and everyday productivity. Its research side is the standout, pulling sources from scholarly databases so that drafts start from real academic material rather than invented references.\n\n- The essay writer formats citations in APA, MLA, Chicago, and Harvard styles, and a citation finder and bibliography manager help keep references organized.\n- Dedicated assistants cover math, physics, chemistry, and biology, with step-by-step math solutions that show the reasoning behind each answer.\n- A study planner can read your syllabus and map out the semester, while study guides come in proven formats such as Cornell Notes and the Feynman technique.\n- You can upload PDFs, Word documents, and text files to generate flashcards, quizzes, and practice exams from your own course material.\n- Beyond coursework, it includes a presentation generator, interview prep, and a resume builder for the jump into internships and jobs.\n\nCaktus AI is best for high school and university students who want one place for writing support, exam prep, and STEM practice, and it can also help tutors build practice materials quickly. Several tools can be tried for free, with a subscription adding unlimited use, longer outputs, real citations, and document uploads. To get the most from it, upload your actual lecture notes or readings before generating quizzes and guides, and use its drafts as a starting point you revise and check against your instructor's academic integrity rules.",
+    "sources": [
+      "https://www.caktus.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "camb-ai",
+    "moreContext": "CAMB.AI has become one of the most credible names in AI localization by proving its technology in the hardest setting there is: live broadcasts. With offices in San Francisco and Dubai, the company builds its own speech models, including the MARS family for expressive text-to-speech, and now offers dubbing, live translation, and captions in more than 150 languages.\n\n- Its list of sports partners is impressive, naming Ligue 1, MLS, NASCAR, and the Australian Open, and the company cites more than 500 million viewers reached across live deployments.\n- Beyond dubbing, it offers real-time translation, AI subtitles, website and image translation, and even generative sports commentary.\n- Developers can use its speech models through a text-to-speech and voice API, as well as on Google Vertex AI and Amazon Bedrock.\n- The company has open-sourced models on GitHub, including the English version of an earlier MARS release, and has published peer-reviewed research at ICASSP 2025.\n- Partners beyond sports include IMAX, Comcast technology units, Dentsu, India Today, and Arab News, showing reach into film, media, and advertising.\n\nCAMB.AI is a strong fit for broadcasters, streaming platforms, studios, and publishers that need to reach global audiences quickly while keeping the original speaker's character intact. It has also worked on projects to preserve Indigenous languages, a thoughtful use of its broad language coverage. For best results on dubbing projects, start with clean source audio and review a short pilot clip in your target languages before scaling up a full catalog.",
+    "sources": [
+      "https://www.camb.ai",
+      "https://www.wam.ae/en/article/b3m1ez9-cambai-announces-launch-worlds-most-capable-speech",
+      "https://www.businesswire.com/news/home/20240626907117/en/Camb.ai-and-Seeing-Red-Media-Forge-Groundbreaking-Partnership-to-Preserve-Indigenous-Languages"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "canva-magic-studio",
+    "moreContext": "Magic Studio works so well because it never asks you to leave the editor you already know. Since its 2023 launch it has grown into a large family of AI tools woven through Canva, covering writing, image generation, photo editing, video, and format conversion, so AI becomes one more button in a familiar workflow rather than a separate app to learn.\n\n- Magic Switch turns one design into other formats, such as a presentation into a summary document, and can translate designs into many languages.\n- Magic Grab lifts a subject out of a photo so it can be moved or resized, while Magic Expand extends an image to fit a new aspect ratio.\n- Dream Lab, built on technology from Leonardo.Ai (which Canva acquired in 2024), offers higher-quality image generation with more style control.\n- Magic Write drafts and edits copy directly inside text boxes, and a conversational Canva AI chat can return editable designs from a prompt.\n- Canva Shield adds moderation and safety controls, admin settings for teams, and IP indemnification for enterprise customers.\n\nMagic Studio is ideal for small businesses, educators, social media managers, and marketing teams who need polished visuals quickly without specialist software. Free accounts can try many tools with monthly limits, while Pro and team plans include far more AI usage. A practical tip: set up your Brand Kit with logos, fonts, and colors before generating anything, because Magic Studio features draw on it to keep AI-made designs consistent with the rest of your content.",
+    "sources": [
+      "https://www.canva.com/magic",
+      "https://pasqualepillitteri.it/en/news/601/canva-ai-magic-studio-guide",
+      "https://fast.io/resources/canva-ai-review-2026/",
+      "https://www.businesswire.com/news/home/20231004864029/zh-CN"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "capcut",
+    "moreContext": "CapCut's real strength is how far it lets creators go without paying or switching tools. The same account works across a mobile app, a tablet app, a desktop editor, and a browser-based version, so you can rough out a clip on your phone and finish it on a laptop, with AI features woven into every step.\n\n- Automatic captions work in multiple languages and can be styled to match the look of popular short-form videos.\n- Its AI video generator builds clips from text, images, or keyframes, and Video Studio can create avatar-led videos through a simple chat.\n- Audio tools include text to speech, custom voices, voice enhancement, and noise reduction, which rescue footage shot in imperfect conditions.\n- Image enhancement, background removal, and AI design tools make it useful for thumbnails and promotional graphics as well as video.\n- The interface supports around 20 languages, and the company cites more than 100 million downloads and a 4.7 App Store rating.\n\nCapCut is a great fit for TikTok, Reels, and Shorts creators, small businesses making promo videos from business templates, and beginners who want results quickly. It sits within a wider family of creative apps from the same maker, including the Dreamina image generator and the Pippit marketing tool, and it supports creators through affiliate and Creative Partner programs. The online editor can be used for free with no credit card. To work faster, start from a trending template close to your idea, then swap in your own clips and let auto captions handle the text.",
+    "sources": [
+      "https://www.capcut.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "caption-remover",
+    "moreContext": "Caption Remover is a focused, honest utility for one frustrating problem: captions burned permanently into a video you own. Instead of cropping or blurring the text away, it uses AI video inpainting to estimate the pixels hidden behind the captions, and the site is unusually transparent about how it works, where processing happens, and what results to expect.\n\n- The automatic Basic mode detects subtitles without you drawing anything, which makes quick cleanups easy.\n- A higher-quality mode lets you mark one fixed rectangle over the caption area for more controlled reconstruction.\n- Original audio is kept or converted to AAC, and the exact output dimensions are shown before you upload.\n- Up to five videos can be queued in the workspace, with a final quote shown before any paid job runs and failed jobs releasing their allowance.\n- The site clearly discloses its processing partners and says it expires its own copies of files within 24 hours.\n\nThe tool is best for creators updating outdated captions on their own footage, marketers repurposing clips for new languages, and editors who no longer have the original project file. Sign-in gives a small number of free Basic videos so you can test it on a real clip. A practical tip: if you still have the editing project, the site itself recommends hiding the caption layer and re-exporting, and when you do use the tool, pick clips with steady backgrounds and fewer fast cuts for the cleanest result, then add fresh accessible captions in your editor.",
+    "sources": [
+      "https://videocaptionremover.com/remove-caption-from-video"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "captions-app",
+    "moreContext": "Captions has evolved into a chat-driven video editor where you can describe changes in plain language and watch them happen. Recently the company merged its Mirage Studio product into Captions, bringing its AI actors and generated footage into the same app used for editing real recordings, so creators can mix filmed and generated content in one project.\n\n- AI Edit applies a complete visual style to a video in one step, cutting scenes and adding B-roll, with around 20 named styles to choose from.\n- You can create a digital twin of yourself or pick a digital avatar, then change outfits and backgrounds with simple prompts.\n- Translated subtitles are available in more than 100 languages, alongside over 100 caption styles.\n- Cleanup tools remove background noise, trim pauses and filler words, and add royalty-free music and sound effects.\n- It works on the web and through mobile apps for iPhone and Android, so you can edit on whichever device is at hand.\n\nCaptions is ideal for solo creators, founders building a personal brand, and marketing teams producing UGC-style ads at volume. The company says it has around 20 million users and has been featured in outlets such as Bloomberg and The New York Times. The app is free to download, with some features usable before subscribing. For the most polished results, record in good lighting with clear audio first, then use AI Edit as a starting point and fine-tune captions and cuts by chat.",
+    "sources": [
+      "https://www.captions.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "carejobs-now",
+    "moreContext": "CareJobs.Now earns trust by doing the unglamorous work of going straight to the source. Each night it reads the career pages of hospitals, health systems, clinic groups, and care companies, then links every listing to the employer's own application page, so you apply directly instead of through a middleman. It is completely free for job seekers, with no account required to search.\n\n- Coverage spans 17 kinds of healthcare work, from nurses, physicians, and therapists to CNAs, caregivers, pharmacy, imaging, lab, EMS, dental, and admin roles.\n- It also pulls federal health jobs from USAJOBS, and supplements its own reading with Adzuna listings that name the original employer.\n- A free market-rate checker lets you describe your role or paste your LinkedIn profile to see how pay compares.\n- Pay calculators, resume and cover letter tools, and guides on travel, new-grad, and per diem work support the whole search.\n- The site is notably transparent about its business model, labeling sponsored and featured jobs and stating that employers cannot pay to rank higher.\n\nCareJobs.Now is a natural fit for nurses, allied health professionals, and caregivers who want a clean, honest search without recruiter spam, including those weighing travel or per diem work. A free weekly email alert keeps new openings coming without daily checking. To get the most from it, describe the role, shift, and location you want in plain words, then compare posted pay across nearby employers before applying, since the site shows employer-listed pay wherever it exists.",
+    "sources": [
+      "https://carejobs.now"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cartesia",
+    "moreContext": "Cartesia stands out because its speed comes from genuine research rather than clever engineering alone. The team's work on state space models, including Mamba and newer H-Net architectures, underpins a voice stack built for live conversation, and it has grown from a single fast text-to-speech model into a fuller platform for building and running voice agents.\n\n- Beyond the Sonic speech model, Cartesia offers Ink, a streaming speech-to-text model, so both halves of a conversation can run on one provider.\n- Its Managed Agents platform lets teams build and deploy voice agents that answer and place phone calls.\n- The same models and agents can run in the cloud through regional endpoints, on-premises, or on-device, which helps with data residency and offline use cases.\n- The company says its models rank first on Artificial Analysis leaderboards for speech and speech-to-text.\n- Named customers include ServiceNow, Retell, and Quora, and the company says EliseAI runs more than 5 million voice calls a month on Cartesia.\n\nCartesia is best for developers and product teams building customer service lines, AI receptionists, and interactive apps where any lag breaks the illusion of a natural conversation. Its research section and trust center are worth a look for teams evaluating it for regulated environments. A practical tip: prototype with the hosted API first to tune voice choice and pacing for your use case, then consider regional endpoints or on-premises deployment once you know your latency and compliance requirements.",
+    "sources": [
+      "https://cartesia.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "castmagic",
+    "moreContext": "Castmagic has grown from a show notes generator into a full content operating system for anyone who records conversations. Its depth shows in the details: it can import from more than 1,800 platforms, label speakers in transcripts across over 60 languages, and keep a searchable library of every episode or meeting you have ever published.\n\n- Semantic search finds quotes and moments by meaning rather than exact words, which makes mining an archive for clips far faster.\n- A built-in content strategist reviews your episodes and suggests what to publish next.\n- An audience chatbot trained on your episodes can be added to your website with one script tag, citing specific moments and capturing leads.\n- Async interview links let guests answer questions on their own time, with transcribed responses returned automatically.\n- A REST API and a Claude connector via MCP let you work with your media library from other tools, alongside integrations with Zoom, Google Meet, YouTube, Loom, Wistia, and Zapier.\n\nCastmagic is ideal for podcasters, agencies managing several shows, and marketing teams turning webinars and interviews into a steady stream of posts. The company says more than 100,000 podcasters and creators use it, and customers include HubSpot and Yahoo Sports. Multi-brand workspaces with permissions and approval workflows make it especially useful for agencies. To get the most out of it, invest time early in its brand voice settings and reusable templates, so every new recording produces drafts that need only light edits.",
+    "sources": [
+      "https://www.castmagic.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "character-ai",
+    "moreContext": "Character.AI remains one of the most imaginative places in consumer AI, a platform built around creativity and play rather than productivity. It has steadily expanded beyond one-on-one chat into richer formats, and it has taken visible steps to make its experience more age-appropriate, which is worth noting for families weighing it.\n\n- Stories offer a guided, choose-your-path format: pick two or three characters, choose a genre and premise, and make decisions that shape the plot, with endings you can replay and share.\n- AvatarFX brings characters to life in video, letting them speak and move from an image and a voice.\n- A community Feed, Imagine image tools, Scenes, and voice features give creators many ways to share and extend their characters.\n- Character creation tools stay central, so anyone can design a persona with its own personality and voice.\n- Since late 2025, the company has phased out open-ended chat for users under 18, steering teens toward creative features and introducing age assurance tools.\n\nCharacter.AI is best for fiction lovers, roleplay fans, writers testing dialogue, and anyone who enjoys interactive storytelling, with a free core experience and an optional subscription for extras. Teens can still use many of its creative and community features under the newer rules, though availability varies by region. For the best experience, spend time on a character's definition and example dialogue when creating one, since well-written definitions produce far more consistent personalities, and try Stories when you want a structured adventure instead of open conversation.",
+    "sources": [
+      "https://character.ai",
+      "https://www.techradar.com/ai-platforms-assistants/character-ai-launches-stories-to-keep-teens-engaged-as-it-scales-back-open-ended-chat-for-under-18s",
+      "https://www.engadget.com/ai/characterai-launches-guided-stories-format-after-banning-teens-from-its-chatbots-133000131"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "chatgpt",
+    "moreContext": "ChatGPT keeps its place at the center of the AI assistant category by growing from a chat window into a genuine workspace. Beyond answering questions, it can now organize long-running work, connect to the apps where your files live, and carry out multi-step tasks on its own, while still feeling approachable for first-time users.\n\n- Projects group related chats, files, and custom instructions in one workspace, with memory scoped to that project so context does not bleed into unrelated conversations.\n- Agent mode can browse websites, fill out forms, and work through multi-step tasks, pausing to hand control back for logins and payments.\n- Connectors link ChatGPT to services such as Google Drive, Gmail, SharePoint, OneDrive, Notion, and HubSpot, so answers can draw on your own documents.\n- Study mode teaches step by step, asking questions and checking understanding rather than simply handing over answers.\n- Memory can remember preferences and goals across conversations, and it can be reviewed or turned off in settings.\n\nChatGPT is a strong default for students, professionals, writers, and developers who want one assistant that handles research, drafting, analysis, and everyday questions. It is available on the web and through mobile and desktop apps, with web search included across plans. To get noticeably better results, set up custom instructions describing your role and preferred style, and create a project for each ongoing piece of work with its key files uploaded, so every new chat starts with the right background.",
+    "sources": [
+      "https://chatgpt.com",
+      "https://kendratech.substack.com/p/comprehensive-guide-to-chatgpt-modes",
+      "https://suprmind.ai/hub/chatgpt/features/",
+      "https://jeanhinz.io/chatgpt/funktionen/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "chatgpt2word",
+    "moreContext": "ChatGPT2Word solves an everyday annoyance with real care: AI answers that look great in a chat window but fall apart when pasted into Word. It handles the tricky parts that generic converters often mangle, and it does the conversion locally in your browser, so your text never has to leave your machine.\n\n- Markdown tables become real, editable Word tables rather than rows of pipes and dashes.\n- LaTeX math is converted into native, editable Word equations, a big help for students and technical writers.\n- Code blocks keep monospace formatting, indentation, and language labels, and Mermaid diagrams are rendered as images.\n- Font, body size, margins, and headers and footers are adjustable, and you can also copy formatted text or export HTML and PDF.\n- Dedicated converters cover output from Claude, Gemini, Perplexity, Copilot, DeepSeek, NotebookLM, Obsidian, and more.\n\nIt is a great fit for students submitting AI-assisted research notes, consultants turning chat drafts into client documents, and anyone who regularly moves AI output into Office. No account is needed for core conversions, and an optional one-time Pro upgrade adds batch conversion to a ZIP and branding options. The site is refreshingly honest that it is built for one-off documents and points developers toward Pandoc for scripted workflows. A practical tip: if a fragment fails to convert, the tool labels it rather than silently dropping it, so scan for those labels before sending your document.",
+    "sources": [
+      "https://chatgpt2word.com/markdown-to-word"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "chatpdf",
+    "moreContext": "ChatPDF earned its popularity by staying focused while quietly broadening what counts as a document. It now works with Word files, PowerPoint decks, Markdown, and plain text alongside PDFs, and it can also chat with videos, websites, and pasted links, all with the same simple ask-and-verify approach that made it a favorite.\n\n- Clicking a citation scrolls straight to the source passage, and a side-by-side view keeps the chat and the document visible together.\n- You can ask questions in a different language from the document, which is handy for reading research or contracts written in another language.\n- Related tools for summaries, translation, flashcards, slides, and YouTube chat extend it into a light study and research suite.\n- Documents are encrypted in transit and at rest, private by default, and deletable at any time, with optional share links.\n- The company says it serves more than 10 million users, and it was named on an a16z list of top generative AI consumer apps in 2024.\n\nChatPDF is ideal for students working through dense readings, researchers comparing papers, and professionals reviewing long manuals or agreements. You can start without an account, and a free account adds saved history and multi-document chats, with a paid plan for unlimited use. Desktop and mobile apps are available too. To get the most from it, group related files into a folder and ask comparison questions across them, then click through the citations to confirm key details before relying on an answer.",
+    "sources": [
+      "https://www.chatpdf.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "chesscore",
+    "moreContext": "ChessCore is a rare example of software built around the real daily life of a chess academy, and its AI is designed with a refreshing amount of restraint. The copilot drafts lead replies, class recaps, fee reminders, and progress reports, but a person approves them before anything reaches families, and every position evaluation comes from Stockfish so the AI never invents chess analysis.\n\n- A live classroom includes video, audio, and a shared board, with attendance marked right inside the lesson.\n- Lichess games sync automatically to each student's profile, and Chess.com games can be imported on higher tiers, with Stockfish reviews for both.\n- Students can practice against Maia opponents that play at five human-like levels, a more realistic sparring partner than a raw engine.\n- Built-in tournament tools handle Swiss, round-robin, knockout, team, and arena formats with public registration and live standings.\n- Messages and payment links go out via WhatsApp Business, and an MCP server and REST API let tools like Claude or ChatGPT read approved data.\n\nChessCore suits academy owners, club organizers, and independent coaches who have outgrown spreadsheets and group chats, especially in India, where it supports GST-ready invoices and DPDP consent, while Stripe serves academies elsewhere. Families get a browser portal or an academy-branded home screen app showing attendance, ratings, homework, and invoices. A free plan with no credit card makes it easy to try. One practical tip: keep the two-person approval rule switched on for payments and guardian messages, which pairs AI speed with the trust parents expect.",
+    "sources": [
+      "https://chesscore.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "civitai",
+    "moreContext": "Civitai is the busiest gathering place for the open image and video generation community, and much of its value comes from transparency. Example images carry their full recipes, including the model, prompt, sampler, guidance scale, and seed, so anyone can learn from and reproduce what others have made. It has also grown into a hosted creative studio, letting people generate and train without owning a powerful GPU.\n\n- The library spans more than 200,000 resources, including checkpoints, LoRAs, embeddings, VAEs, and workflows across families such as Flux, SDXL, and SD 1.5.\n- The browser generator supports text-to-image, image-to-image, ControlNet, inpainting, and stacking multiple LoRAs in one run.\n- Video generation now draws on several engines, including Wan, Kling, and Veo, alongside video LoRA training for some base models.\n- Its Buzz currency powers generation and training, and can be earned for free through daily rewards and community engagement.\n- Creators can earn through tips, bounties, and a creator compensation program, and a separate Civitai.green site offers a curated, safe-for-work experience.\n\nCivitai is best for AI artists, hobbyists, and studios working with open models who want a vast model selection plus a place to experiment and share. Policies and features have shifted in response to payment processor rules and regional laws, so check the current terms in your country. A practical safety tip: prefer safetensors files over older pickle-based formats, check a model's reviews and sample images, and download your generated images promptly, since on-site generations are not kept indefinitely.",
+    "sources": [
+      "https://civitai.com",
+      "https://www.somake.ai/blog/civitai-review"
+    ],
+    "status": "ok"
+  }
+]

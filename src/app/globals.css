@@ -215,6 +215,66 @@ body {
   border: 1px solid var(--ink-200);
 }
 .prose-ink hr { border: 0; border-top: 1px solid var(--ink-200); margin: 2.5em 0; }
+.prose-ink figure { margin: 1.75em 0; }
+.prose-ink figure img { margin: 0; }
+.prose-ink figcaption {
+  margin-top: 0.6em;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-500);
+  text-align: center;
+}
+.prose-ink table {
+  display: block;
+  overflow-x: auto;
+  width: 100%;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.prose-ink th,
+.prose-ink td {
+  padding: 0.65em 0.9em;
+  border-bottom: 1px solid var(--ink-200);
+  text-align: left;
+  vertical-align: top;
+  min-width: 8em;
+}
+.prose-ink th {
+  font-weight: 600;
+  color: var(--ink-900);
+  background: var(--ink-50);
+}
+.prose-ink td p, .prose-ink th p { margin: 0; }
+.prose-ink .tool-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1.75em 0;
+}
+.prose-ink .tool-logos a.tool-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid var(--ink-200);
+  border-radius: 999px;
+  background: var(--ink-0);
+  color: var(--ink-900);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.prose-ink .tool-logos a.tool-logo:hover { border-color: var(--kiwi-400); }
+.prose-ink .tool-logos img {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  border-radius: 10px;
+  object-fit: contain;
+  background: var(--ink-0);
+}
 
 /* Marquee for the social-proof logo bar */
 @keyframes marquee {

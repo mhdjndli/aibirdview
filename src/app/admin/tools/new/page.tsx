@@ -31,6 +31,7 @@ export default async function NewToolPage() {
           tagline: "",
           description: "",
           longDescription: "",
+          moreContext: "",
           url: "",
           categorySlug: categories[0]?.slug ?? "",
           pricing: "FREEMIUM",

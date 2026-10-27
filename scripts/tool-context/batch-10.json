@@ -1,0 +1,292 @@
+[
+  {
+    "slug": "nooks",
+    "moreContext": "What started in 2020 as a virtual space where remote sales teams could work side by side has grown into a full revenue platform for both human reps and AI agents. Nooks now covers outbound prospecting, inbound speed to lead, deal follow-up, account expansion and rep coaching, so the dialer you know is one piece of a much broader system.\n\n- AI Sequencing runs multichannel outreach across email, phone and social, and the company positions it as a full replacement for a separate sequencing tool.\n- Signals and account intelligence surface buying intent so reps spend their call blocks on the accounts most likely to engage.\n- Native integrations with Salesforce and HubSpot keep activity logged in the CRM, and teams on other CRMs can still dial by uploading a CSV list.\n- AI Coaching gives reps a place to practice and sharpen talk tracks, which the company says helps new hires ramp faster.\n- Its research arm, Nooks Labs, says its models are trained on more than a billion real sales interactions, which grounds the coaching and agent features in genuine call data.\n\nNooks is a strong match for SDR and BDR teams that treat the phone as a core channel and want dialing, sequencing and coaching under one roof instead of stitched across several vendors. To get the most from it, connect your CRM first and run shared calling sessions with the team, since the platform is at its best when activity, signals and coaching data all flow into one place.",
+    "sources": [
+      "https://www.nooks.ai",
+      "https://nooks.ai/pricing",
+      "https://demandgenreport.com/uncategorized/nooks-generates-22m-in-series-a-funding/47366/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "notably",
+    "moreContext": "Notably earns its place among research tools by treating synthesis as the main event rather than an afterthought. Instead of forcing researchers to choose between a whiteboard, a spreadsheet and a repository, it keeps all three views of the same data in sync, which makes it easy to move from raw interviews to findings a stakeholder will actually read.\n\n- A library of AI templates written by researchers helps people of any experience level run structured synthesis, and you can build custom templates from scratch.\n- Tag suggestions learn from the way you tag, so the assistant gets more useful the longer a team works in it.\n- Data can be arranged spatially on a canvas, organized in a table, or explored through interactive charts, with every view staying linked.\n- The research repository tracks where each insight came from, and it accepts audio, video, surveys, notes and documents as source material.\n- Finished work can be packaged into an interactive collection of insights, with AI-generated imagery to make findings more memorable for stakeholders.\n\nNotably suits lean UX and product research teams, including solo researchers, who need repository and analysis features without a dedicated research ops function. A practical tip is to set up a custom template for your most common study type early, so every new project starts with consistent tags and structure. Note that the official site was not loading securely when we checked, so confirm current plans directly with the company.",
+    "sources": [
+      "https://notably.ai",
+      "https://alternativeto.net/software/notably-ai/about",
+      "https://getcoai.com/tool-detail/notably/164433/"
+    ],
+    "status": "site-unreachable"
+  },
+  {
+    "slug": "notebooklm",
+    "moreContext": "In July 2026 Google renamed NotebookLM to Gemini Notebook, folding it more tightly into the Gemini family while keeping it a standalone research tool. The core promise is unchanged: it stays grounded in the material you give it, and it keeps adding new ways to turn that material into something you can study, share or present.\n\n- Video Overviews turn sources into narrated explainers, and Google expanded them to more than 80 languages, later adding more cinematic and short vertical formats.\n- Beyond audio and video, it can generate slide decks and mind maps from your files, which helps students and analysts see the structure of a topic at a glance.\n- Notebooks created inside the Gemini app sync with Gemini Notebook automatically, so research started in a chat can continue in a dedicated workspace.\n- A newer code execution capability gives notebooks a secure cloud environment for data analysis grounded in uploaded sources, initially for higher-tier and Workspace business subscribers.\n- Google says more than 30 million people and over 600,000 organizations have used the product, and there are mobile apps alongside the web version.\n\nIt is ideal for students, researchers, journalists and analysts who want an AI that stays anchored to their own reading list rather than the open web. For the best results, build focused notebooks around a single project, and use the chat to steer an Audio or Video Overview toward the questions you care about before generating it.",
+    "sources": [
+      "https://notebooklm.google.com/",
+      "https://www.neowin.net/news/googles-notebooklm-isnt-called-notebooklm-anymore/",
+      "https://oit.ncsu.edu/2026/07/17/notebooklm-changes-name-to-gemini-notebook/",
+      "https://techcrunch.com/2025/08/25/notebooklms-video-overview-feature-now-supports-80-languages"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "notion-ai",
+    "moreContext": "Notion AI has grown from a writing helper into a set of agents that can actually do work inside your workspace. Because it already sees your pages, databases and connected tools, it can act on real team context instead of generic prompts, which is what makes it feel genuinely useful day to day.\n\n- Notion Agent handles multi-step tasks and can create and edit pages and databases on your behalf, drawing on both workspace content and connected apps.\n- Custom Agents run recurring team work on a trigger or a schedule, and they keep working even when nobody is online.\n- Research Mode produces longer, detailed reports and summaries, which is handy for briefs and competitive overviews.\n- Users can pick a specific model for more demanding work, and Notion says you can switch models or providers without losing context.\n- The security story is solid, with SOC 2 Type 2 and ISO 27001 compliance, a commitment that AI subprocessors do not train on your data, and zero data retention plus HIPAA support on Enterprise.\n\nIt is best for teams that already run their docs, wikis and projects in Notion and want answers and automation built on that knowledge. The free plan includes a trial, while the full agent, enterprise search and meeting notes features sit on the Business plan. A good first step is to set up one Custom Agent for a weekly chore, such as compiling a status update from project databases, and expand from there.",
+    "sources": [
+      "https://www.notion.com/product/ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "novelai",
+    "moreContext": "NovelAI, built by Anlatan, has carved out a loyal following by treating writers and artists as collaborators rather than prompt typists. Its philosophy is that the AI should help you write, not write for you, and that respect for the creator shows up in both its privacy stance and its depth of creative controls.\n\n- Story generation now runs on GLM 4.6, giving the writing assistant a capable modern model behind its familiar editor.\n- NovelAI Diffusion V5 handles anime-style art with sharper detail, multiple characters per image and even full comic pages in one model.\n- Separate character definitions, action tags and Director Tools for pose, clothing and lighting help keep recurring characters consistent across images.\n- A built-in canvas and inpainting let you fix details in place instead of regenerating from scratch.\n- Prompts are encrypted, generated images are not stored unless you save them, and signing up only requires an email address.\n\nNovelAI is a natural home for fiction writers, interactive story fans and anime illustrators who value privacy and creative freedom. It runs in the browser on desktop and mobile with no install, a trial is available for newcomers, and the company states there are no commercial use limitations on what you create. To get the most out of it, invest time in your lorebook and character definitions early, since consistent world details pay off over long projects.",
+    "sources": [
+      "https://novelai.net"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ntp-careerpilot-ai",
+    "moreContext": "NTP CareerPilot AI tackles a problem many global job seekers know well: strong experience that is hard to present in professional English. Rather than generating a polished resume full of invented claims, it rewrites what you have actually done and then uses that same evidence to map where your career could go next.\n\n- It accepts resumes written in local languages and turns them into natural, professional English with relevant keywords and a human-sounding tone.\n- The builder says every line is meant to trace back to the original resume, and unverifiable content is excluded by design in the pipeline rather than only through prompting.\n- Career intelligence breaks your profile into what you have, what is missing, what to build next and where you could go, including related roles.\n- Separate paths for students, fresh graduates and experienced professionals tailor the guidance to each stage of a career.\n- User guides are available in both English and Thai, reflecting its roots in serving Thai professionals with local payment options such as PromptPay.\n\nThis is a thoughtful pick for non-native English speakers applying for international roles, and for students who want an honest picture of their gaps before entering the job market. For the best results, paste the full job description you are targeting and keep your source resume detailed, since the tool can only work with the real experience you give it. A simple practical habit is to rerun the analysis for each distinct role rather than reusing one resume everywhere.",
+    "sources": [
+      "https://ntpcareerpilotai.com/",
+      "https://www.producthunt.com/posts/1249178"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "obviously-ai",
+    "moreContext": "Obviously AI earned real respect as one of the first platforms to make predictive modeling feel approachable for business teams. Its website is now an archive stating that Obviously AI has become Zams, a company led by the same founder, Nirman Dave, that builds AI agents to automate back-office workflows. The original no-code ML product therefore appears to be winding down, but its approach influenced many tools that followed.\n\n- It supported classification, regression and time series models, covering churn, lead conversion, fraud detection, sales forecasting and dynamic pricing.\n- Models could be deployed in one click as web apps or real-time REST APIs, so predictions reached production without an engineering queue.\n- Integrations included Zapier, Airtable, Dropbox and Salesforce, with results viewable in tools like Power BI and Looker.\n- An Expert Support tier paired customers with a dedicated data scientist for data cleaning, enrichment and statistical work.\n- Reporting on the company says the platform powered more than 82,000 prediction models before the pivot.\n\nThe original product was best suited to analysts and operations teams who wanted forecasts from tabular data without hiring ML engineers. If you are evaluating it today, check the Zams site first to see what is still supported, and export any existing models or predictions you rely on. Teams that liked its workflow-first philosophy may find the newer agent platform a natural next step.",
+    "sources": [
+      "https://www.obviously.ai",
+      "https://echai.ventures/stream/nirman-dave-zams-ai-devtools",
+      "https://www.cbinsights.com/company/obviously-ai"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "ocoya",
+    "moreContext": "Ocoya has grown well beyond caption writing into a complete social operations hub, with publishing, design, engagement and automation sharing one workspace. What stands out is how far its reach extends: alongside the major social networks it publishes to community platforms, blogs and website builders, which makes it useful for brands whose audience lives in more than a few places.\n\n- Publishing covers a broad list of destinations, including Bluesky, Threads, Mastodon, Telegram, Discord, Slack, YouTube Shorts and Google Business profiles alongside Instagram, LinkedIn and TikTok.\n- A unified Social Inbox gathers DMs, comments and mentions in one place, with AI able to draft replies.\n- Visual Workflows automate posting and replies, for example turning a new WooCommerce product into a ready-to-publish Instagram post.\n- A public API and an MCP server let developers build publishing into their own products or drive Ocoya from AI assistants such as Claude and ChatGPT.\n- Link-in-bio pages, a built-in Design Studio and an interface available in several European languages round out the toolkit.\n\nOcoya is a strong fit for small marketing teams, ecommerce shops and agencies that want one affordable place to create, schedule and respond. A free trial is available to test it. To get real leverage, set up one automated workflow early, such as product launches or blog posts flowing straight into social drafts, then review and approve rather than writing every post from scratch.",
+    "sources": [
+      "https://www.ocoya.com",
+      "https://zapier.com/apps/ocoya/integrations"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "omneky",
+    "moreContext": "Founded in 2018 by Hikari Senju, Omneky has evolved into an agent-driven ad platform that plans, creates, allocates and launches campaigns from a single conversation. You can paste a product link and receive on-brand image and video ads, then let the agent study competitors and shift budget toward what performs, with nothing going live until you confirm.\n\n- Omneky now runs inside Claude, ChatGPT, Grok and Slack, so marketers can brief and approve campaigns from tools they already use.\n- Its launcher covers nine channels, including Meta, Google, TikTok, Pinterest, Reddit, LinkedIn, X and OpenAI Ads.\n- The agent can research the web and the Meta Ad Library to map competitor creative before suggesting an open angle for your brand.\n- Taste Bench, a public benchmark from Omneky, has leading image models tackle real ad briefs and scores them with blind AI judges, a transparent way to see which models produce usable ads.\n- SoftBank acts as a distribution partner for the platform, a relationship Omneky describes as established in 2024.\n\nOmneky is best for performance marketing teams and brands that need a steady stream of fresh creative across many channels and want spending decisions tied to results. A free trial and demos are available. For the best outcomes, start with a clear brief and your brand assets loaded, then review the agent's performance comparisons each cycle before approving budget moves.",
+    "sources": [
+      "https://www.omneky.com",
+      "https://app.dealroom.co/companies/omneky",
+      "https://www.omneky.com/blog/omneky-and-softbank"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "omnihuman-2-0",
+    "moreContext": "This site gives creators a simple browser studio for OmniHuman 2.0, ByteDance's audio-driven digital human model offered through BytePlus. It describes itself as an independent tool built on the model rather than an official ByteDance product. What makes the underlying model special is that audio leads the performance, so lip movement, intonation and emotion follow the sound and even the meaning of what is said.\n\n- A single run can produce a 720p video up to five minutes long, a big jump from the 30 second limit of OmniHuman 1.5.\n- Audio comprehension lets the character act on what the speech describes, rather than simply moving its mouth in time.\n- Optional prompts direct chained actions, camera movement and background, giving more control than a plain lip-sync tool.\n- It accepts JPG, PNG or WebP images and WAV, MP3 or M4A audio, which makes it easy to work with existing assets.\n- New users start with free credits, and billing is per second of output, so short tests stay inexpensive.\n\nIt is well suited to musicians making performance videos, marketers building presenter clips, and educators producing explainers or motion comics. For the most convincing results, use a clear front-facing character image and clean audio without heavy background noise, then add a short prompt describing gestures or setting. The site's prompt guide and its comparison of versions 2.0 and 1.5 are worth a quick read before your first generation.",
+    "sources": [
+      "https://omnihumanai.net/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "onlook",
+    "moreContext": "Onlook describes itself as a developer tool for visual engineers, a free, local-first editor where designers work directly in code. Because your actual codebase stays the source of truth, nothing gets lost in translation between a mockup and the shipped product, and that philosophy has helped the project pass 27,000 stars on GitHub.\n\n- A desktop app lets you design inside the real product, using your existing design system and components instantly rather than recreating them.\n- It works with Next.js, React, Vite, Storybook and shadcn/ui, which covers a large share of modern front-end stacks.\n- AI prototyping can build new pages and features from a prompt, editing your real files as it goes.\n- The code you create is entirely yours, so you can keep it local, push it to GitHub or publish it to a link.\n- Being open source gives developers full transparency into the tool and the freedom to adapt it to how their team structures code.\n\nOnlook is ideal for design engineers, front-end teams and designers who are comfortable with code and tired of handoff drift. The self-hosted version is free on GitHub, and the team offers help setting up a hosted workflow for larger organizations. A practical tip is to open an existing project that already uses your component library, so every visual change you make is built from production-ready pieces.",
+    "sources": [
+      "https://onlook.com",
+      "https://github.com/onlook-dev/onlook"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "openai-codex",
+    "moreContext": "Codex has matured from a cloud task runner into a full command center for agentic development, reachable from a desktop app, the web, a terminal CLI and IDE extensions. That range means you can hand off a ticket from your phone in ChatGPT, then pick up the resulting branch at your desk without switching ecosystems.\n\n- A dedicated Codex desktop app arrived on macOS in early 2026 and followed on Windows, with views for multiple files and terminals plus a built-in browser for checking web work.\n- Pull request review is built in, and Codex can work through GitHub review comments instead of leaving them for a human to address line by line.\n- It can connect to remote development boxes over SSH (in alpha at launch), which suits teams whose real environments live on servers rather than laptops.\n- On Mac, background computer use lets Codex operate other apps with its own cursor while several agents run in parallel.\n- Codex can pull related context from tools like Slack, Notion and Google Docs, and the Codex CLI is open source on GitHub for developers who want to inspect or extend it.\n\nCodex is a great fit for developers and teams already paying for ChatGPT who want to delegate well-defined engineering work and review it like a colleague's PR. The best habit is to write tasks the way you would brief a teammate, including the files involved, how to run tests and what done looks like, then run several small tasks in parallel rather than one sprawling request.",
+    "sources": [
+      "https://openai.com/index/codex-for-almost-everything/",
+      "https://itbrief.com.au/story/openai-expands-codex-with-desktop-workflow-tools",
+      "https://github.com/openai/codex"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "openai-whisper",
+    "moreContext": "Whisper's lasting appeal comes from its design as a single multitask model: one Transformer handles transcription, translation into English, spoken language identification and voice activity detection, replacing several stages of a traditional speech pipeline. Because the code and weights are open, it has become a foundation that researchers, hobbyists and companies all build on.\n\n- Six model sizes, from tiny to large, let you trade accuracy for speed, and four sizes also come in English-only versions that tend to perform better for English audio.\n- The turbo model is an optimized version of large-v3 that transcribes much faster with only a small loss in accuracy, a sweet spot for many workloads.\n- The smallest models need only about a gigabyte of video memory, so useful transcription can run on modest hardware.\n- Installation is a single pip command plus ffmpeg, and both a command-line tool and a Python API are included.\n- OpenAI published the accompanying research paper and model card, so accuracy across languages is documented openly rather than hidden behind marketing.\n\nWhisper is ideal for developers, journalists, researchers and privacy-conscious teams who want transcription that runs on their own machines. Performance varies by language, so check the published error rates for your language before committing. A practical tip is to start with the turbo or small model for drafts, then rerun important recordings with the large model, and pass the language explicitly when you know it to avoid misdetection.",
+    "sources": [
+      "https://github.com/openai/whisper",
+      "https://arxiv.org/abs/2212.04356"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "openart",
+    "moreContext": "OpenArt has grown from an image playground into a full creative studio that spans images, video, audio and even 3D. Its strength is breadth with structure: you get access to many of the leading generation models in one place, plus guided tools that turn those models into finished pieces like short films, music videos and ads.\n\n- Director templates help you produce multi-scene short films, music videos synced to a track, UGC-style ads, product spots and episodic micro dramas.\n- The model library includes popular video models such as Kling, Sora 2 and Seedance alongside image models like GPT Image and Nano Banana, with a public arena ranking to compare them.\n- Character Builder keeps a character consistent across scenes, which is essential for storytelling and branded mascots.\n- Tools like Motion Control, camera angle control, upscaling, video relighting and background changing cover the editing steps that usually require separate apps.\n- An OpenArt MCP server and CLI let you generate images and video from agents like Claude, ChatGPT and Cursor, and a plugin brings assets into Adobe After Effects.\n\nOpenArt suits creators, small studios and marketers who want to experiment with many models without juggling separate subscriptions. You can start for free. To get the best results, build your main character once in Character Builder before generating scenes, then reuse it across every shot so the whole project stays visually coherent.",
+    "sources": [
+      "https://openart.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "opencode",
+    "moreContext": "OpenCode has quickly become one of the most popular open source coding agents, and it now reaches well beyond the terminal with a desktop app, a web version and IDE extensions. The project says it has more than 220,000 GitHub stars and around 950 contributors, and that over 16 million developers use it each month.\n\n- It connects to more than 75 model providers through Models.dev, including Claude, GPT, Gemini and local models, so you are never locked into one vendor.\n- You can sign in with an existing GitHub Copilot or ChatGPT Plus or Pro subscription and use those plans inside OpenCode.\n- A set of free models works without creating an account, which makes trying it out genuinely friction free.\n- Multiple agents can run in parallel sessions on the same project, handy for splitting a feature into independent tasks.\n- The team says OpenCode does not store your code or context data, and the whole codebase is MIT licensed on GitHub.\n\nOpenCode is perfect for developers who want a capable agent with full control over models, costs and privacy. If you want curated performance, the optional Zen service offers a handpicked set of models that the team has tested and benchmarked specifically for coding agents. A practical tip is to start with the free models to learn the workflow, then point OpenCode at the provider you already pay for and keep a project config so every teammate gets the same setup.",
+    "sources": [
+      "https://opencode.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "openevidence",
+    "moreContext": "OpenEvidence has expanded from a medical search engine into a broader clinical toolkit that now covers deep research, documentation and patient communication. What has not changed is the focus on grounding answers in peer-reviewed literature, which is why so many clinicians trust it as a quick, defensible second look at the point of care.\n\n- DeepConsult is a research agent that cross-references large numbers of peer-reviewed studies and returns a thorough report, and the company says it is free for verified US clinicians.\n- Visits adds ambient documentation, listening to the clinician and patient conversation and enriching notes with guideline-based evidence.\n- A clinician Dialer lets doctors call patients while keeping their personal number private, with the option to create a Visit note from the call.\n- Major health systems including Sutter Health, Mount Sinai and Cedars-Sinai have announced deployments that embed OpenEvidence inside Epic workflows.\n- In some enterprise rollouts, access extends beyond physicians to nurses, pharmacists and therapists.\n\nOpenEvidence is best for physicians, residents, nurse practitioners and pharmacists who need fast, citation-backed answers during busy clinical days. Access for verified US healthcare professionals is free, supported by advertising and enterprise subscriptions. To get the most from it, phrase questions with the specific patient context that matters, such as age, comorbidities and current medications, and always open the cited studies before acting on a recommendation.",
+    "sources": [
+      "https://www.openevidence.com",
+      "https://www.fiercehealthcare.com/ai-and-machine-learning/openevidence-raises-210m-unveils-ai-agents-built-advanced-medical-research",
+      "https://sacra.com/research/openevidence"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "openhands",
+    "moreContext": "OpenHands now positions itself as an open platform for agentic software development, going beyond a single agent to orchestrate many of them across the software lifecycle. With roughly 92,000 GitHub stars shown on its site, it is one of the most widely followed open source agent projects, and that community depth shows in how quickly it adopts new techniques.\n\n- Automations trigger agents from GitHub, Slack, Jira, Linear, CI events or schedules, so work like PR review or nightly security passes runs without anyone pressing start.\n- It is multi-backend by design, able to run Claude Code, Codex, Gemini CLI or OpenHands itself, with closed models or open weights like Kimi, DeepSeek and Qwen.\n- Agents can run locally, in a cloud sandbox or inside an enterprise VPC, which helps teams meet security and data residency needs.\n- Ready-made templates cover fixing failed CI runs, triaging issues, remediating security findings, drafting incident retrospectives and keeping docs current.\n- MCP support connects internal tools and APIs, and AMD has highlighted a collaboration for running local coding agents on Ryzen AI PCs.\n\nOpenHands is a strong choice for engineering teams that want agent automation without surrendering control over models, infrastructure or code. Individual developers can download it free and run agents against real repositories. A good starting point is a single automation, such as reviewing every labeled pull request, then expand to CI fixes once you trust the results.",
+    "sources": [
+      "https://www.all-hands.dev",
+      "https://github.com/All-Hands-AI/OpenHands"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "opus-clip",
+    "moreContext": "OpusClip has grown from a clipping tool into a broad video production suite, while keeping its signature promise of turning one long recording into a stack of ready-to-post shorts. It pulls footage straight from links on YouTube, Google Drive, Vimeo, Zoom, Twitch, Riverside, StreamYard and other sources, so there is no need to download and re-upload large files.\n\n- AI Producer turns raw footage into a polished, ready-to-post video, going further than simply cutting highlights.\n- Export to XML lets editors finish clips in Adobe Premiere Pro or DaVinci Resolve, a thoughtful bridge for professional workflows.\n- Newer tools include a YouTube thumbnail generator, speech enhancement for cleaner audio without extra gear, and AI dubbing in your own voice.\n- Brand templates and team workspaces keep fonts, colors and caption styles consistent across a whole team's output.\n- A video API and an MCP server allow AI agents and other software to call OpusClip as part of automated content pipelines.\n\nOpusClip is ideal for podcasters, livestreamers, marketers and agencies who need a steady flow of short-form content without a dedicated editor. You can sign up for free to try it. For the strongest clips, use recordings with clear audio and distinct topic shifts, then set up a brand template before your first batch so every clip looks consistent from day one.",
+    "sources": [
+      "https://www.opus.pro"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "originality-ai",
+    "moreContext": "Originality.ai has broadened from an AI detector into a content integrity suite that checks quality as well as authenticity. It keeps its detection models current with each new wave of large language models and points to multiple third-party and peer-reviewed studies to support its accuracy claims, which gives editors evidence to stand behind.\n\n- A Chrome and Google Docs extension can replay the writing process, giving writers a way to prove authorship rather than simply arguing about a score.\n- A Moodle plugin brings checks directly into a widely used learning platform, making it practical for schools and universities.\n- Beyond AI and plagiarism checks, it offers a grammar checker, readability scoring, a content quality score and a guideline checker that compares drafts against your editorial rules.\n- Deep Scan acts as a writing tutor, suggesting changes you can apply before scanning again.\n- An API and an MCP server let teams build checks into their own publishing tools and AI workflows, and the site is available in several languages.\n\nOriginality.ai is best for publishers, content agencies, SEO teams and educators who review large volumes of writing and need a defensible process. A free scan lets you test it before committing. The smartest approach is to treat a detection score as one signal among several: combine it with the writing replay, plagiarism results and your own judgment before making decisions about a writer's work.",
+    "sources": [
+      "https://originality.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "orkas",
+    "moreContext": "Orkas takes the idea of an AI assistant and turns it into a small virtual team that lives on your desktop. You describe a goal in one chat, the Commander breaks it into a plan, and specialist agents carry out the pieces, delivering finished files rather than drafts you still have to assemble.\n\n- Named specialists include a DeepResearcher, ContentWriter, PptMaker, ImageStudio, VideoStudio, OfficeWorker, ProductDeveloper, UIDesigner and an SEO and AI visibility agent.\n- Any task can become a recurring automation, such as a Monday brief on orders, reviews and stock or a Friday client update deck built from fresh numbers.\n- Outputs are real deliverables, including videos, landing pages, spreadsheets, PDF reports and slide decks you can send or publish.\n- Compatible apps such as a customer quote tool can be published as web apps with a shareable link on eligible plans.\n- It runs on macOS (Apple Silicon and Intel) and Windows, supports many interface languages, works with its official models out of the box, and lets you connect your own model provider or local agents.\n\nOrkas is a great fit for solo founders, small online stores and lean agencies that want to cover work they would otherwise outsource, like copywriting, reporting or slide design. The app is free to download with starter credits, and its source code is public on GitHub. A useful tip is to begin with one concrete, repeatable job, review the first few results closely, then schedule it so the agents keep it running each week.",
+    "sources": [
+      "https://orkas.ai/",
+      "https://github.com/Orkas-AI/Orkas"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "otio",
+    "moreContext": "With Otio 2.0, the product has grown from a student summarizer into a research workspace built to handle hundreds of sources at once. The company says more than 200,000 professionals and researchers use it across 74 languages, and its audience now spans consultants, lawyers, analysts, journalists and policy professionals as well as students.\n\n- Every answer cites the exact page and passage, so you can verify claims quickly instead of trusting a summary blindly.\n- It handles PDFs, articles, YouTube videos, podcasts, books, transcripts and spreadsheets, with OCR for scanned documents.\n- Integrations with Zotero, Dropbox, OneDrive and Box let you bring in existing libraries without manual uploads.\n- You can switch between multiple AI models, run deep research across a collection, visualize data and even build slides from your sources.\n- Features like Spaces, Dual Chat and highlight to ask keep conversations tied to the documents you are actually reading.\n\nOtio is ideal for anyone facing a mountain of reading, from graduate students starting a literature review to analysts preparing a client briefing. You can get started free. For the best results, group related sources into a dedicated Space, pull a structured synthesis across all of them first, and then use the editor to draft with citations already attached.",
+    "sources": [
+      "https://otio.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "otter-ai",
+    "moreContext": "Otter has evolved from a transcription app into what it calls a meeting agent, working before, during and after every call. Beyond capturing what was said, it now prepares you for the next conversation and handles follow-up in the tools your team already uses, which makes its long meeting archive far more valuable over time.\n\n- Pre-call briefings arrive before a meeting with prior discussions, open action items and relevant updates gathered in one document.\n- Live coaching responds to what is being said in the moment, helping reps and interviewers stay on track during the call.\n- Otter AI Chat searches across both your meetings and connected apps, so answers can draw on more than the transcript alone.\n- Specialized agents extend it into new roles, including an SDR Agent for lead qualification and booking, and a Recruiting Agent that syncs candidate notes with Greenhouse.\n- Recording works from Mac and Windows desktop apps, iOS and Android apps, the browser and a Chrome extension, so in-person conversations are covered too.\n\nOtter is a great fit for sales teams, recruiters, educators, journalists and anyone who spends much of the week in meetings. You can start for free, and enterprise plans add administration and deeper integrations. To get the most value, connect your calendar and CRM early, then make a habit of asking Otter Chat about past decisions before a meeting instead of digging through old notes yourself.",
+    "sources": [
+      "https://otter.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "outbound-for-mac",
+    "moreContext": "Outbound fills a gap that the built-in macOS firewall leaves open: that firewall focuses on incoming connections, while Outbound watches the outgoing ones. It shows every app reaching the internet, where it connects and how much it sends, then lets you allow or block each destination in a click, all without an account or sign-up.\n\n- A gentle onboarding path starts in Learn mode, which records activity without interrupting you, then suggests Ask mode and finally offers Strict mode whenever you want tighter control.\n- In Ask mode, each new connection triggers a clear prompt showing the app, who signed it, the host and port and lets you remember your answer once or forever.\n- For popular apps and developer tools, it lists the telemetry servers each one reports to and the settings that switch reporting off, ready to copy or block with one switch.\n- It identifies coding agents such as Claude Code by name, so you can block a single host for one agent while the others keep working.\n- Rules can be typed in plain language, profiles adapt to each place you work, and a Network Monitor maps connections on a globe.\n\nOutbound is ideal for privacy-minded Mac users and developers who want to see what their software does. It runs on macOS 14 or later on Apple silicon and Intel and is sold as a one-time purchase with no subscription. Start in Learn mode for a few days so your rules reflect real usage before you tighten anything.",
+    "sources": [
+      "https://outboundfirewall.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "outwrite",
+    "moreContext": "Outwrite, built in Sydney, Australia by the team behind GradeProof, focuses on making writing stronger rather than just error free. Its sweet spot is the moment when a sentence is technically correct but still clumsy, and the tool offers a better version instead of a red underline.\n\n- It works wherever you write online, including Google Docs, Microsoft Word, Outlook, Gmail, LinkedIn and WordPress, through extensions for Chrome and Edge.\n- Real-time writing statistics track readability and grade level, which helps when you are writing for a specific audience.\n- Style suggestions improve flow and structure, going beyond the grammar and punctuation fixes most checkers stop at.\n- A Teams plan helps companies keep their communications consistent and clear across many writers.\n- The company says more than a million people have used Outwrite, and reviewers often highlight how intuitive it feels.\n\nOutwrite is a good match for students, non-native English writers, marketers and small business teams who want a focused assistant without a crowded interface. You can create a free account to start, with advanced style and rewriting features on the premium plan. A practical tip is to keep an eye on the readability score while drafting important emails or web copy, and use the paraphrasing tool to shorten any sentence that pushes the grade level higher than your readers need.",
+    "sources": [
+      "https://www.outwrite.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "papercup",
+    "moreContext": "Papercup earned a strong reputation as one of the most quality-focused AI dubbing companies, and its technology lives on in a new home. In June 2025, the language services company RWS acquired the intellectual property behind Papercup's dubbing platform, and papercup.com now redirects to RWS's AI dubbing and voiceover service, so the standalone product appears to have ended.\n\n- Papercup's technology was designed to carry over a speaker's tone, pace and emotion, rather than producing flat synthetic narration.\n- Its stack combined advanced voice synthesis, thousands of distinct AI voices and editorial tools that let human language specialists fine-tune the output.\n- The human-in-the-loop philosophy that defined Papercup continues at RWS, which pairs the AI with people who review tone, pacing and accuracy.\n- RWS says it brings a large network of in-house linguists and external language experts to the service, adding scale for enterprise localization.\n- RWS plans to use the technology as part of a broader platform for multilingual video and voice localization.\n\nThe offering is now best suited to media companies, enterprises and content owners who want dubbed video at scale with professional quality checks. If you previously used Papercup or are considering it, contact RWS about its AI dubbing service directly to learn current workflows and turnaround times. Preparing clean source audio and accurate transcripts before submission will help any human-reviewed dubbing process move faster.",
+    "sources": [
+      "https://www.rws.com/about/news/2025/rws-acquires-papercups-ip",
+      "https://multilingual.com/rws-acquires-papercup/",
+      "https://www.tvbeurope.com/artificial-intelligence/papercup-ip-acquired-by-rws-to-power-ai-dubbing"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "paperpal",
+    "moreContext": "Paperpal has expanded from an academic language checker into a full research and writing workspace that takes you from first source to submission-ready manuscript. Its suggestions draw on more than 24 years of publishing expertise, and the company says it is used by over five million researchers and trusted by more than 1,500 journals. Forbes has also named it among the best AI writing tools.\n\n- You can upload references and PDFs, ask questions and get cited findings drawn from a corpus of over 250 million research articles, building a literature review as you go.\n- Drafting suggestions can be grounded in your own guidelines, reviewer notes or outline, and citations can be generated in more than 10,000 styles including APA, MLA and Vancouver.\n- A plagiarism check compares your work against a very large pool of sources before your institution runs its own review.\n- More than 30 pre-submission checks help papers meet the language and formatting standards of journals indexed in Scopus and Web of Science.\n- The grammar checker is trained on millions of scholarly edits, so fixes keep an academic voice rather than flattening it.\n\nPaperpal is ideal for graduate students, early-career researchers and faculty, especially those writing in English as a second language. You can try it free and sign up with a Google account. A smart workflow is to add the target journal's author guidelines to your workspace before drafting, so suggestions and final checks are aligned with where you plan to submit.",
+    "sources": [
+      "https://paperpal.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "paragraphai",
+    "moreContext": "ParagraphAI shines at the small, constant writing tasks that fill a day, from a quick text reply to a tricky work email. Its one-tap approach means you fix or draft a message without leaving the app you are in, and the company says it is used at NASA and by more than a quarter of Fortune 500 companies.\n\n- Real-time editing filters let you adjust formality, friendliness and length after a draft is written, so you can fine-tune tone without rewriting.\n- One tap corrects every grammar mistake in a message, which spares you from checking word by word.\n- Templates hold tailored instructions for repetitive writing, helping you produce consistent, personalized text at scale.\n- It can summarize web pages, PDFs and other content on the fly, useful for getting to the point of a long read quickly.\n- The company highlights its value for dyslexic writers and people writing in a second language, with input and output language settings across more than 40 languages.\n\nParagraphAI is a strong fit for students, busy professionals, and anyone who writes a lot on a phone. You can create a free account and download the mobile app to try it. To get the most from it, set up a few templates for messages you send often, such as follow-ups or meeting requests, and use the tone filters to match each recipient instead of starting from a blank screen.",
+    "sources": [
+      "https://paragraphai.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pdf-ai",
+    "moreContext": "PDF.ai has broadened from a polished chat-with-PDF app into a document platform that also serves developers. Alongside the familiar experience of asking questions and getting cited answers, it now offers a PDF API for parsing, extracting and splitting documents, which lets teams build the same document intelligence into their own products.\n\n- You can chat across your whole document library at once, not just one file, which helps when an answer is spread over several reports or contracts.\n- AI-powered OCR makes scanned and image-based pages searchable and answerable, with capacity that scales by plan.\n- AI agents can handle multi-step document work, moving beyond single questions toward complete tasks.\n- Team workspaces on higher tiers let colleagues share documents and conversations instead of uploading the same files separately.\n- The developer API covers parsing, extraction and splitting, a useful foundation for document workflows like intake, review or data capture.\n\nPDF.ai suits students, researchers, lawyers, analysts and operations teams who live in long PDFs, as well as developers building document pipelines. A free plan is available to try the core experience, and the Chrome extension adds chat to PDFs you open on the web. For the best results, group related files into one library before asking questions, and click through the cited passages to confirm key details before relying on an answer.",
+    "sources": [
+      "https://pdf.ai",
+      "https://aitoolscoop.com/tool/pdf-ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pdf-notes-ai",
+    "moreContext": "PDF Notes AI is intentionally narrow, and that focus is its strength. Rather than trying to be a general chatbot, it turns one reading into the study stack students actually use: structured notes, recall cards, practice questions with answer keys and a study guide, all with visible page references so every point can be checked against the source.\n\n- A no-signup free preview lets you upload a text-based PDF or paste text and see real output before creating an account.\n- Output modes cover study notes, summaries, flashcards, quizzes and study guides, with short, standard or detailed levels of depth.\n- Quiz questions include both multiple-choice and short-answer formats with explanations, designed to reveal weak spots rather than pad volume.\n- Page chips on notes, cards and answers make it easy for students and teachers to verify where each item came from.\n- Uploaded files can be set to auto-delete, and paid upgrades add OCR for scanned files, longer documents, cloud history and PDF or DOCX exports.\n\nThis tool is a great fit for students preparing for exams, working through lecture slides or reviewing textbook chapters, and for teachers who want quick question sets tied to a reading. The site is available in more than one language and offers light and dark themes. For the best results, upload one chapter or lecture at a time rather than a whole book, and use the flashcards for daily review while saving the quiz for a final self-test.",
+    "sources": [
+      "https://pdfnotesai.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pebblely",
+    "moreContext": "Pebblely has become a go-to for small brands that need a constant supply of attractive product imagery without booking a photographer. The company says more than 25 million images have been generated on the platform and that over a million creatives use it, with many reviews coming from Etsy sellers and independent ecommerce shops.\n\n- One product photo can become many marketing assets, including marketplace listings, social posts, website imagery, email banners and ad creatives.\n- More than 100 ready-made templates cover scenes like rippling water, wooden tables, silk, living rooms and studio setups, plus model shots for jewelry.\n- Bulk generation lets you produce many photos with similar or varied backgrounds in one go, which is ideal for refreshing a whole catalog.\n- No Photoshop skills are required, and users can adjust the product's size and rotation within the scene.\n- Users frequently praise the team's responsive support and steady product updates driven by customer feedback.\n\nPebblely is best for ecommerce sellers, small product brands and agencies serving clients who lack the budget for frequent photoshoots. It is especially useful for testing several visual concepts in ads before committing to one. For the most convincing results, start with a sharp, well-lit product photo on a plain background, then try a few templates side by side and keep the style consistent across your listing images.",
+    "sources": [
+      "https://pebblely.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "peec-ai",
+    "moreContext": "Peec AI, a Berlin-based company, has become one of the best-known names in AI search analytics, helping marketing teams understand how generative engines talk about their brand. The company says more than 3,500 brands and agencies use the platform, and its clean reporting makes a new and confusing channel easy to explain to stakeholders.\n\n- Coverage spans the major AI answer surfaces, including ChatGPT, Perplexity, Gemini, Microsoft Copilot, Grok, Google AI Overviews and AI Mode.\n- AI-suggested prompts paired with search volume estimates help you focus tracking on the questions that matter most.\n- Citation sources are classified into types such as editorial, user-generated, competitor and reference, revealing which kinds of content AI engines rely on.\n- An Actions module highlights citation gaps so teams know where to publish or pitch next.\n- Tracking works across countries, prompts can be organized with tags, and a Looker Studio connector brings the data into existing marketing dashboards.\n\nPeec AI is a great fit for in-house marketing teams, SEO leads and agencies that need to report on AI visibility alongside traditional search. A free trial is available. To get the most from it, start with a focused set of prompts that mirror real buyer questions, add your top competitors, and review cited sources each month to decide which pages or publications deserve your next round of content work.",
+    "sources": [
+      "https://peec.ai",
+      "https://docs.peec.ai/looker/introduction",
+      "https://europeanbusinessmagazine.com/the-5-best-geo-platforms-of-2026-tested-ranked-and-compared-for-ai-search-visibility/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pepper-content",
+    "moreContext": "Pepper has repositioned itself as an organic growth company built for the age of AI search. Instead of only supplying content, it now combines an AI agent, senior strategists and its talent network to get brands recommended wherever buyers look, from search engines and AI assistants to video, marketplaces and communities.\n\n- Agent Atlas runs around the clock, finding visibility gaps, executing workflows to close them and flagging what needs a human decision.\n- Its Search Everywhere Optimization approach reaches beyond the website to LLMs, video, online directories, digital PR, social channels and communities such as Reddit.\n- AI search visibility is measured daily across ChatGPT, Perplexity, Gemini, Claude, Microsoft Copilot and AI Overviews, then acted on rather than just reported.\n- A forward-deployed team of content, SEO and GEO specialists works inside your Slack on your cadence, with KPIs written into the contract.\n- The company says more than 250 industry leaders trust it, and its talent marketplace draws on what it describes as the top 3% of creators.\n\nPepper is best for enterprises and growth-stage B2B, financial services, retail and consumer brands that want an accountable partner owning organic growth outcomes. Engagements typically begin with a growth audit. To get the most value, align on a small set of measurable goals at the start, such as AI visibility for core buyer prompts and qualified leads, so weekly reviews stay focused on results.",
+    "sources": [
+      "https://www.peppercontent.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "pepys-2",
+    "moreContext": "Pepys is built for the reality of recording backlogs: a season of podcast episodes, a round of research interviews or forty short clips that all need text. Its pay-once model means you buy hours when you need them rather than carrying a monthly subscription, and the company says it is used in more than 160 countries.\n\n- It auto-detects the spoken language across 99+ languages and can translate finished transcripts into another language while keeping timestamps and subtitles intact, at one flat rate for every language.\n- Recordings come in from Google Drive, OneDrive, Zoom, Dropbox and Box, or from links on YouTube, TikTok, Instagram, Spotify, Apple Podcasts and more.\n- Automatic speaker diarization keeps each voice on its own line, even through cross-talk, and no bot needs to join your meetings.\n- AI notes adapt to the format, producing hooks for short-form video, show notes for podcasts, decisions for meetings and study notes for lectures.\n- Exports cover TXT, Markdown, DOCX, PDF, SRT, VTT and JSON, and the company states that uploaded audio is never used for training and that it is GDPR compliant.\n\nPepys is a great fit for researchers, journalists, podcasters, creators, students and legal professionals who transcribe in bursts. A companion app, Pepys Dictate for Mac, adds voice typing in any app. A practical tip is to batch similar recordings together and pick the matching notes format before transcribing, so every file comes back with the right kind of summary.",
+    "sources": [
+      "https://pepys.co/"
+    ],
+    "status": "ok"
+  }
+]

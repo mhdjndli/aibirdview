@@ -1,4 +1,4 @@
-import type { Block } from "./types";
+import type { Block, RenderContext } from "./types";
 
 type Mark = { type: "bold" } | { type: "italic" } | { type: "link"; attrs: Record<string, string | null> };
 type TextNode = { type: "text"; text: string; marks?: Mark[] };
@@ -65,9 +65,37 @@ const para = (src: string): Node => {
   return content.length ? { type: "paragraph", content } : { type: "paragraph" };
 };
 
-export function renderHtml(blocks: Block[]): string {
+const EMPTY_CTX: RenderContext = { tool: () => undefined };
+
+function need(ctx: RenderContext, slug: string) {
+  const t = ctx.tool(slug);
+  if (!t) throw new Error(`unknown tool ${slug}`);
+  return t;
+}
+
+export function renderHtml(blocks: Block[], ctx: RenderContext = EMPTY_CTX): string {
   return blocks
     .map((b) => {
+      if ("logos" in b)
+        return `<div class="tool-logos">${b.logos
+          .map((slug) => {
+            const t = need(ctx, slug);
+            const img = t.logoMediaId
+              ? `<img src="/api/media/${t.logoMediaId}" alt="${esc(t.name)} logo" width="48" height="48" loading="lazy">`
+              : "";
+            return `<a href="/tools/${slug}" class="tool-logo">${img}<span>${esc(t.name)}</span></a>`;
+          })
+          .join("")}</div>`;
+      if ("shot" in b) {
+        const t = need(ctx, b.shot);
+        if (!t.shotMediaId) throw new Error(`no screenshot for ${b.shot}`);
+        const cap = b.caption ? `<figcaption>${inlineHtml(b.caption)}</figcaption>` : "";
+        return `<figure><img src="/api/media/${t.shotMediaId}" alt="${esc(t.name)} homepage screenshot" loading="lazy">${cap}</figure>`;
+      }
+      if ("table" in b)
+        return `<table><thead><tr>${b.table.head.map((h) => `<th>${inlineHtml(h)}</th>`).join("")}</tr></thead><tbody>${b.table.rows
+          .map((r) => `<tr>${r.map((c) => `<td>${inlineHtml(c)}</td>`).join("")}</tr>`)
+          .join("")}</tbody></table>`;
       if ("h2" in b) return `<h2>${inlineHtml(b.h2)}</h2>`;
       if ("h3" in b) return `<h3>${inlineHtml(b.h3)}</h3>`;
       if ("p" in b) return `<p>${inlineHtml(b.p)}</p>`;
@@ -79,11 +107,26 @@ export function renderHtml(blocks: Block[]): string {
     .join("");
 }
 
-export function renderJson(blocks: Block[]): Node {
+export function renderJson(blocks: Block[], ctx: RenderContext = EMPTY_CTX): Node {
   const list = (items: string[]) => items.map((i) => ({ type: "listItem", content: [para(i)] }));
+  const cell = (type: string, src: string): Node => ({ type, attrs: { colspan: 1, rowspan: 1, colwidth: null }, content: [para(src)] });
   return {
     type: "doc",
     content: blocks.map((b): Node => {
+      // The editor has no logo-row node, so it sees the row as linked names.
+      if ("logos" in b) return para(b.logos.map((slug) => `[${need(ctx, slug).name}](/tools/${slug})`).join(" · "));
+      if ("shot" in b) {
+        const t = need(ctx, b.shot);
+        return { type: "image", attrs: { src: `/api/media/${t.shotMediaId}`, alt: `${t.name} homepage screenshot`, title: b.caption ?? null } };
+      }
+      if ("table" in b)
+        return {
+          type: "table",
+          content: [
+            { type: "tableRow", content: b.table.head.map((h) => cell("tableHeader", h)) },
+            ...b.table.rows.map((r) => ({ type: "tableRow", content: r.map((c) => cell("tableCell", c)) })),
+          ],
+        };
       if ("h2" in b) return { type: "heading", attrs: { textAlign: null, level: 2 }, content: inlineJson(b.h2) };
       if ("h3" in b) return { type: "heading", attrs: { textAlign: null, level: 3 }, content: inlineJson(b.h3) };
       if ("p" in b) return para(b.p);
@@ -103,11 +146,16 @@ export function internalLinks(blocks: Block[]): string[] {
   for (const b of blocks) {
     if ("ul" in b) b.ul.forEach(scan);
     else if ("ol" in b) b.ol.forEach(scan);
+    else if ("logos" in b) b.logos.forEach((slug) => out.push(`/tools/${slug}`));
+    else if ("shot" in b) {
+      out.push(`/tools/${b.shot}`);
+      if (b.caption) scan(b.caption);
+    } else if ("table" in b) [...b.table.head, ...b.table.rows.flat()].forEach(scan);
     else if (!("hr" in b)) scan(Object.values(b)[0] as string);
   }
   return out;
 }
 
 export function wordCount(blocks: Block[]): number {
-  return renderHtml(blocks).replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
+  return renderHtml(blocks.filter((b) => !("logos" in b) && !("shot" in b))).replace(/<[^>]+>/g, " ").split(/\s+/).filter(Boolean).length;
 }

@@ -1,0 +1,277 @@
+[
+  {
+    "slug": "trinka",
+    "status": "ok",
+    "sources": [
+      "https://www.trinka.ai"
+    ],
+    "moreContext": "Academic writers get a proofreader that understands their world with Trinka, which comes from Crimson AI, part of the Enago group known for author services to researchers around the globe. Where general grammar tools stop at commas and clarity, Trinka keeps going into plagiarism checks, citation checks, and journal selection, so it behaves more like a pre-submission desk than a spell checker.\n\n- It works where researchers already write, with a Microsoft Word add-in, browser extensions for Chrome, Firefox, and Edge, desktop apps, and a cloud editor.\n- A dedicated LaTeX proofreader is a thoughtful touch for scientists and mathematicians who never draft in Word.\n- The toolkit extends beyond grammar into AI-content detection, citation formatting, a Journal Finder, and file translation on higher tiers.\n- Its Confidential Data plan promises no data storage and no AI training on your text, which matters for unpublished findings and sensitive manuscripts.\n- Institutions can choose API, SDK, offline, or on-premise deployment, and the company says Gartner has recognized it as an emerging specialist in generative AI technologies.\n\nTrinka is best for graduate students, early-career researchers, and editors at journals or universities who need publication-grade English without hiring a human copyeditor for every draft. Start on the free plan to judge its suggestions on a real manuscript, and if you handle embargoed or patient-related research, look at the Confidential Data plan before uploading anything sensitive."
+  },
+  {
+    "slug": "trint",
+    "status": "ok",
+    "sources": [
+      "https://trint.com"
+    ],
+    "moreContext": "Trint grew out of journalism, and that heritage shows in how it treats transcripts as raw material for stories rather than as the end product. The London-based company, which also runs a Toronto office, has built a workspace where teams capture, verify, and shape spoken content in one place, and its site lists outlets such as POLITICO, AFP, and the San Francisco Chronicle among its customers.\n\n- Trint Live transcribes in real time in more than 50 languages on desktop or mobile, so colleagues can follow and annotate an interview or press conference as it happens.\n- Translation covers more than 70 languages, which helps international desks turn foreign-language audio into usable quotes quickly.\n- Story Builder lets you pull verified quotes into a draft article or a rough video cut, keeping each line linked to its timecoded source.\n- Security is taken seriously, with ISO 27001 certification, a choice of EU or US data storage, and a stated policy of never training its models on customer transcripts.\n- Integrations reach into newsroom systems and media asset managers, and an MCP connector lets AI assistants work with Trint content.\n\nTrint is ideal for newsrooms, podcast and documentary teams, and communications departments that need accurate quotes they can defend. To get the most from it, invite editors into shared workspaces early, so highlights and tags made during transcription flow straight into the story drafting stage."
+  },
+  {
+    "slug": "tuck",
+    "status": "ok",
+    "sources": [
+      "https://tuckmenubar.com"
+    ],
+    "moreContext": "Tuck brings order to a crowded Mac menu bar without asking for an account, a subscription, or your data. It is a modified version of Thaw, which itself descends from the well-regarded open-source Ice project, so it builds on a proven foundation while adding its own polish for the newest version of macOS.\n\n- Icons can live in Visible, Hidden, or Always-Hidden sections, and hidden ones reappear with a click, hover, swipe, scroll, or hotkey, whichever suits your habits.\n- A keyboard search panel lets you jump to any menu bar item by name, even one tucked out of sight.\n- The Tuck Bar shows hidden items just below the notch on notched MacBooks, solving the common problem of icons disappearing behind the camera cutout.\n- Appearance controls include tints, gradients, wallpaper-matched colors, borders, and shapes, with separate settings for light and dark mode.\n- Privacy is a core promise: no analytics, telemetry, or tracking, with preferences stored locally on your Mac.\n\nTuck suits Mac users with dozens of utilities running, especially on notched laptops, who want a free and transparent alternative to paid menu bar managers. Note that it targets macOS 26 specifically and the site describes the public release as launching soon, so check compatibility first, and grant the optional Screen Recording permission if you want live previews and wallpaper-based tinting."
+  },
+  {
+    "slug": "type-ai",
+    "status": "ok",
+    "sources": [
+      "https://type.ai"
+    ],
+    "moreContext": "Type has sharpened its focus into an intelligent editor for storytellers, aimed at people writing novels, screenplays, and other long-form work rather than quick emails. Instead of bouncing between a chat window and a word processor, you write and ask for help in the same place, and the assistant draws on context you have saved about your project.\n\n- Notes for characters, settings, and scenes feed into the assistant's suggestions, so feedback stays consistent with your story world.\n- Custom writing styles let you record rules for your voice, which helps the AI sound like you instead of a generic model.\n- Documents can run to around 150,000 words, and you can import Word files or PDFs and export to DOCX, PDF, or a view-only link.\n- The editor supports offline mode, version history, keyboard shortcuts, tables, math blocks, and even AI-narrated audio of your draft.\n- Premium models from Anthropic, OpenAI, and Google are available, and the company states that no models are trained on user writing.\n\nThe company says more than 300,000 writers use Type, and it fits fiction authors, screenwriters, and essayists who want an AI partner that respects a long manuscript. A practical tip: invest a few minutes filling out character and setting notes before you ask for edits, because the suggestions become far more grounded once Type knows your cast."
+  },
+  {
+    "slug": "uberduck",
+    "status": "ok",
+    "sources": [
+      "https://www.uberduck.ai"
+    ],
+    "moreContext": "Uberduck has matured from a viral voice playground into a broader studio for AI vocals and music. It still handles speech, singing, and rapping from text, and it now adds a music model that writes and produces full songs with lyrics, giving creators one place to experiment across spoken and musical audio.\n\n- Voice cloning lets you build a custom voice, and speech-to-speech conversion can transform your own recording into another voice while keeping your delivery and timing.\n- The newer music model composes songs with vocals in more than 70 languages and across many genres.\n- Developers get API access for text-to-speech, text-to-singing, text-to-rapping, and voice conversion, which suits apps, games, and bots.\n- A collection of free utilities, including audio trimmers and format converters for MP3, WAV, and FLAC, makes the site handy even between generations.\n- Music created on a paid plan can be used commercially, and the active Discord community is a useful place to trade prompts and tips.\n\nUberduck is a strong pick for meme makers, hobbyist musicians, streamers, and developers who want playful but capable vocal generation with an API behind it. Start free to explore the voices and styles, and if you plan to publish or monetize tracks, review the licensing terms for your plan before you release anything."
+  },
+  {
+    "slug": "udio",
+    "status": "ok",
+    "sources": [
+      "https://www.udio.com",
+      "https://www.musicbusinessworldwide.com/universal-music-settles-udio-lawsuit-strikes-deal-for-licensed-ai-music-platform",
+      "https://www.musicbusinessworldwide.com/after-universal-warner-and-merlin-deals-now-udio-inks-licensing-agreement-with-kobalt"
+    ],
+    "moreContext": "Udio earned a reputation among AI music generators for realistic vocals and production that holds up on good speakers, and it is now evolving into something the industry rarely saw from an AI startup: a licensed platform. After settling with Universal Music Group in late 2025, the company went on to sign agreements with Warner Music Group, the indie rights agency Merlin, and the publisher Kobalt.\n\n- Vocal quality remains a standout, with expressive singing that many listeners find hard to tell apart from studio recordings.\n- Section-level editing tools let you extend, remix, and inpaint parts of a song, so you can refine a track rather than regenerating from scratch.\n- The planned licensed service is designed to let fans make remixes, covers, and new songs with the voices and compositions of artists who opt in, with participating creators credited and paid.\n- Udio has said it is adding protections such as fingerprinting and filtering, which makes it one of the more rights-conscious options in AI music.\n\nUdio is best for songwriters sketching ideas, producers hunting for inspiration, and fans who want to play with music in a sanctioned way. Because the service has been changing during its transition to the licensed model, check the current terms on downloads and sharing before you build a project around it, and keep your prompts and lyrics saved so you can revisit ideas as new features roll out."
+  },
+  {
+    "slug": "unbounce",
+    "status": "ok",
+    "sources": [
+      "https://unbounce.com"
+    ],
+    "moreContext": "Unbounce has been refining landing pages since 2009, and that long focus shows in how much of the platform is built around one question: will this visitor convert? It pairs a flexible drag-and-drop builder with AI that routes traffic intelligently, making it a trusted choice for marketers who live and die by paid campaign results.\n\n- Smart Traffic sends each visitor to the page variant most likely to convert for them, so you can benefit from optimization without waiting for a classic A/B test to reach significance.\n- Dynamic text replacement matches headline copy to the keywords people searched, a quiet but powerful lift for PPC campaigns.\n- A newer MCP connection lets you build, test, and deploy pages directly from AI assistants such as Claude and ChatGPT.\n- Integrations cover HubSpot, Salesforce, Mailchimp, Google Analytics, CallRail, and Zapier, plus webhooks for anything custom.\n- Its Conversion Benchmark Report, which the company says draws on more than 57 million landing page conversions, gives useful context for judging your own numbers.\n\nUnbounce is ideal for performance marketers, agencies juggling many client campaigns, and SaaS teams running steady paid acquisition. A 14-day free trial lets you test it on a live campaign, and a good habit is to launch two or three genuinely different variants so Smart Traffic has real options to learn from."
+  },
+  {
+    "slug": "undermind",
+    "status": "ok",
+    "sources": [
+      "https://www.undermind.ai",
+      "https://ycombinator.com/companies/undermind",
+      "https://journals.library.ualberta.ca/jchla/index.php/jchla/article/download/29854/22212?inline=1"
+    ],
+    "moreContext": "Undermind takes a patient, thorough approach to literature search that sets it apart from instant-answer tools. Founded by MIT-trained physicists and backed by Y Combinator, it uses language models to run a structured, multi-step search, adapting its strategy as it goes and following citation trails much the way a careful researcher would.\n\n- Instead of a single keyword match, the system runs several iterative searches and reflects on what it has found before deciding where to look next.\n- Citation chasing helps surface important papers that use different terminology from your query, a common blind spot in conventional databases.\n- Results are ranked and explained, so you can see why each paper was judged relevant and quickly separate core work from peripheral hits.\n- The company's whitepaper reports a much higher concentration of truly relevant papers among top results than Google Scholar on its own benchmark.\n- University libraries have reviewed it and run training sessions for it, a sign that it is taken seriously in academic settings.\n\nUndermind is best for graduate students, scientists, and research librarians starting a literature review or checking that they have not missed key prior work. Expect each search to take a few minutes, and write your query as a detailed paragraph describing exactly what you are looking for, since richer context produces noticeably sharper results."
+  },
+  {
+    "slug": "unforgettable-car-trend",
+    "status": "ok",
+    "sources": [
+      "https://unforgettablecartrend.app/"
+    ],
+    "moreContext": "Unforgettable Car Trend does one thing and does it with care: it recreates the viral 24 car reveal clip with you as the star. Rather than offering a generic video generator, it keeps the original trend's card flick, camera moves, and timing intact, then places a full-body version of you beside the car in the familiar night scene.\n\n- Eight preset cars range from a red Italian supercar to a 1950s chrome convertible, and you can upload a photo of your own car for a personal touch.\n- You choose 480p, 720p, or 1080p before rendering, and the credit cost is shown up front so there are no surprises.\n- Finished clips are 16:9 MP4 files with the trend's soundtrack included and no watermark.\n- Credits from failed renders are returned automatically, and unused paid credits can be refunded within a short window.\n- Privacy handling is clear: selfies stay in your browser until you sign in, and finished videos are kept for 30 days.\n\nThis tool is perfect for TikTok and Instagram creators who want to join the trend quickly without learning video editing. For the best likeness, upload a well-lit, front-facing photo of one adult with the whole face visible, and try a 480p render first to check the result before spending credits on full HD."
+  },
+  {
+    "slug": "upscayl",
+    "status": "ok",
+    "sources": [
+      "https://upscayl.org",
+      "https://www.linuxuprising.com/2023/05/upscaly-ai-image-upscaler-25-adds.html",
+      "https://www.alternativeto.net/software/upscayl/about/"
+    ],
+    "moreContext": "Upscayl is one of the open-source community's real success stories, a polished desktop upscaler that runs entirely on your own machine with no account and no uploads. Released under the AGPL-3.0 license and built on Real-ESRGAN, it brings research-grade super-resolution to anyone with a capable graphics card.\n\n- Apps are available for Windows, macOS, and Linux, with Linux users able to choose AppImage, Flatpak, or Snap packages.\n- Several bundled models cover different needs, including options tuned for general photos, sharper detail, and anime or illustration work.\n- You can import your own custom models, which opens up a large library of community-trained upscalers.\n- Batch mode processes entire folders at once, and output can be saved as PNG, JPG, or WEBP.\n- Because processing happens locally, sensitive images never leave your computer and there are no per-image fees.\n\nUpscayl is ideal for photographers, digital artists, archivists, and privacy-minded users who want strong results without a subscription. Keep in mind it relies on a Vulkan-compatible GPU, so check your hardware first, and experiment with two or three models on the same image, since the best choice varies a lot between photos and artwork."
+  },
+  {
+    "slug": "v0",
+    "status": "ok",
+    "sources": [
+      "https://v0.app",
+      "https://www.saastr.com/saastr-ai-app-of-the-week-v0-by-vercel-the-vibe-coding-tool-that-4-million-people-use-to-ship-real-software-not-just-demos",
+      "https://yespress.io/products/v0.md"
+    ],
+    "moreContext": "v0 started as a clever way to generate React components and has grown into an agentic builder for full web apps, a shift Vercel marked by moving it from v0.dev to v0.app in 2025. Its edge is that it comes from the team behind Next.js, so the code it produces follows modern conventions and deploys naturally to Vercel's platform.\n\n- The agent can plan its own work, search the web for current documentation, inspect the running app, and fix its own errors inside an isolated sandbox.\n- Git workflows let you sync with GitHub, work on branches, open pull requests, and deploy on merge, which makes v0 useful for real teams rather than just demos.\n- Generated interfaces lean on Tailwind CSS and shadcn/ui, giving you clean, accessible components that are easy to customize by hand.\n- One-click deployment and environment variable import from Vercel shorten the path from prompt to live URL.\n- Vercel has reported millions of users, a sign of a large community sharing templates and examples.\n\nv0 is best for front-end developers, startup founders, and designers who want working Next.js code they can own and extend. Start with a clear description of the screen or flow you want, attach a screenshot or mockup when you have one, and connect a GitHub repository early so every iteration is versioned."
+  },
+  {
+    "slug": "vance-ai",
+    "status": "ok",
+    "sources": [
+      "https://vanceai.com"
+    ],
+    "moreContext": "VanceAI brings a broad, practical toolkit for fixing and improving images under one roof, and it has grown to cover video as well. Its appeal is breadth with simplicity: upscaling, sharpening, denoising, restoration, and background removal are each a focused tool, so you can solve a specific problem without learning a full editing suite. The company says it is trusted by 9.8 million users worldwide.\n\n- VanceAI PC runs every image and video model locally and supports batch processing, which is ideal for large folders or privacy-sensitive work.\n- Video tools include upscaling, denoising, colorization, frame smoothing, SDR to HDR conversion, and subtitle generation.\n- Specialized options such as old photo restoration, anime upscaling, and passport photo preparation handle tasks that general editors do poorly.\n- Developers can use an API, a ComfyUI node, and an agent skill, with enterprise options for custom integrations.\n- The site states that uploads are encrypted in transit and deleted within 24 hours.\n\nVanceAI is a strong fit for e-commerce sellers, real estate photographers, print shops, and families digitizing old albums. For the best results, run denoise or restoration before upscaling, and use the desktop app's batch mode when you have dozens of product shots that need the same treatment."
+  },
+  {
+    "slug": "vedic-astrology-chart",
+    "status": "ok",
+    "sources": [
+      "https://vedicastrologychart.net"
+    ],
+    "moreContext": "Vedic Astrology Chart, which brands itself as VedicChart, gives curious readers and students of Jyotish a surprisingly deep free calculator without asking them to sign up first. It follows traditional conventions closely, so the chart you get is grounded in the same methods a classical practitioner would use, with optional AI summaries layered on top for people who want help reading it.\n\n- Lahiri ayanamsa is the default, with Raman and Krishnamurti options in advanced settings for those who follow other schools.\n- Sixteen divisional charts from D1 through D60 are included, covering essentials such as the D9 Navamsa and D10 Dasamsa.\n- Vimshottari Dasha timelines show major and sub-periods, and separate calculators cover Dasha and Sade Sati on their own.\n- Automatic yoga detection flags combinations such as Raja, Dhana, and Pancha Mahapurusha yogas, as well as Mangal Dosha.\n- Extra tools for transits, compatibility, and Moon sign lookups round out a well-rounded astrology toolkit.\n\nThis site suits beginners learning Vedic astrology, enthusiasts who want a quick and accurate chart, and practitioners checking calculations. Enter your birth time as precisely as you can, since the ascendant and divisional charts shift quickly, and remember that the AI readings are framed for reflection and learning rather than as a replacement for an experienced astrologer."
+  },
+  {
+    "slug": "veed",
+    "status": "ok",
+    "sources": [
+      "https://www.veed.io"
+    ],
+    "moreContext": "VEED has become one of the most approachable ways to make polished video without installing anything. The London company, founded in 2018 by Sabba Keynejad and Timur Mamedov, built its reputation on fast auto subtitles and has since grown a full suite of AI tools around a simple browser timeline, which makes it a favorite for social teams and solo creators alike.\n\n- Eye Contact AI subtly redirects your gaze toward the camera, a lifesaver when you read from a script or notes.\n- Translation and AI dubbing help you repurpose one video for audiences in other languages without reshooting.\n- AI avatars and a clone-yourself feature can turn a single photo and your voice into a presenter video.\n- Built-in access to third-party generators such as Veo 3.1, Sora 2, and Kling lets you create B-roll without leaving the editor.\n- Audio cleanup, background removal, and an AI clip generator handle the tedious polish that usually eats editing time.\n\nVEED, which says it powers millions of teams globally and highlights a G2 recognition for 2026, is ideal for marketers, educators, and creators producing frequent short-form content. Try its free tier on a real project first, and set up a brand kit with your fonts, colors, and logo early so every subtitle and template stays consistent across videos."
+  },
+  {
+    "slug": "veevid-ai-2",
+    "status": "ok",
+    "sources": [
+      "https://veevid.ai/"
+    ],
+    "moreContext": "Veevid AI acts as a one-stop hub for many of today's leading generative models, so you can try different engines side by side instead of juggling separate subscriptions. The platform keeps the interface simple, letting you pick a model, aspect ratio, and duration, then generate, which suits people who care more about the finished clip than the technology behind it.\n\n- The model lineup spans video and image engines such as Kling, Seedance, Wan, LTX, MiniMax, and Seedream, giving you options for different looks and budgets.\n- Beyond text-to-video, it supports image-to-video, reference-to-video, video extension, and editing in the same workspace.\n- Output can reach up to 4K, and a built-in upscaler sharpens clips that were generated at lower resolutions.\n- The site describes downloads as suitable for commercial use, which is reassuring for marketers and client work.\n- A Discord community offers a place to share prompts and see what others are making.\n\nVeevid AI is a good match for social media managers, small businesses, and hobbyists who want professional-looking clips without editing skills. A practical tip: run the same prompt through two or three models on short durations first, then spend your credits on the longer, higher-resolution version once you know which engine fits your style."
+  },
+  {
+    "slug": "veevid-ai",
+    "status": "ok",
+    "sources": [
+      "https://veevid.ai/"
+    ],
+    "moreContext": "Veevid AI stands out for treating sound as part of the video rather than an afterthought. Its generations can include synchronized audio, with background ambience and effects matched to what happens on screen, and the platform surrounds that with a wide set of audio tools, so a finished clip can be ready to post straight from the browser.\n\n- Synchronized audio generation adds sound effects and ambience that line up with on-screen action.\n- Dedicated tools for lip sync, text-to-speech, speech-to-text, noise removal, and music generation let you build a complete soundtrack in one place.\n- Motion control and reference-to-video features give you more say over how subjects move and how characters stay consistent.\n- Plans are offered monthly, annually, or as a lifetime option, and the company says more than 50,000 creators use the platform.\n- The site states that user images and scripts are not shared with third parties, and content safety filters are applied to generations.\n\nVeevid AI is ideal for content creators, educators, and marketers who want short videos with sound without stitching together separate audio apps. To get the most from it, describe the sounds you want right in your prompt (for example rain on a window or a crowd cheering), since explicit audio cues tend to produce more convincing synchronized results."
+  },
+  {
+    "slug": "vellm",
+    "status": "ok",
+    "sources": [
+      "https://vellm.app/"
+    ],
+    "moreContext": "Vellm takes the guesswork out of AI video by building everything around ready-made templates inspired by TikTok and Reels trends. You pick a routine, upload the one or two photos it asks for, and the platform handles the rest, so there is no prompt writing at all, which makes it one of the most beginner-friendly ways to join a viral trend.\n\n- More than a hundred templates span dance, comedy, pets, duos, cinematic, and action categories, each previewed before you commit.\n- Videos are generated with ByteDance's Seedance model and delivered in 1080p with no watermark.\n- Every template shows its credit cost up front, and failed generations return their credits automatically.\n- Most templates offer a silent version for posting and a version with the original sound for personal viewing.\n- One-time credit packs never expire, and a short refund window applies to unused packs.\n\nVellm is a great fit for pet owners, friends making playful duo clips, and social creators who want trend-ready content fast. Uploads and results are scheduled for deletion after seven days, so download your favorites promptly, and choose a clear, well-lit photo with the subject facing the camera for the most convincing motion."
+  },
+  {
+    "slug": "veo-3-api",
+    "status": "ok",
+    "sources": [
+      "https://veo3api.com/"
+    ],
+    "moreContext": "Veo 3 API offers developers a straightforward route to Google's Veo video models without wrestling with a larger cloud setup. It is an independent service powered by Veo rather than an official Google product, and its value lies in a clean REST interface that lets you add text-to-video and image-to-video, complete with native audio, to your own apps.\n\n- Access covers Veo 3.1, Veo 3, and Veo 3 Fast, so you can trade speed against quality depending on the job.\n- Asynchronous jobs can report back through webhook callbacks, or you can poll a status endpoint if that suits your stack better.\n- Code examples in cURL, Python, and Node.js make the first integration quick.\n- Output supports MP4 or WebM in 16:9, 9:16, and 1:1 aspect ratios, which covers landscape, vertical social, and square feeds.\n- You can start for free without a credit card, then move to monthly plans or pay-as-you-go credits as usage grows.\n\nVeo 3 API is best for indie developers, SaaS builders, and agencies automating video creation for ads, social posts, or product demos. Use Veo 3 Fast while you tune prompts and parameters, then switch to the full model for final renders, and rely on webhooks rather than tight polling loops to keep your integration efficient."
+  },
+  {
+    "slug": "veradial",
+    "status": "ok",
+    "sources": [
+      "https://veradial.com"
+    ],
+    "moreContext": "VeraDial is built for the plumber on a ladder or the salon owner mid-appointment who cannot pick up every call. The Toronto-based service combines a capable AI receptionist with a real business phone line, and it is refreshingly honest in its design: Vera tells callers she is an AI assistant, which builds trust rather than trying to pass as a human.\n\n- You can get a dedicated US or Canadian number in about a minute, or keep your existing number and forward all calls or only missed ones to Vera.\n- Outgoing calls carry top-level STIR/SHAKEN attestation, which helps your number avoid being flagged as spam.\n- Higher tiers add two-way live call translation in 13 languages, Google Calendar booking, and connections to Zapier and Make.\n- Vera can also place calls on your behalf and draft text replies that you approve or let her send automatically.\n- The phone infrastructure runs on Twilio, and the company notes support from the ElevenLabs and Cartesia startup programs.\n\nVeraDial is ideal for contractors, HVAC and auto repair shops, real estate agents, and property managers who lose business to missed calls. A seven-day free trial is available on paid plans, and a browser demo lets you hear Vera before signing up. Spend time writing a detailed greeting and FAQ for services, hours, and pricing, because the more Vera knows, the fewer calls need your personal follow-up."
+  },
+  {
+    "slug": "videoany",
+    "status": "ok",
+    "sources": [
+      "https://videoany.ai"
+    ],
+    "moreContext": "VideoAny gathers a large roster of popular image and video models into a single browser workspace, so you can move from a still image to an animated clip without switching sites. It runs on desktop and mobile with projects synced to your account, and its credit cost is shown before each generation, which keeps experimentation predictable.\n\n- The model lineup includes Seedance, Seedream, Wan, Grok Imagine, Hailuo, Flux, and Nano Banana, covering a wide range of styles and price points.\n- Video tools go beyond basic generation to include a video editor, clip extension, motion control, and a short video maker.\n- Reusable templates store prompt and setting recipes, which helps you produce consistent results across a series of posts.\n- Task-specific tools such as background replacement, outfit changes, face swap, and photo-to-4K upscaling handle common requests in one click.\n- New accounts receive starter credits at signup, so you can test the platform before choosing a membership or top-up.\n\nVideoAny suits social creators, small brands, and hobbyists who want to compare models and keep everything in one library. The site is run by Ackerman Tech Solutions and is independent of the model providers. Spend your free credits testing the same idea on two different models, then save the winning combination as a template so future clips stay on brand."
+  },
+  {
+    "slug": "video-gen-now",
+    "status": "ok",
+    "sources": [
+      "https://videogennow.com"
+    ],
+    "moreContext": "Video Gen Now keeps AI video generation transparent and quick, focusing on a curated set of Seedance and MiniMax models instead of an overwhelming menu. Every render shows its credit cost before you submit, failed renders are refunded automatically, and most short clips finish in roughly a minute, which makes it easy to iterate without anxiety about wasted credits.\n\n- A cheaper MiniDraft mode lets you test ideas at lower resolution before committing to a full-quality render.\n- Seedance 2.5 accepts many reference images, which helps keep characters and products consistent across shots.\n- A video-to-video restyle option can transform existing footage into a new look.\n- Six aspect ratios, from ultrawide 21:9 to vertical 9:16, cover cinematic, social, and square formats.\n- Paid plans include a commercial license, and the operator states it does not use your prompts or videos to train its own models.\n\nVideo Gen Now is a smart pick for marketers, short-form creators, and filmmakers storyboarding scenes who want quality output without long waits. Start with the free clip and welcome credits, use MiniDraft to refine your prompt and camera direction, and only then render the final version at high resolution, since that is where most credits go."
+  },
+  {
+    "slug": "video-transcriber",
+    "status": "ok",
+    "sources": [
+      "https://videotranscriber.pro/"
+    ],
+    "moreContext": "Video Transcriber makes getting text out of a video about as simple as it gets: upload a file, paste a public link, or even record a quick clip in your browser. What lifts it above a basic converter is the AI layer on top, which turns a raw transcript into summaries, chapters, and study notes you can actually use.\n\n- It accepts more than 20 audio and video formats, including MKV, MP3, WAV, and M4A in addition to common video files.\n- The site advertises support for more than 200 languages, with automatic language detection where available.\n- Speaker labels help keep interviews and conversations readable when the feature is supported.\n- AI extras include summaries, key points, chapters, mind maps, and an Ask AI option for questioning the transcript directly.\n- Exports cover CSV as well as subtitle and document formats, which is handy for researchers organizing quotes in a spreadsheet.\n\nVideo Transcriber is ideal for students turning lectures into notes, content creators producing subtitles, and researchers or journalists processing interviews. A free plan with a daily allowance lets you try it before upgrading. For the best accuracy, select the source language manually when you know it rather than relying on auto-detection, especially for short clips or recordings with mixed languages."
+  },
+  {
+    "slug": "video-upscaler",
+    "status": "ok",
+    "sources": [
+      "https://videoupscaler.video"
+    ],
+    "moreContext": "Video Upscaler offers a focused, no-install way to breathe new life into older, compressed, or low-resolution clips. It earns credit for being candid about what AI upscaling can and cannot do, noting that the model may generate plausible detail, which helps users set sensible expectations and choose the right footage to enhance.\n\n- Output options range from 2x and 4x scaling up to HD, 2K, and 4K targets.\n- A Standard mode keeps costs low, while a Pro mode adds more restoration controls for tougher footage.\n- Specialized workflows target anime, old family footage, and social media clips, each with its own tuning.\n- A before-and-after preview and sample video let you judge quality without spending credits.\n- Credits never expire, and a My Tasks area keeps your jobs organized for later download.\n\nVideo Upscaler is a good fit for creators reviving archival clips, anime fans sharpening older episodes for personal viewing, and social media managers cleaning up compressed reposts. Each upload can be up to 200MB and 60 seconds long, so trim longer videos into the segments that matter most before upscaling, and compare Standard and Pro on a short sample to see which delivers the better balance for your source."
+  },
+  {
+    "slug": "video-watermark-remover",
+    "status": "ok",
+    "sources": [
+      "https://video-watermark-remover.com/"
+    ],
+    "moreContext": "Video Watermark Remover tackles a fiddly editing job with a browser-based workflow that needs no software or editing skills. Its AI scans every frame, detects overlays, and rebuilds the covered area from surrounding pixels, so the result looks like clean footage rather than a blurred patch.\n\n- It accepts a wide range of formats, including MP4, MOV, AVI, MKV, WMV, and FLV, and you can upload a file or paste a URL.\n- The site says it handles animated watermarks and moving logos, not just static corner marks.\n- Batch processing lets you clean several clips in one session, which saves real time for creators with a backlog.\n- Browser extensions are offered for quicker access from the pages where you work.\n- The company states that videos are encrypted during processing and deleted automatically afterward.\n\nThis tool is best for creators cleaning up their own footage, for example removing a trial editor's watermark, a generator's overlay on content they made, or an outdated logo on their brand videos. Use it only on videos you own or have permission to modify, and for the cleanest result, upload the highest-quality original you have, since the reconstruction works best with more surrounding detail to draw from."
+  },
+  {
+    "slug": "vidirelay",
+    "status": "ok",
+    "sources": [
+      "https://vidirelay.com"
+    ],
+    "moreContext": "VidiRelay is designed for people who work with many videos at once, not just one clip at a time. It accepts public links from TikTok, Instagram Reels, YouTube and Shorts, and Facebook, along with uploads, and turns them into editable, timestamped transcripts that feed straight into content drafting tools, which makes it a practical bridge between watching and publishing.\n\n- Batch mode handles up to 50 links at a time, and you can import an entire public playlist in one step.\n- It also accepts existing TXT, SRT, and VTT files, so you can bring in captions you already have and build on them.\n- The transcript editor lets you fix names, adjust timestamps, add speaker labels, and search across your saved library.\n- Exports include TXT, DOCX, SRT, VTT, CSV, and JSON, with JSON being especially useful for developers and research pipelines.\n- A Chrome extension and an interface offered in 11 languages, including Arabic, Japanese, and Turkish, make it accessible to a global audience.\n\nVidiRelay is ideal for podcasters, social media researchers, educators, and marketing teams repurposing long-form video into posts and briefs. To get the most from it, clean up speaker names and key terms in the transcript before generating summaries or hooks, since accurate source text leads to noticeably better AI drafts."
+  },
+  {
+    "slug": "vidnoz",
+    "status": "ok",
+    "sources": [
+      "https://www.vidnoz.com"
+    ],
+    "moreContext": "Vidnoz has made a name for itself by being unusually generous with free access to AI avatar video. You can sign up without a credit card and start producing presenter-style videos right away, and the site advertises a daily allowance of free credits, which lowers the barrier for anyone curious about avatar content.\n\n- The library includes more than 1,900 avatars, plus an expressive avatar feature that builds a presenter from your own photo.\n- More than 2,000 AI voices are available, and a voice cloning tool lets videos speak in your own voice.\n- The AI Video Translator localizes videos with lip sync, and the site cites support for more than 140 languages.\n- Over 2,800 editable templates cover training, marketing, sales outreach, and social formats.\n- A suite of free extras, including talking photos, a photo editor, and photo dance effects, adds playful options alongside business tools.\n\nThe company says it is trusted by millions of creators and companies worldwide, and Vidnoz is a strong fit for educators, HR teams, small businesses, and marketers who need explainer or onboarding videos on a tight budget. Start from a template close to your goal, swap in your script and brand colors, and test a translated version to see how easily one video can reach new audiences."
+  },
+  {
+    "slug": "vidu",
+    "status": "ok",
+    "sources": [
+      "https://www.vidu.com",
+      "https://scmp.com/tech/tech-trends/article/3260790/china-unveils-sora-challenger-able-produce-videos-text-similar-openai-tool-though-much-shorter"
+    ],
+    "moreContext": "Vidu comes from ShengShu Technology, a company with roots in Tsinghua University research, and it has become known for keeping characters consistent from shot to shot. Its reference-driven approach lets you supply the people, props, and settings you want, then generate clips that respect them, a strength that matters a lot for storytelling and branded content.\n\n- The current lineup includes Vidu Q4 as an all-in-one flagship, Vidu Q3 with audio and strong prompt understanding, and Vidu S for near real-time generation.\n- My References lets you save characters, props, and scenes, so recurring elements stay the same across a whole series.\n- Start and end frame control gives you precise direction over how an image-to-video clip opens and closes.\n- A Vidu Agent assistant, sound effect generation, and templates help move from idea to finished clip quickly.\n- An API platform serves enterprise teams, and creator programs reward active users.\n\nVidu is ideal for animators, short-drama creators, marketers building mascot-led campaigns, and anyone who needs a recurring character to look right every time. All users receive some free credits to start. Build your reference library first with clear, well-lit images of each character from a couple of angles, since strong references are the key to its trademark consistency."
+  },
+  {
+    "slug": "viggle",
+    "status": "ok",
+    "sources": [
+      "https://viggle.ai"
+    ],
+    "moreContext": "Viggle turned a simple idea, making any character dance or move like a reference video, into one of the internet's most popular meme engines, and it has kept building from there. The company now describes itself as a spatial generative AI platform built on a physics-aware world model called JST-2, which helps its characters move with believable weight and balance.\n\n- Mix swaps a single character into an existing video, while the Multi-Editor handles several characters at once.\n- A Live mode performs character swaps in real time, opening up possibilities for streaming and live performances.\n- PINOC, a newer 3D creative engine, generates worlds, characters, and motion from text or images, with a motion capture option.\n- Developers can tap an API for character swapping, motion capture, and interactive experiences.\n- An active Discord community is a great source of templates, inspiration, and tips.\n\nViggle says it is used by more than 50 million people worldwide, and it names brands such as Unity, NetEase Games, and Salesforce among its users. It is a natural fit for meme makers, social creators, animators prototyping motion, and game studios. For cleaner results, use a character image with a clear, full-body pose against a simple background, and pick a reference video where the movement is fully in frame."
+  },
+  {
+    "slug": "vista-social",
+    "status": "ok",
+    "sources": [
+      "https://vistasocial.com"
+    ],
+    "moreContext": "Vista Social has grown into a remarkably complete social media platform, covering publishing, engagement, analytics, listening, and review management in one place. Its newer Ask Vista AI agents aim to take over recurring social tasks, which positions it well for teams who want automation without stitching together several tools.\n\n- It supports Facebook, Instagram, LinkedIn, X, Threads, TikTok, YouTube, and Pinterest, so most brands can manage every major channel from one dashboard.\n- Review management and DM automations help local businesses and multi-location brands respond faster to customers.\n- Employee advocacy tools make it easy to share approved content through staff accounts and extend organic reach.\n- Apps are available for iOS, Android, Mac, Windows, and browser extensions for Chrome and Firefox, plus an MCP connection for AI assistants.\n- The company lists GDPR and SOC 2 compliance, along with CCPA readiness, which reassures larger organizations.\n\nVista Social is a strong choice for agencies managing many client accounts, multi-location businesses, and in-house marketing teams that want enterprise-grade features without enterprise complexity. A free trial lets you connect your channels and test the workflow, and setting up review monitoring early is a quick win, since timely replies to reviews have a direct impact on reputation."
+  },
+  {
+    "slug": "vizard",
+    "status": "ok",
+    "sources": [
+      "https://vizard.ai"
+    ],
+    "moreContext": "Vizard shines at the job most creators dread: digging through an hour of footage to find the moments worth posting. Its AI spots highlights in long recordings, reframes them for vertical platforms with the speaker kept centered, and dresses them up with captions, so a single podcast or webinar can feed a week of short-form content.\n\n- Text-based editing lets you trim a clip by deleting words from the transcript, with a timeline for frame-level fine-tuning.\n- Captions can be translated into more than 100 languages, which helps clips travel to international audiences.\n- AI B-roll, emoji, social captions, and hashtag suggestions add polish and save writing time.\n- Team workspaces let managers invite members, watch progress, and share previews with clients for approval.\n- A newer Vizard Agent offers ready-made formats for ads, tutorials, podcasts, and documentaries.\n\nThe company says it is trusted by more than 10 million creators and businesses, and it suits podcasters, coaches, event marketers, and agencies repurposing long video at scale. You can try it free without signing up. Save a brand template with your fonts, colors, and caption style before batch-clipping, so every clip comes out consistent and ready to publish."
+  },
+  {
+    "slug": "voicemod",
+    "status": "ok",
+    "sources": [
+      "https://www.voicemod.net"
+    ],
+    "moreContext": "Voicemod has long been a staple on streamers' desktops, and it remains one of the most polished ways to change your voice live while you talk, play, or create. It plugs into the voice apps and games people already use, so a new character or a well-timed sound effect is only a keystroke away, with no audio engineering knowledge needed.\n\n- It works with Discord, Twitch, OBS, and Steam, and in-game voice chat for titles such as Fortnite, Valorant, Minecraft, and Roblox.\n- A library of more than 200 voices is backed by AI voices the company says were made with professional voice actors and carry Fairly Trained certification.\n- Voicelab lets you design your own voice by stacking effects such as reverb, delay, and robotic filters.\n- The soundboard maps memes and effects to keybinds, and an instant replay recorder can capture the last 30 seconds of a funny moment.\n- An Elgato Stream Deck integration gives one-tap control of voices and sounds, while noise suppression keeps your regular microphone clean.\n\nVoicemod is ideal for gamers, Twitch and YouTube streamers, VTubers, and content creators who want to add humor or character to their audio. You can download it for free to try the core experience. Set up a handful of favorite voices and sounds on hotkeys or a Stream Deck before going live, so you can react in the moment without hunting through menus."
+  },
+  {
+    "slug": "void-editor",
+    "status": "possibly-defunct",
+    "sources": [
+      "https://voideditor.com",
+      "https://alternativeto.net/software/void/about",
+      "https://codersera.com/blog/void-ide-complete-guide-2026/amp/"
+    ],
+    "moreContext": "Void earned a loyal following as an open-source answer to Cursor, built as a fork of VS Code by brothers Andrew and Mathew Pareles with backing from Y Combinator. Its defining idea was privacy and freedom of choice: the editor has no backend of its own, so your code travels directly from your machine to whichever model provider you select, or stays local entirely.\n\n- Because it is built on VS Code, your familiar extensions, themes, and keybindings carry over with very little friction.\n- You can connect hosted models or run local ones through tools such as Ollama, keeping sensitive code off third-party servers.\n- Core AI features include inline edits, a chat panel with codebase context, and agent-style changes across files.\n- The full source is public on GitHub, so teams can audit exactly what the editor does with their code.\n\nOne important note: the team has said work on the Void IDE is temporarily paused while they explore new AI coding ideas, and they have cautioned that some features may stop working over time without maintenance. The latest build still runs and remains a useful reference for open-source AI tooling. Void is best suited to developers curious about a transparent, self-directed setup who are comfortable with an unmaintained tool, and it is worth following the project's Discord or GitHub for news before adopting it for daily work."
+  },
+  {
+    "slug": "vyond",
+    "status": "ok",
+    "sources": [
+      "https://www.vyond.com"
+    ],
+    "moreContext": "Vyond is the company that grew out of GoAnimate, and it has spent years refining animated video for the workplace rather than for entertainment. That focus shows in the details: characters, scenes, and templates are built for training, explainers, and internal communication, and the company says 65 percent of the Fortune 500 rely on it.\n\n- Vyond Go turns an idea, a document, or even a URL into a draft video, giving teams a fast first cut they can refine.\n- Styles go well beyond classic animation, spanning mixed media, photorealistic, generative AI, screen recordings, mobile capture, and webcam footage.\n- AI avatars can present content, and instant translation helps localize a single video for global teams.\n- A PowerPoint to video tool helps convert existing slide decks into engaging animated lessons.\n- Secure video hosting through a Vbrick-based option suits organizations with strict sharing requirements.\n\nVyond is a natural fit for learning and development teams, HR departments, internal communications, and sales enablement groups producing a steady stream of explainer content. A free trial lets you try the workflow. Start with Vyond Go to generate a draft from an existing policy document or training outline, then move into the full editor to fine-tune characters and branding, which saves hours compared with building scenes from scratch."
+  }
+]

@@ -11,12 +11,14 @@ import { readdirSync } from "fs";
 import path from "path";
 import readingTime from "reading-time";
 import { PrismaClient } from "@prisma/client";
-import type { Post } from "./types";
+import type { Post, RenderContext } from "./types";
 import { internalLinks, renderHtml, renderJson, wordCount } from "./render";
 
 const prisma = new PrismaClient();
 const write = process.argv.includes("--write") || process.argv.includes("--publish");
 const publish = process.argv.includes("--publish");
+// Screenshots saved by scripts/blog/capture-screenshots.ts use this filename prefix.
+const SHOT_PREFIX = "blog-shot-";
 
 async function loadPosts(): Promise<Post[]> {
   const dir = path.join(__dirname, "posts");
@@ -31,11 +33,28 @@ async function loadPosts(): Promise<Post[]> {
 
 async function main() {
   const posts = await loadPosts();
-  const [tools, cats, admin] = await Promise.all([
-    prisma.tool.findMany({ where: { published: true }, select: { slug: true } }),
+  const [tools, cats, admin, captured] = await Promise.all([
+    prisma.tool.findMany({
+      where: { published: true },
+      select: { slug: true, name: true, logoMediaId: true, screenshot1MediaId: true },
+    }),
     prisma.blogCategory.findMany({ select: { id: true, slug: true } }),
     prisma.user.findFirst({ where: { role: "ADMIN" }, select: { id: true } }),
+    prisma.media.findMany({
+      where: { filename: { startsWith: SHOT_PREFIX } },
+      select: { id: true, filename: true },
+      orderBy: { createdAt: "asc" },
+    }),
   ]);
+  const capturedBySlug = new Map(captured.map((m) => [m.filename.slice(SHOT_PREFIX.length).replace(/\.\w+$/, ""), m.id]));
+  const toolBySlug = new Map(tools.map((t) => [t.slug, t]));
+  const ctx: RenderContext = {
+    tool: (slug) => {
+      const t = toolBySlug.get(slug);
+      if (!t) return undefined;
+      return { name: t.name, logoMediaId: t.logoMediaId, shotMediaId: t.screenshot1MediaId ?? capturedBySlug.get(slug) ?? null };
+    },
+  };
   const toolSlugs = new Set(tools.map((t) => t.slug));
   const catBySlug = new Map(cats.map((c) => [c.slug, c.id]));
   const staticPaths = new Set(["/", "/tools", "/categories", "/blog", "/submit", "/about"]);
@@ -63,6 +82,11 @@ async function main() {
         problems.push(`unknown link ${href}`);
       }
     }
+    try {
+      renderHtml(post.body, ctx);
+    } catch (e) {
+      problems.push((e as Error).message);
+    }
     const words = wordCount(post.body);
     console.log(`${problems.length ? "✗" : "✓"} ${post.slug} — ${words} words, ${internalLinks(post.body).length} internal links`);
     for (const p of problems) console.log(`    ${p}`);
@@ -79,14 +103,14 @@ async function main() {
   }
 
   for (const post of posts) {
-    const contentHtml = renderHtml(post.body);
+    const contentHtml = renderHtml(post.body, ctx);
     const readingMinutes = Math.max(1, Math.round(readingTime(contentHtml.replace(/<[^>]+>/g, " ")).minutes));
     const existing = await prisma.blogPost.findUnique({ where: { slug: post.slug } });
     const published = publish || Boolean(existing?.published);
     const data = {
       title: post.title,
       excerpt: post.excerpt,
-      contentJson: renderJson(post.body) as object,
+      contentJson: renderJson(post.body, ctx) as object,
       contentHtml,
       readingMinutes,
       seoTitle: post.seoTitle,

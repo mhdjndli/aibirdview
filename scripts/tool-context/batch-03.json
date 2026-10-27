@@ -1,0 +1,279 @@
+[
+  {
+    "slug": "claude",
+    "moreContext": "What sets Claude apart is how naturally it moves from conversation to finished work. Anthropic has built it into a full workspace that runs on the web, in desktop apps for macOS and Windows, and on iOS and Android, so a thread started on your phone can continue at your desk. Its careful reasoning and polished prose make it a strong fit for anyone whose output needs to be right, not just fast.\n\n- Memory and personal instructions carry across conversations, so Claude keeps track of your preferences without being reminded each time.\n- Connectors reach into tools such as Gmail, Google Drive, Google Calendar, Slack, Salesforce, and BigQuery, letting Claude work with your real files and data.\n- Dedicated experiences like Claude in Chrome, Claude for Microsoft 365 (including Excel), and Claude for Google Workspace bring it directly into the apps teams already use.\n- The desktop app can work with files and applications on your computer, and browser use and computer use (in beta) let Claude carry out multi-step tasks on your behalf.\n- Organizations can also reach Claude models through Amazon Bedrock, Microsoft Foundry, and Google Cloud, which simplifies adoption inside existing cloud agreements.\n\nClaude is best for writers, analysts, researchers, and developers who handle long documents or complex reasoning and want a thoughtful collaborator. To get the most out of it, set up a Project for each ongoing piece of work, add your key files and instructions once, and let every new conversation start with that context already in place.",
+    "sources": [
+      "https://claude.com/product/overview"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "claude-code",
+    "moreContext": "Claude Code stands out because it works the way an experienced engineer does: it explores a repository on its own, maps how the pieces connect, and then carries a change through to passing tests. Anthropic offers it wherever developers already spend their day, from the terminal on macOS, Linux, and Windows to VS Code, JetBrains IDEs, the Claude desktop app, the web, and even the iOS and Android apps.\n\n- Agentic search lets it get oriented in large, unfamiliar codebases without you hand-picking files for context.\n- It connects with GitHub and GitLab to read issues, write code, run tests, and open pull requests, and tasks can be kicked off straight from Slack.\n- Long-running refactors and migrations are a real strength, since it follows imports, reruns tests, and keeps working through failures.\n- Permission prompts and an auto mode designed to catch risky commands give teams a sensible balance between autonomy and control.\n- The desktop app groups sessions into Projects so you can supervise several agents working in parallel.\n\nEngineers and teams who want to delegate whole tasks, rather than accept line-by-line suggestions, will get the most from it. It is included with Claude Pro, Max, Team, and Enterprise plans as well as Claude Console accounts. A practical tip: add a CLAUDE.md file to your repository describing build commands, conventions, and known gotchas, so every session starts with your team's house rules.",
+    "sources": [
+      "https://claude.com/claude-code"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "claude-code-reset-tracker",
+    "moreContext": "This community-built tracker answers a question many heavy Claude Code users ask: when did Anthropic last reset usage limits, and how often does it happen? It keeps a careful archive of announced resets starting from April 2026, with each entry linked back to the original post so you can check the details yourself. It is also refreshingly upfront that it is independent, not affiliated with Anthropic or OpenAI, and that past patterns do not predict future resets.\n\n- A days-since counter and scorecard show total resets, the average gap between them, the longest drought, and resets per month at a glance.\n- Personal countdowns let you enter the reset times from Claude Code's /usage screen to track your own five-hour and weekly windows, stored only in your browser.\n- Browser alerts, an RSS feed, and a calendar subscription mean you can hear about new resets without checking the site.\n- Developers get JSON data, an API, an MCP server, and a status-line script, so reset information can live inside their own tooling.\n- A side-by-side view compares Claude resets with Codex resets, using data from a sister site.\n\nIt is best for developers on Claude subscription plans who plan intensive coding sessions around their usage windows. A useful tip: add the calendar feed or the status-line script so reset news shows up where you already work, and follow the linked source post to confirm which plans a given reset actually covered.",
+    "sources": [
+      "https://claude-resets.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clay",
+    "moreContext": "Clay has grown from a clever enrichment spreadsheet into what it now calls infrastructure for go-to-market teams: one place to pull in data, run AI agents, and launch complete outbound and inbound plays. Its flexible canvas lets you build workflows by clicking, writing code, or simply chatting, which is why both scrappy startups and large revenue organizations lean on it.\n\n- A single contract opens access to a marketplace of more than 150 premium data sources and AI vendors, so you avoid juggling separate subscriptions.\n- Signals watch for buying triggers such as job changes, promotions, hiring, and headcount shifts, then kick off the right workflow automatically.\n- Built-in account and lead scoring lets teams tier their market with custom formulas before a rep ever writes a message.\n- Audiences can sync straight to LinkedIn, Meta, and Google Ads, while CRM enrichment keeps Salesforce and HubSpot records fresh.\n- Clay invests heavily in education through Clay University, an active global community, and its annual Sculpt conference.\n\nThe company says it is trusted by more than 500,000 GTM teams, and it names customers including Anthropic, Canva, and Intercom. It is best for RevOps leaders, growth marketers, and SDR teams who want to automate research and personalization. Start with the free trial and adapt a community template for a single play, such as enriching inbound leads, before expanding into full outbound.",
+    "sources": [
+      "https://www.clay.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cleanvoice",
+    "moreContext": "Cleanvoice earns its place in a podcaster's toolkit by handling the tedious polish work that usually eats an afternoon per episode. Beyond its well-known filler-word removal, it has grown into a fuller AI podcast editor that cleans, enhances, transcribes, and summarizes recordings for both audio and video shows.\n\n- Noise cleanup tackles background noise, hum, echo, and hiss, while its Studio Sound option gives raw recordings a more polished, broadcast-ready tone.\n- Multitrack support edits each speaker's track in one pass and keeps everything in sync, which is ideal for remote interview shows.\n- Edits can be exported as timelines for Adobe Audition, Audacity, DaVinci Resolve, and REAPER, so you stay in control of the final cut.\n- A mute option silences removed sections instead of cutting them, which keeps video podcasts aligned with their audio.\n- Developers can use a public API with Python and JavaScript options that handles editing, enhancement, and transcription in a single call.\n\nThe company says it serves more than 40,000 creators, and it highlights GDPR compliance, EU data storage, and ISO 27001 certification. It suits independent podcasters, agencies producing many shows, and voiceover artists alike. You can test a file without signing up, and new accounts get free minutes, so run your noisiest episode through it first and review the exported timeline before settling on a workflow.",
+    "sources": [
+      "https://cleanvoice.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clearscope",
+    "moreContext": "Clearscope has long been the content optimization tool editors trust for its calm, uncluttered approach, and it has kept pace with how people search today. Beyond classic Google rankings, it now helps teams understand and improve how their brand appears in AI answer engines such as ChatGPT, Gemini, and Claude. The product was founded by Bernard Huang and is built by Mushi Labs, and the company says thousands of content teams rely on it.\n\n- Query Tracking reveals where your brand shows up in AI assistants and where competitors are being recommended instead.\n- Query Discovery surfaces relevant questions from a topic or a website URL across Google and leading AI models, which takes the guesswork out of planning.\n- An AI writing assistant supports first drafts and helps teams scale production while staying aligned with search intent.\n- Content analytics monitors performance for a whole site or individual pages with ready-made or custom views, so decaying articles are easy to spot.\n- Its product suite spans expanding, writing, optimizing, protecting, localizing, and internal linking within one workspace.\n\nClearscope shares customer results from brands such as Webflow, IBM, and Optimizely, which speaks to its standing with serious editorial operations. It is best for content teams and SEO agencies that value trustworthy, explainable recommendations. Start with the free trial, bring in your most important existing pages, and prioritize refreshes on the ones analytics shows slipping.",
+    "sources": [
+      "https://www.clearscope.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clickup-brain",
+    "moreContext": "ClickUp Brain has matured into one of the most ambitious workspace assistants available, now branded Brain² and reaching well beyond the ClickUp app itself. Because it can draw on your tasks, docs, chats, and connected tools at once, its answers are grounded in how your team actually works rather than generic advice.\n\n- One subscription lets you switch between models from Anthropic, OpenAI, Google, and others, each with full access to your workspace context.\n- An AI Notetaker joins calls, captures notes, and files the context back into your workspace automatically.\n- Enterprise Search looks across ClickUp, connected apps such as Google Drive, GitHub, and Salesforce, and the web to answer complex questions, with MCP connections supported.\n- Brain MAX brings the assistant to native apps for macOS, Windows, iOS, and Android plus a Chrome extension, with Talk to Text for hands-free dictation.\n- Persistent memory stores your role and preferences, which you can view or edit, and you can even import memories from ChatGPT or Claude.\n\nClickUp states that third-party AI providers do not train on or retain your data, and it cites SOC 2, ISO 27001, GDPR, and HIPAA compliance. Brain is best for teams that already run their projects in ClickUp and want one assistant across all their work. Try the free trial on a live project and ask Brain to draft your next status update from real task data to see its context awareness in action.",
+    "sources": [
+      "https://clickup.com/ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cline",
+    "moreContext": "Cline has become one of the most widely adopted open-source coding agents, and its appeal comes from transparency: you see every plan, diff, and command before it happens. It has also spread well beyond its VS Code roots, now running in JetBrains IDEs, Cursor, and Windsurf, as a standalone desktop app, from the command line, and as an SDK you can embed in your own tools.\n\n- It works with Claude, GPT, and Gemini, plus local models through Ollama or LM Studio and any OpenAI-compatible endpoint, so you choose the model and control the cost.\n- Checkpoints accompany multi-file edits, giving you clear diffs and one-click undo when an approach does not pan out.\n- Project rules stored in .clinerules files keep the agent aligned with your team's conventions across sessions.\n- Headless runs in GitHub Actions and GitLab, along with Slack and Linear integrations, let Cline pick up work beyond the editor.\n- MCP server support connects the agent to databases, APIs, and infrastructure tools for richer, real-world tasks.\n\nThe project says it is trusted by more than 11 million developers, and its GitHub repository has attracted tens of thousands of stars. Cline is best for developers who want agentic power without giving up oversight. Start in Plan mode for anything nontrivial, review the proposed strategy, then switch to Act mode and reserve auto-approve for safe, low-risk actions.",
+    "sources": [
+      "https://cline.bot"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clipdrop",
+    "moreContext": "Clipdrop is one of the friendliest ways to handle everyday image fixes, with each tool designed to do one job quickly and well. It was created by InitML, a startup co-founded in 2020 by Cyril Diagne, Jonathan Blanchet, and Damien Henry that went through Y Combinator before being acquired by Stability AI and, later, by Jasper.\n\n- The toolbox covers background removal and replacement, cleanup, uncrop, relighting, upscaling, text removal, text-to-image, and a universal resizer for social formats.\n- Cleanup can erase people, objects, and blemishes from a photo, and the same team created the popular Cleanup.pictures site.\n- Photoshop users can install Clipdrop's plugins to bring its tools into their existing editing workflow.\n- Developers can embed the same image models in their own products through the Jasper API, including a fast background removal endpoint.\n- Clipdrop's terms do not restrict commercial use of images generated on the platform, which is handy for marketers and online sellers.\n\nThe founding team brings strong credentials, with backgrounds that include Google Arts and Culture and the creation of Google Cardboard. Clipdrop is best for e-commerce sellers, social media managers, and designers who need clean product shots without a full editing suite. Several tools can be tried for free, so run a product photo through Remove background, then Relight, then Universal Resizer to produce consistent, platform-ready images in minutes.",
+    "sources": [
+      "https://clipdrop.co"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clipin-ai",
+    "moreContext": "Clipin makes creator-style video approachable for brands and storytellers who do not have a studio or a roster of UGC creators. You describe an idea or paste a product link, add optional reference images, and the platform turns it into short clips with AI voiceovers included, ready to preview, download, or schedule.\n\n- A broad model menu includes leading video generators such as Veo 3.1, Kling 3, Seedance, Wan, and MiniMax, so you can pick the look and speed that suit each project.\n- Story mode builds multi-scene narratives like travel journals and explainers, going beyond single talking-head clips.\n- Custom avatars can be chosen from a library, generated from scratch, or based on an uploaded photo, depending on the model.\n- Image generation and editing with models such as Nano Banana and FLUX share the same credit balance as video, which keeps budgeting simple.\n- Finished pieces can be scheduled for YouTube Shorts and TikTok or shared through a viewing link, and free noise-removal tools help clean up audio.\n\nThe site is refreshingly clear that AI UGC is generated content rather than a real customer testimonial, which is exactly the right way to frame it. Clipin suits small e-commerce brands, marketers testing ad angles, and solo creators. Use the free starter credits to run the same prompt through two different models, then compare the results to find the style that fits your brand before choosing a plan.",
+    "sources": [
+      "https://clipin.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "clockwise",
+    "moreContext": "Clockwise was one of the pioneers of AI-driven calendar optimization, and its approach to protecting focus time across entire teams shaped much of the category. Readers should note an important update: the company announced that its product would stop being available on March 27, 2026, with the team joining Salesforce, so this listing is now largely historical.\n\n- Its central idea was to treat flexible meetings as movable pieces, automatically rescheduling them to open up longer stretches of uninterrupted work.\n- Smart Hold events handled focus time, travel time, meeting breaks, and synced personal events, keeping calendars realistic without manual juggling.\n- Scheduling links made it easy for others to book time while still respecting the focus blocks Clockwise protected.\n- The company says it created more than 8 million hours of focus time and rescheduled more than 23 million meetings for some 40,000 organizations, including Uber, Netflix, and Atlassian.\n\nClockwise was best for engineering and product teams whose days were fragmented by meetings, and its lasting contribution is the now widely shared belief that calendars should defend deep work by default. If you are looking for similar functionality today, the Clockwise team itself pointed users toward Reclaim, and it is worth recreating your focus-time and meeting-break rules there first so your new calendar keeps the habits that worked.",
+    "sources": [
+      "https://www.getclockwise.com"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "coda-ai",
+    "moreContext": "Coda has always been the doc that behaves like an app, and its AI is woven into that foundation rather than bolted on top. Readers should know the product is now branded Superhuman Docs, part of the same company family as Grammarly and Superhuman, and the update adds enterprise-ready databases and AI Views alongside the AI features longtime Coda users already rely on.\n\n- AI columns apply a single prompt to every row in a table, turning hundreds of records into summaries, categories, or fresh content in one pass.\n- Knowledge assistance can draw on more than 600 integrations, so answers and summaries reflect information from the tools your team already uses.\n- Writing help goes beyond drafting, with brainstorming, targeted comments, and suggested edits right inside the doc.\n- Repetitive tasks can become automated workflows, and ready-made AI templates cover meeting notes, voting tables, and two-way writeups.\n- AI is included for Doc Makers without a separate license or add-on, which keeps team rollouts simple.\n\nThe company names customers such as Figma and TED, and its flexibility makes it a natural home for team hubs, planning rituals, and lightweight internal tools. It is best for operations, product, and program teams who want docs and data to live together. A great first experiment is to paste customer feedback into a table, add an AI column that tags each entry by theme, and then chart the results for your next planning meeting.",
+    "sources": [
+      "https://coda.io/product/ai",
+      "https://coda.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "codacy",
+    "moreContext": "Codacy has been a dependable quality gate for years, and its newer focus on AI-assisted development makes it especially relevant now that so much code is written with coding assistants. The Lisbon-based company positions its platform as one place to enforce code quality, security, and AI coding standards consistently across every repository a team owns.\n\n- AI Guardrails scan AI-generated code against your policies as it is written, through a free IDE extension for VS Code, IntelliJ, and Cursor.\n- An AI Reviewer adds automated pull request reviews with suggested fixes and concise PR summaries.\n- Software composition analysis rescans dependencies daily for newly published CVEs and malware, catching supply chain risks even after code has merged.\n- Dynamic application security testing probes running apps and API endpoints, extending protection beyond static analysis.\n- It plugs into GitHub, GitLab, and Bitbucket, links findings to Jira, and can send alerts to Slack.\n\nThe company says more than 15,000 organizations and 200,000 developers use it, and it lists SOC 2 and GDPR compliance. Codacy is best for engineering leaders who need consistent standards and security visibility across many teams and languages. Roll out the free IDE extension to developers who lean on AI assistants first, then agree on one shared coding standard and apply it across repositories before tightening merge gates.",
+    "sources": [
+      "https://www.codacy.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "codegpt",
+    "moreContext": "CodeGPT appeals to developers who want an AI pair programmer without being locked into a single vendor. Built by CodeGPT LLC, it lives inside VS Code and JetBrains IDEs such as IntelliJ and PyCharm, and the company also helps businesses bring AI agents and automation into their wider workflows.\n\n- You can choose between Claude, GPT, Gemini, and Grok models and switch per task, matching the model to the job instead of paying top rates for everything.\n- Local models through Ollama and LM Studio are supported, which keeps code on your own machine for privacy-sensitive projects.\n- Bring-your-own-key usage is unlimited, so teams with existing API contracts can plug them in directly.\n- A free plan includes daily interactions with economy models and a welcome credit for premium ones, and you can top up without committing to a subscription.\n- A Teams plan adds pooled credits, centralized billing, and an admin dashboard for managing usage across an organization.\n\nThe company says its extension has passed 2 million installs, which reflects a broad and active user base. CodeGPT is best for independent developers and small teams who value model choice, privacy controls, and predictable costs. A practical approach is to run a local model for routine completions and sensitive code, then switch to a premium cloud model only for complex refactors or tricky debugging sessions.",
+    "sources": [
+      "https://codegpt.co"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "coderabbit",
+    "moreContext": "CodeRabbit has become one of the most widely adopted AI code reviewers, and the company says it is the most installed AI app on both GitHub and GitLab. What impresses is how far it now reaches beyond line comments, helping teams triage pull requests, understand sprawling diffs, and catch security problems before they ship.\n\n- Triage scores, ranks, and routes incoming pull requests, with a Kanban-style board and automatic reviewer assignment.\n- Change Stack explains large diffs using semantic diffs, blast radius context, and architectural diagrams, so reviewers grasp intent quickly.\n- Security coverage includes scheduled and per-PR deep scans, dependency vulnerability detection, and generated fix pull requests.\n- Review profiles named Quiet, Chill, and Assertive let each team tune how vocal the bot is, alongside pre-merge checks and post-merge actions.\n- A Slack agent extends its help to incident triage, support questions, and planning conversations.\n\nThe company reports 17,000 customers and 6 million repositories, and it shares results from teams at Writer, Swiggy, and Clerk. CodeRabbit is best for engineering teams with steady pull request volume who want faster, more consistent reviews without adding headcount. Start with the Chill profile to keep noise low, and reply directly to its comments when it gets something wrong, since it learns your team's preferences from that feedback.",
+    "sources": [
+      "https://www.coderabbit.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cohesive",
+    "moreContext": "Cohesive set out to make AI writing feel playful and approachable, pairing a clean editor with a large template library aimed at creators rather than corporate teams. A note for readers: when we reviewed it, the marketing site still loaded but appeared to be served from archived assets, and the app address did not respond, so it is worth confirming the service is available before relying on it.\n\n- Its template library spans SEO blogs, ad and marketing copy, social and TikTok content, and personal pieces such as cover letters, LinkedIn bios, and wedding vows.\n- Real-time collaboration lets teammates work in the same document instead of passing drafts through email and chat threads.\n- Fresh content ideas surface while you write and whenever you start a new piece, which helps beat the blank page.\n- The editor handles text, images, and translations in one workspace, so a single draft can become several assets.\n- Use cases are organized around marketing, sales outreach, customer support replies and FAQs, and everyday personal writing.\n\nCohesive has been best suited to creators, freelancers, and small teams who want a friendly, low-pressure way to draft varied content, and it offered free signup without a credit card. Coverage at launch highlighted how easily you could shift tone or ask for a summary of a draft. If you do use it, keep copies of your important drafts in another tool so your work stays safe regardless of the product's future.",
+    "sources": [
+      "https://cohesive.so",
+      "https://www.malaymail.com/amp/news/tech-gadgets/2023/06/08/cohesive-is-an-ai-tool-for-generating-all-kinds-of-content-for-the-internet/73166"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "colossyan",
+    "moreContext": "Colossyan stands out by treating video as a learning format first, not a marketing gimmick. Its AI agent, Cora, can take an existing PDF, slide deck, Word document, URL, or script and draft scenes for you, and you approve each one before anything renders, which keeps subject experts firmly in control of the lesson.\n\n- A library of more than 300 stock or custom avatars, including cartoon options, pairs with voiceovers and localization in over 100 languages.\n- Colossyan Learn expands the platform from single videos into full courses, with screen recording and versioning that avoids reshooting when content changes.\n- Brand kits automatically apply your logo, colors, and chosen avatars so every module looks consistent.\n- Built-in analytics track engagement and completion, and content can be published by SCORM export, MP4 download, or a shareable link.\n- The company holds SOC 2 Type II certification, follows GDPR, offers SAML single sign-on, and states that customer content is never used to train its models.\n\nThe company reports a 4.6 rating on G2 and a 2025 Red Dot award, and it shares results from customers such as Paramount and Sonesta. Colossyan is best for L&D, HR, and enablement teams turning dense documentation into engaging training. There is a free Starter tier plus a free trial, so begin by converting one existing slide deck and then add a single branching scenario to see how interactivity lifts engagement.",
+    "sources": [
+      "https://www.colossyan.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "comfyui",
+    "moreContext": "ComfyUI has grown from a beloved open-source project into the foundation of a full company, Comfy Org, based in San Francisco and describing itself as the open standard for visual AI. Its node graph gives artists and engineers precise control over every step of a generation, and the company lists studios and brands such as Netflix, Nike, Ubisoft, and Autodesk among its clients.\n\n- Comfy Desktop runs everything on your own hardware, while Comfy Cloud, which has a free tier, opens the same workflows to people without a powerful GPU.\n- A developer platform and the Comfy API let teams deploy a finished workflow as a production API and call it from their own apps.\n- Comfy Agent can build and run workflows from plain-language descriptions, lowering the barrier for newcomers.\n- Model coverage spans open and partner models for image, video, and audio, including Flux, Qwen-Image, Wan, LTX, and MiniMax, with more than 60,000 nodes available.\n- The project's GitHub repository has attracted well over 100,000 stars, and the site is offered in English, Simplified Chinese, and Japanese.\n\nComfyUI is best for VFX artists, advertising and gaming studios, e-commerce creative teams, and technical hobbyists who want full control over their pipelines. A handy tip: images generated in ComfyUI carry their workflow in the file metadata, so dragging a shared image onto the canvas loads the entire graph, which is the fastest way to learn from community examples.",
+    "sources": [
+      "https://www.comfy.org"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "common-room",
+    "moreContext": "Common Room has built a reputation for spotting buyers before they raise their hands, by stitching together signals from community, product, CRM, and marketing activity into a single, person-level view. Founded in 2020 in Seattle by CEO Linda Lian and three co-founders, the company agreed in July 2026 to be acquired by Zoom, which plans to bring its buyer intelligence and RoomieAI agents into Zoom Revenue Accelerator.\n\n- AI waterfall enrichment draws on a directory of more than 400 million contacts, resolving activity to real individuals and refreshing records continuously.\n- RoomieAI agents take on account research, contact research, message personalization, and even live guidance during calls.\n- Buying committee mapping shows who is involved at each target account, down to individual people.\n- A DataAgent flags duplicates, stale records, and data gaps so CRM hygiene does not slide.\n- Integrations with Salesforce, HubSpot, Slack, Outreach, and dozens of other tools put insights where reps already work, with territory management and audit trails for RevOps.\n\nThe company shares results such as Semgrep reporting substantially more pipeline within a single quarter. Common Room is best for product-led and developer-focused companies whose buyers leave signals in communities, docs, and free signups long before booking a demo. Start by connecting your product and community sources alongside your CRM, then route one high-intent signal, such as a target account's engineers joining your community, straight to a Slack alert for the owning rep.",
+    "sources": [
+      "https://www.commonroom.io",
+      "https://investors.zoom.us/news-releases/news-release-details/zoom-acquire-common-room-bringing-buyer-intelligence-its-ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "compose-ai",
+    "moreContext": "Compose AI takes a refreshingly lightweight approach to AI writing: rather than asking you to open another app, it sits inside Chrome and offers suggestions right where you are already typing. Backed by Y Combinator, it was one of the early tools to bring predictive, style-aware completions to everyday email and messaging.\n\n- Suggestions appear as gray text while you type, and a single press of Tab accepts them, so it stays out of the way until it is useful.\n- Its Gmail support goes deepest, reading the thread to propose replies that fit the conversation.\n- A command palette lets you generate a full response, rephrase a selection, adjust tone, or summarize text without leaving the page.\n- It builds a personal style profile from your writing over time, so completions gradually sound more like you.\n- The core Chrome extension is free to use, with a premium tier adding more advanced personalization.\n\nThe company says more than 10,000 teams and 400,000 people use it, and it claims meaningful reductions in typing time. Compose AI is best for professionals who handle a high volume of routine email and short messages and want small, constant time savings rather than long-form drafting. Give it a week of regular use before judging it, since personalization improves as it learns your phrasing, and reach for a full chat assistant when you need longer documents.",
+    "sources": [
+      "https://www.compose.ai",
+      "https://originality.ai/pt/blog/compose-ai-review"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "connected-papers",
+    "moreContext": "Connected Papers began as a weekend side project among friends (credited to Alex Tarnavsky, Eitan Eddie Smolyansky, and Itay Knaan Harpaz) and has become a staple recommendation in university library guides for literature mapping. Its strength is showing the shape of a field in seconds, which no keyword search can match.\n\n- It is not a simple citation tree: for each graph it analyzes on the order of 50,000 papers and keeps the few dozen most strongly connected to your starting paper.\n- Similarity combines co-citation and bibliographic coupling, so papers are linked when later work cites them together or when they share many references.\n- Because shared references count, it works well even for brand-new papers that have not yet collected citations.\n- The data comes from the Semantic Scholar Paper Corpus, giving it broad coverage across scientific disciplines.\n- A force-directed layout places similar papers near each other, turning clusters of related research into something you can see at a glance.\n\nConnected Papers is best for graduate students, researchers entering an unfamiliar area, and anyone preparing a literature review who wants to be sure nothing important is missed. A free plan includes a monthly allowance of graphs. Remember that a large node signals citation count rather than quality, so start from a strong seed paper, then use the derivative works view to find the most recent research building on it.",
+    "sources": [
+      "https://www.connectedpapers.com/about",
+      "https://nesslabs.com/connected-papers",
+      "https://libguides.lmu.edu/AIresearchtools/CP"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "consensus",
+    "moreContext": "Consensus brings scientific literature within reach of anyone who can ask a clear question, presenting evidence from peer-reviewed research instead of opinions from the open web. The company now says its index covers more than 400 million scientific papers, and its interface is designed to show not just an answer but how much the research agrees.\n\n- Pro Search and Deep Search modes synthesize findings across many studies, with Deep Search suited to broader, more complex questions.\n- Ask Paper lets you chat with an individual study to clarify methods, results, and limitations.\n- Study Snapshots surface key findings and methodology at a glance, so you can judge a paper before reading it in full.\n- A Citation Graph reveals how papers relate to one another, helping you trace a line of research.\n- Collections organize your library, and citations export in RIS, BibTeX, and CSV formats for reference managers.\n\nConsensus is best for students, clinicians, researchers, journalists, and curious professionals who need trustworthy, cited answers quickly. A free plan is available, which makes it easy to try on a real question. For the best results, phrase your query as a yes or no question to bring up the Consensus Meter, then open the Study Snapshots to check sample sizes and study design before you rely on a conclusion.",
+    "sources": [
+      "https://consensus.app"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "continue-dev",
+    "moreContext": "Continue earned a loyal following as one of the most respected open-source AI coding assistants, proving that developers could have chat, autocomplete, and agents inside their editor with whatever model they preferred. Readers should know that Cursor acquired the company in mid-2026; reports say the hosted Hub service shut down in July 2026 and the GitHub repository is now read-only, though the Apache 2.0 code remains freely available.\n\n- It shipped as a VS Code extension, a JetBrains plugin, and a command-line tool, meeting developers in the environments they already used.\n- The permissive Apache 2.0 license means teams can still fork, self-host, and adapt the code for their own internal assistant.\n- Its repository attracted roughly 34,000 GitHub stars, a sign of how strongly the community valued an open, model-agnostic option.\n- The team's guiding idea was that developers should be amplified rather than automated, and the company says that commitment carries on at Cursor.\n- Co-founder Nate Sesti joined Cursor as part of the deal, so the thinking behind Continue lives on inside an actively developed product.\n\nToday Continue is best for teams comfortable maintaining a fork, or for developers who want to study a well-designed open assistant. If you still run it, pin the final release and keep your configuration files local, since the hosted Hub is gone. Teams wanting an actively maintained open alternative may also look at projects such as Cline.",
+    "sources": [
+      "https://www.continue.dev",
+      "https://thenewstack.io/cursor-acquires-continue-coding/",
+      "https://www.promptquorum.com/power-local-llm/continue-dev-review"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "copy-ai",
+    "moreContext": "Copy.ai has made one of the more interesting journeys in AI software, evolving from a popular copywriting assistant into a platform that runs complete go-to-market processes. In October 2025 it was acquired by Fullcast, which combines it with revenue planning and operations tools to form what the companies describe as an end-to-end, AI-native RevOps platform.\n\n- It is model agnostic, drawing on models from OpenAI, Anthropic, Google, and Perplexity rather than tying you to one provider.\n- Infobase stores your company knowledge and Brand Voice captures your tone, so generated content stays accurate and on-brand.\n- Tables provide a queryable data layer that pulls multiple sources together to feed AI automations.\n- The company cites more than 2,000 integrations, including Salesforce, HubSpot, Gong, Outreach, Salesloft, and Zapier.\n- Enterprise readiness includes SOC 2 attestation, GDPR compliance, and single sign-on.\n\nThe company says it is trusted by 17 million users, and it shares customer stories from Lenovo and Juniper Networks. Copy.ai is best for sales, marketing, and revenue operations teams who want to codify repeatable processes such as prospect research, inbound lead handling, and content localization. Set up Infobase and Brand Voice before anything else, then start with one prebuilt workflow, such as inbound lead processing, and measure the time saved before expanding.",
+    "sources": [
+      "https://www.copy.ai",
+      "https://www.copy.ai/fullcast-acquires-copy-ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "copyleaks",
+    "moreContext": "Copyleaks has grown from a plagiarism checker into a broad content authenticity platform, able to flag AI involvement in text, source code, images, and video. That range, combined with deep education integrations, explains why schools, publishers, and enterprises turn to it when originality genuinely matters.\n\n- Sentence-level AI detection identifies writing from models such as ChatGPT, Gemini, and Claude, and the company emphasizes low false-positive rates for non-native English writers.\n- Plagiarism scans compare work against web content, academic journals, internal document collections, and code repositories.\n- LMS integrations cover Canvas, D2L, Moodle, Blackboard, Schoology, Edsby, and Sakai, so checks happen inside the systems teachers already use.\n- In Moodle, teachers can exclude assignment prompt text from scans, and administrators decide which scan settings are fixed and which instructors can adjust.\n- A Google Docs add-on, a browser extension, and a white-label API bring detection into writing workflows and other platforms.\n\nThe Utah Education Network selected Copyleaks for AI and plagiarism detection through Canvas, a strong signal of trust from a statewide education system. It is best for schools, universities, publishers, and compliance-minded businesses. Treat an AI score as the start of a conversation rather than a verdict, review the highlighted sentences in context, and upload assignment templates so original prompt text is not counted as matched content.",
+    "sources": [
+      "https://copyleaks.com/ai-detector",
+      "https://copyleaks.com/learning-management-systems",
+      "https://thelearningcounsel.com/articles/industry-news/utah-education-network-selects-copyleaks-for-its-generative-ai-and-plagiarism-detection-serving-more-than-800000-students"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "copymatic",
+    "moreContext": "Copymatic remains a practical, no-fuss option for anyone who needs a steady stream of web copy, product text, and blog drafts. Its strength is breadth: dozens of focused writing tools sit alongside a long-form article writer that produces titles, outlines, introductions, and conclusions for posts of more than 1,000 words.\n\n- CopyChat, its AI chat assistant, is also available as a Chrome extension bundling more than 80 tools, so you can generate copy without leaving the page you are working on.\n- A WordPress plugin imports finished articles in a single click, which removes a tedious copy-and-paste step for site owners.\n- Built-in editing helpers include a grammar checker, a sentence rewriter, and adjustable creativity and tone settings.\n- The interface and output cover more than two dozen languages, including Spanish, French, German, and Japanese, which suits multilingual sites.\n- Paid members get API access, opening the door to automating content generation inside their own systems.\n\nCopymatic is best for affiliate marketers, small e-commerce stores, bloggers, and agencies managing many sites who value speed and volume. A free trial is available without a credit card, so you can test it on real assignments. For the best results, feed the article writer a specific keyword and a short outline of the points you want covered, then use the rewriter and your own expertise to add original examples before publishing.",
+    "sources": [
+      "https://copymatic.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "copyrightchecker",
+    "moreContext": "CopyrightChecker tackles a worry every video creator knows: will this soundtrack get my upload claimed, muted, or blocked? It identifies released recordings by audio fingerprinting against a catalogue of more than 150 million tracks, then explains the likely platform outcome in plain language before you post.\n\n- Each match comes with song details such as title, artist, label or distributor, ISRC, and release year, plus links to the matched recording so you can compare.\n- Results are sorted into three clear risk levels, from commercially released tracks likely to trigger YouTube Content ID, to matches that are often licensable, to no match found.\n- It accepts common audio and video formats including MP3, WAV, M4A, AAC, MP4, and MOV, with no need to share a platform link.\n- Privacy is handled thoughtfully: free checks cut a short clip in your browser before upload, and full-scan files are deleted after 24 hours.\n- When a track is risky, it points you toward royalty-free libraries such as YouTube Audio Library, Pixabay Music, and Free Music Archive.\n\nThe site is admirably honest about its limits, noting that a missing match is not proof music is free to use and that the tool is not legal advice. It is best for YouTubers, TikTok creators, social media managers, and editors who publish often. Run a free clip check on any song you are unsure about, and use a timestamped full scan on longer edits so you know exactly which segments to replace.",
+    "sources": [
+      "https://copyrightchecker.org/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "create-xyz",
+    "moreContext": "Create has grown up, and it now goes by a new name: the platform was rebranded as Anything, reflecting its shift from quick prototypes toward full production apps. The same promise remains at its core, describing what you want in plain language and watching a working product take shape, but the scope has widened to native mobile apps as well as websites and tools.\n\n- A single prompt can produce iOS, Android, and web versions of an app that share one backend, and you can preview the result on your own phone as it builds.\n- According to its infrastructure partner Neon, every app runs on a serverless Postgres database with authentication and storage set up automatically.\n- Payments, file storage, logs, and built-in AI models are wired in for you, so non-technical founders do not have to assemble a backend by hand.\n- The site lists dozens of integrations, and you can add advanced AI models such as GPT-5 to the features you build.\n- External coding agents such as Claude Code and Codex can drive the full app-building pipeline through the Anything CLI, a welcome option for developers.\n\nThe company announced an $11 million Series A in 2025, signaling strong investor confidence in its direction. Anything is best for founders, product managers, and makers who want to turn an idea into a real, shippable app without hiring a team first. Start with a narrowly scoped version of your idea, test it on your phone, and add integrations one at a time so each change is easy to verify.",
+    "sources": [
+      "https://www.create.xyz",
+      "https://neon.com/blog/anything-the-new-ai-agent-for-building-mobile-and-web-apps",
+      "https://neuronfeed.com/startups/anything"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "createimage-online",
+    "moreContext": "CreateImage Online keeps AI visual creation simple by putting several capable models behind one clean, browser-based workspace. Rather than juggling separate apps, you can generate new images, edit existing ones, and turn stills into short videos from the same place, all guided by natural-language prompts.\n\n- Seedream handles text-to-image generation from detailed prompts, which suits illustrations, product concepts, and social graphics.\n- Nano Banana powers conversational image editing, aiming to preserve the key subject and context while changing only what you describe.\n- Seedance drives both text-to-video and image-to-video, with control over camera movement and atmosphere, so no editing experience is needed.\n- Reference uploads in JPG, PNG, and WebP make it easy to start from your own photos or product shots.\n- A single credit balance covers both images and videos, and new users receive a few free credits to try the tools before choosing a plan.\n\nThe site is clear that commercial usage rights depend on the chosen model, the provider's terms, and your plan, and it reminds users to own or have permission for any source images they upload. CreateImage Online is best for small business owners, social media managers, and hobbyists who want quick, good-looking visuals without learning complex software. A good workflow is to generate a still image first, refine it with Nano Banana, and only then animate it with Seedance, since videos use more credits.",
+    "sources": [
+      "https://createimage.online/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "creatify",
+    "moreContext": "Creatify has become a go-to choice for performance marketers who need a constant flow of fresh video creative. Operated by Creatify Lab, Inc., the company has raised $24 million from investors including WndrCo, Kindred Ventures, NFDG, and Comcast Ventures, and it has been covered by Fast Company, Bloomberg, and TechCrunch.\n\n- Batch mode produces a dozen ad variations at once, giving media buyers plenty of hooks and angles to test.\n- Built-in ad analytics track spend, ROAS, and click-through rate for each creative and let you compare variants side by side.\n- Output is designed for Meta, TikTok, YouTube, Snap, and Amazon, so one workflow can serve your main paid channels.\n- Developers and agencies can automate production through an API, an MCP server, and a Slack bot.\n- The company holds SOC 2 Type II compliance and was named a Product Hunt Product of the Day.\n\nCreatify says it supports more than 18,000 brands and agencies and reports a 4.8 rating on G2. It is best for DTC brands, e-commerce teams, and agencies running paid social who want to test many concepts quickly without booking creators for every variation. You can make your first ad free without a credit card, so start with a product page you already advertise, generate a batch of variations, and let the analytics show which hooks earn a bigger budget.",
+    "sources": [
+      "https://creatify.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "creatview",
+    "moreContext": "CreatView takes an agent-style approach to video production: you describe what you need, and it plans the scenes, chooses suitable models, generates the assets, and lets you refine everything through chat rather than a timeline. That makes professional-looking ads and social clips achievable for teams without editing skills or a production budget.\n\n- It routes each step to a fitting third-party engine, with video models such as Veo 3.1, Sora 2, Kling, Seedance, and Hailuo, image models such as Nano Banana Pro and Midjourney, and audio from ElevenLabs and Suno.\n- Reference videos can be analyzed for pacing, hooks, and structure, so you can model a new ad on a format that already works.\n- Product URLs from stores such as Amazon or Shopify can become the starting point for a video, pulling in the details automatically.\n- Ready-made skills cover TikTok Shop ads, UGC-style ads, product demos, and TV-style commercials.\n- Extras include lip sync, video translation, voice cloning, upscaling, and localized variants with captions in more than 30 languages.\n\nCreatView keeps context across revisions, so feedback builds on earlier edits instead of starting over, and the site says outputs can be used for personal and commercial projects. It is best for e-commerce brands, performance marketers, and creators producing short-form video at volume. A free trial is available, so try feeding it a competitor-style reference ad together with your own product URL to see how quickly it can produce an on-brand alternative.",
+    "sources": [
+      "https://creatview.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cursor",
+    "moreContext": "Cursor has evolved from a remarkably smart editor into a complete platform for delegating software work to agents. Made by Anysphere, which describes itself as an applied research team, it now spans the IDE, a terminal CLI, cloud agents, and code review, and in August 2026 the company announced that Cursor had become part of SpaceX.\n\n- Cloud agents can run in parallel for hours or even days on their own machines, building and testing features before handing results back for review.\n- Cursor trains its own Composer models for fast agentic coding, while the model picker also offers leading models from OpenAI, Anthropic, Google, and xAI.\n- Its code review agent checks pull requests on GitHub, catching issues before teammates spend time on them.\n- Teams can mention @cursor in Slack to hand off a request, and agents are reachable from the web and mobile as well as the desktop.\n- Enterprise buyers will appreciate certifications including SOC 2, ISO 27001, and ISO 42001.\n\nThe company says it is trusted by more than half of the Fortune 500, and its site features praise from engineers at Stripe, NVIDIA, and OpenAI. Cursor is best for professional developers and engineering teams who want both a top-tier editor and the option to offload whole tasks. Add project rules describing your conventions, and try handing a well-scoped bug fix to a cloud agent while you keep working locally to see how much parallel progress you can make.",
+    "sources": [
+      "https://www.cursor.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "cutout-pro",
+    "moreContext": "Cutout.Pro has spent years quietly building one of the broadest collections of AI photo and video utilities available in a single place. Founded in 2018 by a team focused on computer vision and part of Team LibAI with an office in Hong Kong, it covers everything from quick cutouts to e-commerce staging and AI video.\n\n- Beyond background removal, it offers photo enhancement and upscaling, sharpening, colorization of black-and-white photos, and object removal.\n- E-commerce tools include virtual models and product staging, helping sellers create lifestyle shots without a photoshoot.\n- Creative generators produce portrait art, cartoon selfies, wall art, wallpapers, and greeting cards for fun or commercial projects.\n- AI video features include image-to-video, digital human videos, and text-to-speech alongside its video background remover.\n- Desktop apps for Mac and Windows, mobile apps for iOS and Android, and a Shopify plugin bring the tools into everyday workflows, and the company says uploaded data is discarded immediately after processing.\n\nThe company says more than 25,000 businesses trust it, and its developer API makes each feature available inside other apps. Cutout.Pro is best for online sellers, marketers, photographers, and developers who need many small image tasks handled affordably. You can get started for free, so try the free background remover on a batch of product photos first, then layer in enhancement or product staging to build a consistent storefront look.",
+    "sources": [
+      "https://www.cutout.pro"
+    ],
+    "status": "ok"
+  }
+]

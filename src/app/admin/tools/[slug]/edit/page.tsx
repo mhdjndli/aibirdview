@@ -66,6 +66,7 @@ export default async function EditToolPage({
           tagline: tool.tagline,
           description: tool.description,
           longDescription: tool.longDescription,
+          moreContext: tool.moreContext,
           url: tool.url,
           categorySlug: tool.category.slug,
           pricing: tool.pricing,

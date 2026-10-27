@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "start-this-task",
+    "moreContext": "Most planners assume you are ready to begin, but this one is built for the moment when you are not. Start This Task puts a single doable action on screen before the full plan has even finished generating, which makes it a gentle fit for anyone who freezes in front of big or vague work, including people who describe their struggle as ADHD-style task paralysis. It occupies a small but genuinely useful space between a to-do list and a coach.\n\n- You can try it as a guest without signing up, and guest work stays in your browser for up to 30 days.\n- The free plan includes the full core feature set, with a monthly allowance of AI breakdowns rather than locked features.\n- The Tiny step size aims for the smallest possible starting move, which helps on low-energy days.\n- Focus Mode hides everything except the current step and pairs it with a timer, so the plan never becomes another source of overwhelm.\n- A separate Brain Dump area catches stray thoughts quickly and keeps them apart from the breakdowns you are actively working through.\n\nIt is best for students, freelancers, and anyone with a backlog of dreaded chores or projects they keep postponing. A practical tip: describe the task the way it actually feels (for example, \"reply to the awkward landlord email\"), choose Tiny steps, and commit only to the first action before deciding whether to keep going.",
+    "sources": [
+      "https://www.startthistask.com/start-a-task"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "stockimg-ai",
+    "moreContext": "Stockimg AI has grown well beyond a stock photo generator into a compact design and social media studio. Alongside its category-based image tools, it now generates, edits, and schedules social posts and short videos, so a small team can move from concept to published content in one place. The company says more than 3.5 million users have signed up, and it displays a G2 Leader badge in the stock photo category.\n\n- A built-in content calendar connects to Instagram, TikTok, LinkedIn, YouTube, and X, so you can schedule what you generate without switching apps.\n- The video generator produces short clips with audio and subtitles included, which suits fast-moving social accounts.\n- Dedicated generators for logos, illustrations, and stock-style photos keep outputs focused on specific commercial uses instead of open-ended art.\n- Product photo and post tools give e-commerce sellers a quick way to refresh listings and promotional visuals.\n- Every result can be edited after generation, letting you fine-tune a composition rather than rerolling from scratch.\n\nIt is a strong pick for solo marketers, small businesses, and self-published authors who need a steady stream of usable visuals without hiring a designer. Tip: start in the category closest to your end use (book cover, logo, product shot) rather than writing a generic prompt, since those modes are tuned for layouts that are ready to publish. You can try it for free before committing.",
+    "sources": [
+      "https://stockimg.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "storychief",
+    "moreContext": "StoryChief has matured from a multichannel publishing tool into a full content marketing platform that covers strategy, briefs, writing, approvals, and distribution in a single workflow. What sets it apart is how much context it keeps: each workspace learns your brand voice, audiences, and content pillars, so AI drafts start much closer to something you would actually publish. The company says it serves more than 1,000 companies across 30 countries.\n\n- Content scoring covers both classic SEO and generative engine optimization (GEO), with readability and plagiarism checks built into the editor.\n- An AI visibility tracker shows how your content appears in AI-generated answers, a forward-looking feature few content suites offer.\n- Publishing reaches sites built on WordPress, Webflow, and Ghost, plus social channels such as LinkedIn, Instagram, TikTok, Threads, Pinterest, and YouTube Shorts.\n- A content audit flags underperforming pages and estimates how much traffic a refresh could win back.\n- Integrations with HubSpot, Semrush, Ahrefs, Google Search Console, Slack, and Notion, along with MCP support for assistants like ChatGPT and Claude, connect it to tools teams already rely on.\n\nIt is best for in-house marketing teams and agencies juggling several brands or clients, each with its own workspace. Tip: invest time upfront in the brand intelligence settings (voice, audiences, reference files), because every brief and draft afterward draws on that context. A free trial with no credit card required makes it easy to evaluate.",
+    "sources": [
+      "https://storychief.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "stream-bot",
+    "moreContext": "Stream Bot takes on the most tedious part of running a stream fan page: sitting through hours of footage to find the few seconds worth posting. Instead of promising fully automated edits, it works as a scout, watching the Twitch and Kick channels you pick and sending likely highlights straight to your Telegram chat. That human-in-the-loop design is its real strength.\n\n- Moments are flagged using spikes in chat and audio activity, which tend to line up with the reactions audiences actually care about.\n- Each alert arrives as a source clip of roughly a minute, long enough to judge the setup and payoff before you commit to an edit.\n- Because everything happens in Telegram, there is no new dashboard to learn and you can review candidates from your phone.\n- The suggested workflow starts with a short brief covering creators, games, and running jokes, which keeps selections tuned to your community.\n- The product openly reminds users to confirm permission, attribution, and platform rules before posting, a responsible stance in the clipping world.\n\nIt suits solo fan page owners, small clipping teams, and Shorts editors who know their audience well but lack time to monitor every broadcast. Tip: try shaping one flagged moment as a reaction post, a short recap, and a community prompt, then keep whichever format performs best for your page. A free trial is available to test it on your favorite channels.",
+    "sources": [
+      "https://stream-bot-clips.blairbro-snan5578czh.chatgpt.site/for-stream-fan-pages/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "submagic",
+    "moreContext": "Submagic has grown from a caption tool into a full short-form editing suite while keeping the speed that made it popular with creators. You edit through the transcript rather than a timeline, so trimming filler and removing silences feels more like editing a document than cutting video. The France-based company says more than four million businesses use it, and it reports strong ratings on Trustpilot and G2.\n\n- Captions can be generated in 123 languages, which makes it practical for multilingual channels and international brands.\n- Magic Clips pulls standout moments from long podcasts or interviews, and you can start from an uploaded file or a YouTube link.\n- Extra tools such as AI eye contact correction, auto-zoom, background music, and a video translator cover polish that usually takes several apps.\n- Exports reach 4K at 60fps, and built-in scheduling lets you publish to social platforms straight from the editor.\n- A video editing API and shared team workspaces support agencies and media companies producing at volume.\n\nIt is ideal for creators, social media managers, and agencies that publish TikToks, Reels, and Shorts every week. Tip: set up a branded caption style once in a team workspace and reuse it across every project, so each clip looks consistent without extra effort. A free trial lets you test the full workflow on your own footage.",
+    "sources": [
+      "https://www.submagic.co"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sudowrite",
+    "moreContext": "Sudowrite was founded by two writers, Amit Gupta and James Yu, and it shows: nearly every tool is shaped around how novelists actually work, from the first spark of an idea to a finished chapter. Its own fiction-focused model, Muse, is tuned for narrative prose rather than business writing, which helps scenes read like stories instead of summaries. Well-known authors such as Hugh Howey have spoken warmly about it.\n\n- Story Bible keeps characters, worldbuilding, and outlines in one place and uses them to draft chapter beats and full chapters in your style.\n- Canvas offers a dedicated planning space for mapping plot points, character arcs, themes, and twists alongside your reference material.\n- The Feedback tool reviews a draft and returns specific areas to improve, acting like a fast and patient first reader.\n- A plugin library with more than a thousand options lets you simulate readers, interview your characters, or convert a novel into screenplay format, and you can build your own.\n- Visualize turns character sheets and worldbuilding notes into artwork, which is handy for mood boards and early cover ideas.\n\nIt is best for novelists, fan fiction writers, and screenwriters who want a collaborator that respects their voice instead of flattening it. Tip: fill out the Story Bible thoroughly before drafting, since richer character and style notes make Write and Expand suggestions far more consistent. You can try it free without entering a credit card.",
+    "sources": [
+      "https://www.sudowrite.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "suno",
+    "moreContext": "Founded in 2022, Suno has become one of the most widely used music creation platforms, and the company reports that more than 100 million people have made music with it. What began as text-to-song generation now includes a browser-based studio, stem tools, and mobile apps, which makes it a credible creative environment rather than a novelty. The company says over two-thirds of its team are musicians, and that sensibility comes through in the results.\n\n- Suno Studio, a browser-based workstation, lets you reshape arrangements and sections with far more depth than prompting alone.\n- Stem separation and remix tools let you pull vocals or instruments apart and rework them in your own productions.\n- Full creation is available on the web, iOS, and Android, so an idea captured on your phone can be refined later at a desk.\n- A November 2025 partnership with Warner Music Group laid out plans for licensed models and opt-in controls that let artists decide how their voices and likenesses are used.\n- Spark, its artist incubator, offers grants, marketing support, and mentorship to emerging musicians who keep full rights to their work.\n\nIt is ideal for songwriters sketching demos, content creators who need original music, and hobbyists who simply love making songs. Tip: use Custom mode to write your own lyrics and style tags, then save a Persona once you land a sound you like so later tracks stay consistent. A free plan lets you start creating right away, though download options differ between free and paid tiers.",
+    "sources": [
+      "https://suno.com/about",
+      "https://www.musicbusinessworldwide.com/warner-music-group-settles-with-suno-strikes-first-of-its-kind-deal-with-ai-song-generator/",
+      "https://betanews.com/2025/11/26/warner-music-and-suno-agree-new-partnership-but-what-does-this-mean-for-ai-generated-music/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "superhuman",
+    "moreContext": "Superhuman Mail now sits inside a broader productivity family: in October 2025, Grammarly renamed its parent company Superhuman, bringing the email app together with Grammarly's writing assistant, Superhuman Docs (built on Coda), and a new cross-app AI assistant called Superhuman Go. For email power users, the famously fast inbox now connects to a much larger set of AI tools. The company says Mail can save people more than four hours a week on email and scheduling.\n\n- Auto Drafts prepares replies before you open a thread, so many responses need only a quick review before sending.\n- Split Inbox, Auto Labels, and Auto Archive work together to move low-priority mail out of view and surface what actually needs attention.\n- Share Availability creates booking links from inside the inbox, cutting the back-and-forth of setting up meetings.\n- Superhuman Go can find open times in Google Calendar and draft invites for your approval, and it works across many other apps you already use.\n- It runs on top of existing Gmail and Outlook accounts, so there is no need to switch email providers.\n\nIt is best for executives, founders, salespeople, and anyone who lives in their inbox and values keyboard-driven speed. Tip: spend your first week learning the core shortcuts (the command palette is the easiest way in), then let Split Inbox and Auto Labels handle sorting so you only process what matters.",
+    "sources": [
+      "https://superhuman.com",
+      "https://techradar.com/ai-platforms-assistants/grammarly-has-rebranded-as-superhuman-launching-a-new-ai-assistant-that-works-across-100-apps",
+      "https://alternativeto.net/news/2025/10/grammarly-s-parent-company-rebrands-as-superhuman-and-launches-a-new-ai-assistant"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "supermaven",
+    "moreContext": "Supermaven earned a devoted following by being one of the quickest code completion tools around, powered by a custom model built for low latency and a very long context window. Its story took a turn when Anysphere, the company behind Cursor, acquired it in late 2024, and in November 2025 the team announced it was sunsetting Supermaven as a standalone product. Its technology lives on inside Cursor Tab, which is now the recommended path for most users.\n\n- The custom model was engineered around speed, and the company advertised completion latency of roughly a quarter of a second.\n- Plugins covered VS Code, JetBrains IDEs, and Neovim, giving it unusually broad editor coverage for a small team.\n- After the sunset announcement, the company said existing Neovim and JetBrains users would keep receiving free autocomplete.\n- Paying subscribers received prorated refunds when plans ended, a considerate way to wind down a product.\n- Core Supermaven techniques have been folded into Cursor Tab, so its speed-focused approach is still available to developers today.\n\nToday it is most relevant to existing Neovim and JetBrains users who still have access, and to developers curious about the roots of Cursor's autocomplete. Tip: if you work in VS Code, the company itself recommends moving to Cursor, where the same team's completion research continues to improve.",
+    "sources": [
+      "https://supermaven.com",
+      "https://supermaven.com/blog/sunsetting-supermaven",
+      "https://supermaven.com/blog/cursor-announcement"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "supertone",
+    "moreContext": "Supertone built its reputation on voice AI with entertainment-industry polish, and its audio tools have now started a new chapter. After HYBE wound down Supertone as a business in 2026, its core products (Shift, Clear, and Air) moved to a new company, Antinode Audio, based in Daejeon, South Korea, and the supertone.ai address now redirects there. The company says existing licenses and purchased voices remain valid.\n\n- Shift changes your voice in real time for streaming, gaming, and creative projects, and earlier coverage cited latency under 50 milliseconds.\n- Clear separates dialogue from background noise and reverb in real time, giving editors precise control over voice, ambience, and room sound.\n- Air matches the reverb and EQ of a reference recording to dry dialogue, a practical fix when lines recorded in different places need to sound like one space.\n- The site is offered in English, Korean, and Japanese, reflecting a strong following across Asia.\n- The lineup also includes on-device speech technology under the Supertonic name, suited to uses where privacy or offline work matters.\n\nIt is best for streamers, VTubers, podcasters, and post-production editors who want studio-grade voice processing. Tip: when searching for tutorials, try both the Supertone and Antinode names, since much of the existing help content still uses the original branding. Note that the Play character voice service was retired at the end of August 2026, so Shift, Clear, and Air are now the focus.",
+    "sources": [
+      "https://antinodeaudio.com/",
+      "https://www.production-expert.com/production-expert-1/hybe-announces-transfer-of-ownership-of-some-supertone-products-including-clear-to-antinode-audio-inc",
+      "https://musicbusinessworldwide.com/hybe-owned-supertones-new-ai-voice-changer-lets-artists-change-their-vocals-in-real-time"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "surfer-seo",
+    "moreContext": "Surfer has evolved from an on-page SEO scorer into a broader search visibility platform that helps content rank on Google and get cited by AI assistants. Built by a team in Wroclaw, Poland, and now part of the Positive group of software companies, it describes its journey as data-backed optimization first, AI writing next, and AI visibility today. The company says more than 150,000 marketers, agencies, and SEO professionals use it, and the old surferseo.com address now points to surfer.ai.\n\n- The AI Tracker monitors how your brand shows up in ChatGPT, Claude, Gemini, and Perplexity, which helps teams measure a channel most SEO tools ignore.\n- Topical Map and competitive gap analysis reveal subjects your rivals cover that you have not written about yet.\n- Re-optimization alerts flag drops in rankings or AI mentions, so older articles get refreshed before traffic slips too far.\n- A WordPress plugin and Google Docs integration bring Content Editor guidance into the places writers already work, and an MCP connection lets you use Surfer data inside AI assistants.\n- Free extras such as the Keyword Surfer Chrome extension, an AI Humanizer, and free courses on AI search optimization add real value before you pay anything.\n\nIt is best for content marketers, SEO agencies, and in-house teams publishing at a steady pace. Tip: run the Content Audit on your existing library first, since refreshing pages that already have some authority often pays off faster than writing new ones. A free trial is available.",
+    "sources": [
+      "https://surfer.ai/",
+      "https://surferseo.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "swell-ai",
+    "moreContext": "Swell AI earns its place by treating a podcast episode as raw material for an entire week of content. Upload audio or video, or connect a feed, and it produces transcripts, clips, audiograms, articles, newsletters, and social posts that follow your brand voice. Its multi-show dashboard and bulk import make it especially practical for networks and agencies that need consistency across many programs.\n\n- Integrations cover Apple Podcasts, YouTube, RSS, Zoom Cloud, Dropbox, Google Drive, OneDrive, and Omny Studio, with webhooks and a REST API for custom workflows.\n- Bulk import lets you backfill an entire back catalog, turning years of old episodes into searchable, reusable content.\n- Beyond show notes, it can draft midroll ad reads and intro scripts, a thoughtful touch for producers working with sponsors.\n- Each uploaded episode can come with its own trained chatbot, so listeners can ask questions about what was discussed.\n- The transcript editor labels speakers, suggests key moments, and lets you clip highlights directly from the text.\n\nIt is a natural fit for podcast producers, agencies handling several shows, and brands that use video or audio as a core marketing channel. Tip: invest a few minutes in custom templates and brand voice settings for each show, so every episode's outputs arrive close to publish-ready. A free Hobby plan lets you test it on a single upload each month, and the company says brands such as Descript and HubSpot have used it.",
+    "sources": [
+      "https://www.swellai.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sybill",
+    "moreContext": "Sybill positions itself as a personal assistant for sales reps rather than a monitoring tool for managers, and that focus shows in how much busywork it takes off a seller's plate. It captures context from calls, meetings, email, and Slack, then uses that history to suggest next steps on live deals. The company says more than 850 sales teams use it.\n\n- Ask Sybill answers plain-English questions about any deal and cites where each answer came from, which builds trust in the output.\n- Pre-meeting briefs, buyer intent signals, and competitor intelligence help reps walk into every call prepared.\n- It supports more than 100 languages, a real advantage for teams selling across regions.\n- Integrations reach CRMs, email, Slack, and thousands of other tools, with MCP and API access for teams that want to build their own workflows.\n- Security credentials include SOC 2, ISO 27001, and GDPR compliance, along with admin controls over data access and sharing.\n\nIt is best for account executives and revenue teams who spend too many hours on notes, CRM fields, and follow-up emails. Tip: customize the follow-up templates for each stage of your sales process, so drafts match the tone you use for discovery calls versus late-stage negotiations. A 14-day free trial makes it easy to test with a few real deals before rolling it out.",
+    "sources": [
+      "https://www.sybill.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "sync-labs",
+    "moreContext": "Sync comes from an unusually strong research lineage: its co-founders include the authors of Wav2Lip, the influential open-source lip sync model created at IIIT Hyderabad in 2020. The company went through Y Combinator's Winter 2024 batch and announced a seed round led by GV, and it has since turned that research into production tools for studios, developers, and creators. Its newer models are built to handle the messy footage real productions actually shoot.\n\n- Recent models are designed to cope with faces partly blocked by objects, multiple speakers, changing camera angles, low light, and rapid dialogue.\n- The web Studio lets you upload a clip and add new audio by cloning a voice, generating one, or reusing the original track, with no timeline to learn.\n- An Adobe Premiere plugin and a ComfyUI node bring lip sync into editing and generative workflows people already use.\n- Output supports high-end formats such as 4K ProRes, which matters for professional post-production.\n- Proprietary watermarking lets anyone check whether a video was altered with Sync's technology, a responsible safeguard for synthetic media.\n\nIt is best for localization teams, post-production editors, and developers building dubbing or personalized video products. Tip: start with clean, well-mixed replacement audio, since the quality of the new voice track has a big effect on how natural the final mouth movement looks.",
+    "sources": [
+      "https://sync.so",
+      "https://www.ycombinator.com/companies/sync-labs",
+      "https://sync.so/blog/gv-announcement"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "synthesia",
+    "moreContext": "Synthesia, based in London, has grown well past talking-head clips into a full platform for business video, including interactive and conversational formats. Teams can start from a prompt, a document, a PowerPoint deck, or a web link, and the AI Assistant builds a first draft that is ready to refine. The company says it is trusted by 90% of the Fortune 100 and has more than two million users.\n\n- Sessions add live avatar conversations, such as sales roleplays with coaching feedback and survey interviews that summarize themes and sentiment.\n- Videos can include quizzes, clickable calls to action, and branching paths, and they export as SCORM for learning management systems.\n- AI dubbing translates existing footage while keeping the original speaker's voice, with a glossary to keep brand terms consistent.\n- Security credentials include SOC 2 Type II, ISO 27001, and ISO 42001 for AI management, plus EU data residency and SSO for enterprises.\n- Developers can use an API for video generation and real-time Interactive Avatars, and an MCP server connects Synthesia to assistants like Claude and ChatGPT.\n\nIt is best for learning and development teams, internal communications, and customer education groups that need to produce and update a lot of video. Tip: because edits update existing share links and embeds automatically, publish training videos by link rather than as downloaded files so every update reaches learners instantly. A free Basic plan with no credit card required lets you try it.",
+    "sources": [
+      "https://www.synthesia.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tabbyml",
+    "moreContext": "Tabby has become one of the most popular open-source coding assistants for organizations that want AI help without sending source code to a third-party cloud. It runs entirely on your own infrastructure, needs no external database or cloud service, and works on consumer-grade GPUs, which keeps the barrier to entry refreshingly low. Its GitHub repository has earned more than 20,000 stars, a sign of an active community.\n\n- IDE support is unusually broad, covering VS Code, Neovim, Eclipse, and the full JetBrains family including IntelliJ, PyCharm, GoLand, and Android Studio.\n- The Answer Engine and inline chat let developers ask coding questions without leaving the editor.\n- Context Providers pull in documentation, config files, and external APIs, so suggestions reflect how your team actually builds software.\n- The project works with open models from partners such as Mistral AI, DeepSeek, and Qwen, giving teams freedom to choose what they run.\n- The TabbyML team has also introduced Pochi, an AI agent that plans and carries out coding tasks.\n\nIt is best for security-conscious companies, regulated industries, and developers who prefer owning their tooling. Tip: start with the free Community edition on a single GPU machine, connect your main repositories as context, and measure adoption through the built-in analytics before deciding whether the Team or Enterprise plans are worth it.",
+    "sources": [
+      "https://www.tabbyml.com",
+      "https://github.com/TabbyML/tabby"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tabnine",
+    "moreContext": "Tabnine built its name on a simple promise to enterprises: AI coding help that respects strict rules about privacy, licensing, and where code is allowed to live. That reputation made it attractive enough that Tricentis, the Austin-based software testing company, announced its acquisition of Tabnine in July 2026, and the tabnine.com address now redirects to Tricentis. Tricentis says it will fold Tabnine's Enterprise Context Engine into its agentic quality engineering platform.\n\n- The Enterprise Context Engine builds a continuously updated knowledge graph of an organization's repositories, documentation, tickets, APIs, and infrastructure, so AI suggestions reflect how the company actually builds software.\n- Deployment options include on-premises, private VPC, and fully air-gapped setups, which few coding assistants support so completely.\n- Automated governance checks AI output against architectural patterns, coding standards, and internal rules before it lands in a codebase.\n- Dependency and impact analysis helps teams understand what a change will touch, a practical safeguard in large, interconnected systems.\n- Its long-standing focus on secure, context-aware development comes from a company founded and led by Dror Weiss, one of the early pioneers of AI code completion.\n\nIt remains most relevant for banks, defense contractors, healthcare companies, and other regulated organizations that need AI assistance under tight control. Tip: if you are evaluating it now, contact Tricentis directly to confirm current plans, supported IDEs, and how existing Tabnine licenses carry forward after the acquisition.",
+    "sources": [
+      "https://www.tabnine.com",
+      "https://sdtimes.com/ai/tricentis-acquires-tabnine-to-further-scale-agentic-quality-engineering-for-the-enterprise/",
+      "https://itbrief.com.au/story/tricentis-acquires-tabnine-to-boost-ai-quality-context"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "tactiq",
+    "moreContext": "Tactiq takes a lighter, more discreet approach to meeting notes than most competitors: it runs as a Chrome extension and transcribes Google Meet, Zoom, and Microsoft Teams calls from your own browser, so no bot shows up in the participant list. The transcript is visible only to you, and the company says it does not record or store meeting audio. Made in Sydney, Australia, it reports more than a million extension users and over 10,000 companies.\n\n- Transcription covers more than 60 languages, which suits international teams and multilingual calls.\n- You can ask custom questions during a live meeting and save them as reusable prompts for recurring call types.\n- Workflows trigger automatically after meetings and can be shared with teammates, sending results to tools such as Slack, Notion, Linear, and HubSpot.\n- Security credentials include ISO 27001 certification, a SOC 2 Type II attestation, and GDPR and HIPAA compliance.\n- A Claude connector and MCP support let you bring meeting transcripts into AI assistants for deeper analysis.\n\nIt is best for consultants, recruiters, researchers, and anyone who joins other people's meetings and cannot add a recording bot. Tip: build one saved prompt for each meeting type you run often (client check-ins, interviews, standups), so a structured summary is ready the moment the call ends. The extension is free to install and start using.",
+    "sources": [
+      "https://tactiq.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "taplio",
+    "moreContext": "Taplio stands out by covering the whole LinkedIn growth loop in one place, from finding ideas and writing posts to engaging with the right people and turning conversations into leads. Rather than a generic writing tool with LinkedIn bolted on, everything is tuned to how the platform rewards content. The company says more than 12,000 creators and teams use it.\n\n- Ask Taplio, an early-access assistant, reviews your past posts, tracks what is working on LinkedIn, and suggests weekly trends and drafts.\n- A live reach prediction estimates how a post may perform before you publish, helping you refine hooks in advance.\n- The engagement feed surfaces relevant people to comment on and offers AI comment starters, which helps build visibility beyond your own posts.\n- A free Chrome extension brings smart comments and other features directly into LinkedIn.\n- An MCP integration lets assistants such as Claude, ChatGPT, and Cursor find posts and draft comments, with nothing posted until you confirm.\n\nIt is best for founders, consultants, ghostwriters, and B2B marketers who treat LinkedIn as a core channel. Tip: spend a few minutes each day in the engagement feed before posting, since thoughtful comments on others' content tend to widen the audience that sees your own. A seven-day free trial with no credit card required makes it easy to test, and Taplio Academy offers free masterclasses on LinkedIn growth.",
+    "sources": [
+      "https://taplio.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "taskade",
+    "moreContext": "Taskade has pushed well beyond task lists with Genesis, an AI app builder that turns a single prompt into a working business app, such as a CRM, client portal, booking tool, or dashboard, complete with its own agents and automations. That makes it one of the more ambitious all-in-one workspaces available, and it still keeps the familiar projects, docs, and mind maps that earned its early following. Founded in 2017, it has been recognized as a Product Hunt Product of the Day and a G2 High Performer.\n\n- It runs nearly everywhere: web, iOS, Android, macOS, Windows, and Linux, plus browser extensions for Chrome, Firefox, and Edge.\n- AI agents can be trained on files, URLs, Google Drive, Dropbox, or project data, then published on a public page or embedded on your website.\n- Automations support branching, looping, filtering, and automatic retries, and they connect to more than 100 integrations.\n- Bring-your-own-key support on paid plans lets you use your own OpenAI, Anthropic, or Google Vertex AI accounts.\n- Apps built in Genesis can be exported to a GitHub repository on higher plans, so you are not locked in.\n\nIt is best for small teams, solo operators, and agencies that want projects, AI agents, and lightweight internal tools in one place. Tip: browse the community gallery and clone an app close to what you need, then adjust it with prompts, which is usually faster than starting from a blank request. A free plan is available.",
+    "sources": [
+      "https://www.taskade.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tavily",
+    "moreContext": "Tavily has become one of the standard ways to give AI agents live access to the web, offering search, extraction, crawling, site mapping, and in-depth research through one developer-friendly API. Its strength is that results arrive cleaned and structured for language models rather than for human browsing, which saves builders a lot of parsing work. The company says more than three million developers use it, and in February 2026 Nebius announced an agreement to acquire Tavily, with the team and brand continuing under founder and CEO Rotem Weiss.\n\n- Requests pass through security layers designed to block personal data leakage, prompt injection, and malicious sources, an important safeguard for autonomous agents.\n- Compliance credentials include SOC 2, ISO 27001, GDPR, and zero data retention options.\n- The Research endpoint runs multi-step web investigations for you, while Crawl and Map handle whole-site extraction and URL discovery.\n- It plugs into popular agent frameworks and coding tools, and LangChain and JetBrains are among the companies that have spoken publicly about using it.\n- The company reports a median search latency of around 180 milliseconds, fast enough for interactive chat experiences.\n\nIt is best for developers building RAG pipelines, research agents, and AI products that need current information. Tip: use domain filters and a recency window on queries for fast-moving topics, which keeps answers grounded in the most relevant, up-to-date sources. A free tier of API credits makes it easy to prototype.",
+    "sources": [
+      "https://tavily.com",
+      "https://nebius.com/newsroom/nebius-announces-agreement-to-acquire-tavily-to-add-agentic-search-to-its-ai-cloud-platform",
+      "https://siliconangle.com/2026/02/10/ai-infrastructure-giant-nebius-buys-agentic-search-startup-tavily/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tavus",
+    "moreContext": "Tavus now describes itself as an AI research lab focused on what it calls human computing, and its flagship idea is the PAL: a real-time, face-to-face AI agent that can listen, see, and respond with natural expression. Founded in 2020 by Hassaan Raza and Quinn Favret, the San Francisco company raised a Series B led by CRV in November 2025, with Sequoia Capital and Y Combinator among its backers. The company says more than 150,000 developers build on its platform.\n\n- Its model family covers each part of a conversation: Sparrow for turn-taking, Phoenix for lifelike facial rendering, and Raven for perceiving voice, video, and screen context.\n- PALs can join Zoom, Google Meet, and Microsoft Teams calls, present slide decks, and guide users through websites with screen sharing.\n- Magic Canvas lets an agent generate charts, questionnaires, and scheduling pages on screen during a conversation.\n- A knowledge base and memory across sessions keep answers grounded and personal, and you can bring your own LLM if you prefer.\n- PAL Maker offers a no-code way to launch an agent, while the Conversational Video Interface API gives developers full control.\n\nIt is best for product teams building AI interviewers, sales coaches, tutors, and customer-facing concierges, as well as enterprises that want a managed deployment. Tip: prototype your use case in PAL Maker first to test tone and flow, then move to the API once you know exactly what the agent needs to do. A free starting plan is available.",
+    "sources": [
+      "https://www.tavus.io",
+      "https://www.axios.com/pro/enterprise-software-deals/2025/11/12/agentic-ai-tavus-human-40-milion-crv",
+      "https://www.clay.com/dossier/tavus-funding"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "teachany",
+    "moreContext": "TeachAny goes much further than a quiz maker: it bundles dozens of small, focused tools that cover planning, practice, differentiation, and even the paperwork side of teaching. Beyond quizzes, rubrics, and lesson plans, it includes worksheet and exercise generators, math spiral review, flashcards, a text leveler, and helpers for report card comments and recommendation letters. That breadth makes it a handy everyday companion for busy educators.\n\n- The Text Leveler rewrites a passage for different reading levels, which makes differentiated instruction in mixed-ability classes far less time-consuming.\n- Report card comment, thank you note, and recommendation letter tools take on the writing tasks that often eat up evenings.\n- Activity generators for coloring pages, mazes, mirror drawing, and flipbooks are especially useful for younger learners and early finishers.\n- Coverage spans core subjects such as math, English, science, history, and geography.\n- It serves parents, self-learners, and institutions as well as classroom teachers, so the same tools work for homeschooling and tutoring.\n\nIt is best for K-12 teachers, tutors, and homeschooling parents who want quick, editable drafts across many kinds of classroom material. Tip: generate a lesson plan first, then reuse the same topic in the Quiz, Rubric, and Worksheet generators so every resource for a unit lines up. You can start free without a credit card, and paid tools include a free trial.",
+    "sources": [
+      "https://www.teachany.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tensor-art",
+    "moreContext": "Tensor.Art gives anyone access to the open-source image model ecosystem without owning a powerful graphics card. Everything runs in the cloud, from simple prompts to advanced node-based pipelines, and its community library spans Stable Diffusion, FLUX, and Wan models shared by creators. For hobbyists who want to explore community checkpoints and LoRAs, it removes most of the setup pain.\n\n- Online LoRA training lets you upload a small set of reference images and let the platform handle the compute, a rare convenience for a free-to-start service.\n- ComfyUI workflows can be imported and run directly in the browser, so advanced pipelines work without a local install.\n- Built-in tools cover upscaling, background removal, face swapping, detail enhancement, and ControlNet for precise structural control.\n- Creators can share models with the community and earn from usage, which keeps fresh styles flowing into the library.\n- Video models such as Wan sit alongside image models, letting you experiment with motion in the same workspace.\n\nIt is best for AI art enthusiasts, model creators, and designers who want to test many styles quickly. Tip: always check the license of each model or LoRA you use before taking images into commercial work, since terms vary by creator, not just by platform. Daily free credits make it easy to get started, with paid plans for heavier use.",
+    "sources": [
+      "https://tensor.art",
+      "https://www.toolsforhumans.ai/ai-tools/tensor-art",
+      "https://book.st-hakky.com/en/data-science/tensor-art-commercial-use-guide"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "textcortex",
+    "moreContext": "TextCortex has grown from a browser-based writing helper into an AI workspace built for companies that want AI grounded in their own documents. Its standout quality is a strong commitment to European data protection: the company says its services, including third-party AI models, are hosted in the EU on GDPR-compliant servers, and that customer data is never used to train or fine-tune models. That makes it an appealing choice for privacy-minded teams in Europe and beyond.\n\n- Knowledge bases let you upload documents and ask ZenoChat questions about them, with answers that reference their sources.\n- Model choice spans several providers, and the company says it offers recent Claude, GPT, and Gemini models in one place.\n- The interface and templates are available in many languages, including Spanish, Italian, Dutch, Swedish, Japanese, and Korean.\n- A large template library covers everyday tasks such as getting past writer's block, summarizing, and drafting.\n- The browser extension brings the assistant into the websites where you already write, so you do not need to switch tabs.\n\nIt is best for European businesses, multilingual teams, and professionals who need an AI assistant that respects strict data policies. Tip: organize your knowledge bases by team or project rather than uploading everything into one, which keeps answers focused and source citations easy to verify. A free plan lets you try it before upgrading.",
+    "sources": [
+      "https://textcortex.com",
+      "https://textcortex.com/templates/knowledge-bases"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "textio",
+    "moreContext": "Textio brings a decade of focus on one problem: the words companies use in hiring and performance management, and how those words shape who applies, who stays, and who grows. Its AI is purpose-built for HR writing and, according to the company, trained on hiring outcomes and performance reviews rather than general web text. Textio says a quarter of Fortune 500 companies have used it to improve job posts and feedback.\n\n- Textio Recruiting aligns job posts and recruiting messages with your employer brand while flagging biased or exclusionary phrasing.\n- Textio Feedback coaches managers in the moment so performance reviews are more specific, actionable, and growth-oriented.\n- Lavalier, its interview intelligence product, aligns interview questions to job requirements and documents feedback for each candidate.\n- It works directly in the browser or extends into applicant tracking systems and performance management tools, so guidance appears where HR teams already write.\n- Customers such as T-Mobile, Zendesk, and Micron have shared results publicly, with Micron reporting thousands of employees using it.\n\nIt is best for talent acquisition teams, HR leaders, and people managers at mid-size and large organizations that care about fair, consistent communication. Tip: roll out Textio Feedback ahead of a review cycle and pair it with a short manager training session, since the in-context suggestions teach better habits fastest when people are actively writing.",
+    "sources": [
+      "https://textio.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "thoughtspot",
+    "moreContext": "ThoughtSpot has rebuilt its search-first analytics heritage around a family of AI agents, led by Spotter, which answers natural-language questions using verified business definitions so results stay trustworthy across teams. Companion agents extend that idea to modeling, visualization, and code, which makes the platform feel less like a dashboard tool and more like an analyst on call. The company highlights recognition as a Leader from Gartner in 2026, along with G2 and Nucleus Research leader badges.\n\n- SpotterModel, SpotterViz, and SpotterCode bring AI assistance to data modeling, chart building, and developer work, not just question answering.\n- Embedded analytics lets product teams add governed, agent-powered insights to their own apps and customer portals with relatively little code.\n- Integrations with Slack, Salesforce, Google Slides, and mobile apps put answers where business users already spend their time, and it connects to tools like OpenAI and Claude.\n- Its connectors are designed to work with your existing data stack wherever it lives, so data does not need to move into a separate store.\n- Named customers include Sephora, Mattel, Lyft, Cisco, Worldpay, and Booking.com, which has spoken publicly about its analytics backlog shrinking after adoption.\n\nIt is best for mid-size and large organizations that want business users to self-serve answers without waiting on the data team, and for software companies embedding analytics in their products. Tip: invest early in clean, well-named business definitions in your semantic layer, since Spotter's answers are only as clear as the terms it is grounded on. A free trial is available.",
+    "sources": [
+      "https://www.thoughtspot.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tidio",
+    "moreContext": "Tidio pairs an approachable live chat and help desk with Lyro, an AI agent designed to resolve routine questions on its own and hand off gracefully when it is unsure. That honesty about its limits is a real strength, because customers get quick answers without being trapped in a loop. The company says more than 300,000 businesses use Tidio, and it reports strong ratings on G2, Capterra, and the Shopify App Store.\n\n- Lyro answers from your website, help center, and product data, and Smart Actions let it handle tasks like order updates and lead qualification by connecting to other systems.\n- A shared inbox brings live chat, email, Instagram, Messenger, and WhatsApp together, with one customer history per person.\n- Lyro detects each customer's language across chat and email, which helps stores that sell internationally.\n- The Flows builder includes more than 40 ecommerce templates for cart recovery, order management, and lead capture.\n- More than 120 integrations, Zapier support, and an open API connect it to platforms such as Shopify, WordPress, and Wix.\n\nIt is best for small and mid-size online stores and service businesses that want fast AI support without an enterprise budget. Tip: feed Lyro your most complete help center articles first, then review its unanswered questions each week to spot gaps worth documenting. A free plan is available, and security credentials include SOC 2 Type 2 and GDPR compliance.",
+    "sources": [
+      "https://www.tidio.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "timely",
+    "moreContext": "Timely takes a refreshingly respectful approach to automatic time tracking. Its Memory tracker quietly records work across web and desktop apps, but the company says it uses no keystroke logging, screenshots, or surveillance, and only entries a person approves are ever shared with the team. That privacy-first design helps it earn trust from the people being tracked, not just from managers. Note that the product now lives at timely.com.\n\n- Integrations cover tools teams use every day, including Jira, Asana, GitHub, Linear, ClickUp, monday.com, Trello, Zoom, Microsoft Teams, Gmail, Google Calendar, and Outlook.\n- A QuickBooks connection and billable rates link tracked hours to margins, so agencies can see which projects are truly profitable.\n- The People dashboard shows team capacity at a glance, and time planning uses real data to set realistic workloads and deadlines.\n- Enterprise features include ISO 27001 compliance, GDPR readiness, single sign-on, and role-based access.\n- A public API and Zapier support make it easy to feed time data into reporting or billing workflows.\n\nThe company says more than 5,000 businesses in 160 countries rely on it, and it is a natural fit for agencies, consultancies, and professional services teams that bill by the hour. Tip: connect your calendar and main project tool on day one, since those sources give the AI the context it needs to draft accurate entries. A 14-day free trial includes every feature and needs no credit card.",
+    "sources": [
+      "https://timelyapp.com",
+      "https://www.timely.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "tldv",
+    "moreContext": "tl;dv has grown from a simple recorder into a meeting intelligence tool that helps whole teams learn from their calls, not just the people who attended. It works across Google Meet, Zoom, and Microsoft Teams, and its multi-meeting reports surface patterns that no single summary would reveal. Registered in Germany as tldx Solutions GmbH, the company says it has more than two million users and has won a Product Hunt Golden Kitty Award.\n\n- Data is hosted in the EU, with GDPR and SOC 2 compliance, ISO 27001-certified data centers, and AES-256 encryption.\n- The company states it will never use customer recordings to train AI, and private hosted AI is available on request.\n- Transcription works in more than 30 languages and dialects, with translation of transcripts and summaries, and the interface itself is localized in seven languages.\n- Sales coaching features analyze playbook adherence and objection handling, and curated clips make onboarding new reps faster.\n- Note templates support frameworks such as MEDDIC or your own format, and follow-up emails and next-step tasks are drafted for review.\n\nIt is best for startups, sales teams, and customer success groups that want shared meeting knowledge without an enterprise price tag. Tip: set up a recurring multi-meeting report for a theme you care about (for example, competitor mentions or pricing objections) so insights arrive in your inbox without anyone digging through recordings. Its Free Forever plan needs no credit card.",
+    "sources": [
+      "https://tldv.io"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "topaz-labs",
+    "moreContext": "Topaz Labs has spent roughly two decades building image and video enhancement software, and its technology has reached a level the company describes as Emmy Award winning, with a Technology and Engineering Emmy recognizing work on TV catalog restoration. Based in Texas, it has expanded from desktop apps into web, mobile, and cloud rendering, while keeping unlimited local processing in most desktop plans. The company says more than a million photographers and filmmakers trust its tools.\n\n- Topaz Video offers specialized models such as Starlight, Proteus, and Iris for upscaling and restoring footage, with optional cloud credits for heavy jobs.\n- Gigapixel can enlarge images dramatically using models tuned for fidelity and face recovery, which is ideal for large prints.\n- Topaz Photo bundles denoise, sharpen, upscale, lighting adjustment, face recovery, and a healing brush into one workflow.\n- An Adobe Premiere panel, web apps, and an iPhone app mean you can enhance media on Mac, Windows, in the browser, or on the go.\n- Free browser tools for unblurring, face enhancement, sharpening, and video upscaling let you test the quality before buying.\n\nIt is best for photographers, wedding and event shooters, archivists, and video editors restoring old or low-resolution footage. Note that the lineup has moved to subscriptions, with Topaz Studio bundling every app. Tip: run a short test clip or crop through several models first and compare, since the best model depends heavily on the source material's noise and detail.",
+    "sources": [
+      "https://www.topazlabs.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "trae",
+    "moreContext": "Trae, the AI coding environment from ByteDance, has grown from a budget-friendly editor into a platform built around autonomous agents. Its SOLO mode lets an AI agent plan, write, run, and verify features across the editor, terminal, browser, and documentation in one workspace, aiming to carry a request from requirements through to deployment. It also aims to be approachable for product managers, designers, and founders who want to turn a plain-language idea into a working app.\n\n- SOLO Coder adds a plan view for complex tasks, so you can review the agent's approach before it starts changing code.\n- A configurable Code Review setting lets you review every change, only the latest changes, or skip review, matching how much control you want.\n- Frontier models come built in, and you can also connect custom models, giving flexibility as the model landscape shifts.\n- Safety touches such as a second confirmation before the AI deletes files show care for developers' work.\n- Alongside the desktop IDE, TRAE Web offers a browser-based way to work with the same agentic tools.\n\nIt is best for indie developers, students, and prototypers who want strong AI coding help at a low cost, and for non-engineers experimenting with agent-built apps. Tip: start complex work in plan mode and refine the plan before execution, since a clear plan leads to cleaner, more reviewable changes. A free tier is available, and teams with strict data policies should review its privacy terms before adopting it for proprietary code.",
+    "sources": [
+      "https://www.trae.ai",
+      "https://trae.ai/changelog",
+      "https://www.morphllm.com/comparisons/trae-vs-cursor"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "transmonkey-image-translator",
+    "moreContext": "TransMonkey Image Translator handles a task that usually takes a designer: it reads text in an image with OCR, translates it, erases the original wording, and redraws the translation on the same background, so you download a finished image instead of a text file to retype. It is part of a broader TransMonkey suite that also covers documents, audio, video, and subtitles under one account. That makes it a practical one-stop shop for teams localizing visual content.\n\n- It accepts JPG, PNG, and WebP files at high resolution, which covers most product photos, screenshots, and marketing graphics.\n- A Chrome extension can translate image text across a whole webpage with one click, replacing the images in place.\n- The document translator keeps original layouts for PDF, Word, PowerPoint, Excel, and EPUB files, and it also works with Google Docs, Slides, and Sheets.\n- Video tools add transcription, subtitles, and dubbing, so a single campaign can be localized across formats without switching services.\n- Pricing is simple to understand, with each image costing one credit and both pay-as-you-go and subscription options available.\n\nIt is best for e-commerce sellers, marketers localizing ads and listings, and travelers decoding menus or signs. Tip: use clean, high-resolution source images with clear contrast between text and background, since better OCR input leads to cleaner redrawn translations. New users receive free trial credits to test it.",
+    "sources": [
+      "https://transmonkey.ai/image-translator"
+    ],
+    "status": "ok"
+  }
+]

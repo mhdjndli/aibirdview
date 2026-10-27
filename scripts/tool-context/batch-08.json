@@ -1,0 +1,301 @@
+[
+  {
+    "slug": "layer-ai",
+    "moreContext": "Layer has grown well beyond image generation into what it now calls an agentic creative engine, a single workspace where game and marketing teams produce images, video, 3D models, audio, and even interactive playable ads. Its roots in live-ops game art still show: the platform is built around keeping output on-brand and on-style across hundreds of variations, which is exactly what studios shipping weekly events and ad creative need.\n\n- It curates a large catalog of third-party image, video, and 3D models, so teams can pick the right engine for each job without juggling separate subscriptions.\n- Custom LoRA training lets a studio teach the platform its own art style, keeping characters and props consistent from one batch to the next.\n- Node-based Workflows and ready-made Apps turn multi-step pipelines (generate, upscale, reframe, export) into repeatable one-click routines.\n- It plugs into the tools artists already use, including Photoshop, Figma, Blender, Unity, and Unreal Engine, plus a REST API, TypeScript SDK, and an MCP server for AI coding assistants.\n- Enterprise buyers get SOC 2 Type II, SSO, role-based access, and a stated commitment that customer data is never used to train foundation models.\n\nLayer is best suited to mobile and live-ops game studios, along with performance marketing teams that need a steady stream of ad creative in a locked visual style. A practical tip: train a style model on a tight, well-curated set of existing assets first, then build a saved Workflow around it so every new batch starts from the same foundation.",
+    "sources": [
+      "https://layer.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "le-chat",
+    "moreContext": "Mistral's assistant has entered a new chapter: in May 2026 the company renamed Le Chat to Vibe and expanded it from a fast chatbot into a work and coding agent, while keeping chat.mistral.ai as the front door and carrying over existing users' history and settings. It remains one of the strongest choices for anyone who wants a capable assistant from a European AI lab with serious options for data residency.\n\n- The product is now organized into Chat for quick conversations, Work for multi-step tasks across connected apps, and Code for development in a terminal or editor.\n- More than 100 connectors (email, calendar, Slack, GitHub, Jira, and more) plus full MCP compatibility let it act on the tools a team already relies on.\n- Deep research pulls from the web, internal documents, and connected services to produce sourced analysis rather than unsupported summaries.\n- Workflows can be saved as reusable agents and set to run on a trigger or a schedule, with human checkpoints for bulk approvals.\n- Enterprises can deploy on premises, in a private cloud, or on Mistral's own cloud with full data residency, and fine-tune on their own data.\n\nA free plan covers everyday questions, with Pro, Team, and Enterprise tiers adding deeper reasoning, shared workspaces, and admin controls. It is a natural fit for European companies, privacy-conscious professionals, and developers who want one assistant for both documents and code. Tip: connect your calendar and email early, since the Work mode shines most when it can see the context behind a task.",
+    "sources": [
+      "https://mistral.ai/products/le-chat",
+      "https://the-decoder.com/mistral-rebrands-lechat-as-vibe-betting-its-chatbots-future-is-as-a-full-blown-work-agent/",
+      "https://docs.mistral.ai/vibe/overview",
+      "https://en.wikipedia.org/wiki/Mistral_Vibe"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "lemlist",
+    "moreContext": "Built by the French software company lempire, lemlist has matured from a cold email tool known for personalized images into a full outbound platform that finds leads, enriches them, and runs campaigns across nearly every channel a sales rep touches. The company says more than 20,000 sales teams run their outbound on it, and its G2 rating sits well above average for the category.\n\n- A single campaign can mix email, LinkedIn messages and voice notes, in-app calls, WhatsApp, and SMS, so reps no longer stitch together separate tools.\n- Every seat includes lemwarm, the company's automated warm-up tool, alongside a deliverability hub that monitors mailbox and domain health.\n- Intent signal agents watch for high-intent events and suggest which leads to contact and what to say.\n- Native integrations with HubSpot, Salesforce, Pipedrive, and Attio, plus an API and an MCP server, keep CRM records in sync.\n- A unified inbox gathers replies from every sender and channel in one place, which makes follow-up far easier for teams running many mailboxes.\n\nlemlist is a strong match for SDR teams, agencies, and founders doing their own outbound who care about deliverability as much as copy. A 14-day free trial lets you test the full workflow before committing. Tip: let lemwarm run on a new mailbox for a couple of weeks before launching a large sequence, and use the AI Context Center to feed in your positioning so personalization stays accurate.",
+    "sources": [
+      "https://www.lemlist.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "leonardo-ai",
+    "moreContext": "Leonardo started in Australia as a tool for game asset creation and has become one of the most complete creative generation platforms available, which is a big reason Canva acquired it in 2024. Canva has said Leonardo continues to operate independently, and its technology also feeds into Canva's own Magic Studio features.\n\n- Its in-house Lucid Origin model, launched in 2025, targets Full HD and cinematic results, while the earlier Phoenix model remains a favorite for close prompt adherence.\n- Alongside its own models, Leonardo offers a rotating catalog of leading third-party image and video models, so you can compare engines without leaving one workspace.\n- Image-to-video and text-to-video tools let creators animate stills and storyboard motion directly from the same project.\n- A developer API makes it possible to wire Leonardo generation into apps, pipelines, and internal tools.\n- Canva has stated that user content is not shared with Leonardo unless users opt in, which is a reassuring detail for brand teams.\n\nLeonardo is a great fit for game artists, marketers, and content creators who want control over style and composition rather than a single black-box generator. The daily free token allowance makes it easy to explore before upgrading. Tip: try the same prompt across Lucid Origin, Phoenix, and a third-party model, then train or pick a style preset from the best result so later generations stay consistent.",
+    "sources": [
+      "https://leonardo.ai",
+      "https://aibusiness.com/verticals/canva-acquires-leonardo-ai-to-boost-image-generation-capabilities",
+      "https://dupple.com/learn/how-to-use-leonardo-ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "lex",
+    "moreContext": "Lex earned a devoted following as a writing app that treats AI as an editor rather than a ghostwriter, and its homepage says more than 300,000 writers have used it, with teams at companies such as Stripe and Canva among them. One important note for readers: as of our latest check, the Lex homepage states that it is no longer accepting new customers, although existing accounts continue to work.\n\n- Checks review a draft against specific goals, flagging places where an argument is unclear or a section misses its purpose.\n- Style Guides let writers and teams encode their own voice and rules so feedback reflects house standards, not generic advice.\n- A Versions feature lets you try alternate phrasings without losing the original text, which encourages experimentation.\n- Live collaboration works through a shared link with one-click login, and finished pieces can be published as read-only pages.\n- Lex also documents integrations and a developer API in its help center, a rare touch for a minimalist editor.\n\nFor existing users, Lex remains a thoughtful place for essays, newsletters, and long-form drafts where you want sharp critique without surrendering your voice. Newcomers should confirm availability on the site before planning around it. Tip for current users: write a short Style Guide describing your audience and tone first, then run Checks on each draft, since the feedback becomes noticeably more specific once Lex knows what you are aiming for.",
+    "sources": [
+      "https://lex.page",
+      "https://lex.page/about"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "lexica",
+    "moreContext": "Lexica was one of the first places people went to learn how AI image prompting really works. Founded by Sharif Shameem in 2022 as a searchable library of Stable Diffusion images and their prompts, it became an informal school for prompt craft, and it later added its own generator, Lexica Aperture, so inspiration and creation live side by side.\n\n- Every image in the gallery comes with the prompt behind it, which makes Lexica a practical way to study how phrasing, style words, and modifiers shape results.\n- Reverse image search lets you upload a reference and find visually similar AI images, a fast route to the vocabulary for a look you like.\n- The Aperture model is widely praised for photorealistic output, and reviewers have compared its realism favorably with better-known generators.\n- A simple search API returns image results as JSON, and a Microsoft Power Platform connector exists for people building automations around it.\n- History and Likes views make it easy to collect references into a personal mood board over time.\n\nLexica is best for designers, illustrators, and prompt learners who want to see many approaches to an idea before generating their own. A free tier is available for trying the generator. Tip: search for a subject you care about, open the three or four results closest to your vision, and combine the strongest phrases from their prompts into a new one for Aperture.",
+    "sources": [
+      "https://lexica.art",
+      "https://learn.microsoft.com/connectors/lexicaip/",
+      "https://www.tooljunction.io/ai-tools/lexica"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "limitless",
+    "moreContext": "Limitless deserves credit for proving that a small wearable could make personal memory genuinely searchable. Led by Dan Siroker, the team behind the earlier Rewind app, it built a pendant and companion apps that turned everyday conversations into transcripts, summaries, and answers you could ask about later. Readers should know the current situation, though: the company has been acquired by Meta, and its website says the Pendant has not been sold since December 5, 2025.\n\n- Existing Pendant owners are supported through 2026 and, according to the company, now receive the Unlimited plan at no charge.\n- Previously recorded meetings remain accessible in the desktop and web apps through 2026, even though new recording there has stopped.\n- The app includes tools to export all of your data or delete your account entirely, a thoughtful option for anyone moving on.\n- Mobile apps remain listed on the App Store and Google Play for existing customers.\n- The team's experience with conversation capture is now going toward AI-enabled wearables at Meta.\n\nService has ended in several regions, including the EU and the UK, so availability depends on where you live. For current owners outside those regions, Limitless is still a capable archive of past conversations and meetings. Tip: export your full history now and keep a local copy, so your recordings and summaries stay with you whatever happens to the service after 2026.",
+    "sources": [
+      "https://www.limitless.ai"
+    ],
+    "status": "possibly-defunct"
+  },
+  {
+    "slug": "lindy",
+    "moreContext": "Lindy has shifted its pitch from building individual automations to giving teams an AI employee that learns how they work and then gets tasks done, not just drafted. It meets people where they already communicate, so you can assign work from Slack, by email, or even over iMessage when you are away from your desk.\n\n- Its role pages cover a wide spread of jobs, from inbox and calendar management to bookkeeping, recruiting, customer support, SEO, and paid ads reporting.\n- Scheduled routines handle recurring work such as a daily brief or a weekly report without anyone remembering to ask.\n- Lindy's memory is stored in plain files that users can open and edit, which gives unusual transparency into what the assistant knows.\n- Any workflow can be saved as a skill and shared across the team, so one person's good process becomes everyone's.\n- On security, the company states SOC 2 Type II, GDPR, HIPAA, and PIPEDA compliance, and actions that send or write can require approval first.\n\nLindy suits founders, operations leads, and small teams that want to hand off repetitive coordination work without writing code. A free start with trial credits and no card required makes it easy to test on real tasks. Tip: begin with one recurring routine, like a morning brief from your inbox and calendar, and turn on approvals for outgoing messages until you trust how it handles your tone.",
+    "sources": [
+      "https://www.lindy.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "liner",
+    "moreContext": "Liner began in Seoul in 2015 as a web highlighter and has grown into a family of research agents now centered on liner.com. Its biggest strength is a steady focus on trustworthy sources, which shows in features built for students and academics rather than casual search, and the company reports a user base in the tens of millions.\n\n- Liner Scholar, launched as a standalone service in early 2026, draws on a corpus the company says exceeds 460 million academic records.\n- Specialized tools include a hypothesis generator and evaluator, a citation recommender, literature review support, and even a simulated peer review.\n- Answers carry line-by-line citations, and references can be formatted in APA, MLA, or Chicago style with a click.\n- Apps are available for iOS, Android, Mac, and Windows, plus Chrome and Edge extensions, so highlights and answers follow you across devices.\n- Developers can tap Liner through its API and Search and Scholar MCP servers.\n\nLiner is best for students, graduate researchers, and analysts who need answers they can defend with sources. A newer companion, Liner Write, helps turn research into polished drafts. Tip: switch to Scholar mode whenever accuracy matters, then open the cited papers directly from the answer to confirm each claim before it goes into your own work.",
+    "sources": [
+      "https://liner.com",
+      "https://liner.com/news/liner-launches-liner-scholar",
+      "https://metronome.com/pricing-index/liner"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "linguix",
+    "moreContext": "Linguix stands out among grammar checkers for pairing writing correction with productivity features that business teams use every day. Beyond fixing mistakes, it helps whole departments sound consistent and saves time on the messages they send over and over, and the company says it is trusted by more than 450,000 users.\n\n- It checks writing in seven languages, including English, French, German, Spanish, Portuguese, Italian, and Polish, which is broader coverage than many rivals.\n- A Content Score rates text on readability factors such as sentence length, vocabulary complexity, and passive voice, giving writers a quick sense of clarity.\n- Beyond the Chrome and Edge extensions, there is a web editor and a Linguix for Figma app, so designers can proofread copy inside their mockups.\n- Team management dashboards report error counts, readability, and performance stats, with email summaries for managers.\n- A set of free tools, including grammar checkers for several languages and an AI content detector, is available on the site.\n\nLinguix is a good fit for sales, marketing, and customer support teams that write high volumes of email and chat, and for multilingual professionals. You can start with a free check before choosing a paid plan. Tip: build a small library of shortcuts for your most common replies and pair it with a team style guide, since together they cut repetitive typing while keeping every message on-brand.",
+    "sources": [
+      "https://linguix.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "listnr",
+    "moreContext": "Listnr has become a well-rounded voice studio for creators who need natural narration without booking a recording booth. It earned a Golden Kitty and a Product of the Day spot on Product Hunt, and its focus has widened from simple text to speech toward full production for audiobooks, courses, and video voiceovers.\n\n- Style prompts, pacing and pause controls, and custom pronunciations give fine-grained direction over how each line is delivered.\n- Multi-speaker scenes make it possible to produce dialogue, interviews, or explainer conversations from a single script.\n- Long-form narration stays consistent across chapters or training modules, which matters for audiobooks and e-learning.\n- Voice cloning creates a reusable voice from an approved recording, with a consent-based approach the company emphasizes.\n- Enterprise customers can arrange dedicated API throughput and custom integrations with their production stack.\n\nThe site lists organizations such as INSEAD and Stanford Medicine among its users, and a free trial lets you test voices before paying. Listnr is a strong pick for podcasters, educators, YouTubers, and marketing teams producing audio in many languages. Tip: set up a pronunciation list for brand names and technical terms before generating a long project, so you avoid re-rendering whole chapters later.",
+    "sources": [
+      "https://listnr.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "litmaps",
+    "moreContext": "Litmaps makes literature discovery feel less like digging and more like exploring a map. Starting from a single seed paper, it lays out the connected research by date and citation count, so you can quickly see which works are foundational and which are recent. The company says it is used by more than 900,000 researchers across about 150 countries.\n\n- Seed maps reveal relevant papers that keyword searches often miss, which is especially helpful at the start of a thesis or review.\n- Monitoring alerts tell you when new papers appear around your topic, so a literature review stays current over months of work.\n- Maps can be shared with advisors, students, and collaborators, giving everyone the same view of the field.\n- A genuinely useful free plan includes basic search and a couple of maps, while Pro removes limits and offers an education rate for academic email addresses.\n- Team, classroom, lab, and institution options exist, along with teaching resources for instructors who want to bring it into coursework.\n\nLitmaps is ideal for graduate students, academic researchers, and R&D professionals who need to understand a field quickly and keep up with it. Tip: seed your first map with two or three papers you already trust rather than one, since multiple seeds give the algorithm a sharper picture of your topic and surface more relevant suggestions.",
+    "sources": [
+      "https://www.litmaps.com",
+      "https://www.litmaps.com/pricing"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "livelore",
+    "moreContext": "LiveLore offers something refreshingly different from the usual AI content site: a free horror library where readers help steer the plot. Its tagline frames the project as fiction that is collectively imagined, and it backs that up with transparent voting rules and an honest label on every page about how each story was made.\n\n- Beyond the weekly Wednesday serial Noctur, the library spans campfire tales written to be read aloud, bedtime and Halloween stories, urban legends, poems, riddles, and very short horror.\n- Voting rounds show a running tally, publish their tie and no-vote rules up front, and keep closed results on record, so readers can see exactly how each turn was decided.\n- Each page discloses whether a person reviewed the text and whether a revision followed a reader vote, a level of AI transparency few fiction sites attempt.\n- Many stories include a Listen option with the audio length shown, which makes them easy to enjoy on a commute or around a fire.\n- An interactive mystery pilot, The Last Collection, experiments with a more puzzle-driven format alongside the horror.\n\nLiveLore is a fun pick for horror fans, parents looking for spooky bedtime stories, and anyone curious about community-driven storytelling. No account is needed to read or vote. Tip: follow Noctur from the first chapter and check each ballot's deadline on the story page, because the choices compound and joining early gives you the biggest hand in where the story goes.",
+    "sources": [
+      "https://livelore.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "livephotonow",
+    "moreContext": "LivePhotoNow keeps photo animation refreshingly simple: it runs entirely in the browser on phones and computers, asks for no app install, and lets you dial in exactly how much a portrait should move. That combination of ease and control makes it a pleasant way to bring a favorite picture to life in minutes.\n\n- Six motion levels range from a barely visible breath to a clear, lively movement, so you can stay subtle for a memorial portrait or go playful for social posts.\n- Companion tools cover talking photos with lip-synced speech, dancing photos, animating old family pictures, and converting live photos to video.\n- Paid downloads are HD MP4 files without a watermark, ready to share on any platform.\n- Credit packs carry no subscription, and the site says failed generations are refunded to your balance automatically.\n- Uploads are described as used only to make your video, and the site asks that people shown in a photo have agreed to be included, a responsible touch for a face-animation tool.\n\nLivePhotoNow is ideal for families reviving old photos, social creators wanting quick motion clips, and anyone who wants a one-off animation without a monthly plan. A free watermarked preview lets you test it first. Tip: use a clear, front-facing photo of a single person in good light and the highest resolution you have, since the site notes sharper inputs produce smoother, more natural motion.",
+    "sources": [
+      "https://livephotonow.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "llamaindex",
+    "moreContext": "LlamaIndex has become one of the most trusted names for getting real business documents into AI applications, and its center of gravity has shifted toward LlamaParse, a commercial platform for agentic document processing that sits alongside the popular open-source framework. The company reports more than a billion documents processed and tens of millions of monthly package downloads.\n\n- LlamaParse handles more than 50 file types, including complex tables, charts, and handwriting, which are exactly the cases that break simpler parsers.\n- Extract pulls structured fields from documents using a schema you define, with no model training required, while Split and Classify sort documents using plain-language rules.\n- LiteParse is a free, open-source parser that runs locally through npm with no cloud calls or LLM tokens, a nice option for privacy-sensitive work.\n- Enterprise readiness includes SOC 2, HIPAA, and GDPR compliance plus VPC deployment, and the company names customers such as KPMG, PepsiCo, and Intel.\n- A monthly free credit allowance covers roughly a thousand pages, enough to prototype a full pipeline before paying.\n\nLlamaIndex is best for developers and data teams building retrieval, extraction, or document agent systems over contracts, reports, invoices, and research files. Its active GitHub and Discord community is a real asset when you hit edge cases. Tip: run a sample of your messiest documents through LlamaParse early and inspect the output, since parsing quality usually decides how good your downstream answers will be.",
+    "sources": [
+      "https://www.llamaindex.ai"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "logoai",
+    "moreContext": "LogoAI has been producing logos since 2019, and it has grown from a single logo generator into a broader branding suite that covers identity, motion, and marketing visuals in one place. The company says it is trusted by more than nine million businesses, and its strength is turning a name and an industry into a cohesive visual system rather than a lone mark.\n\n- Concepts arrive in a wide range of styles, from bold and flat to vintage badges, luxury serifs, line art, and illustrated marks, with several AI models working in parallel.\n- The brand kit bundles color systems, typography, a live brand preview, and short brand videos and logo animations.\n- Social assets such as avatars, banners, and post templates are generated in platform-ready sizes.\n- Exports come in SVG, PNG, and PDF, so files are ready for both print and the web.\n- A newer Design Studio adds AI image and video generation with batch runs and access to more than 20 models.\n\nNote that the site's current pricing page shows a low-cost trial leading into a monthly plan, so check the terms if you remember an older one-time model. LogoAI is a good fit for founders, side projects, and small businesses that want a full starter identity fast. Tip: enter a specific industry and a short description of your audience, since the generator uses that context to shape style choices, and it is worth searching trademark databases before you commit to a final mark.",
+    "sources": [
+      "https://www.logoai.com",
+      "https://www.logoai.com/pricing"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "looka",
+    "moreContext": "Looka began life in Toronto in 2016 as Logojoy and rebranded in 2019, when it had already helped millions of entrepreneurs create logos and wanted to signal that it offered far more than a logo maker. That shift shows in the product today: it treats a logo as the starting point for an entire, consistent small-business identity.\n\n- Designing and exploring logos is free, and you pay only when you are ready to download files or the Brand Kit.\n- The Brand Kit generates more than 300 matching templates, covering business cards, social profiles, email signatures, letterheads, and more.\n- A website builder tied to the Brand Kit lets you create and host a site that already uses your colors, fonts, and logo.\n- Because every asset flows from the same brand settings, updating your identity keeps all of the materials visually aligned.\n- Reviews on G2 and coverage from outlets such as TechRadar consistently highlight how approachable the editor is for non-designers.\n\nLooka is best for new founders, freelancers, and small shops that need a polished brand quickly and on a modest budget. Tip: spend extra time on the preference step, picking a few sample logos and color palettes you genuinely like, because those choices shape every concept the AI generates and save you rounds of tweaking later.",
+    "sources": [
+      "https://betakit.com/logojoy-rebrands-to-looka-expands-product-offerings/",
+      "https://www.g2.com/sellers/looka",
+      "https://www.techradar.com/pro/what-is-looka-everything-we-know-about-the-ai-logo-and-brand-building-tool",
+      "https://app.dealroom.co/companies/logojoy"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "looppanel",
+    "moreContext": "Looppanel has expanded from automatic interview notes into an end-to-end platform for user research, covering recording, analysis, a searchable repository, and now participant recruiting. It is built to shrink the slowest part of research, turning hours of calls into themes teams can act on, and customers describe analysis cycles dropping from weeks to days.\n\n- It connects to Zoom and Google Meet, along with tools like Zendesk, so calls and customer conversations flow in without manual uploads.\n- The company says its transcripts reach about 95 percent accuracy across more than 96 languages, with translation built in for global studies.\n- Auto-Analysis groups findings by interview question or theme, giving researchers a structured starting point instead of a blank board.\n- Panel management handles recruiting, screening, and organizing participants alongside the research itself.\n- Security credentials include SOC 2 Type II and GDPR compliance, with SSO available for enterprise teams.\n\nLooppanel is a strong match for UX researchers, product managers, and designers who run frequent interviews and need to share evidence with stakeholders. A free trial makes it easy to test on a live study. Tip: upload your discussion guide before the first session so the analysis lines up with your actual questions, then share short video clips of key moments with your team, since customers say those snippets do the most to build alignment.",
+    "sources": [
+      "https://www.looppanel.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "loudly",
+    "moreContext": "Loudly, run by Berlin-based Loudly GmbH, has grown into a full music toolkit for creators and brands, going well past background tracks into vocals, remixing, mastering, and distribution. Its standout promise is clarity about rights: the company says its proprietary models are cleared by design, so output is cleared at the moment it is generated.\n\n- A family of in-house models covers different needs, from a fast model for demos to production-quality instrumentals and a model that writes full songs with lyrics and vocals.\n- SongDNA analyzes a track's audio, lyrics, and structure and turns that into prompts, pitches, and captions for promotion.\n- Production tools include AI mastering, a stem splitter, and a remixer for songs you own, so you can finish a track without leaving the platform.\n- Built-in distribution reaches more than 50 streaming and social platforms, and the company says artists keep all of their royalties.\n- A Music API lets apps and platforms embed generation, remixing, and mastering, and the company states that user uploads are not used for AI training.\n\nLoudly is a great fit for YouTubers, social video editors, indie artists, and product teams that need music at scale with fewer licensing worries. You can try all of the models free without a credit card. Tip: start by describing the mood and pacing of your video rather than a genre alone, then use the stem splitter to pull back drums or melody so the music sits neatly under voiceover.",
+    "sources": [
+      "https://www.loudly.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "lovable",
+    "moreContext": "Lovable, the Stockholm-born app builder, has become one of the most popular ways for non-developers to ship real software, and it keeps closing the gap between prototype and production. Since mid-2025 it has run in an agent mode by default, which inspects the codebase, debugs errors, and checks its own changes before showing them to you.\n\n- Lovable Cloud bundles a database, authentication, and file storage into every project, so you can launch without configuring a separate backend.\n- Integrations reported by reviewers include Stripe for payments, Shopify, Resend for email, and Figma design import, alongside GitHub sync for full code ownership.\n- It works with MCP in both directions: external assistants can drive Lovable, and Lovable can pull context from other MCP servers.\n- Security scanning added in 2026 checks database access policies and dependency vulnerabilities as part of the normal build flow.\n- Apps you build can include their own AI features through a built-in AI gateway, with the option to bring your own model keys.\n\nLovable is ideal for founders validating ideas, designers turning mockups into working products, and internal teams building tools without waiting on engineering. A free plan lets you try it on a real project. Tip: write a short product brief describing users, core screens, and data before your first prompt, and connect GitHub early so a developer can review or extend the code whenever you need.",
+    "sources": [
+      "https://lovable.dev",
+      "https://thectoclub.com/tools/lovable-review/",
+      "https://muz.li/blog/lovable-for-designers-the-complete-guide-to-building-apps-with-ai-2026/",
+      "https://theaiagentindex.com/agents/lovable"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "lovo",
+    "moreContext": "LOVO's Genny stands out by putting voice generation and video production in the same browser workspace, so a creator can write a script, voice it, cut the video, and add subtitles without switching tools. Its voices are especially praised for emotional range, which makes it a good choice when a flat narrator will not do.\n\n- Pro V2 voices accept natural-language direction, so you can ask for urgency, a whisper, or a specific character reading instead of adjusting sliders.\n- Each line can generate multiple takes, letting editors pick the best performance just as they would in a recording session.\n- Fine controls for pronunciation and emphasis help get brand names and technical terms right.\n- An AI script writer helps draft narration before you voice it, which speeds up explainer and marketing videos.\n- A developer API lets teams generate speech programmatically for apps and content pipelines.\n\nGenny is well suited to YouTubers, marketers, e-learning producers, and game developers who need expressive voiceovers in many languages. Reviewers note that English voices are the strongest, so test your target language before committing to a large project. Tip: write delivery directions into your prompts for key lines and generate a few takes of each, since picking the best one usually beats re-recording the whole script.",
+    "sources": [
+      "https://www.unite.ai/lovo-ai-review/",
+      "https://capterra.com/p/211776/LOVO/",
+      "https://tooliverse.ai/tools/lovo"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "ltx-studio",
+    "moreContext": "Built by Lightricks, the company behind Facetune and Videoleap, LTX Studio is one of the few AI video platforms designed around the full filmmaking process rather than single clips. It now lives under the ltx.io domain and combines planning tools, such as storyboards and pitch decks, with generation, editing, and voiceover in a single workspace.\n\n- A pitch deck generator turns your concept and storyboard into a presentable deck, which is handy for agencies and filmmakers selling an idea before production.\n- Lightricks' own LTX-2 model family has openly released weights that can be self-hosted, a real advantage for privacy-minded studios.\n- Higher-end LTX-2 tiers are reported to generate up to 4K output with synchronized audio.\n- Partner models, including Veo, FLUX, and Nano Banana, are available alongside LTX's own engines so you can match each shot to the best model.\n- Character locking, frame-level inpainting, and manual pan, tilt, and zoom controls give directors precise control over continuity and framing.\n\nLTX Studio is a strong pick for indie filmmakers, ad agencies, and creative teams who need to previsualize, pitch, and produce from one place. A free tier with starter credits lets you test the workflow. Tip: plan your shots in the storyboard and lock your characters before generating final footage, since reviewers note that careful planning makes the most of your credits.",
+    "sources": [
+      "https://ltx.studio",
+      "https://ltx.io/studio/events/whats-new-in-ltx-studio-ltx-2-3-motion-control-and-more",
+      "https://vantaige.io/ai-tool/ltx-studio",
+      "https://dupple.com/tools/ltx-studio"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "luaucheck",
+    "moreContext": "LuauCheck takes a thoughtful approach to AI code generation for Roblox: instead of just handing over a script, it explains what the code does, tells you exactly where it belongs in Studio, and shows which automated checks were actually run. That honesty makes it especially friendly for young developers and beginners learning how Roblox projects fit together.\n\n- You choose whether you need a server Script, a per-player LocalScript, or a ModuleScript, and the output is shaped to match that context.\n- Result badges cover Luau syntax, placement rules, a sandbox run, and a real Roblox run for saved server scripts, and each badge states whether that check ran.\n- A library of example scripts spans teleports, GUIs, admin commands, gamepasses, DataStores, leaderboards, and more, alongside practical placement guides.\n- A game idea generator produces concept cards that list the scripts each idea needs and link straight to the generator.\n- Failed automated checks do not use up your free allowance, and there are resources for teachers plus a Studio plugin.\n\nLuauCheck is ideal for new Roblox creators, students, and educators running game design clubs. The generator can be tried without an account, and signing up lets you save scripts and ideas. Tip: describe one specific action per request, such as a pad that teleports a player to a named part, and always playtest in Studio, since physics and multiplayer behavior still need a real test.",
+    "sources": [
+      "https://luaucheck.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "luma-dream-machine",
+    "moreContext": "Luma, the Palo Alto lab known for its in-house Ray video models, has folded Dream Machine into a broader agent-driven creative platform, and the Dream Machine link now leads to that newer experience. The heart of it is still Luma's own video technology, which has earned a reputation for realistic physics, smooth motion, and strong consistency across shots.\n\n- The Ray3 generation introduced 16-bit HDR video output, a notable step toward professional studio pipelines, and later releases added native 1080p.\n- Recent Ray versions support many keyframes per clip, longer video transformation, reframing, and EXR export for compositing work.\n- Luma's agents can research, generate, and refine across video, image, audio, and text, and Skills let you save a creative workflow and rerun it.\n- The platform also offers leading third-party models, such as Veo and Kling, next to Luma's own Ray and Uni models.\n- Team workspaces with admin roles and shared credit management arrived in 2026, and developers can access the models through an API.\n\nLuma lists major agencies such as Dentsu and Publicis Groupe among its clients, and a free option lets newcomers try it. It is best for filmmakers, motion designers, and agencies who want cinematic quality with real directorial control. Tip: set start and end keyframes for important shots instead of relying on text alone, since anchoring the motion produces far more predictable results.",
+    "sources": [
+      "https://lumalabs.ai/dream-machine",
+      "https://lumalabs.ai",
+      "https://fast.io/resources/luma-ai-review-2026/",
+      "https://pasqualepillitteri.it/en/news/4026/luma-dream-machine-ray3-review-2026"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "luminar-neo",
+    "moreContext": "Skylum's Luminar Neo has earned its place as one of the most approachable serious photo editors, packing more than two dozen AI tools into an interface that beginners can learn in an afternoon. What sets it apart today is reach: it now spans desktop, mobile, and web, and it slots into the workflows many photographers already use.\n\n- It runs as a plug-in for Lightroom Classic and Photoshop, so you can call on its AI tools without abandoning your existing catalog.\n- Beyond Mac and Windows, there are apps for iPad, iPhone, and Apple Vision Pro, plus a web version, with crossdevice editing to pick up work anywhere.\n- Specialized tools such as Noiseless AI, Supersharp AI, and Upscale AI rescue high-ISO, slightly soft, or low-resolution shots that might otherwise be discarded.\n- The Skylum Marketplace and asset library add thousands of presets, LUTs, sky replacements, and courses for building a personal look.\n- Businesses processing large image volumes can license Luminar Engine, the same technology offered for high-volume pipelines.\n\nLuminar Neo is a great fit for hobbyists, travel and portrait photographers, and content creators who want professional results without a steep learning curve. Skylum backs purchases with a 30-day money-back guarantee, and a trial is available. Tip: start each edit with Enhance AI for a balanced base, then apply targeted tools like SkyAI or SkinAI on top, and save the combination as a preset so a whole shoot shares one consistent style.",
+    "sources": [
+      "https://skylum.com/luminar"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "magical",
+    "moreContext": "Magical has evolved a long way from its origins as a popular Chrome text expander. Today the company positions itself around AI agents that handle operational work, with a strong focus on healthcare tasks such as prior authorizations, referrals, benefits verification, and payment posting, while its free Chrome extension for autofill and text shortcuts remains available.\n\n- Prebuilt agents cover patient access and revenue cycle workflows, and teams can also build custom agents from their own procedures or use a managed service.\n- Agents work across both browser and desktop applications, which matters in settings where older systems have no modern API.\n- The company says it uses AI judges to add guardrails during agent runs, an extra layer of checking for high-stakes work.\n- Magical reports that it received an A+ likelihood-to-recommend rating in a KLAS Emerging Company Spotlight, a respected research firm in healthcare IT.\n- Its Chrome Web Store listing says the extension integrates with healthcare platforms such as Epic and Allscripts for tasks like autofilling charts.\n\nThe browser extension still suits anyone tired of retyping the same replies or copying data between tabs, while the agent platform is aimed at provider groups, health systems, and payers. Tip: if you start with the extension, build a small set of shortcuts for your most repeated messages first, and note that the company's own guidance says not to store sensitive personal or patient data in it.",
+    "sources": [
+      "https://www.getmagical.com",
+      "https://www.getmagical.com/roles/healthcare",
+      "https://chrome.google.com/webstore/detail/iibninhmiggehlcdolcilmhacighjamp"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "magnific",
+    "moreContext": "Magnific began as a Spanish AI upscaler created by Javi Lopez and Emilio Nicolas, and its reputation for inventing believable detail was strong enough that Freepik bought it in 2024. In April 2026 Freepik went further and renamed its entire company and platform Magnific, so the original magnific.ai address now leads to magnific.com, where the upscaler sits inside a much larger creative suite.\n\n- The signature upscaler still lets you control how much new detail the AI imagines, from faithful cleanup to dramatic reinterpretation.\n- Under one subscription, the platform now bundles image, video, and audio generation alongside upscaling and editing tools.\n- Freepik's large stock library of photos, vectors, and icons is part of the same platform, which is handy for designers mixing generated and licensed assets.\n- Relighting and style transfer tools let you change mood and lighting or apply a reference look without leaving the editor.\n- Coverage of the rebrand describes the goal as uniting what used to be scattered across separate products into one creative workspace.\n\nMagnific is ideal for photographers, illustrators, game artists, and agencies who need print-ready resolution or want to push AI renders toward photographic quality. Tip: begin with a low creativity setting and raise it gradually while watching faces and text, since higher values add richer texture but can also change details you wanted to keep.",
+    "sources": [
+      "https://magnific.ai",
+      "https://en.wikipedia.org/wiki/Magnific",
+      "https://internetpasoapaso.com/rebranding-de-freepik-a-magnific-del-banco-de-imagenes-a-plataforma-creativa-de-ia/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "mai-image-2-6",
+    "moreContext": "This site offers a simple, focused workspace for Microsoft's MAI Image 2.6 text-to-image model, with an uncluttered dashboard that gets you from prompt to picture quickly. It is important to know that the site describes itself as an independent workspace that is not affiliated with Microsoft; it provides access to the model rather than being an official Microsoft product.\n\n- You can choose between MAI Image 2.6 for top quality, a Flash variant for faster and cheaper runs, and the previous 2.5 and 2.5 Pro models for comparison.\n- Beyond text-to-image, you can upload a reference picture and edit it with a prompt, which helps when refining an existing concept.\n- Prompts can run up to 2,000 characters, leaving room for detailed descriptions of lighting, composition, and style.\n- A credit estimate appears before every run, so there are no surprises about what a generation will cost.\n- Signed-in users get saved history, and the site says paid plans include commercial usage rights.\n\nThe workspace suits designers, marketers, and hobbyists who want to try Microsoft's newer image models without setting up developer access. The site links to Microsoft's launch announcement and its leaderboard results for background on the model. Tip: draft and iterate with the Flash model to save credits, then rerun your best prompt on the full MAI Image 2.6 model for the final image.",
+    "sources": [
+      "https://maiimage26.com/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "mailchimp-ai",
+    "moreContext": "Mailchimp, part of the Intuit family of brands alongside QuickBooks and TurboTax, remains one of the most familiar names in email marketing, and its AI features are designed to help small teams act like a much larger marketing department. The real strength is that the AI sits inside a mature platform with deep ecommerce data, so suggestions are grounded in how your customers actually behave.\n\n- Generative AI drafts email copy and subject lines right in the editor, which speeds up the blank-page stage of every campaign.\n- Predictive demographics and segmentation, available on paid plans, help you target people based on likely traits and behaviors.\n- Send-time optimization delivers each campaign when every contact is most likely to open, based on past engagement.\n- Behavior-triggered automation flows handle welcome series, abandoned carts, and re-engagement once, then keep running.\n- More than 300 integrations, including Shopify, WooCommerce, Squarespace, and Wix, feed purchase data into segments and automations.\n\nA free plan covers email for a modest contact list with basic automation, landing pages, and signup forms, and no credit card is required to start. Mailchimp is a strong fit for small businesses, ecommerce shops, and creators growing a list. Tip: connect your store before building automations, since purchase data is what makes the predictive features and product-focused flows genuinely useful.",
+    "sources": [
+      "https://mailchimp.com/features/",
+      "https://mailchimp.com"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "manus",
+    "moreContext": "Manus became one of the most talked-about AI agents of 2025 for its ability to carry a vague request all the way to a finished deliverable, and its momentum led Meta to acquire the company in a deal announced in late December 2025. Meta has said it will keep operating and selling Manus as a standalone service while bringing its technology into Meta's own apps, and the company has since introduced Manus 2.0.\n\n- Wide Research runs many parallel threads of investigation at once, which suits broad comparisons and market scans.\n- Quick-start modes cover slide decks, websites, games, video, and design, so one agent produces many kinds of output.\n- Built-in image and music generation means visual and audio assets can be created inside the same task.\n- A Slack integration lets teams hand off tasks from the place they already coordinate work.\n- Beyond the web app, Manus offers mobile and desktop apps, including a desktop option that can work with your own browser.\n\nCoverage of the acquisition cited company figures showing very fast revenue growth after launch, a sign of how quickly professionals adopted it. Manus is best for analysts, founders, consultants, and marketers who want research, documents, or prototypes produced end to end. Tip: give it a clear brief with the audience, format, and any sources you trust, then review the session replay to see how it reached its conclusions before you share the result.",
+    "sources": [
+      "https://manus.im",
+      "https://www.techradar.com/pro/meta-buys-manus-for-usd2-billion-to-power-high-stakes-ai-agent-race",
+      "https://abc7news.com/amp/post/meta-buys-startup-manus-latest-move-advance-artificial-intelligence-efforts/18333425/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "markany",
+    "moreContext": "Few converters work in both directions, and that is where MarkAny shines: it turns everyday files into tidy Markdown, and it can also take Markdown and export it back into polished documents. That round trip makes it a handy hub for anyone who drafts in plain text but still needs to deliver Office files or PDFs.\n\n- Inputs include PDF, Word, Excel, CSV, PowerPoint, HTML, EPUB, common image formats, and pasted text, covering nearly everything in a typical shared drive.\n- Batch mode handles several files of the same type at once, and failed items can be retried individually without losing the successful results.\n- When images are extracted, results download as a ZIP that keeps the Markdown and image folders linked, so nothing breaks when you move them.\n- The Markdown-to-document side exports to DOCX, PDF, HTML, EPUB, PPTX, XLSX, and image formats, with an editable preview and exports generated in the browser.\n- Dedicated per-format converter pages make it easy to jump straight to the conversion you need.\n\nMarkAny is a good fit for people preparing content for AI assistants and knowledge bases, technical writers moving docs into static site generators, and anyone tired of cleaning up pasted text. New accounts get trial credits, with a Pro subscription after that. Tip: for scans, use the clearest, highest-contrast source you can, and since conversions pass through cloud storage, follow the site's own advice to keep confidential or regulated files out of it.",
+    "sources": [
+      "https://markany.ai/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "marketmuse",
+    "moreContext": "MarketMuse was one of the pioneers of topic-based content strategy, founded in 2013 and built on what the company describes as patented topic modeling technology. In 2024 it was acquired by Siteimprove, which framed the deal as a way to bring content strategy, SEO, and website quality together in one offering.\n\n- Personalized difficulty scores show how hard a topic will be for your specific site to rank for, based on the authority you already have, rather than a generic keyword number.\n- Competitor gap analysis surfaces subjects rivals have overlooked, giving you openings you can realistically win.\n- Content plans turn that research into a prioritized roadmap, which the company says replaces many hours of manual planning.\n- The Optimize workflow includes quality analysis and internal link recommendations to strengthen pages you have already published.\n- Customer stories on the site, from teams such as Sumo Logic and Orbit Media Studios, credit it with substantial traffic gains on optimized content.\n\nMarketMuse is best for content leads, SEO managers, and agencies running sizable sites where deciding what to write next matters as much as writing it. Note that it guides writers rather than writing for them. Tip: begin with the inventory of your existing content and update high-potential pages first, since improving what already ranks is often faster than publishing something new.",
+    "sources": [
+      "https://www.marketmuse.com",
+      "https://www.geekwire.com/2024/siteimprove-to-acquire-content-marketing-firm-marketmuse/",
+      "https://www.searchenginejournal.com/marketmuse-acquired-by-siteimprove/529593/"
+    ],
+    "status": "ok"
+  },
+  {
+    "slug": "markitdown",
+    "moreContext": "This site puts a friendly web interface on top of Microsoft's open-source MarkItDown utility, so you get the same respected conversion engine without installing Python or touching a command line. Its standout feature is choice: you can keep supported files entirely on your own device or send them to the server for richer parsing.\n\n- In-browser processing keeps supported files local, a reassuring option for sensitive documents.\n- Server mode handles formats that need more horsepower, including EPUB books and Jupyter notebooks, and it can also convert public URLs.\n- Beyond Office files and PDFs, it accepts CSV, TSV, JSON, XML, and pasted tables, which is broader coverage than many converters offer.\n- The preview renders LaTeX math and Mermaid diagrams, and you can inspect the raw Markdown before exporting.\n- The site says server uploads are processed as temporary files and deleted after conversion, and that it does not log file contents.\n\nMarkItDown is ideal for developers feeding documents into AI assistants or retrieval pipelines, researchers converting papers with equations, and writers moving content into docs sites. The free tier needs no account, and a Pro plan raises file size, batch, and OCR limits, with API access available by request. Tip: use local OCR for simple scans and save the AI OCR allowance for documents with dense tables or formulas, where it makes the biggest difference.",
+    "sources": [
+      "https://markitdown.tech"
+    ],
+    "status": "ok"
+  }
+]
