@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ToolCard } from "@/components/ToolCard";
 import { ReviewForm } from "@/components/ReviewForm";
+import { OwnerToolBar } from "@/components/OwnerToolBar";
 import { JsonLd } from "@/components/JsonLd";
 import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
@@ -126,6 +127,7 @@ export default async function ToolPage({
           },
         ]}
       />
+      <OwnerToolBar slug={tool.slug} />
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div

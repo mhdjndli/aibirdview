@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Logo } from "./Logo";
+import { useMember } from "./useMember";
 
 const NAV = [
   { href: "/tools", label: "Browse" },
@@ -14,6 +15,10 @@ const NAV = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const member = useMember();
+  const account = member?.email
+    ? { href: "/account", label: "Account" }
+    : { href: "/signin", label: "Sign in" };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -56,6 +61,12 @@ export function Navbar() {
             </kbd>
           </Link>
           <Link
+            href={account.href}
+            className="hidden md:inline-flex rounded-full px-3 py-1.5 text-[13px] font-medium text-ink-700 hover:text-ink-900 transition-colors"
+          >
+            {account.label}
+          </Link>
+          <Link
             href="/submit"
             className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-4 py-1.5 text-[13px] font-medium text-ink-0 shadow-[0_1px_2px_rgba(0,0,0,0.08)] transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02] active:scale-[0.99]"
           >
@@ -87,6 +98,13 @@ export function Navbar() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href={account.href}
+              className="rounded-lg px-3 py-2.5 text-[15px] text-ink-800 hover:bg-ink-100"
+              onClick={() => setOpen(false)}
+            >
+              {account.label}
+            </Link>
             <Link
               href="/submit"
               className="mt-2 rounded-lg px-3 py-2.5 text-[15px] font-medium text-kiwi-700 hover:bg-kiwi-50"
