@@ -47,7 +47,7 @@ export default async function ClaimPage({
       ) : domain ? (
         <>
           <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-            Verify an email address at <strong className="text-ink-900">@{domain}</strong> and you&apos;ll be
+            Verify an email address at <strong className="text-ink-900">@{domain}</strong>{" "}and you&apos;ll be
             able to update this listing&apos;s description, pricing and images.
           </p>
           <div className="mt-8">
