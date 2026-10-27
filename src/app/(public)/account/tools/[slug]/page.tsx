@@ -15,10 +15,10 @@ export default async function EditOwnedToolPage({
   searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ sent?: string; claimed?: string; error?: string }>;
+  searchParams: Promise<{ saved?: string; claimed?: string; error?: string }>;
 }) {
   const { slug } = await params;
-  const { sent, claimed, error } = await searchParams;
+  const { saved, claimed, error } = await searchParams;
   const email = await currentMember();
   if (!email) redirect(`/signin?next=/account/tools/${slug}`);
 
@@ -48,22 +48,18 @@ export default async function EditOwnedToolPage({
           You now manage this listing.
         </p>
       )}
-      {sent && (
+      {saved && (
         <p className="mt-6 rounded-xl border border-kiwi-200 bg-kiwi-50 px-4 py-3 text-[14px] text-kiwi-800">
-          Thanks! Your changes were sent for review. We&apos;ll email you when they&apos;re live.
+          Saved. Your changes are live on{" "}
+          <Link href={`/tools/${tool.slug}`} className="font-medium underline">your listing</Link>.
         </p>
       )}
       {error && (
         <p className="mt-6 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-[14px] text-rose-700">{error}</p>
       )}
-      {!sent && latest?.status === "PENDING" && (
+      {!saved && latest?.status === "REJECTED" && latest.note && (
         <p className="mt-6 rounded-xl border border-ink-200 bg-ink-50 px-4 py-3 text-[14px] text-ink-700">
-          You have changes waiting for review. Submitting again replaces them.
-        </p>
-      )}
-      {latest?.status === "REJECTED" && latest.note && (
-        <p className="mt-6 rounded-xl border border-ink-200 bg-ink-50 px-4 py-3 text-[14px] text-ink-700">
-          Note on your last edit: {latest.note}
+          An editor reverted your last edit: {latest.note}
         </p>
       )}
 

@@ -73,8 +73,6 @@ export default async function AccountPage() {
                 <p className="truncate text-[13px] text-ink-500">
                   {o.status === "PENDING"
                     ? "Ownership request waiting for review"
-                    : o.tool.edits.length > 0
-                    ? "Your latest changes are waiting for review"
                     : o.tool.tagline}
                 </p>
               </div>

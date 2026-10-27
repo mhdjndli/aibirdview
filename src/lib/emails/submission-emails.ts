@@ -371,17 +371,26 @@ export function adminClaimEmail(args: { toolName: string; toolSlug: string; emai
 }
 
 export function adminEditEmail(args: { toolName: string; email: string; fields: string[] }) {
-  const title = `Edit to review: ${args.toolName}`;
-  const body = [`${escapeHtml(args.email)} proposed changes to ${escapeHtml(args.toolName)}: ${escapeHtml(args.fields.join(", "))}.`];
-  const cta = { label: "Review edits", url: `${SITE.url}/admin/edits` };
+  const title = `Listing updated: ${args.toolName}`;
+  const body = [
+    `${escapeHtml(args.email)} updated ${escapeHtml(args.toolName)}: ${escapeHtml(args.fields.join(", "))}. The changes are live.`,
+    "If anything looks wrong, revert it in the admin.",
+  ];
+  const cta = { label: "Owner edits", url: `${SITE.url}/admin/edits` };
   return { subject: title, html: notice({ eyebrow: "Owners", title, body, cta }), text: plain(title, body, cta) };
 }
 
-export function ownerEditDecisionEmail(args: { toolName: string; toolSlug: string; approved: boolean; note?: string | null }) {
-  const title = args.approved ? `Your changes to ${args.toolName} are live` : `Your changes to ${args.toolName} weren't published`;
+export function ownerEditDecisionEmail(args: { toolName: string; toolSlug: string; approved: boolean; reverted?: boolean; note?: string | null }) {
+  const title = args.approved
+    ? `Your changes to ${args.toolName} are live`
+    : args.reverted
+    ? `Your changes to ${args.toolName} were reverted`
+    : `Your changes to ${args.toolName} weren't published`;
   const body = [
     args.approved
       ? `We reviewed and published your update to <strong>${escapeHtml(args.toolName)}</strong>.`
+      : args.reverted
+      ? `An editor reverted your latest update to <strong>${escapeHtml(args.toolName)}</strong>, so the listing shows its previous details again.`
       : `We reviewed your update to <strong>${escapeHtml(args.toolName)}</strong> but couldn't publish it as submitted.`,
     ...(args.note ? [`Note from the editor: ${escapeHtml(args.note)}`] : []),
   ];

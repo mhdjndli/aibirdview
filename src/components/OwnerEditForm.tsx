@@ -109,12 +109,12 @@ export function OwnerEditForm({
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-200 pt-5">
-        <p className="text-[12.5px] text-ink-500">Changes go live after a quick review by our editors.</p>
+        <p className="text-[12.5px] text-ink-500">Changes go live on your listing right away.</p>
         <button
           type="submit"
           className="rounded-full bg-ink-900 px-6 py-2.5 text-[14px] font-medium text-ink-0 hover:bg-ink-800"
         >
-          Submit changes for review
+          Save changes
         </button>
       </div>
     </form>

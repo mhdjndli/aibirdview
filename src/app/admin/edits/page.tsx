@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
-import type { EditData } from "@/app/(public)/account/actions";
-import { approveEdit, rejectEdit, setOwnerStatus } from "./actions";
+import { splitStoredEdit, type StoredEdit } from "@/lib/tool-edits";
+import { approveEdit, rejectEdit, revertEdit, setOwnerStatus } from "./actions";
 
 export const metadata = { title: "Owners & edits | Admin" };
 export const dynamic = "force-dynamic";
@@ -23,11 +23,17 @@ function show(key: string, value: unknown) {
 }
 
 export default async function EditsPage() {
-  const [edits, pendingClaims, recentOwners] = await Promise.all([
+  const [edits, recentEdits, pendingClaims, recentOwners] = await Promise.all([
     prisma.toolEdit.findMany({
       where: { status: "PENDING" },
       orderBy: { createdAt: "asc" },
       include: { tool: { include: { features: { orderBy: { order: "asc" } } } } },
+    }),
+    prisma.toolEdit.findMany({
+      where: { status: { in: ["APPROVED", "REJECTED"] } },
+      orderBy: { createdAt: "desc" },
+      take: 30,
+      include: { tool: { select: { name: true, slug: true } } },
     }),
     prisma.toolOwner.findMany({
       where: { status: "PENDING" },
@@ -51,15 +57,15 @@ export default async function EditsPage() {
         <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">Owners</p>
         <h1 className="mt-1.5 text-[28px] font-semibold tracking-[-0.022em] text-ink-900">Owners &amp; edits</h1>
         <p className="mt-2 text-[13px] text-ink-500">
-          Owners propose changes to their listings; nothing goes live until you approve it here.
+          Owners&apos; changes go live immediately. Revert anything that looks wrong; the
+          listing goes back to its previous details and the owner is emailed.
         </p>
       </header>
 
       <section className="space-y-4">
-        <h2 className={section}>Edits to review ({edits.length})</h2>
-        {edits.length === 0 && <p className="text-[14px] text-ink-500">Nothing waiting.</p>}
+        {edits.length > 0 && <h2 className={section}>Edits to review ({edits.length})</h2>}
         {edits.map((e) => {
-          const data = e.data as EditData;
+          const { changes: data } = splitStoredEdit(e.data as StoredEdit);
           const current: Record<string, unknown> = { ...e.tool, features: e.tool.features.map((f) => f.text) };
           return (
             <article key={e.id} className="rounded-2xl border border-ink-200 bg-ink-0 p-5">
@@ -92,6 +98,50 @@ export default async function EditsPage() {
                 <input name="note" placeholder="Reason (sent to the owner)" className="min-w-0 flex-1 rounded-full border border-ink-200 px-3.5 py-1.5 text-[13px]" />
                 <button className={`${btn} border border-ink-200 text-ink-700 hover:bg-ink-50`}>Reject</button>
               </form>
+            </article>
+          );
+        })}
+      </section>
+
+      <section className="space-y-4">
+        <h2 className={section}>Recent owner edits</h2>
+        {recentEdits.length === 0 && <p className="text-[14px] text-ink-500">No edits yet.</p>}
+        {recentEdits.map((e) => {
+          const { changes, previous } = splitStoredEdit(e.data as StoredEdit);
+          const reverted = e.status === "REJECTED";
+          return (
+            <article key={e.id} className={`rounded-2xl border border-ink-200 bg-ink-0 p-5 ${reverted ? "opacity-60" : ""}`}>
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                  <Link href={`/tools/${e.tool.slug}`} target="_blank" className="text-[15px] font-semibold text-ink-900 hover:text-kiwi-700">
+                    {e.tool.name}
+                  </Link>
+                  <p className="text-[12.5px] text-ink-500">
+                    by {e.email} · {new Date(e.createdAt).toLocaleString()}
+                    {reverted && <> · reverted{e.note ? `: ${e.note}` : ""}</>}
+                  </p>
+                </div>
+                {!reverted && previous && (
+                  <form action={revertEdit.bind(null, e.id)} className="flex items-center gap-2">
+                    <input name="note" placeholder="Reason (optional, sent to owner)" className="w-56 rounded-full border border-ink-200 px-3.5 py-1.5 text-[13px]" />
+                    <button className={`${btn} border border-ink-200 text-ink-700 hover:bg-ink-50`}>Revert</button>
+                  </form>
+                )}
+              </div>
+              <table className="mt-4 w-full text-left text-[13px]">
+                <thead className="text-[11px] uppercase tracking-wider text-ink-400">
+                  <tr><th className="w-36 py-1.5">Field</th><th className="py-1.5">Before</th><th className="py-1.5">After</th></tr>
+                </thead>
+                <tbody>
+                  {Object.entries(changes).map(([key, value]) => (
+                    <tr key={key} className="border-t border-ink-100 align-top">
+                      <td className="py-2 pr-3 font-medium text-ink-700">{LABELS[key] ?? key}</td>
+                      <td className="py-2 pr-3 text-ink-500">{show(key, previous?.[key as keyof typeof previous])}</td>
+                      <td className="py-2 text-ink-900">{show(key, value)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </article>
           );
         })}

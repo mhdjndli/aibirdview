@@ -2,43 +2,30 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
 import { sendEmail } from "@/lib/email";
 import { ownerClaimApprovedEmail, ownerEditDecisionEmail } from "@/lib/emails/submission-emails";
-import type { EditData } from "@/app/(public)/account/actions";
+import { applyToolChanges, splitStoredEdit, type StoredEdit } from "@/lib/tool-edits";
 
 async function requireAdmin() {
   const session = await auth();
   if (!session?.user) redirect("/admin/login");
 }
 
-const SCALARS = [
-  "name", "tagline", "description", "longDescription", "url", "pricing", "priceFrom", "founded",
-  "logoMediaId", "screenshot1MediaId", "screenshot2MediaId", "screenshot3MediaId",
-] as const;
-
+/** Publishes an edit still waiting for review (owner edits now apply immediately). */
 export async function approveEdit(editId: string) {
   await requireAdmin();
   const edit = await prisma.toolEdit.findUnique({ where: { id: editId }, include: { tool: true } });
   if (!edit || edit.status !== "PENDING") redirect("/admin/edits");
 
-  const data = edit.data as EditData;
-  const update: Prisma.ToolUpdateInput = {};
-  for (const key of SCALARS) {
-    if (key in data) (update as Record<string, unknown>)[key] = data[key];
-  }
+  const { changes } = splitStoredEdit(edit.data as StoredEdit);
   await prisma.$transaction(async (tx) => {
-    await tx.tool.update({ where: { id: edit.toolId }, data: update });
-    if (data.features) {
-      await tx.toolFeature.deleteMany({ where: { toolId: edit.toolId } });
-      await tx.toolFeature.createMany({ data: data.features.map((text, order) => ({ toolId: edit.toolId, text, order })) });
-    }
+    await applyToolChanges(tx, edit.toolId, changes);
     await tx.toolEdit.update({ where: { id: edit.id }, data: { status: "APPROVED", reviewedAt: new Date() } });
   });
 
-  const mail = ownerEditDecisionEmail({ toolName: data.name ?? edit.tool.name, toolSlug: edit.tool.slug, approved: true });
+  const mail = ownerEditDecisionEmail({ toolName: changes.name ?? edit.tool.name, toolSlug: edit.tool.slug, approved: true });
   void sendEmail({ to: edit.email, ...mail, tags: [{ name: "type", value: "owner_edit_approved" }] });
   revalidatePath(`/tools/${edit.tool.slug}`);
   revalidatePath("/admin/edits");
@@ -54,6 +41,29 @@ export async function rejectEdit(editId: string, formData: FormData) {
   });
   const mail = ownerEditDecisionEmail({ toolName: edit.tool.name, toolSlug: edit.tool.slug, approved: false, note });
   void sendEmail({ to: edit.email, ...mail, tags: [{ name: "type", value: "owner_edit_rejected" }] });
+  revalidatePath("/admin/edits");
+}
+
+/** Undoes a live owner edit by restoring the values it replaced. */
+export async function revertEdit(editId: string, formData: FormData) {
+  await requireAdmin();
+  const note = String(formData.get("note") ?? "").trim() || null;
+  const edit = await prisma.toolEdit.findUnique({ where: { id: editId }, include: { tool: { select: { name: true, slug: true } } } });
+  if (!edit || edit.status !== "APPROVED") redirect("/admin/edits");
+  const { previous } = splitStoredEdit(edit.data as StoredEdit);
+  if (!previous) redirect("/admin/edits");
+
+  await prisma.$transaction(async (tx) => {
+    await applyToolChanges(tx, edit.toolId, previous);
+    await tx.toolEdit.update({
+      where: { id: edit.id },
+      data: { status: "REJECTED", note: note ?? "Reverted by an editor", reviewedAt: new Date() },
+    });
+  });
+
+  const mail = ownerEditDecisionEmail({ toolName: previous.name ?? edit.tool.name, toolSlug: edit.tool.slug, approved: false, reverted: true, note });
+  void sendEmail({ to: edit.email, ...mail, tags: [{ name: "type", value: "owner_edit_reverted" }] });
+  revalidatePath(`/tools/${edit.tool.slug}`);
   revalidatePath("/admin/edits");
 }
 

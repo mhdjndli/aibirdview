@@ -1,12 +1,13 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 import { z } from "zod";
-import type { Pricing } from "@prisma/client";
 import { prisma } from "@/lib/prisma";
 import { currentMember, endMemberSession } from "@/lib/owner-session";
 import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
 import { adminClaimEmail, adminEditEmail } from "@/lib/emails/submission-emails";
+import { applyToolChanges, type EditData } from "@/lib/tool-edits";
 
 export async function signOut() {
   await endMemberSession();
@@ -30,22 +31,6 @@ const editSchema = z.object({
   screenshot2MediaId: z.string().max(40),
   screenshot3MediaId: z.string().max(40),
 });
-
-export type EditData = Partial<{
-  name: string;
-  tagline: string;
-  description: string;
-  longDescription: string;
-  url: string;
-  pricing: Pricing;
-  priceFrom: string | null;
-  founded: string | null;
-  features: string[];
-  logoMediaId: string | null;
-  screenshot1MediaId: string | null;
-  screenshot2MediaId: string | null;
-  screenshot3MediaId: string | null;
-}>;
 
 async function requireOwner(slug: string) {
   const email = await currentMember();
@@ -114,17 +99,24 @@ export async function proposeEdit(slug: string, formData: FormData) {
     redirect(`/account/tools/${slug}?error=${encodeURIComponent("An uploaded image is missing. Upload it again.")}`);
   }
 
-  // One open edit per tool: a newer proposal replaces the pending one.
-  const open = await prisma.toolEdit.findFirst({ where: { toolId: tool.id, status: "PENDING" } });
-  if (open) {
-    await prisma.toolEdit.update({ where: { id: open.id }, data: { data: changes, email, createdAt: new Date() } });
-  } else {
-    await prisma.toolEdit.create({ data: { toolId: tool.id, email, data: changes } });
+  // Owners' changes go live immediately. The replaced values are kept with
+  // the edit so an admin can revert it from /admin/edits.
+  const previous: EditData = {};
+  for (const key of Object.keys(changes) as (keyof EditData)[]) {
+    (previous as Record<string, unknown>)[key] = current[key];
   }
+  await prisma.$transaction(async (tx) => {
+    await applyToolChanges(tx, tool.id, changes);
+    await tx.toolEdit.create({
+      data: { toolId: tool.id, email, data: { ...changes, _previous: previous }, status: "APPROVED", reviewedAt: new Date() },
+    });
+  });
+  revalidatePath(`/tools/${slug}`);
+  revalidatePath("/");
 
-  const mail = adminEditEmail({ toolName: tool.name, email, fields: Object.keys(changes) });
+  const mail = adminEditEmail({ toolName: changes.name ?? tool.name, email, fields: Object.keys(changes) });
   void sendEmail({ to: ADMIN_NOTIFY_EMAIL, ...mail, replyTo: email, tags: [{ name: "type", value: "admin_owner_edit" }] });
-  redirect(`/account/tools/${slug}?sent=1`);
+  redirect(`/account/tools/${slug}?saved=1`);
 }
 
 export async function requestManualClaim(slug: string, formData: FormData) {

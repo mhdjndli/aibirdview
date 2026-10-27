@@ -25,6 +25,7 @@ export function SubmitForm({
   fastTrackPrice: string | null;
 }) {
   const [submitted, setSubmitted] = useState<SubmitResult | null>(null);
+  const [plan, setPlan] = useState<"free" | "fast">("free");
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -130,6 +131,11 @@ export function SubmitForm({
             return;
           }
           const data = (await res.json()) as SubmitResult;
+          if (plan === "fast" && data.fastTrack) {
+            // Straight to Stripe Checkout; it returns to /submit/thanks.
+            window.location.href = data.fastTrack.url;
+            return;
+          }
           setSubmitted({ freeDays: data.freeDays, fastTrack: data.fastTrack });
         } catch {
           setError("Network error, please try again.");
@@ -326,17 +332,53 @@ export function SubmitForm({
         </p>
       )}
 
+      {fastTrackPrice && (
+        <fieldset className="grid gap-3 sm:grid-cols-2">
+          <legend className="mb-3 text-[14px] font-semibold text-ink-900">When should it go live?</legend>
+          {(
+            [
+              ["free", "Free", `Reviewed and live within ${freeDays} days.`],
+              ["fast", `Same day · ${fastTrackPrice}`, "Reviewed today and live within hours. Full refund if we can't list it."],
+            ] as const
+          ).map(([value, title, body]) => (
+            <label
+              key={value}
+              className={`cursor-pointer rounded-2xl border p-4 transition-colors ${
+                plan === value ? "border-ink-900 bg-ink-0 ring-1 ring-ink-900" : "border-ink-200 bg-ink-0 hover:border-ink-300"
+              }`}
+            >
+              <input
+                type="radio"
+                name="plan"
+                value={value}
+                checked={plan === value}
+                onChange={() => setPlan(value)}
+                className="sr-only"
+              />
+              <span className="flex items-center justify-between gap-2 text-[15px] font-semibold text-ink-900">
+                {title}
+                {value === "fast" && (
+                  <span className="rounded-full bg-kiwi-100 px-2 py-0.5 text-[11px] font-semibold text-kiwi-800">Fastest</span>
+                )}
+              </span>
+              <span className="mt-1 block text-[13px] leading-relaxed text-ink-600">{body}</span>
+            </label>
+          ))}
+        </fieldset>
+      )}
+
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-200 pt-6">
         <p className="text-[12px] text-ink-500">
-          Free listings go live within {freeDays} days.
-          {fastTrackPrice && <> Need it today? Same-day review is {fastTrackPrice}, offered after you submit.</>}
+          {plan === "fast" && fastTrackPrice
+            ? "You'll pay securely with Stripe after submitting."
+            : `Free listings go live within ${freeDays} days.`}
         </p>
         <button
           type="submit"
           disabled={pending}
           className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-6 py-3 text-[14px] font-medium text-ink-0 transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02] disabled:opacity-60"
         >
-          {pending ? "Submitting…" : "Submit for review →"}
+          {pending ? "Submitting…" : plan === "fast" && fastTrackPrice ? `Submit and pay ${fastTrackPrice} →` : "Submit for review →"}
         </button>
       </div>
     </form>
