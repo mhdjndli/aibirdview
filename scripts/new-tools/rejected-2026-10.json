@@ -1,0 +1,1822 @@
+[
+ {
+  "candidate": "ChatGPT Atlas",
+  "reason": "Discontinued: OpenAI shut down the Atlas browser on August 9, 2026 and folded it into its desktop app"
+ },
+ {
+  "candidate": "Shopify Logo Free",
+  "reason": "Not actually an AI product: Shopify's free logo maker is template-based customization, not generative AI"
+ },
+ {
+  "candidate": "socialsleuth.xyz",
+  "reason": "Covert Instagram surveillance of partners (flirting, follows, late-night activity) targeting private individuals; not suitable for listing"
+ },
+ {
+  "candidate": "AI Architecture",
+  "reason": "Could not identify an official site; aiarchitectures.com is a parked domain for sale"
+ },
+ {
+  "candidate": "vecbase.com",
+  "reason": "Not launched: membership checkout is unavailable and no plans or prices are published"
+ },
+ {
+  "candidate": "Coursera",
+  "reason": "Online course platform, not primarily an AI product"
+ },
+ {
+  "candidate": "deepswapai.com",
+  "reason": "Unofficial site trading on the DeepSwap name (states it is not affiliated with deepswap.ai)"
+ },
+ {
+  "candidate": "prohoster.info (VPN)",
+  "reason": "VPN service, not an AI product"
+ },
+ {
+  "candidate": "DeepSeek-V4.1-Flash",
+  "reason": "Model version of DeepSeek; duplicates existing deepseek listing"
+ },
+ {
+  "candidate": "GPT-6 Astra",
+  "reason": "OpenAI model behind ChatGPT and the OpenAI API, limited rollout; duplicates existing chatgpt listing"
+ },
+ {
+  "candidate": "cursivefontgenerator.me",
+  "reason": "Core tool is Unicode character mapping and font styling, not an AI product"
+ },
+ {
+  "candidate": "submitstorm.com",
+  "reason": "Directory submission / backlink service"
+ },
+ {
+  "candidate": "animeootd.com",
+  "reason": "Fan-made anime character archive, not an AI tool"
+ },
+ {
+  "candidate": "prime-ai-opal.vercel.app",
+  "reason": "Placeholder page with a single tagline; no identifiable product, features or pricing"
+ },
+ {
+  "candidate": "decisiontheatre.app",
+  "reason": "Not an AI product: the site and its launch listing position it as a structured self-reflection exercise and explicitly say it is not an AI giving advice"
+ },
+ {
+  "candidate": "Notion Mail",
+  "reason": "Duplicate vendor/domain: notion.com is already listed as notion-ai (Notion AI)"
+ },
+ {
+  "candidate": "listai.tools",
+  "reason": "AI tools directory with a 'submit your tool' service, not an AI product"
+ },
+ {
+  "candidate": "Logo Maker Namecheap",
+  "reason": "Official page (namecheap.com/logo-maker) blocked automated access with a 403 bot check, so features and pricing could not be verified"
+ },
+ {
+  "candidate": "WorkPPT",
+  "reason": "workppt.com is a parked domain listed for sale; no official product site could be found"
+ },
+ {
+  "candidate": "Semrush SEO Toolkit",
+  "reason": "Duplicate domain: semrush.com is already listed as semrush-contentshake (Semrush Content Toolkit)"
+ },
+ {
+  "candidate": "ElevenLabs Scribe V2",
+  "reason": "Duplicate: Scribe is a feature of ElevenLabs, already listed as elevenlabs"
+ },
+ {
+  "candidate": "praxena.fr",
+  "reason": "Not an AI product: a French media site that publishes reviews and comparisons of AI tools."
+ },
+ {
+  "candidate": "coowai.com",
+  "reason": "Client-rendered site exposes only a Vietnamese page title; no verifiable product description, pricing or company details."
+ },
+ {
+  "candidate": "viraltox.com",
+  "reason": "Primarily a Spanish-language news outlet with a few basic free generators; not an AI product in its own right."
+ },
+ {
+  "candidate": "chat-gpts.plus",
+  "reason": "Unofficial ChatGPT-branded news and tutorial blog trading on OpenAI's product name; not an AI product."
+ },
+ {
+  "candidate": "Chatterbox Turbo",
+  "reason": "Duplicate: open-source TTS model from Resemble AI (resemble.ai), already listed as resemble-ai."
+ },
+ {
+  "candidate": "connectmeguru.com",
+  "reason": "Not an AI product: travel eSIM sales API for bots with USDT crypto settlement."
+ },
+ {
+  "candidate": "fontgenerate.com",
+  "reason": "Not an AI product: Unicode copy-and-paste text style generator."
+ },
+ {
+  "candidate": "AI2U: With You Til The End",
+  "reason": "Could not verify an official website (web search budget exhausted; ai2u.app is an unrelated Portuguese AI course); the title is an AI companion game."
+ },
+ {
+  "candidate": "Claude Fable 5",
+  "reason": "Duplicate: a model release inside Claude, which is already listed (slug claude)"
+ },
+ {
+  "candidate": "Claude Fable 5.1",
+  "reason": "Duplicate: a model release inside Claude, which is already listed (slug claude)"
+ },
+ {
+  "candidate": "Gemini 4 Argon",
+  "reason": "Duplicate: a model release inside Google Gemini, which is already listed (slug gemini)"
+ },
+ {
+  "candidate": "Blush AI",
+  "reason": "AI dating and romance companion app, excluded under the companion content rule"
+ },
+ {
+  "candidate": "goeldhub.com",
+  "reason": "Not an AI product: ELD HUB is a trucking electronic logging device subscription with freight, fuel and factoring add-ons; AI is limited to a support triage assistant"
+ },
+ {
+  "candidate": "DorkGPT",
+  "reason": "Official site (dorkgpt.com) renders only a title with no product, pricing or operator details, so it could not be verified from the vendor; descriptions exist only on third-party directories"
+ },
+ {
+  "candidate": "Hotel Lobby AI",
+  "reason": "No identifiable official vendor: several clone sites (hotellobbyai, aihotellobby.org and others) sell a template video built on a viral music performance by real artists, trading on that trend rather than an original product"
+ },
+ {
+  "candidate": "GPTs list",
+  "reason": "Directory of custom GPTs, not a standalone AI product"
+ },
+ {
+  "candidate": "digimantra.com",
+  "reason": "IT services and software development agency, not an AI product"
+ },
+ {
+  "candidate": "code0.ai",
+  "reason": "Unofficial API relay reselling other vendors' models (OpenAI, Claude, Gemini) below official prices"
+ },
+ {
+  "candidate": "LeadAI",
+  "reason": "Listed site (leadai.wadesk.io) is now an HLR phone-number lookup and lead scraper, not an AI product"
+ },
+ {
+  "candidate": "Audio Editor by Veed",
+  "reason": "Feature of VEED, which is already listed (veed)"
+ },
+ {
+  "candidate": "Social Content AI",
+  "reason": "Semrush app appears discontinued; its help page now redirects to the Content Toolkit repurposing feature"
+ },
+ {
+  "candidate": "prontoinvoice.com",
+  "reason": "Invoicing app with no AI functionality"
+ },
+ {
+  "candidate": "voravideo.com",
+  "reason": "Unofficial multi-model storefront built around third-party model names (Kling, Veo, Nano Banana, WAN) with unverifiable testimonials and stats"
+ },
+ {
+  "candidate": "Brain2Qwerty v2",
+  "reason": "Academic brain-to-text research (Nature paper and dataset), not an available product"
+ },
+ {
+  "candidate": "artofthestart.com",
+  "reason": "AI tools directory with paid listing submissions"
+ },
+ {
+  "candidate": "Kling 3.0",
+  "reason": "Duplicate: Kling AI (kling.ai) is already listed as kling-ai; 3.0 is a model version"
+ },
+ {
+  "candidate": "Ideogram 3.0",
+  "reason": "Duplicate: Ideogram (ideogram.ai) is already listed as ideogram; 3.0 is a model version"
+ },
+ {
+  "candidate": "Gemini 3.8 Live",
+  "reason": "Duplicate: Google Gemini (gemini.google.com) is already listed; Live is a feature of it"
+ },
+ {
+  "candidate": "ClickUp",
+  "reason": "Duplicate: clickup.com is already listed as clickup-brain"
+ },
+ {
+  "candidate": "anyhost.ai",
+  "reason": "Not a genuine AI product: hosting-recommendation questionnaire with affiliate links to hosting providers"
+ },
+ {
+  "candidate": "Free WhatsApp Bulk Sender",
+  "reason": "No identifiable official vendor; generic bulk WhatsApp messaging extensions, not an AI product"
+ },
+ {
+  "candidate": "deepwire.win",
+  "reason": "Not a product: enterprise AI consulting and training services firm"
+ },
+ {
+  "candidate": "adonboard.co",
+  "reason": "Not an AI product: marketplace for selling suitcase sticker ad space"
+ },
+ {
+  "candidate": "AI Prompt Optimizer",
+  "reason": "No identifiable official site; generic name shared by several unrelated extensions and tools"
+ },
+ {
+  "candidate": "InterviewCue",
+  "reason": "Core pitch is a real-time live-interview copilot with a screen-share 'invisible mode', a deceptive use case we don't list"
+ },
+ {
+  "candidate": "trellis2.app",
+  "reason": "Unofficial site trading on Microsoft's TRELLIS.2 model name, not the real vendor"
+ },
+ {
+  "candidate": "Meta Movie Gen",
+  "reason": "Not a publicly available standalone product (Meta research model); Meta AI is already listed"
+ },
+ {
+  "candidate": "Deepl",
+  "reason": "Duplicate: deepl.com is already listed as deepl-write"
+ },
+ {
+  "candidate": "ChatGPT Health",
+  "reason": "Duplicate: a health feature inside ChatGPT, which is already listed (chatgpt)"
+ },
+ {
+  "candidate": "Reworkd AI",
+  "reason": "Product sunset: reworkd.ai announces the product was shut down on February 6, 2025"
+ },
+ {
+  "candidate": "huggingface.co/spaces/SocialSleuth/Instagram-story-viewer",
+  "reason": "Not an AI product: anonymous Instagram story viewer/downloader hosted as a Hugging Face Space, no official site"
+ },
+ {
+  "candidate": "modi.navinder785.workers.dev",
+  "reason": "Unverifiable hobby page on a workers.dev subdomain with no company, terms or official site"
+ },
+ {
+  "candidate": "yardwork.dev",
+  "reason": "Not a product: custom software and managed AI agent agency services"
+ },
+ {
+  "candidate": "Jenny AI",
+  "reason": "Duplicate of Jenni AI (jenni-ai, jenni.ai), already listed"
+ },
+ {
+  "candidate": "ChatGPT Images 2.0",
+  "reason": "Duplicate: an image generation feature inside ChatGPT, which is already listed (chatgpt)"
+ },
+ {
+  "candidate": "bulkqrcode.net",
+  "reason": "Not an AI product: bulk QR code generator from spreadsheets"
+ },
+ {
+  "candidate": "cursivegenerator.com",
+  "reason": "Not an AI product: Unicode/font cursive text converter"
+ },
+ {
+  "candidate": "puzzlebindery.com",
+  "reason": "Not an AI product: site states puzzles are built by deterministic algorithms, not AI"
+ },
+ {
+  "candidate": "AI Hairstyle",
+  "reason": "Official site could not be identified; aihairstyle.com is a parked domain redirecting to a lander page"
+ },
+ {
+  "candidate": "aitoolister.com",
+  "reason": "Directory/guides site about AI tools, not an AI product"
+ },
+ {
+  "candidate": "Shoomble",
+  "reason": "Adult/NSFW AI companion directory (AI girlfriends, 18+ content)"
+ },
+ {
+  "candidate": "wsupai.app",
+  "reason": "AI character chat site with romance and companion categories and an 'Unfiltered' toggle for explicit characters (NSFW companion content)."
+ },
+ {
+  "candidate": "Wanderboat",
+  "reason": "Official site wanderboat.ai blocked all automated access (Cloudflare 403) and web search budget ran out, so current product and pricing could not be verified on the official site."
+ },
+ {
+  "candidate": "rivus.work",
+  "reason": "Pre-launch waitlist only; no public product access or published pricing to verify."
+ },
+ {
+  "candidate": "Face Shape Detector",
+  "reason": "Generic name shared by several unrelated apps and tools; no single official product could be identified."
+ },
+ {
+  "candidate": "Producer.ai",
+  "reason": "producer.ai now redirects to flowmusic.app (Google Flow Music), which is already listed as 'riffusion'. Duplicate."
+ },
+ {
+  "candidate": "AI Logo by Fiverr",
+  "reason": "fiverr.com logo maker page blocked automated access with a bot challenge, and search budget ran out, so the product and pricing could not be verified; Looka and LogoAI already cover this niche."
+ },
+ {
+  "candidate": "animalidfinder.com",
+  "reason": "Site returned a Cloudflare challenge (403) on every attempt; product and pricing could not be verified."
+ },
+ {
+  "candidate": "random-pokemon-generator.co",
+  "reason": "Not an AI product; a rule-based random Pokemon picker and fan reference site trading on the Pokemon brand."
+ },
+ {
+  "candidate": "FakeYou",
+  "reason": "Markets celebrity AI voice and video impersonation of real people; the JavaScript-only site exposed no verifiable product or pricing details, and search budget ran out."
+ },
+ {
+  "candidate": "Landscape Design AI",
+  "reason": "Generic name shared by many similar App Store apps from different developers; no single official product could be identified."
+ },
+ {
+  "candidate": "hyqoo.com",
+  "reason": "Remote tech staffing and talent marketplace that uses AI matching; a hiring service rather than an AI tool."
+ },
+ {
+  "candidate": "LoveGPT",
+  "reason": "Name refers to several unrelated sites plus a known romance-scam tool; no clear official product could be identified."
+ },
+ {
+  "candidate": "music-road.com",
+  "reason": "Not an AI product; a chart of trending YouTube songs by country."
+ },
+ {
+  "candidate": "Airtap",
+  "reason": "airtap.ai is invite-only with no public sign-up or published pricing to verify, and the site says the previous version is being retired on October 31"
+ },
+ {
+  "candidate": "usewok.com",
+  "reason": "Done-for-you directory submission and backlink service for SaaS visibility, not an AI product"
+ },
+ {
+  "candidate": "Atom Limbs",
+  "reason": "Now atombodies.com: an AI prosthetic arm hardware company with a waitlist and demo applications, not an available AI software tool"
+ },
+ {
+  "candidate": "glp1.app",
+  "reason": "Peptide Tracker iOS dose-logging app with no AI features"
+ },
+ {
+  "candidate": "innerluxes.dev",
+  "reason": "Custom software development agency, not an AI product"
+ },
+ {
+  "candidate": "clonella.com",
+  "reason": "Uncensored AI companion app (adult/NSFW companion content)"
+ },
+ {
+  "candidate": "beatapi.io",
+  "reason": "API reseller offering proprietary models (GPT, Claude, Grok and others) at up to 78% below official prices with no evidence of vendor authorization; not a distinct product we can vouch for"
+ },
+ {
+  "candidate": "Muse Wonder",
+  "reason": "Could not confirm an official site; musewonder.com is a login-only Chinese-language marketing assistant for nail salons with no public product details"
+ },
+ {
+  "candidate": "MidJourney Prompt Helper",
+  "reason": "Unofficial page trading on Midjourney's name; a static keyword picker with outdated parameters rather than an AI product"
+ },
+ {
+  "candidate": "uplizd.bio",
+  "reason": "Could not verify from the official site (fetch failed); only promotional SEO posts describe it, so listing details are unverifiable"
+ },
+ {
+  "candidate": "Windsurf Editor",
+  "reason": "Duplicate of existing listing windsurf (now Devin Desktop)"
+ },
+ {
+  "candidate": "cliptray.io",
+  "reason": "Not an AI product; clipboard manager whose site says it runs no model"
+ },
+ {
+  "candidate": "adhdreading.org",
+  "reason": "Not an AI product; rule-based bionic reading Chrome extension with no AI mentioned"
+ },
+ {
+  "candidate": "hawaaaworld.com",
+  "reason": "Not an AI product; generic free online utilities and guides site"
+ },
+ {
+  "candidate": "Huhu AI",
+  "reason": "Official site huhu.ai unreachable (DNS lookup fails, no response)"
+ },
+ {
+  "candidate": "gmapsscraper.ai",
+  "reason": "Not meaningfully an AI product; Google Maps scraper whose AI claim is unexplained"
+ },
+ {
+  "candidate": "Gemini 3.1 Flash TTS",
+  "reason": "Model within Google's Gemini family, covered by existing listing gemini rather than a standalone product"
+ },
+ {
+  "candidate": "dlinsta.com",
+  "reason": "Not an AI product; plain Instagram downloader"
+ },
+ {
+  "candidate": "openaitoolshub.org",
+  "reason": "AI tools directory/review site that also trades on the OpenAI name"
+ },
+ {
+  "candidate": "Claude Opus 5.5",
+  "reason": "Duplicate of existing listing claude (model version, not a separate product)"
+ },
+ {
+  "candidate": "eataray.com",
+  "reason": "Custom AI development consulting service, not a self-serve AI product"
+ },
+ {
+  "candidate": "claimvms.in",
+  "reason": "Not an AI product; packing video recording software for e-commerce sellers"
+ },
+ {
+  "candidate": "Synthesia 2.0",
+  "reason": "Duplicate: Synthesia is already listed (synthesia); 2.0 is a version of the same product"
+ },
+ {
+  "candidate": "creatortoolly.com",
+  "reason": "AI tools directory with a submit-your-tool service, not an AI product"
+ },
+ {
+  "candidate": "tabletochart.com",
+  "reason": "Not really an AI product: a browser-based table to chart maker whose own FAQ says it has only minor AI features"
+ },
+ {
+  "candidate": "mosmedicalrecordreview.com",
+  "reason": "Lead-generation chatbot page (5 free messages) on a medical record review services firm's site, with inconsistent branding (ReviewGenXGPT page signing users up for MedGenX coding); not a standalone AI product"
+ },
+ {
+  "candidate": "Hostinger AI Hub",
+  "reason": "Could not locate an official product by this name: hostinger.com/ai-hub returns 404 and Hostinger's own product index lists no AI Hub (its AI builders are separate products)"
+ },
+ {
+  "candidate": "Notion Sites",
+  "reason": "Website publishing feature of Notion rather than an AI product; Notion is already covered by notion-ai"
+ },
+ {
+  "candidate": "SearchGPT",
+  "reason": "Duplicate: OpenAI's SearchGPT prototype was folded into ChatGPT search; ChatGPT is already listed (chatgpt)"
+ },
+ {
+  "candidate": "scaninsta.com",
+  "reason": "Not an AI product: an anonymous Instagram profile and story viewer"
+ },
+ {
+  "candidate": "unforgettablecarai.com",
+  "reason": "Near-duplicate: same single-trend '24 car' video generator already covered by unforgettable-car-trend"
+ },
+ {
+  "candidate": "saascity.io",
+  "reason": "SaaS directory and launch platform selling backlinks, not an AI product"
+ },
+ {
+  "candidate": "Gemini 3.1 Flash-Lite Browser",
+  "reason": "Experimental Google DeepMind demo inside Google AI Studio rather than a standalone product; Google Gemini is already listed (gemini)"
+ },
+ {
+  "candidate": "ArtFlow AI",
+  "reason": "Official site (artflow.ai redirects to app.artflow.ai) only serves an empty app shell; current product, features and pricing could not be verified"
+ },
+ {
+  "candidate": "Claude Healthcare",
+  "reason": "Duplicate: Claude for Healthcare is a set of features within Claude, which is already listed (claude)"
+ },
+ {
+  "candidate": "proxycroxy.io",
+  "reason": "Web proxy service, not an AI product"
+ },
+ {
+  "candidate": "Bank Statement Converters",
+  "reason": "Official site (bankstatementconverter.com) describes an algorithmic PDF-to-spreadsheet converter with no AI functionality"
+ },
+ {
+  "candidate": "Casetext",
+  "reason": "Standalone Casetext was shut down in 2025 after the Thomson Reuters acquisition; the brand now redirects into Thomson Reuters CoCounsel"
+ },
+ {
+  "candidate": "imagetovideoprompt.org",
+  "reason": "Static prompt library and form-based prompt builder with no AI functionality of its own; mainly funnels visitors to a separate video generator site"
+ },
+ {
+  "candidate": "websiteaudit.com",
+  "reason": "Pay-per-audit SEO and site health checker; the official site makes no mention of AI, so it is not an AI product"
+ },
+ {
+  "candidate": "cgpa2percent.online",
+  "reason": "Fixed-formula CGPA to percentage calculator, not an AI product"
+ },
+ {
+  "candidate": "emergemarket.com",
+  "reason": "Enterprise freight procurement platform and carrier marketplace where AI is a secondary analytics module; not an AI tool for our audience"
+ },
+ {
+  "candidate": "GMPlus",
+  "reason": "No official website found and its Chrome Web Store listing no longer loads (appears delisted); could not verify the product is live"
+ },
+ {
+  "candidate": "Rocket Sender",
+  "reason": "Bulk WhatsApp Web messaging extension with no AI features"
+ },
+ {
+  "candidate": "seedance2ai.io",
+  "reason": "Unofficial third-party site trading on ByteDance's Seedance model name; the site states it is not affiliated with the model developers"
+ },
+ {
+  "candidate": "topai.review",
+  "reason": "Affiliate review and ranking site for website builders, not an AI product itself"
+ },
+ {
+  "candidate": "urls.ai",
+  "reason": "Website and tool directory"
+ },
+ {
+  "candidate": "bunny.directory",
+  "reason": "Launch directory / submit-your-project service"
+ },
+ {
+  "candidate": "Telegram Video Downloader",
+  "reason": "Generic video downloader utility with no single official vendor; not an AI product"
+ },
+ {
+  "candidate": "Speech Synthesis",
+  "reason": "Generic name with no identifiable official product or website"
+ },
+ {
+  "candidate": "iptvplaylist.app",
+  "reason": "IPTV playlist service, not an AI product"
+ },
+ {
+  "candidate": "MaleCNS Connectome",
+  "reason": "Neuroscience research dataset (fruit fly connectome from HHMI Janelia), not an AI tool"
+ },
+ {
+  "candidate": "LTX 2.5",
+  "reason": "Lightricks video model already covered by the existing LTX Studio listing (ltx-studio)"
+ },
+ {
+  "candidate": "Coool AI",
+  "reason": "Could not identify an official product or website under this name"
+ },
+ {
+  "candidate": "hitanalytics.xyz",
+  "reason": "Sports betting picks and parlay site funded by sportsbook affiliate links (gambling)"
+ },
+ {
+  "candidate": "Ask Maps",
+  "reason": "Built-in Gemini feature inside Google Maps rather than a standalone AI product with its own site"
+ },
+ {
+  "candidate": "Emu Video by Meta",
+  "reason": "Meta research model with no standalone public product or official site to sign up for"
+ },
+ {
+  "candidate": "Canva AI",
+  "reason": "Duplicate of existing listing canva-magic-studio (Canva's AI features)"
+ },
+ {
+  "candidate": "Rewind AI",
+  "reason": "Discontinued: Meta acquired Limitless in December 2025 and the Rewind Mac app stopped capturing on December 19, 2025"
+ },
+ {
+  "candidate": "launchboosts.com",
+  "reason": "AI tool directory and launch/backlink submission service, not an AI product"
+ },
+ {
+  "candidate": "subscriptionboxcalculator.us",
+  "reason": "Set of free browser calculators for subscription boxes; not an AI product"
+ },
+ {
+  "candidate": "Adcreative AI by Semrush",
+  "reason": "Duplicate of existing listing adcreative-ai (adcreative.ai)"
+ },
+ {
+  "candidate": "GPT-6 Sol and Luna",
+  "reason": "OpenAI model versions offered inside ChatGPT and the OpenAI API, already covered by the existing chatgpt listing; not a standalone product"
+ },
+ {
+  "candidate": "Eleven Music",
+  "reason": "Music feature of ElevenLabs on elevenlabs.io; duplicate of existing elevenlabs listing"
+ },
+ {
+  "candidate": "GPTGO",
+  "reason": "Unofficial 'free ChatGPT' search site (gptgo.ai) trading on OpenAI's ChatGPT name"
+ },
+ {
+  "candidate": "exonexo.com",
+  "reason": "AI guides, news and tool-recommendation information site, not an AI product"
+ },
+ {
+  "candidate": "Nano Banana 2",
+  "reason": "Google image model available through Gemini; duplicate of existing gemini listing (no separate official product site)"
+ },
+ {
+  "candidate": "W.A.L.T",
+  "reason": "Google/Stanford research video model (2023 paper) with no public product, app or API"
+ },
+ {
+  "candidate": "Beducated",
+  "reason": "Adult sexual-education content platform (NSFW)"
+ },
+ {
+  "candidate": "monitorguard.co.uk",
+  "reason": "Workforce management software; no AI functionality described on the site"
+ },
+ {
+  "candidate": "techpenser.com",
+  "reason": "Collection of generic free web utilities and a blog, not an AI product"
+ },
+ {
+  "candidate": "imagev2.org",
+  "reason": "Unofficial reseller site trading on other vendors' model names (GPT Image 2, Nano Banana 2) rather than the real vendor"
+ },
+ {
+  "candidate": "Gamma App",
+  "reason": "Duplicate of existing listing gamma (gamma.app)"
+ },
+ {
+  "candidate": "contentcreators.com",
+  "reason": "Tool directory and job board with a submit-your-tool service"
+ },
+ {
+  "candidate": "ponys.ai",
+  "reason": "AI companion roleplay with flirty/romantic characters (companion content)"
+ },
+ {
+  "candidate": "prelulu.ai",
+  "reason": "AI companion video chat focused on romance roleplay (companion content)"
+ },
+ {
+  "candidate": "poshready.org",
+  "reason": "POSH compliance software for Indian employers; no AI functionality described"
+ },
+ {
+  "candidate": "AI Studio by Meta",
+  "reason": "ai.meta.com/ai-studio now redirects into the Meta AI assistant; duplicate of existing listing meta-ai"
+ },
+ {
+  "candidate": "Seaweed.video",
+  "reason": "Research showcase page for ByteDance Seed's video model; no public product or access"
+ },
+ {
+  "candidate": "hrhelpboard.com",
+  "reason": "Site blocked behind a bot challenge, official tool could not be verified (appears to be an HR resources site)"
+ },
+ {
+  "candidate": "Tempus AI",
+  "reason": "Official site blocked by a security checkpoint and could not be verified; clinical diagnostics company rather than a self-serve AI tool"
+ },
+ {
+  "candidate": "menloinsurance.com",
+  "reason": "Insurance brokerage; the ChatGPT/Claude integration is a sales channel, not an AI product"
+ },
+ {
+  "candidate": "Free AI Chatbot Builder",
+  "reason": "Generic name with no identifiable official site (web search budget exhausted before it could be resolved)"
+ },
+ {
+  "candidate": "Free AI Content Writer",
+  "reason": "Generic name with no identifiable official site (web search budget exhausted before it could be resolved)"
+ },
+ {
+  "candidate": "Fugatto Nvidia",
+  "reason": "NVIDIA research model with no public release, app, or API; no official product page to list."
+ },
+ {
+  "candidate": "Booom.ai",
+  "reason": "Site is dead: booom.ai is a parked domain listed for sale."
+ },
+ {
+  "candidate": "GPT‑6.1 Sol",
+  "reason": "A model version within OpenAI's products, already covered by existing chatgpt and openai-codex listings; not a standalone tool."
+ },
+ {
+  "candidate": "Freepik AI Text Generator",
+  "reason": "Duplicate: Freepik's AI suite is already listed (slug freepik-ai)."
+ },
+ {
+  "candidate": "chexlow.com",
+  "reason": "Not an AI product: primarily a retail price-comparison site with a minor AI shopping chat add-on."
+ },
+ {
+  "candidate": "noiseclear.org",
+  "reason": "Not presented as an AI product: noise-profile denoising service that makes no AI claims."
+ },
+ {
+  "candidate": "igfollowerexporter.com",
+  "reason": "Not an AI product: Instagram follower scraper/CSV exporter."
+ },
+ {
+  "candidate": "Gemini 3.8 Flash",
+  "reason": "A model version, already covered by the existing Google Gemini listing (slug gemini); not a standalone tool."
+ },
+ {
+  "candidate": "skinugcai.com",
+  "reason": "Not a self-serve AI product: done-for-you ad service ordered via Telegram, paid in crypto, bundled with paid YouTube placement."
+ },
+ {
+  "candidate": "mirofish.us",
+  "reason": "Unofficial site: independent hosted service trading on the open-source MiroFish project's name, not the project itself."
+ },
+ {
+  "candidate": "AI Career Coach",
+  "reason": "No official site identifiable: generic name, source lists no website, and several unrelated products share the name."
+ },
+ {
+  "candidate": "AI Humanizer QuillBot",
+  "reason": "Duplicate: a feature of QuillBot, which is already listed (quillbot)"
+ },
+ {
+  "candidate": "Imagine Image 2.0",
+  "reason": "Duplicate: xAI's image model inside Grok, which is already listed (grok)"
+ },
+ {
+  "candidate": "Public Prompts",
+  "reason": "Directory: publicprompts.art is now an AI tools directory with a submit form, not an AI product"
+ },
+ {
+  "candidate": "Orion AI Factory",
+  "reason": "Could not identify a matching AI tool; the only match is Orion telekom's GPU/AI infrastructure service in Serbia, not a self-serve AI product"
+ },
+ {
+  "candidate": "earlystagestartups.com",
+  "reason": "Not an AI product: a startup job board and company directory"
+ },
+ {
+  "candidate": "swaplse.com",
+  "reason": "Site unreachable (domain does not resolve)"
+ },
+ {
+  "candidate": "AIR by Revolut",
+  "reason": "Not a standalone AI tool: an in-app assistant inside the Revolut banking app"
+ },
+ {
+  "candidate": "tryverse.app",
+  "reason": "Homepage shows only a name and tagline; no features, pricing or product details could be verified"
+ },
+ {
+  "candidate": "kling-4.org",
+  "reason": "Unofficial site trading on Kling's model name, not the real vendor (Kling AI already listed)"
+ },
+ {
+  "candidate": "imperialaitools.com",
+  "reason": "Not a tool: a comparison blog page (ZeroGPT vs GPTZero) on a review/directory site"
+ },
+ {
+  "candidate": "Infinite Adventure",
+  "reason": "Could not identify an official website; infinite-adventure.com is an empty placeholder and search budget was exhausted before a vendor could be confirmed"
+ },
+ {
+  "candidate": "Sugar Free",
+  "reason": "Could not confirm an official website; several similarly named sugar-tracking apps exist and the vendor could not be verified (search budget exhausted)"
+ },
+ {
+  "candidate": "mycostbase.ca",
+  "reason": "Not an AI product; a Canadian adjusted cost base tax calculator with no AI features"
+ },
+ {
+  "candidate": "peak.fo",
+  "reason": "CAPTCHA-solving API for bypassing Cloudflare bot detection; not an acceptable AI product"
+ },
+ {
+  "candidate": "Claude Sonnet 5.5",
+  "reason": "Duplicate: a model within Claude, already listed as claude"
+ },
+ {
+  "candidate": "Workspace Agents ChatGPT",
+  "reason": "Duplicate: a feature of ChatGPT, already listed as chatgpt"
+ },
+ {
+  "candidate": "veosnap.pages.dev",
+  "reason": "Unofficial ad-supported wrapper trading on Google's Veo name while running other open models, hosted on a pages.dev subdomain"
+ },
+ {
+  "candidate": "Hailuo AI Audio",
+  "reason": "Duplicate: part of MiniMax's Hailuo AI, already listed as hailuo-ai"
+ },
+ {
+  "candidate": "jurislane.com",
+  "reason": "Not an AI product; a cross-border legal services firm with fixed-fee service packages"
+ },
+ {
+  "candidate": "Gemini Spark",
+  "reason": "Duplicate: an agent feature inside Google Gemini, already listed as gemini"
+ },
+ {
+  "candidate": "AI Story",
+  "reason": "Generic name; could not identify a single official website or vendor (search budget exhausted)"
+ },
+ {
+  "candidate": "rapid-indexer.com",
+  "reason": "Search engine link indexing service for backlinks and pages, not an AI product"
+ },
+ {
+  "candidate": "Qwen 3",
+  "reason": "Duplicate: Alibaba's Qwen models are already listed as qwen (Qwen Chat)"
+ },
+ {
+  "candidate": "Devin AI by Cognition",
+  "reason": "Duplicate: already listed as devin (devin.ai)"
+ },
+ {
+  "candidate": "tecadrise.ai",
+  "reason": "AI automation agency selling done-for-you services, not a standalone AI product"
+ },
+ {
+  "candidate": "durofy.com",
+  "reason": "Primarily a digital media/blog site; the magazine cover generator is a minor side feature wrapping xAI Grok Imagine"
+ },
+ {
+  "candidate": "aicompare.ninja",
+  "reason": "AI tools directory and comparison site, not an AI product"
+ },
+ {
+  "candidate": "peptaralabs.io",
+  "reason": "Not an AI product: a peptide supplier's educational unit-conversion page"
+ },
+ {
+  "candidate": "Woebot Health",
+  "reason": "Consumer Woebot app was retired on June 30, 2025; the company now offers only partner/enterprise access with no public product details or pricing"
+ },
+ {
+  "candidate": "Arting",
+  "reason": "Markets itself as 'zero restriction' and an 'uninhibited' sandbox with bikini/twerk generators; falls under the uncensored/suggestive content exclusion"
+ },
+ {
+  "candidate": "Covers AI",
+  "reason": "Voice library built on unlicensed clones of real politicians, celebrities and streamers; pricing not published on the site"
+ },
+ {
+  "candidate": "Prezo AI",
+  "reason": "prezo.ai now shows an unrelated product ('The Orb', an AI receptionist/smart folder), not the presentation maker"
+ },
+ {
+  "candidate": "BlackRock AI Labs",
+  "reason": "Internal AI research group at BlackRock, not a public product or tool anyone can use"
+ },
+ {
+  "candidate": "Genspark AI Browser",
+  "reason": "Duplicate: Genspark (genspark.ai) is already listed as 'genspark'"
+ },
+ {
+  "candidate": "redflagfollows.app",
+  "reason": "Social media follow-tracking service for monitoring other people's accounts; no clear AI functionality and raises privacy concerns"
+ },
+ {
+  "candidate": "openspender.com",
+  "reason": "Payment card and spending-control service for AI agents (non-AI fintech service), and cards are waitlist-only"
+ },
+ {
+  "candidate": "seedreampro.co",
+  "reason": "Unofficial third-party site trading on ByteDance's Seedream model name; its own FAQ says it is not the official site"
+ },
+ {
+  "candidate": "DeepFaceLab",
+  "reason": "Deepfake creation software whose GitHub repository has been archived by its owner and is no longer maintained"
+ },
+ {
+  "candidate": "Grok 4",
+  "reason": "Duplicate: Grok (grok.com) is already listed as 'grok'"
+ },
+ {
+  "candidate": "Neuralink",
+  "reason": "Brain-computer interface medical device company, not an AI software tool available to users"
+ },
+ {
+  "candidate": "palworldonline.net",
+  "reason": "Fan-made Palworld breeding calculator using fixed rules and a dataset; not an AI product"
+ },
+ {
+  "candidate": "Anyvids",
+  "reason": "Domain anyvids.com is parked and listed for sale on GoDaddy"
+ },
+ {
+  "candidate": "FaceCheck ID",
+  "reason": "Facial recognition people-search engine for identifying individuals from photos; privacy and safety concerns about targeting private individuals"
+ },
+ {
+  "candidate": "Adobe Content Credentials",
+  "reason": "Content provenance and metadata app (now Adobe Content Authenticity), not an AI tool itself"
+ },
+ {
+  "candidate": "ecommercedataapi.com",
+  "reason": "Amazon marketplace data API with no stated AI functionality; a data service rather than an AI product"
+ },
+ {
+  "candidate": "tempemail.evostackr.in",
+  "reason": "Disposable temporary email service; not an AI product"
+ },
+ {
+  "candidate": "isrcfinder.org",
+  "reason": "Not an AI product: a plain ISRC code lookup tool for songs"
+ },
+ {
+  "candidate": "artisballs (theresanaiforthat.com listing)",
+  "reason": "No official website found; only exists as a directory listing"
+ },
+ {
+  "candidate": "AI Website Generator",
+  "reason": "HubSpot's AI website generator, a HubSpot feature that duplicates existing hubspot-breeze (hubspot.com)"
+ },
+ {
+  "candidate": "resiliencemedia.ir",
+  "reason": "Not an AI product: Persian-language resilience news site (redirects to tabavarinovin.ir)"
+ },
+ {
+  "candidate": "RemotePeople",
+  "reason": "Not primarily an AI product: employer-of-record and recruitment services firm with a minor AI add-on"
+ },
+ {
+  "candidate": "Keychain",
+  "reason": "Official site keychain.com unreachable (Cloudflare block), so the listing could not be verified on the official site"
+ },
+ {
+  "candidate": "Elevenlabs Music v2.5",
+  "reason": "Duplicate: a model release from ElevenLabs, already listed as elevenlabs"
+ },
+ {
+  "candidate": "TripTap",
+  "reason": "Official site triptap.com does not resolve (DNS failure); unreachable"
+ },
+ {
+  "candidate": "circumferencetodiameter.com",
+  "reason": "Not an AI product; a plain math unit calculator"
+ },
+ {
+  "candidate": "nyvoraai.github.io",
+  "reason": "AI news blog, not an AI tool"
+ },
+ {
+  "candidate": "Free AI Email Writer",
+  "reason": "HubSpot's free email writer tool; duplicates HubSpot Breeze (hubspot-breeze) already listed"
+ },
+ {
+  "candidate": "Human or Not 2",
+  "reason": "Unaffiliated humanornot.so revival reusing AI21 Labs' 'Human or Not' name, with an AI dating mode"
+ },
+ {
+  "candidate": "shipgates.co",
+  "reason": "Not clearly an AI product; a deadline and commitment tracker with no described AI features"
+ },
+ {
+  "candidate": "Live3D AI Face Swap",
+  "reason": "Deepfake-style face swap marketed for swapping onto celebrities, cross-promotes NSFW-leaning generators"
+ },
+ {
+  "candidate": "launchaihub.com",
+  "reason": "Startup incubator and accelerator program for AI founders, not an AI product"
+ },
+ {
+  "candidate": "trigram.site",
+  "reason": "Telegram channel ad marketplace paid in USDT, not an AI product"
+ },
+ {
+  "candidate": "marriagebiodatamaker.co",
+  "reason": "Template-based biodata PDF maker with no AI functionality"
+ },
+ {
+  "candidate": "sourcex.si",
+  "reason": "Business data licensing service that sells company data to AI labs, not an AI tool"
+ },
+ {
+  "candidate": "webcatalog.io",
+  "reason": "Desktop app wrapper and account manager for websites, not an AI product"
+ },
+ {
+  "candidate": "avanta-ai.com",
+  "reason": "Site unreachable (blocked behind a challenge page); third-party listings position it as a fewer-limitations assistant, so it could not be verified"
+ },
+ {
+  "candidate": "Odoo",
+  "reason": "General ERP and business software suite, not primarily an AI product"
+ },
+ {
+  "candidate": "GPT-5.3-Codex",
+  "reason": "Duplicate: model version covered by the existing OpenAI Codex listing (openai-codex)"
+ },
+ {
+  "candidate": "Grok 4.7",
+  "reason": "Duplicate: model version covered by the existing Grok listing (grok)"
+ },
+ {
+  "candidate": "Chatterbox TTS",
+  "reason": "Duplicate: Resemble AI model on resemble.ai, already covered by the existing resemble-ai listing"
+ },
+ {
+  "candidate": "MagicVideo-V2",
+  "reason": "ByteDance research model from a 2024 paper with no public product or official site"
+ },
+ {
+  "candidate": "Microduck",
+  "reason": "Hugging Face hardware robot kit, not a software AI tool that fits the directory categories"
+ },
+ {
+  "candidate": "Face AI",
+  "reason": "Official site is faceai.art (same product as the faceai.art candidate); face swap suite promoting 'hot', 'sexy' and 'tongue kiss' generators, adult-leaning content"
+ },
+ {
+  "candidate": "VideoPoet by Google",
+  "reason": "Google Research model shown only in a research demo; no publicly available product or official product site"
+ },
+ {
+  "candidate": "faceai.art",
+  "reason": "Face swap and character suite prominently promoting 'sexy kiss', 'hot kiss' and similar generators; adult-leaning content"
+ },
+ {
+  "candidate": "ChatGPT Translate",
+  "reason": "Feature of ChatGPT hosted on chatgpt.com; duplicates existing listing chatgpt"
+ },
+ {
+  "candidate": "Grok Imagine",
+  "reason": "Image and video feature inside Grok on grok.com; duplicates existing listing grok"
+ },
+ {
+  "candidate": "Uncensored.com",
+  "reason": "Markets an 'uncensored' chatbot; excluded category"
+ },
+ {
+  "candidate": "firstbark.com",
+  "reason": "Dog trainer directory; not an AI product"
+ },
+ {
+  "candidate": "DeepSwapFace",
+  "reason": "deepswapface.ai offers NSFW face swap, 'AI censor remover' and explicit body generators; adult content"
+ },
+ {
+  "candidate": "Dolores",
+  "reason": "AI girlfriend companion app that allows adult content; dolores.ai domain is also listed for sale"
+ },
+ {
+  "candidate": "DeepSwapper AI",
+  "reason": "deepswapper.com is a no-signup deepfake face swap site that invites swapping faces onto any image, including celebrities, with no consent safeguards"
+ },
+ {
+  "candidate": "Speechki",
+  "reason": "speechki.org only offers a waitlist, footer dated 2024, and the product centers on the discontinued ChatGPT plugin; no active product to sign up for"
+ },
+ {
+  "candidate": "WingmanX",
+  "reason": "wingmanx.ai redirects to a different product (Flirtist), a pickup-line dating assistant promoting 'one-night stands'"
+ },
+ {
+  "candidate": "AI Dubbing by ElevenLabs",
+  "reason": "Feature of ElevenLabs on elevenlabs.io; duplicates existing listing elevenlabs"
+ },
+ {
+  "candidate": "HeyGen Interactive Avatar",
+  "reason": "Duplicate: a feature of HeyGen, already listed (heygen)"
+ },
+ {
+  "candidate": "Leet Resumes",
+  "reason": "leetresumes.com now redirects to The Ladders resume-writing service page; the original AI product is no longer offered there"
+ },
+ {
+  "candidate": "DRESSX.me",
+  "reason": "Site unreachable (connection refused on dressx.me)"
+ },
+ {
+  "candidate": "Lumiere AI by Google",
+  "reason": "Google Research demo page only (lumiere-video.github.io); not an available product"
+ },
+ {
+  "candidate": "Suno V6",
+  "reason": "Duplicate: model version of Suno, already listed (suno)"
+ },
+ {
+  "candidate": "Trips by TripAdvisor",
+  "reason": "Feature inside Tripadvisor rather than a standalone AI product; official pages block access and only 2023 beta information could be verified"
+ },
+ {
+  "candidate": "Stable Audio 3.0",
+  "reason": "Duplicate: model version of Stable Audio, already listed (stable-audio)"
+ },
+ {
+  "candidate": "cursive-text-generator.net",
+  "reason": "Not an AI product: Unicode/font cursive text converter"
+ },
+ {
+  "candidate": "Memoru Flashcards",
+  "reason": "No official website found; the App Store listing describes a standard flashcard app with no AI features"
+ },
+ {
+  "candidate": "RealFake",
+  "reason": "No official product found; realfake.ai is a domain for sale and getrealfake.com is a placeholder page"
+ },
+ {
+  "candidate": "Dropbox Sign",
+  "reason": "Not an AI product: e-signature service with no AI features on its site"
+ },
+ {
+  "candidate": "bratgeneratorpro.cc",
+  "reason": "Not an AI product: template text-to-image cover maker trading on the Charli XCX 'brat' look"
+ },
+ {
+  "candidate": "MedLM by Google",
+  "reason": "Access-restricted Google Cloud model family listed as deprecated/legacy, superseded by MedGemma; not an available product to list"
+ },
+ {
+  "candidate": "claude-seo.online",
+  "reason": "Site unreachable (connection fails on http and https); also an unofficial site trading on Anthropic's Claude name"
+ },
+ {
+  "candidate": "Night Café",
+  "reason": "Duplicate of existing listing nightcafe (NightCafe)"
+ },
+ {
+  "candidate": "msgboard.dev",
+  "reason": "Not an AI product: an anonymous public message board/API for agents to post to, not an AI tool itself"
+ },
+ {
+  "candidate": "bestaivideo.tools",
+  "reason": "AI tools directory (database of AI video tools)"
+ },
+ {
+  "candidate": "kromotools.net",
+  "reason": "Generic collection of mostly non-AI utilities (calculators, converters, IP checker); not an AI product"
+ },
+ {
+  "candidate": "musicgeneratorai.io",
+  "reason": "Generic SEO-named reseller wrapper of another vendor's music model (gallery tracks served from Suno's CDN); no vendor or pricing details published"
+ },
+ {
+  "candidate": "toolpotion.ai",
+  "reason": "AI tools directory / advisor"
+ },
+ {
+  "candidate": "Arvin AI Logo Maker",
+  "reason": "Dead: arvin.chat announced it permanently shut down on 2026-10-20"
+ },
+ {
+  "candidate": "Notion Business",
+  "reason": "Duplicate of existing listing notion-ai (same vendor and domain, notion.com)"
+ },
+ {
+  "candidate": "aibranding.com",
+  "reason": "Primarily a premium domain marketplace with logo and design templates rather than an AI tool"
+ },
+ {
+  "candidate": "Dun & Bradstreet",
+  "reason": "Established business data and credit reporting company, not an AI product"
+ },
+ {
+  "candidate": "DeepSeek-R1",
+  "reason": "Duplicate: DeepSeek is already listed (deepseek)"
+ },
+ {
+  "candidate": "Muse Spark",
+  "reason": "Duplicate: Meta's model powering Meta AI, already listed (meta-ai)"
+ },
+ {
+  "candidate": "aitoolbox.ifree.page",
+  "reason": "Hobby wrapper around third-party free APIs on a free hosting subdomain; not a credible standalone product"
+ },
+ {
+  "candidate": "textsgenerators.com",
+  "reason": "Unicode fancy font and text symbol generator, not an AI product"
+ },
+ {
+  "candidate": "Genie by Lumalabs",
+  "reason": "Duplicate: Luma Labs (lumalabs.ai) is already listed (luma-dream-machine)"
+ },
+ {
+  "candidate": "freetoolwise.com",
+  "reason": "General collection of 258 mostly non-AI utility tools and games rather than a focused AI product"
+ },
+ {
+  "candidate": "Kirkify AI",
+  "reason": "Meme face-swap site built around a specific real person's likeness with no identifiable official vendor"
+ },
+ {
+  "candidate": "crowdo.net",
+  "reason": "SEO agency and link building service, not an AI tool"
+ },
+ {
+  "candidate": "Google SignGemma",
+  "reason": "Not publicly released; Google announced it in 2025 but no downloadable model or usable product is available"
+ },
+ {
+  "candidate": "DreamActor-M1",
+  "reason": "ByteDance research paper (arXiv) with no standalone official product or site"
+ },
+ {
+  "candidate": "bitcoinloansmarket.com",
+  "reason": "Bitcoin loan comparison site; crypto finance, not an AI product"
+ },
+ {
+  "candidate": "Haiku 5.5",
+  "reason": "Duplicate: Anthropic Claude model, already covered by the existing Claude listing (claude)"
+ },
+ {
+  "candidate": "Runway ML",
+  "reason": "Duplicate of existing listing runway"
+ },
+ {
+  "candidate": "Video Face Swap",
+  "reason": "videofaceswap.ai markets anonymous deepfake face swaps with 'no content limitation', effectively uncensored deepfake content"
+ },
+ {
+  "candidate": "Chat with RTX by Nvidia",
+  "reason": "Discontinued: official ChatRTX page now redirects to a generic NVIDIA RTX AI PCs page and the GitHub repo is archived"
+ },
+ {
+  "candidate": "aitestguide.com",
+  "reason": "AI news and review blog/directory (including NSFW tool roundups), not an AI product"
+ },
+ {
+  "candidate": "zene.ai",
+  "reason": "Indian edtech cohort program site with no verifiable AI product details, features or pricing"
+ },
+ {
+  "candidate": "Manus AI Agent",
+  "reason": "Duplicate: Manus (manus.im) is already listed as slug manus"
+ },
+ {
+  "candidate": "MidJourney V8",
+  "reason": "Duplicate: a model version of Midjourney, already listed as slug midjourney"
+ },
+ {
+  "candidate": "ChatSonic",
+  "reason": "Duplicate: Chatsonic is part of Writesonic (writesonic.com), already listed as slug writesonic"
+ },
+ {
+  "candidate": "Semrush Social Toolkit",
+  "reason": "Duplicate by domain: semrush.com is already listed (semrush-contentshake)"
+ },
+ {
+  "candidate": "Tripo Studio",
+  "reason": "Duplicate: Tripo Studio is the editor inside Tripo AI (tripo3d.ai), already being added as tripo-ai in new-tools batch-04"
+ },
+ {
+  "candidate": "Vocal Remover",
+  "reason": "Official site (vocalremover.org) unreachable for verification (HTTP 403) and third-party sources conflict on pricing, so the listing could not be verified"
+ },
+ {
+  "candidate": "Chessnut",
+  "reason": "Not primarily an AI product: chessnutech.com is a store for electronic chessboard hardware that bundles standard chess engines"
+ },
+ {
+  "candidate": "imgtoimg-ai.com",
+  "reason": "Generic reseller wrapper marketed around other vendors' model names (Nano Banana, GPT Image, Seedream) and a near duplicate of the existing image-to-image listing"
+ },
+ {
+  "candidate": "gta-ai-filter.xyz",
+  "reason": "Unofficial site trading on Rockstar's GTA brand name; a generic photo-filter page, not the brand owner"
+ },
+ {
+  "candidate": "getrandomletter.com",
+  "reason": "Not an AI product: a browser-based random letter wheel"
+ },
+ {
+  "candidate": "PionexGPT",
+  "reason": "Crypto trading bot assistant built into the Pionex cryptocurrency exchange (crypto trading service)"
+ },
+ {
+  "candidate": "b2bai.directory",
+  "reason": "Directory of AI tools and workflows, not an AI product"
+ },
+ {
+  "candidate": "einfachai.com",
+  "reason": "Freelance AI automation consultancy (services for manufacturers), not a self-serve AI product"
+ },
+ {
+  "candidate": "SciSpace AI Writer",
+  "reason": "Duplicate: part of SciSpace (scispace.com), already listed as scispace"
+ },
+ {
+  "candidate": "Gemini Personal Intelligence",
+  "reason": "Duplicate: a feature of the Google Gemini app, already listed as gemini"
+ },
+ {
+  "candidate": "Muse Image by Meta",
+  "reason": "Duplicate: image model that runs inside Meta AI (meta.ai), already listed as meta-ai; no standalone product site"
+ },
+ {
+  "candidate": "Adobe Firefly 3",
+  "reason": "Duplicate: model version of Adobe Firefly, already listed as adobe-firefly"
+ },
+ {
+  "candidate": "aiagentslisting.com",
+  "reason": "Directory of AI agents with a submit-your-agent service, not an AI product"
+ },
+ {
+  "candidate": "HubSpot CRM",
+  "reason": "Duplicate by domain: HubSpot (hubspot.com) already listed as hubspot-breeze"
+ },
+ {
+  "candidate": "DeepFakesWeb",
+  "reason": "Deepfake face-swap service that invites swapping faces into any video, with crypto-only web payments; high misuse risk, not suitable for curated listing"
+ },
+ {
+  "candidate": "Flux.2",
+  "reason": "Duplicate: Black Forest Labs FLUX model family, already listed as flux (bfl.ai)"
+ },
+ {
+  "candidate": "flux2pro.org",
+  "reason": "Unofficial site trading on Black Forest Labs' FLUX model name, not the real vendor"
+ },
+ {
+  "candidate": "Summarize Tech",
+  "reason": "Site unreachable: summarize.tech returns HTTP 503 with a paused deployment message"
+ },
+ {
+  "candidate": "ElevenLabs Voice Design",
+  "reason": "Duplicate: Voice Design is a feature of ElevenLabs, which is already listed"
+ },
+ {
+  "candidate": "Sharp Apple",
+  "reason": "Apple research model (single image to 3D) released as code for researchers, not an end-user product"
+ },
+ {
+  "candidate": "Peppertype.ai",
+  "reason": "Discontinued: peppertype.ai now redirects to pepper.inc, which is already listed as pepper-content"
+ },
+ {
+  "candidate": "AI Text Summarizer",
+  "reason": "No official site found; aitextsummarizer.com is a parked domain for sale"
+ },
+ {
+  "candidate": "CelebrityAI",
+  "reason": "No working official site found (celebrityai.com is a placeholder page); product centers on celebrity voice impersonation"
+ },
+ {
+  "candidate": "Recraft V3 SVG",
+  "reason": "Duplicate: a model/feature of Recraft, which is already listed"
+ },
+ {
+  "candidate": "Perplexity Email Assistant",
+  "reason": "Duplicate: a feature of Perplexity, which is already listed"
+ },
+ {
+  "candidate": "Face Swap AI",
+  "reason": "Generic name with no identifiable official product; faceswap-ai.com is a domain for sale"
+ },
+ {
+  "candidate": "Sketch",
+  "reason": "Discontinued: sketch.dev redirects to a notice that Sketch is no longer available"
+ },
+ {
+  "candidate": "Leffa",
+  "reason": "Meta research project (paper and code for virtual try-on), not an end-user product"
+ },
+ {
+  "candidate": "Temporal Gaussian Hierarchy",
+  "reason": "Academic research paper and code for 4D scene representation, not an AI tool product"
+ },
+ {
+  "candidate": "Qwen2.5-Coder",
+  "reason": "Duplicate: open model from Alibaba's Qwen family, already covered by the existing qwen (Qwen Chat) listing"
+ },
+ {
+  "candidate": "Le Chat by Mistral AI",
+  "reason": "Duplicate of existing listing le-chat (chat.mistral.ai)"
+ },
+ {
+  "candidate": "Audio2Photoreal by Meta",
+  "reason": "Research code release, not a product; GitHub repository archived by Meta in August 2025"
+ },
+ {
+  "candidate": "ChatALL",
+  "reason": "Discontinued: the official GitHub repository (ai-shifu/ChatALL) is archived and read-only"
+ },
+ {
+  "candidate": "Logo Generator AppyPie",
+  "reason": "Dead page: appypie.com logo maker returns 410 and redirects to a different product (Pixazo)"
+ },
+ {
+  "candidate": "Genie by Deepmind",
+  "reason": "Duplicate of genie-3 already prepared in batch-04; also a research world model rather than a generally available tool"
+ },
+ {
+  "candidate": "IG DM",
+  "reason": "No identifiable official site (igdm.ai does not resolve); name maps to several unofficial Instagram bulk-DM automation extensions"
+ },
+ {
+  "candidate": "Botreon",
+  "reason": "Companion/character roleplay bot platform whose JS-only site exposes no verifiable product, pricing or content-policy details"
+ },
+ {
+  "candidate": "KreadoAI FaceSwap",
+  "reason": "Face-swap/deepfake feature of KreadoAI, which is already prepared as kreadoai in batch-07/batch-10"
+ },
+ {
+  "candidate": "Coinfeeds.io",
+  "reason": "Crypto-trading focused B2B news/agent service; site is largely leftover template content with little verifiable product detail"
+ },
+ {
+  "candidate": "Edify 3D",
+  "reason": "Discontinued: NVIDIA's build.nvidia.com Edify 3D page now redirects to a generic model catalog"
+ },
+ {
+  "candidate": "NerdyTips",
+  "reason": "Gambling: AI football betting tips and bet builder"
+ },
+ {
+  "candidate": "Raycast Al",
+  "reason": "Duplicate of existing listing raycast (raycast.com)"
+ },
+ {
+  "candidate": "VCFConverter",
+  "reason": "Not an AI product: client-side vCard/CSV/Excel file converter"
+ },
+ {
+  "candidate": "Open Assistant",
+  "reason": "Site open-assistant.io is unreachable; the LAION project has ended"
+ },
+ {
+  "candidate": "Vana Portrait",
+  "reason": "Official site portrait.vana.com is unreachable"
+ },
+ {
+  "candidate": "Appark",
+  "reason": "Mobile app market analytics platform with no AI product features on its site"
+ },
+ {
+  "candidate": "Kinetix",
+  "reason": "Now a research lab site; its 'Access Model' product link (video.kinetix.tech) does not resolve, so no usable product"
+ },
+ {
+  "candidate": "Grok 2.0",
+  "reason": "Duplicate of existing listing grok (grok.com)"
+ },
+ {
+  "candidate": "AI Lab",
+  "reason": "Could not identify an official product; ailab.com is a domain-for-sale page"
+ },
+ {
+  "candidate": "Aimy Ads",
+  "reason": "aimyads.com is a parked GoDaddy for-sale domain and Brand Networks' Aimy page now redirects to its agency media services"
+ },
+ {
+  "candidate": "CAD with AI",
+  "reason": "Anonymous single-page demo with no maker, pricing, documentation or about page to verify a listing against"
+ },
+ {
+  "candidate": "Higgsfield FaceSwap",
+  "reason": "Feature of existing listing higgsfield (higgsfield.ai); face-swap deepfake tool"
+ },
+ {
+  "candidate": "Wondershare Recoverit",
+  "reason": "Data recovery software, not primarily an AI product"
+ },
+ {
+  "candidate": "AI Expression Editor",
+  "reason": "Generic name with no identifiable official product site (many unrelated expression editors exist)"
+ },
+ {
+  "candidate": "Personal Avatars Synthesia",
+  "reason": "Feature of existing listing synthesia (synthesia.io)"
+ },
+ {
+  "candidate": "AI Article Writer 6.0",
+  "reason": "Feature of existing listing writesonic (writesonic.com)"
+ },
+ {
+  "candidate": "LongShot",
+  "reason": "longshot.ai states the product was discontinued in mid 2025"
+ },
+ {
+  "candidate": "AweMyFace",
+  "reason": "Official site awemyface.com is dead (404 / disconnected Wix domain)"
+ },
+ {
+  "candidate": "Globe Explorer AI",
+  "reason": "explorer.globe.engineer and globe.engineer are unreachable"
+ },
+ {
+  "candidate": "MealByMeal",
+  "reason": "Service discontinued: mealbymeal.com now redirects to an acquisition notice on lifecrosstraining.com, an unrelated fitness blog; no working AI product"
+ },
+ {
+  "candidate": "Lenso.ai",
+  "reason": "Reverse image search with face search whose main use is identifying real people from photos"
+ },
+ {
+  "candidate": "Deepfake Maker",
+  "reason": "deepfakemaker.io is a face swap deepfake generator for putting real people's faces into photos and videos, with no consent safeguards"
+ },
+ {
+  "candidate": "Rayo",
+  "reason": "rayo.work is now only a waitlist page for a different upcoming assistant (Zero); the original Rayo writing tool is relegated to a legacy subdomain and cannot be verified as an active product"
+ },
+ {
+  "candidate": "GrokBot",
+  "reason": "grokbot.ai is an unrelated PCBA manufacturing placeholder; xAI's Grok Bot agent is a beta feature of Grok subscriptions with no standalone official page, covered by the existing Grok listing"
+ },
+ {
+  "candidate": "Video Face Swap Arting",
+  "reason": "Face swap deepfake page on arting.ai, a multi-tool aggregator that also offers bikini generators and watermark removers; swaps real people's faces into videos without consent safeguards"
+ },
+ {
+  "candidate": "GPT Engineer",
+  "reason": "Duplicate: gptengineer.app redirects to lovable.dev, already listed as Lovable"
+ },
+ {
+  "candidate": "Outfits AI",
+  "reason": "Dead site: outfits.ai redirects to a domain parking lander, and outfitsai.com is an empty page with no verifiable product"
+ },
+ {
+  "candidate": "Illuminate by Google",
+  "reason": "Google Labs experiment whose site now shows only a sign-in shell titled Learn Your Way; current features cannot be verified and its audio overviews overlap the existing NotebookLM listing"
+ },
+ {
+  "candidate": "Call Annie",
+  "reason": "Discontinued: callannie.ai states the Call Annie app has been discontinued"
+ },
+ {
+  "candidate": "Gemini Co-Drawing",
+  "reason": "A starter demo app inside Google AI Studio rather than a standalone product"
+ },
+ {
+  "candidate": "Voice Engine by OpenAI",
+  "reason": "Not a publicly available product; OpenAI only previewed it in a blog post with limited partner access"
+ },
+ {
+  "candidate": "VoiSpark",
+  "reason": "Offers unlicensed celebrity voice clones (e.g. Taylor Swift, Messi) and advertises NSFW performances"
+ },
+ {
+  "candidate": "Pixite AI",
+  "reason": "pixite.ai now redirects to playflux.ai, an AI porn and clothes-remover site (adult/NSFW)"
+ },
+ {
+  "candidate": "AI Clothes Changer",
+  "reason": "aiclotheschanger.net is a thin wrapper over third-party image models that also promotes an AI bikini generator applied to uploaded photos of people (NSFW-adjacent)"
+ },
+ {
+  "candidate": "AI Voice Changer by ElevenLabs",
+  "reason": "Duplicate: a feature of ElevenLabs, already listed (elevenlabs)"
+ },
+ {
+  "candidate": "Quill AI",
+  "reason": "Official site quillai.com unreachable (502 Bad Gateway)"
+ },
+ {
+  "candidate": "Eyematch.ai",
+  "reason": "Facial recognition search engine for finding where a person's face appears online (identifying real people)"
+ },
+ {
+  "candidate": "Darwin Gödel Machine",
+  "reason": "Research project and paper, not a usable product"
+ },
+ {
+  "candidate": "Deep Search",
+  "reason": "No identifiable official product; name matches face search / people search apps (identifying real people)"
+ },
+ {
+  "candidate": "Vidi2",
+  "reason": "ByteDance research model with a paper and demo, not a standalone product"
+ },
+ {
+  "candidate": "Adslibrary",
+  "reason": "Not primarily an AI product: ad saving and swipe-file tool with only an AI search feature"
+ },
+ {
+  "candidate": "Altera PlayLabs",
+  "reason": "Official site altera.al unreachable; no live product page found"
+ },
+ {
+  "candidate": "Tally",
+  "reason": "Not primarily an AI product (tally.so is a general online form builder)"
+ },
+ {
+  "candidate": "Morphlin",
+  "reason": "Crypto trading signals and Binance-connected trading platform with KOL referral scheme"
+ },
+ {
+  "candidate": "Superbolt GeoSpy",
+  "reason": "Photo geolocation intelligence marketed to law enforcement for locating where photos were taken (tracking real people)"
+ },
+ {
+  "candidate": "Jarvis (Microsoft)",
+  "reason": "Microsoft research repository (HuggingGPT), not a product"
+ },
+ {
+  "candidate": "SharkWriter.ai",
+  "reason": "Site dead (404 / error on sharkwriter.ai and sharkwriter.com)"
+ },
+ {
+  "candidate": "V2A by Google DeepMind",
+  "reason": "Unreleased research demo, not an available product"
+ },
+ {
+  "candidate": "Text to Sound Effects",
+  "reason": "Duplicate: ElevenLabs sound effects feature, already listed (elevenlabs)"
+ },
+ {
+  "candidate": "Prolific",
+  "reason": "Not an AI product: prolific.com is a human participant recruitment and human data collection platform, not an AI tool itself"
+ },
+ {
+  "candidate": "Create AI",
+  "reason": "Duplicate: Create (create.xyz) is now Anything, already listed as create-xyz"
+ },
+ {
+  "candidate": "AI Chat",
+  "reason": "Generic name; could not identify a specific official product or site (aixploria slug redirects to an unrelated tool)"
+ },
+ {
+  "candidate": "Moonbeam Exchange",
+  "reason": "Not an AI product: moonbeamexchange.com is an innovation consulting firm; moonbeam.exchange is a parked domain for sale"
+ },
+ {
+  "candidate": "Ezilee",
+  "reason": "Dead/parked: ezilee.fr unreachable and ezilee.com redirects to a parking lander"
+ },
+ {
+  "candidate": "Copresence",
+  "reason": "Shut down: copresence.tech now hosts a goodbye notice announcing the company is closing"
+ },
+ {
+  "candidate": "ElevenLabs Music",
+  "reason": "Duplicate: product of ElevenLabs (elevenlabs.io), already listed as elevenlabs"
+ },
+ {
+  "candidate": "AI Face Swap Video",
+  "reason": "Generic keyword deepfake site (aifaceswapvideo.online) marketing itself as an 'uncensored' face replace app"
+ },
+ {
+  "candidate": "Humanize AI Tools",
+  "reason": "AI text humanizer marketed mainly for evading AI detectors"
+ },
+ {
+  "candidate": "Godmode",
+  "reason": "godmode.space now shows only a one-line notice linking to a tweet; the agent product is no longer available"
+ },
+ {
+  "candidate": "Bank Statement Extractor",
+  "reason": "Could not identify a single official product site; the name is shared by several unrelated tools and the candidate domains do not resolve"
+ },
+ {
+  "candidate": "Vibrato",
+  "reason": "getvibrato.com shows a shutdown notice; the company has closed the service"
+ },
+ {
+  "candidate": "InkForAll",
+  "reason": "inkforall.com now redirects to an unrelated SmythOS GitHub repository; the writing product is discontinued"
+ },
+ {
+  "candidate": "Hexagen World AI",
+  "reason": "Site rules state development of the project has ended and purchases are disabled"
+ },
+ {
+  "candidate": "Humanize AI",
+  "reason": "Marketed mainly for rewriting AI text to evade AI detectors"
+ },
+ {
+  "candidate": "Humanizer-AI-Text",
+  "reason": "Marketed mainly for rewriting AI text to evade AI detectors"
+ },
+ {
+  "candidate": "GPTHotline",
+  "reason": "gpthotline.com returns a Vercel DEPLOYMENT_NOT_FOUND error; site is dead"
+ },
+ {
+  "candidate": "Ipso AI",
+  "reason": "ipso.ai returns a page not found error; no live official site found"
+ },
+ {
+  "candidate": "ElevenLabs Voice Isolator",
+  "reason": "Duplicate: a feature of ElevenLabs, which is already listed (elevenlabs)"
+ },
+ {
+  "candidate": "Google Skills",
+  "reason": "Not an AI product: Google's course and certification catalog (skills.google) for learning AI and cloud, not an AI tool itself"
+ },
+ {
+  "candidate": "Amazon Titan",
+  "reason": "Product page retired: the Titan page now redirects to the general Amazon Bedrock page and the Titan text models have been superseded; not a standalone tool listing"
+ },
+ {
+  "candidate": "Muse by Sudowrite",
+  "reason": "Duplicate: Muse is a model inside Sudowrite, which is already listed (sudowrite)"
+ },
+ {
+  "candidate": "Muset AI",
+  "reason": "Official site (muset.ai) publishes too little verifiable information: no feature details or pricing, product appears to have pivoted"
+ },
+ {
+  "candidate": "TeraBox AI",
+  "reason": "Not a standalone AI product: AI features are bundled inside the TeraBox cloud storage app and terabox.com/ai returns 404"
+ },
+ {
+  "candidate": "Neets AI",
+  "reason": "Dead: neets.ai redirects to an unrelated shopping site (DHgate)"
+ },
+ {
+  "candidate": "Fable",
+  "reason": "Not an AI product: makeitfable.com is an accessibility research platform powered by human testers with disabilities"
+ },
+ {
+  "candidate": "Jeeves.Ai",
+  "reason": "Stale generic GPT-3/GPT-4 wrapper: site shows almost no verifiable features or pricing"
+ },
+ {
+  "candidate": "ChatGPT Android",
+  "reason": "Duplicate: the Android app of ChatGPT, already listed as chatgpt"
+ },
+ {
+  "candidate": "PikaStream 1.0",
+  "reason": "Duplicate: Pika experiment that redirects to experiment.pika.art, same vendor as the listed pika"
+ },
+ {
+  "candidate": "Gemini Storybook",
+  "reason": "Duplicate: a feature of Google Gemini, already listed as gemini"
+ },
+ {
+  "candidate": "Vall-E",
+  "reason": "Microsoft research paper/model with no public product (link points to arXiv)"
+ },
+ {
+  "candidate": "LogoFast",
+  "reason": "Not an AI product: logofa.st is a manual icon-based logo maker with no AI features"
+ },
+ {
+  "candidate": "Rizemail",
+  "reason": "Site unreachable (rizemail.com and www fail to connect)"
+ },
+ {
+  "candidate": "StudyGPT",
+  "reason": "Product discontinued and rebranded to Knowee Writer, which markets an AI-detector bypass tool"
+ },
+ {
+  "candidate": "AI Calendar ClickUp",
+  "reason": "Duplicate: ClickUp feature (clickup.com), already listed as clickup-brain"
+ },
+ {
+  "candidate": "Netlify",
+  "reason": "Not primarily an AI product: web hosting and deployment platform with AI add-ons"
+ },
+ {
+  "candidate": "Fillout AI",
+  "reason": "Not primarily an AI product: general form builder (fillout.com) where AI is a minor add-on"
+ },
+ {
+  "candidate": "Free Face Search Online",
+  "reason": "Face search engine for identifying real people"
+ },
+ {
+  "candidate": "Perplexity Assistant",
+  "reason": "Duplicate: Perplexity's Android assistant, already listed as perplexity"
+ },
+ {
+  "candidate": "Black Rock Mortgage",
+  "reason": "Not an AI product: a Florida mortgage broker website"
+ },
+ {
+  "candidate": "Yan AI",
+  "reason": "Tencent research framework for interactive video generation; no official product site or public tool found"
+ },
+ {
+  "candidate": "SuperFile.ai",
+  "reason": "Site is dead (serves a default nginx page)"
+ },
+ {
+  "candidate": "JoyFun AI",
+  "reason": "Adult/NSFW effects (breast expansion, cleavage, bikini generators) alongside face swap"
+ },
+ {
+  "candidate": "Profil Picture AI",
+  "reason": "profilepicture.ai is now a free non-generative photo crop/background editor that funnels to HeadshotPro; the site itself says it is not an AI picture generator"
+ },
+ {
+  "candidate": "Humanize Max",
+  "reason": "AI text humanizer marketed mainly for making AI writing pass as human (detector evasion)"
+ },
+ {
+  "candidate": "pdf.net",
+  "reason": "Primarily a conventional online PDF editor; AI is a minor add-on (4 of 35+ tools)"
+ },
+ {
+  "candidate": "Seed3D 2.0",
+  "reason": "ByteDance research model with only a paper page; no official product homepage or self-serve access on the vendor site"
+ },
+ {
+  "candidate": "VLOGGER by Google",
+  "reason": "Google research project with no public product or access"
+ },
+ {
+  "candidate": "Heali AI",
+  "reason": "heali.ai redirects to a nutrition app site that does not present an AI product"
+ },
+ {
+  "candidate": "Jules by Google",
+  "reason": "Duplicate of existing listing 'jules' (jules.google)"
+ },
+ {
+  "candidate": "Manus Browser Operator",
+  "reason": "A feature of Manus, which is already listed as 'manus'"
+ },
+ {
+  "candidate": "Tax Brackets",
+  "reason": "No official site found; taxbrackets.com is parked"
+ },
+ {
+  "candidate": "v3RPG",
+  "reason": "Web3 play-to-earn game built around crypto rewards on Arbitrum"
+ },
+ {
+  "candidate": "GameNgen",
+  "reason": "Google research project (neural game engine) with no public product"
+ },
+ {
+  "candidate": "StupidGPT",
+  "reason": "Domain is parked"
+ }
+]

@@ -4,11 +4,13 @@
  * and generating SEO metadata for every listing.
  *
  * Usage: npx tsx --env-file=.env.local scripts/import-tools.ts [data-file]
- *   data-file defaults to scripts/tools-data.ts
+ *   data-file defaults to scripts/tools-data.ts; a .json file holding an
+ *   array of ToolSeed (or { tools: ToolSeed[] }) also works.
  * Idempotent: tools whose slug already exists are skipped.
  * Alternative slugs not found in the dataset are resolved from the DB,
  * so batches can cross-link to previously imported tools.
  */
+import { readFileSync } from "node:fs";
 import path from "node:path";
 import { PrismaClient } from "@prisma/client";
 import type { ToolSeed } from "./tools-data";
@@ -87,6 +89,12 @@ const CATEGORY_KEYWORD: Record<string, string> = {
   productivity: "AI productivity tool",
   marketing: "AI marketing tool",
   research: "AI research tool",
+  chat: "AI chatbot",
+  agents: "AI agent",
+  design: "AI design tool",
+  business: "AI business tool",
+  education: "AI education tool",
+  lifestyle: "AI lifestyle app",
 };
 
 function seoFor(t: ToolSeed) {
@@ -117,7 +125,13 @@ async function main() {
   const dataFile = process.argv[2]
     ? path.resolve(process.argv[2])
     : path.join(__dirname, "tools-data.ts");
-  const { TOOLS } = (await import(dataFile)) as { TOOLS: ToolSeed[] };
+  let TOOLS: ToolSeed[];
+  if (dataFile.endsWith(".json")) {
+    const raw = JSON.parse(readFileSync(dataFile, "utf8"));
+    TOOLS = Array.isArray(raw) ? raw : raw.tools;
+  } else {
+    ({ TOOLS } = (await import(dataFile)) as { TOOLS: ToolSeed[] });
+  }
   console.log(`Importing ${TOOLS.length} tools from ${dataFile}\n`);
 
   const cats = await prisma.category.findMany();
@@ -179,8 +193,9 @@ async function main() {
         pricing: t.pricing,
         priceFrom: t.priceFrom ?? null,
         founded: t.founded ?? null,
-        rating: t.rating,
-        ratingCount: t.ratingCount,
+        rating: t.rating ?? 0,
+        ratingCount: t.ratingCount ?? 0,
+        moreContext: t.moreContext?.trim() || null,
         featured: Boolean(t.featured),
         trending: Boolean(t.trending),
         verified: true,

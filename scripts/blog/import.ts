@@ -58,7 +58,7 @@ async function main() {
   const toolSlugs = new Set(tools.map((t) => t.slug));
   const catBySlug = new Map(cats.map((c) => [c.slug, c.id]));
   const staticPaths = new Set(["/", "/tools", "/categories", "/blog", "/submit", "/about"]);
-  const categorySlugs = new Set(["writing", "image", "video", "audio", "code", "productivity", "marketing", "research"]);
+  const categorySlugs = new Set(["writing", "image", "video", "audio", "code", "productivity", "marketing", "research", "chat", "agents", "design", "business", "education", "lifestyle"]);
 
   let errors = 0;
   const seen = new Set<string>();

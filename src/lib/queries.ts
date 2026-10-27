@@ -69,6 +69,39 @@ export async function getTools(opts?: {
   });
 }
 
+/** Just the fields a compact tool row needs, for pages that list hundreds of tools. */
+export async function getToolRows() {
+  const rows = await prisma.tool.findMany({
+    where: { published: true },
+    select: {
+      slug: true,
+      name: true,
+      tagline: true,
+      pricing: true,
+      logoMediaId: true,
+      swatchFrom: true,
+      swatchTo: true,
+      trending: true,
+      createdAt: true,
+      category: { select: { slug: true } },
+    },
+    orderBy: [{ trending: "desc" }, { rating: "desc" }, { createdAt: "desc" }],
+  });
+  return rows.map((r) => ({
+    slug: r.slug,
+    name: r.name,
+    tagline: r.tagline,
+    pricing: PRICING_LABELS[r.pricing],
+    logoMediaId: r.logoMediaId,
+    swatch: [r.swatchFrom, r.swatchTo] as [string, string],
+    trending: r.trending,
+    createdAt: r.createdAt.getTime(),
+    categorySlug: r.category.slug,
+  }));
+}
+
+export type ToolRow = Awaited<ReturnType<typeof getToolRows>>[number];
+
 export async function getToolBySlug(slug: string) {
   return prisma.tool.findUnique({
     where: { slug },

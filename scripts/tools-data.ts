@@ -13,8 +13,9 @@ export type ToolSeed = {
   pricing: "FREE" | "FREEMIUM" | "FREE_TRIAL" | "PAID";
   priceFrom?: string;
   founded?: string;
-  rating: number;
-  ratingCount: number;
+  /** Editorial ratings are optional; leave unset so only reader reviews rate a tool. */
+  rating?: number;
+  ratingCount?: number;
   featured?: boolean;
   trending?: boolean;
   tags: string[];
@@ -22,6 +23,8 @@ export type ToolSeed = {
   pros: string[];
   cons: string[];
   alternatives: string[]; // slugs within this dataset
+  /** "More context from AI BirdView" section (see Tool.moreContext). */
+  moreContext?: string;
 };
 
 export const TOOLS: ToolSeed[] = [
