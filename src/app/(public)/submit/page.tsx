@@ -1,10 +1,12 @@
 import { SubmitForm } from "@/components/SubmitForm";
 import { getCategories } from "@/lib/queries";
+import { FREE_REVIEW_DAYS } from "@/lib/approve-submission";
+import { FAST_TRACK_PRICE_CENTS, fastTrackEnabled, formatPrice } from "@/lib/stripe";
 
 export const metadata = {
   title: "Submit a tool | AI BirdView",
   description:
-    "Get your AI tool listed in the AI BirdView directory. Free to submit and live within 24 hours.",
+    "Get your AI tool listed in the AI BirdView directory. Free to submit, or get listed the same day.",
   alternates: { canonical: "/submit" },
 };
 
@@ -12,6 +14,7 @@ export const revalidate = 60;
 
 export default async function SubmitPage() {
   const categories = (await getCategories()).map((c) => ({ slug: c.slug, name: c.name }));
+  const fastTrackPrice = fastTrackEnabled() ? formatPrice(FAST_TRACK_PRICE_CENTS) : null;
   return (
     <div>
       <section className="relative overflow-hidden border-b border-ink-200">
@@ -24,13 +27,14 @@ export default async function SubmitPage() {
             Put your AI in front of the people who&apos;ll use it.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-ink-500">
-            Free to submit, live within 24 hours, no SEO games. We&apos;ll
+            Free to submit and live within {FREE_REVIEW_DAYS} days
+            {fastTrackPrice ? <>, or get listed today for {fastTrackPrice}</> : null}. We&apos;ll
             email you a link as soon as your listing is published.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-2 text-[12px]">
             {[
               "Free to submit",
-              "Live in 24 hours",
+              fastTrackPrice ? `Same-day for ${fastTrackPrice}` : `Live within ${FREE_REVIEW_DAYS} days`,
               "Editorial integrity",
               "Verified badge",
             ].map((b) => (
@@ -46,7 +50,7 @@ export default async function SubmitPage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-5 lg:px-8 py-16">
-        <SubmitForm categories={categories} />
+        <SubmitForm categories={categories} freeDays={FREE_REVIEW_DAYS} fastTrackPrice={fastTrackPrice} />
       </section>
 
       {/* Guidelines */}

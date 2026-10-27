@@ -306,7 +306,7 @@ export default async function Home() {
               Get your AI tool in front of the right people.
             </h2>
             <p className="mx-auto mt-5 max-w-lg text-[16px] leading-relaxed text-ink-300">
-              Free to submit, live within 24 hours. Featured listings are
+              Free to submit, or get listed the same day. Featured listings are
               hand-picked by our editors.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

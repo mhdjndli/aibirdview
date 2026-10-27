@@ -31,7 +31,11 @@ export default async function SubmissionsPage({
   const [submissions, counts] = await Promise.all([
     prisma.submission.findMany({
       where,
-      orderBy: { createdAt: "desc" },
+      // Paid same-day reviews first, then whatever publishes soonest.
+      orderBy:
+        statusFilter === "PENDING"
+          ? [{ fastTrack: "desc" }, { publishBy: "asc" }]
+          : { createdAt: "desc" },
       include: { tool: { select: { slug: true } } },
     }),
     prisma.submission.groupBy({
@@ -107,7 +111,14 @@ export default async function SubmissionsPage({
               {submissions.map((s) => (
                 <tr key={s.id} className="border-t border-ink-100">
                   <td className="px-4 py-3">
-                    <div className="font-medium text-ink-900">{s.name}</div>
+                    <div className="flex items-center gap-2 font-medium text-ink-900">
+                      {s.name}
+                      {s.paidAt && (
+                        <span className="rounded-full bg-kiwi-100 px-2 py-0.5 text-[10.5px] font-semibold text-kiwi-800">
+                          {s.refundedAt ? "Refunded" : "Paid · same day"}
+                        </span>
+                      )}
+                    </div>
                     <a href={s.url} target="_blank" rel="noopener noreferrer" className="block text-[12px] text-ink-500 hover:text-kiwi-700">
                       {new URL(s.url).hostname.replace(/^www\./, "")}
                     </a>
@@ -120,6 +131,11 @@ export default async function SubmissionsPage({
                   <td className="px-4 py-3 text-ink-700">{s.pricing.toLowerCase().replace("_", " ")}</td>
                   <td className="px-4 py-3 text-ink-500">
                     {new Date(s.createdAt).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" })}
+                    {s.status === "PENDING" && s.publishBy && (
+                      <div className="text-[11.5px] text-ink-400">
+                        publishes {new Date(s.publishBy).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}
+                      </div>
+                    )}
                   </td>
                   <td className="px-4 py-3">
                     <span className={`inline-flex rounded-full border px-2 py-0.5 text-[11px] font-medium ${STATUS_BADGE[s.status]}`}>

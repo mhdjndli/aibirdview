@@ -12,8 +12,19 @@ const PRICING: { value: "FREE" | "FREEMIUM" | "FREE_TRIAL" | "PAID"; label: stri
   { value: "PAID", label: "Paid" },
 ];
 
-export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
-  const [submitted, setSubmitted] = useState(false);
+type SubmitResult = { freeDays: number; fastTrack: { url: string; price: string } | null };
+
+export function SubmitForm({
+  categories,
+  freeDays,
+  fastTrackPrice,
+}: {
+  categories: CategoryOption[];
+  freeDays: number;
+  /** Price label for the paid same-day review, or null when it isn't offered. */
+  fastTrackPrice: string | null;
+}) {
+  const [submitted, setSubmitted] = useState<SubmitResult | null>(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -36,12 +47,27 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
           Submission received.
         </h2>
         <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
-          We&apos;ve sent a confirmation to your email. Your tool will be reviewed
-          and live within 24 hours.
+          We&apos;ve sent a confirmation to your email. Your tool is in the free
+          queue and will be reviewed and live within {submitted.freeDays} days.
         </p>
+        {submitted.fastTrack && (
+          <div className="mx-auto mt-6 max-w-md rounded-2xl border border-ink-200 bg-ink-0 p-5 text-left">
+            <p className="text-[15px] font-semibold text-ink-900">Launching soon? Get listed today.</p>
+            <p className="mt-1 text-[13.5px] leading-relaxed text-ink-600">
+              We review it the same day and publish it within hours. Full refund if we
+              can&apos;t list it.
+            </p>
+            <a
+              href={submitted.fastTrack.url}
+              className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-5 py-2.5 text-[14px] font-medium text-ink-0 hover:bg-ink-800"
+            >
+              Get listed today for {submitted.fastTrack.price} →
+            </a>
+          </div>
+        )}
         <button
           onClick={() => {
-            setSubmitted(false);
+            setSubmitted(null);
             setLogoId(null);
             setShot1Id(null);
             setShot2Id(null);
@@ -103,7 +129,8 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
             setError(data?.error || "Something went wrong, please try again.");
             return;
           }
-          setSubmitted(true);
+          const data = (await res.json()) as SubmitResult;
+          setSubmitted({ freeDays: data.freeDays, fastTrack: data.fastTrack });
         } catch {
           setError("Network error, please try again.");
         } finally {
@@ -301,7 +328,8 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-200 pt-6">
         <p className="text-[12px] text-ink-500">
-          We&apos;ll review and publish within 24 hours.
+          Free listings go live within {freeDays} days.
+          {fastTrackPrice && <> Need it today? Same-day review is {fastTrackPrice}, offered after you submit.</>}
         </p>
         <button
           type="submit"
@@ -315,7 +343,7 @@ export function SubmitForm({ categories }: { categories: CategoryOption[] }) {
   );
 }
 
-function SquareUploader({
+export function SquareUploader({
   mediaId,
   onChange,
   aspect = "square",

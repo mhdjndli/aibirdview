@@ -4,6 +4,9 @@ import { prisma } from "@/lib/prisma";
 import type { Pricing } from "@prisma/client";
 import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
 import { isEmailVerified } from "@/lib/email-verification";
+import { FREE_REVIEW_DAYS, freePublishBy } from "@/lib/approve-submission";
+import { FAST_TRACK_PRICE_CENTS, fastTrackEnabled, formatPrice } from "@/lib/stripe";
+import { SITE } from "@/lib/site";
 import {
   adminNotificationEmail,
   submitterConfirmationEmail,
@@ -109,9 +112,14 @@ export async function POST(req: Request) {
       screenshot1MediaId: v.screenshot1MediaId ?? null,
       screenshot2MediaId: v.screenshot2MediaId ?? null,
       screenshot3MediaId: v.screenshot3MediaId ?? null,
+      publishBy: freePublishBy(),
     },
     select: { id: true },
   });
+
+  const fastTrack = fastTrackEnabled()
+    ? { url: `${SITE.url}/api/checkout/fast-track?submission=${submission.id}`, price: formatPrice(FAST_TRACK_PRICE_CENTS) }
+    : null;
 
   // Fire-and-forget emails (don't block the response on email delivery)
   const screenshotCount = [v.screenshot1MediaId, v.screenshot2MediaId, v.screenshot3MediaId].filter(Boolean).length;
@@ -121,6 +129,8 @@ export async function POST(req: Request) {
     contactName: v.contactName,
     websiteUrl: v.url,
     categoryName: category.name,
+    freeDays: FREE_REVIEW_DAYS,
+    fastTrack,
   });
   const adminMail = adminNotificationEmail({
     toolName: v.name,
@@ -162,5 +172,8 @@ export async function POST(req: Request) {
     }),
   ]);
 
-  return NextResponse.json({ id: submission.id }, { status: 201 });
+  return NextResponse.json(
+    { id: submission.id, freeDays: FREE_REVIEW_DAYS, fastTrack },
+    { status: 201 }
+  );
 }

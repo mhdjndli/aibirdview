@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
 import { absoluteUrl } from "@/lib/site";
+import { prisma } from "@/lib/prisma";
 
 export const dynamicParams = true;
 export const revalidate = 60;
@@ -65,6 +66,7 @@ export default async function ToolPage({
   const tool = serializeTool(toolRaw);
   const category = tool.category;
   const related = tool.alternatives;
+  const claimed = (await prisma.toolOwner.count({ where: { toolId: toolRaw.id, status: "ACTIVE" } })) > 0;
 
   const offers =
     tool.pricing === "Free"
@@ -470,6 +472,19 @@ export default async function ToolPage({
           >
             Open {tool.name} →
           </a>
+
+          {claimed ? (
+            <p className="mt-4 text-center text-[12.5px] text-ink-500">
+              <span className="text-kiwi-600">✓</span> Claimed by the {tool.name} team
+            </p>
+          ) : (
+            <p className="mt-4 text-center text-[12.5px] text-ink-500">
+              Is this your tool?{" "}
+              <Link href={`/claim/${tool.slug}`} className="font-medium text-kiwi-700 hover:underline">
+                Claim this listing
+              </Link>
+            </p>
+          )}
         </aside>
       </section>
 

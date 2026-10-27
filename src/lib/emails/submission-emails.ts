@@ -46,9 +46,27 @@ export function submitterConfirmationEmail(args: {
   contactName: string;
   websiteUrl: string;
   categoryName: string;
+  freeDays: number;
+  /** Checkout link and price label for the paid same-day review, when offered. */
+  fastTrack?: { url: string; price: string } | null;
 }) {
   const subject = `We've got ${args.toolName}: review starts now`;
-  const preheader = `Your submission landed safely. It will be reviewed and go live within 24 hours.`;
+  const when = `within ${args.freeDays} days`;
+  const preheader = args.fastTrack
+    ? `Your submission is in the free queue (live ${when}). Need it live today? Same-day review is ${args.fastTrack.price}.`
+    : `Your submission landed safely. It will be reviewed and go live ${when}.`;
+  const fastTrackBlock = args.fastTrack
+    ? `
+      <tr><td style="padding:0 32px 8px;">
+        <div style="border:1px solid ${KIWI_DARK};border-radius:14px;background:#f3faec;padding:18px 20px;">
+          <p style="margin:0 0 6px;font-size:15px;font-weight:600;color:${INK_900};">Launching soon? Get listed today.</p>
+          <p style="margin:0 0 14px;font-size:14px;line-height:1.6;color:${INK_700};">
+            Skip the queue for ${escapeHtml(args.fastTrack.price)}: we review ${escapeHtml(args.toolName)} the same day and publish it within hours. If we can't list it, you get a full refund.
+          </p>
+          <a href="${escapeAttr(args.fastTrack.url)}" style="display:inline-block;background:${INK_900};color:#ffffff;text-decoration:none;font-size:14px;font-weight:500;padding:11px 20px;border-radius:999px;">Get listed today for ${escapeHtml(args.fastTrack.price)} →</a>
+        </div>
+      </td></tr>`
+    : "";
 
   const html = shell({
     preheader,
@@ -58,7 +76,7 @@ export function submitterConfirmationEmail(args: {
           Thanks, ${escapeHtml(args.contactName)}. We've got it.
         </h1>
         <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">
-          Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our review queue. It will be reviewed and go live within 24 hours.
+          Your submission for <strong style="color:${INK_900};">${escapeHtml(args.toolName)}</strong> landed safely in our free review queue. It will be reviewed and go live ${when}.
         </p>
         <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:${INK_700};">
           As soon as it's published, we'll email you a link to your listing so you can see how it looks.
@@ -75,7 +93,7 @@ export function submitterConfirmationEmail(args: {
           </table>
         </div>
       </td></tr>
-
+${fastTrackBlock}
       <tr><td style="padding:18px 32px 24px;">
         <p style="margin:0 0 6px;font-size:14px;color:${INK_700};line-height:1.6;">
           While you wait, you can <a href="${SITE.url}/tools" style="color:${KIWI_DARK};text-decoration:none;">browse the directory</a> to see how other listings look.
@@ -86,8 +104,8 @@ export function submitterConfirmationEmail(args: {
 
   const text = `Thanks, ${args.contactName}.
 
-We've received your submission for ${args.toolName}. It will be reviewed and go live within 24 hours, and we'll email you as soon as it's published.
-
+We've received your submission for ${args.toolName}. It will be reviewed and go live ${when}, and we'll email you as soon as it's published.
+${args.fastTrack ? `\nLaunching soon? Get listed today for ${args.fastTrack.price} (same-day review, full refund if we can't list it):\n${args.fastTrack.url}\n` : ""}
 What we received:
   Tool:     ${args.toolName}
   Website:  ${args.websiteUrl}
@@ -231,6 +249,9 @@ export function submitterApprovedEmail(args: {
 
       <tr><td style="padding:0 32px 28px;">
         <a href="${escapeAttr(args.toolUrl)}" style="display:inline-block;background:${INK_900};color:#ffffff;text-decoration:none;font-size:14px;font-weight:500;padding:12px 22px;border-radius:999px;">View your listing →</a>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.6;color:${INK_700};">
+          You own this listing. To update its description, pricing or images, <a href="${SITE.url}/signin" style="color:${KIWI_DARK};text-decoration:none;">sign in with this email address</a>.
+        </p>
       </td></tr>
     `,
   });
@@ -238,6 +259,8 @@ export function submitterApprovedEmail(args: {
   const text = `Good news, ${args.contactName}: ${args.toolName} has been approved and is now live on ${SITE.name}.
 
 View your listing: ${args.toolUrl}
+
+You own this listing. To update it, sign in with this email address: ${SITE.url}/signin
 
 The ${SITE.name} team`;
 
@@ -280,4 +303,98 @@ Enter it on the site to confirm your email address. It expires in 15 minutes.
 Didn't request this? You can safely ignore this email.`;
 
   return { subject, html, text };
+}
+
+// -------- Simple notices (payments, claims, edits) --------
+
+function notice(args: { eyebrow: string; title: string; body: string[]; cta?: { label: string; url: string } }) {
+  const paragraphs = args.body
+    .map((p) => `<p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:${INK_700};">${p}</p>`)
+    .join("");
+  const cta = args.cta
+    ? `<tr><td style="padding:4px 32px 28px;"><a href="${escapeAttr(args.cta.url)}" style="display:inline-block;background:${INK_900};color:#ffffff;text-decoration:none;font-size:14px;font-weight:500;padding:12px 22px;border-radius:999px;">${escapeHtml(args.cta.label)} →</a></td></tr>`
+    : "";
+  return shell({
+    preheader: args.title,
+    content: `
+      <tr><td style="padding:8px 32px 8px;">
+        <p style="margin:18px 0 6px;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:${KIWI_DARK};">${escapeHtml(args.eyebrow)}</p>
+        <h1 style="margin:0 0 12px;font-size:24px;line-height:1.25;letter-spacing:-0.022em;color:${INK_900};font-weight:600;">${escapeHtml(args.title)}</h1>
+        ${paragraphs}
+      </td></tr>
+      ${cta}`,
+  });
+}
+
+function plain(title: string, body: string[], cta?: { label: string; url: string }) {
+  const strip = (p: string) => p.replace(/<[^>]+>/g, "");
+  return [title, "", ...body.map(strip), ...(cta ? ["", `${cta.label}: ${cta.url}`] : []), "", `The ${SITE.name} team`].join("\n");
+}
+
+export function fastTrackPaidEmail(args: { toolName: string; hours: number }) {
+  const title = `Payment received: ${args.toolName} goes live today`;
+  const body = [
+    `Thanks! Your same-day review for <strong>${escapeHtml(args.toolName)}</strong> is paid. We'll review it today and publish it within ${args.hours} hours.`,
+    `We'll email you the link as soon as it's live. If we can't list it, we'll refund you in full.`,
+  ];
+  return { subject: title, html: notice({ eyebrow: "Same-day review", title, body }), text: plain(title, body) };
+}
+
+export function adminFastTrackEmail(args: { toolName: string; submissionId: string; publishBy: Date }) {
+  const title = `Paid same-day review: ${args.toolName}`;
+  const body = [
+    `${escapeHtml(args.toolName)} paid for a same-day review. It publishes automatically at ${args.publishBy.toUTCString()} unless you review it first.`,
+  ];
+  const cta = { label: "Review submission", url: `${SITE.url}/admin/submissions/${args.submissionId}` };
+  return { subject: title, html: notice({ eyebrow: "Paid", title, body, cta }), text: plain(title, body, cta) };
+}
+
+export function submitterRejectedEmail(args: { toolName: string; reason: string | null; refunded: boolean }) {
+  const title = `We couldn't list ${args.toolName}`;
+  const body = [
+    `Thanks for submitting <strong>${escapeHtml(args.toolName)}</strong>. After review, we weren't able to add it to the directory.`,
+    ...(args.reason ? [`Reason: ${escapeHtml(args.reason)}`] : []),
+    ...(args.refunded ? [`Your same-day review payment has been refunded in full. It can take 5 to 10 days to appear on your statement.`] : []),
+  ];
+  return { subject: title, html: notice({ eyebrow: "Submission update", title, body }), text: plain(title, body) };
+}
+
+export function adminClaimEmail(args: { toolName: string; toolSlug: string; email: string; pending: boolean; note?: string | null }) {
+  const title = args.pending ? `Claim needs review: ${args.toolName}` : `Listing claimed: ${args.toolName}`;
+  const body = [
+    `${escapeHtml(args.email)} ${args.pending ? "asked to manage" : "verified an address on the tool's domain and now manages"} <strong>${escapeHtml(args.toolName)}</strong>.`,
+    ...(args.note ? [`Their note: ${escapeHtml(args.note)}`] : []),
+    args.pending ? "Approve or decline it in the admin." : "If this looks wrong, revoke it in the admin.",
+  ];
+  const cta = { label: "Open owners", url: `${SITE.url}/admin/edits` };
+  return { subject: title, html: notice({ eyebrow: "Owners", title, body, cta }), text: plain(title, body, cta) };
+}
+
+export function adminEditEmail(args: { toolName: string; email: string; fields: string[] }) {
+  const title = `Edit to review: ${args.toolName}`;
+  const body = [`${escapeHtml(args.email)} proposed changes to ${escapeHtml(args.toolName)}: ${escapeHtml(args.fields.join(", "))}.`];
+  const cta = { label: "Review edits", url: `${SITE.url}/admin/edits` };
+  return { subject: title, html: notice({ eyebrow: "Owners", title, body, cta }), text: plain(title, body, cta) };
+}
+
+export function ownerEditDecisionEmail(args: { toolName: string; toolSlug: string; approved: boolean; note?: string | null }) {
+  const title = args.approved ? `Your changes to ${args.toolName} are live` : `Your changes to ${args.toolName} weren't published`;
+  const body = [
+    args.approved
+      ? `We reviewed and published your update to <strong>${escapeHtml(args.toolName)}</strong>.`
+      : `We reviewed your update to <strong>${escapeHtml(args.toolName)}</strong> but couldn't publish it as submitted.`,
+    ...(args.note ? [`Note from the editor: ${escapeHtml(args.note)}`] : []),
+  ];
+  const cta = { label: "View your listing", url: `${SITE.url}/tools/${args.toolSlug}` };
+  return { subject: title, html: notice({ eyebrow: "Listing update", title, body, cta }), text: plain(title, body, cta) };
+}
+
+export function ownerClaimApprovedEmail(args: { toolName: string }) {
+  const title = `You can now manage ${args.toolName}`;
+  const body = [
+    `We verified your request. You can now update <strong>${escapeHtml(args.toolName)}</strong>'s description, pricing and images on ${SITE.name}.`,
+    `Sign in with this email address to make changes.`,
+  ];
+  const cta = { label: "Sign in", url: `${SITE.url}/signin` };
+  return { subject: title, html: notice({ eyebrow: "Owners", title, body, cta }), text: plain(title, body, cta) };
 }

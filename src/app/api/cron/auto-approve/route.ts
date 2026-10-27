@@ -2,9 +2,10 @@ import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
 import { autoApprovePendingSubmissions } from "@/lib/approve-submission";
 
-// Publishes every PENDING submission older than AUTO_APPROVE_AFTER_HOURS
-// (default 24h). Triggered hourly from instrumentation.ts; can also be hit
-// by an external scheduler with `Authorization: Bearer $CRON_SECRET`.
+// Publishes every PENDING submission whose publishBy deadline has passed
+// (FREE_REVIEW_DAYS after submitting, or FAST_TRACK_HOURS after paying).
+// Triggered hourly from instrumentation.ts; can also be hit by an external
+// scheduler with `Authorization: Bearer $CRON_SECRET`.
 
 function authorized(req: Request) {
   const secret = process.env.CRON_SECRET;

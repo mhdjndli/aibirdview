@@ -4,10 +4,18 @@ import { sendEmail } from "@/lib/email";
 import { submitterApprovedEmail } from "@/lib/emails/submission-emails";
 import { SITE } from "@/lib/site";
 
-// How long a submission sits in the queue before the sweep publishes it.
-export const AUTO_APPROVE_AFTER_HOURS = Number(
-  process.env.AUTO_APPROVE_AFTER_HOURS || 24
-);
+// Free submissions are published at most this many days after they arrive.
+export const FREE_REVIEW_DAYS = Number(process.env.FREE_REVIEW_DAYS || 14);
+// A paid same-day review is published at most this many hours after payment.
+export const FAST_TRACK_HOURS = Number(process.env.FAST_TRACK_HOURS || 12);
+
+export function freePublishBy(from = new Date()) {
+  return new Date(from.getTime() + FREE_REVIEW_DAYS * 24 * 60 * 60 * 1000);
+}
+
+export function fastTrackPublishBy(from = new Date()) {
+  return new Date(from.getTime() + FAST_TRACK_HOURS * 60 * 60 * 1000);
+}
 
 export type ApproveOverrides = {
   categorySlug?: string;
@@ -84,6 +92,13 @@ export async function approveSubmissionById(
       data: { toolId: tool.id },
     });
 
+    // Whoever submitted the tool owns the listing and can edit it later.
+    await prisma.toolOwner.upsert({
+      where: { toolId_email: { toolId: tool.id, email: sub.email.trim().toLowerCase() } },
+      create: { toolId: tool.id, email: sub.email.trim().toLowerCase(), method: "SUBMISSION" },
+      update: { status: "ACTIVE" },
+    });
+
     return { tool, submission: sub, category };
   } catch (err) {
     // Roll the claim back so the submission isn't stuck APPROVED with no tool.
@@ -127,15 +142,22 @@ export type SweepResult = {
 };
 
 /**
- * Publish every PENDING submission older than AUTO_APPROVE_AFTER_HOURS.
+ * Publish every PENDING submission whose publishBy deadline has passed.
  * Failures (e.g. unknown category) are logged and left pending for a human.
  */
 export async function autoApprovePendingSubmissions(): Promise<SweepResult> {
-  const cutoff = new Date(Date.now() - AUTO_APPROVE_AFTER_HOURS * 60 * 60 * 1000);
+  const now = new Date();
   const pending = await prisma.submission.findMany({
-    where: { status: "PENDING", createdAt: { lte: cutoff } },
+    where: {
+      status: "PENDING",
+      OR: [
+        { publishBy: { lte: now } },
+        // Created before publishBy existed: keep the old 24-hour promise.
+        { publishBy: null, createdAt: { lte: new Date(now.getTime() - 24 * 60 * 60 * 1000) } },
+      ],
+    },
     select: { id: true, name: true },
-    orderBy: { createdAt: "asc" },
+    orderBy: { publishBy: "asc" },
   });
 
   const result: SweepResult = { approved: [], failed: [] };

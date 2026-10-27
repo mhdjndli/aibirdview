@@ -19,6 +19,7 @@ const NAV: { label: string; items: NavItem[] }[] = [
       { href: "/admin/submissions", label: "Submissions", icon: <InboxIcon /> },
       { href: "/admin/tools", label: "Tools", icon: <ToolIcon /> },
       { href: "/admin/reviews", label: "Reviews", icon: <StarNavIcon /> },
+      { href: "/admin/edits", label: "Owners & edits", icon: <InboxIcon /> },
       { href: "/admin/categories", label: "Categories", icon: <FolderIcon /> },
     ],
   },

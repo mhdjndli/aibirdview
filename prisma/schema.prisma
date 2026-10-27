@@ -13,14 +13,14 @@ datasource db {
 // ---------- Auth ----------
 
 model User {
-  id            String    @id @default(cuid())
-  email         String    @unique
-  name          String?
-  passwordHash  String
-  role          Role      @default(ADMIN)
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  blogPosts     BlogPost[]
+  id           String     @id @default(cuid())
+  email        String     @unique
+  name         String?
+  passwordHash String
+  role         Role       @default(ADMIN)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  blogPosts    BlogPost[]
 }
 
 enum Role {
@@ -36,72 +36,74 @@ model Category {
   name        String
   tagline     String
   description String
-  glyph       String   // single emoji/char glyph used in cards
-  accent      String   // tailwind class for accent color
+  glyph       String // single emoji/char glyph used in cards
+  accent      String // tailwind class for accent color
   sortOrder   Int      @default(0)
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 
-  tools       Tool[]
+  tools Tool[]
 }
 
 model Tool {
-  id              String   @id @default(cuid())
-  slug            String   @unique
+  id              String  @id @default(cuid())
+  slug            String  @unique
   name            String
   tagline         String
-  description     String   @db.Text
-  longDescription String   @db.Text
+  description     String  @db.Text
+  longDescription String  @db.Text
   // Editorial "More context from AI BirdView" section. Plain text:
   // paragraphs separated by blank lines, lines starting with "- " are bullets.
-  moreContext     String?  @db.Text
+  moreContext     String? @db.Text
   url             String
   pricing         Pricing
   priceFrom       String?
-  rating          Float    @default(0)
-  ratingCount     Int      @default(0)
+  rating          Float   @default(0)
+  ratingCount     Int     @default(0)
   founded         String?
-  featured        Boolean  @default(false)
-  trending        Boolean  @default(false)
-  verified        Boolean  @default(false)
-  published       Boolean  @default(true)
-  swatchFrom      String   @default("#c8e6a8")
-  swatchTo        String   @default("#8dc474")
+  featured        Boolean @default(false)
+  trending        Boolean @default(false)
+  verified        Boolean @default(false)
+  published       Boolean @default(true)
+  swatchFrom      String  @default("#c8e6a8")
+  swatchTo        String  @default("#8dc474")
 
   // SEO
-  seoTitle        String?
-  seoDescription  String?
-  metaKeywords    String?
+  seoTitle       String?
+  seoDescription String?
+  metaKeywords   String?
 
   // Imagery
-  logoMediaId     String?
-  logo            Media?   @relation("ToolLogo", fields: [logoMediaId], references: [id])
-  thumbnailMediaId String?
-  thumbnail       Media?   @relation("ToolThumb", fields: [thumbnailMediaId], references: [id])
+  logoMediaId        String?
+  logo               Media?  @relation("ToolLogo", fields: [logoMediaId], references: [id])
+  thumbnailMediaId   String?
+  thumbnail          Media?  @relation("ToolThumb", fields: [thumbnailMediaId], references: [id])
   screenshot1MediaId String?
-  screenshot1       Media?  @relation("ToolShot1", fields: [screenshot1MediaId], references: [id])
+  screenshot1        Media?  @relation("ToolShot1", fields: [screenshot1MediaId], references: [id])
   screenshot2MediaId String?
-  screenshot2       Media?  @relation("ToolShot2", fields: [screenshot2MediaId], references: [id])
+  screenshot2        Media?  @relation("ToolShot2", fields: [screenshot2MediaId], references: [id])
   screenshot3MediaId String?
-  screenshot3       Media?  @relation("ToolShot3", fields: [screenshot3MediaId], references: [id])
+  screenshot3        Media?  @relation("ToolShot3", fields: [screenshot3MediaId], references: [id])
 
-  category        Category @relation(fields: [categoryId], references: [id])
-  categoryId      String
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String
 
-  features        ToolFeature[]
-  pros            ToolPro[]
-  cons            ToolCon[]
-  tags            ToolTag[]
-  alternatives    ToolAlternative[] @relation("FromTool")
-  alternativeOf   ToolAlternative[] @relation("ToTool")
+  features      ToolFeature[]
+  pros          ToolPro[]
+  cons          ToolCon[]
+  tags          ToolTag[]
+  alternatives  ToolAlternative[] @relation("FromTool")
+  alternativeOf ToolAlternative[] @relation("ToTool")
 
   // when this Tool was created from a Submission, link back
-  submission      Submission?
+  submission Submission?
 
-  reviews         Review[]
+  reviews Review[]
+  owners  ToolOwner[]
+  edits   ToolEdit[]
 
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([categoryId])
   @@index([featured])
@@ -122,6 +124,7 @@ model ToolFeature {
   toolId String
   text   String
   order  Int    @default(0)
+
   @@index([toolId])
 }
 
@@ -131,6 +134,7 @@ model ToolPro {
   toolId String
   text   String
   order  Int    @default(0)
+
   @@index([toolId])
 }
 
@@ -140,6 +144,7 @@ model ToolCon {
   toolId String
   text   String
   order  Int    @default(0)
+
   @@index([toolId])
 }
 
@@ -148,16 +153,17 @@ model ToolTag {
   tool   Tool   @relation(fields: [toolId], references: [id], onDelete: Cascade)
   toolId String
   tag    String
+
   @@unique([toolId, tag])
   @@index([tag])
 }
 
 model ToolAlternative {
-  id           String @id @default(cuid())
-  fromTool     Tool   @relation("FromTool", fields: [fromToolId], references: [id], onDelete: Cascade)
-  fromToolId   String
-  toTool       Tool   @relation("ToTool", fields: [toToolId], references: [id], onDelete: Cascade)
-  toToolId     String
+  id         String @id @default(cuid())
+  fromTool   Tool   @relation("FromTool", fields: [fromToolId], references: [id], onDelete: Cascade)
+  fromToolId String
+  toTool     Tool   @relation("ToTool", fields: [toToolId], references: [id], onDelete: Cascade)
+  toToolId   String
 
   @@unique([fromToolId, toToolId])
 }
@@ -165,41 +171,52 @@ model ToolAlternative {
 // ---------- Submissions ----------
 
 model Submission {
-  id              String   @id @default(cuid())
-  name            String
-  url             String
-  tagline         String?
-  description     String?  @db.Text
-  pricing         Pricing
-  priceFrom       String?
-  founded         String?
-  categorySlug    String   // free-form category at submission time
+  id           String  @id @default(cuid())
+  name         String
+  url          String
+  tagline      String?
+  description  String? @db.Text
+  pricing      Pricing
+  priceFrom    String?
+  founded      String?
+  categorySlug String // free-form category at submission time
 
   // media
-  logoMediaId       String?
-  logo              Media?  @relation("SubLogo", fields: [logoMediaId], references: [id])
+  logoMediaId        String?
+  logo               Media?  @relation("SubLogo", fields: [logoMediaId], references: [id])
   screenshot1MediaId String?
-  screenshot1       Media?  @relation("SubShot1", fields: [screenshot1MediaId], references: [id])
+  screenshot1        Media?  @relation("SubShot1", fields: [screenshot1MediaId], references: [id])
   screenshot2MediaId String?
-  screenshot2       Media?  @relation("SubShot2", fields: [screenshot2MediaId], references: [id])
+  screenshot2        Media?  @relation("SubShot2", fields: [screenshot2MediaId], references: [id])
   screenshot3MediaId String?
-  screenshot3       Media?  @relation("SubShot3", fields: [screenshot3MediaId], references: [id])
+  screenshot3        Media?  @relation("SubShot3", fields: [screenshot3MediaId], references: [id])
 
   // submitter
-  contactName     String
-  email           String
-  role            String?
-  notes           String?  @db.Text
+  contactName String
+  email       String
+  role        String?
+  notes       String? @db.Text
 
-  status          SubmissionStatus @default(PENDING)
-  rejectReason    String?
+  status       SubmissionStatus @default(PENDING)
+  rejectReason String?
+
+  // Review queue: the auto-approve sweep publishes PENDING submissions once
+  // publishBy has passed. Free submissions wait FREE_REVIEW_DAYS; a paid
+  // same-day upgrade moves publishBy to FAST_TRACK_HOURS after payment.
+  publishBy             DateTime?
+  fastTrack             Boolean   @default(false)
+  paidAt                DateTime?
+  amountPaidCents       Int?
+  stripeSessionId       String?   @unique
+  stripePaymentIntentId String?
+  refundedAt            DateTime?
 
   // if approved, the resulting Tool
-  toolId          String?  @unique
-  tool            Tool?    @relation(fields: [toolId], references: [id])
+  toolId String? @unique
+  tool   Tool?   @relation(fields: [toolId], references: [id])
 
-  createdAt       DateTime @default(now())
-  reviewedAt      DateTime?
+  createdAt  DateTime  @default(now())
+  reviewedAt DateTime?
 
   @@index([status])
 }
@@ -236,7 +253,7 @@ model Review {
   toolId    String
   name      String
   email     String
-  stars     Int      // 1-5
+  stars     Int // 1-5
   text      String?  @db.Text
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -249,60 +266,60 @@ model Review {
 // ---------- Blog ----------
 
 model BlogPost {
-  id              String   @id @default(cuid())
-  slug            String   @unique
-  title           String
-  excerpt         String   @db.Text
-  contentJson     Json     // Tiptap JSON document
-  contentHtml     String   @db.Text // pre-rendered HTML for SSR (and SEO)
-  readingMinutes  Int      @default(3)
+  id             String @id @default(cuid())
+  slug           String @unique
+  title          String
+  excerpt        String @db.Text
+  contentJson    Json // Tiptap JSON document
+  contentHtml    String @db.Text // pre-rendered HTML for SSR (and SEO)
+  readingMinutes Int    @default(3)
 
-  published       Boolean  @default(false)
-  publishedAt     DateTime?
+  published   Boolean   @default(false)
+  publishedAt DateTime?
 
   // SEO
-  seoTitle        String?
-  seoDescription  String?
-  metaKeywords    String?
+  seoTitle       String?
+  seoDescription String?
+  metaKeywords   String?
 
   // Thumbnail
   thumbnailMediaId String?
-  thumbnail       Media?   @relation("PostThumb", fields: [thumbnailMediaId], references: [id])
+  thumbnail        Media?  @relation("PostThumb", fields: [thumbnailMediaId], references: [id])
 
   // OG image override
-  ogMediaId       String?
-  ogImage         Media?   @relation("PostOg", fields: [ogMediaId], references: [id])
+  ogMediaId String?
+  ogImage   Media?  @relation("PostOg", fields: [ogMediaId], references: [id])
 
-  author          User?    @relation(fields: [authorId], references: [id])
-  authorId        String?
+  author   User?   @relation(fields: [authorId], references: [id])
+  authorId String?
 
-  categories      BlogPostOnCategory[]
+  categories BlogPostOnCategory[]
 
-  createdAt       DateTime @default(now())
-  updatedAt       DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@index([published])
   @@index([publishedAt])
 }
 
 model BlogCategory {
-  id        String   @id @default(cuid())
-  slug      String   @unique
-  name      String
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
   description String?
-  sortOrder Int      @default(0)
+  sortOrder   Int     @default(0)
 
-  posts     BlogPostOnCategory[]
+  posts BlogPostOnCategory[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
 model BlogPostOnCategory {
-  post        BlogPost     @relation(fields: [postId], references: [id], onDelete: Cascade)
-  postId      String
-  category    BlogCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
-  categoryId  String
+  post       BlogPost     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId     String
+  category   BlogCategory @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId String
 
   @@id([postId, categoryId])
 }
@@ -320,17 +337,17 @@ model Media {
   data        Bytes
   createdAt   DateTime @default(now())
 
-  toolLogos       Tool[] @relation("ToolLogo")
-  toolThumbs      Tool[] @relation("ToolThumb")
-  toolShots1      Tool[] @relation("ToolShot1")
-  toolShots2      Tool[] @relation("ToolShot2")
-  toolShots3      Tool[] @relation("ToolShot3")
-  postThumbs      BlogPost[] @relation("PostThumb")
-  postOgs         BlogPost[] @relation("PostOg")
-  subLogos        Submission[] @relation("SubLogo")
-  subShots1       Submission[] @relation("SubShot1")
-  subShots2       Submission[] @relation("SubShot2")
-  subShots3       Submission[] @relation("SubShot3")
+  toolLogos  Tool[]       @relation("ToolLogo")
+  toolThumbs Tool[]       @relation("ToolThumb")
+  toolShots1 Tool[]       @relation("ToolShot1")
+  toolShots2 Tool[]       @relation("ToolShot2")
+  toolShots3 Tool[]       @relation("ToolShot3")
+  postThumbs BlogPost[]   @relation("PostThumb")
+  postOgs    BlogPost[]   @relation("PostOg")
+  subLogos   Submission[] @relation("SubLogo")
+  subShots1  Submission[] @relation("SubShot1")
+  subShots2  Submission[] @relation("SubShot2")
+  subShots3  Submission[] @relation("SubShot3")
 }
 
 // ---------- Settings ----------
@@ -338,4 +355,64 @@ model Media {
 model Setting {
   key   String @id
   value Json
+}
+
+// ---------- Accounts & ownership ----------
+
+// Anyone who has signed in with an emailed code. There are no passwords:
+// signing in again sends a new code.
+model Member {
+  email        String   @id
+  createdAt    DateTime @default(now())
+  lastSignInAt DateTime @default(now())
+}
+
+enum OwnerMethod {
+  SUBMISSION // submitted the tool themselves
+  EMAIL_DOMAIN // verified an address on the tool's domain
+  MANUAL // approved by an admin
+}
+
+enum OwnerStatus {
+  ACTIVE
+  PENDING // waiting for an admin (tools on shared domains)
+  REVOKED
+}
+
+model ToolOwner {
+  id        String      @id @default(cuid())
+  tool      Tool        @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId    String
+  email     String
+  method    OwnerMethod
+  status    OwnerStatus @default(ACTIVE)
+  note      String?     @db.Text
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+
+  @@unique([toolId, email])
+  @@index([email])
+}
+
+enum EditStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// A change an owner proposed to their listing. Applied only when an admin
+// approves it; `data` holds just the fields that changed.
+model ToolEdit {
+  id         String     @id @default(cuid())
+  tool       Tool       @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId     String
+  email      String
+  data       Json
+  status     EditStatus @default(PENDING)
+  note       String?    @db.Text
+  createdAt  DateTime   @default(now())
+  reviewedAt DateTime?
+
+  @@index([status])
+  @@index([toolId])
 }
