@@ -49,7 +49,7 @@ const post: Post = {
     { ul: [
       "**Best for:** systematic reviews, biotech and policy research, any review that needs a comparison table.",
       "**Watch out for:** credits limit heavy free use, and extracted values should be spot-checked against the paper.",
-      "**Starting price:** freemium, paid from $12/mo.",
+      "**Starting price:** free Basic plan; Pro is $49 per user per month billed annually (October 2026).",
     ] },
 
     { h3: "4. Consensus and Scite: weighing the evidence" },

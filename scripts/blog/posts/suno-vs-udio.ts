@@ -60,7 +60,7 @@ const post: Post = {
 
     { h2: "Editing tools: Suno Studio vs Udio's in-app editor" },
     { h3: "Suno" },
-    { p: "Every paid Suno plan gets section editing, lyric-level edits, Extend, Cover (restyle a song while keeping its melody), Remaster, Replace Section and the ability to record or upload your own voice. Pro includes two stem separation types (Auto and Split from mix). Premier adds a third, Advanced split, and access to **Suno Studio**, a browser-based generative DAW. Studio 2.0 arrived in August 2026 with MIDI recording and editing, a built-in synth, effects, automation and custom plugins, and Suno says Studio workflows are not subject to download limits." },
+    { p: "Every paid Suno plan gets lyric-level edits, Extend, Cover (restyle a song while keeping its melody), Remaster and the ability to record or upload your own voice. Pro includes two stem separation types (Auto and Split from mix). Premier adds personas, advanced section editing (replace or add sections), a third stem type, Advanced split, and access to **Suno Studio**, a browser-based generative DAW. Studio 2.0 arrived in August 2026 with MIDI recording and editing, a built-in synth, effects, automation and custom plugins, and Suno says Studio workflows are not subject to download limits." },
     { h3: "Udio" },
     { p: "Udio's toolset is focused on iteration inside the app: inpainting, extend, remix, sessions for organizing versions, saved styles and a voice library (paid plans can save voices). Audio upload lets you extend or inpaint your own recordings. All of this works, but the output stays in Udio's player. You cannot export stems or audio to finish a track in a DAW, which rules it out for most producers right now." },
 

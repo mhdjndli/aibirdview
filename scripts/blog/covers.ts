@@ -25,7 +25,12 @@ const prisma = new PrismaClient();
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-const isSingle = (post: Post) => /review|^how-to-/i.test(post.slug);
+// Reviews, and tutorials whose logo row names a single tool.
+const isSingle = (post: Post) => {
+  if (/review/i.test(post.slug)) return true;
+  const block = post.body.find((b) => "logos" in b) as { logos: string[] } | undefined;
+  return /^how-to-/i.test(post.slug) && block?.logos.length === 1;
+};
 
 function toolSlugs(post: Post): string[] {
   const heading = post.title.split(":")[0];
@@ -41,13 +46,17 @@ function toolSlugs(post: Post): string[] {
   return seen.slice(0, limit);
 }
 
-type Logo = { name: string; src: string | null };
+type Logo = { name: string; slug: string; src: string | null };
+
+// Logos drawn in white on a transparent background vanish on the white tile.
+const DARK_TILES = new Set(["fathom"]);
 
 function tile(l: Logo, size: number) {
   const inner = l.src
     ? `<img src="${l.src}" style="width:${size * 0.62}px;height:${size * 0.62}px;object-fit:contain;border-radius:${size * 0.12}px">`
     : `<span style="font-size:${size * 0.42}px;font-weight:700;color:#0b0b0d">${esc(l.name[0])}</span>`;
-  return `<div class="tile" style="width:${size}px;height:${size}px;border-radius:${size * 0.24}px">${inner}</div>`;
+  const bg = DARK_TILES.has(l.slug) ? "background:#0b0b0d;" : "";
+  return `<div class="tile" style="${bg}width:${size}px;height:${size}px;border-radius:${size * 0.24}px">${inner}</div>`;
 }
 
 function html(post: Post, logos: Logo[]) {
@@ -136,6 +145,8 @@ async function main() {
 
   for (const post of posts) {
     if (existing.get(post.slug) && !force) continue;
+    const jpg = path.join(out, `${post.slug}.jpg`);
+    if (existsSync(jpg) && !force) continue;
     const slugs = toolSlugs(post).slice(0, 6);
     const tools = await prisma.tool.findMany({ where: { slug: { in: slugs } }, select: { slug: true, name: true, logo: { select: { data: true, contentType: true } } } });
     const logos: Logo[] = slugs
@@ -143,16 +154,23 @@ async function main() {
       .filter((t): t is NonNullable<typeof t> => Boolean(t))
       .map((t) => ({
         name: t.name,
+        slug: t.slug,
         src: t.logo ? `data:${t.logo.contentType};base64,${Buffer.from(t.logo.data).toString("base64")}` : null,
       }));
     const htmlFile = path.join(out, `${post.slug}.html`);
     const png = path.join(out, `${post.slug}.png`);
     writeFileSync(htmlFile, html(post, logos));
-    execFileSync(CHROME, ["--headless=new", "--disable-gpu", "--hide-scrollbars", `--window-size=${W},${H}`, "--virtual-time-budget=4000", `--screenshot=${png}`, `file://${htmlFile}`], { stdio: "ignore" });
-    execFileSync("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "85", png, "--out", path.join(out, `${post.slug}.jpg`)], { stdio: "ignore" });
-    rmSync(png);
-    rmSync(htmlFile);
-    console.log(`rendered ${post.slug} (${logos.length} logos)`);
+    try {
+      // Headless Chrome occasionally hangs; give up on that cover rather than the run.
+      execFileSync(CHROME, ["--headless=new", "--disable-gpu", "--hide-scrollbars", `--window-size=${W},${H}`, "--virtual-time-budget=4000", `--screenshot=${png}`, `file://${htmlFile}`], { stdio: "ignore", timeout: 60000 });
+      execFileSync("sips", ["-s", "format", "jpeg", "-s", "formatOptions", "85", png, "--out", jpg], { stdio: "ignore" });
+      console.log(`rendered ${post.slug} (${logos.length} logos)`);
+    } catch {
+      console.log(`FAILED ${post.slug}; re-run to retry`);
+    } finally {
+      if (existsSync(png)) rmSync(png);
+      rmSync(htmlFile);
+    }
   }
 }
 
