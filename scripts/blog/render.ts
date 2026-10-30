@@ -1,23 +1,38 @@
 import type { Block, RenderContext } from "./types";
 
-type Mark = { type: "bold" } | { type: "italic" } | { type: "link"; attrs: Record<string, string | null> };
+type Mark = { type: "bold" } | { type: "italic" } | { type: "code" } | { type: "link"; attrs: Record<string, string | null> };
 type TextNode = { type: "text"; text: string; marks?: Mark[] };
 type Node = { type: string; attrs?: Record<string, unknown>; content?: (Node | TextNode)[] };
 
-type Span = { text: string; bold?: boolean; italic?: boolean; href?: string };
+type Span = { text: string; bold?: boolean; italic?: boolean; code?: boolean; href?: string };
 
-const INLINE = /\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\(([^)\s]+)\)/g;
+const INLINE = /\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\(([^)\s]+)\)|`([^`]+)`/g;
+const LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g;
 
-// Nested marks (e.g. a link inside bold) are intentionally unsupported; keep
-// inline formatting flat.
+// Links may sit inside bold or italic (e.g. "**[Tool](/tools/x):**"); other
+// nesting is unsupported, so keep inline formatting otherwise flat. `code`
+// spans are literal.
+function parseLinks(src: string, base: Omit<Span, "text">): Span[] {
+  const spans: Span[] = [];
+  let last = 0;
+  for (const m of src.matchAll(LINK)) {
+    if (m.index! > last) spans.push({ ...base, text: src.slice(last, m.index) });
+    spans.push({ ...base, text: m[1], href: m[2] });
+    last = m.index! + m[0].length;
+  }
+  if (last < src.length) spans.push({ ...base, text: src.slice(last) });
+  return spans;
+}
+
 function parseInline(src: string): Span[] {
   const spans: Span[] = [];
   let last = 0;
   for (const m of src.matchAll(INLINE)) {
     if (m.index! > last) spans.push({ text: src.slice(last, m.index) });
-    if (m[1] !== undefined) spans.push({ text: m[1], bold: true });
-    else if (m[2] !== undefined) spans.push({ text: m[2], italic: true });
-    else spans.push({ text: m[3], href: m[4] });
+    if (m[1] !== undefined) spans.push(...parseLinks(m[1], { bold: true }));
+    else if (m[2] !== undefined) spans.push(...parseLinks(m[2], { italic: true }));
+    else if (m[3] !== undefined) spans.push({ text: m[3], href: m[4] });
+    else spans.push({ text: m[5], code: true });
     last = m.index! + m[0].length;
   }
   if (last < src.length) spans.push({ text: src.slice(last) });
@@ -33,13 +48,14 @@ function inlineHtml(src: string): string {
   return parseInline(src)
     .map((s) => {
       const t = esc(s.text);
+      let out = s.code ? `<code>${t}</code>` : t;
       if (s.href) {
         const ext = isExternal(s.href) ? ' target="_blank" rel="noopener noreferrer nofollow"' : "";
-        return `<a href="${esc(s.href)}"${ext}>${t}</a>`;
+        out = `<a href="${esc(s.href)}"${ext}>${out}</a>`;
       }
-      if (s.bold) return `<strong>${t}</strong>`;
-      if (s.italic) return `<em>${t}</em>`;
-      return t;
+      if (s.bold) out = `<strong>${out}</strong>`;
+      if (s.italic) out = `<em>${out}</em>`;
+      return out;
     })
     .join("");
 }
@@ -49,6 +65,7 @@ function inlineJson(src: string): TextNode[] {
     const marks: Mark[] = [];
     if (s.bold) marks.push({ type: "bold" });
     if (s.italic) marks.push({ type: "italic" });
+    if (s.code) marks.push({ type: "code" });
     if (s.href)
       marks.push({
         type: "link",
@@ -141,7 +158,7 @@ export function renderJson(blocks: Block[], ctx: RenderContext = EMPTY_CTX): Nod
 export function internalLinks(blocks: Block[]): string[] {
   const out: string[] = [];
   const scan = (s: string) => {
-    for (const m of s.matchAll(INLINE)) if (m[4] && m[4].startsWith("/")) out.push(m[4]);
+    for (const span of parseInline(s)) if (span.href?.startsWith("/")) out.push(span.href);
   };
   for (const b of blocks) {
     if ("ul" in b) b.ul.forEach(scan);

@@ -7,7 +7,8 @@
 //
 // Tools come from the post's first { logos } block, or else its first
 // /tools/<slug> links. "X vs Y" posts get a head-to-head layout, posts about
-// one tool a single large logo, and everything else a row of logos.
+// one tool (reviews and how-to tutorials) a single large logo, and everything
+// else a row of logos.
 // Rendering uses headless Google Chrome and macOS `sips`.
 
 import { execFileSync } from "child_process";
@@ -24,10 +25,12 @@ const prisma = new PrismaClient();
 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+const isSingle = (post: Post) => /review|^how-to-/i.test(post.slug);
+
 function toolSlugs(post: Post): string[] {
   const heading = post.title.split(":")[0];
   // "A vs B vs C" compares three tools; a review covers one.
-  const limit = /\bvs\b/i.test(heading) ? heading.split(/\bvs\b/i).length : /review/i.test(post.slug) ? 1 : 6;
+  const limit = /\bvs\b/i.test(heading) ? heading.split(/\bvs\b/i).length : isSingle(post) ? 1 : 6;
   const block = post.body.find((b) => "logos" in b) as { logos: string[] } | undefined;
   if (block) return block.logos.slice(0, limit);
   const seen: string[] = [];
@@ -51,7 +54,7 @@ function html(post: Post, logos: Logo[]) {
   const [heading, ...rest] = post.title.split(":");
   const sub = rest.join(":").trim();
   const isVs = /\bvs\b/i.test(heading) && logos.length >= 2 && logos.length <= 4;
-  const single = !isVs && logos.length >= 1 && /review/i.test(post.slug);
+  const single = !isVs && logos.length >= 1 && isSingle(post);
 
   let art = "";
   if (isVs) {
