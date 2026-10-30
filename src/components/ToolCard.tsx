@@ -1,7 +1,14 @@
 import Link from "next/link";
 import type { SerializedTool, SerializedToolLite } from "@/lib/serializers";
 
-export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }) {
+export function ToolCard({
+  tool,
+  sponsored = false,
+}: {
+  tool: SerializedTool | SerializedToolLite;
+  /** A paid featured slot; labelled so readers can tell it from editorial picks. */
+  sponsored?: boolean;
+}) {
   const category = tool.category;
   return (
     <Link
@@ -73,11 +80,18 @@ export function ToolCard({ tool }: { tool: SerializedTool | SerializedToolLite }
         </div>
 
         <div className="mt-4 flex items-center justify-between">
-          <span className="inline-flex items-center gap-1 rounded-full border border-ink-200 px-2.5 py-0.5 text-[11px] font-medium text-ink-700">
-            {tool.pricing}
-            {tool.priceFrom && (
-              <span className="text-ink-400">· from {tool.priceFrom}</span>
+          <span className="flex min-w-0 items-center gap-1.5">
+            {sponsored && (
+              <span className="rounded-full bg-kiwi-100 px-2.5 py-0.5 text-[11px] font-medium text-kiwi-800">
+                Sponsored
+              </span>
             )}
+            <span className="inline-flex items-center gap-1 truncate rounded-full border border-ink-200 px-2.5 py-0.5 text-[11px] font-medium text-ink-700">
+              {tool.pricing}
+              {tool.priceFrom && (
+                <span className="text-ink-400">· from {tool.priceFrom}</span>
+              )}
+            </span>
           </span>
           <span className="inline-flex items-center gap-1 text-[12px] font-medium text-kiwi-700 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             View <ArrowIcon />

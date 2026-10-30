@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/auth";
-import { stripe } from "@/lib/stripe";
+import { refundSubmissionPayments } from "@/lib/featured";
 import { sendEmail } from "@/lib/email";
 import { submitterRejectedEmail } from "@/lib/emails/submission-emails";
 import {
@@ -48,10 +48,8 @@ export async function rejectSubmission(submissionId: string, formData: FormData)
     data: { status: "REJECTED", rejectReason: reason, reviewedAt: new Date() },
   });
 
-  // A paid same-day review we can't list is refunded in full.
-  if (sub.paidAt && !sub.refundedAt && sub.stripePaymentIntentId && stripe) {
-    await stripe.refunds.create({ payment_intent: sub.stripePaymentIntentId });
-    await prisma.submission.update({ where: { id: sub.id }, data: { refundedAt: new Date() } });
+  // A paid same-day review or featured placement we can't list is refunded in full.
+  if (await refundSubmissionPayments(sub.id)) {
     const mail = submitterRejectedEmail({ toolName: sub.name, reason, refunded: true });
     void sendEmail({ to: sub.email, ...mail, tags: [{ name: "type", value: "submission_rejected_refunded" }] });
   }

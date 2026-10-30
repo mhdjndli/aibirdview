@@ -12,20 +12,31 @@ const PRICING: { value: "FREE" | "FREEMIUM" | "FREE_TRIAL" | "PAID"; label: stri
   { value: "PAID", label: "Paid" },
 ];
 
-type SubmitResult = { freeDays: number; fastTrack: { url: string; price: string } | null };
+type SubmitResult = {
+  freeDays: number;
+  fastTrack: { url: string; price: string } | null;
+  /** Stripe Checkout for the extras picked on the form, if any. */
+  checkoutUrl: string | null;
+};
+
+export type FeaturePlanOption = { id: string; label: string; days: number; cents: number };
 
 export function SubmitForm({
   categories,
   freeDays,
-  fastTrackPrice,
+  fastTrackCents,
+  featurePlans,
 }: {
   categories: CategoryOption[];
   freeDays: number;
-  /** Price label for the paid same-day review, or null when it isn't offered. */
-  fastTrackPrice: string | null;
+  /** Price of the paid same-day review, or null when it isn't offered. */
+  fastTrackCents: number | null;
+  /** Featured placements on offer; empty when payments are off. */
+  featurePlans: FeaturePlanOption[];
 }) {
   const [submitted, setSubmitted] = useState<SubmitResult | null>(null);
-  const [plan, setPlan] = useState<"free" | "fast">("free");
+  const [fast, setFast] = useState(false);
+  const [feature, setFeature] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -82,6 +93,10 @@ export function SubmitForm({
     );
   }
 
+  const total =
+    (fast && fastTrackCents !== null ? fastTrackCents : 0) +
+    (featurePlans.find((p) => p.id === feature)?.cents ?? 0);
+
   return (
     <form
       onSubmit={async (e) => {
@@ -123,6 +138,8 @@ export function SubmitForm({
               screenshot1MediaId: shot1Id,
               screenshot2MediaId: shot2Id,
               screenshot3MediaId: shot3Id,
+              fastTrack: fast,
+              featurePlan: feature,
             }),
           });
           if (!res.ok) {
@@ -131,12 +148,12 @@ export function SubmitForm({
             return;
           }
           const data = (await res.json()) as SubmitResult;
-          if (plan === "fast" && data.fastTrack) {
+          if (data.checkoutUrl) {
             // Straight to Stripe Checkout; it returns to /submit/thanks.
-            window.location.href = data.fastTrack.url;
+            window.location.href = data.checkoutUrl;
             return;
           }
-          setSubmitted({ freeDays: data.freeDays, fastTrack: data.fastTrack });
+          setSubmitted(data);
         } catch {
           setError("Network error, please try again.");
         } finally {
@@ -332,44 +349,21 @@ export function SubmitForm({
         </p>
       )}
 
-      {fastTrackPrice && (
-        <fieldset className="grid gap-3 sm:grid-cols-2">
-          <legend className="mb-3 text-[14px] font-semibold text-ink-900">When should it go live?</legend>
-          {(
-            [
-              ["free", "Free", `Reviewed and live within ${freeDays} days.`],
-              ["fast", `Same day · ${fastTrackPrice}`, "Reviewed today and live within hours. Full refund if we can't list it."],
-            ] as const
-          ).map(([value, title, body]) => (
-            <label
-              key={value}
-              className={`cursor-pointer rounded-2xl border p-4 transition-colors ${
-                plan === value ? "border-ink-900 bg-ink-0 ring-1 ring-ink-900" : "border-ink-200 bg-ink-0 hover:border-ink-300"
-              }`}
-            >
-              <input
-                type="radio"
-                name="plan"
-                value={value}
-                checked={plan === value}
-                onChange={() => setPlan(value)}
-                className="sr-only"
-              />
-              <span className="flex items-center justify-between gap-2 text-[15px] font-semibold text-ink-900">
-                {title}
-                {value === "fast" && (
-                  <span className="rounded-full bg-kiwi-100 px-2 py-0.5 text-[11px] font-semibold text-kiwi-800">Fastest</span>
-                )}
-              </span>
-              <span className="mt-1 block text-[13px] leading-relaxed text-ink-600">{body}</span>
-            </label>
-          ))}
-        </fieldset>
+      {(fastTrackCents !== null || featurePlans.length > 0) && (
+        <BoostOptions
+          freeDays={freeDays}
+          fastTrackCents={fastTrackCents}
+          featurePlans={featurePlans}
+          fast={fast}
+          onFastChange={setFast}
+          feature={feature}
+          onFeatureChange={setFeature}
+        />
       )}
 
       <div className="flex flex-wrap items-center justify-between gap-3 border-t border-ink-200 pt-6">
         <p className="text-[12px] text-ink-500">
-          {plan === "fast" && fastTrackPrice
+          {total > 0
             ? "You'll pay securely with Stripe after submitting."
             : `Free listings go live within ${freeDays} days.`}
         </p>
@@ -378,10 +372,115 @@ export function SubmitForm({
           disabled={pending}
           className="inline-flex items-center gap-1.5 rounded-full bg-ink-900 px-6 py-3 text-[14px] font-medium text-ink-0 transition-transform duration-300 ease-[var(--ease-spring)] hover:scale-[1.02] disabled:opacity-60"
         >
-          {pending ? "Submitting…" : plan === "fast" && fastTrackPrice ? `Submit and pay ${fastTrackPrice} →` : "Submit for review →"}
+          {pending ? "Submitting…" : total > 0 ? `Submit and pay ${formatPrice(total)} →` : "Submit for review →"}
         </button>
       </div>
     </form>
+  );
+}
+
+function formatPrice(cents: number) {
+  return `$${(cents / 100).toFixed(cents % 100 === 0 ? 0 : 2)}`;
+}
+
+// Optional paid extras: a same-day review and a featured placement. Pick
+// either, both or neither; whatever is picked is paid in one checkout.
+function BoostOptions({
+  freeDays,
+  fastTrackCents,
+  featurePlans,
+  fast,
+  onFastChange,
+  feature,
+  onFeatureChange,
+}: {
+  freeDays: number;
+  fastTrackCents: number | null;
+  featurePlans: FeaturePlanOption[];
+  fast: boolean;
+  onFastChange: (fast: boolean) => void;
+  feature: string | null;
+  onFeatureChange: (plan: string | null) => void;
+}) {
+  const weekly = featurePlans[0] ? featurePlans[0].cents / (featurePlans[0].days / 7) : 0;
+  return (
+    <FieldSet
+      title="Boost your launch"
+      subtitle="Optional. Pick any, both or none. You pay once, after submitting."
+    >
+      {fastTrackCents !== null && (
+        <label
+          className={`flex cursor-pointer items-start gap-3 rounded-2xl border p-4 transition-colors ${
+            fast ? "border-ink-900 bg-ink-0 ring-1 ring-ink-900" : "border-ink-200 bg-ink-0 hover:border-ink-300"
+          }`}
+        >
+          <input
+            type="checkbox"
+            checked={fast}
+            onChange={(e) => onFastChange(e.target.checked)}
+            className="mt-1 h-4 w-4 shrink-0 accent-kiwi-600"
+          />
+          <span className="min-w-0 flex-1">
+            <span className="flex flex-wrap items-center justify-between gap-2 text-[15px] font-semibold text-ink-900">
+              <span>Same-day review</span>
+              <span>{formatPrice(fastTrackCents)}</span>
+            </span>
+            <span className="mt-1 block text-[13px] leading-relaxed text-ink-600">
+              {`Reviewed today and live within hours, instead of within ${freeDays} days. Full refund if we can't list it.`}
+            </span>
+          </span>
+        </label>
+      )}
+
+      {featurePlans.length > 0 && (
+        <div className="rounded-2xl border border-ink-200 bg-ink-0 p-4">
+          <div className="flex flex-wrap items-baseline justify-between gap-2">
+            <p className="text-[15px] font-semibold text-ink-900">Get featured this week</p>
+            {feature && (
+              <button
+                type="button"
+                onClick={() => onFeatureChange(null)}
+                className="text-[12.5px] text-ink-500 hover:text-ink-800"
+              >
+                No thanks
+              </button>
+            )}
+          </div>
+          <p className="mt-1 text-[13px] leading-relaxed text-ink-600">
+            Your tool appears in &ldquo;Featured this week&rdquo; on the homepage, marked Sponsored.
+            It starts the day your listing goes live
+            {fastTrackCents !== null && !fast ? <> (add the same-day review to start today)</> : null}.
+          </p>
+          <div role="radiogroup" aria-label="Featured placement" className="mt-4 grid grid-cols-2 gap-2.5 sm:grid-cols-4">
+            {featurePlans.map((p) => {
+              const selected = feature === p.id;
+              const perWeek = p.cents / (p.days / 7);
+              const saving = weekly > 0 ? Math.round((1 - perWeek / weekly) * 100) : 0;
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={selected}
+                  onClick={() => onFeatureChange(selected ? null : p.id)}
+                  className={`relative rounded-xl border px-3 py-3 text-left transition-colors ${
+                    selected ? "border-ink-900 bg-ink-0 ring-1 ring-ink-900" : "border-ink-200 bg-ink-0 hover:border-ink-300"
+                  }`}
+                >
+                  <span className="block text-[13px] font-medium text-ink-700">{p.label}</span>
+                  <span className="mt-0.5 block text-[20px] font-semibold tracking-[-0.02em] text-ink-900">
+                    {formatPrice(p.cents)}
+                  </span>
+                  <span className="mt-0.5 block text-[11.5px] text-ink-500">
+                    {saving > 0 ? `Save ${saving}%` : `${p.days} days`}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </FieldSet>
   );
 }
 

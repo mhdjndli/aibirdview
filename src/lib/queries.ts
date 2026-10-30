@@ -1,5 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import type { Pricing } from "@prisma/client";
+import { weekNumber } from "@/lib/featured";
 
 export const PRICING_LABELS: Record<Pricing, string> = {
   FREE: "Free",
@@ -61,12 +62,39 @@ export async function getTools(opts?: {
     where: {
       published: opts?.published ?? true,
       ...(opts?.categorySlug && { category: { slug: opts.categorySlug } }),
-      ...(opts?.featured && { featured: true }),
+      ...(opts?.featured && { OR: [{ featured: true }, { featuredUntil: { gt: new Date() } }] }),
       ...(opts?.trending && { trending: true }),
     },
     include: TOOL_INCLUDE,
     orderBy: [{ trending: "desc" }, { rating: "desc" }, { createdAt: "desc" }],
   });
+}
+
+/**
+ * The homepage "Featured this week" section: every tool with a paid slot
+ * running, then editors' picks filling the remaining places. The picks
+ * rotate each Monday (UTC), so the section changes weekly.
+ */
+export async function getFeaturedTools(slots = 6) {
+  const now = new Date();
+  const [sponsored, picks] = await Promise.all([
+    prisma.tool.findMany({
+      where: { published: true, featuredUntil: { gt: now } },
+      include: TOOL_INCLUDE,
+      orderBy: { featuredUntil: "asc" },
+    }),
+    prisma.tool.findMany({
+      where: { published: true, featured: true, OR: [{ featuredUntil: null }, { featuredUntil: { lte: now } }] },
+      include: TOOL_INCLUDE,
+      orderBy: [{ rating: "desc" }, { id: "asc" }],
+    }),
+  ]);
+  const open = Math.max(0, slots - sponsored.length);
+  const offset = picks.length > 0 ? (weekNumber(now) * open) % picks.length : 0;
+  return {
+    sponsored,
+    picks: [...picks.slice(offset), ...picks.slice(0, offset)].slice(0, open),
+  };
 }
 
 /** Just the fields a compact tool row needs, for pages that list hundreds of tools. */

@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { currentMember } from "@/lib/owner-session";
 import { fastTrackEnabled } from "@/lib/stripe";
+import { formatDay } from "@/lib/featured";
 import { signOut } from "./actions";
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default async function AccountPage() {
           tagline: true,
           logoMediaId: true,
           published: true,
+          featuredUntil: true,
           edits: { where: { status: "PENDING" }, select: { id: true } },
         },
       },
@@ -73,6 +75,8 @@ export default async function AccountPage() {
                 <p className="truncate text-[13px] text-ink-500">
                   {o.status === "PENDING"
                     ? "Ownership request waiting for review"
+                    : o.tool.featuredUntil && o.tool.featuredUntil > new Date()
+                    ? `Featured until ${formatDay(o.tool.featuredUntil)}`
                     : o.tool.tagline}
                 </p>
               </div>

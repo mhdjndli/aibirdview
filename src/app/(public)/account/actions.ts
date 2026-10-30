@@ -8,6 +8,9 @@ import { currentMember, endMemberSession } from "@/lib/owner-session";
 import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
 import { adminClaimEmail, adminEditEmail } from "@/lib/emails/submission-emails";
 import { applyToolChanges, type EditData } from "@/lib/tool-edits";
+import { stripe } from "@/lib/stripe";
+import { featurePlan } from "@/lib/featured";
+import { SITE } from "@/lib/site";
 
 export async function signOut() {
   await endMemberSession();
@@ -136,4 +139,39 @@ export async function requestManualClaim(slug: string, formData: FormData) {
   const mail = adminClaimEmail({ toolName: tool.name, toolSlug: tool.slug, email, pending: true, note });
   void sendEmail({ to: ADMIN_NOTIFY_EMAIL, ...mail, replyTo: email, tags: [{ name: "type", value: "admin_claim_request" }] });
   redirect(`/claim/${slug}?requested=1`);
+}
+
+// Sends an owner to Stripe Checkout to feature their listed tool. The webhook
+// starts the slot once the payment completes.
+export async function featureTool(slug: string, formData: FormData) {
+  const { email, tool } = await requireOwner(slug);
+  const plan = featurePlan(String(formData.get("plan") ?? ""));
+  const back = `${SITE.url}/account/tools/${slug}`;
+  if (!stripe || !plan) redirect(`/account/tools/${slug}?error=${encodeURIComponent("Choose how long to feature your tool.")}`);
+  if (!tool.published) redirect(`/account/tools/${slug}?error=${encodeURIComponent("Only live listings can be featured.")}`);
+
+  const metadata = { toolId: tool.id, featurePlan: plan.id, email };
+  const session = await stripe.checkout.sessions.create({
+    mode: "payment",
+    line_items: [
+      {
+        quantity: 1,
+        price_data: {
+          currency: "usd",
+          unit_amount: plan.cents,
+          product_data: {
+            name: `Featured for ${plan.label.toLowerCase()}: ${tool.name}`,
+            description: `Shown in "Featured this week" on the ${SITE.name} homepage for ${plan.days} days.`,
+          },
+        },
+      },
+    ],
+    customer_email: email,
+    client_reference_id: tool.id,
+    metadata,
+    payment_intent_data: { metadata },
+    success_url: `${back}?featured=${plan.id}`,
+    cancel_url: back,
+  });
+  redirect(session.url ?? back);
 }

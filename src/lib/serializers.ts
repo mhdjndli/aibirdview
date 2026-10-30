@@ -17,6 +17,7 @@ export type SerializedTool = {
   rating: number;
   ratingCount: number;
   founded: string | null;
+  /** An editors' pick or a paid featured slot that's running. */
   featured: boolean;
   trending: boolean;
   verified: boolean;
@@ -60,6 +61,10 @@ type ToolWithRelations = Prisma.ToolGetPayload<{
   };
 }>;
 
+function isFeatured(tool: { featured: boolean; featuredUntil: Date | null }) {
+  return tool.featured || (tool.featuredUntil !== null && tool.featuredUntil > new Date());
+}
+
 export function serializeTool(tool: ToolWithRelations): SerializedTool {
   // Genuine ratings: real visitor reviews take precedence; the admin-set
   // rating/ratingCount only show while a tool has no reviews yet.
@@ -87,7 +92,7 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
     rating: reviewCount > 0 ? reviewAvg : tool.rating,
     ratingCount: reviewCount > 0 ? reviewCount : tool.ratingCount,
     founded: tool.founded,
-    featured: tool.featured,
+    featured: isFeatured(tool),
     trending: tool.trending,
     verified: tool.verified,
     swatch: [tool.swatchFrom, tool.swatchTo],
@@ -112,7 +117,7 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
       rating: a.toTool.rating,
       ratingCount: a.toTool.ratingCount,
       founded: a.toTool.founded,
-      featured: a.toTool.featured,
+      featured: isFeatured(a.toTool),
       trending: a.toTool.trending,
       verified: a.toTool.verified,
       swatch: [a.toTool.swatchFrom, a.toTool.swatchTo],

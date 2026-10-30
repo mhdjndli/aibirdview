@@ -13,12 +13,20 @@ export function OwnerToolBar({ slug }: { slug: string }) {
         <p className="text-[13.5px] text-kiwi-900">
           <span className="font-semibold">You manage this listing.</span> Changes you save go live right away.
         </p>
-        <Link
-          href={`/account/tools/${slug}`}
-          className="rounded-full bg-ink-900 px-4 py-1.5 text-[13px] font-medium text-ink-0 hover:bg-ink-800"
-        >
-          Edit listing →
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link
+            href={`/account/tools/${slug}#featured`}
+            className="rounded-full border border-kiwi-300 bg-ink-0 px-4 py-1.5 text-[13px] font-medium text-ink-800 hover:bg-kiwi-100"
+          >
+            Get featured
+          </Link>
+          <Link
+            href={`/account/tools/${slug}`}
+            className="rounded-full bg-ink-900 px-4 py-1.5 text-[13px] font-medium text-ink-0 hover:bg-ink-800"
+          >
+            Edit listing →
+          </Link>
+        </div>
       </div>
     </div>
   );

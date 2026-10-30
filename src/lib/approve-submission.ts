@@ -3,6 +3,7 @@ import { uniqueSlug } from "@/lib/slugify";
 import { sendEmail } from "@/lib/email";
 import { submitterApprovedEmail } from "@/lib/emails/submission-emails";
 import { SITE } from "@/lib/site";
+import { startSubmissionPlacements } from "@/lib/featured";
 
 // Free submissions are published at most this many days after they arrive.
 export const FREE_REVIEW_DAYS = Number(process.env.FREE_REVIEW_DAYS || 14);
@@ -98,6 +99,9 @@ export async function approveSubmissionById(
       create: { toolId: tool.id, email: sub.email.trim().toLowerCase(), method: "SUBMISSION" },
       update: { status: "ACTIVE" },
     });
+
+    // Featured placements bought with the submission start the day it goes live.
+    await startSubmissionPlacements(sub.id, tool.id);
 
     return { tool, submission: sub, category };
   } catch (err) {

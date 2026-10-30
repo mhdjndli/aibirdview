@@ -46,27 +46,29 @@ model Category {
 }
 
 model Tool {
-  id              String  @id @default(cuid())
-  slug            String  @unique
+  id              String    @id @default(cuid())
+  slug            String    @unique
   name            String
   tagline         String
-  description     String  @db.Text
-  longDescription String  @db.Text
+  description     String    @db.Text
+  longDescription String    @db.Text
   // Editorial "More context from AI BirdView" section. Plain text:
   // paragraphs separated by blank lines, lines starting with "- " are bullets.
-  moreContext     String? @db.Text
+  moreContext     String?   @db.Text
   url             String
   pricing         Pricing
   priceFrom       String?
-  rating          Float   @default(0)
-  ratingCount     Int     @default(0)
+  rating          Float     @default(0)
+  ratingCount     Int       @default(0)
   founded         String?
-  featured        Boolean @default(false)
-  trending        Boolean @default(false)
-  verified        Boolean @default(false)
-  published       Boolean @default(true)
-  swatchFrom      String  @default("#c8e6a8")
-  swatchTo        String  @default("#8dc474")
+  featured        Boolean   @default(false)
+  // End of the tool's paid "Featured this week" slot(s); featured while in the future.
+  featuredUntil   DateTime?
+  trending        Boolean   @default(false)
+  verified        Boolean   @default(false)
+  published       Boolean   @default(true)
+  swatchFrom      String    @default("#c8e6a8")
+  swatchTo        String    @default("#8dc474")
 
   // SEO
   seoTitle       String?
@@ -102,11 +104,14 @@ model Tool {
   owners  ToolOwner[]
   edits   ToolEdit[]
 
+  featuredPlacements FeaturedPlacement[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
   @@index([categoryId])
   @@index([featured])
+  @@index([featuredUntil])
   @@index([trending])
   @@index([published])
 }
@@ -214,6 +219,8 @@ model Submission {
   // if approved, the resulting Tool
   toolId String? @unique
   tool   Tool?   @relation(fields: [toolId], references: [id])
+
+  featuredPlacements FeaturedPlacement[]
 
   createdAt  DateTime  @default(now())
   reviewedAt DateTime?
@@ -415,4 +422,33 @@ model ToolEdit {
 
   @@index([status])
   @@index([toolId])
+}
+
+// ---------- Paid featured placements ----------
+
+// A paid slot in the homepage "Featured this week" section. Created when the
+// Stripe payment completes. Bought with a new submission it waits
+// (startsAt null) until the tool goes live; bought for a listed tool it
+// starts right away, or when the tool's current slot ends.
+model FeaturedPlacement {
+  id           String      @id @default(cuid())
+  plan         String // see FEATURE_PLANS in src/lib/featured.ts
+  days         Int
+  amountCents  Int
+  email        String
+  tool         Tool?       @relation(fields: [toolId], references: [id], onDelete: Cascade)
+  toolId       String?
+  submission   Submission? @relation(fields: [submissionId], references: [id], onDelete: SetNull)
+  submissionId String?
+
+  stripeSessionId       String    @unique
+  stripePaymentIntentId String?
+  paidAt                DateTime  @default(now())
+  startsAt              DateTime?
+  endsAt                DateTime?
+  refundedAt            DateTime?
+  createdAt             DateTime  @default(now())
+
+  @@index([toolId])
+  @@index([submissionId])
 }

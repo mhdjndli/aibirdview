@@ -2,6 +2,7 @@ import { SubmitForm } from "@/components/SubmitForm";
 import { getCategories } from "@/lib/queries";
 import { FREE_REVIEW_DAYS } from "@/lib/approve-submission";
 import { FAST_TRACK_PRICE_CENTS, fastTrackEnabled, formatPrice } from "@/lib/stripe";
+import { FEATURE_PLANS, featuringEnabled } from "@/lib/featured";
 
 export const metadata = {
   title: "Submit a tool | AI BirdView",
@@ -35,6 +36,7 @@ export default async function SubmitPage() {
             {[
               "Free to submit",
               fastTrackPrice ? `Same-day for ${fastTrackPrice}` : `Live within ${FREE_REVIEW_DAYS} days`,
+              ...(featuringEnabled() ? [`Featured from ${formatPrice(FEATURE_PLANS[0].cents)}/week`] : []),
               "Editorial integrity",
               "Verified badge",
             ].map((b) => (
@@ -50,7 +52,12 @@ export default async function SubmitPage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-5 lg:px-8 py-16">
-        <SubmitForm categories={categories} freeDays={FREE_REVIEW_DAYS} fastTrackPrice={fastTrackPrice} />
+        <SubmitForm
+          categories={categories}
+          freeDays={FREE_REVIEW_DAYS}
+          fastTrackCents={fastTrackEnabled() ? FAST_TRACK_PRICE_CENTS : null}
+          featurePlans={featuringEnabled() ? FEATURE_PLANS.map((p) => ({ ...p })) : []}
+        />
       </section>
 
       {/* Guidelines */}

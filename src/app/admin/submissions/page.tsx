@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+import { featurePlan } from "@/lib/featured";
 import type { SubmissionStatus } from "@prisma/client";
 
 export const metadata = { title: "Submissions | Admin" };
@@ -36,7 +37,10 @@ export default async function SubmissionsPage({
         statusFilter === "PENDING"
           ? [{ fastTrack: "desc" }, { publishBy: "asc" }]
           : { createdAt: "desc" },
-      include: { tool: { select: { slug: true } } },
+      include: {
+        tool: { select: { slug: true } },
+        featuredPlacements: { select: { plan: true, refundedAt: true } },
+      },
     }),
     prisma.submission.groupBy({
       by: ["status"],
@@ -118,6 +122,11 @@ export default async function SubmissionsPage({
                           {s.refundedAt ? "Refunded" : "Paid · same day"}
                         </span>
                       )}
+                      {s.featuredPlacements.map((p, i) => (
+                        <span key={i} className="rounded-full bg-amber-100 px-2 py-0.5 text-[10.5px] font-semibold text-amber-800">
+                          {p.refundedAt ? "Refunded" : `Featured · ${featurePlan(p.plan)?.label ?? p.plan}`}
+                        </span>
+                      ))}
                     </div>
                     <a href={s.url} target="_blank" rel="noopener noreferrer" className="block text-[12px] text-ink-500 hover:text-kiwi-700">
                       {new URL(s.url).hostname.replace(/^www\./, "")}

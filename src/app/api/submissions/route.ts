@@ -6,6 +6,7 @@ import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
 import { isEmailVerified } from "@/lib/email-verification";
 import { FREE_REVIEW_DAYS, freePublishBy } from "@/lib/approve-submission";
 import { FAST_TRACK_PRICE_CENTS, fastTrackEnabled, formatPrice } from "@/lib/stripe";
+import { featurePlan, featuringEnabled } from "@/lib/featured";
 import { SITE } from "@/lib/site";
 import {
   adminNotificationEmail,
@@ -30,6 +31,9 @@ const submissionSchema = z.object({
   screenshot1MediaId: z.string().optional().nullable(),
   screenshot2MediaId: z.string().optional().nullable(),
   screenshot3MediaId: z.string().optional().nullable(),
+  // Optional paid extras, charged in one checkout right after submitting.
+  fastTrack: z.boolean().optional(),
+  featurePlan: z.string().optional().nullable(),
 });
 
 export async function POST(req: Request) {
@@ -117,9 +121,16 @@ export async function POST(req: Request) {
     select: { id: true },
   });
 
+  const checkout = `${SITE.url}/api/checkout/submission?submission=${submission.id}`;
   const fastTrack = fastTrackEnabled()
-    ? { url: `${SITE.url}/api/checkout/fast-track?submission=${submission.id}`, price: formatPrice(FAST_TRACK_PRICE_CENTS) }
+    ? { url: `${checkout}&fast=1`, price: formatPrice(FAST_TRACK_PRICE_CENTS) }
     : null;
+  const plan = featuringEnabled() ? featurePlan(v.featurePlan) : null;
+  const extras = new URLSearchParams({
+    ...(v.fastTrack && fastTrack && { fast: "1" }),
+    ...(plan && { feature: plan.id }),
+  }).toString();
+  const checkoutUrl = extras ? `${checkout}&${extras}` : null;
 
   // Fire-and-forget emails (don't block the response on email delivery)
   const screenshotCount = [v.screenshot1MediaId, v.screenshot2MediaId, v.screenshot3MediaId].filter(Boolean).length;
@@ -173,7 +184,7 @@ export async function POST(req: Request) {
   ]);
 
   return NextResponse.json(
-    { id: submission.id, freeDays: FREE_REVIEW_DAYS, fastTrack },
+    { id: submission.id, freeDays: FREE_REVIEW_DAYS, fastTrack, checkoutUrl },
     { status: 201 }
   );
 }

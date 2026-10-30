@@ -3,8 +3,10 @@ import { ToolCard } from "@/components/ToolCard";
 import { ToolBoard } from "@/components/ToolBoard";
 import { HeroSearch } from "@/components/HeroSearch";
 import { LogoMarquee } from "@/components/LogoMarquee";
-import { getCategories, getTools, getToolRows, getSetting } from "@/lib/queries";
+import { getCategories, getFeaturedTools, getToolRows, getSetting } from "@/lib/queries";
 import { serializeCategory, serializeTool } from "@/lib/serializers";
+import { FEATURE_PLANS } from "@/lib/featured";
+import { formatPrice } from "@/lib/stripe";
 
 export const metadata = {
   title: "AI Tools Directory: Find the Best AI Tools | AI BirdView",
@@ -26,13 +28,16 @@ export default async function Home() {
   const [categoriesRaw, rows, featuredRaw, heroSetting, statsSetting] = await Promise.all([
     getCategories(),
     getToolRows(),
-    getTools({ featured: true }),
+    getFeaturedTools(),
     getSetting<HeroSettings>("hero"),
     getSetting<StatsSettings>("stats"),
   ]);
 
   const categories = categoriesRaw.map(serializeCategory);
-  const featured = featuredRaw.map(serializeTool).slice(0, 6);
+  const featured = [
+    ...featuredRaw.sponsored.map((t) => ({ tool: serializeTool(t), sponsored: true })),
+    ...featuredRaw.picks.map((t) => ({ tool: serializeTool(t), sponsored: false })),
+  ];
   // getToolRows() orders trending first, then by rating, then newest.
   const totalTools = rows.length;
   const trending = rows.filter((t) => t.trending).slice(0, BOARD_SIZE);
@@ -159,10 +164,10 @@ export default async function Home() {
             <div className="flex items-end justify-between gap-6">
               <div className="max-w-xl">
                 <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
-                  Editor&apos;s picks
+                  Featured
                 </p>
                 <h2 className="mt-3 text-[30px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[40px]">
-                  Featured this month.
+                  Featured this week.
                 </h2>
               </div>
               <Link
@@ -174,8 +179,8 @@ export default async function Home() {
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {featured.map((t) => (
-                <ToolCard key={t.slug} tool={t} />
+              {featured.map(({ tool, sponsored }) => (
+                <ToolCard key={tool.slug} tool={tool} sponsored={sponsored} />
               ))}
             </div>
           </div>
@@ -306,8 +311,8 @@ export default async function Home() {
               Get your AI tool in front of the right people.
             </h2>
             <p className="mx-auto mt-5 max-w-lg text-[16px] leading-relaxed text-ink-300">
-              Free to submit, or get listed the same day. Featured listings are
-              hand-picked by our editors.
+              Free to submit, or get listed the same day. Want more eyes? Feature
+              your tool on the homepage from {formatPrice(FEATURE_PLANS[0].cents)} a week.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
               <Link

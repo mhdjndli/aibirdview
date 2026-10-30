@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { prisma } from "@/lib/prisma";
+import { formatDay } from "@/lib/featured";
 import { PRICING_LABELS } from "@/lib/queries";
 
 export const metadata = { title: "Tools | Admin" };
@@ -138,6 +139,11 @@ export default async function AdminToolsPage({
                       {t.published ? "Published" : "Draft"}
                     </span>
                     {t.featured && <span className="ml-1 inline-flex rounded-full bg-ink-900 px-2 py-0.5 text-[11px] font-medium text-ink-0">Featured</span>}
+                    {t.featuredUntil && t.featuredUntil > new Date() && (
+                      <span className="ml-1 inline-flex rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-medium text-amber-800">
+                        Sponsored until {formatDay(t.featuredUntil)}
+                      </span>
+                    )}
                   </td>
                   <td className="px-4 py-3 text-right">
                     <Link

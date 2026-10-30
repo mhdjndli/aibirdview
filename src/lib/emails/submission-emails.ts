@@ -331,21 +331,59 @@ function plain(title: string, body: string[], cta?: { label: string; url: string
   return [title, "", ...body.map(strip), ...(cta ? ["", `${cta.label}: ${cta.url}`] : []), "", `The ${SITE.name} team`].join("\n");
 }
 
-export function fastTrackPaidEmail(args: { toolName: string; hours: number }) {
-  const title = `Payment received: ${args.toolName} goes live today`;
+type PaidFeature = { label: string; endsAt: Date | null };
+
+const formatDay = (d: Date) => d.toLocaleDateString("en-US", { month: "long", day: "numeric", timeZone: "UTC" });
+
+/** Receipt for a submitter's same-day review and/or featured placement, or an owner's featured placement. */
+export function paymentReceivedEmail(args: { toolName: string; fastTrackHours: number | null; feature: PaidFeature | null; toolUrl?: string }) {
+  const name = `<strong>${escapeHtml(args.toolName)}</strong>`;
+  const title = args.fastTrackHours
+    ? `Payment received: ${args.toolName} goes live today`
+    : `Payment received: ${args.toolName} will be featured`;
   const body = [
-    `Thanks! Your same-day review for <strong>${escapeHtml(args.toolName)}</strong> is paid. We'll review it today and publish it within ${args.hours} hours.`,
-    `We'll email you the link as soon as it's live. If we can't list it, we'll refund you in full.`,
+    ...(args.fastTrackHours
+      ? [`Thanks! Your same-day review for ${name} is paid. We'll review it today and publish it within ${args.fastTrackHours} hours.`]
+      : []),
+    ...(args.feature
+      ? [
+          args.feature.endsAt
+            ? `${name} is featured on the ${SITE.name} homepage for ${escapeHtml(args.feature.label.toLowerCase())}, until ${formatDay(args.feature.endsAt)}.`
+            : `${name} will be featured on the ${SITE.name} homepage for ${escapeHtml(args.feature.label.toLowerCase())}, starting the day it goes live.`,
+        ]
+      : []),
+    args.toolUrl
+      ? `Featured tools are marked Sponsored and appear in the "Featured this week" section.`
+      : `We'll email you the link as soon as it's live. If we can't list it, we'll refund you in full.`,
   ];
-  return { subject: title, html: notice({ eyebrow: "Same-day review", title, body }), text: plain(title, body) };
+  const cta = args.toolUrl ? { label: "View your listing", url: args.toolUrl } : undefined;
+  return { subject: title, html: notice({ eyebrow: "Payment received", title, body, cta }), text: plain(title, body, cta) };
 }
 
-export function adminFastTrackEmail(args: { toolName: string; submissionId: string; publishBy: Date }) {
-  const title = `Paid same-day review: ${args.toolName}`;
+export function adminPaymentEmail(args: {
+  toolName: string;
+  submissionId?: string;
+  toolSlug?: string;
+  publishBy?: Date | null;
+  fastTrack: boolean;
+  feature: PaidFeature | null;
+}) {
+  const bought = [args.fastTrack && "a same-day review", args.feature && `featuring for ${args.feature.label.toLowerCase()}`]
+    .filter(Boolean)
+    .join(" and ");
+  const title = `Paid: ${args.toolName}`;
   const body = [
-    `${escapeHtml(args.toolName)} paid for a same-day review. It publishes automatically at ${args.publishBy.toUTCString()} unless you review it first.`,
+    `${escapeHtml(args.toolName)} paid for ${escapeHtml(bought)}.`,
+    ...(args.fastTrack && args.publishBy
+      ? [`It publishes automatically at ${args.publishBy.toUTCString()} unless you review it first.`]
+      : []),
+    ...(args.feature
+      ? [args.feature.endsAt ? `Featured until ${args.feature.endsAt.toUTCString()}.` : "The featured slot starts when the tool goes live."]
+      : []),
   ];
-  const cta = { label: "Review submission", url: `${SITE.url}/admin/submissions/${args.submissionId}` };
+  const cta = args.submissionId
+    ? { label: "Review submission", url: `${SITE.url}/admin/submissions/${args.submissionId}` }
+    : { label: "Open listing", url: `${SITE.url}/admin/tools/${args.toolSlug}/edit` };
   return { subject: title, html: notice({ eyebrow: "Paid", title, body, cta }), text: plain(title, body, cta) };
 }
 
@@ -354,7 +392,7 @@ export function submitterRejectedEmail(args: { toolName: string; reason: string 
   const body = [
     `Thanks for submitting <strong>${escapeHtml(args.toolName)}</strong>. After review, we weren't able to add it to the directory.`,
     ...(args.reason ? [`Reason: ${escapeHtml(args.reason)}`] : []),
-    ...(args.refunded ? [`Your same-day review payment has been refunded in full. It can take 5 to 10 days to appear on your statement.`] : []),
+    ...(args.refunded ? [`Your payment has been refunded in full. It can take 5 to 10 days to appear on your statement.`] : []),
   ];
   return { subject: title, html: notice({ eyebrow: "Submission update", title, body }), text: plain(title, body) };
 }
