@@ -1,15 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAllPostSlugs, getPostBySlug, getPublishedPosts } from "@/lib/queries";
+import { getPostBySlug, getPublishedPosts } from "@/lib/queries";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl, SITE } from "@/lib/site";
 
 export const dynamicParams = true;
 export const revalidate = 60;
 
+// Posts render on first visit and are then cached (ISR), like tool pages.
 export async function generateStaticParams() {
-  const slugs = await getAllPostSlugs();
-  return slugs.map((slug) => ({ slug }));
+  return [];
 }
 
 export async function generateMetadata({

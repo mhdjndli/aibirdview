@@ -5,7 +5,7 @@ import { ReviewForm } from "@/components/ReviewForm";
 import { OwnerToolBar } from "@/components/OwnerToolBar";
 import { JsonLd } from "@/components/JsonLd";
 import { MoreContext } from "@/components/MoreContext";
-import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
+import { getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
 import { absoluteUrl } from "@/lib/site";
 import { faqItems, parseMoreContext } from "@/lib/moreContext";
@@ -14,9 +14,11 @@ import { prisma } from "@/lib/prisma";
 export const dynamicParams = true;
 export const revalidate = 60;
 
+// Tool pages render on first visit and are then cached like static pages
+// (ISR). Prerendering all of them at build time meant 1,100+ database
+// queries during the build, which failed when the database was slow.
 export async function generateStaticParams() {
-  const slugs = await getAllToolSlugs();
-  return slugs.map((slug) => ({ slug }));
+  return [];
 }
 
 export async function generateMetadata({
