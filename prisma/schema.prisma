@@ -53,7 +53,9 @@ model Tool {
   description     String    @db.Text
   longDescription String    @db.Text
   // Editorial "More context from AI BirdView" section. Plain text:
-  // paragraphs separated by blank lines, lines starting with "- " are bullets.
+  // paragraphs separated by blank lines, lines starting with "- " are bullets,
+  // "## " lines are subheadings and "Q: "/"A: " blocks are FAQ entries
+  // (see src/lib/moreContext.ts).
   moreContext     String?   @db.Text
   url             String
   pricing         Pricing

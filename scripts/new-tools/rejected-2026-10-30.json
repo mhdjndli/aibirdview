@@ -1,0 +1,790 @@
+[
+ {
+  "candidate": "Oboe (oboe.com)",
+  "reason": "Product in transition: homepage says current chats are going away because the company is building something new; current features and pricing cannot be verified"
+ },
+ {
+  "candidate": "Kinnu (kinnu.xyz)",
+  "reason": "Primarily a curated learning-pathway and exam-prep content platform (SQE, CFA, SAT) with an AI assistant as a secondary feature; not primarily an AI product"
+ },
+ {
+  "candidate": "Synthesis Tutor (synthesis.com)",
+  "reason": "Elementary math program whose own site says it uses AI only 'where appropriate' with educator-designed pedagogy; not primarily an AI tool, and targets young children rather than students/self-learners"
+ },
+ {
+  "candidate": "StudyMonkey (studymonkey.ai)",
+  "reason": "Generic homework answer chatbot priced per question with little identity beyond answering homework; borderline answer-copying use case and low demand"
+ },
+ {
+  "candidate": "Revisely (revisely.com)",
+  "reason": "Thin AI flashcard/quiz/summary generator with no visible plans or pricing on its plans page; low search demand compared with accepted alternatives"
+ },
+ {
+  "candidate": "QuestionAI (questionai.com)",
+  "reason": "Photo homework answer app marketed mainly on instant answers; overlaps existing Gauth and Solvely listings and skews toward answer copying"
+ },
+ {
+  "candidate": "Answer AI (answerai.pro)",
+  "reason": "Photo homework answer app overlapping existing Gauth and Solvely listings; marketed on instant answers rather than learning"
+ },
+ {
+  "candidate": "Chegg",
+  "reason": "Primarily a homework solutions and textbook subscription service with AI features added; not primarily an AI product and associated with academic cheating concerns"
+ },
+ {
+  "candidate": "Mathway",
+  "reason": "Rule-based math problem calculator owned by Chegg rather than an AI product; Symbolab and Photomath cover the same need"
+ },
+ {
+  "candidate": "Socratic by Google",
+  "reason": "Discontinued; Google folded it into Google Lens and Gemini"
+ },
+ {
+  "candidate": "Caktus AI",
+  "reason": "Duplicate of existing listing caktus-ai"
+ },
+ {
+  "candidate": "NotebookLM",
+  "reason": "Duplicate of existing listing notebooklm (Gemini Notebook)"
+ },
+ {
+  "candidate": "WolframAlpha",
+  "reason": "Duplicate of existing listing wolframalpha"
+ },
+ {
+  "candidate": "Mizou",
+  "reason": "Official site mizou.com renders no readable content and its pricing page returns a 404, so features and pricing could not be verified"
+ },
+ {
+  "candidate": "Gliglish",
+  "reason": "gliglish.com blocks automated access with a Cloudflare challenge (403), so the product and pricing could not be verified"
+ },
+ {
+  "candidate": "Khanmigo",
+  "reason": "Primarily a student AI tutor; outside this niche and covered by the study-helper researcher"
+ },
+ {
+  "candidate": "Conker",
+  "reason": "Official pricing page shows no plans or prices; only third-party sites list them, so pricing could not be verified"
+ },
+ {
+  "candidate": "Speak (usespeak / speak.com)",
+  "reason": "Name collides with existing listing speak-ai (Speak, speakai.co) and prices are only shown in-app; skipped to avoid a confusing duplicate name"
+ },
+ {
+  "candidate": "GPT4All (nomic.ai/gpt4all)",
+  "reason": "Appears unmaintained: latest GitHub release is v3.10.0 from February 2025, about 20 months without a release"
+ },
+ {
+  "candidate": "T3 Chat (t3.chat)",
+  "reason": "Official site and pricing page returned a Vercel security checkpoint (HTTP 429) to every fetch; features and price could only be found on third-party sites, so not verifiable"
+ },
+ {
+  "candidate": "Tencent Yuanbao (yuanbao.tencent.com)",
+  "reason": "Official site is a client-rendered app shell showing only a greeting; no verifiable feature or pricing information"
+ },
+ {
+  "candidate": "Cherry Studio (cherry-ai.com)",
+  "reason": "Official site redirects to a client-rendered cherryai.com.cn page with no readable content; license and pricing only from third-party sources that conflict"
+ },
+ {
+  "candidate": "Humain Chat (chat.humain.ai)",
+  "reason": "Official site blocked automated access with a Cloudflare challenge (403); could not verify features or pricing"
+ },
+ {
+  "candidate": "Venice AI (venice.ai)",
+  "reason": "Marketed as uncensored AI chat, which the brief excludes"
+ },
+ {
+  "candidate": "LobeHub / LobeChat (lobehub.com)",
+  "reason": "Repositioned as an agent operator platform ('Your Chief Agent Operator'); belongs in the agents lane, not chat"
+ },
+ {
+  "candidate": "Sarvam Indus (sarvam.ai)",
+  "reason": "Sarvam's consumer product is now Indus Cowork, an agentic work platform, plus developer APIs; outside the chat-assistant lane"
+ },
+ {
+  "candidate": "Z.ai Chat / ChatGLM (chat.z.ai)",
+  "reason": "Same company as the existing glm-5-3-flash listing (docs.z.ai); would duplicate the vendor"
+ },
+ {
+  "candidate": "Mistral Le Chat",
+  "reason": "Duplicate: already listed as le-chat (Vibe (Mistral))"
+ },
+ {
+  "candidate": "Inflection Pi",
+  "reason": "Duplicate: already listed as pi"
+ },
+ {
+  "candidate": "Google AI Studio",
+  "reason": "Duplicate: already listed as google-ai-studio"
+ },
+ {
+  "candidate": "Replika (replika.com)",
+  "reason": "AI companion whose homepage markets falling in love with your Rep; romantic partner companion, excluded under the companion content rule (like Blush AI)"
+ },
+ {
+  "candidate": "Talkie (talkie-ai.com)",
+  "reason": "MiniMax character chat app whose featured characters are built on romance premises (friends to lovers, fake relationship); excluded under the companion content rule"
+ },
+ {
+  "candidate": "Friend (friend.com)",
+  "reason": "Official site is a JavaScript-only page with the tagline 'Your new roommate is waiting' and no readable product, pricing or shipping details; could not verify the current product"
+ },
+ {
+  "candidate": "Wiseone (wiseone.io)",
+  "reason": "Official domain no longer resolves (DNS lookup fails); appears discontinued"
+ },
+ {
+  "candidate": "Eightify (eightify.app)",
+  "reason": "Official site blocked every automated request with a Cloudflare 403, so product and pricing could not be verified"
+ },
+ {
+  "candidate": "Sigma AI Browser (sigmabrowser.com)",
+  "reason": "Markets an 'Uncensored AI' feature and is bundled with a crypto wallet ecosystem; excluded under the uncensored content rule"
+ },
+ {
+  "candidate": "Toki (toki.ai)",
+  "reason": "Not a messaging assistant; the domain is an AI talking-avatar video generator, outside this niche and not the WhatsApp reminder bot of a similar name"
+ },
+ {
+  "candidate": "Coze (coze.com)",
+  "reason": "Has pivoted from a personal chatbot builder to an AI office suite (writing, slides, web development); belongs to the productivity and agents lanes covered by other researchers"
+ },
+ {
+  "candidate": "Norton Neo (neobrowser.ai)",
+  "reason": "Primarily a security and privacy browser (VPN, ad blocking, threat detection) with AI as one feature; not primarily an AI product"
+ },
+ {
+  "candidate": "Hume AI (hume.ai)",
+  "reason": "Now a B2B voice AI evaluation and expression-measurement platform for labs and enterprises, not a consumer voice assistant; outside this niche"
+ },
+ {
+  "candidate": "Sensay (sensay.io)",
+  "reason": "Pivoted from personal AI replicas to an enterprise employee offboarding and knowledge transfer platform; outside this niche"
+ },
+ {
+  "candidate": "Personal AI (personal.ai)",
+  "reason": "Now sells MODEL-4 memory infrastructure to telecom carriers via sales briefings; no consumer chatbot builder or public pricing to verify"
+ },
+ {
+  "candidate": "Alexa+ (amazon.com/alexaplus)",
+  "reason": "Amazon pages returned compressed or redirecting responses that could not be read, so features and pricing could not be verified from the official site"
+ },
+ {
+  "candidate": "Sandbar Stream (sandbar.com)",
+  "reason": "Voice ring is still at the preorder stage per the official site, with no confirmed shipping or published pricing"
+ },
+ {
+  "candidate": "Twin (twin.so)",
+  "reason": "Homepage states new accounts are paused; sign-ups unavailable, demo only"
+ },
+ {
+  "candidate": "Agent.ai",
+  "reason": "agent.ai now redirects to BuilderPack, a HubSpot Agent Builder add-on pack, not the agent marketplace"
+ },
+ {
+  "candidate": "Lutra AI",
+  "reason": "Discontinued: lutra.ai says support for Lutra has been discontinued"
+ },
+ {
+  "candidate": "Yutori Scouts",
+  "reason": "Platform says it is not accepting new sign-ups and the pricing page returns 404; could not verify plans"
+ },
+ {
+  "candidate": "Flowith",
+  "reason": "Pricing and plans now center on image/video generation credits; agent features could not be verified from official pages"
+ },
+ {
+  "candidate": "Kortix (Suna)",
+  "reason": "Repositioned as an open-source 'CompanyOS' with CLI, SDK and self-host stack; falls in agent framework/infrastructure lane"
+ },
+ {
+  "candidate": "Open Interpreter",
+  "reason": "Now positioned as a coding agent for open models (code category, other researcher's lane)"
+ },
+ {
+  "candidate": "rabbit OS3",
+  "reason": "Launched September 2026 with conflicting reports of invite-only beta; no official pricing page to verify"
+ },
+ {
+  "candidate": "Perplexity Computer",
+  "reason": "Feature of Perplexity, already listed as perplexity / comet-browser"
+ },
+ {
+  "candidate": "ChatGPT agent / OpenAI Operator",
+  "reason": "Feature of ChatGPT, already listed as chatgpt"
+ },
+ {
+  "candidate": "Manus",
+  "reason": "Duplicate: already listed as manus"
+ },
+ {
+  "candidate": "Genspark Super Agent",
+  "reason": "Duplicate: already listed as genspark"
+ },
+ {
+  "candidate": "Lindy",
+  "reason": "Duplicate: already listed as lindy"
+ },
+ {
+  "candidate": "Browser Use",
+  "reason": "Duplicate: already listed as browser-use"
+ },
+ {
+  "candidate": "Flowise (flowiseai.com)",
+  "reason": "Being sunset: the official homepage states the product is being sunset, so it is not a listing with a future"
+ },
+ {
+  "candidate": "Vellum (vellum.ai)",
+  "reason": "Pivoted from an LLM workflow platform to a personal assistant, and the pricing page says that platform shuts down on November 2, 2026"
+ },
+ {
+  "candidate": "Portkey (portkey.ai)",
+  "reason": "Product now presented as Palo Alto Networks PRISMA AIRS AI Gateway; brand and offering in transition, not a stable listing"
+ },
+ {
+  "candidate": "Helicone (helicone.ai)",
+  "reason": "Ownership in flux: pricing page says it is no longer part of Mintlify with details to come; facts too unstable to list"
+ },
+ {
+  "candidate": "Letta (letta.com)",
+  "reason": "Repositioned as a research lab shipping a self-improving end-user agent (Letta Agent, Letta Code); outside this niche and covered by the autonomous agents lane"
+ },
+ {
+  "candidate": "Coze (coze.com)",
+  "reason": "Client-rendered site exposes only a page title; capabilities and pricing could not be verified from the vendor"
+ },
+ {
+  "candidate": "LangSmith",
+  "reason": "Duplicate: LangChain product on langchain.com, which is already listed as langchain"
+ },
+ {
+  "candidate": "LangGraph",
+  "reason": "Duplicate: LangChain framework on langchain.com, already listed as langchain"
+ },
+ {
+  "candidate": "Zapier Agents / Zapier MCP",
+  "reason": "Duplicate: features of Zapier, already listed as zapier-ai"
+ },
+ {
+  "candidate": "Humanloop",
+  "reason": "Discontinued: the prompt management platform shut down after its team joined Anthropic in 2025"
+ },
+ {
+  "candidate": "Motiff (motiff.com)",
+  "reason": "Discontinued: the official site states Motiff has been discontinued, with data export available only until October 31, 2026"
+ },
+ {
+  "candidate": "Creatie (creatie.ai)",
+  "reason": "Dead: creatie.ai is now a domain listed for sale on Spaceship"
+ },
+ {
+  "candidate": "Visily (visily.ai)",
+  "reason": "Marketing and pricing pages redirect to the logged-in app shell, so features and pricing could not be verified"
+ },
+ {
+  "candidate": "Tailor Brands (tailorbrands.com)",
+  "reason": "No longer primarily an AI product: the site now centers on LLC formation, registered agent and compliance services"
+ },
+ {
+  "candidate": "Locofy.ai (locofy.ai)",
+  "reason": "Homepage and pricing are fully client-rendered and returned only a page title, so features and pricing could not be verified"
+ },
+ {
+  "candidate": "Mixo (mixo.io)",
+  "reason": "Pricing page redirects to the app and renders no content, so plans and prices could not be verified"
+ },
+ {
+  "candidate": "Logomaster.ai (logomaster.ai)",
+  "reason": "Pricing page redirects to the app and renders no content, so pricing could not be verified"
+ },
+ {
+  "candidate": "Dora (dora.run)",
+  "reason": "Site did not respond (connection failed) during verification"
+ },
+ {
+  "candidate": "Attention Insight (attentioninsight.com)",
+  "reason": "Live and verified, but no published listing in the index does the same job (predictive attention heatmaps), so no genuine alternatives could be given"
+ },
+ {
+  "candidate": "Colormind (colormind.io)",
+  "reason": "Skipped as near-duplicate in scope: same creator as Huemint (accepted), simpler palette generator with weak comparable listings"
+ },
+ {
+  "candidate": "Hostinger AI Website Builder (hostinger.com)",
+  "reason": "Duplicate domain: hostinger.com is already listed as hostinger-reach"
+ },
+ {
+  "candidate": "Galileo AI",
+  "reason": "Acquired by Google and folded into Google Stitch, which is accepted in this batch"
+ },
+ {
+  "candidate": "Wix AI website builder (wix.com)",
+  "reason": "Not primarily an AI product: general website builder platform with AI features added"
+ },
+ {
+  "candidate": "CSM (Common Sense Machines, csm.ai)",
+  "reason": "Official domain csm.ai and www.csm.ai do not resolve (DNS lookup fails), so the product could not be verified as live"
+ },
+ {
+  "candidate": "Luma Genie",
+  "reason": "Duplicate vendor/domain: lumalabs.ai is already listed as luma-dream-machine"
+ },
+ {
+  "candidate": "Interior AI (interiorai.com)",
+  "reason": "Duplicate: already listed as interior-ai"
+ },
+ {
+  "candidate": "Scenario",
+  "reason": "Duplicate: already listed as scenario"
+ },
+ {
+  "candidate": "Layer.ai",
+  "reason": "Duplicate: already listed as layer-ai"
+ },
+ {
+  "candidate": "Rosebud AI",
+  "reason": "Duplicate: already listed as rosebud-ai"
+ },
+ {
+  "candidate": "RoomGPT",
+  "reason": "Pricing appears only after login and the free tier is disputed across sources; official plans and prices could not be verified"
+ },
+ {
+  "candidate": "HomeDesignsAI (homedesigns.ai)",
+  "reason": "Generated redesigns are locked behind a paid plan with aggressive first-year discount framing; free use could not be confirmed and the niche is already covered by several room redesign listings"
+ },
+ {
+  "candidate": "Alpha3D (alpha3d.io)",
+  "reason": "Homepage returned an almost empty page (47 characters of text); product status and pricing could not be verified"
+ },
+ {
+  "candidate": "Leo AI (getleo.ai)",
+  "reason": "No public pricing page (pricing URL returns 404) and pricing could not be confirmed from the official site"
+ },
+ {
+  "candidate": "Veras by EvolveLAB",
+  "reason": "EvolveLAB pricing page returns 404 and the product is moving into the Chaos ecosystem; current plans and prices could not be verified"
+ },
+ {
+  "candidate": "WorldEngen by Masterpiece X",
+  "reason": "Only a 7-day trial CTA is published with no plan prices; pricing could not be verified"
+ },
+ {
+  "candidate": "TestFit",
+  "reason": "Primarily a real estate feasibility and parking layout platform priced for enterprises (from $15,000 per year for Site Solver); closer to business than design, left for a business researcher"
+ },
+ {
+  "candidate": "Hebbia (hebbia.com)",
+  "reason": "Researched and written, but dropped to avoid a cross-batch duplicate: batch 15-research-writing already includes hebbia.com"
+ },
+ {
+  "candidate": "Basis (getbasis.ai)",
+  "reason": "Access is waitlist/request-only on the official site; no public product access, pricing or trial to verify"
+ },
+ {
+  "candidate": "Brightwave (brightwave.io)",
+  "reason": "Site now describes an agent infrastructure company still 'building'; no live investment research product to verify"
+ },
+ {
+  "candidate": "Robin AI (robinai.com)",
+  "reason": "Official homepage returned no content; could not confirm the product is still live"
+ },
+ {
+  "candidate": "Gavel (gavel.io)",
+  "reason": "Primarily a no-code legal document automation tool; AI is a secondary feature, not the core product"
+ },
+ {
+  "candidate": "MindBridge (mindbridge.ai)",
+  "reason": "Live AI audit analytics product, but no comparable published listings exist to use as genuine alternatives; deferred"
+ },
+ {
+  "candidate": "Fieldguide (fieldguide.io)",
+  "reason": "Live AI audit and advisory platform, but no comparable published listings exist to use as genuine alternatives; deferred"
+ },
+ {
+  "candidate": "Casetext",
+  "reason": "Previously rejected: shut down and folded into Thomson Reuters CoCounsel (CoCounsel Legal is in this batch instead)"
+ },
+ {
+  "candidate": "Clio",
+  "reason": "Legal practice management SaaS with an AI add-on (Clio Duo); not primarily an AI product"
+ },
+ {
+  "candidate": "Gorgias (gorgias.com)",
+  "reason": "Primarily an ecommerce helpdesk SaaS where the AI Agent is an add-on billed per interaction; not primarily an AI product"
+ },
+ {
+  "candidate": "Zendesk AI (zendesk.com)",
+  "reason": "AI features inside a general helpdesk suite rather than a standalone AI product"
+ },
+ {
+  "candidate": "Tidio Lyro",
+  "reason": "Duplicate: Lyro is Tidio's AI agent, and Tidio (tidio.com) is already listed"
+ },
+ {
+  "candidate": "Describely",
+  "reason": "Duplicate: already listed (describely.ai)"
+ },
+ {
+  "candidate": "Shopify Magic",
+  "reason": "Duplicate: Shopify's AI features are covered by the existing shopify-sidekick listing on shopify.com"
+ },
+ {
+  "candidate": "REimagineHome",
+  "reason": "Duplicate: already listed (reimaginehome.ai)"
+ },
+ {
+  "candidate": "Helium 10",
+  "reason": "Amazon seller research and operations suite where AI is a minor feature; not primarily an AI product"
+ },
+ {
+  "candidate": "TTcare (ttcare.ai, AI FOR PET)",
+  "reason": "Consumer app is now Korea-only: Korean-language site, subscriptions sold only through the KT carrier, and no consumer TTcare app in the US App Store (only the B2B TTcare Vet app)"
+ },
+ {
+  "candidate": "Wanderboat (wanderboat.ai)",
+  "reason": "Official site blocked automated access (Cloudflare 403 on fetch and curl), so features and pricing could not be verified"
+ },
+ {
+  "candidate": "Milo (joinmilo.com)",
+  "reason": "Official site returns a Vercel 'Payment required / DEPLOYMENT_DISABLED' error; product appears inactive"
+ },
+ {
+  "candidate": "Zing Coach (zing.coach)",
+  "reason": "Site now positions it as B2B AI coaching for gyms and apps; consumer product and pricing could not be verified"
+ },
+ {
+  "candidate": "Infinite Worlds (infiniteworlds.app)",
+  "reason": "Site only showed an Anvil 'This app has experienced an error' page; could not verify a working product"
+ },
+ {
+  "candidate": "Planta (getplanta.com)",
+  "reason": "Primarily a plant care reminder app built on scheduling algorithms; AI identification and diagnosis are secondary features"
+ },
+ {
+  "candidate": "Generic AI skin scanner apps (SkinUp, SkinAI, Glamora, GlowUp and similar)",
+  "reason": "Low-identity App Store clones with tiny user bases and no clear official sites; skipped as wrappers"
+ },
+ {
+  "candidate": "Gemini CLI (geminicli.com)",
+  "reason": "Replaced by Antigravity CLI for unpaid and Google One users in June 2026 per its own site; covered by the new google-antigravity entry and the existing gemini-code-assist listing"
+ },
+ {
+  "candidate": "Tusk (usetusk.ai)",
+  "reason": "Site links a June 2026 post titled 'Tusk Is Sunsetting'; product is being wound down"
+ },
+ {
+  "candidate": "Swimm (swimm.io)",
+  "reason": "No longer a self-serve AI documentation product; now sold as scoping-call based modernization services with no public plans"
+ },
+ {
+  "candidate": "CodeAnt AI (codeant.ai)",
+  "reason": "Pricing page showed no plan prices for code review or security (table did not load), and product has pivoted toward broad cyber defense; facts too thin to verify"
+ },
+ {
+  "candidate": "QA Wolf (qawolf.com)",
+  "reason": "Largely a managed QA service (Coverage as a Service with human engineers) rather than a primarily self-serve AI product; no public pricing"
+ },
+ {
+  "candidate": "Macroscope (macroscope.com)",
+  "reason": "Pricing could not be verified (pricing link anchors to homepage with no plan details)"
+ },
+ {
+  "candidate": "Locofy.ai (locofy.ai)",
+  "reason": "Pricing and product pages render client-side only and could not be verified"
+ },
+ {
+  "candidate": "Chat2DB (chat2db.ai)",
+  "reason": "Pricing page lists no prices; mainly a database client where AI is an add-on configuration, so not clearly primarily an AI product"
+ },
+ {
+  "candidate": "Testsigma (testsigma.com)",
+  "reason": "Mainly a test automation platform with AI features (Copilot, auto-healing) and custom-quote-only pricing; weaker fit and unverifiable pricing"
+ },
+ {
+  "candidate": "Leap (leap.new)",
+  "reason": "Homepage content could not be verified beyond a one-line tagline; no pricing or features confirmed"
+ },
+ {
+  "candidate": "Jules / Junie / DeepWiki",
+  "reason": "Jules already listed; Junie is part of JetBrains AI (listed as jetbrains-ai); DeepWiki is a Cognition product adjacent to the listed Devin, skipped to avoid same-company overlap"
+ },
+ {
+  "candidate": "Formula Bot",
+  "reason": "Duplicate: Formula Bot has been renamed Better Analyst (betteranalyst.com), already listed as better-analyst"
+ },
+ {
+  "candidate": "Recall (getrecall.ai)",
+  "reason": "Duplicate: Recall is already listed as recall-ai (recall.it)"
+ },
+ {
+  "candidate": "Krisp",
+  "reason": "Duplicate: already listed as krisp in the audio category"
+ },
+ {
+  "candidate": "Clockwise",
+  "reason": "Duplicate: already in the index as clockwise (unpublished)"
+ },
+ {
+  "candidate": "Supernormal",
+  "reason": "Pricing page shows $0 for every paid tier with no real rates, so pricing could not be verified"
+ },
+ {
+  "candidate": "Sembly AI",
+  "reason": "Pricing page lists confusing quotas (clients, brand packages) that could not be reconciled with the product; skipped rather than risk inaccurate copy"
+ },
+ {
+  "candidate": "Fellou",
+  "reason": "Skipped: marketing advertises automatic CAPTCHA handling (bot-detection bypass) and supported platforms are not stated"
+ },
+ {
+  "candidate": "Notion Mail",
+  "reason": "Duplicate vendor/domain: notion.com is already listed as notion-ai"
+ },
+ {
+  "candidate": "ChatGPT Atlas",
+  "reason": "Discontinued, as recorded in previous rejections"
+ },
+ {
+  "candidate": "Genspark AI Browser",
+  "reason": "Duplicate: Genspark is already listed as genspark"
+ },
+ {
+  "candidate": "Writesonic",
+  "reason": "Duplicate: already listed as writesonic"
+ },
+ {
+  "candidate": "Scalenut",
+  "reason": "Duplicate: already listed as scalenut"
+ },
+ {
+  "candidate": "Avoma",
+  "reason": "Duplicate: already listed as avoma"
+ },
+ {
+  "candidate": "Copy.ai",
+  "reason": "Duplicate: already listed as copy-ai"
+ },
+ {
+  "candidate": "Alli AI",
+  "reason": "Live, but pricing is a JavaScript calculator that could not be read, so plan prices and limits could not be verified"
+ },
+ {
+  "candidate": "Persana AI",
+  "reason": "Site announces it is joining forces with Rox; product future unclear, and it overlaps closely with the listed Clay"
+ },
+ {
+  "candidate": "Triple Whale",
+  "reason": "Official site blocked verification requests (Cloudflare 403), so claims and pricing could not be confirmed"
+ },
+ {
+  "candidate": "rasa.io",
+  "reason": "Narrow fit: now an email platform sold only to associations, with revenue-based quote pricing; low general search demand"
+ },
+ {
+  "candidate": "Publer",
+  "reason": "Not primarily an AI product: social scheduler with an add-on AI assist"
+ },
+ {
+  "candidate": "Metricool",
+  "reason": "Not primarily an AI product: social analytics and scheduling suite with minor AI features"
+ },
+ {
+  "candidate": "Brevo",
+  "reason": "Not primarily an AI product: email and CRM suite where AI is a secondary feature"
+ },
+ {
+  "candidate": "VWO",
+  "reason": "Not primarily an AI product: established A/B testing suite with AI add-ons"
+ },
+ {
+  "candidate": "Formula Bot (formulabot.com)",
+  "reason": "Duplicate: formulabot.com now redirects to betteranalyst.com, already listed as better-analyst"
+ },
+ {
+  "candidate": "Felo (felo.ai)",
+  "reason": "Homepage and pricing page are client-rendered with no readable content; the only pricing found is a 2024 blog post and current plan terms (credit model) could not be confirmed"
+ },
+ {
+  "candidate": "Saga (writeonsaga.com / createsagas.com)",
+  "reason": "Rebranded and repositioned as an AI movie and video maker; now belongs to video, outside the writing lane"
+ },
+ {
+  "candidate": "Bureau Works (bureauworks.com)",
+  "reason": "Brand in transition: the site now presents the product as wxrks, so name and identity could not be pinned down for a stable listing"
+ },
+ {
+  "candidate": "AutoCrit",
+  "reason": "Long-standing rule-based manuscript editing software with AI add-ons; not primarily an AI product"
+ },
+ {
+  "candidate": "Fictionary",
+  "reason": "Story structure and editing software where AI is one feature (the Edwina instructor); not primarily an AI product"
+ },
+ {
+  "candidate": "Reverso (reverso.net)",
+  "reason": "Official site blocked automated access, so features and pricing could not be verified"
+ },
+ {
+  "candidate": "Unbabel",
+  "reason": "Pricing page returns 404 and no public plan details; could not verify enough to write an accurate entry"
+ },
+ {
+  "candidate": "Crayon (crayon.co)",
+  "reason": "Pricing page returned almost no content and the product overlaps with Klue, which was verified and listed instead"
+ },
+ {
+  "candidate": "Mokker AI (mokker.ai)",
+  "reason": "Shutting down: the site says Mokker access ends Saturday, October 31, 2026"
+ },
+ {
+  "candidate": "Claid.ai (claid.ai)",
+  "reason": "Pricing page renders plan prices client-side and help-center figures conflict; could not confirm current prices"
+ },
+ {
+  "candidate": "Imagen AI (imagen-ai.com)",
+  "reason": "Site blocked automated access (Cloudflare 403), so homepage and pricing could not be verified"
+ },
+ {
+  "candidate": "Lensa (lensa.app)",
+  "reason": "No public pricing; subscriptions are sold only in-app, so priceFrom and plan details could not be verified"
+ },
+ {
+  "candidate": "Photoleap (photoleapapp.com)",
+  "reason": "iOS-only app with in-app pricing only; no public price to verify"
+ },
+ {
+  "candidate": "Facetune (facetuneapp.com)",
+  "reason": "Pricing only in-app (VIP subscription); also a beauty filter app rather than a core fit for this niche"
+ },
+ {
+  "candidate": "Reve (reve.com)",
+  "reason": "Site is a client-side app; product details and pricing could not be read from the official pages"
+ },
+ {
+  "candidate": "PicWish (picwish.com)",
+  "reason": "Plan prices load client-side and only a trial renewal price was visible; could not confirm paid plan prices"
+ },
+ {
+  "candidate": "Slazzer (slazzer.com)",
+  "reason": "Pricing is geolocated to CAD only; USD prices could not be confirmed"
+ },
+ {
+  "candidate": "Kaiber (kaiber.ai)",
+  "reason": "Site is an empty JS shell to automated fetches; current product and pricing could not be verified"
+ },
+ {
+  "candidate": "Pollo AI (pollo.ai)",
+  "reason": "Site blocked automated access (Cloudflare challenge); could not verify product or pricing"
+ },
+ {
+  "candidate": "Hour One (hourone.ai)",
+  "reason": "Domain did not respond; could not confirm the product is live"
+ },
+ {
+  "candidate": "Trupeer (trupeer.ai)",
+  "reason": "Repositioned as enterprise transformation and process documentation software; no longer a clean fit for the video category"
+ },
+ {
+  "candidate": "Lumen5 (lumen5.com)",
+  "reason": "Homepage and pricing render client-side; plans and prices could not be verified"
+ },
+ {
+  "candidate": "Visla (visla.us)",
+  "reason": "Pricing page shows plan structure but no readable prices; could not confirm priceFrom"
+ },
+ {
+  "candidate": "Steve AI (steve.ai)",
+  "reason": "Pricing page mixes many plan families with conflicting figures; lowest price could not be stated reliably"
+ },
+ {
+  "candidate": "Google Flow (flow.google.com)",
+  "reason": "Official page is a sign-in shell with no readable features or access and pricing details"
+ },
+ {
+  "candidate": "Guidde",
+  "reason": "Duplicate: already listed (slug guidde)"
+ },
+ {
+  "candidate": "Loom",
+  "reason": "Duplicate: already listed (slug loom)"
+ },
+ {
+  "candidate": "Riverside",
+  "reason": "Duplicate: already listed (slug riverside)"
+ },
+ {
+  "candidate": "Dubverse",
+  "reason": "Duplicate: already listed (slug dubverse)"
+ },
+ {
+  "candidate": "Creatify",
+  "reason": "Duplicate: already listed (slug creatify)"
+ },
+ {
+  "candidate": "Kinetix",
+  "reason": "Previously rejected: product link does not resolve"
+ },
+ {
+  "candidate": "Hume AI",
+  "reason": "hume.ai now presents a voice AI evaluation platform; the pricing URL redirects to the homepage and no current product pricing could be verified"
+ },
+ {
+  "candidate": "AudioShake",
+  "reason": "No public pricing: the pricing page returns 404 and the developer billing docs only list credits without dollar rates"
+ },
+ {
+  "candidate": "Respeecher",
+  "reason": "Pricing page returns 404; enterprise voice cloning sold through sales with no verifiable plans"
+ },
+ {
+  "candidate": "Music.ai",
+  "reason": "B2B platform from the same company as Moises, which is already listed (moises)"
+ },
+ {
+  "candidate": "Chatterbox TTS",
+  "reason": "Open-source model from Resemble AI, which is already listed (resemble-ai)"
+ },
+ {
+  "candidate": "Voxtral",
+  "reason": "Model release from Mistral AI, which already has several listings; a model version rather than a new product"
+ },
+ {
+  "candidate": "Descript",
+  "reason": "Duplicate: already listed (descript, video category)"
+ },
+ {
+  "candidate": "Castmagic",
+  "reason": "Duplicate: already listed (castmagic)"
+ },
+ {
+  "candidate": "Notta",
+  "reason": "Duplicate: already listed (notta)"
+ },
+ {
+  "candidate": "Wispr Flow",
+  "reason": "Duplicate: already listed (wispr-flow)"
+ },
+ {
+  "candidate": "Soundful",
+  "reason": "Pricing page renders plan prices client-side and no prices were visible to verify; dropped in favor of verifiable candidates"
+ },
+ {
+  "candidate": "eMastered",
+  "reason": "Pricing page content did not load (only the upload widget rendered), so plans could not be verified"
+ },
+ {
+  "candidate": "Vocal Remover (vocalremover.org)",
+  "reason": "Previously rejected as unverifiable (site returns 403)"
+ },
+ {
+  "candidate": "Fellou",
+  "reason": "Advertises automated CAPTCHA handling; skipped on content grounds"
+ },
+ {
+  "candidate": "Kagi Assistant",
+  "reason": "Part of Kagi (same vendor and subscription); covered by the kagi listing"
+ }
+]

@@ -4,9 +4,11 @@ import { ToolCard } from "@/components/ToolCard";
 import { ReviewForm } from "@/components/ReviewForm";
 import { OwnerToolBar } from "@/components/OwnerToolBar";
 import { JsonLd } from "@/components/JsonLd";
+import { MoreContext } from "@/components/MoreContext";
 import { getAllToolSlugs, getToolBySlug } from "@/lib/queries";
 import { serializeTool } from "@/lib/serializers";
 import { absoluteUrl } from "@/lib/site";
+import { faqItems, parseMoreContext } from "@/lib/moreContext";
 import { prisma } from "@/lib/prisma";
 
 export const dynamicParams = true;
@@ -67,6 +69,8 @@ export default async function ToolPage({
   const tool = serializeTool(toolRaw);
   const category = tool.category;
   const related = tool.alternatives;
+  const contextBlocks = tool.moreContext ? parseMoreContext(tool.moreContext) : [];
+  const faq = faqItems(contextBlocks);
   const claimed = (await prisma.toolOwner.count({ where: { toolId: toolRaw.id, status: "ACTIVE" } })) > 0;
 
   const offers =
@@ -125,6 +129,19 @@ export default async function ToolPage({
               { "@type": "ListItem", position: 3, name: tool.name, item: absoluteUrl(`/tools/${tool.slug}`) },
             ],
           },
+          ...(faq.length > 0
+            ? [
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: faq.map((f) => ({
+                    "@type": "Question",
+                    name: f.q,
+                    acceptedAnswer: { "@type": "Answer", text: f.a },
+                  })),
+                },
+              ]
+            : []),
         ]}
       />
       <OwnerToolBar slug={tool.slug} />
@@ -340,7 +357,7 @@ export default async function ToolPage({
             </div>
           )}
 
-          {tool.moreContext && (
+          {contextBlocks.length > 0 && (
             <div className="mt-16">
               <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
                 Editor&apos;s notes
@@ -348,30 +365,7 @@ export default async function ToolPage({
               <h2 className="mt-2 text-[28px] font-semibold tracking-[-0.022em] text-ink-900">
                 More context from AI BirdView
               </h2>
-              <div className="mt-5 space-y-4">
-                {tool.moreContext.split(/\n\s*\n/).map((block, i) => {
-                  const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
-                  if (lines.length > 0 && lines.every((l) => l.startsWith("- "))) {
-                    return (
-                      <ul key={i} className="space-y-2.5">
-                        {lines.map((l) => (
-                          <li key={l} className="flex gap-3 text-[16px] leading-relaxed text-ink-700">
-                            <span className="mt-1 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-kiwi-100 text-kiwi-700">
-                              <CheckIcon />
-                            </span>
-                            <span>{l.slice(2)}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    );
-                  }
-                  return (
-                    <p key={i} className="text-[17px] leading-relaxed text-ink-700">
-                      {lines.join(" ")}
-                    </p>
-                  );
-                })}
-              </div>
+              <MoreContext blocks={contextBlocks} links={related} />
             </div>
           )}
 

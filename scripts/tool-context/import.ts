@@ -21,7 +21,7 @@ function problemsFor(e: Entry): string[] {
   const words = text.split(/\s+/).filter(Boolean).length;
   if (words < 120 || words > 340) out.push(`${words} words`);
   if (/[—–]/.test(text)) out.push("contains an em/en dash");
-  if (/\*\*|\]\(|^#/m.test(text)) out.push("contains markdown");
+  if (/\*\*|\]\(|^#(?!# )/m.test(text)) out.push("contains markdown");
   if (!text.split("\n").some((l) => l.startsWith("- "))) out.push("no bullet list");
   return out;
 }
