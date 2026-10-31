@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ToolCard } from "./ToolCard";
 import type { SerializedTool, SerializedCategory, PricingLabel } from "@/lib/serializers";
@@ -8,6 +8,8 @@ import type { SerializedTool, SerializedCategory, PricingLabel } from "@/lib/ser
 const PRICING: PricingLabel[] = ["Free", "Freemium", "Free Trial", "Paid"];
 type Sort = "trending" | "rating" | "newest" | "az";
 type Flag = "featured" | "trending";
+// Divisible by the 2- and 3-column grids so pages never end on a ragged row.
+const PAGE_SIZE = 24;
 
 // Words that appear in nearly every query ("best AI writing tools") but say
 // nothing about what the user wants.
@@ -36,6 +38,8 @@ export function ToolsBrowser({
   const [sort, setSort] = useState<Sort>("trending");
   const [flag, setFlag] = useState<Flag | null>(null);
   const [showFilters, setShowFilters] = useState(false);
+  const [page, setPage] = useState(1);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   const filtered = useMemo(() => {
     const stems = queryStems(q);
@@ -71,28 +75,65 @@ export function ToolsBrowser({
     return out;
   }, [tools, q, flag, cats, prices, sort]);
 
+  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  // A stale ?page= (e.g. after narrowing filters) falls back to the last page.
+  const current = Math.min(Math.max(1, page), totalPages);
+  const pageItems = filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
+
+  // Any filter change starts over on page 1 and drops ?page= from the URL.
+  const resetPage = () => {
+    setPage(1);
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (!params.has("page")) return;
+    params.delete("page");
+    const qs = params.toString();
+    window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+  };
+  const goToPage = (n: number) => {
+    const next = Math.min(Math.max(1, n), totalPages);
+    setPage(next);
+    const params = new URLSearchParams(window.location.search);
+    if (next === 1) params.delete("page");
+    else params.set("page", String(next));
+    const qs = params.toString();
+    window.history.pushState(null, "", qs ? `?${qs}` : window.location.pathname);
+    resultsRef.current?.scrollIntoView({ block: "start" });
+  };
+
+  const changeQ = (value: string) => {
+    setQ(value);
+    resetPage();
+  };
+  const changeSort = (value: Sort) => {
+    setSort(value);
+    resetPage();
+  };
   const toggleCat = (slug: string) => {
     const next = new Set(cats);
     next.has(slug) ? next.delete(slug) : next.add(slug);
     setCats(next);
+    resetPage();
   };
   const togglePrice = (p: PricingLabel) => {
     const next = new Set(prices);
     next.has(p) ? next.delete(p) : next.add(p);
     setPrices(next);
+    resetPage();
   };
   const clearAll = () => {
     setCats(new Set());
     setPrices(new Set());
     setQ("");
     setFlag(null);
+    resetPage();
   };
 
   return (
     <div className="mx-auto max-w-7xl px-5 lg:px-8 pb-24">
       {/* Only this reader opts out of prerendering, so the full list still ships in the HTML. */}
       <Suspense fallback={null}>
-        <UrlFilters setQ={setQ} setFlag={setFlag} />
+        <UrlFilters setQ={setQ} setFlag={setFlag} setPage={setPage} />
       </Suspense>
 
       {/* Search + sort bar */}
@@ -102,14 +143,14 @@ export function ToolsBrowser({
             <SearchIcon />
             <input
               value={q}
-              onChange={(e) => setQ(e.target.value)}
+              onChange={(e) => changeQ(e.target.value)}
               placeholder="Search by name, task, or tag"
               className="flex-1 bg-transparent py-2.5 text-[14px] outline-none placeholder:text-ink-400"
               aria-label="Search"
             />
             {q && (
               <button
-                onClick={() => setQ("")}
+                onClick={() => changeQ("")}
                 className="text-[12px] text-ink-400 hover:text-ink-700"
               >
                 Clear
@@ -134,7 +175,7 @@ export function ToolsBrowser({
             <label className="text-[12px] text-ink-500">Sort</label>
             <select
               value={sort}
-              onChange={(e) => setSort(e.target.value as Sort)}
+              onChange={(e) => changeSort(e.target.value as Sort)}
               className="rounded-full border border-ink-200 bg-ink-0 px-3 py-2 text-[13px] text-ink-700 outline-none focus:border-ink-400"
             >
               <option value="trending">Trending</option>
@@ -156,7 +197,10 @@ export function ToolsBrowser({
           <FilterGroup
             label="Categories"
             count={cats.size}
-            onClear={() => setCats(new Set())}
+            onClear={() => {
+              setCats(new Set());
+              resetPage();
+            }}
           >
             <ul className="space-y-1.5">
               {categories.map((c) => (
@@ -181,7 +225,10 @@ export function ToolsBrowser({
           <FilterGroup
             label="Pricing"
             count={prices.size}
-            onClear={() => setPrices(new Set())}
+            onClear={() => {
+              setPrices(new Set());
+              resetPage();
+            }}
           >
             <ul className="space-y-1.5">
               {PRICING.map((p) => (
@@ -211,17 +258,37 @@ export function ToolsBrowser({
         </aside>
 
         {/* Results */}
-        <div>
+        <div ref={resultsRef} className="scroll-mt-32">
           <div className="mb-5 flex items-baseline justify-between gap-3">
             <p className="text-[13px] text-ink-500">
-              <span className="font-medium text-ink-800">
-                {filtered.length}
-              </span>{" "}
-              tools
+              {filtered.length > PAGE_SIZE ? (
+                <>
+                  Showing{" "}
+                  <span className="font-medium text-ink-800">
+                    {(current - 1) * PAGE_SIZE + 1}–
+                    {Math.min(current * PAGE_SIZE, filtered.length)}
+                  </span>{" "}
+                  of{" "}
+                  <span className="font-medium text-ink-800">
+                    {filtered.length}
+                  </span>{" "}
+                  tools
+                </>
+              ) : (
+                <>
+                  <span className="font-medium text-ink-800">
+                    {filtered.length}
+                  </span>{" "}
+                  tools
+                </>
+              )}
             </p>
             {flag && (
               <button
-                onClick={() => setFlag(null)}
+                onClick={() => {
+                  setFlag(null);
+                  resetPage();
+                }}
                 className="inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-ink-0 px-3 py-1 text-[12px] font-medium text-ink-700 hover:bg-ink-50"
               >
                 {flag === "featured" ? "Featured only" : "Trending only"}
@@ -245,11 +312,20 @@ export function ToolsBrowser({
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-              {filtered.map((t) => (
-                <ToolCard key={t.slug} tool={t} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                {pageItems.map((t) => (
+                  <ToolCard key={t.slug} tool={t} />
+                ))}
+              </div>
+              {totalPages > 1 && (
+                <Pagination
+                  current={current}
+                  total={totalPages}
+                  onChange={goToPage}
+                />
+              )}
+            </>
           )}
         </div>
       </div>
@@ -257,25 +333,133 @@ export function ToolsBrowser({
   );
 }
 
-// Applies ?q= (hero search, sitelinks search box) and ?filter=featured|trending
-// (homepage and footer links) whenever the URL changes.
+// Applies ?q= (hero search, sitelinks search box), ?filter=featured|trending
+// (homepage and footer links) and ?page= whenever the URL changes.
 function UrlFilters({
   setQ,
   setFlag,
+  setPage,
 }: {
   setQ: (q: string) => void;
   setFlag: (flag: Flag | null) => void;
+  setPage: (page: number) => void;
 }) {
   const params = useSearchParams();
   const q = params.get("q") ?? "";
   const filter = params.get("filter");
+  const page = Number(params.get("page")) || 1;
 
+  // Kept separate from the page effect so paging (which pushes a new URL)
+  // never clobbers a query the user typed but that isn't in the URL.
   useEffect(() => {
     setQ(q);
     setFlag(filter === "featured" || filter === "trending" ? filter : null);
   }, [q, filter, setQ, setFlag]);
 
+  useEffect(() => {
+    setPage(page);
+  }, [page, setPage]);
+
   return null;
+}
+
+// Numbered pages with the first, last and a window around the current page;
+// gaps collapse into an ellipsis. Links carry ?page= so they're crawlable
+// and middle-clickable, while a plain click paginates in place.
+function Pagination({
+  current,
+  total,
+  onChange,
+}: {
+  current: number;
+  total: number;
+  onChange: (page: number) => void;
+}) {
+  const pages: (number | "gap")[] = [];
+  for (let n = 1; n <= total; n++) {
+    if (n === 1 || n === total || Math.abs(n - current) <= 1) {
+      pages.push(n);
+    } else if (pages[pages.length - 1] !== "gap") {
+      pages.push("gap");
+    }
+  }
+
+  const href = (n: number) => {
+    const params = new URLSearchParams(
+      typeof window === "undefined" ? "" : window.location.search
+    );
+    if (n === 1) params.delete("page");
+    else params.set("page", String(n));
+    const qs = params.toString();
+    return qs ? `/tools?${qs}` : "/tools";
+  };
+  const go = (e: React.MouseEvent, n: number) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    onChange(n);
+  };
+
+  const base =
+    "inline-flex h-9 min-w-9 items-center justify-center rounded-full border px-3 text-[13px] font-medium transition-colors";
+  const idle = "border-ink-200 bg-ink-0 text-ink-700 hover:bg-ink-50";
+  const disabled = "pointer-events-none border-ink-200 bg-ink-0 text-ink-300";
+
+  return (
+    <nav
+      className="mt-10 flex flex-wrap items-center justify-center gap-2"
+      aria-label="Pagination"
+    >
+      <a
+        href={href(Math.max(1, current - 1))}
+        onClick={(e) => go(e, current - 1)}
+        aria-disabled={current === 1}
+        tabIndex={current === 1 ? -1 : undefined}
+        className={`${base} ${current === 1 ? disabled : idle}`}
+      >
+        <span aria-hidden>←</span>
+        <span className="ml-1.5 hidden sm:inline">Previous</span>
+        <span className="sr-only sm:hidden">Previous page</span>
+      </a>
+
+      {pages.map((p, i) =>
+        p === "gap" ? (
+          <span
+            key={`gap-${i}`}
+            className="inline-flex h-9 min-w-9 items-center justify-center text-[13px] text-ink-400"
+            aria-hidden
+          >
+            …
+          </span>
+        ) : (
+          <a
+            key={p}
+            href={href(p)}
+            onClick={(e) => go(e, p)}
+            aria-current={p === current ? "page" : undefined}
+            className={`${base} ${
+              p === current
+                ? "border-ink-900 bg-ink-900 text-ink-0"
+                : idle
+            }`}
+          >
+            {p}
+          </a>
+        )
+      )}
+
+      <a
+        href={href(Math.min(total, current + 1))}
+        onClick={(e) => go(e, current + 1)}
+        aria-disabled={current === total}
+        tabIndex={current === total ? -1 : undefined}
+        className={`${base} ${current === total ? disabled : idle}`}
+      >
+        <span className="mr-1.5 hidden sm:inline">Next</span>
+        <span className="sr-only sm:hidden">Next page</span>
+        <span aria-hidden>→</span>
+      </a>
+    </nav>
+  );
 }
 
 function FilterGroup({
