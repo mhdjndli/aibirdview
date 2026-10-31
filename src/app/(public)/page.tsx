@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { ToolCard } from "@/components/ToolCard";
 import { ToolBoard } from "@/components/ToolBoard";
 import { HeroSearch } from "@/components/HeroSearch";
 import { LogoMarquee } from "@/components/LogoMarquee";
+import { FeaturedShowcase } from "@/components/FeaturedShowcase";
 import { getCategories, getFeaturedTools, getToolRows, getSetting } from "@/lib/queries";
 import { serializeCategory, serializeTool } from "@/lib/serializers";
 import { FEATURE_PLANS } from "@/lib/featured";
@@ -113,6 +113,9 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* FEATURED: sponsored slots, pinned tools and a weekly random draw */}
+      <FeaturedShowcase items={featured} weekStart={featuredRaw.weekStart} />
+
       {/* RANKED BOARDS: trending, newest, then every category */}
       <section className="bg-ink-50/60">
         <div className="mx-auto max-w-7xl px-5 lg:px-8 py-8 md:py-10">
@@ -156,36 +159,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-      {/* FEATURED */}
-      {featured.length > 0 && (
-        <section className="border-y border-ink-200">
-          <div className="mx-auto max-w-7xl px-5 lg:px-8 py-16 md:py-20">
-            <div className="flex items-end justify-between gap-6">
-              <div className="max-w-xl">
-                <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
-                  Featured
-                </p>
-                <h2 className="mt-3 text-[30px] font-semibold leading-[1.05] tracking-[-0.028em] text-ink-900 md:text-[40px]">
-                  Featured this week.
-                </h2>
-              </div>
-              <Link
-                href="/tools?filter=featured"
-                className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-ink-200 bg-ink-0 px-4 py-2 text-[13px] font-medium text-ink-700 hover:bg-ink-100"
-              >
-                See all featured →
-              </Link>
-            </div>
-
-            <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {featured.map(({ tool, sponsored }) => (
-                <ToolCard key={tool.slug} tool={tool} sponsored={sponsored} />
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* Logo marquee */}
       <section className="bg-ink-50/60">

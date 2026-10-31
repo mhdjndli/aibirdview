@@ -21,12 +21,50 @@ export function featuringEnabled() {
   return Boolean(stripe);
 }
 
+/** Cards in the homepage "Featured this week" grid. */
+export const FEATURED_SLOTS = 6;
+
+/** Always in the grid, regardless of the weekly draw or sponsored slots. */
+export const PINNED_FEATURED_SLUGS = ["exeedin"];
+
+/**
+ * The weekly draw skips household names so featuring shows what it does for
+ * a smaller tool: anything trending, or with this many reviews or more, is out.
+ */
+export const BIG_NAME_REVIEWS = 30;
+
 const DAY_MS = 24 * 60 * 60 * 1000;
 const WEEK_MS = 7 * DAY_MS;
 
-/** Weeks since Monday 5 Jan 1970 UTC; the editorial picks rotate when it ticks over. */
+/** Weeks since Monday 5 Jan 1970 UTC; the weekly picks rotate when it ticks over. */
 export function weekNumber(now = new Date()) {
   return Math.floor((now.getTime() - 4 * DAY_MS) / WEEK_MS);
+}
+
+/** The Monday (UTC) that the current featured week started on. */
+export function weekStart(now = new Date()) {
+  return new Date(4 * DAY_MS + weekNumber(now) * WEEK_MS);
+}
+
+/** FNV-1a: a cheap, stable 32-bit hash so the draw is the same on every server all week. */
+function hash32(s: string) {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h;
+}
+
+/**
+ * Orders keys pseudo-randomly for the given week. Every key gets a fresh
+ * position each week, so the first N are that week's random picks.
+ */
+export function weeklyShuffle<T extends string>(keys: T[], week = weekNumber()): T[] {
+  return keys
+    .map((k) => ({ k, h: hash32(`${week}:${k}`) }))
+    .sort((a, b) => a.h - b.h || (a.k < b.k ? -1 : 1))
+    .map((x) => x.k);
 }
 
 /**

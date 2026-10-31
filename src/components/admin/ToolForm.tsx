@@ -204,7 +204,7 @@ export function ToolForm({
       <aside className="space-y-5 lg:sticky lg:top-20 lg:self-start">
         <Card title="Publishing">
           <CheckRow name="published" label="Published" defaultChecked={initial.published} hint="Hide from public site if off." />
-          <CheckRow name="featured" label="Featured" defaultChecked={initial.featured} hint="Appears in 'Editor's picks'." />
+          <CheckRow name="featured" label="Featured" defaultChecked={initial.featured} hint="Shows under the Featured filter on /tools. The homepage grid picks itself weekly." />
           <CheckRow name="trending" label="Trending" defaultChecked={initial.trending} hint="Appears in 'Trending'." />
           <CheckRow name="verified" label="Verified" defaultChecked={initial.verified} hint="Shows verified badge." />
         </Card>

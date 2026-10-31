@@ -1,6 +1,6 @@
 import { prisma } from "@/lib/prisma";
 import type { Pricing } from "@prisma/client";
-import { weekNumber } from "@/lib/featured";
+import { BIG_NAME_REVIEWS, FEATURED_SLOTS, PINNED_FEATURED_SLUGS, weekNumber, weekStart, weeklyShuffle } from "@/lib/featured";
 
 export const PRICING_LABELS: Record<Pricing, string> = {
   FREE: "Free",
@@ -71,30 +71,52 @@ export async function getTools(opts?: {
 }
 
 /**
- * The homepage "Featured this week" section: every tool with a paid slot
- * running, then editors' picks filling the remaining places. The picks
- * rotate each Monday (UTC), so the section changes weekly.
+ * The homepage "Featured this week" grid, FEATURED_SLOTS cards wide:
+ *   1. every tool with a paid slot running (marked Sponsored), then
+ *   2. the pinned tools (see PINNED_FEATURED_SLUGS), then
+ *   3. a random draw of smaller tools filling what's left.
+ * The draw is seeded by the week, so it changes every Monday (UTC) and is
+ * identical for every visitor in between. A new sponsor takes the place of
+ * one random pick; the pinned tools stay. If sponsors alone fill the grid it
+ * grows past FEATURED_SLOTS rather than drop a paying tool.
  */
-export async function getFeaturedTools(slots = 6) {
+export async function getFeaturedTools(slots = FEATURED_SLOTS) {
   const now = new Date();
-  const [sponsored, picks] = await Promise.all([
+  const [sponsored, pinned] = await Promise.all([
     prisma.tool.findMany({
       where: { published: true, featuredUntil: { gt: now } },
       include: TOOL_INCLUDE,
       orderBy: { featuredUntil: "asc" },
     }),
     prisma.tool.findMany({
-      where: { published: true, featured: true, OR: [{ featuredUntil: null }, { featuredUntil: { lte: now } }] },
+      where: { published: true, slug: { in: PINNED_FEATURED_SLUGS } },
       include: TOOL_INCLUDE,
-      orderBy: [{ rating: "desc" }, { id: "asc" }],
     }),
   ]);
-  const open = Math.max(0, slots - sponsored.length);
-  const offset = picks.length > 0 ? (weekNumber(now) * open) % picks.length : 0;
-  return {
-    sponsored,
-    picks: [...picks.slice(offset), ...picks.slice(0, offset)].slice(0, open),
-  };
+  const sponsoredSlugs = new Set(sponsored.map((t) => t.slug));
+  const pins = PINNED_FEATURED_SLUGS
+    .map((slug) => pinned.find((t) => t.slug === slug))
+    .filter((t): t is NonNullable<typeof t> => Boolean(t) && !sponsoredSlugs.has(t!.slug));
+
+  const open = Math.max(0, slots - sponsored.length - pins.length);
+  let random: typeof pinned = [];
+  if (open > 0) {
+    const pool = await prisma.tool.findMany({
+      where: {
+        published: true,
+        trending: false,
+        ratingCount: { lt: BIG_NAME_REVIEWS },
+        logoMediaId: { not: null },
+        slug: { notIn: [...sponsoredSlugs, ...PINNED_FEATURED_SLUGS] },
+      },
+      select: { slug: true },
+    });
+    const chosen = weeklyShuffle(pool.map((t) => t.slug), weekNumber(now)).slice(0, open);
+    const tools = await prisma.tool.findMany({ where: { slug: { in: chosen } }, include: TOOL_INCLUDE });
+    random = chosen.map((slug) => tools.find((t) => t.slug === slug)!).filter(Boolean);
+  }
+
+  return { sponsored, picks: [...pins, ...random], weekStart: weekStart(now) };
 }
 
 /** Just the fields a compact tool row needs, for pages that list hundreds of tools. */
