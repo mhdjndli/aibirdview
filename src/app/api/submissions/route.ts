@@ -17,7 +17,11 @@ const submissionSchema = z.object({
   name: z.string().min(2).max(80),
   url: z.string().url(),
   tagline: z.string().max(160).optional().nullable(),
-  description: z.string().max(4000).optional().nullable(),
+  description: z
+    .string({ error: "A product description is required." })
+    .trim()
+    .min(60, "Describe the product in at least 60 characters: what it does, who it's for, what's different.")
+    .max(4000),
   category: z.string().min(1),
   pricing: z.enum(["FREE", "FREEMIUM", "FREE_TRIAL", "PAID"]),
   priceFrom: z.string().max(40).optional().nullable(),
@@ -103,7 +107,7 @@ export async function POST(req: Request) {
       name: v.name,
       url: v.url,
       tagline: v.tagline ?? null,
-      description: v.description ?? null,
+      description: v.description,
       pricing: v.pricing as Pricing,
       priceFrom: v.priceFrom ?? null,
       founded: v.founded ?? null,
@@ -146,7 +150,7 @@ export async function POST(req: Request) {
   const adminMail = adminNotificationEmail({
     toolName: v.name,
     tagline: v.tagline ?? null,
-    description: v.description ?? null,
+    description: v.description,
     websiteUrl: v.url,
     categorySlug: v.category,
     pricing: v.pricing,

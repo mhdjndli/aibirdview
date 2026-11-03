@@ -49,10 +49,14 @@ export async function rejectSubmission(submissionId: string, formData: FormData)
   });
 
   // A paid same-day review or featured placement we can't list is refunded in full.
-  if (await refundSubmissionPayments(sub.id)) {
-    const mail = submitterRejectedEmail({ toolName: sub.name, reason, refunded: true });
-    void sendEmail({ to: sub.email, ...mail, tags: [{ name: "type", value: "submission_rejected_refunded" }] });
-  }
+  const refunded = await refundSubmissionPayments(sub.id);
+  // Every submitter hears back with the reason, paid or not.
+  const mail = submitterRejectedEmail({ toolName: sub.name, reason, refunded });
+  void sendEmail({
+    to: sub.email,
+    ...mail,
+    tags: [{ name: "type", value: refunded ? "submission_rejected_refunded" : "submission_rejected" }],
+  });
   revalidatePath("/admin/submissions");
   redirect("/admin/submissions?status=REJECTED");
 }

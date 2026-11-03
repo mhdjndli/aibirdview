@@ -106,6 +106,11 @@ export function SubmitForm({
           setError("Please fill in name, URL, and contact email.");
           return;
         }
+        const description = String(fd.get("description") || "").trim();
+        if (description.length < 60) {
+          setError("Please describe the product in at least 60 characters: what it does, who it's for, what's different.");
+          return;
+        }
         if (!logoId) {
           setError("Please upload your tool's logo.");
           return;
@@ -124,7 +129,7 @@ export function SubmitForm({
               name: fd.get("name"),
               url: fd.get("url"),
               tagline: fd.get("tagline") || null,
-              description: fd.get("description") || null,
+              description,
               category: fd.get("category"),
               pricing: fd.get("pricing"),
               priceFrom: fd.get("priceFrom") || null,
@@ -195,11 +200,15 @@ export function SubmitForm({
         </Field>
         <Field
           label="Description"
-          hint="2–3 sentences. What is it, who is it for, what makes it different?"
+          hint="Required. 2–3 sentences (at least 60 characters). What is it, who is it for, what makes it different?"
+          required
         >
           <textarea
             name="description"
             rows={4}
+            required
+            minLength={60}
+            maxLength={4000}
             placeholder="What the tool does, who it's for, what's different about it."
             className={inputCls}
           />
