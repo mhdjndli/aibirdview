@@ -23,8 +23,15 @@ export default async function AdminDashboardPage() {
         </p>
       </header>
 
-      <section className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+      <section className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
         <Stat label="Pending submissions" value={stats.pending} href="/admin/submissions" accent={stats.pending > 0} />
+        <Stat
+          label="Checkout clicks"
+          value={stats.checkoutClicks}
+          href="/admin/checkouts"
+          accent={stats.paidCheckouts > 0}
+          hint={`${stats.checkoutClicks7} this week · ${stats.paidCheckouts} paid`}
+        />
         <Stat label="Tools published" value={stats.publishedTools} href="/admin/tools" />
         <Stat label="Categories" value={stats.totalCategories} href="/admin/categories" />
         <Stat label="Blog posts" value={stats.posts} href="/admin/blog" hint={`${stats.drafts} drafts`} />

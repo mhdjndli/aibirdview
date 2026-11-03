@@ -125,16 +125,17 @@ export async function POST(req: Request) {
     select: { id: true },
   });
 
+  // `src` tells /admin/checkouts which link was clicked.
   const checkout = `${SITE.url}/api/checkout/submission?submission=${submission.id}`;
   const fastTrack = fastTrackEnabled()
-    ? { url: `${checkout}&fast=1`, price: formatPrice(FAST_TRACK_PRICE_CENTS) }
+    ? { url: `${checkout}&fast=1&src=submitted`, price: formatPrice(FAST_TRACK_PRICE_CENTS) }
     : null;
   const plan = featuringEnabled() ? featurePlan(v.featurePlan) : null;
   const extras = new URLSearchParams({
     ...(v.fastTrack && fastTrack && { fast: "1" }),
     ...(plan && { feature: plan.id }),
   }).toString();
-  const checkoutUrl = extras ? `${checkout}&${extras}` : null;
+  const checkoutUrl = extras ? `${checkout}&${extras}&src=form` : null;
 
   // Fire-and-forget emails (don't block the response on email delivery)
   const screenshotCount = [v.screenshot1MediaId, v.screenshot2MediaId, v.screenshot3MediaId].filter(Boolean).length;
@@ -145,7 +146,7 @@ export async function POST(req: Request) {
     websiteUrl: v.url,
     categoryName: category.name,
     freeDays: FREE_REVIEW_DAYS,
-    fastTrack,
+    fastTrack: fastTrack && { ...fastTrack, url: `${checkout}&fast=1&src=email` },
   });
   const adminMail = adminNotificationEmail({
     toolName: v.name,

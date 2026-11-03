@@ -225,7 +225,8 @@ export async function getAllSettings() {
 // Stats (admin dashboard) ----------
 
 export async function getDashboardStats() {
-  const [pending, totalTools, publishedTools, totalCategories, posts, drafts, totalSubs] =
+  const since7 = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+  const [pending, totalTools, publishedTools, totalCategories, posts, drafts, totalSubs, checkoutClicks, checkoutClicks7, paidCheckouts] =
     await Promise.all([
       prisma.submission.count({ where: { status: "PENDING" } }),
       prisma.tool.count(),
@@ -234,6 +235,10 @@ export async function getDashboardStats() {
       prisma.blogPost.count({ where: { published: true } }),
       prisma.blogPost.count({ where: { published: false } }),
       prisma.submission.count(),
+      // Checkout tracking is a side table; it must never take the dashboard down.
+      prisma.checkoutClick.count().catch(() => 0),
+      prisma.checkoutClick.count({ where: { createdAt: { gte: since7 } } }).catch(() => 0),
+      prisma.checkoutClick.count({ where: { paidAt: { not: null } } }).catch(() => 0),
     ]);
-  return { pending, totalTools, publishedTools, totalCategories, posts, drafts, totalSubs };
+  return { pending, totalTools, publishedTools, totalCategories, posts, drafts, totalSubs, checkoutClicks, checkoutClicks7, paidCheckouts };
 }

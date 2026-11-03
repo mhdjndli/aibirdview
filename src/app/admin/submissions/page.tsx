@@ -48,6 +48,17 @@ export default async function SubmissionsPage({
     }),
   ]);
 
+  // Unpaid checkouts each submitter opened. A side table, so the queue still
+  // loads if it can't be read.
+  const opened = await prisma.checkoutClick
+    .groupBy({
+      by: ["submissionId"],
+      where: { paidAt: null, submissionId: { in: submissions.map((s) => s.id) } },
+      _count: { _all: true },
+    })
+    .catch(() => []);
+  const openedMap = new Map(opened.map((o) => [o.submissionId, o._count._all]));
+
   const countMap = Object.fromEntries(counts.map((c) => [c.status, c._count._all]));
   const totalAll = counts.reduce((s, c) => s + c._count._all, 0);
 
@@ -121,6 +132,14 @@ export default async function SubmissionsPage({
                         <span className="rounded-full bg-kiwi-100 px-2 py-0.5 text-[10.5px] font-semibold text-kiwi-800">
                           {s.refundedAt ? "Refunded" : "Paid · same day"}
                         </span>
+                      )}
+                      {openedMap.has(s.id) && !s.paidAt && s.featuredPlacements.length === 0 && (
+                        <Link
+                          href="/admin/checkouts"
+                          className="rounded-full border border-ink-200 px-2 py-0.5 text-[10.5px] font-semibold text-ink-600 hover:bg-ink-50"
+                        >
+                          Opened checkout{(openedMap.get(s.id) ?? 0) > 1 ? ` ×${openedMap.get(s.id)}` : ""}
+                        </Link>
                       )}
                       {s.featuredPlacements.map((p, i) => (
                         <span key={i} className="rounded-full bg-amber-100 px-2 py-0.5 text-[10.5px] font-semibold text-amber-800">

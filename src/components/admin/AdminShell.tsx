@@ -17,6 +17,7 @@ const NAV: { label: string; items: NavItem[] }[] = [
     label: "Directory",
     items: [
       { href: "/admin/submissions", label: "Submissions", icon: <InboxIcon /> },
+      { href: "/admin/checkouts", label: "Checkouts", icon: <CartIcon /> },
       { href: "/admin/tools", label: "Tools", icon: <ToolIcon /> },
       { href: "/admin/reviews", label: "Reviews", icon: <StarNavIcon /> },
       { href: "/admin/edits", label: "Owners & edits", icon: <InboxIcon /> },
@@ -158,6 +159,15 @@ function DashIcon() {
       <rect x="9.5" y="2.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
       <rect x="2.5" y="9.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
       <rect x="9.5" y="9.5" width="4" height="4" rx="0.8" stroke="currentColor" strokeWidth="1.4" />
+    </svg>
+  );
+}
+function CartIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+      <path d="M2 2.5h1.8l1.5 7.5h7.2l1.3-5.5H4.6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="6" cy="12.8" r="1" fill="currentColor" />
+      <circle cx="11.6" cy="12.8" r="1" fill="currentColor" />
     </svg>
   );
 }

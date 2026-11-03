@@ -107,6 +107,7 @@ model Tool {
   edits   ToolEdit[]
 
   featuredPlacements FeaturedPlacement[]
+  checkoutClicks     CheckoutClick[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -223,6 +224,7 @@ model Submission {
   tool   Tool?   @relation(fields: [toolId], references: [id])
 
   featuredPlacements FeaturedPlacement[]
+  checkoutClicks     CheckoutClick[]
 
   createdAt  DateTime  @default(now())
   reviewedAt DateTime?
@@ -453,4 +455,33 @@ model FeaturedPlacement {
 
   @@index([toolId])
   @@index([submissionId])
+}
+
+// ---------- Checkout tracking ----------
+
+// One row each time someone opens a Stripe Checkout: a submitter buying a
+// same-day review and/or a featured placement, or an owner featuring a listed
+// tool. The webhook sets paidAt, so a row without it is an abandoned (or
+// still open) checkout.
+model CheckoutClick {
+  id              String      @id @default(cuid())
+  email           String
+  toolName        String
+  submission      Submission? @relation(fields: [submissionId], references: [id], onDelete: SetNull)
+  submissionId    String?
+  tool            Tool?       @relation(fields: [toolId], references: [id], onDelete: SetNull)
+  toolId          String?
+  fastTrack       Boolean     @default(false)
+  featurePlan     String? // see FEATURE_PLANS in src/lib/featured.ts
+  amountCents     Int
+  // Which link was clicked; see CHECKOUT_SOURCES in src/lib/checkout-clicks.ts.
+  // Null for links in emails sent before tracking started.
+  source          String?
+  stripeSessionId String?     @unique
+  paidAt          DateTime?
+  createdAt       DateTime    @default(now())
+
+  @@index([createdAt])
+  @@index([submissionId])
+  @@index([toolId])
 }

@@ -10,6 +10,7 @@ import { adminClaimEmail, adminEditEmail } from "@/lib/emails/submission-emails"
 import { applyToolChanges, type EditData } from "@/lib/tool-edits";
 import { stripe } from "@/lib/stripe";
 import { featurePlan } from "@/lib/featured";
+import { recordCheckoutClick } from "@/lib/checkout-clicks";
 import { SITE } from "@/lib/site";
 
 export async function signOut() {
@@ -172,6 +173,16 @@ export async function featureTool(slug: string, formData: FormData) {
     payment_intent_data: { metadata },
     success_url: `${back}?featured=${plan.id}`,
     cancel_url: back,
+  });
+  await recordCheckoutClick({
+    email,
+    toolName: tool.name,
+    toolId: tool.id,
+    fastTrack: false,
+    featurePlan: plan.id,
+    amountCents: plan.cents,
+    source: "account",
+    stripeSessionId: session.id,
   });
   redirect(session.url ?? back);
 }

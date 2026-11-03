@@ -64,7 +64,7 @@ export default async function SubmitThanksPage({
     offers = true;
   }
 
-  const checkout = sub ? `/api/checkout/submission?submission=${sub.id}` : "";
+  const checkout = sub ? `/api/checkout/submission?submission=${sub.id}&src=thanks` : "";
   const showFast = offers && !fastPaid && fastTrackEnabled();
   const showFeature = offers && !featured && featuringEnabled();
 

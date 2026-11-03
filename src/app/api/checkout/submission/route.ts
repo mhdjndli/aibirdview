@@ -4,12 +4,14 @@ import { prisma } from "@/lib/prisma";
 import { stripe, FAST_TRACK_PRICE_CENTS } from "@/lib/stripe";
 import { FAST_TRACK_HOURS } from "@/lib/approve-submission";
 import { featurePlan } from "@/lib/featured";
+import { checkoutSource, recordCheckoutClick } from "@/lib/checkout-clicks";
 import { SITE } from "@/lib/site";
 
-// GET /api/checkout/submission?submission=<id>&fast=1&feature=<plan>
+// GET /api/checkout/submission?submission=<id>&fast=1&feature=<plan>&src=<source>
 // One Stripe Checkout for whatever the submitter picked: the same-day review,
 // a featured placement, or both. A GET that redirects, so it works from the
-// submit form, the confirmation email and /submit/thanks.
+// submit form, the confirmation email and /submit/thanks. Every checkout it
+// opens is logged for /admin/checkouts.
 export async function GET(req: Request) {
   const params = new URL(req.url).searchParams;
   const id = params.get("submission") ?? "";
@@ -83,5 +85,15 @@ export async function GET(req: Request) {
   });
 
   if (fast) await prisma.submission.update({ where: { id: sub.id }, data: { stripeSessionId: session.id } });
+  await recordCheckoutClick({
+    email: sub.email,
+    toolName: sub.name,
+    submissionId: sub.id,
+    fastTrack: fast,
+    featurePlan: plan?.id ?? null,
+    amountCents: lineItems.reduce((sum, item) => sum + (item.price_data?.unit_amount ?? 0), 0),
+    source: checkoutSource(params.get("src")),
+    stripeSessionId: session.id,
+  });
   return NextResponse.redirect(session.url ?? thanks, 303);
 }

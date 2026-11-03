@@ -7,7 +7,7 @@ import { SITE } from "@/lib/site";
 export async function GET(req: Request) {
   const id = new URL(req.url).searchParams.get("submission") ?? "";
   return NextResponse.redirect(
-    `${SITE.url}/api/checkout/submission?submission=${encodeURIComponent(id)}&fast=1`,
+    `${SITE.url}/api/checkout/submission?submission=${encodeURIComponent(id)}&fast=1&src=email`,
     303
   );
 }

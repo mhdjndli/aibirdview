@@ -8,6 +8,7 @@ import { sendEmail, ADMIN_NOTIFY_EMAIL } from "@/lib/email";
 import { FAST_TRACK_HOURS, fastTrackPublishBy } from "@/lib/approve-submission";
 import { featurePlan, startPlacement, type FeaturePlan } from "@/lib/featured";
 import { adminPaymentEmail, paymentReceivedEmail } from "@/lib/emails/submission-emails";
+import { markCheckoutClickPaid } from "@/lib/checkout-clicks";
 import { SITE } from "@/lib/site";
 
 // Stripe calls this after checkout. Configure the endpoint in the Stripe
@@ -32,6 +33,7 @@ export async function POST(req: Request) {
     if (session.payment_status === "paid") {
       if (session.metadata?.submissionId) await handleSubmissionPaid(session, session.metadata.submissionId);
       else if (session.metadata?.toolId) await handleToolFeaturePaid(session, session.metadata.toolId);
+      await markCheckoutClickPaid(session.id);
     }
   }
   return NextResponse.json({ received: true });
