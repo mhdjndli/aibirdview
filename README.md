@@ -43,6 +43,8 @@ src/
 
 This project is configured for Railway. The `Procfile`/start command runs `next start` on `$PORT`.
 
+Set `DATABASE_URL=${{Postgres.DATABASE_URL}}` (private network, used at runtime) and `DATABASE_PUBLIC_URL=${{Postgres.DATABASE_PUBLIC_URL}}` (used by `npm run build`, which prerenders pages from the database and cannot reach the private network).
+
 ## Submission auto-approval
 
 Free submissions are published automatically within 14 days

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "prisma generate && if [ -n \"$DATABASE_PUBLIC_URL\" ]; then export DATABASE_URL=\"$DATABASE_PUBLIC_URL\"; fi; next build",
     "postinstall": "prisma generate",
     "start": "next start -H 0.0.0.0 -p ${PORT:-3000}",
     "lint": "eslint",
