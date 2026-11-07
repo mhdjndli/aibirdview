@@ -3,6 +3,8 @@
 //   npx tsx scripts/blog/import.ts            # validate only (no writes)
 //   npx tsx scripts/blog/import.ts --write    # upsert as drafts (unpublished)
 //   npx tsx scripts/blog/import.ts --publish  # upsert and publish
+//   add --only=slug-a,slug-b to write just those posts; without it every post
+//   is overwritten, including any edits made in the admin
 //
 // Re-running is safe: posts are matched by slug, and an already-published
 // post keeps its original publishedAt.
@@ -17,6 +19,7 @@ import { internalLinks, renderHtml, renderJson, wordCount } from "./render";
 const prisma = new PrismaClient();
 const write = process.argv.includes("--write") || process.argv.includes("--publish");
 const publish = process.argv.includes("--publish");
+const only = process.argv.find((a) => a.startsWith("--only="))?.slice("--only=".length).split(",");
 // Screenshots saved by scripts/blog/capture-screenshots.ts use this filename prefix.
 const SHOT_PREFIX = "blog-shot-";
 
@@ -102,7 +105,12 @@ async function main() {
     return;
   }
 
-  for (const post of posts) {
+  const unknown = only?.filter((slug) => !posts.some((p) => p.slug === slug)) ?? [];
+  if (unknown.length) {
+    console.error(`Unknown slug(s): ${unknown.join(", ")}; nothing written.`);
+    process.exit(1);
+  }
+  for (const post of only ? posts.filter((p) => only.includes(p.slug)) : posts) {
     const contentHtml = renderHtml(post.body, ctx);
     const readingMinutes = Math.max(1, Math.round(readingTime(contentHtml.replace(/<[^>]+>/g, " ")).minutes));
     const existing = await prisma.blogPost.findUnique({ where: { slug: post.slug } });
