@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ToolCard } from "./ToolCard";
-import type { SerializedTool, SerializedCategory, PricingLabel } from "@/lib/serializers";
+import type { ToolCardData, SerializedCategory, PricingLabel } from "@/lib/serializers";
 
 const PRICING: PricingLabel[] = ["Free", "Freemium", "Free Trial", "Paid"];
 type Sort = "trending" | "rating" | "newest" | "az";
@@ -29,7 +29,7 @@ export function ToolsBrowser({
   tools,
   categories,
 }: {
-  tools: SerializedTool[];
+  tools: ToolCardData[];
   categories: SerializedCategory[];
 }) {
   const [q, setQ] = useState("");

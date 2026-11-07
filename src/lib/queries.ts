@@ -70,6 +70,39 @@ export async function getTools(opts?: {
   });
 }
 
+const TOOL_CARD_SELECT = {
+  slug: true,
+  name: true,
+  tagline: true,
+  description: true,
+  pricing: true,
+  priceFrom: true,
+  rating: true,
+  ratingCount: true,
+  founded: true,
+  featured: true,
+  featuredUntil: true,
+  trending: true,
+  verified: true,
+  swatchFrom: true,
+  swatchTo: true,
+  logoMediaId: true,
+  category: { select: { slug: true, name: true, glyph: true } },
+  tags: { select: { tag: true } },
+  reviews: { select: { stars: true } },
+} as const;
+
+/** Every published tool with just what a card and the /tools filters need. */
+export async function getToolCards() {
+  return prisma.tool.findMany({
+    where: { published: true },
+    select: TOOL_CARD_SELECT,
+    orderBy: [{ trending: "desc" }, { rating: "desc" }, { createdAt: "desc" }],
+  });
+}
+
+export type ToolCardRow = Awaited<ReturnType<typeof getToolCards>>[number];
+
 /**
  * The homepage "Featured this week" grid, FEATURED_SLOTS cards wide:
  *   1. every tool with a paid slot running (marked Sponsored), then

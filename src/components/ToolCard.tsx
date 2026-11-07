@@ -1,11 +1,11 @@
 import Link from "next/link";
-import type { SerializedTool, SerializedToolLite } from "@/lib/serializers";
+import type { ToolCardData } from "@/lib/serializers";
 
 export function ToolCard({
   tool,
   sponsored = false,
 }: {
-  tool: SerializedTool | SerializedToolLite;
+  tool: ToolCardData;
   /** A paid featured slot; labelled so readers can tell it from editorial picks. */
   sponsored?: boolean;
 }) {

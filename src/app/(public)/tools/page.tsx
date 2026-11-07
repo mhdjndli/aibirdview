@@ -1,6 +1,6 @@
 import { ToolsBrowser } from "@/components/ToolsBrowser";
-import { getCategories, getTools } from "@/lib/queries";
-import { serializeCategory, serializeTool } from "@/lib/serializers";
+import { getCategories, getToolCards } from "@/lib/queries";
+import { serializeCategory, serializeToolCard } from "@/lib/serializers";
 
 export const metadata = {
   title: "Browse AI Tools | AI BirdView",
@@ -15,10 +15,12 @@ export const revalidate = 60;
 
 export default async function ToolsPage() {
   const [toolsRaw, categoriesRaw] = await Promise.all([
-    getTools(),
+    getToolCards(),
     getCategories(),
   ]);
-  const tools = toolsRaw.map(serializeTool);
+  // Filtering runs in the browser, so every tool ships with this page. Keep
+  // these card fields slim: the full serializeTool shape made it 12MB.
+  const tools = toolsRaw.map(serializeToolCard);
   const categories = categoriesRaw.map(serializeCategory);
 
   return (

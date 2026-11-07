@@ -1,5 +1,5 @@
 import type { Prisma } from "@prisma/client";
-import { PRICING_LABELS } from "@/lib/queries";
+import { PRICING_LABELS, type ToolCardRow } from "@/lib/queries";
 
 export type PricingLabel = "Free" | "Freemium" | "Free Trial" | "Paid";
 
@@ -49,6 +49,26 @@ export type SerializedToolLite = Omit<SerializedTool, "alternatives" | "features
   cons?: string[];
 };
 
+/** The fields a ToolCard renders, plus what the /tools filters search and sort on. */
+export type ToolCardData = Pick<
+  SerializedTool,
+  | "slug"
+  | "name"
+  | "tagline"
+  | "description"
+  | "pricing"
+  | "priceFrom"
+  | "rating"
+  | "ratingCount"
+  | "founded"
+  | "featured"
+  | "trending"
+  | "verified"
+  | "swatch"
+  | "tags"
+  | "logoMediaId"
+> & { category: Pick<SerializedTool["category"], "slug" | "name" | "glyph"> };
+
 type ToolWithRelations = Prisma.ToolGetPayload<{
   include: {
     category: true;
@@ -65,14 +85,38 @@ function isFeatured(tool: { featured: boolean; featuredUntil: Date | null }) {
   return tool.featured || (tool.featuredUntil !== null && tool.featuredUntil > new Date());
 }
 
-export function serializeTool(tool: ToolWithRelations): SerializedTool {
-  // Genuine ratings: real visitor reviews take precedence; the admin-set
-  // rating/ratingCount only show while a tool has no reviews yet.
+// Genuine ratings: real visitor reviews take precedence; the admin-set
+// rating/ratingCount only show while a tool has no reviews yet.
+function displayRating(tool: { rating: number; ratingCount: number; reviews: { stars: number }[] }) {
   const reviewCount = tool.reviews.length;
-  const reviewAvg =
-    reviewCount > 0
-      ? tool.reviews.reduce((sum, r) => sum + r.stars, 0) / reviewCount
-      : 0;
+  if (reviewCount === 0) return { rating: tool.rating, ratingCount: tool.ratingCount };
+  return {
+    rating: tool.reviews.reduce((sum, r) => sum + r.stars, 0) / reviewCount,
+    ratingCount: reviewCount,
+  };
+}
+
+export function serializeToolCard(tool: ToolCardRow): ToolCardData {
+  return {
+    slug: tool.slug,
+    name: tool.name,
+    tagline: tool.tagline,
+    description: tool.description,
+    category: tool.category,
+    pricing: PRICING_LABELS[tool.pricing] as PricingLabel,
+    priceFrom: tool.priceFrom,
+    ...displayRating(tool),
+    founded: tool.founded,
+    featured: isFeatured(tool),
+    trending: tool.trending,
+    verified: tool.verified,
+    swatch: [tool.swatchFrom, tool.swatchTo],
+    tags: tool.tags.map((t) => t.tag),
+    logoMediaId: tool.logoMediaId,
+  };
+}
+
+export function serializeTool(tool: ToolWithRelations): SerializedTool {
   return {
     slug: tool.slug,
     name: tool.name,
@@ -89,8 +133,7 @@ export function serializeTool(tool: ToolWithRelations): SerializedTool {
     },
     pricing: PRICING_LABELS[tool.pricing] as PricingLabel,
     priceFrom: tool.priceFrom,
-    rating: reviewCount > 0 ? reviewAvg : tool.rating,
-    ratingCount: reviewCount > 0 ? reviewCount : tool.ratingCount,
+    ...displayRating(tool),
     founded: tool.founded,
     featured: isFeatured(tool),
     trending: tool.trending,
