@@ -2,18 +2,18 @@ import type { Post } from "../types";
 
 const post: Post = {
   slug: "what-beats-rock-game",
-  title: "What Beats Rock? How the AI Game Works (2026)",
+  title: "How to Play What Beats Rock (2026): Rules, Judging and Streak Tips",
   excerpt:
     "What Beats Rock is a free browser word game where an AI judges whether your answer beats the last one. Here is how to play, how the judge and scoring work, what ends a run, and how to think about longer streaks.",
-  seoTitle: "What Beats Rock? How the AI Game Works + Streak Tips (2026)",
+  seoTitle: "How to Play What Beats Rock: Rules and Streak Tips (2026)",
   seoDescription:
-    "What Beats Rock is a free browser game where an AI judges each answer. Learn how to play, how scoring and streaks work, and how to last longer.",
+    "How to play What Beats Rock: the rules, how the AI judge decides, how scoring and the weekly leaderboard work, and tips for longer streaks.",
   metaKeywords:
-    "what beats rock, what beat rock, what beats rock game, whats beats rock, what beats rock ai, what beats rock rules, what beats rock leaderboard, what beats rock high score, how to play what beats rock",
+    "how to play what beats rock, what beats rock rules, what beats rock tips, what beats rock strategy, how does what beats rock work, what beats rock leaderboard",
   categories: ["guides"],
   body: [
     { p: "[What Beats Rock](/tools/what-beats-rock) is a free browser word game that turns rock paper scissors into an endless chain. You answer the question \"what beats rock?\", an AI judges your answer, and if you win, your answer becomes the next thing to beat. Your score goes up by one each time, and the run ends the first time the judge rules against you." },
-    { p: "If you searched for what beat rock or whats beats rock, this is the game you are after. The site does not publish a rulebook, so this guide is built from its [official site](https://www.whatbeatsrock.com/), its legal pages, what the makers have said in public and how the game has been documented by others." },
+    { p: "If you just want to play, go straight to the [official site](https://www.whatbeatsrock.com/). This guide is for players who want to understand the rules and last longer. The site does not publish a rulebook, so this guide is built from that site, its legal pages, what the makers have said in public and how the game has been documented by others." },
 
     { logos: ["what-beats-rock", "infinite-craft", "ai-dungeon", "riddle-me-this"] },
 

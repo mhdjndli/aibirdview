@@ -5,11 +5,11 @@ const post: Post = {
   title: "ViewMade Review (2026): Pricing, Free Options, Limits and Alternatives",
   excerpt:
     "ViewMade is a paid AI studio that turns a one-line topic or a YouTube link into a captioned vertical video. Here is what it does, what it costs, why there is no free plan, where it falls short, and which alternatives fit other creators.",
-  seoTitle: "ViewMade Review (2026): Pricing, Free Plan, Limits + Alternatives",
+  seoTitle: "ViewMade Review (2026): Is It Free, and Is It Worth $29?",
   seoDescription:
-    "ViewMade review: what the AI Shorts and clipping tool does, what viewmade.com charges, whether ViewMade is free, its real limits and the best alternatives.",
+    "Is ViewMade free, and is it worth paying for? Our review covers ViewMade pricing, plan limits, monetization risks and the best ViewMade alternatives.",
   metaKeywords:
-    "viewmade, viewmade ai, viewmade free, viewmade.com, viewmade review, viewmade pricing, viewmade alternatives, faceless shorts generator, ai youtube shorts maker",
+    "viewmade review, is viewmade free, is viewmade worth it, viewmade pricing, viewmade alternatives, viewmade limits",
   categories: ["reviews", "deep-dives"],
   body: [
     { logos: ["viewmade", "opus-clip", "klap", "invideo"] },

@@ -5,11 +5,11 @@ const post: Post = {
   title: "Photo2Skin Review (2026): Turn a Photo Into a Minecraft Skin, Plus Pricing and Alternatives",
   excerpt:
     "Photo2Skin is an AI Minecraft skin generator that turns a selfie, image, text prompt or Roblox avatar into a 64x64 PNG for Java and Bedrock. Here is what it offers, what it costs per skin, where it falls short, and which alternatives fit better.",
-  seoTitle: "Photo2Skin Review (2026): Minecraft Skins From a Photo",
+  seoTitle: "Photo2Skin Review (2026): Is It Worth the Credits?",
   seoDescription:
-    "Photo2Skin review: how it turns a photo into a Minecraft skin for Java and Bedrock, what credits cost per skin, real limitations, and the best alternatives.",
+    "Is Photo2Skin worth it? Our review covers what each skin costs in credits, whether it is free, its real limits, and the best Photo2Skin alternatives.",
   metaKeywords:
-    "photo2skin, photo2skin minecraft, photo2skin review, photo to minecraft skin, turn photo into minecraft skin, ai minecraft skin generator, photo2skin pricing, photo2skin alternatives, roblox to minecraft skin",
+    "photo2skin review, is photo2skin free, is photo2skin worth it, photo2skin pricing, photo2skin credits, photo2skin alternatives, is photo2skin safe",
   categories: ["reviews", "deep-dives"],
   body: [
     { logos: ["photo2skin", "dreamina", "avaturn", "remove-bg"] },
