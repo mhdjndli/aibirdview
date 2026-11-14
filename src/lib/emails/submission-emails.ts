@@ -397,6 +397,30 @@ export function submitterRejectedEmail(args: { toolName: string; reason: string 
   return { subject: title, html: notice({ eyebrow: "Submission update", title, body }), text: plain(title, body) };
 }
 
+/** A submission for a tool that already has a listing: point the submitter at it and how to manage it. */
+export function submitterAlreadyListedEmail(args: {
+  submittedName: string;
+  toolName: string;
+  toolSlug: string;
+  /** The submitter already owns the listing, so they only need to sign in. */
+  alreadyOwner: boolean;
+}) {
+  const title = `${args.submittedName} is already live on ${SITE.name}`;
+  const listingUrl = `${SITE.url}/tools/${args.toolSlug}`;
+  const sameName = args.submittedName.trim().toLowerCase() === args.toolName.trim().toLowerCase();
+  const body = [
+    `Thanks for submitting <strong>${escapeHtml(args.submittedName)}</strong>. Good news: it's approved, and it's already listed in the directory${sameName ? "" : ` as <strong>${escapeHtml(args.toolName)}</strong>`}, so we didn't create a second listing.`,
+    `Your listing: <a href="${escapeAttr(listingUrl)}" style="color:${KIWI_DARK};text-decoration:none;">${escapeHtml(listingUrl)}</a>`,
+    args.alreadyOwner
+      ? `You already manage this listing. Sign in with this email address to update its description, pricing or images.`
+      : `Want to update its description, pricing or images? Claim the listing and you can edit it any time.`,
+  ];
+  const cta = args.alreadyOwner
+    ? { label: "Sign in", url: `${SITE.url}/signin` }
+    : { label: "Claim your listing", url: `${SITE.url}/claim/${args.toolSlug}` };
+  return { subject: title, html: notice({ eyebrow: "Submission update", title, body, cta }), text: plain(title, body, cta) };
+}
+
 export function adminClaimEmail(args: { toolName: string; toolSlug: string; email: string; pending: boolean; note?: string | null }) {
   const title = args.pending ? `Claim needs review: ${args.toolName}` : `Listing claimed: ${args.toolName}`;
   const body = [
