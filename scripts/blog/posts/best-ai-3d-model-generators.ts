@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI 3D Model Generators (2026): 11 Picks for Games, Printing and Design",
   excerpt:
     "The best AI 3D model generator depends on the job: Meshy for the most complete all-round workflow, Tripo for clean, game-ready topology, Hunyuan 3D for free daily generations, Hitem3D for 3D printing, and TRELLIS for open source. Here are 11 text-to-3D and image-to-3D picks with pricing, free plans and export tips.",
-  seoTitle: "Best AI 3D Model Generator in 2026: 11 Tools Compared",
+  seoTitle: "11 Best AI 3D Model Generators (2026): Text and Image to 3D",
   seoDescription:
     "The best AI 3D model generators in 2026 for text-to-3D and image-to-3D: Meshy, Tripo, Hunyuan 3D, Hitem3D, TRELLIS and more, with pricing and free plans.",
   metaKeywords:

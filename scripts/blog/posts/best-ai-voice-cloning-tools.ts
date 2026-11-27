@@ -5,7 +5,7 @@ const post: Post = {
   title: "The Best AI Voice Cloning Tools in 2026, Compared by Use Case",
   excerpt:
     "Instant clones, studio-grade replicas, real-time voice changers and licensed singing voices are four different products. Here is which voice cloning tool fits which job, what each costs to start, and how to clone a voice without legal headaches.",
-  seoTitle: "Best AI Voice Cloning Tools (2026): 12 Picks by Use Case",
+  seoTitle: "12 Best AI Voice Cloning Tools (2026), Compared by Use",
   seoDescription:
     "We compare ElevenLabs, Cartesia, Descript, Murf, WellSaid, the open-source Chatterbox and more for voice cloning: quality, latency, consent rules and prices.",
   metaKeywords:

@@ -5,7 +5,7 @@ const post: Post = {
   title: "HeyGen Review (2026): Avatar V, Video Agent and Pricing",
   excerpt:
     "HeyGen is the most capable AI avatar video tool for marketers, creators and founders in 2026. Avatar V builds a lifelike digital you from a 15-second recording, video translation covers 175+ languages with lip sync, and Video Agent turns a prompt into a finished video. Here is what each plan really includes, where credits go, and who should pick Synthesia instead.",
-  seoTitle: "HeyGen Review (2026): Avatar V, Pricing, Pros and Cons",
+  seoTitle: "HeyGen Review (2026): Pricing, Avatar V, Is It Worth It?",
   seoDescription:
     "Our HeyGen review for 2026: Avatar V, video translation, Video Agent, every plan and credit rule, real user complaints, and how it compares with Synthesia.",
   metaKeywords:

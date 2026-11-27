@@ -5,15 +5,15 @@ const post: Post = {
   title: "Google Translate Review (2026): How Accurate Is It?",
   excerpt:
     "Google Translate is free, covers almost 250 languages and is accurate enough for everyday understanding, but published studies show results swing widely by language. Here is what it does, what the evidence says about accuracy, its limits, how it handles sensitive text, and when to use something else.",
-  seoTitle: "Google Translate Review (2026): How Accurate Is It?",
+  seoTitle: "Is Google Translate Accurate? 2026 Review by Language",
   seoDescription:
-    "Google Translate review: how accurate it is by language, what published studies found, its limits, privacy for sensitive text, and when to use something else.",
+    "Is Google Translate accurate? What published studies found for each language, where it fails, privacy for sensitive text, and what to use instead.",
   metaKeywords:
-    "google translate, google translation, translate google, google translator, google translate review, google translate accuracy, is google translate accurate, is google translate private, google translate offline, google translate alternatives",
+    "google translate review, google translate accuracy, is google translate accurate, is google translate private, google translate offline, google translate alternatives",
   categories: ["reviews", "deep-dives"],
   body: [
     { p: "[Google Translate](/tools/google-translate) is Google's free translation service for text, speech, photos, documents and websites, available at [translate.google.com](https://translate.google.com) and in apps for Android and iOS. It suits travelers, students and anyone who needs to understand something quickly. It is good enough for menus, signs, emails and getting the gist of a page. It is not good enough on its own for contracts, medical instructions or anything confidential." },
-    { p: "Whether you search for Google translation, Google translator or translate Google, this is the same product. This review covers accuracy, features, limits and privacy, using Google's documentation, published studies and vendor benchmarks as of November 2026. It is not based on hands-on testing." },
+    { p: "This review covers accuracy, features, limits and privacy, using Google's documentation, published studies and vendor benchmarks as of November 2026. It is not based on hands-on testing." },
 
     { logos: ["google-translate", "lara-translate", "machinetranslation-com", "pairaphrase", "immersive-translate", "itranslate"] },
 

@@ -5,9 +5,9 @@ const post: Post = {
   title: "Gemini Review (2026): Is Gemini 4 Argon Worth It?",
   excerpt:
     "Our Google Gemini review for October 2026: what Gemini 4 Argon changes, how Tasks, Deep Research, Gemini Live, Nano Banana and Veo work, what Free, AI Plus, AI Pro and AI Ultra really include, the privacy and Android complaints, and when ChatGPT or Claude is the better pick.",
-  seoTitle: "Gemini Review (2026): Gemini 4 Argon, Plans, Pros, Cons",
+  seoTitle: "Google Gemini Review (2026): Free vs Paid Plans, Pros, Cons",
   seoDescription:
-    "Our Google Gemini review for October 2026: Gemini 4 Argon, Tasks, Deep Research, Veo, Free vs AI Plus vs AI Pro vs Ultra pricing, privacy and alternatives.",
+    "Our Google Gemini review: Gemini 4 Argon, Tasks, Deep Research, Veo, Free vs AI Plus vs AI Pro vs Ultra pricing, privacy, and the best alternatives.",
   metaKeywords:
     "gemini review, google gemini review, gemini review 2026, gemini 4 argon review, is google ai pro worth it, gemini pricing 2026, google ai plus vs pro, gemini ai ultra, is gemini good, gemini vs chatgpt, gemini advanced review, gemini app review",
   categories: ["reviews", "deep-dives"],

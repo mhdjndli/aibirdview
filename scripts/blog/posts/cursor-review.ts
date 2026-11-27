@@ -5,7 +5,7 @@ const post: Post = {
   title: "Cursor Review (2026): Still the Best AI Code Editor?",
   excerpt:
     "Cursor is still the most polished AI code editor, with the best Tab completions and strong cloud agents. But since SpaceX bought it, plans are sold through the X Subscription, the $8 tier runs Grok models only, and Claude and GPT now cost extra at API prices. Here is what that means for you.",
-  seoTitle: "Cursor Review (2026): New Plans, Features, Pros and Cons",
+  seoTitle: "Cursor Review (2026): New Plans, Pricing, Pros and Cons",
   seoDescription:
     "Our Cursor review for 2026: Tab, Agent, cloud agents and Bugbot, the new SpaceX X Subscription plans, Claude at API price, the OpenAI cutoff and alternatives.",
   metaKeywords:

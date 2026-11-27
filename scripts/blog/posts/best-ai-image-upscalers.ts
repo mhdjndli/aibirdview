@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Image Upscalers (2026): 10 Picks for Photos, Print and AI Art",
   excerpt:
     "Some AI upscalers faithfully enlarge what is in your photo, while others invent new detail. Here are the 10 best AI image upscalers in 2026, compared on price, free plans, maximum scale, desktop vs web, and which one to use for print, old photos and AI art.",
-  seoTitle: "Best AI Image Upscalers (2026): 10 Free and Paid Picks",
+  seoTitle: "10 Best AI Image Upscalers (2026): Free vs Paid Compared",
   seoDescription:
     "The best AI image upscaler in 2026 for photos, print and AI art: Topaz Gigapixel, Magnific, Upscayl, Krea, Photoshop and more, with free vs paid compared.",
   metaKeywords:

@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     description:
       "Discover, compare, and launch with the best AI tools. Curated by humans, ranked by quality.",
     type: "website",
+    siteName: "AI BirdView",
   },
 };
 

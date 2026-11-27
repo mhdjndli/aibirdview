@@ -5,7 +5,7 @@ const post: Post = {
   title: "Runway Review (2026): Gen-4.5, Aleph 2.0, Agent and Real Costs",
   excerpt:
     "Runway is no longer just a video generator. In 2026 it became a full production workspace with Gen-4.5, Aleph 2.0 editing, an AI agent, third-party models like Kling 4.0, and plugins for Premiere and Resolve. Here is what each plan really buys, what users complain about, and who should pick something else.",
-  seoTitle: "Runway Review (2026): Features, Pricing, Pros and Cons",
+  seoTitle: "Runway AI Review (2026): Gen-4.5, Pricing, Pros and Cons",
   seoDescription:
     "Our Runway review for 2026: Gen-4.5, Aleph 2.0, Runway Agent, credit costs per second, every plan compared, real complaints, and the best alternatives.",
   metaKeywords:

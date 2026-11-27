@@ -5,7 +5,7 @@ const post: Post = {
   title: "Leonardo AI Review (2026): Pricing, Tokens, Models and Who It Is For",
   excerpt:
     "Our Leonardo AI review for 2026: the free plan, what tokens really buy, Phoenix and Lucid models, the third-party models now inside the app, Flow State, Blueprints, video, privacy and rights, and when Midjourney, Ideogram or Firefly is the better pick.",
-  seoTitle: "Leonardo AI Review 2026: Pricing, Tokens, Pros and Cons",
+  seoTitle: "Leonardo AI Review (2026): Free Plan, Token Pricing, Cons",
   seoDescription:
     "Our Leonardo AI review for 2026: free plan limits, token pricing explained, Phoenix and Lucid models, video, custom models, rights, complaints and alternatives.",
   metaKeywords:

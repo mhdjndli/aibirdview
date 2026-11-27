@@ -5,9 +5,9 @@ const post: Post = {
   title: "Adobe Firefly Review (2026): Commercially Safe AI, Credits and Plans",
   excerpt:
     "Our Adobe Firefly review for 2026: Firefly Image 5, the partner models from Google, OpenAI, Black Forest Labs, Runway and Kling, video and audio tools, Boards, the AI Assistant beta, custom models, what each plan's credits really buy, and when Midjourney or Leonardo AI is the better choice.",
-  seoTitle: "Adobe Firefly Review 2026: Plans, Credits, Pros and Cons",
+  seoTitle: "Adobe Firefly Review (2026): Pricing, Credits, Pros, Cons",
   seoDescription:
-    "Our Adobe Firefly review for 2026: Image 5, partner models, video and audio, credits per plan, commercial safety, user complaints and the best alternatives.",
+    "What Adobe Firefly costs in 2026: credits per plan, Image 5 and partner models, video and audio, commercial safety, user complaints and alternatives.",
   metaKeywords:
     "adobe firefly review, adobe firefly review 2026, adobe firefly pricing, adobe firefly plans, is adobe firefly free, adobe firefly credits, adobe firefly image 5, adobe firefly commercially safe, adobe firefly vs midjourney, adobe firefly video, adobe firefly alternatives, firefly generative credits",
   categories: ["reviews", "deep-dives"],

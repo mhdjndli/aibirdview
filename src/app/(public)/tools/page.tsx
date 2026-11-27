@@ -1,15 +1,21 @@
 import { ToolsBrowser } from "@/components/ToolsBrowser";
 import { getCategories, getToolCards } from "@/lib/queries";
 import { serializeCategory, serializeToolCard } from "@/lib/serializers";
+import { prisma } from "@/lib/prisma";
 
-export const metadata = {
-  title: "Browse AI Tools | AI BirdView",
-  description:
-    "Search, filter, and compare the best AI tools across writing, image, video, audio, code, productivity, marketing, and research.",
-  // Search/filter state lives in the query string (?q=...), which would
-  // otherwise be indexed as near-duplicate pages.
-  alternates: { canonical: "/tools" },
-};
+export async function generateMetadata() {
+  // "1,600+": the published count rounded down to the hundred, so the title
+  // stays true between rebuilds.
+  const count = await prisma.tool.count({ where: { published: true } });
+  const rounded = count >= 200 ? `${(Math.floor(count / 100) * 100).toLocaleString("en-US")}+` : String(count);
+  return {
+    title: `Browse ${rounded} AI Tools by Category, Price and Use Case`,
+    description: `Search ${rounded} AI tools for writing, images, video, voice, code and business. Filter by free plan, price and category, then compare side by side.`,
+    // Search/filter state lives in the query string (?q=...), which would
+    // otherwise be indexed as near-duplicate pages (see also src/proxy.ts).
+    alternates: { canonical: "/tools" },
+  };
+}
 
 export const revalidate = 60;
 

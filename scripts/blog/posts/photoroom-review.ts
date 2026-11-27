@@ -5,7 +5,7 @@ const post: Post = {
   title: "Photoroom Review (2026): Pricing, AI Models and Video Ads",
   excerpt:
     "Photoroom is still the fastest way to turn phone photos into clean product images, and in 2026 it added AI fashion models, batch AI edits, Shopify publishing and a video ad maker. Here is what each plan really includes, what users complain about, and when Pixelcut, Pebblely or Flair is the better pick.",
-  seoTitle: "Photoroom Review 2026: Pricing, Features, Pros and Cons",
+  seoTitle: "Photoroom Review (2026): Is Pro Worth It? Pricing Explained",
   seoDescription:
     "Our Photoroom review for 2026: Pro, Max and Ultra pricing, credits vs exports, AI fashion models, video ads, API costs, complaints and the best alternatives.",
   metaKeywords:

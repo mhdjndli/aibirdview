@@ -19,6 +19,16 @@ export default auth((req) => {
     loginUrl.searchParams.set("callbackUrl", req.nextUrl.href);
     return NextResponse.redirect(loginUrl);
   }
+
+  // Search and filter URLs (/tools?q=voice+clones) render the same page as
+  // the clean URL. Google indexed some anyway despite the canonical, so tell
+  // it plainly not to index them while still following their links. Listing
+  // pages only: a tool page or post reached with ?utm_ tags keeps its canonical.
+  if (req.nextUrl.search && /^\/(tools|blog|categories(\/[^/]+)?|blog\/category\/[^/]+)\/?$/.test(path)) {
+    const res = NextResponse.next();
+    res.headers.set("X-Robots-Tag", "noindex, follow");
+    return res;
+  }
 });
 
 export const config = {

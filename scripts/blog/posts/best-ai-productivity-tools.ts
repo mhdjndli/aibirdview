@@ -7,7 +7,7 @@ const post: Post = {
     "The best AI productivity tools each fix one bottleneck: your calendar, your inbox, your meetings, your notes or your typing. Here are 14 picks sorted by job, with October 2026 pricing, free plans and a simple way to build a stack that actually saves time.",
   seoTitle: "Best AI Productivity Tools (2026): 14 Picks by Job",
   seoDescription:
-    "The best AI productivity tools for scheduling, email, meetings, notes, dictation and tasks, with October 2026 prices, free plans and a starter stack.",
+    "The best AI productivity tools for scheduling, email, meetings, notes, dictation and tasks, with 2026 prices, free plans and a starter stack.",
   metaKeywords:
     "best ai productivity tools, ai productivity tools, ai tools for productivity, ai productivity apps, ai scheduling assistant, ai calendar, ai email assistant, ai note taking app, ai meeting notes, ai dictation app, motion vs reclaim, notion ai",
   categories: ["guides", "reviews"],

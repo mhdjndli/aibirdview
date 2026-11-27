@@ -5,7 +5,7 @@ const post: Post = {
   title: "Replit Review (2026): Agent 4, Free Mode and Real Costs",
   excerpt:
     "Replit is the most complete all-in-one AI app builder: an agent, a cloud IDE, databases, hosting and even an iOS App Store flow in one browser tab. This Replit review covers Agent 4, the new Free Mode, effort-based pricing, what each plan really gets, common complaints, and when Lovable, Bolt, v0 or Cursor is the better choice.",
-  seoTitle: "Replit Review (2026): Agent 4, Pricing, Pros and Cons",
+  seoTitle: "Replit Pricing and Review (2026): Agent 4, Core vs Pro",
   seoDescription:
     "Our Replit review for 2026: Agent 4, Free Mode, effort-based pricing, Core vs Pro, mobile apps, real user complaints, and how it compares with Lovable and Bolt.",
   metaKeywords:

@@ -3,8 +3,9 @@ import { getCategories, getTools } from "@/lib/queries";
 import { serializeCategory, serializeTool, type SerializedTool } from "@/lib/serializers";
 
 export const metadata = {
-  title: "AI Tool Categories | AI BirdView",
-  description: "Eight worlds of AI tools. Browse by what you need to do.",
+  title: "AI Tools by Category: Writing, Image, Video, Code and More",
+  description:
+    "Browse AI tools by what you need to do: writing, images, video, voice, code, productivity, marketing, research, agents, design, business and education.",
   alternates: { canonical: "/categories" },
 };
 

@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Paraphrasing Tools (2026): 10 Rewriters Compared",
   excerpt:
     "The best AI paraphrasing tools in 2026, compared on rewrite quality, modes, free limits, languages and price, from QuillBot and Wordtune to ChatGPT, Claude and DeepL Write. Plus an honest guide to paraphrasing without crossing academic integrity lines.",
-  seoTitle: "Best AI Paraphrasing Tools 2026: 10 Free and Paid Picks",
+  seoTitle: "10 Best AI Paraphrasing Tools (2026): Free Limits Compared",
   seoDescription:
     "The best AI paraphrasing tools for 2026: QuillBot, Wordtune, Grammarly, ChatGPT, Claude, DeepL Write and more, with free limits, prices and integrity tips.",
   metaKeywords:

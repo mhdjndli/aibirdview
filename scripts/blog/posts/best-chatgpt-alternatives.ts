@@ -5,7 +5,7 @@ const post: Post = {
   title: "The Best ChatGPT Alternatives in 2026: Free, Private and Open-Weight Options",
   excerpt:
     "ChatGPT is still the default, but Claude, Gemini, Le Chat, Qwen Chat, DeepSeek and Perplexity each beat it at something specific. Here is who each alternative is best for, what the free tiers include, and which ones you can run on your own hardware.",
-  seoTitle: "Best ChatGPT Alternatives (2026): Free, Private, Open",
+  seoTitle: "10 Best ChatGPT Alternatives (2026): Free, Private, Open",
   seoDescription:
     "Claude, Gemini, Le Chat, Qwen Chat, DeepSeek, Perplexity, Copilot and Monica compared: who each ChatGPT alternative suits, free tiers, privacy and open weights.",
   metaKeywords:

@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Tattoo Generators (2026): 10 Picks for Ideas, Stencils and Try-Ons",
   excerpt:
     "The best AI tattoo generator depends on what you need: TattooJinn for custom designs in 48 styles, TattooDrafts for a brief and stencil your artist can use, Patchwork Tattoos for sleeves, and Tinta Piel for previewing ink on your own photo. Here are 10 picks with pricing, free options and how to turn an AI design into a real tattoo.",
-  seoTitle: "Best AI Tattoo Generator in 2026: 10 Tools Compared",
+  seoTitle: "10 Best AI Tattoo Generators (2026), Free and Paid",
   seoDescription:
     "The best AI tattoo generators in 2026 for custom designs, stencils, lettering and try-ons, with free plans, pricing and how to take an AI design to your artist.",
   metaKeywords:

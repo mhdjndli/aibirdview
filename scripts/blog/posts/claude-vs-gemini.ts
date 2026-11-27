@@ -7,7 +7,7 @@ const post: Post = {
     "Claude is the stronger pick for writing, careful analysis and agentic coding with Claude Code. Gemini is the better value if you live in Gmail, Docs and Android, want image and video generation, or would pay for Google storage anyway. Here is how Claude Opus 5.5 and Gemini 4 Argon compare on price, features and privacy.",
   seoTitle: "Claude vs Gemini (2026): Models, Pricing and Who Wins",
   seoDescription:
-    "Claude vs Gemini compared for October 2026: Opus 5.5 vs Gemini 4 Argon, Claude Pro vs Google AI Pro, writing, coding, long context, images, video and privacy.",
+    "Claude vs Gemini compared for 2026: Opus 5.5 vs Gemini 4 Argon, Claude Pro vs Google AI Pro, writing, coding, long context, images, video and privacy.",
   metaKeywords:
     "claude vs gemini, gemini vs claude, is claude better than gemini, claude pro vs google ai pro, claude opus 5.5 vs gemini 4 argon, claude vs gemini for coding, claude vs gemini for writing, claude or gemini, gemini advanced vs claude pro, claude vs gemini free, claude code vs gemini, best ai assistant 2026",
   categories: ["reviews", "deep-dives"],

@@ -7,7 +7,7 @@ const post: Post = {
     "Surfer SEO is the stronger live optimizer with a mature refresh workflow. Frase is the better value if you want research, drafting, AI visibility tracking and publishing in one agent-driven platform. Here is how they compare on price, features, GEO and who each one suits.",
   seoTitle: "Surfer SEO vs Frase (2026): Pricing, Features and Verdict",
   seoDescription:
-    "Surfer SEO vs Frase compared for October 2026: plans from $39 to $299, content editors, AI visibility tracking, agents, audits and which one to pick.",
+    "Surfer SEO vs Frase compared for 2026: plans from $39 to $299, content editors, AI visibility tracking, agents, audits and which one to pick.",
   metaKeywords:
     "surfer seo vs frase, frase vs surfer seo, frase vs surfer, surfer seo or frase, frase review, frase pricing, surfer seo pricing, frase alternatives, surfer seo alternatives, best content optimization tool, ai seo content tool, geo optimization tool",
   categories: ["reviews", "deep-dives"],

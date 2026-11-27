@@ -5,7 +5,7 @@ const post: Post = {
   title: "Runway vs Kling vs Luma (2026): Which AI Video Generator Is Worth Paying For?",
   excerpt:
     "Runway, Kling and Luma are the three AI video platforms creators compare most. Kling 4.0 now makes 30-second clips with sound, Runway wins on editing and workflow, and Luma's Ray3.2 targets HDR and VFX pipelines. Here is how they compare on quality, length, audio, credits and commercial use.",
-  seoTitle: "Runway vs Kling vs Luma (2026): Quality, Length, Pricing",
+  seoTitle: "Runway vs Kling vs Luma (2026): Which AI Video Model Wins?",
   seoDescription:
     "Runway vs Kling vs Luma compared: Gen-4.5, Kling 4.0 and Ray3.2 quality, clip length, native audio, cost per second and commercial use, with a clear pick.",
   metaKeywords:

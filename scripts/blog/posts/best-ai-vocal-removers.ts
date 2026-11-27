@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Vocal Removers (2026): 10 Tools to Isolate Vocals and Split Stems",
   excerpt:
     "The best AI vocal remover depends on what you need: LALAL.AI for clean, pro-grade stems, Moises for practicing musicians, Fadr or Ultimate Vocal Remover for free, and the stem splitters built into Logic Pro and FL Studio if you already own them. Here are 10 picks with current pricing, tips for cleaner results and the copyright rules to know.",
-  seoTitle: "Best AI Vocal Removers in 2026: 10 Free and Paid Tools",
+  seoTitle: "10 Best AI Vocal Removers (2026) for Karaoke and Remixes",
   seoDescription:
     "The best AI vocal removers in 2026 for karaoke, remixes and practice: LALAL.AI, Moises, Fadr, Ultimate Vocal Remover and more, with free options and prices.",
   metaKeywords:

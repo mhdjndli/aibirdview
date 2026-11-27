@@ -5,7 +5,7 @@ const post: Post = {
   title: "ElevenLabs Review (2026): Eleven v4, Pricing, Pros and Cons",
   excerpt:
     "Our ElevenLabs review for 2026: what Eleven v4 changed, how voice cloning, Studio, dubbing, music and agents work, what each plan really includes, the common complaints about credits, and when Murf, Cartesia, Speechify or Descript is the better pick.",
-  seoTitle: "ElevenLabs Review (2026): Eleven v4, Pricing, Pros and Cons",
+  seoTitle: "ElevenLabs Review (2026): Eleven v4 Voices, Pricing, Cons",
   seoDescription:
     "ElevenLabs review for 2026: Eleven v4 voices, cloning, Studio, dubbing and music, plan-by-plan pricing, credit complaints, and the best alternatives to compare.",
   metaKeywords:

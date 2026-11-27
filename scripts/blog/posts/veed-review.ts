@@ -5,7 +5,7 @@ const post: Post = {
   title: "VEED Review (2026): Is the Browser Video Editor Worth It?",
   excerpt:
     "VEED packs a full video editor, auto subtitles, translation, AI avatars and generative video into the browser. In 2026 it moved to Creator, Pro and Studio plans with AI credits and its own Fabric talking-video model. Here is what each plan really gets, what users complain about, and how VEED compares with CapCut, Descript and Clipchamp.",
-  seoTitle: "VEED Review (2026): Pricing, AI Features, Pros and Cons",
+  seoTitle: "VEED Review and Pricing (2026): Plans, AI Credits, Cons",
   seoDescription:
     "Our VEED review for 2026: Creator, Pro and Studio pricing, AI credits, Fabric avatars, subtitles, real user complaints and the best VEED alternatives.",
   metaKeywords:

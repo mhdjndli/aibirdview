@@ -5,9 +5,9 @@ const post: Post = {
   title: "Best AI Presentation Makers in 2026: Gamma Alternatives Compared",
   excerpt:
     "What a Gamma deck is, how it differs from PowerPoint, and the best AI presentation makers in 2026: Gamma, Beautiful.ai, Canva, Copilot in PowerPoint, Gemini in Google Slides and Napkin AI. Export caveats and brand control included.",
-  seoTitle: "Best AI Presentation Makers (2026): Gamma Alternatives",
+  seoTitle: "Best AI Presentation Makers (2026): Gamma and 6 Rivals",
   seoDescription:
-    "What is a Gamma deck? We compare Gamma, Beautiful.ai, Canva, Copilot, Gemini and Napkin AI on design, PowerPoint and Slides export, brand control and price.",
+    "Gamma, Beautiful.ai, Canva, Copilot, Gemini and Napkin AI compared on design quality, PowerPoint and Google Slides export, brand control and price.",
   metaKeywords:
     "ai presentation maker, gamma alternatives, what is a gamma deck, gamma app, beautiful.ai, canva presentations ai, copilot powerpoint, ai slide generator, best ai presentation tool",
   categories: ["guides", "reviews"],

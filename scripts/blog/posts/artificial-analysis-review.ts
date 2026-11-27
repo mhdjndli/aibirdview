@@ -5,9 +5,9 @@ const post: Post = {
   title: "Artificial Analysis Review (2026): How to Read Its AI Benchmarks, Plus Alternatives",
   excerpt:
     "Artificial Analysis publishes independent benchmarks of AI models and the API providers that host them. Here is what the site measures, how to read its intelligence, speed and price numbers, how far to trust them, and which alternatives answer different questions.",
-  seoTitle: "Artificial Analysis Review (2026): Benchmarks + Alternatives",
+  seoTitle: "Artificial Analysis Alternatives and Review (2026)",
   seoDescription:
-    "Artificial Analysis review: what the site measures, how to read its intelligence, speed and price benchmarks, how far to trust them, and the best alternatives.",
+    "The best Artificial Analysis alternatives for AI model benchmarks, plus how to read its intelligence, speed and price scores and how far to trust them.",
   metaKeywords:
     "artificial analysis, artificial analysis ai, artificial analysis review, artificial analysis alternatives, artificial analysis intelligence index, ai model benchmarks, llm api provider comparison, llm leaderboard",
   categories: ["reviews", "deep-dives"],

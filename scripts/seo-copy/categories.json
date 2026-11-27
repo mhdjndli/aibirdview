@@ -1,0 +1,16 @@
+[
+ {"slug": "writing", "description": "Compare AI writing tools for drafting, editing, grammar and paraphrasing, including Jasper, Grammarly, QuillBot and Writesonic, with prices and free plans."},
+ {"slug": "image", "description": "Compare AI image generators and photo editors, from Midjourney, FLUX and Leonardo AI to Photoroom and Remini, with free plans, pricing and best uses."},
+ {"slug": "video", "description": "Compare AI video generators, editors, caption and avatar tools, including Runway, Kling AI, HeyGen, OpusClip and CapCut, with pricing and free plans."},
+ {"slug": "audio", "description": "Compare AI text-to-speech, voice cloning, music and transcription tools, including ElevenLabs, Suno, Speechify and Whisper, with pricing and free plans."},
+ {"slug": "code", "description": "Compare AI coding assistants, agents and app builders, including Cursor, Claude Code, OpenAI Codex, Replit and Lovable, with pricing and free tiers."},
+ {"slug": "productivity", "description": "Compare AI tools for meetings, notes, slides, documents and email, including Claude, Gamma, Fathom and Dia, with pricing, free plans and best uses."},
+ {"slug": "marketing", "description": "Compare AI tools for SEO, ads, social media, email and outbound sales, including Clay, Ahrefs AI, beehiiv and Mailchimp AI, with pricing and free plans."},
+ {"slug": "research", "description": "Compare AI research and data tools for answers with sources, web scraping and analysis, including Perplexity, Genspark, Tavily and Firecrawl."},
+ {"slug": "chat", "description": "Compare AI chatbots and assistants for everyday questions, writing and tasks, from general assistants to model playgrounds, with pricing and free plans."},
+ {"slug": "agents", "description": "Compare AI agents and automation tools that run tasks, connect apps and build workflows without code, with pricing, free plans and what each automates."},
+ {"slug": "design", "description": "Compare AI design tools for logos, slides, UI, interior design and 3D models, including Visme, MagicSlides and Adobe Illustrator, with pricing."},
+ {"slug": "business", "description": "Compare AI tools for finance, legal, HR, recruiting, real estate, e-commerce and customer support, with pricing, free plans and who each one suits."},
+ {"slug": "education", "description": "Compare AI tutors, study helpers, quiz makers and tools for teachers, including Turnitin, Solvely and Quizbot, with pricing, free plans and uses."},
+ {"slug": "lifestyle", "description": "Compare AI tools for health, fitness, travel, fashion, dating and hobbies, including Be My Eyes, Oasis and Keeper, with pricing and free plans."}
+]

@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Story Generators (2026): 10 Tools for Fiction",
   excerpt:
     "The best AI story generators in 2026 for novelists, hobby writers, roleplayers and interactive fiction fans, from Sudowrite and NovelAI to Claude, ChatGPT, Squibler and AI Dungeon. We compare pricing, context memory, free plans and what each one is actually good at, plus prompts, copyright and publishing rules.",
-  seoTitle: "Best AI Story Generators 2026: 10 Free and Paid Picks",
+  seoTitle: "10 Best AI Story Generators (2026), Free and Paid",
   seoDescription:
     "The best AI story generators for 2026: Sudowrite, NovelAI, Claude, ChatGPT, Squibler, AI Dungeon and more, with prices, free plans, prompts and copyright tips.",
   metaKeywords:

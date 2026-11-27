@@ -7,7 +7,7 @@ const post: Post = {
     "Microsoft Copilot is the better pick if you live in Word, Excel, Outlook and Windows and want AI inside a Microsoft 365 subscription. ChatGPT is the better standalone assistant for writing, research, images, agents and coding. Here is how they compare on models, pricing, Office integration and privacy in October 2026.",
   seoTitle: "Microsoft Copilot vs ChatGPT (2026): Features and Price",
   seoDescription:
-    "Microsoft Copilot vs ChatGPT for October 2026: models, Microsoft 365 Premium vs ChatGPT Plus, Word and Excel, free tiers, agents, privacy and which to pick.",
+    "Microsoft Copilot vs ChatGPT for 2026: models, Microsoft 365 Premium vs ChatGPT Plus, Word and Excel, free tiers, agents, privacy and which to pick.",
   metaKeywords:
     "microsoft copilot vs chatgpt, copilot vs chatgpt, chatgpt vs copilot, is copilot better than chatgpt, is copilot the same as chatgpt, microsoft 365 premium vs chatgpt plus, copilot pro vs chatgpt plus, copilot vs chatgpt for excel, copilot vs chatgpt for work, does copilot use gpt-6, copilot free vs chatgpt free, microsoft copilot review 2026",
   categories: ["reviews", "deep-dives"],

@@ -7,7 +7,7 @@ const post: Post = {
     "ChatGPT is the better all-round assistant for writing, files, images and agents. Grok is the better pick for real-time X data, looser answers, AI video and a bundle that now includes Cursor and X Premium. Here is how Grok 4.7 and GPT-6 compare on price, features, accuracy and privacy.",
   seoTitle: "Grok vs ChatGPT (2026): Features, Pricing and Who Wins",
   seoDescription:
-    "Grok vs ChatGPT compared for October 2026: Grok 4.7 vs GPT-6, the new X Subscription vs ChatGPT Plus, real-time search, coding, images, video and privacy.",
+    "Grok vs ChatGPT compared for 2026: Grok 4.7 vs GPT-6, the new X Subscription vs ChatGPT Plus, real-time search, coding, images, video and privacy.",
   metaKeywords:
     "grok vs chatgpt, chatgpt vs grok, is grok better than chatgpt, grok 4.7 vs gpt-6, supergrok vs chatgpt plus, x subscription grok price, grok vs chatgpt for coding, grok vs chatgpt accuracy, grok or chatgpt, grok vs chatgpt free, grok imagine vs chatgpt images, best ai chatbot 2026",
   categories: ["reviews", "deep-dives"],

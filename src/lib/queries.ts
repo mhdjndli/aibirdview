@@ -104,6 +104,50 @@ export async function getToolCards() {
 export type ToolCardRow = Awaited<ReturnType<typeof getToolCards>>[number];
 
 /**
+ * Same-category tools that fill a tool page's alternatives when editors picked
+ * fewer than three, so no tool page ends without somewhere to go next.
+ */
+export async function getCategoryPeers(categoryId: string, excludeSlugs: string[], take: number) {
+  return prisma.tool.findMany({
+    where: { published: true, categoryId, slug: { notIn: excludeSlugs } },
+    select: TOOL_CARD_SELECT,
+    orderBy: [{ trending: "desc" }, { ratingCount: "desc" }, { createdAt: "asc" }],
+    take,
+  });
+}
+
+/**
+ * Blog posts for a tool page: posts about the tool (its own "<tool>-review"
+ * first, then guides that link to the tool page), and its category's
+ * best-of guides (see CATEGORY_SEO) that don't already appear.
+ */
+export async function getPostsForTool(toolSlug: string, categoryGuides: string[], take = 4) {
+  const posts = await prisma.blogPost.findMany({
+    where: {
+      published: true,
+      publishedAt: { lte: new Date() },
+      OR: [
+        { slug: `${toolSlug}-review` },
+        { contentHtml: { contains: `/tools/${toolSlug}"` } },
+        ...(categoryGuides.length ? [{ slug: { in: categoryGuides } }] : []),
+      ],
+    },
+    select: { slug: true, title: true, excerpt: true, contentHtml: true },
+    orderBy: { publishedAt: "desc" },
+  });
+  const mentions = (p: (typeof posts)[number]) =>
+    p.slug === `${toolSlug}-review` || p.contentHtml.includes(`/tools/${toolSlug}"`);
+  const slim = ({ slug, title, excerpt }: (typeof posts)[number]) => ({ slug, title, excerpt });
+  const review = posts.find((p) => p.slug === `${toolSlug}-review`);
+  const about = [...(review ? [review] : []), ...posts.filter((p) => p !== review && mentions(p))].slice(0, take);
+  const guides = categoryGuides
+    .map((g) => posts.find((p) => p.slug === g && !about.includes(p)))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    .slice(0, Math.max(0, take - about.length) || 2);
+  return { about: about.map(slim), guides: guides.map(slim) };
+}
+
+/**
  * The homepage "Featured this week" grid, FEATURED_SLOTS cards wide:
  *   1. every tool with a paid slot running (marked Sponsored), then
  *   2. the pinned tools (see PINNED_FEATURED_SLUGS), then

@@ -3,6 +3,15 @@ import { notFound } from "next/navigation";
 import { getPostBySlug, getPublishedPosts } from "@/lib/queries";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl, SITE } from "@/lib/site";
+import { prisma } from "@/lib/prisma";
+
+const EDITORIAL_TEAM = `${SITE.name} Editorial Team`;
+
+/** A real person's name, or null for the shared admin account (shown as the editorial team). */
+function personName(author: { name: string | null } | null): string | null {
+  const name = author?.name?.trim();
+  return name && !/^admin$/i.test(name) && !name.includes("@") ? name : null;
+}
 
 export const dynamicParams = true;
 export const revalidate = 60;
@@ -21,7 +30,7 @@ export async function generateMetadata({
   const post = await getPostBySlug(slug);
   if (!post || !post.published) return {};
 
-  const seoTitle = post.seoTitle || `${post.title} | AI BirdView`;
+  const seoTitle = post.seoTitle || post.title;
   const seoDescription = post.seoDescription || post.excerpt;
 
   return {
@@ -52,9 +61,22 @@ export default async function BlogPostPage({
   const post = await getPostBySlug(slug);
   if (!post || !post.published) notFound();
 
-  const related = (await getPublishedPosts())
-    .filter((p) => p.id !== post.id)
-    .slice(0, 3);
+  const [allPosts, reviewedTool] = await Promise.all([
+    getPublishedPosts(),
+    // A "<tool>-review" post sends readers on to the tool's listing.
+    post.slug.endsWith("-review")
+      ? prisma.tool.findFirst({
+          where: { slug: post.slug.replace(/-review$/, ""), published: true },
+          select: { slug: true, name: true, tagline: true },
+        })
+      : Promise.resolve(null),
+  ]);
+  const related = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
+  const author = personName(post.author);
+  const updated =
+    post.publishedAt && post.updatedAt.getTime() - post.publishedAt.getTime() > 24 * 60 * 60 * 1000
+      ? post.updatedAt
+      : null;
 
   const ogImageUrl = post.ogMediaId
     ? absoluteUrl(`/api/media/${post.ogMediaId}`)
@@ -74,9 +96,9 @@ export default async function BlogPostPage({
             datePublished: post.publishedAt?.toISOString(),
             dateModified: post.updatedAt.toISOString(),
             image: ogImageUrl,
-            author: post.author
-              ? { "@type": "Person", name: post.author.name || post.author.email }
-              : { "@type": "Organization", name: SITE.name },
+            author: author
+              ? { "@type": "Person", name: author }
+              : { "@type": "Organization", name: EDITORIAL_TEAM, url: absoluteUrl("/about") },
             publisher: {
               "@type": "Organization",
               name: SITE.name,
@@ -136,13 +158,28 @@ export default async function BlogPostPage({
           <p className="mt-5 text-[18px] leading-relaxed text-ink-500">{post.excerpt}</p>
 
           <div className="mt-7 flex flex-wrap items-center gap-3 text-[13px] text-ink-500">
-            {post.author && <span>{post.author.name || post.author.email}</span>}
+            {author ? (
+              <span>{author}</span>
+            ) : (
+              <Link href="/about" className="hover:text-ink-800">{EDITORIAL_TEAM}</Link>
+            )}
             {post.publishedAt && (
               <>
                 <span className="text-ink-300">·</span>
                 <time dateTime={post.publishedAt.toISOString()}>
-                  {post.publishedAt.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" })}
+                  {post.publishedAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
                 </time>
+              </>
+            )}
+            {updated && (
+              <>
+                <span className="text-ink-300">·</span>
+                <span>
+                  Updated{" "}
+                  <time dateTime={updated.toISOString()}>
+                    {updated.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })}
+                  </time>
+                </span>
               </>
             )}
             <span className="text-ink-300">·</span>
@@ -168,6 +205,18 @@ export default async function BlogPostPage({
           // contentHtml is generated from Tiptap on the admin side and stored sanitized
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
+        {reviewedTool && (
+          <Link
+            href={`/tools/${reviewedTool.slug}`}
+            className="group mt-12 block rounded-2xl border border-kiwi-200 bg-kiwi-50 p-6 hover:border-kiwi-300"
+          >
+            <span className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">In the directory</span>
+            <span className="mt-2 block text-[20px] font-semibold text-ink-900 group-hover:text-kiwi-700">
+              {reviewedTool.name}: pricing, features and alternatives →
+            </span>
+            <span className="mt-1 block text-[14px] leading-relaxed text-ink-600">{reviewedTool.tagline}</span>
+          </Link>
+        )}
       </div>
 
       {related.length > 0 && (

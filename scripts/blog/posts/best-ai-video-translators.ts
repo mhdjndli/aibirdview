@@ -5,7 +5,7 @@ const post: Post = {
   title: "Best AI Video Translators (2026): 11 Tools for Dubbing and Lip Sync",
   excerpt:
     "The best AI video translator depends on what you need: HeyGen for lip-synced translation of talking-head video, ElevenLabs for the most natural dubbed voices, AI Studios for the most dubbing minutes per dollar, and YouTube's free auto dubbing for creators on a budget. Here are 11 picks with current pricing, limits and languages.",
-  seoTitle: "Best AI Video Translators in 2026: 11 Dubbing Tools Compared",
+  seoTitle: "11 Best AI Video Translators (2026): Dubbing and Lip Sync",
   seoDescription:
     "The best AI video translators in 2026 for dubbing, voice cloning and lip sync: HeyGen, ElevenLabs, Perso, Synthesia, AI Studios and more, with cost per minute.",
   metaKeywords:

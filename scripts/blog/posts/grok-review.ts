@@ -5,9 +5,9 @@ const post: Post = {
   title: "Grok Review (2026): Grok 4.7, SuperGrok and the Catch",
   excerpt:
     "Our Grok review for October 2026: what Grok 4.7 does well, how real-time X search, Imagine, voice and Grok Build work, what SuperGrok Lite, SuperGrok, Plus and Heavy cost, the safety controversies you should know about, and when ChatGPT, Claude or Gemini is the better pick.",
-  seoTitle: "Grok Review (2026): Grok 4.7, SuperGrok Plans, Pros, Cons",
+  seoTitle: "Grok Review (2026): Is SuperGrok Worth It? Pros and Cons",
   seoDescription:
-    "Our Grok review for October 2026: Grok 4.7, real-time X search, Imagine video, Grok Build, SuperGrok pricing from $10 to $300, controversies and alternatives.",
+    "Our Grok review: Grok 4.7, real-time X search, Imagine video, Grok Build, SuperGrok plans from $10 to $300, the controversies, and alternatives.",
   metaKeywords:
     "grok review, grok ai review, grok review 2026, is supergrok worth it, grok 4.7 review, supergrok pricing, supergrok heavy, grok imagine review, is grok good, grok vs chatgpt, xai grok review, grok free vs supergrok",
   categories: ["reviews", "deep-dives"],

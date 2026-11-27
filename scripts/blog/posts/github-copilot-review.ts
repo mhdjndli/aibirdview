@@ -5,7 +5,7 @@ const post: Post = {
   title: "GitHub Copilot Review (2026): AI Credits, Agents and Real Value",
   excerpt:
     "GitHub Copilot is still the easiest AI coding assistant to adopt: it runs in almost every editor, costs $10 a month for Pro, and now includes a cloud agent, a CLI, a desktop app and code review. The catch in 2026 is usage-based AI Credits. Here is what changed, what each plan really gets, and who should pick something else.",
-  seoTitle: "GitHub Copilot Review (2026): Plans, AI Credits, Verdict",
+  seoTitle: "GitHub Copilot Review (2026): Is It Worth It? Plans Compared",
   seoDescription:
     "Our GitHub Copilot review for 2026: AI Credits explained, Free vs Pro vs Pro+ vs Max, the cloud agent, CLI and Copilot app, pros, cons and alternatives.",
   metaKeywords:

@@ -7,7 +7,7 @@ const post: Post = {
     "Our Claude review for October 2026: what Opus 5.5, Sonnet 5.5 and Fable 5.1 are, how the merged chat and Cowork experience works, what Claude Design, Docs and Slides add, what each plan from Free to Max gets, the usage-limit complaints, and when ChatGPT or Gemini is the better choice.",
   seoTitle: "Claude Review (2026): Models, Plans, Pros and Cons",
   seoDescription:
-    "Our Claude review for October 2026: Opus 5.5 and Fable 5.1, Cowork, Claude Code, Design and Docs, Free vs Pro vs Max pricing, usage limits and alternatives.",
+    "Our Claude review for 2026: Opus 5.5 and Fable 5.1, Cowork, Claude Code, Design and Docs, Free vs Pro vs Max pricing, usage limits and alternatives.",
   metaKeywords:
     "claude review, claude ai review, claude review 2026, is claude pro worth it, claude opus 5.5 review, claude pricing 2026, claude pro vs max, claude usage limits, claude cowork, claude vs chatgpt, is claude ai good, anthropic claude review",
   categories: ["reviews", "deep-dives"],

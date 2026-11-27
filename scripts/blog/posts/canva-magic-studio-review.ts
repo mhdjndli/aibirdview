@@ -5,7 +5,7 @@ const post: Post = {
   title: "Canva Magic Studio Review (2026): Is Canva AI Worth It?",
   excerpt:
     "Canva Magic Studio puts AI writing, image generation, photo editing, resizing and deck design inside the editor millions already use. Here is what changed in 2026 with Canva AI 2.0 and the new Canva Craft image model, what Free, Pro and Business really include, the common complaints, and when Gamma, Adobe Firefly or Picsart is the better pick.",
-  seoTitle: "Canva Magic Studio Review (2026): Features, Price, Verdict",
+  seoTitle: "Canva Magic Studio Review (2026): Canva AI 2.0, Pricing",
   seoDescription:
     "Our Canva Magic Studio review: Canva AI 2.0, the new Canva Craft image model, Magic Design, Free vs Pro vs Business pricing, limits, complaints and alternatives.",
   metaKeywords:

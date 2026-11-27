@@ -5,7 +5,7 @@ const post: Post = {
   title: "Comet Browser Review (2026): Perplexity's Free AI Browser, Pros and Cons",
   excerpt:
     "Comet is Perplexity's free, Chromium-based AI browser. Its assistant reads your tabs, answers with citations and can complete tasks on websites. Here is what it does well, what stays on your device, what the paid Perplexity plans add, the real risks of an agentic browser, and how it compares with Dia, ChatGPT Atlas and Claude in Chrome.",
-  seoTitle: "Comet Browser Review (2026): Features, Privacy, Verdict",
+  seoTitle: "Comet Browser Review (2026): Privacy, Agents, Free vs Pro",
   seoDescription:
     "Our Comet browser review: what Perplexity's free AI browser does, the Assistant and agent tasks, privacy and security, Free vs Pro, pros, cons and alternatives.",
   metaKeywords:

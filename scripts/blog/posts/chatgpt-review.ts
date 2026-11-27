@@ -7,7 +7,7 @@ const post: Post = {
     "Our ChatGPT review for October 2026: what GPT-6 Luna, Sol and Astra change, what ChatGPT Work, Codex and Intelligent UI actually do, what each plan from Free to the $500 Pro tier gets, the real complaints, and when Claude, Gemini or Perplexity is the better pick.",
   seoTitle: "ChatGPT Review (2026): GPT-6, Plans, Pros and Cons",
   seoDescription:
-    "Our ChatGPT review for October 2026: GPT-6 models, Work and Codex agents, Free vs Go vs Plus vs Pro pricing, real complaints, and the best alternatives.",
+    "Our ChatGPT review for 2026: GPT-6 models, Work and Codex agents, Free vs Go vs Plus vs Pro pricing, real complaints, and the best alternatives.",
   metaKeywords:
     "chatgpt review, chatgpt review 2026, is chatgpt plus worth it, chatgpt gpt-6 review, chatgpt pricing 2026, chatgpt go vs plus, chatgpt pro 500, chatgpt pros and cons, is chatgpt good, chatgpt free vs plus, chatgpt work agent, chatgpt alternatives",
   categories: ["reviews", "deep-dives"],

@@ -5,7 +5,7 @@ const post: Post = {
   title: "OpenAI Codex vs Claude Code (2026): Which Coding Agent Wins?",
   excerpt:
     "OpenAI Codex and Claude Code are the two leading AI coding agents of 2026. Codex is bundled with every ChatGPT plan, even Free, and lives inside the new ChatGPT desktop app. Claude Code needs a paid Claude plan but remains the deeper, more configurable agent. Here is how they compare on workflow, models, limits and price.",
-  seoTitle: "OpenAI Codex vs Claude Code (2026): Which Agent Wins?",
+  seoTitle: "OpenAI Codex vs Claude Code (2026): Which Coding Agent Wins?",
   seoDescription:
     "OpenAI Codex vs Claude Code compared: GPT-6.1 vs Claude Opus 5.5, CLI, desktop and cloud, AGENTS.md vs CLAUDE.md, usage limits and ChatGPT vs Claude pricing.",
   metaKeywords:

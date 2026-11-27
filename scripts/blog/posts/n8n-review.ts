@@ -5,9 +5,9 @@ const post: Post = {
   title: "n8n Review (2026): Pricing, AI Agents, n8n 3.0 and Verdict",
   excerpt:
     "n8n is the most flexible workflow automation platform for technical teams: per-run pricing, a free self-hosted edition, a strong AI Agent node and a new chat-based n8n Assistant. Here is what each plan really gets, what the n8n 3.0 breaking changes mean for you, and when Zapier or Make is the better pick.",
-  seoTitle: "n8n Review (2026): Pricing, AI Agents, Pros and Cons",
+  seoTitle: "n8n Review and Pricing (2026): Cloud vs Self-Hosted",
   seoDescription:
-    "Our n8n review for 2026: execution-based pricing, Cloud vs self-hosted, the AI Agent node, n8n Assistant, the 3.0 breaking changes, pros, cons and alternatives.",
+    "n8n review: execution-based pricing, Cloud vs self-hosted costs, the AI Agent node and Assistant, 3.0 breaking changes, pros, cons and alternatives.",
   metaKeywords:
     "n8n review, n8n pricing, is n8n worth it, n8n cloud vs self hosted, n8n 3.0, n8n ai agent, n8n assistant, n8n pros and cons, n8n alternatives, n8n vs zapier, n8n community edition, n8n self hosted, n8n workflow automation",
   categories: ["reviews", "deep-dives"],

@@ -7,7 +7,7 @@ const post: Post = {
     "Perplexity is still the fastest way to get a cited answer from the web, and in 2026 it added a cloud agent (Computer), Model Council and the free Comet browser. Here is what each plan really gets, where it falls short, and when ChatGPT, Gemini or a research tool is the better pick.",
   seoTitle: "Perplexity Review (2026): Features, Pricing, Pros and Cons",
   seoDescription:
-    "Our Perplexity review for October 2026: Pro vs Max, Research mode, Computer credits, Model Council, Comet, accuracy, privacy, complaints and top alternatives.",
+    "Our Perplexity review for 2026: Pro vs Max, Research mode, Computer credits, Model Council, Comet, accuracy, privacy, complaints and top alternatives.",
   metaKeywords:
     "perplexity review, perplexity ai review, is perplexity worth it, perplexity pro review, is perplexity pro worth it, perplexity max review, perplexity computer review, perplexity pricing, perplexity free vs pro, is perplexity accurate, perplexity ai pros and cons, perplexity alternatives",
   categories: ["reviews", "deep-dives"],

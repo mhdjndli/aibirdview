@@ -5,7 +5,7 @@ const post: Post = {
   title: "Surfer SEO Review (2026): Is It Still Worth Paying For?",
   excerpt:
     "Surfer is now an AI visibility platform as much as an on-page optimizer: Content Editor, Content Score, Topical Map, Content Audit and an AI Tracker for ChatGPT and Gemini. Here is what each plan really gets, the common complaints, and when Frase, Clearscope or Ahrefs is the better buy.",
-  seoTitle: "Surfer SEO Review (2026): Features, Pricing, Pros and Cons",
+  seoTitle: "Surfer SEO Review (2026): Pricing From $49, Pros and Cons",
   seoDescription:
     "Our Surfer SEO review for 2026: Content Editor, AI Tracker, Topical Map and Audit explained, every plan from $49/mo, real complaints and the best alternatives.",
   metaKeywords:

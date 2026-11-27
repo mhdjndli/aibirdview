@@ -5,9 +5,9 @@ const post: Post = {
   title: "Granola Review (2026): The Bot-Free AI Notepad, Tested Against the Field",
   excerpt:
     "Granola takes meeting notes without sending a bot into your call. Our Granola review covers how it works, the new free plan and $14 Business tier, Chat, Recipes, MCP, privacy and consent questions, and when Fathom, Fireflies or Otter is the better pick.",
-  seoTitle: "Granola Review (2026): Pricing, Features, Privacy, Verdict",
+  seoTitle: "Granola Pricing and Review (2026): Is the Free Plan Enough?",
   seoDescription:
-    "Our Granola review: how the bot-free AI notepad works, the free and $14 plans, Chat, Recipes, MCP, consent risks, and how it compares with Fathom and Fireflies.",
+    "Is Granola free? Our review covers the free and $14 plans, how the bot-free AI notepad works, Recipes and MCP, consent risks, and Fathom vs Fireflies.",
   metaKeywords:
     "granola review, granola ai review, granola ai, granola meeting notes, granola pricing, granola free plan, is granola worth it, granola vs fathom, granola vs otter, bot free meeting notes, ai notepad, granola alternatives",
   categories: ["reviews", "deep-dives"],

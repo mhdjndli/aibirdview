@@ -5,9 +5,10 @@ import { ReviewForm } from "@/components/ReviewForm";
 import { OwnerToolBar } from "@/components/OwnerToolBar";
 import { JsonLd } from "@/components/JsonLd";
 import { MoreContext } from "@/components/MoreContext";
-import { getToolBySlug } from "@/lib/queries";
-import { serializeTool } from "@/lib/serializers";
+import { getCategoryPeers, getPostsForTool, getToolBySlug } from "@/lib/queries";
+import { serializeTool, serializeToolCard, type ToolCardData } from "@/lib/serializers";
 import { absoluteUrl } from "@/lib/site";
+import { CATEGORY_SEO, pricingSentence, toolDescription, toolTitle } from "@/lib/seo";
 import { faqItems, parseMoreContext } from "@/lib/moreContext";
 import { prisma } from "@/lib/prisma";
 
@@ -30,14 +31,8 @@ export async function generateMetadata({
   const toolRaw = await getToolBySlug(slug);
   if (!toolRaw) return {};
   const tool = serializeTool(toolRaw);
-  const year = new Date().getFullYear();
-
-  const seoTitle =
-    tool.seoTitle ||
-    `${tool.name} Review (${year}): Features, Pricing & Alternatives | AI BirdView`;
-  const seoDescription =
-    tool.seoDescription ||
-    `${tool.description} See features, pricing, pros and cons, and the best alternatives to ${tool.name}.`;
+  const seoTitle = toolTitle(tool);
+  const seoDescription = toolDescription(tool);
 
   return {
     title: seoTitle,
@@ -70,10 +65,20 @@ export default async function ToolPage({
   if (!toolRaw || !toolRaw.published) notFound();
   const tool = serializeTool(toolRaw);
   const category = tool.category;
-  const related = tool.alternatives;
+  const picked = tool.alternatives;
+  // Fill thin alternative lists from the same category, so every tool page
+  // links on to similar tools (and its "alternatives" promise holds).
+  const [peers, posts, owners] = await Promise.all([
+    picked.length < 3
+      ? getCategoryPeers(toolRaw.categoryId, [tool.slug, ...picked.map((t) => t.slug)], 6 - picked.length)
+      : Promise.resolve([]),
+    getPostsForTool(tool.slug, CATEGORY_SEO[category.slug]?.guides ?? []),
+    prisma.toolOwner.count({ where: { toolId: toolRaw.id, status: "ACTIVE" } }),
+  ]);
+  const related: ToolCardData[] = [...picked, ...peers.map(serializeToolCard)];
   const contextBlocks = tool.moreContext ? parseMoreContext(tool.moreContext) : [];
   const faq = faqItems(contextBlocks);
-  const claimed = (await prisma.toolOwner.count({ where: { toolId: toolRaw.id, status: "ACTIVE" } })) > 0;
+  const claimed = owners > 0;
 
   const offers =
     tool.pricing === "Free"
@@ -297,7 +302,7 @@ export default async function ToolPage({
       <section className="mx-auto max-w-5xl px-5 lg:px-8 mt-16 grid grid-cols-1 gap-12 lg:grid-cols-[1fr_300px]">
         <div className="min-w-0">
           <h2 className="text-[28px] font-semibold tracking-[-0.022em] text-ink-900">
-            What it is
+            What is {tool.name}?
           </h2>
           <p className="mt-4 text-[17px] leading-relaxed text-ink-700">
             {tool.longDescription}
@@ -306,7 +311,7 @@ export default async function ToolPage({
           {tool.features.length > 0 && (
             <>
               <h3 className="mt-12 text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
-                Key features
+                {tool.name} features
               </h3>
               <ul className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
                 {tool.features.map((f) => (
@@ -327,7 +332,11 @@ export default async function ToolPage({
           )}
 
           {(tool.pros.length > 0 || tool.cons.length > 0) && (
-            <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-2">
+            <>
+            <h3 className="mt-12 text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
+              {tool.name} pros and cons
+            </h3>
+            <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
               {tool.pros.length > 0 && (
                 <div className="rounded-2xl border border-ink-200 bg-ink-0 p-6">
                   <p className="text-[12px] font-semibold uppercase tracking-[0.18em] text-kiwi-700">
@@ -357,6 +366,36 @@ export default async function ToolPage({
                 </div>
               )}
             </div>
+            </>
+          )}
+
+          <h3 className="mt-12 text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
+            {tool.name} pricing
+          </h3>
+          <p className="mt-4 text-[16px] leading-relaxed text-ink-700">
+            {pricingSentence(tool.name, tool.pricing, tool.priceFrom)} Prices change, so check{" "}
+            <a href={tool.url} target="_blank" rel="noopener" className="font-medium text-kiwi-700 hover:underline">
+              the official {tool.name} site
+            </a>{" "}
+            before you buy.
+          </p>
+
+          {posts.about.length > 0 && (
+            <div className="mt-12">
+              <h3 className="text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
+                {tool.name} in our guides
+              </h3>
+              <PostList posts={posts.about} />
+            </div>
+          )}
+
+          {posts.guides.length > 0 && (
+            <div className="mt-12">
+              <h3 className="text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
+                Guides to {category.name.toLowerCase()} tools
+              </h3>
+              <PostList posts={posts.guides} />
+            </div>
           )}
 
           {contextBlocks.length > 0 && (
@@ -365,7 +404,7 @@ export default async function ToolPage({
                 Editor&apos;s notes
               </p>
               <h2 className="mt-2 text-[28px] font-semibold tracking-[-0.022em] text-ink-900">
-                More context from AI BirdView
+                More about {tool.name}
               </h2>
               <MoreContext blocks={contextBlocks} links={related} />
             </div>
@@ -374,7 +413,7 @@ export default async function ToolPage({
           {/* Reader reviews */}
           <div className="mt-16">
             <h3 className="text-[22px] font-semibold tracking-[-0.022em] text-ink-900">
-              Reader reviews
+              {tool.name} user reviews
             </h3>
             <p className="mt-1 text-[13px] text-ink-500">
               From people who&apos;ve used {tool.name}. Emails are never shown publicly.
@@ -489,10 +528,10 @@ export default async function ToolPage({
       {related.length > 0 && (
         <section className="mx-auto max-w-7xl px-5 lg:px-8 mt-24 pb-16">
           <h2 className="text-[28px] font-semibold tracking-[-0.022em] text-ink-900">
-            Alternatives to {tool.name}
+            {tool.name} alternatives
           </h2>
           <p className="mt-2 text-[14px] text-ink-500">
-            Other tools we like in this space.
+            Similar {category.name.toLowerCase()} tools to compare with {tool.name}.
           </p>
           <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {related.map((t) => (
@@ -502,6 +541,21 @@ export default async function ToolPage({
         </section>
       )}
     </article>
+  );
+}
+
+function PostList({ posts }: { posts: { slug: string; title: string; excerpt: string }[] }) {
+  return (
+    <ul className="mt-4 space-y-3">
+      {posts.map((p) => (
+        <li key={p.slug}>
+          <Link href={`/blog/${p.slug}`} className="group block rounded-2xl border border-ink-200 bg-ink-0 p-5 hover:border-kiwi-300">
+            <span className="text-[16px] font-semibold text-ink-900 group-hover:text-kiwi-700">{p.title}</span>
+            <span className="mt-1 block text-[14px] leading-relaxed text-ink-500 line-clamp-2">{p.excerpt}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
