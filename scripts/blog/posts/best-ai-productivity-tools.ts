@@ -42,7 +42,7 @@ const post: Post = {
         ["[Motion](/tools/motion)", "Auto-planned calendar", "No (trial)", "$19/seat/mo"],
         ["[Reclaim AI](/tools/reclaim-ai)", "Focus time and habits", "Yes (Lite)", "$10/mo yearly, $12 monthly"],
         ["[Notion AI](/tools/notion-ai)", "Docs, wikis, knowledge", "AI trial only", "Business $20/seat/mo"],
-        ["[Mem](/tools/mem)", "Personal notes with AI", "Yes", "Plus $9/mo"],
+        ["[Reflect](/tools/reflect)", "Private personal notes with AI", "Yes (free on Mac)", "iPhone and iPad app by subscription"],
         ["[Superhuman](/tools/superhuman)", "Fast email with AI", "No", "About $25 to $30/mo"],
         ["[Fyxer AI](/tools/fyxer)", "Inbox sorting and drafts", "Yes", "Pro $37/mo yearly, $49 monthly"],
         ["[Granola](/tools/granola)", "Bot-free meeting notes", "Yes (30-day history)", "$14/user/mo"],
@@ -116,13 +116,13 @@ const post: Post = {
       "**Best for:** teams that already document their work in Notion.",
     ] },
 
-    { h3: "7. Mem: best AI notes app for individuals" },
-    { p: "[Mem](/tools/mem) is a personal notes app built around AI from the start. You capture notes, voice memos and meeting notes, and Mem organizes and connects them so you can ask questions later instead of filing everything into folders." },
+    { h3: "7. Reflect: best private AI notes app for individuals" },
+    { p: "[Reflect](/tools/reflect) is a networked notes app with daily notes and backlinks that keeps your notes as local Markdown files, synced through iCloud Drive or Git. Its AI features are optional and run on your own API key, and notes you mark private are left out. (Mem, which held this spot before, is shutting down on January 15, 2027.)" },
     { ul: [
-      "**Pricing:** free plan with 25 AI messages and 25 new notes a month; Plus at $9/mo; Pro at $29/mo with custom routines and connections.",
-      "**Pros:** no filing system to maintain, good voice capture.",
-      "**Cons:** monthly usage caps on every plan, and it is not a team wiki.",
-      "**Best for:** solo knowledge workers who hate organizing notes.",
+      "**Pricing:** free on Mac; the iPhone and iPad app is a paid App Store subscription, and Reflect doesn't publish the price on its site.",
+      "**Pros:** your notes stay in plain files you own, and AI is opt-in.",
+      "**Cons:** AI needs your own API key, billed by that provider, and it is not a team wiki.",
+      "**Best for:** solo knowledge workers who want private notes with AI on their own terms.",
     ] },
 
     { h2: "AI email tools" },

@@ -128,7 +128,7 @@ const post: Post = {
         ["[ClickUp Brain](/tools/clickup-brain)", "Task-heavy project teams", "Check clickup.com", "AI across tasks, docs and chat"],
         ["[Superhuman Docs](/tools/coda-ai)", "Doc-plus-app builders (formerly Coda)", "Free tier; check pricing", "Docs, tables and automation"],
         ["[Microsoft Copilot](/tools/microsoft-copilot)", "Microsoft 365 companies", "Check microsoft.com", "Works across Word, Excel, Outlook, Teams"],
-        ["[Mem](/tools/mem)", "Individuals' notes", "Free tier; check pricing", "Self-organizing personal notes"],
+        ["[Reflect](/tools/reflect)", "Individuals' private notes", "Free on Mac", "Local Markdown notes, AI with your own key"],
       ],
     } },
     { h3: "Notion AI vs ChatGPT" },
