@@ -17,6 +17,10 @@ type Row = { slug: string; seoTitle: string; seoDescription: string };
 const prisma = new PrismaClient();
 const write = process.argv.includes("--write");
 
+// Tools whose listed name starts with "Best", which titles avoid; they lead
+// with their brand or domain instead.
+const LEAD_EXCEPTIONS = new Set(["best-ai-image-generator", "best-jobfinder"]);
+
 function problems(r: Row, name: string | undefined): string[] {
   const out: string[] = [];
   const t = r.seoTitle ?? "";
@@ -24,8 +28,8 @@ function problems(r: Row, name: string | undefined): string[] {
   if (t.length < 35 || t.length > 60) out.push(`title ${t.length} chars`);
   if (d.length < 120 || d.length > 155) out.push(`description ${d.length} chars`);
   if (/[—–|]| - /.test(t) || /[—–]/.test(d)) out.push("dash or pipe");
-  if (/\b(review|best|ultimate|#1)\b|ai birdview/i.test(t.replace(/\b(contract|code|literature|peer|resume|cv|document|essay) reviews?\b/gi, ""))) out.push("banned word in title");
-  if (name) {
+  if (/\b(review|best|#1)\b|ai birdview/i.test(t.replace(/\b(contract|code|literature|peer|resume|cv|document|essay) reviews?\b/gi, ""))) out.push("banned word in title");
+  if (name && !LEAD_EXCEPTIONS.has(r.slug)) {
     // Names like "Makify AI - AI Creative Platform" lead with their first part.
     const n = name.trim().split(" - ")[0].trim().toLowerCase();
     const lead = t.toLowerCase();

@@ -33,6 +33,8 @@ export async function generateMetadata({
       title,
       description: cat.description,
       url: `/categories/${cat.slug}`,
+      // Setting openGraph here replaces the inherited one, image included.
+      images: ["/opengraph-image"],
     },
   };
 }
